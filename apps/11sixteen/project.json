@@ -1,25 +1,25 @@
 {
-  "name": "eleven-sixteen",
+  "name": "11sixteen",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "sigmafox",
-  "sourceRoot": "apps/eleven-sixteen/src",
+  "sourceRoot": "apps/11sixteen/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/eleven-sixteen",
-        "index": "apps/eleven-sixteen/src/index.html",
-        "main": "apps/eleven-sixteen/src/main.ts",
+        "outputPath": "dist/apps/11sixteen",
+        "index": "apps/11sixteen/src/index.html",
+        "main": "apps/11sixteen/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/eleven-sixteen/tsconfig.app.json",
+        "tsConfig": "apps/11sixteen/tsconfig.app.json",
         "assets": [
-          "apps/eleven-sixteen/src/favicon.ico",
-          "apps/eleven-sixteen/src/assets"
+          "apps/11sixteen/src/favicon.ico",
+          "apps/11sixteen/src/assets"
         ],
-        "styles": ["apps/eleven-sixteen/src/styles.scss"],
+        "styles": ["apps/11sixteen/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "eleven-sixteen:build:production"
+          "browserTarget": "11sixteen:build:production"
         },
         "development": {
-          "browserTarget": "eleven-sixteen:build:development"
+          "browserTarget": "11sixteen:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "eleven-sixteen:build"
+        "browserTarget": "11sixteen:build"
       }
     },
     "lint": {
@@ -72,8 +72,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/eleven-sixteen/**/*.ts",
-          "apps/eleven-sixteen/**/*.html"
+          "apps/11sixteen/**/*.ts",
+          "apps/11sixteen/**/*.html"
         ]
       }
     },
@@ -81,7 +81,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/eleven-sixteen/jest.config.ts",
+        "jestConfig": "apps/11sixteen/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -94,7 +94,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "eleven-sixteen:build"
+        "buildTarget": "11sixteen:build"
       }
     }
   }

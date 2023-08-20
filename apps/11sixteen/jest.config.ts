@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'eleven-sixteen',
+  displayName: '11sixteen',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/eleven-sixteen',
+  coverageDirectory: '../../coverage/apps/11sixteen',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

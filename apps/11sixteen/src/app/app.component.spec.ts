@@ -16,13 +16,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome eleven-sixteen'
+      'Welcome 11sixteen'
     );
   });
 
-  it(`should have as title 'eleven-sixteen'`, () => {
+  it(`should have as title '11sixteen'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('eleven-sixteen');
+    expect(app.title).toEqual('11sixteen');
   });
 });
