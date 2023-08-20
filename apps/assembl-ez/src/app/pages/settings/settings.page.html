@@ -1,0 +1,74 @@
+<app-page-header-component
+  *ngIf="[viewState.EDIT_BASICS, viewState.EDIT_BUS_BASICS, viewState.EDIT_BUS_CONTACTS].includes(currentViewState)"
+  [header]="'Edit Profile'"
+></app-page-header-component>
+
+<div [ngSwitch]="currentViewState">
+  <app-settings-menu-screen
+    *ngSwitchCase="viewState.MENU"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-settings-menu-screen>
+
+  <app-view-profile-screen
+    *ngSwitchCase="viewState.VIEW_PROFILE"
+    [profile]="profile"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-view-profile-screen>
+
+  <app-basic-details-screen
+    *ngSwitchCase="viewState.EDIT_BASICS"
+    [currentValues]="profile"
+    (formSubmitted)="onProfileUpdated($event)"
+    (editCancelled)="onUpdateCancelled()"
+  ></app-basic-details-screen>
+
+  <app-business-details-screen
+    *ngSwitchCase="viewState.EDIT_BUS_BASICS"
+    [currentValues]="profile"
+    (formSubmitted)="onProfileUpdated($event)"
+    (editCancelled)="onUpdateCancelled()"
+  ></app-business-details-screen>
+
+  <app-contact-details-screen
+    *ngSwitchCase="viewState.EDIT_BUS_CONTACTS"
+    [currentValues]="profile"
+    (formSubmitted)="onProfileUpdated($event)"
+    (editCancelled)="onUpdateCancelled()"
+  ></app-contact-details-screen>
+
+  <app-passwords-menu-screen
+    *ngSwitchCase="viewState.PASSWORDS_MENU"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-passwords-menu-screen>
+
+  <app-personal-password-screen
+    *ngSwitchCase="viewState.EDIT_PERSONAL_PASSWORD"
+    (formSubmitted)="onPersonalPasswordChange($event)"
+    (isPasswordMismatched)="onPasswordMismatch()"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-personal-password-screen>
+
+  <app-agent-password-screen
+    *ngSwitchCase="viewState.EDIT_AGENT_PASSWORD"
+    (formSubmitted)="onAgentPasswordChange($event)"
+    (viewStateSelected)="onViewStateSelected($event)"
+    (isPasswordMismatched)="onPasswordMismatch()"
+  ></app-agent-password-screen>
+
+  <app-feature-flags-screen
+    *ngSwitchCase="viewState.FEATURE_FLAGS"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-feature-flags-screen>
+
+  <app-warning-modal
+    *ngIf="isWarning"
+    [warningConfig]="warnigConfig"
+    (proceed)="isWarning = false"
+  ></app-warning-modal>
+
+  <app-notifications-modal
+    *ngIf="isNotifying"
+    [notificationConfig]="notificationConfig"
+    (proceed)="onNotificationProceed()"
+  ></app-notifications-modal>
+</div>

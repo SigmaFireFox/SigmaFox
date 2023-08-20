@@ -1,0 +1,166 @@
+<form [formGroup]="form" (change)="onFormChange()" (ngSubmit)="onSubmit()">
+  <div *ngIf="formConfig.formTitle" class="form-title">
+    {{ formConfig.formTitle }}
+  </div>
+  <div
+    class="fields-container"
+    *ngFor="let field of formConfig.fields; let index = index"
+    [ngSwitch]="field.fieldType"
+  >
+    <p
+      *ngIf="
+        ![fieldType.OPT_OUT, fieldType.FIELD_GROUP_TITLE].includes(
+          field.fieldType
+        )
+      "
+      [ngClass]="
+        [fieldType.CHECKBOX].includes(field.fieldType)
+          ? 'large-field-title'
+          : 'standard-field-title'
+      "
+    >
+      {{ field.fieldDisplay }}
+    </p>
+    <div
+      class="center-spacer-gap"
+      *ngIf="![fieldType.OPT_OUT, fieldType.RADIO].includes(field.fieldType)"
+    ></div>
+
+    <div class="large-field-input" *ngSwitchCase="fieldType.INPUT_GENERAL">
+      <input
+        type="text"
+        formControlName="{{ field.fieldName }}"
+        [ngModel]="form.controls[field.fieldName].value"
+      />
+    </div>
+
+    <div class="password-input" *ngSwitchCase="fieldType.PASSWORD">
+      <mat-icon (click)="toggleField(index)">remove_red_eye</mat-icon>
+      <input
+        *ngIf="hiddenFields[index]"
+        type="password"
+        formControlName="{{ field.fieldName }}"
+        [ngModel]="form.controls[field.fieldName].value"
+      />
+      <input
+        *ngIf="!hiddenFields[index]"
+        type="text"
+        formControlName="{{ field.fieldName }}"
+        [ngModel]="form.controls[field.fieldName].value"
+      />
+    </div>
+
+    <div class="field-input" *ngSwitchCase="fieldType.INPUT_DECIMAL_NUMBER">
+      <input
+        type="text"
+        formControlName="{{ field.fieldName }}"
+        [ngModel]="form.controls[field.fieldName].value"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+      />
+    </div>
+
+    <div class="field-input" *ngSwitchCase="fieldType.INPUT_WHOLE_NUMBER">
+      <input
+        type="text"
+        formControlName="{{ field.fieldName }}"
+        [ngModel]="form.controls[field.fieldName].value"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+      />
+    </div>
+
+    <div class="field-select" *ngSwitchCase="fieldType.SELECT">
+      <mat-select
+        class="field-select"
+        formControlName="{{ field.fieldName }}"
+        (selectionChange)="onFormChange()"
+      >
+        <mat-option
+          *ngFor="let option of field.options"
+          value="{{ option.value }}"
+        >
+          {{ option.display }}
+        </mat-option>
+      </mat-select>
+    </div>
+
+    <div class="field-select" *ngSwitchCase="fieldType.MULTI_SELECT">
+      <mat-select
+        class="field-select"
+        formControlName="{{ field.fieldName }}"
+        (selectionChange)="onFormChange()"
+        multiple
+      >
+        <mat-option
+          *ngFor="let option of field.options"
+          value="{{ option.value }}"
+          >{{ option.display }}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <div class="field-radio" *ngSwitchCase="fieldType.RADIO">
+      <mat-radio-group
+        class="field-radio-group"
+        formControlName="{{ field.fieldName }}"
+        (change)="onFormChange()"
+      >
+        <mat-radio-button
+          *ngFor="let option of field.options"
+          value="{{ option.value }}"
+          [checked]="field.defaultValue === option.value"
+          >{{ option.display }}</mat-radio-button
+        >
+      </mat-radio-group>
+      <div class="right-spacer-gap"></div>
+    </div>
+
+    <div class="field-checkbox" *ngSwitchCase="fieldType.CHECKBOX">
+      <mat-checkbox
+        formControlName="{{ field.fieldName }}"
+        (change)="onFormChange()"
+      ></mat-checkbox>
+    </div>
+
+    <div *ngSwitchCase="fieldType.FIELD_GROUP_TITLE" class="field-group-title">
+      <p>{{ field.fieldDisplay }}</p>
+    </div>
+
+    <div *ngSwitchCase="fieldType.OPT_OUT" class="field-opt-out">
+      <div
+        [ngClass]="
+          form.value[field.fieldName]
+            ? 'field-opt-out-major'
+            : 'field-opt-out-minor'
+        "
+      >
+        <mat-checkbox
+          formControlName="{{ field.fieldName }}"
+          (change)="onFormChange()"
+        ></mat-checkbox>
+        <p (click)="toggleOptOut(field.fieldName)">
+          {{ field.fieldDisplay }}
+        </p>
+      </div>
+    </div>
+
+    <div class="field-checkbox" *ngSwitchCase="fieldType.SLIDE_TOGGLE">
+      <mat-slide-toggle
+        formControlName="{{ field.fieldName }}"
+        (change)="onFormChange()"
+      ></mat-slide-toggle>
+    </div>
+  </div>
+  <div class="form-button-container">
+    <button *ngIf="validForm" class="menu-button-primary-large" type="submit">
+      {{ formConfig.proceedText }}
+    </button>
+    <button
+      *ngIf="formConfig.canCancel"
+      class="menu-button-secondary-large"
+      type="button"
+      (click)="onFormCancelled()"
+    >
+      Cancel
+    </button>
+  </div>
+</form>
