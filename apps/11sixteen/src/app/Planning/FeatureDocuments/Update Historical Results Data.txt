@@ -1,0 +1,45 @@
+Feature:
+Update Historical Results Data
+
+Description:
+This feature when run will got through all the monitored leagues, determine if there are any results missing,
+run the available API calls and try to update the results data where possible
+
+Step in process
+1 Determine the number of missing fixtures per monitored league, per season
+
+    1.1 Build a list of "monitored leagues"
+        1.1.1 Open the "leagues" collection
+        1.1.2 Filter "leagues" collection where [monitored] = True
+        1.1.3 Return "monitored_leagues" object (all available data in "leagues" collection for each "monitored
+              league" )
+
+    1.2 Determine the number of available fixture results in "football_results" collection per "monitored league", per
+        season
+        1.1.1.1 Structure the "available_fixtures" object
+
+        1.1.2.2 Per league in the "monitored_leagues" object
+                  2.2.1 Open the "football_results" collection
+                  2.2.2 Perform an aggregation on the "football_results" collection that:
+                        2.2.2.1 Filters ($match) by country and league name
+                        2.2.2.2 Groups the results by season
+                        2.2.2.3 Counts the documents per season grouping
+                        2.2.2.4 Sorts the groups in order (ascending)
+
+        1.1.3 Determine the number of teams per league per season
+
+
+
+4 Per league:
+    Determine the APIs that can be called
+
+    4.1 Perform the available API calls
+
+    4.2 Per API response:
+        4.2.1 Save the call response to a txt file
+        4.2.2 Save that file to Firebase storage
+        4.2.3 Per fixture in the API response:
+            4.2.3.1 Check if the result is already in the DB, If not:
+                4.3.1.1.1 Add that result to the DB
+                4.3.1.1.2 Add the document referance to the change log object
+
