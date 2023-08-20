@@ -1,0 +1,33 @@
+{
+  "name": "eleven-sixteen-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/eleven-sixteen-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/eleven-sixteen-e2e/cypress.config.ts",
+        "devServerTarget": "eleven-sixteen:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "eleven-sixteen:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "eleven-sixteen:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/eleven-sixteen-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["eleven-sixteen"]
+}
