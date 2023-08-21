@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import {
   MenuOption,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
+} from '../../../app/interfaces/menu-screen.interface';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-menu-component',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],

@@ -4,17 +4,19 @@ import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { AuthenticationService } from 'app/services/authentication-service.service';
-import { MainPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { FeatureFlagsService } from 'app/services/feature-flags.service';
-import { FlagData } from 'app/interfaces/api.interface';
+} from '../../../app/interfaces/menu-screen.interface';
+import { AuthenticationService } from '../../../app/services/authentication-service.service';
+import { MainPageViewState as ViewState } from '../../../app/enums/viewstates.enum';
+import { FeatureFlagsService } from '../../../app/services/feature-flags.service';
+import { FlagData } from '../../../app/interfaces/api.interface';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-main-page',
   templateUrl: './main.page.html',
   styleUrls: ['./main.page.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class MainPage {
   menuOptions: MenuOption[] = [
     {
@@ -67,7 +69,7 @@ export class MainPage {
   }
 
   private addFeatureFlagedMenuOptions() {
-    let flags: FlagData = this.featureFlagsService.getFlags();
+    const flags: FlagData = this.featureFlagsService.getFlags();
     if (flags.products) {
       this.menuOptions.splice(2, 0, {
         style: MenuOptionStyle.PRIMARY,

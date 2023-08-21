@@ -1,15 +1,17 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
+import { FormFieldType } from '../../../../../../../app/enums/form.eum';
 import {
   FormConfig,
   FormFieldConfig,
-} from 'app/interfaces/form-screen.interface';
+} from '../../../../../../../app/interfaces/form-screen.interface';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-contact-details-screen',
   templateUrl: './contact-details.screen.html',
   styleUrls: ['./contact-details.screen.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class ContactDetailsScreen {
   @Input() isFirstTimeRegistration = false;
   @Input() currentValues: { [key: string]: string } = {};
@@ -22,6 +24,7 @@ export class ContactDetailsScreen {
 
   isPrimaryContactSelected = true;
 
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
   ngOnInit() {
     this.opttableFields = {
       companyEmail: {
@@ -160,7 +163,7 @@ export class ContactDetailsScreen {
   private removedOptedOutFields(formValue: {
     [key: string]: string | boolean;
   }) {
-    let optedOutFields: string[] = [];
+    const optedOutFields: string[] = [];
     this.contactDetailsFormConfig.fields.forEach((field) => {
       if (
         field.fieldType === FormFieldType.OPT_OUT &&
@@ -182,12 +185,12 @@ export class ContactDetailsScreen {
   }
 
   private addOptedInFields(formValue: { [key: string]: string | boolean }) {
-    let listOfFieldInForm: string[] = [];
+    const listOfFieldInForm: string[] = [];
     this.contactDetailsFormConfig.fields.forEach((field) => {
       listOfFieldInForm.push(field.fieldName);
     });
 
-    let missingOptedInFields: { fieldName: string; index: number }[] = [];
+    const missingOptedInFields: { fieldName: string; index: number }[] = [];
     this.contactDetailsFormConfig.fields.forEach((field, index) => {
       if (
         field.fieldType === FormFieldType.OPT_OUT &&

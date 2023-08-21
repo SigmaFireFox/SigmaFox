@@ -1,31 +1,33 @@
 import { Component } from '@angular/core';
-import { LeadsPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { FormFieldOption } from 'app/interfaces/form-screen.interface';
+import { LeadsPageViewState as ViewState } from '../../../app/enums/viewstates.enum';
+import { FormFieldOption } from '../../../app/interfaces/form-screen.interface';
 import {
   NotificationConfig,
   NotificationType,
   Notification,
-} from 'app/modals/notifications/notifications.modal';
+} from '../../../app/modals/notifications/notifications.modal';
 import {
   Warning,
   WarningConfig,
   WarningType,
-} from 'app/modals/warning/warning.modal';
-import { AgentService } from 'app/services/agent.service';
-import { AuthenticationService } from 'app/services/authentication-service.service';
-import { LeadsService } from 'app/services/leads.service';
-import { LoadingService } from 'app/services/loading.service';
+} from '../../../app/modals/warning/warning.modal';
+import { AgentService } from '../../../app/services/agent.service';
+import { AuthenticationService } from '../../../app/services/authentication-service.service';
+import { LeadsService } from '../../../app/services/leads.service';
+import { LoadingService } from '../../../app/services/loading.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-leads-page',
   templateUrl: './leads.page.html',
   styleUrls: ['./leads.page.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class LeadsPage {
   viewState = ViewState;
   currentViewState = ViewState.MENU;
 
-  leads: { [key: string]: any } = {};
+  leads: { [key: string]: unknown } = {};
   lead: { [key: string]: string } = {};
   assignToOptions: FormFieldOption[] = [];
 
@@ -44,7 +46,7 @@ export class LeadsPage {
   onLeadAdded(formValue: { [key: string]: string }) {
     this.loadingService.setLoading('Adding lead');
     this.leadService.addLead(formValue).then(
-      async (success) => {
+      async () => {
         this.notificationConfig = {
           type: NotificationType.LEAD,
           notification: Notification.LEAD_ADDED,
@@ -54,7 +56,7 @@ export class LeadsPage {
         await this.getUpdatedLeads();
         this.currentViewState = ViewState.VIEW_ALL;
       },
-      (error) => {
+      () => {
         this.loadingService.cancelLoading();
         this.warnigConfig = {
           type: WarningType.LEADS,
@@ -69,7 +71,7 @@ export class LeadsPage {
     this.loadingService.setLoading('Updating lead');
     formValue['id'] = this.lead['id'];
     this.leadService.editLead(formValue).then(
-      async (success) => {
+      async () => {
         this.notificationConfig = {
           type: NotificationType.LEAD,
           notification: Notification.LEAD_EDITED,
@@ -79,7 +81,7 @@ export class LeadsPage {
         await this.getUpdatedLeads();
         this.currentViewState = ViewState.VIEW_ALL;
       },
-      (error) => {
+      () => {
         this.loadingService.cancelLoading();
         this.warnigConfig = {
           type: WarningType.LEADS,
@@ -91,8 +93,8 @@ export class LeadsPage {
   }
 
   onLeadClicked(index: number) {
-    let leadRefs = Object.values(this.leads);
-    this.lead = leadRefs[index];
+    const leadRefs = Object.values(this.leads);
+    this.lead = leadRefs[index] as { [key: string]: string };
     Object.keys(this.leads).forEach((key) => {
       if (JSON.stringify(this.leads[key]) === JSON.stringify(leadRefs[index])) {
         this.lead['id'] = key;
@@ -123,9 +125,10 @@ export class LeadsPage {
   private async getUpdatedLeads(): Promise<void> {
     await this.leadService.getLeads().then(
       async (leads) => {
-        this.leads = leads;
+        this.leads = leads as { [key: string]: string };
       },
-      (error) => {}
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      () => {}
     );
   }
 
@@ -146,7 +149,8 @@ export class LeadsPage {
       async (agentsList) => {
         this.assignToOptions = this.assignToOptions.concat(agentsList);
       },
-      async (error) => {}
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      async () => {}
     );
   }
 }

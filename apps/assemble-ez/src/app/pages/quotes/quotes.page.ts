@@ -1,22 +1,27 @@
 import { Component } from '@angular/core';
-import { QuotePageViewState as ViewState } from 'app/enums/viewstates.enum';
+import { QuotePageViewState as ViewState } from '../../../app/enums/viewstates.enum';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { QuoteResponse, QuotesService } from 'app/services/quotes.service';
+} from '../../../app/interfaces/menu-screen.interface';
+import {
+  QuoteResponse,
+  QuotesService,
+} from '../../../app/services/quotes.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-quotes-page',
   templateUrl: './quotes.page.html',
   styleUrls: ['./quotes.page.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class QuotesPage {
   viewState = ViewState;
   currentViewState: ViewState = ViewState.PRODUCT_SELECT;
   quoteResponse: QuoteResponse | undefined;
-  quoteParams = {} as any;
+  quoteParams = {} as unknown;
   menuOptions: MenuOption[] = [
     {
       style: MenuOptionStyle.SECONDARY,
@@ -27,7 +32,7 @@ export class QuotesPage {
 
   constructor(private quotesService: QuotesService) {}
 
-  onProductSelectFormSubmitted(formValue: any) {
+  onProductSelectFormSubmitted(formValue: unknown) {
     this.quoteParams = formValue;
     this.currentViewState = ViewState.PRODUCT_MEASUREMENTS;
   }
@@ -45,8 +50,8 @@ export class QuotesPage {
   }
 
   private setSecondaryDependacies() {
-    let projection = parseInt(this.quoteParams['projection']) / 1000;
-    let width = parseInt(this.quoteParams['width']) / 1000;
+    const projection = parseInt(this.quoteParams['projection']) / 1000;
+    const width = parseInt(this.quoteParams['width']) / 1000;
 
     this.quoteParams['area'] = (projection * width).toString();
     this.quoteParams['perimeter'] = ((projection + width) * 2).toString();

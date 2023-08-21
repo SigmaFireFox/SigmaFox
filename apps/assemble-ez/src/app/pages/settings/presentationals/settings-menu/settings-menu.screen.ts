@@ -3,16 +3,18 @@ import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { SettingsPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { UserInfoService } from 'app/services/user-info.service';
-import { UserInfo } from 'app/interfaces/api.interface';
+} from '../../../../../app/interfaces/menu-screen.interface';
+import { SettingsPageViewState as ViewState } from '../../../../../app/enums/viewstates.enum';
+import { UserInfoService } from '../../../../../app/services/user-info.service';
+import { UserInfo } from '../../../../../app/interfaces/api.interface';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-settings-menu-screen',
   templateUrl: './settings-menu.screen.html',
   styleUrls: ['./settings-menu.screen.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class SettingsMenuScreen {
   @Output() viewStateSelected = new EventEmitter<number>();
 
@@ -46,7 +48,7 @@ export class SettingsMenuScreen {
   }
 
   private addFeatureFlagedMenuOptions() {
-    let profile: UserInfo = this.userInfoService.getUserInfo();
+    const profile: UserInfo = this.userInfoService.getUserInfo();
     if (profile.isAlphaUser) {
       this.menuOptions.splice(2, 0, {
         style: MenuOptionStyle.PRIMARY,

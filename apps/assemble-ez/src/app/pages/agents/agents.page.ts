@@ -1,33 +1,38 @@
 import { Component } from '@angular/core';
-import { AgentPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { AgentProfile, AgentService } from 'app/services/agent.service';
-import { LoadingService } from 'app/services/loading.service';
-import { LeadsService } from 'app/services/leads.service';
+import { AgentPageViewState as ViewState } from '../../../app/enums/viewstates.enum';
+import {
+  AgentProfile,
+  AgentService,
+} from '../../../app/services/agent.service';
+import { LoadingService } from '../../../app/services/loading.service';
+import { LeadsService } from '../../../app/services/leads.service';
 import {
   Notification,
   NotificationConfig,
   NotificationType,
-} from 'app/modals/notifications/notifications.modal';
+} from '../../../app/modals/notifications/notifications.modal';
 import {
   Warning,
   WarningConfig,
   WarningType,
-} from 'app/modals/warning/warning.modal';
-import { UserInfo } from 'app/interfaces/api.interface';
-import { UserInfoService } from 'app/services/user-info.service';
+} from '../../../app/modals/warning/warning.modal';
+import { UserInfo } from '../../../app/interfaces/api.interface';
+import { UserInfoService } from '../../../app/services/user-info.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-agents-page',
   templateUrl: './agents.page.html',
   styleUrls: ['./agents.page.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class AgentsPage {
   viewState = ViewState;
   currentViewState = ViewState.VIEW;
-  agents: { [key: string]: any } = {};
+  agents: { [key: string]: unknown } = {};
   agentProfile = {} as AgentProfile;
-  agentLeads: { [key: string]: any } = {};
-  currentValues: { [key: string]: any } = {};
+  agentLeads: { [key: string]: unknown } = {};
+  currentValues: { [key: string]: unknown } = {};
   notificationConfig: NotificationConfig | undefined;
   isNotifying = false;
   warnigConfig: WarningConfig | undefined;
@@ -50,11 +55,11 @@ export class AgentsPage {
     agent.contactNumber = '+27' + parseInt(agent.contactNumber).toString();
     this.loadingService.setLoading('Adding agent');
     await this.agentService.addAgent(agent).then(
-      (success) => {
+      () => {
         // this.emailsService.newAgentEmail();
         this.loadingService.cancelLoading();
       },
-      (error) => {
+      () => {
         this.loadingService.cancelLoading();
       }
     );
@@ -69,10 +74,10 @@ export class AgentsPage {
     agent.id = this.agentProfile.id;
     this.loadingService.setLoading('Updating agent');
     await this.agentService.editAgent(agent).then(
-      (success) => {
+      () => {
         this.loadingService.cancelLoading();
       },
-      (error) => {
+      () => {
         this.loadingService.cancelLoading();
       }
     );
@@ -87,7 +92,9 @@ export class AgentsPage {
   }
 
   onRequestToEdit() {
-    this.currentValues = this.agentProfile;
+    this.currentValues = this.agentProfile as unknown as {
+      [key: string]: string;
+    };
     this.currentViewState = ViewState.EDIT;
   }
 
@@ -95,11 +102,11 @@ export class AgentsPage {
     if (viewState === ViewState.ADD) {
       this.loadingService.setLoading('Checking for agent password');
       this.agentService.getAgentDefaultPassword().then(
-        (agentDefaultPassword) => {
+        () => {
           this.currentViewState = viewState;
           this.loadingService.cancelLoading();
         },
-        (error) => {
+        () => {
           this.notificationConfig = {
             type: NotificationType.REQUIRES_AGENT_PASSWORD,
             notification: Notification.REQUIRES_AGENT_PASSWORD,
@@ -121,7 +128,7 @@ export class AgentsPage {
         agentDefaultPassword: formValue['newPassword'],
       } as UserInfo)
       .then(
-        async (success) => {
+        async () => {
           this.loadingService.cancelLoading();
           this.notificationConfig = {
             type: NotificationType.CHANGE_PASSWORD,
@@ -130,7 +137,7 @@ export class AgentsPage {
           this.isNotifying = true;
           this.currentViewState = ViewState.ADD;
         },
-        async (error) => {
+        async () => {
           this.loadingService.cancelLoading();
         }
       );
@@ -149,8 +156,8 @@ export class AgentsPage {
   }
 
   private setAgentProfile(index: number) {
-    let agentRefs = Object.values(this.agents);
-    this.agentProfile = agentRefs[index];
+    const agentRefs = Object.values(this.agents);
+    this.agentProfile = agentRefs[index] as AgentProfile;
     Object.keys(this.agents).forEach((key) => {
       if (
         JSON.stringify(this.agents[key as keyof AgentProfile]) ===
@@ -164,7 +171,10 @@ export class AgentsPage {
 
   private async setAgentLeads() {
     this.agentLeads = {};
-    let leads: { [key: string]: any } = await this.leadsService.getLeads();
+    const leads = (await this.leadsService.getLeads()) as {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      [key: string]: any;
+    };
     Object.keys(leads).forEach((key) => {
       if (leads[key]['assignedTo'] === this.agentProfile.id) {
         this.agentLeads[key] = leads[key];
@@ -177,7 +187,8 @@ export class AgentsPage {
       async (agents) => {
         this.agents = agents;
       },
-      (error) => {}
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      () => {}
     );
   }
 }
