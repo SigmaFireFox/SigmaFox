@@ -1,0 +1,35 @@
+.screen-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.accordion-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+mat-expansion-panel,
+mat-accordion {
+  width: 100%;
+}
+
+mat-accordion {
+  margin-bottom: 5px;
+}
+
+mat-expansion-panel {
+  margin: 5px 0;
+}
+
+mat-panel-title {
+  min-width: 70%;
+}

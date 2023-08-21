@@ -1,0 +1,30 @@
+<div class="detail-presentation-container">
+  <div *ngIf="detailConfig.title" class="title">{{ detailConfig.title }}</div>
+  <div
+    [ngClass]="
+      detailConfig.inExpansionPanel
+        ? 'wide-results-container'
+        : 'narrow-results-container'
+    "
+    *ngFor="let line of detailConfig.lines"
+  >
+    <div *ngIf="line.oneliner" class="oneliner">
+      <div class="oneline-header">{{ line.header }}</div>
+      <div *ngIf="line.isLink" class="oneline-detail">
+        <a href="{{ line.linkAddress }}" target="_blank">{{ line.detail }}</a>
+      </div>
+      <div *ngIf="!line.isLink">
+        <div>{{ line.detail }}</div>
+      </div>
+    </div>
+    <div *ngIf="!line.oneliner">
+      <div class="description-line">{{ line.header }}</div>
+      <div *ngIf="line.isLink">
+        <a href="{{ line.linkAddress }}" target="_blank">{{ line.detail }}</a>
+      </div>
+      <div *ngIf="!line.isLink">
+        <div>{{ line.detail }}</div>
+      </div>
+    </div>
+  </div>
+</div>
