@@ -1,0 +1,34 @@
+{
+  "name": "assemble-ez-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/assemble-ez-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/assemble-ez-e2e/cypress.json",
+        "devServerTarget": "assemble-ez:serve:development",
+        "testingType": "e2e",
+        "tsConfig": "apps/assemble-ez-e2e/tsconfig.json"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "assemble-ez:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "assemble-ez:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/assemble-ez-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["assemble-ez"]
+}
