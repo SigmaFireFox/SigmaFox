@@ -1,18 +1,23 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { EntityType, FormFieldType } from 'app/enums/form.eum';
+import {
+  EntityType,
+  FormFieldType,
+} from '../../../../../../../app/enums/form.eum';
 import {
   FormConfig,
   FormFieldConfig,
-} from 'app/interfaces/form-screen.interface';
+} from '../../../../../../../app/interfaces/form-screen.interface';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-business-details-screen',
   templateUrl: './business-details.screen.html',
   styleUrls: ['./business-details.screen.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class BusinessDetailsScreen {
   @Input() isFirstTimeRegistration = false;
-  @Input() currentValues: { [key: string]: string } = {};
+  @Input() currentValues: { [key: string]: unknown } = {};
   @Output() formSubmitted = new EventEmitter<{ [key: string]: string }>();
   @Output() editCancelled = new EventEmitter<void>();
 
@@ -25,6 +30,7 @@ export class BusinessDetailsScreen {
   tradingUnderLegalNameField = {} as FormFieldConfig;
   businessDetailsFormConfig = {} as FormConfig;
 
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
   ngOnInit() {
     this.opertateAsField = {
       fieldDisplay: 'How do you operate',
@@ -77,8 +83,10 @@ export class BusinessDetailsScreen {
       fields: [this.opertateAsField],
       proceedText: 'Proceed',
     };
-    this.setFormStage2(this.currentValues);
-    this.onBusinessDetailsForChanged(this.currentValues);
+    this.setFormStage2(this.currentValues as { [key: string]: string });
+    this.onBusinessDetailsForChanged(
+      this.currentValues as { [key: string]: string }
+    );
   }
 
   onBusinessDetailsFormSubmitted(formValue: { [key: string]: string }) {

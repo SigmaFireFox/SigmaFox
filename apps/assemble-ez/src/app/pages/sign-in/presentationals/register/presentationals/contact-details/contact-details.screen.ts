@@ -14,7 +14,7 @@ import {
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class ContactDetailsScreen {
   @Input() isFirstTimeRegistration = false;
-  @Input() currentValues: { [key: string]: string } = {};
+  @Input() currentValues: { [key: string]: unknown } = {};
   @Output() formSubmitted = new EventEmitter<{ [key: string]: string }>();
   @Output() editCancelled = new EventEmitter<void>();
 
@@ -129,7 +129,9 @@ export class ContactDetailsScreen {
       ],
       proceedText: 'Proceed',
     };
-    this.onContacDetailsFormChanged(this.currentValues);
+    this.onContacDetailsFormChanged(
+      this.currentValues as { [key: string]: string }
+    );
   }
 
   onContactDetailsFormSubmitted(formValue: { [key: string]: string }) {

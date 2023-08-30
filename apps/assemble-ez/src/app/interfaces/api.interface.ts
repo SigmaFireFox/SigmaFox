@@ -10,6 +10,7 @@ export interface ProfileData {
 }
 
 export interface UserInfo {
+  [key: string]: unknown;
   // Personal details
   firstName: string;
   lastName: string;

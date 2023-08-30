@@ -15,7 +15,7 @@ export interface FormFieldConfig {
   fieldName: string;
   fieldDisplay: string;
   fieldType: FormFieldType;
-  defaultValue?: number | boolean | string;
+  defaultValue?: number | boolean | string | unknown;
   options?: FormFieldOption[];
   optsOutOf?: string;
 }

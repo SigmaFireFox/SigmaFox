@@ -1,14 +1,19 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ExpansionPanelContentType } from 'app/enums/expansion-table.enum';
-import { ExpansionPanelConfig } from 'app/interfaces/expansion-table.interface';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
+
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ExpansionPanelContentType } from 'apps/assemble-ez/src/app/enums/expansion-table.enum';
+import { EntityType } from 'apps/assemble-ez/src/app/enums/form.eum';
+import { SettingsPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { DetailPresentationLine } from 'apps/assemble-ez/src/app/interfaces/detail-presentation-component';
+import { ExpansionPanelConfig } from 'apps/assemble-ez/src/app/interfaces/expansion-table.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { SettingsPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { EntityType } from 'app/enums/form.eum';
-import { DetailPresentationLine } from 'app/interfaces/detail-presentation-component';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-view-profile-screen',
@@ -34,8 +39,6 @@ export class ViewProfileScreen implements OnInit {
       optionType: MenuOptionType.HOME,
     },
   ];
-
-  constructor() {}
 
   ngOnInit(): void {
     this.setUpScreen();
@@ -69,7 +72,7 @@ export class ViewProfileScreen implements OnInit {
   }
 
   private addBasics() {
-    let basicDetails: ExpansionPanelConfig = {
+    const basicDetails: ExpansionPanelConfig = {
       panelName: 'basicDetails',
       title: 'Basics details',
       contentType: ExpansionPanelContentType.DETAIL,
@@ -117,7 +120,7 @@ export class ViewProfileScreen implements OnInit {
       }
     }
 
-    let businessDetails: ExpansionPanelConfig = {
+    const businessDetails: ExpansionPanelConfig = {
       panelName: 'businessDetails',
       title: 'Business details',
       contentType: ExpansionPanelContentType.DETAIL,
@@ -154,7 +157,7 @@ export class ViewProfileScreen implements OnInit {
   }
 
   private addBusinessContactDetail() {
-    let businessContactDetails: ExpansionPanelConfig = {
+    const businessContactDetails: ExpansionPanelConfig = {
       panelName: 'businessContacts',
       title: 'Business contacts',
       contentType: ExpansionPanelContentType.DETAIL,

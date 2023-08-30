@@ -1,11 +1,5 @@
-import { HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { FormFieldOption } from 'app/interfaces/form-screen.interface';
-import { last } from 'rxjs';
-import {
-  AuthenticationService,
-  SignInDetails,
-} from './authentication-service.service';
+import { FormFieldOption } from '../../app/interfaces/form-screen.interface';
 import {
   CollectionType,
   DataManagementService,
@@ -24,12 +18,10 @@ export interface AgentProfile {
   providedIn: 'root',
 })
 export class AgentService {
-  constructor(
-    private authenticationService: AuthenticationService,
-    private dataManagementService: DataManagementService
-  ) {}
+  constructor(private dataManagementService: DataManagementService) {}
 
   getAgents(): Promise<{ [key: string]: AgentProfile }> {
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
       try {
         resolve(JSON.parse(sessionStorage['agents']));
@@ -40,9 +32,10 @@ export class AgentService {
   }
 
   async getAgentOptions(): Promise<FormFieldOption[]> {
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
       try {
-        let listOfAgents: FormFieldOption[] = [];
+        const listOfAgents: FormFieldOption[] = [];
         const agents = await this.getAgents();
         Object.keys(agents).forEach((id) => {
           listOfAgents.push({
@@ -60,6 +53,7 @@ export class AgentService {
   async addAgent(agent: AgentProfile): Promise<void> {
     const url = 'https://us-central1-assembl-ez.cloudfunctions.net/addAgent';
 
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
       await this.dataManagementService
         .postData(CollectionType.AGENT, url, agent)
@@ -68,7 +62,7 @@ export class AgentService {
             console.log(response);
             resolve();
           },
-          async (error) => {
+          async () => {
             reject();
           }
         );
@@ -78,22 +72,24 @@ export class AgentService {
   async editAgent(agent: AgentProfile): Promise<void> {
     const url = 'https://us-central1-assembl-ez.cloudfunctions.net/editAgent';
 
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
       await this.dataManagementService
         .postData(CollectionType.AGENT, url, agent)
         .then(
-          async (success) => {
+          async () => {
             resolve();
           },
-          async (error) => reject()
+          async () => reject()
         );
     });
   }
 
   getAgentDefaultPassword(): Promise<string> {
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve, reject) => {
       if (sessionStorage['userInfo']) {
-        let userInfo = JSON.parse(sessionStorage['userInfo']);
+        const userInfo = JSON.parse(sessionStorage['userInfo']);
         userInfo['agentDefaultPassword']
           ? resolve(userInfo['agentDefaultPassword'])
           : reject();
