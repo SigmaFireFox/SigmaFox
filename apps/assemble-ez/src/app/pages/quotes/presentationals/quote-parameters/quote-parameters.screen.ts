@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
-import { FormConfig } from 'app/interfaces/form-screen.interface';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { FormFieldType } from 'apps/assemble-ez/src/app/enums/form.eum';
+import { FormConfig } from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 
 @Component({
   selector: 'app-quote-parameters-screen',

@@ -1,14 +1,17 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormFieldType } from 'apps/assemble-ez/src/app/enums/form.eum';
 import {
-  FormConfig,
   FormFieldOption,
-} from 'app/interfaces/form-screen.interface';
+  FormConfig,
+} from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 import {
-  Product,
   ProductGroup,
   TestProductList,
-} from 'app/test-data/products.data';
+  Product,
+} from 'apps/assemble-ez/src/app/test-data/products.data';
 
 @Component({
   selector: 'app-product-select-screen',
@@ -56,8 +59,8 @@ export class ProductSelectScreen implements OnInit {
   };
 
   ngOnInit() {
-    let productGroups: ProductGroup[] = TestProductList;
-    let productsGroupsForSelection: FormFieldOption[] = [];
+    const productGroups: ProductGroup[] = TestProductList;
+    const productsGroupsForSelection: FormFieldOption[] = [];
     productGroups.forEach((productGroup) => {
       productsGroupsForSelection.push({
         display: productGroup.productGroupName,
@@ -106,14 +109,14 @@ export class ProductSelectScreen implements OnInit {
   }
 
   private getProductsFromProductGroup(selectedProductGroupName: string) {
-    let productGroups: ProductGroup[] = TestProductList;
+    const productGroups: ProductGroup[] = TestProductList;
     let selectedProductGroup = {} as ProductGroup;
     productGroups.forEach((productGroup) => {
       if (productGroup.productGroupName === selectedProductGroupName) {
         selectedProductGroup = productGroup;
       }
     });
-    let productOptions: FormFieldOption[] = [];
+    const productOptions: FormFieldOption[] = [];
     selectedProductGroup.products.forEach((product: Product) => {
       productOptions.push({
         display: product.productName,

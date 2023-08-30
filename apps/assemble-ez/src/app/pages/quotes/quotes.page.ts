@@ -6,6 +6,7 @@ import {
   MenuOptionType,
 } from '../../../app/interfaces/menu-screen.interface';
 import {
+  QuoteParams,
   QuoteResponse,
   QuotesService,
 } from '../../../app/services/quotes.service';
@@ -21,7 +22,7 @@ export class QuotesPage {
   viewState = ViewState;
   currentViewState: ViewState = ViewState.PRODUCT_SELECT;
   quoteResponse: QuoteResponse | undefined;
-  quoteParams = {} as unknown;
+  quoteParams = {} as { [key: string]: string };
   menuOptions: MenuOption[] = [
     {
       style: MenuOptionStyle.SECONDARY,
@@ -33,7 +34,7 @@ export class QuotesPage {
   constructor(private quotesService: QuotesService) {}
 
   onProductSelectFormSubmitted(formValue: unknown) {
-    this.quoteParams = formValue;
+    this.quoteParams = formValue as { [key: string]: string };
     this.currentViewState = ViewState.PRODUCT_MEASUREMENTS;
   }
 
@@ -45,7 +46,9 @@ export class QuotesPage {
 
   onQuoteParametersFormSubmitted(formValue: { [key: string]: string }) {
     this.quoteParams = { ...this.quoteParams, ...formValue };
-    this.quoteResponse = this.quotesService.generateQuote(this.quoteParams);
+    this.quoteResponse = this.quotesService.generateQuote(
+      this.quoteParams as unknown as QuoteParams
+    );
     this.currentViewState = ViewState.RESULTS;
   }
 

@@ -1,6 +1,9 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
-import { FormConfig } from 'app/interfaces/form-screen.interface';
+import { FormFieldType } from 'apps/assemble-ez/src/app/enums/form.eum';
+import { FormConfig } from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 
 @Component({
   selector: 'app-product-measurements-screen',

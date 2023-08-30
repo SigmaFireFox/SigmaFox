@@ -1,8 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ExpansionPanelContentType } from 'app/enums/expansion-table.enum';
-import { ExpansionPanelConfig } from 'app/interfaces/expansion-table.interface';
-import { ListConfig } from 'app/interfaces/list-screen.interface';
-import { QuoteResponse } from 'app/services/quotes.service';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, OnInit, Input } from '@angular/core';
+import { ExpansionPanelContentType } from 'apps/assemble-ez/src/app/enums/expansion-table.enum';
+import { ExpansionPanelConfig } from 'apps/assemble-ez/src/app/interfaces/expansion-table.interface';
+import { ListConfig } from 'apps/assemble-ez/src/app/interfaces/list-screen.interface';
+import { QuoteResponse } from 'apps/assemble-ez/src/app/services/quotes.service';
 
 @Component({
   selector: 'app-quote-results-screen',
@@ -47,7 +50,7 @@ export class QuoteResultsScreen implements OnInit {
   private setExpansionPanelsConfigs() {
     if (!this.quoteResponse) return;
     this.quoteResponse.quotedProducts.forEach((product) => {
-      let listOfComponents: string[][] = [];
+      const listOfComponents: string[][] = [];
       product.components.forEach((component) => {
         listOfComponents.push([
           component.componentName,
