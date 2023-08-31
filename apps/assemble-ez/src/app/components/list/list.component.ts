@@ -1,5 +1,6 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ListConfig } from 'app/interfaces/list-screen.interface';
+import { ListConfig } from '../../interfaces/list-screen.interface';
 
 @Component({
   selector: 'app-list-component',

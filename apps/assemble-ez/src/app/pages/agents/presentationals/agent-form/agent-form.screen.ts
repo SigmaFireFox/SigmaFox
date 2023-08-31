@@ -1,12 +1,15 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
-import { FormConfig } from 'app/interfaces/form-screen.interface';
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { FormFieldType } from 'apps/assemble-ez/src/app/enums/form.eum';
+import { AgentPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { FormConfig } from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { AgentPageViewState as ViewState } from 'app/enums/viewstates.enum';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-agent-form-screen',
@@ -14,7 +17,7 @@ import { AgentPageViewState as ViewState } from 'app/enums/viewstates.enum';
   styleUrls: ['./agent-form.screen.scss'],
 })
 export class AgentFormScreen {
-  @Input() currentValues: { [key: string]: string } = {};
+  @Input() currentValues: { [key: string]: unknown } = {};
   @Output() formSubmitted = new EventEmitter<{ [key: string]: string }>();
   @Output() viewStateSelected = new EventEmitter<number>();
 

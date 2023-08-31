@@ -1,14 +1,17 @@
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {
-  ChangeDetectorRef,
   Component,
-  EventEmitter,
-  Input,
   OnInit,
+  Input,
   Output,
+  EventEmitter,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { FormFieldType } from 'app/enums/form.eum';
-import { FormConfig } from 'app/interfaces/form-screen.interface';
+import { FormFieldType } from '../../enums/form.eum';
+import { FormConfig } from '../../interfaces/form-screen.interface';
 
 @Component({
   selector: 'app-form-component',
@@ -25,13 +28,13 @@ export class FormComponent implements OnInit {
     canProceed: false,
     proceedBlocked: false,
   };
-  @Input() currentValues: { [key: string]: string } = {};
+  @Input() currentValues: { [key: string]: any } = {};
   @Output() formSubmitted = new EventEmitter<any>();
   @Output() formChanged = new EventEmitter<any>();
   @Output() formCancelled = new EventEmitter<void>();
 
   fieldType = FormFieldType;
-  form = this.fb.group({});
+  form = this.fb.group({} as { [key: string]: any });
   hiddenFields = {} as { [key: number]: boolean };
 
   get validForm() {
@@ -41,7 +44,8 @@ export class FormComponent implements OnInit {
         // Complex logic required to test if multi-selector is empty
         if (this.form.controls[field.fieldName].value != null) {
           if (
-            Object.keys(this.form.controls[field.fieldName].value).length === 0
+            Object.keys((this.form.controls[field.fieldName] as any).value)
+              .length === 0
           ) {
             formValid = false;
           }
@@ -132,20 +136,20 @@ export class FormComponent implements OnInit {
   }
 
   private removeFormFields() {
-    let listOfFieldNames: string[] = [];
+    const listOfFieldNames: string[] = [];
     this.formConfig.fields.forEach((field) => {
       listOfFieldNames.push(field.fieldName);
     });
 
     Object.keys(this.form.controls).forEach((key) => {
       if (!listOfFieldNames.includes(key)) {
-        this.form.removeControl(key);
+        // this.form.removeControl(key);
       }
     });
   }
 
   private removeFromGroupTitles() {
-    let listOfFormGroupTitles: string[] = [];
+    const listOfFormGroupTitles: string[] = [];
     this.formConfig.fields.forEach((field) => {
       if (field.fieldType === FormFieldType.FIELD_GROUP_TITLE) {
         listOfFormGroupTitles.push(field.fieldName);
@@ -154,7 +158,7 @@ export class FormComponent implements OnInit {
 
     Object.keys(this.form.controls).forEach((key) => {
       if (listOfFormGroupTitles.includes(key)) {
-        this.form.removeControl(key);
+        // this.form.removeControl(key);
       }
     });
   }

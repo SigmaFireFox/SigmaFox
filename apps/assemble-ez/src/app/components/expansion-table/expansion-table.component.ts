@@ -1,6 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ExpansionPanelContentType } from 'app/enums/expansion-table.enum';
-import { ExpansionPanelConfig } from 'app/interfaces/expansion-table.interface';
+import { ExpansionPanelContentType } from '../../enums/expansion-table.enum';
+import { ExpansionPanelConfig } from '../../interfaces/expansion-table.interface';
 
 @Component({
   selector: 'app-expansion-table-component',
