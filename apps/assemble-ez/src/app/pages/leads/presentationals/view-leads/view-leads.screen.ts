@@ -1,12 +1,16 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ListConfig } from 'app/interfaces/list-screen.interface';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { LeadsPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { FormFieldOption } from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
+import { ListConfig } from 'apps/assemble-ez/src/app/interfaces/list-screen.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { LeadsPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { FormFieldOption } from 'app/interfaces/form-screen.interface';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-view-leads-screen',
@@ -53,7 +57,7 @@ export class ViewLeadsScreen implements OnInit {
   }
 
   private setleadListConfig() {
-    let agentDisplayNames = this.setAgentDisplayNames();
+    const agentDisplayNames = this.setAgentDisplayNames();
     if (Object.keys(this.leads).length === 0) {
       this.leadListConfig.title =
         'It seems that you have no leads as yet. Why not add a lead now';
@@ -72,12 +76,12 @@ export class ViewLeadsScreen implements OnInit {
     );
 
     Object.keys(this.leads).forEach((leadRef) => {
-      let lead = this.leads[leadRef] as {
+      const lead = this.leads[leadRef] as {
         name: string;
         email: string;
         assignedTo: string;
       };
-      let leadListItem: string[] = [];
+      const leadListItem: string[] = [];
       leadListItem.push(lead.name);
       leadListItem.push(agentDisplayNames[lead.assignedTo] || 'Unassigned');
       this.leadListConfig.lines.push(leadListItem);
@@ -85,7 +89,7 @@ export class ViewLeadsScreen implements OnInit {
   }
 
   private setAgentDisplayNames(): { [key: string]: string } {
-    let agentDisplayNames: { [key: string]: string } = {};
+    const agentDisplayNames: { [key: string]: string } = {};
     this.assignToOptions.forEach((agent) => {
       agentDisplayNames[agent.value] = agent.display;
     });

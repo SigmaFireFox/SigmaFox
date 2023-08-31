@@ -1,16 +1,20 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { ExpansionPanelContentType } from 'app/enums/expansion-table.enum';
-import { ExpansionPanelConfig } from 'app/interfaces/expansion-table.interface';
-import { ProductsPageViewState as ViewState } from 'app/enums/viewstates.enum';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, Output, EventEmitter } from '@angular/core';
+import { ExpansionPanelContentType } from 'apps/assemble-ez/src/app/enums/expansion-table.enum';
+import { ProductsPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { ExpansionPanelConfig } from 'apps/assemble-ez/src/app/interfaces/expansion-table.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 import {
   ComponentGroup,
   TestComponentList,
-} from 'app/test-data/components.data';
+} from 'apps/assemble-ez/src/app/test-data/components.data';
 
 @Component({
   selector: 'app-components-screen',
@@ -47,7 +51,7 @@ export class ComponentsPage {
     const testData: ComponentGroup = TestComponentList;
 
     Object.keys(testData).forEach((productGroup) => {
-      let fields: string[][] = [];
+      const fields: string[][] = [];
       testData[productGroup].forEach((product) => {
         fields.push([product.displayGeneral, product.price.toString()]);
       });
