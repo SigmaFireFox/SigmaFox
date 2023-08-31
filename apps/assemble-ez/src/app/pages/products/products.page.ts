@@ -1,10 +1,12 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
-import { ProductsPageViewState as ViewState } from 'app/enums/viewstates.enum';
+import { ProductsPageViewState as ViewState } from '../../enums/viewstates.enum';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
+} from '../../interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-products-page',

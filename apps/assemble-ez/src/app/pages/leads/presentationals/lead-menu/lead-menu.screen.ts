@@ -1,10 +1,12 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Output, EventEmitter } from '@angular/core';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { LeadsPageViewState as ViewState } from 'app/enums/viewstates.enum';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-lead-menu-screen',

@@ -1,16 +1,20 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { FormFieldType } from 'apps/assemble-ez/src/app/enums/form.eum';
+import { LeadsPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
 import {
-  FormConfig,
-  FormFieldConfig,
   FormFieldOption,
-} from 'app/interfaces/form-screen.interface';
+  FormFieldConfig,
+  FormConfig,
+} from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { LeadsPageViewState as ViewState } from 'app/enums/viewstates.enum';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-lead-form-screen',
@@ -98,7 +102,7 @@ export class LeadFormScreen {
   private removedOptedOutFields(formValue: {
     [key: string]: string | boolean;
   }) {
-    let optedOutFields: string[] = [];
+    const optedOutFields: string[] = [];
     this.newLeadFormConfig.fields.forEach((field) => {
       if (
         field.fieldType === FormFieldType.OPT_OUT &&
@@ -116,12 +120,12 @@ export class LeadFormScreen {
   }
 
   private addOptedInFields(formValue: { [key: string]: string | boolean }) {
-    let listOfFieldInForm: string[] = [];
+    const listOfFieldInForm: string[] = [];
     this.newLeadFormConfig.fields.forEach((field) => {
       listOfFieldInForm.push(field.fieldName);
     });
 
-    let missingOptedInFields: { fieldName: string; index: number }[] = [];
+    const missingOptedInFields: { fieldName: string; index: number }[] = [];
     this.newLeadFormConfig.fields.forEach((field, index) => {
       if (
         field.fieldType === FormFieldType.OPT_OUT &&

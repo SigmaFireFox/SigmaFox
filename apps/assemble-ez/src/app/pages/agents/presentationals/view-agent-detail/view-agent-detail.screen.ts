@@ -1,15 +1,20 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ExpansionPanelContentType } from 'apps/assemble-ez/src/app/enums/expansion-table.enum';
+import { AgentPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { DetailPresentationConfig } from 'apps/assemble-ez/src/app/interfaces/detail-presentation-component';
+import { ExpansionPanelConfig } from 'apps/assemble-ez/src/app/interfaces/expansion-table.interface';
 import {
-  MenuAction,
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { AgentPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { DetailPresentationConfig } from 'app/interfaces/detail-presentation-component';
-import { ExpansionPanelConfig } from 'app/interfaces/expansion-table.interface';
-import { ExpansionPanelContentType } from 'app/enums/expansion-table.enum';
-import { AgentProfile } from 'app/services/agent.service';
+  MenuAction,
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
+import { AgentProfile } from 'apps/assemble-ez/src/app/services/agent.service';
 
 @Component({
   selector: 'app-view-agent-detail-screen',

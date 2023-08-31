@@ -1,11 +1,15 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ListConfig } from 'app/interfaces/list-screen.interface';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AgentPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { ListConfig } from 'apps/assemble-ez/src/app/interfaces/list-screen.interface';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { AgentPageViewState as ViewState } from 'app/enums/viewstates.enum';
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-view-agents-screen',
@@ -37,8 +41,6 @@ export class ViewAgentsScreen implements OnInit {
       optionType: MenuOptionType.HOME,
     },
   ];
-
-  constructor() {}
 
   ngOnInit(): void {
     this.setAgentListConfig();
@@ -75,12 +77,12 @@ export class ViewAgentsScreen implements OnInit {
     );
 
     Object.keys(this.agents).forEach((agentRef) => {
-      let agent = this.agents[agentRef] as {
+      const agent = this.agents[agentRef] as {
         firstName: string;
         lastName: string;
         email: string;
       };
-      let agentListItem: string[] = [];
+      const agentListItem: string[] = [];
       agentListItem.push(agent.firstName + ' ' + agent.lastName);
       agentListItem.push(agent.email);
       this.agentsListConfig.lines.push(agentListItem);
