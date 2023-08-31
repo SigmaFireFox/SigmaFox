@@ -1,13 +1,18 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { LeadsPageViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
+import { DetailPresentationConfig } from 'apps/assemble-ez/src/app/interfaces/detail-presentation-component';
+import { FormFieldOption } from 'apps/assemble-ez/src/app/interfaces/form-screen.interface';
 import {
-  MenuAction,
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { LeadsPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { DetailPresentationConfig } from 'app/interfaces/detail-presentation-component';
-import { FormFieldOption } from 'app/interfaces/form-screen.interface';
+  MenuAction,
+} from 'apps/assemble-ez/src/app/interfaces/menu-screen.interface';
 
 export interface PageConfig {
   header: string;
@@ -53,7 +58,7 @@ export class ViewLeadDetailScreen {
       style: MenuOptionStyle.SECONDARY,
       display: 'Back to leads',
       optionType: MenuOptionType.VIEWSTATE,
-      viewState: ViewState.VIEW_ALL,
+      viewState: LeadsPageViewState.VIEW_ALL,
     },
   ];
 
@@ -66,7 +71,7 @@ export class ViewLeadDetailScreen {
   } as DetailPresentationConfig;
 
   ngOnInit() {
-    let agentDisplayNames = this.setAgentDisplayNames();
+    const agentDisplayNames = this.setAgentDisplayNames();
     this.leadDetailsConfig.title = this.lead['name'];
     if (this.lead['email']) {
       this.leadDetailsConfig.lines.push({
@@ -102,7 +107,7 @@ export class ViewLeadDetailScreen {
   }
 
   private setAgentDisplayNames(): { [key: string]: string } {
-    let agentDisplayNames: { [key: string]: string } = {};
+    const agentDisplayNames: { [key: string]: string } = {};
     this.assignToOptions.forEach((agent) => {
       agentDisplayNames[agent.value] = agent.display;
     });

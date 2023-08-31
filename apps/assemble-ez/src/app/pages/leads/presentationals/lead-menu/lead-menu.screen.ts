@@ -2,6 +2,7 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, Output, EventEmitter } from '@angular/core';
+import { LeadsPageViewState as ViewState } from 'apps/assemble-ez/src/app/enums/viewstates.enum';
 import {
   MenuOption,
   MenuOptionStyle,
