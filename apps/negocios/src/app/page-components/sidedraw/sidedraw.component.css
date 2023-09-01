@@ -1,0 +1,30 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  background: #003b57;
+  border-radius: 0px 5px 0px 0px;
+  width: 320px;
+  height: calc(100%);
+  color: #d1d6e0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.toggleButton {
+  min-width: 0;
+  width: 32px;
+  height: 56px;
+  background: #003b57;
+  border-radius: 0px 5px 5px 0px;
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d1d6e0;
+  font-size: 40px;
+  font-weight: 100;
+  border-width: 0;
+  padding: 0;
+}
