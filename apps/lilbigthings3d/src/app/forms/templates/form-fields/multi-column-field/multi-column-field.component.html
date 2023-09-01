@@ -1,0 +1,15 @@
+<div class="multi-column-field-container" *ngIf="field">
+  <div class="multi-column-field-label">{{ field.label }}</div>
+  <div
+    class="multi-column-field-column"
+    *ngFor="let column of field.multiColumnFieldSetting; let i = index"
+  >
+    <p>{{ column.label }}</p>
+    <input
+      [(ngModel)]="fieldValues[column.name.toLowerCase()]"
+      type="text"
+      (focus)="onFieldFocus(column.name.toLowerCase(), i)"
+      (blur)="onFieldBlur(column.name.toLowerCase(), i)"
+    />
+  </div>
+</div>

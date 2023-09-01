@@ -1,0 +1,31 @@
+<div class="form-line" *ngIf="field">
+  <div class="uploader-label">
+    {{ field.label }}
+  </div>
+  <input
+    class="fake-file-selector"
+    #designFileInput
+    type="file"
+    multiple
+    (change)="onImagesSelection($event)"
+  />
+  <button
+    class="file-selector-button"
+    #upload
+    (click)="designFileInput.click()"
+  >
+    Upload images
+  </button>
+</div>
+<div class="image-collection">
+  <div
+    *ngFor="let image of uploadedImagesData; let i = index"
+    class="image-container"
+  >
+    <img [src]="image.url" />
+    <div class="overlay">
+      <button (click)="deleteImage(i)">Delete</button>
+      <button (click)="setPrimaryImage(image, i)">Make primary</button>
+    </div>
+  </div>
+</div>

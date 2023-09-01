@@ -1,0 +1,8 @@
+<mat-card *ngIf="product" (click)="onProductcardClicked()">
+  <img class="primary-image" src="{{ product.image }}" alt="" />
+  <div class="detail-container">
+    <div class="title-container">{{ product.title }}</div>
+    <div class="price-container">R{{ product.price | number : "1.2-2" }}</div>
+  </div>
+  <div class="description-container">{{ product.description }}</div>
+</mat-card>

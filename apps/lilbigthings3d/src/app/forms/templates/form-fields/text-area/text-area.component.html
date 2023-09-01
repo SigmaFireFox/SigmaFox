@@ -1,0 +1,14 @@
+<div *ngIf="field">
+  <textarea
+    class="{{
+      field.type === formFieldType.InputTextShort
+        ? 'short-desc-area'
+        : 'long-desc-area'
+    }}"
+    [(ngModel)]="fieldValue"
+    type="text"
+    (focus)="onFieldFocus()"
+    (blur)="onFieldBlur()"
+    maxlength="{{ field.characterLimit ? field.characterLimit : 'none' }}"
+  ></textarea>
+</div>

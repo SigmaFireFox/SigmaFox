@@ -1,0 +1,215 @@
+<div class="screen-container">
+  <mat-card>
+    <div class="card-title">Add new material input</div>
+
+    <form
+      class="form-container"
+      [formGroup]="newMaterialInputForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <!-- Purchase date -->
+      <mat-form-field appearance="fill">
+        <mat-label>Purchase date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          formControlName="purchaseDate"
+        />
+        <mat-hint>DD/MM/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error
+          *ngIf="
+            newMaterialInputForm.controls['purchaseDate'].hasError('required')
+          "
+        >
+          Date is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Supplier  -->
+      <mat-form-field>
+        <mat-label>Supplier</mat-label>
+        <input matInput formControlName="supplier" />
+        <mat-icon
+          matSuffix
+          matTooltip="Not the platform - eg Takealot - but the actual supplier who listed
+          the product"
+          >info</mat-icon
+        >
+        <mat-error
+          *ngIf="newMaterialInputForm.controls['supplier'].hasError('required')"
+        >
+          Supplier is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Material type  -->
+      <mat-form-field appearance="fill">
+        <mat-label>Material type</mat-label>
+        <mat-select matNativeControl formControlName="materialType" required>
+          <mat-option *ngFor="let fileType of materialType" [value]="fileType">
+            {{ materialTypeMapping[fileType] }}
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="
+            newMaterialInputForm.controls['materialType'].hasError('required')
+          "
+        >
+          Material type is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Material diameter  -->
+      <mat-form-field appearance="fill">
+        <mat-label>Material diameter</mat-label>
+        <mat-select
+          matNativeControl
+          formControlName="materialDiameter"
+          required
+        >
+          <mat-option
+            *ngFor="let diameter of materialDiameter"
+            [value]="materialDiameterMapping[diameter]"
+          >
+            {{ diameter }}
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="
+            newMaterialInputForm.controls['materialDiameter'].hasError(
+              'required'
+            )
+          "
+        >
+          Material type is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Material colour  -->
+      <mat-form-field appearance="fill">
+        <mat-label>Material colour</mat-label>
+        <mat-select matNativeControl formControlName="materialColour" required>
+          <mat-option *ngFor="let colour of materialColour" [value]="colour">
+            <div class="div-option-with-colour-sample">
+              <div
+                class="colour-block"
+                [ngStyle]="{
+                  'background-color': materialColourMapping[colour].colourCode
+                }"
+              ></div>
+              {{ materialColourMapping[colour].name }}
+            </div>
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="
+            newMaterialInputForm.controls['materialColour'].hasError('required')
+          "
+        >
+          Material type is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Unit measurement basis -->
+      <mat-form-field>
+        <mat-label>Unit measurement basis</mat-label>
+        <mat-select
+          matNativeControl
+          formControlName="measurementBasis"
+          required
+        >
+          <mat-option *ngFor="let basis of measurementBasis" [value]="basis">
+            {{ measurementBasisMapping[basis] }}
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="
+            newMaterialInputForm.controls['measurementBasis'].hasError(
+              'required'
+            )
+          "
+        >
+          Measurement basis is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Quantity per unit -->
+      <mat-form-field
+        *ngIf="newMaterialInputForm.controls['measurementBasis'].value"
+      >
+        <mat-label
+          *ngIf="
+            newMaterialInputForm.controls['measurementBasis'].value ===
+            MeasurementBasis.Weight
+          "
+          >Kilograms per unit</mat-label
+        >
+        <mat-label
+          *ngIf="
+            newMaterialInputForm.controls['measurementBasis'].value ===
+            MeasurementBasis.Length
+          "
+          >Meters per unit</mat-label
+        >
+
+        <input matInput type="number" formControlName="qtyPerUnit" />
+        <mat-error
+          *ngIf="newMaterialInputForm.controls['qtyPerUnit'].hasError('min')"
+        >
+          Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Units -->
+      <mat-form-field>
+        <mat-label>Units</mat-label>
+        <input matInput type="number" formControlName="qtyUnit" />
+        <mat-error
+          *ngIf="newMaterialInputForm.controls['qtyUnit'].hasError('min')"
+        >
+          Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Cost per unit -->
+      <mat-form-field>
+        <mat-label>Cost per unit</mat-label>
+        <input matInput type="number" formControlName="costPerUnit" />
+        <mat-error
+          *ngIf="newMaterialInputForm.controls['costPerUnit'].hasError('min')"
+          >Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Status -->
+      <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select matNativeControl formControlName="status" required>
+          <mat-option
+            *ngFor="let status of materialInputStatus"
+            [value]="status"
+          >
+            {{ materialInputStatusMapping[status] }}
+          </mat-option>
+        </mat-select>
+        <mat-error
+          *ngIf="newMaterialInputForm.controls['status'].hasError('required')"
+        >
+          Status is required
+        </mat-error>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button class="primary-button" type="submit">Submit</button>
+        <button class="secondary-button" (click)="onCancelClick()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>

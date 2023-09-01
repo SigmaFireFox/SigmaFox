@@ -1,0 +1,25 @@
+<div [ngSwitch]="currentViewState">
+  <app-login-user
+    *ngSwitchCase="viewState.UserNotLoggedIn"
+    (user)="getUserProfile($event)"
+  ></app-login-user>
+
+  <app-user-profile-form
+    *ngSwitchCase="viewState.IncompleteProfile"
+    [currentProfile]="userProfile"
+    (updatedProfile)="setUserProfile($event)"
+  ></app-user-profile-form>
+
+  <app-delivery-address-selection
+    *ngSwitchCase="viewState.AddressRequired"
+    [userProfile]="userProfile"
+    (addressSelected)="onAddressSeleced($event)"
+  ></app-delivery-address-selection>
+
+  <app-order-confirmation
+    *ngSwitchCase="viewState.OrderConfirmation"
+    [payFastParms]="payFastParms"
+    [selectedAddress]="selectedAddress"
+    [basketContent]="basketContent"
+  ></app-order-confirmation>
+</div>

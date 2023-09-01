@@ -1,0 +1,62 @@
+.modal-container {
+  z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 255, 255, 0.2);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card-container {
+    z-index: 4;
+    opacity: 1;
+    background-color: rgb(0, 255, 255);
+    width: 80%;
+    margin: auto;
+    max-width: 300px;
+
+    .header {
+      opacity: 1;
+      padding: 10px 0;
+      margin: 0 auto;
+      font-size: larger;
+      font-weight: bolder;
+      display: flex;
+      width: 80%;
+      justify-content: center;
+    }
+
+    .sub-header {
+      opacity: 1;
+      padding: 10px 0;
+      margin: 0 auto;
+      font-size: smaller;
+      font-weight: bolder;
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+
+      button {
+        height: 35px;
+        margin: 25px 10px;
+        border-radius: 5px;
+        background-color: aqua;
+        border: none;
+        min-width: 120px;
+      }
+
+      .button-primary {
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+}

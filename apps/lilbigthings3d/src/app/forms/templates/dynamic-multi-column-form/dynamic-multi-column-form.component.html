@@ -1,0 +1,113 @@
+<div *ngIf="config" class="page-container">
+  <div class="button-panel">
+    <button mat-button [disabled]="!isValidForm" (click)="onSubmit()">
+      Submit
+    </button>
+  </div>
+
+  <div class="screen-container">
+    <div *ngFor="let column of config.columns" class="column-container">
+      <form
+        *ngFor="let form of column.forms"
+        class="form-container"
+        [formGroup]="forms[form.name]"
+      >
+        <div *ngFor="let field of form.fields" [ngSwitch]="field.type">
+          <!-- Form labels  -->
+          <app-form-label
+            *ngIf="
+              field.type === formFieldType.MainLabel ||
+              field.type === formFieldType.LabelSub ||
+              field.type === formFieldType.UnderlinedLabel ||
+              field.type === formFieldType.PlainLabel
+            "
+            class="form-line"
+            [field]="field"
+          ></app-form-label>
+
+          <!-- Title input -->
+          <app-title-input
+            *ngIf="field.type === formFieldType.InputTitle"
+            [field]="field"
+            (updateFieldValue)="
+              updateFieldValue(forms[form.name], field.name, $event)
+            "
+          ></app-title-input>
+
+          <!-- Multi column -->
+          <app-multi-column-field
+            *ngIf="
+              field.type === formFieldType.InputMultiColumn &&
+              field.multiColumnFieldSetting
+            "
+            class="form-line"
+            [field]="field"
+            (updateFieldValues)="
+              updateMultiColumnFieldValues(forms[form.name], field.name, $event)
+            "
+          ></app-multi-column-field>
+
+          <!-- Text area -->
+          <app-text-area
+            *ngIf="
+              field.type === formFieldType.InputTextShort ||
+              field.type === formFieldType.InputTextLong
+            "
+            [field]="field"
+            (updateFieldValue)="
+              updateFieldValue(forms[form.name], field.name, $event)
+            "
+          ></app-text-area>
+
+          <!-- Main Image -->
+          <div class="main-image-container">
+            <img
+              *ngIf="
+                field.type === formFieldType.MainImage &&
+                forms[form.name].controls[field.name].value
+              "
+              src="{{ forms[form.name].controls[field.name].value.url }}"
+            />
+          </div>
+
+          <!-- File Uploader -->
+          <app-file-uploader
+            *ngIf="
+              field.type === formFieldType.UploaderMultiFilePlain ||
+              field.type === formFieldType.UploaderMultiFileUnderlined ||
+              field.type === formFieldType.UploaderSingleFilePlain ||
+              field.type === formFieldType.UploaderSingleFileUnderlined
+            "
+            [field]="field"
+            (fileSelected)="
+              onFileSelection(forms[form.name], field.name, $event)
+            "
+          ></app-file-uploader>
+
+          <!-- File Uploaders with Parameters -->
+          <app-file-uploader-with-parameters
+            *ngIf="field.type === formFieldType.UploaderSingleFileWithParams"
+            [field]="field"
+            (fileSelectedWithParameters)="
+              onFileWithParametersSelection(
+                forms[form.name],
+                field.name,
+                $event
+              )
+            "
+          ></app-file-uploader-with-parameters>
+
+          <!-- Image Uploaders -->
+          <app-image-uploader
+            *ngIf="field.type === formFieldType.ImageUploader"
+            [field]="field"
+            (filesSelected)="
+              onImagesSelection(forms[form.name], field.name, $event)
+            "
+            (primaryImageSelected)="setPrimaryImage($event)"
+          ></app-image-uploader>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<!-- Mobile view -->
+<div *ngIf="isMobileView">
+  <div *ngIf="product" class="mobile-container">
+    <div class="title">{{ product.title }}</div>
+    <img class="primary-image" src="{{ primaryImageUrl }}" alt="" />
+    <div class="thumbnails-container">
+      <img
+        class="thumbnail-image-container"
+        *ngFor="let imageUrl of imageUrls; let i = index"
+        (click)="changePrimaryImage(i)"
+        src="{{ imageUrl }}"
+        alt=""
+      />
+    </div>
+    <div class="price">R10.00</div>
+    <button (click)="onAddToBasketClick()">Add to basket</button>
+
+    <!-- Descriptions  -->
+    <div class="short-description">{{ product.shortDesc }}</div>
+    <div *ngIf="!showFullDescription">
+      <div class="long-description-capped">
+        {{ product.longDesc }}
+      </div>
+      <div class="show-more-less-container" (click)="toggleShowDecription()">
+        Show more...
+      </div>
+    </div>
+
+    <div *ngIf="showFullDescription">
+      <div class="long-description">
+        {{ product.longDesc }}
+      </div>
+      <div class="show-more-less-container" (click)="toggleShowDecription()">
+        Show less...
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop view -->
+<div *ngIf="!isMobileView">
+  <div *ngIf="product" class="desktop-container">
+    <mat-card class="primary-details-card">
+      <div class="images-container">
+        <img class="primary-image" src="{{ primaryImageUrl }}" alt="" />
+        <div class="thumbnails-container">
+          <img
+            class="thumbnail-image-container"
+            *ngFor="let imageUrl of imageUrls; let i = index"
+            (click)="changePrimaryImage(i)"
+            src="{{ imageUrl }}"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="product-detail-container">
+        <div *ngIf="product" class="title">{{ product.title }}</div>
+        <div class="price">R10.00</div>
+        <div *ngIf="product" class="short-description">
+          {{ product.shortDesc }}
+        </div>
+
+        <button class="add-to-basket-button" (click)="onAddToBasketClick()">
+          Add to basket
+        </button>
+      </div>
+    </mat-card>
+
+    <!-- Descriptions  -->
+    <mat-card class="description-card">
+      <div class="title">Product description</div>
+
+      <div *ngIf="!showFullDescription">
+        <div class="long-description-capped">
+          {{ product.longDesc }}
+        </div>
+        <div class="show-more-less-container" (click)="toggleShowDecription()">
+          Show more...
+        </div>
+      </div>
+
+      <div *ngIf="showFullDescription">
+        <div class="long-description">
+          {{ product.longDesc }}
+        </div>
+        <div class="show-more-less-container" (click)="toggleShowDecription()">
+          Show less...
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

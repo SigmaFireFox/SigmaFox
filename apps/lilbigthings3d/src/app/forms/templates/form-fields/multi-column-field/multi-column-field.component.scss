@@ -1,0 +1,28 @@
+.multi-column-field-container {
+  display: flex;
+  flex-direction: row;
+
+  .multi-column-field-label {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-self: end;
+    font-weight: 400;
+  }
+
+  .multi-column-field-column {
+    padding: 0 10px;
+    p {
+      margin: 0;
+      padding-bottom: 5px;
+      text-align: center;
+      font-weight: 400;
+      font-size: medium;
+    }
+    input {
+      width: 100%;
+      border: 1px solid black;
+      background-color: aqua;
+    }
+  }
+}

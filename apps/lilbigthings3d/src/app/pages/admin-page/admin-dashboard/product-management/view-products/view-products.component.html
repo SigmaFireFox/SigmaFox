@@ -1,0 +1,9 @@
+<app-view-products-table
+  *ngIf="products.length > 0"
+  [products]="products"
+  [displayedColumns]="displayedColumns"
+></app-view-products-table>
+
+<app-view-products-empty-state
+  *ngIf="products.length === 0"
+></app-view-products-empty-state>

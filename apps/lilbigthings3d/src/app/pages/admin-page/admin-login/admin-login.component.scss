@@ -1,0 +1,53 @@
+mat-card {
+  padding: 16px;
+  width: auto;
+  min-width: 400px;
+  background-color: aqua;
+
+  mat-card-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-grow: 1;
+
+    mat-card-title,
+    mat-card-subtitle {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    mat-card-subtitle {
+      font-size: x-small;
+    }
+
+    mat-card-title {
+      font-size: x-large;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .form-line {
+      display: flex;
+      flex-direction: row;
+      margin: 8px;
+
+      label {
+        min-width: max(100px, 25%);
+      }
+
+      input {
+        display: flex;
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+button {
+  margin: 8px;
+  background-color: blue;
+}

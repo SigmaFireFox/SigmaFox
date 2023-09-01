@@ -1,0 +1,44 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    padding: 15px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-title {
+    padding: 0 25px 20px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+
+    mat-form-field {
+      display: flex;
+      width: 100%;
+    }
+
+    .submit-buton {
+      height: 35px;
+      margin-bottom: 35px;
+      border-radius: 5px;
+      background-color: aqua;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!-- Basket with content  -->
+<div class="screen-container">
+  <div class="basket-container" *ngIf="basketContent.length !== 0">
+    <div class="title">Your basket</div>
+
+    <app-basket-item
+      *ngFor="let item of basketContent; let i = index"
+      [item]="item"
+      (updatedQty)="onQtyUpdate($event, i)"
+    ></app-basket-item>
+
+    <button class="minor-button" (click)="onViewProductsClick()">
+      Browse more products
+    </button>
+
+    <button class="checkout-button" (click)="onCheckoutClick()">
+      Checkout
+    </button>
+  </div>
+</div>
+
+<!-- Basket without content  -->
+<app-featured-products
+  *ngIf="basketContent.length === 0"
+></app-featured-products>
+
+<app-delete-basket-item-dialog
+  *ngIf="showDeleteDialog"
+  (closeDialog)="closeDeleteDialog()"
+  (deleteItem)="deleteItem()"
+></app-delete-basket-item-dialog>
+
+<app-empty-basket-notice-dialog
+  *ngIf="showEmptyBasketDialog"
+  (closeDialog)="closeEmptyBasketNoticeDialog()"
+></app-empty-basket-notice-dialog>

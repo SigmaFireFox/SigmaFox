@@ -1,0 +1,19 @@
+<div class="page-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Admin Login</mat-card-title>
+            <mat-card-subtitle>Please submit your detail to log in</mat-card-subtitle>
+        </mat-card-header>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-line">
+                <label for="email">Email: </label>
+                <input id="email" type="text" formControlName="email" required>
+            </div>
+            <div class="form-line">
+                <label for="password">Password: </label>
+                <input id="password" type="text" formControlName="password">
+            </div>
+            <button mat-button type="submit" [disabled]="!loginForm.valid">Submit</button>
+        </form>
+    </mat-card>
+</div>

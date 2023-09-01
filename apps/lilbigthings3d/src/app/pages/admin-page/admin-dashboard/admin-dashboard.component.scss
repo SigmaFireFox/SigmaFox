@@ -1,0 +1,26 @@
+.button-container {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+
+  button {
+    height: 35px;
+    border-radius: 5px;
+    background-color: aqua;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 10px;
+    box-shadow: 2px 2px lightgrey;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:active {
+    box-shadow: 1px 1px lightgrey;
+  }
+}

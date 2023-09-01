@@ -1,0 +1,5 @@
+<container-element [ngSwitch]="currentViewState">
+  <app-payment-success *ngSwitchCase="viewState.SUCCESS"></app-payment-success>
+  <app-payment-cancel *ngSwitchCase="viewState.CANCEL"></app-payment-cancel>
+  <app-payment-notify *ngSwitchCase="viewState.NOTIFY"></app-payment-notify>
+</container-element>

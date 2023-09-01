@@ -1,0 +1,32 @@
+<div class="main-container">
+  <div class="title">Profile incomplete</div>
+  <div class="sub-title">
+    We need your profile details to be complete before we can proceed
+  </div>
+
+  <form class="form-container" [formGroup]="userProfileForm">
+    <mat-form-field>
+      <mat-label>First name</mat-label>
+      <input matInput formControlName="firstName" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Last name</mat-label>
+      <input matInput formControlName="lastName" /> </mat-form-field
+    ><mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="name@domain.com" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Mobile number</mat-label>
+      <input matInput formControlName="cellNumber" />
+    </mat-form-field>
+    <button
+      class="submit-buton"
+      type="button"
+      [disabled]="!userProfileForm.valid"
+      (click)="onSubmit()"
+    >
+      Update profile
+    </button>
+  </form>
+</div>

@@ -1,0 +1,56 @@
+<div *ngIf="field" class="form-line">
+  <!-- Lable  -->
+  <div
+    class="{{
+      field.type === formFieldType.UploaderMultiFileUnderlined ||
+      field.type === formFieldType.UploaderSingleFileUnderlined
+        ? 'underlined-title uploader-label'
+        : 'indented-text uploader-label'
+    }}"
+  >
+    {{ field.label }}
+  </div>
+
+  <!-- File name  -->
+  <div class="uploader-file-name">
+    {{ fileName }}
+  </div>
+
+  <!-- Import button  -->
+  <input
+    class="fake-file-selector"
+    #FileInput
+    type="file"
+    (change)="onFileSelection($event)"
+  />
+  <button class="file-selector-button" #upload (click)="FileInput.click()">
+    <div *ngIf="field.value">Change file</div>
+    <div *ngIf="!field.value">Upload file</div>
+  </button>
+</div>
+
+<div *ngIf="fieldValue.parameters" class="parameters-container">
+  <div [ngSwitch]="currentParameterType">
+    <div *ngSwitchCase="parameterType.PrintFile"></div>
+    <div
+      *ngFor="let parameter of fieldValue.parameters | keyvalue"
+      class="paramater-line"
+    >
+      <div class="parameter-lable">
+        {{ PrintFileParametersMapping[parameter.key] }}
+      </div>
+      <div class="parameter-value">{{ parameter.value }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- Dialogs  -->
+<container-element
+  *ngIf="showParameterDialog"
+  [ngSwitch]="currentParameterType"
+>
+  <app-print-file-parameters-dialog
+    *ngSwitchCase="parameterType.PrintFile"
+    (parametersSubmitted)="onFileParametersSubmited($event)"
+  ></app-print-file-parameters-dialog>
+</container-element>

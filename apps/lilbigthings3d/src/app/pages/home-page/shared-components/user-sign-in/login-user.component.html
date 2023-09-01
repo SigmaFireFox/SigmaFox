@@ -1,0 +1,38 @@
+<div class="main-container">
+  <div class="content-container">
+    <div class="title">{{ componentCopy.title }}</div>
+    <div *ngIf="componentCopy.subTitle" class="sub-title">
+      {{ componentCopy.subTitle }}
+    </div>
+
+    <form class="form-container" [formGroup]="signInForm">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="name@domain.com" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" />
+      </mat-form-field>
+      <button
+        class="submit-button"
+        type="button"
+        [disabled]="!signInForm.valid"
+        (click)="onSignin()"
+      >
+        Sign in with email
+      </button>
+    </form>
+
+    <div class="sub-title">Or login in using one of the follow channels</div>
+    <app-google-button></app-google-button>
+    <app-facebook-button></app-facebook-button>
+
+    <!-- <button class="loginBtn loginBtn--facebook">Sign in with Facebook</button> -->
+
+    <div class="sub-title">Not a registered user - no problem</div>
+    <button class="register-button" type="button" (click)="onRegisterClick()">
+      Register here
+    </button>
+  </div>
+</div>

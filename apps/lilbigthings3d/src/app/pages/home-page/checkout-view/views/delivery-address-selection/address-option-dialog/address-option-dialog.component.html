@@ -1,0 +1,16 @@
+<div class="modal-container" *ngIf="!showDeleteDialog">
+  <mat-card class="card-container">
+    <div class="header">Address options</div>
+    <div class="button-container">
+      <button class="button-primary" (click)="onEditClicked()">Edit</button>
+      <button class="button-primary" (click)="onDeleteClicked()">Delete</button>
+      <button class="button-seconday" (click)="onCloseDialog()">Cancel</button>
+    </div>
+  </mat-card>
+</div>
+
+<app-delete-address-dialog
+  *ngIf="showDeleteDialog"
+  (deleteAddress)="deleteAddress()"
+  (closeDialog)="onCloseDialog()"
+></app-delete-address-dialog>

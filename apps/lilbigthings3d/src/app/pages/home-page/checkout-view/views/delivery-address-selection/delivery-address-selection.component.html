@@ -1,0 +1,116 @@
+<div class="main-container" *ngIf="userAddresses && !addNewAddress">
+  <div *ngIf="isMobileView" class="mobile-view">
+    <div class="title">Select delivery address</div>
+    <div class="sub-title">
+      Please select the required delivery address for this order (or alternative
+      add new address as required)
+    </div>
+
+    <button class="add-button" type="button" (click)="onAddNewAddressClick()">
+      Add new address
+    </button>
+
+    <form
+      *ngIf="userAddresses"
+      class="form-container"
+      [formGroup]="selectedAddressForm"
+    >
+      <mat-radio-group
+        class="radio-group-container"
+        formControlName="selectedAddress"
+      >
+        <div
+          class="address-option-container"
+          *ngFor="let address of userAddresses; let i = index"
+          (click)="onAddessClick(i)"
+        >
+          <mat-radio-button value="{{ i }}">
+            <div class="detail-label">
+              {{ address.description }}
+            </div>
+            <div>{{ address.number }} {{ address.streetAddress1 }}</div>
+            <div>{{ address.streetAddress2 }}</div>
+            <div>{{ address.city }}</div>
+            <div>({{ address.addressType }})</div>
+          </mat-radio-button>
+          <mat-icon
+            class="address-options-icon"
+            (click)="onAddressOptionsClicked(i)"
+            >more_horiz</mat-icon
+          >
+        </div>
+      </mat-radio-group>
+    </form>
+  </div>
+
+  <div *ngIf="!isMobileView" class="desktop-view">
+    <div class="title">Select delivery address</div>
+    <div class="sub-title">
+      Please select the required delivery address for this order (or alternative
+      add new address as required)
+    </div>
+
+    <button class="add-button" type="button" (click)="onAddNewAddressClick()">
+      Add new address
+    </button>
+
+    <form
+      *ngIf="userAddresses"
+      class="form-container"
+      [formGroup]="selectedAddressForm"
+    >
+      <mat-radio-group
+        class="radio-group-container"
+        formControlName="selectedAddress"
+      >
+        <div
+          class="address-option-container"
+          *ngFor="let address of userAddresses; let i = index"
+          (click)="onAddessClick(i)"
+        >
+          <mat-radio-button value="{{ i }}">
+            <div class="detail-label">
+              {{ address.description }} ({{ address.addressType }})
+            </div>
+            <div>
+              {{ address.number }} {{ address.streetAddress1 }}
+              {{ address.streetAddress2 }} {{ address.city }}
+            </div>
+          </mat-radio-button>
+          <mat-icon
+            class="address-options-icon"
+            (click)="onAddressOptionsClicked(i)"
+            >more_horiz</mat-icon
+          >
+        </div>
+      </mat-radio-group>
+    </form>
+  </div>
+
+  <button
+    class="{{
+      selectedAddressForm.valid
+        ? 'confirmation-button'
+        : 'confirmation-button confirmation-button-disabled '
+    }}"
+    [disabled]="!selectedAddressForm.valid"
+    (click)="onSubmit()"
+  >
+    Proceed to order confirmation
+  </button>
+</div>
+
+<app-delivery-address-form
+  *ngIf="!userAddresses || addNewAddress"
+  [currentAddress]="currentAddress"
+  (addressSubmitted)="onNewAddressSubmitted($event)"
+  (addressUpdated)="onAddressUpdated($event)"
+  (cancel)="onAddressAddCancel()"
+></app-delivery-address-form>
+
+<app-address-option-dialog
+  *ngIf="showOptions"
+  (edit)="onAddressEditClicked()"
+  (delete)="onAddressDeleteClicked()"
+  (closeDialog)="closeOptionDialog()"
+></app-address-option-dialog>

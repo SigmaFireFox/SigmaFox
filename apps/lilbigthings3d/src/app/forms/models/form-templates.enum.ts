@@ -1,0 +1,33 @@
+export enum AppFieldType {
+  MainLabel,
+  LabelSub,
+  UnderlinedLabel,
+  PlainLabel,
+  InputTitle,
+  InputPlain,
+  InputTextShort,
+  InputTextLong,
+  InputMultiColumn,
+  UploaderSingleFileUnderlined,
+  UploaderSingleFileWithParams,
+  UploaderSingleFilePlain,
+  UploaderMultiFileUnderlined,
+  UploaderMultiFilePlain,
+  ImageUploader,
+  MainImage,
+}
+
+export const FORM_FIELD_TYPES = [
+  AppFieldType.InputPlain,
+  AppFieldType.InputTitle,
+  AppFieldType.InputTextShort,
+  AppFieldType.InputTextLong,
+  AppFieldType.InputMultiColumn,
+  AppFieldType.UploaderSingleFilePlain,
+  AppFieldType.UploaderSingleFileWithParams,
+  AppFieldType.UploaderMultiFilePlain,
+  AppFieldType.UploaderMultiFileUnderlined,
+  AppFieldType.UploaderSingleFileUnderlined,
+  AppFieldType.ImageUploader,
+  AppFieldType.MainImage,
+];

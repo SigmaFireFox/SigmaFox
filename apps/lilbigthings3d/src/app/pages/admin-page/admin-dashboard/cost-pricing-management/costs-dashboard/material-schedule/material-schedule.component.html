@@ -1,0 +1,80 @@
+<mat-card>
+  <div class="material-input-header main-header">Material orders</div>
+  <div class="material-input-header">
+    <div class="material-input-column" [ngStyle]="{ width: '20%' }">
+      Purchase date
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '30%' }">
+      Supplier
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      Material
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      Unit measure
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      Unit/Qty
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">Units</div>
+    <div class="material-input-column" [ngStyle]="{ width: '13%' }">
+      Unit cost
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '13%' }">
+      Total cost
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '20%' }">Status</div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      Actions
+    </div>
+  </div>
+
+  <div class="material-input-line" *ngFor="let input of materialInputs">
+    <div class="material-input-column" [ngStyle]="{ width: '20%' }">
+      {{ input.purchaseDate | date : "dd/MM/yyyy" }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '30%' }">
+      {{ input.supplier }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      {{ input.materialType }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      {{ input.measurementBasis }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      {{ input.qtyPerUnit }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      {{ input.qtyUnit }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '13%' }">
+      {{ input.costPerUnit | currency : "R" }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '13%' }">
+      {{ input.costPerUnit * input.qtyUnit | currency : "R" }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '20%' }">
+      {{ input.status }}
+    </div>
+    <div class="material-input-column" [ngStyle]="{ width: '10%' }">
+      <mat-icon matTooltip="Delete">delete</mat-icon>
+      <mat-icon matTooltip="Edit">edit</mat-icon>
+      <mat-icon matTooltip="Change status">format_list_numbered</mat-icon>
+      <mat-icon matTooltip="Change log">change_history</mat-icon>
+    </div>
+  </div>
+
+  <div class="buttons-container">
+    <button class="primary-button" (click)="onNewMaterialInputClick()">
+      New input
+    </button>
+  </div>
+</mat-card>
+
+<!-- Dialogs  -->
+<app-new-material-input-dialog
+  *ngIf="showNewMaterialInputDialog"
+  (cancel)="onNewMaterialInputDialogCancel()"
+  (newMaterialInput)="handleNewMaterialInput($event)"
+></app-new-material-input-dialog>

@@ -1,0 +1,34 @@
+<div *ngIf="!isMobileView" class="main-container">
+  <div class="header">This week's featured products</div>
+  <div *ngIf="!isLoading" class="card-container">
+    <app-product-card
+      *ngFor="let product of productsForDisplay"
+      class="card"
+      [product]="product"
+    ></app-product-card>
+  </div>
+  <div class="spinner-container" *ngIf="isLoading">
+    <mat-spinner></mat-spinner>
+    <div class="spinner-text">One moment...</div>
+  </div>
+</div>
+
+<div *ngIf="isMobileView" class="main-container">
+  <div class="header">This week's featured products</div>
+  <div class="sub-header">Swipe to see more</div>
+
+  <div *ngIf="!isLoading" class="card-container">
+    <app-product-card
+      cdkDragLockAxis="x"
+      cdkDrag
+      [cdkDragFreeDragPosition]="dragPosition"
+      (cdkDragEnded)="onCardSwipe($event)"
+      class="card"
+      [product]="productsForDisplay[cardInFocusIndex]"
+    ></app-product-card>
+  </div>
+  <div class="spinner-container" *ngIf="isLoading">
+    <mat-spinner></mat-spinner>
+    <div class="spinner-text">One moment...</div>
+  </div>
+</div>

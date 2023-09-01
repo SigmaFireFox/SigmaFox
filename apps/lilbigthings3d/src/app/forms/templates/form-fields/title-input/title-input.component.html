@@ -1,0 +1,9 @@
+<div *ngIf="field">
+  <input
+    class="title"
+    type="text"
+    [(ngModel)]="fieldValue"
+    (focus)="onFieldFocus()"
+    (blur)="onFieldBlur()"
+  />
+</div>

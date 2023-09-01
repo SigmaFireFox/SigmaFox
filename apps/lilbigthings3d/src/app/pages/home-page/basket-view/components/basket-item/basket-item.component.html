@@ -1,0 +1,15 @@
+<div *ngIf="item" class="item-container">
+  <img src="{{ item.imageUrl }}" alt="" />
+  <div class="detail-container">
+    <div class="title">{{ item.title }}</div>
+    <div class="price">R{{ item.price }}.00</div>
+  </div>
+
+  <div class="qty-container">
+    <button [disabled]="qty === 0" class="minus" (click)="onMinusClick()">
+      -
+    </button>
+    <input type="text" value="{{ qty }}" />
+    <button class="plus" (click)="onPlusClick()">+</button>
+  </div>
+</div>

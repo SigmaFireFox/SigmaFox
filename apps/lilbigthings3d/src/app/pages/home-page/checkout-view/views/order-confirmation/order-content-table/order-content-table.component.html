@@ -1,0 +1,46 @@
+<!-- Desktop view  -->
+<div *ngIf="!isMobileView">
+  <div class="table-headers">
+    <div class="description-column">Description</div>
+    <div class="detail-column">Qty</div>
+    <div class="detail-column">Price/Unit</div>
+    <div class="detail-column">Subtotal</div>
+  </div>
+
+  <div class="basket-item-container" *ngFor="let item of basketContent">
+    <div class="description-column">
+      <img src="{{ item.imageUrl }}" alt="" />
+      <div class="detail-label-normal">{{ item.title }}</div>
+    </div>
+    <div class="detail-column">{{ item.qty }}</div>
+    <div class="detail-column">{{ item.price | currency : "R" : "code" }}</div>
+    <div class="detail-column">
+      {{ item.qty * item.price | currency : "R" : "code" }}
+    </div>
+  </div>
+
+  <div class="basket-total-container">
+    <div class="detail-label">Total order value</div>
+    <div class="detail-column">{{ orderTotal | currency : "R" : "code" }}</div>
+  </div>
+</div>
+
+<!-- Mobile view     -->
+<div *ngIf="isMobileView">
+  <div class="basket-item-container" *ngFor="let item of basketContent">
+    <img src="{{ item.imageUrl }}" alt="" />
+    <div class="detail-label-normal">{{ item.title }}</div>
+    <div class="detail-splitter"></div>
+    <div class="sub-detail-label">
+      {{ item.qty }} @ {{ item.price | currency : "R" : "code" }} =
+      {{ item.qty * item.price | currency : "R" : "code" }}
+    </div>
+  </div>
+  <div class="basket-total-container">
+    <div class="detail-label">Total order value</div>
+    <div class="detail-splitter"></div>
+    <div class="sub-detail-label">
+      {{ orderTotal | currency : "R" : "code" }}
+    </div>
+  </div>
+</div>

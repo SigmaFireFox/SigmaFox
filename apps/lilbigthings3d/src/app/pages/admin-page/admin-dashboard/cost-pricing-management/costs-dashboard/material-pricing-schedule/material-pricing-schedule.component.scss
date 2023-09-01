@@ -1,0 +1,31 @@
+.accordion-container {
+  width: calc(100% - 20px);
+  margin: 10px;
+  max-height: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.content-row,
+.content-header-row {
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.description-column {
+  display: flex;
+  width: 31%;
+}
+
+.general-column {
+  display: flex;
+  width: 23%;
+
+  .header-content {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.product-table {
+  display: flex;
+  flex-direction: column;
+
+  .product-row {
+    display: flex;
+    flex-direction: row;
+  }
+}

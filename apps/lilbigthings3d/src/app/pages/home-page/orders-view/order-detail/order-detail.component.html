@@ -1,0 +1,35 @@
+<div class="main-container" *ngIf="order">
+  <div class="title">Order detail</div>
+
+  <div class="order-details-container">
+    <div class="detail-label">Order referance</div>
+    <div>
+      {{ order.orderNr }}
+    </div>
+    <div class="detail-label">Order date and time</div>
+    <div>
+      {{ order.date | date : "dd/MM/yyyy" }} {{ order.date | date : " H:mm" }}
+    </div>
+    <div class="detail-label">Order content</div>
+    <app-order-content-table
+      [basketContent]="order.items"
+      [orderTotal]="order.orderTotal"
+    ></app-order-content-table>
+    <div class="detail-label">Delivery details</div>
+    <div>To {{ order.userID }}</div>
+    <div>
+      {{ order.deliveryAddress.number }}
+      {{ order.deliveryAddress.streetAddress1 }} ({{
+        order.deliveryAddress.addressType
+      }})
+    </div>
+    <div>{{ order.deliveryAddress.streetAddress2 }}</div>
+    <div>{{ order.deliveryAddress.city }}</div>
+    <div class="detail-label">Order staus</div>
+    <div>{{ order.status }}</div>
+
+    <button class="back-button" type="button" (click)="onBackClick()">
+      Back
+    </button>
+  </div>
+</div>

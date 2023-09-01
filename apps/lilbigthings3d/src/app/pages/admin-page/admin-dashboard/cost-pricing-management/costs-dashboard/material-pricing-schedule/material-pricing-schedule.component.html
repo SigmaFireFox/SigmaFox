@@ -1,0 +1,44 @@
+<div class="accordion-container">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let material of materialSchedule | keyvalue">
+      <mat-expansion-panel-header>
+        <div class="description-column bold">{{ material.key }}</div>
+        <div class="general-column">
+          <div class="bold">On hand (meters)</div>
+          <div class="header-content">
+            {{ materialSchedule[material.key].stockOnHand | number : "1.2-2" }}
+          </div>
+        </div>
+        <div class="general-column">
+          <div class="bold">Carrying cost</div>
+          <div class="header-content">
+            {{ materialSchedule[material.key].carryingCost | currency : "R" }}
+          </div>
+        </div>
+        <div class="general-column">
+          <div class="bold">Cost per meter</div>
+          <div class="header-content">
+            {{ materialSchedule[material.key].costPerUnit | currency : "R" }}
+          </div>
+        </div>
+      </mat-expansion-panel-header>
+      <div
+        class="content-row"
+        *ngFor="let colour of material.value.colors | keyvalue"
+      >
+        <div class="description-column">
+          {{ colour.key }}
+        </div>
+        <div class="general-column">
+          {{ colour.value.stockOnHand | number : "1.2-2" }}
+        </div>
+        <div class="general-column">
+          {{ colour.value.carryingCost | currency : "R" }}
+        </div>
+        <div class="general-column">
+          {{ colour.value.costPerUnit | currency : "R" }}
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

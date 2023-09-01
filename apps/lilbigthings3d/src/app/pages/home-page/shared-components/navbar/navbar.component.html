@@ -1,0 +1,58 @@
+<!-- Mobile view  -->
+<div *ngIf="isMobileView" class="mobile-view">
+  <div class="navbar-container">
+    <div class="navbar-bar-container">
+      <mat-icon class="menu-icon-container" (click)="onMenuClick()"
+        >menu</mat-icon
+      >
+      <div class="logo-container" (click)="onLogoClick()">lilbigthings3D</div>
+      <mat-icon class="basket-icon-container" (click)="onBasketClick()"
+        >shopping_basket</mat-icon
+      >
+      <button
+        *ngIf="basketCount"
+        class="basket-counter"
+        (click)="onBasketClick()"
+      >
+        {{ basketCount }}
+      </button>
+    </div>
+    <app-navbar-menu
+      *ngIf="displayMenu"
+      [userProfile]="userProfile"
+      (click)="onMenuClick()"
+    ></app-navbar-menu>
+  </div>
+</div>
+
+<!-- Desktop view  -->
+<div *ngIf="!isMobileView" class="desktop-view">
+  <div class="navbar-container">
+    <div class="navbar-bar-container">
+      <div class="logo-container" (click)="onLogoClick()">lilbigthings3D</div>
+      <div class="basket-container">
+        <mat-icon class="basket-icon" (click)="onBasketClick()"
+          >shopping_basket</mat-icon
+        >
+        <button
+          *ngIf="basketCount"
+          class="basket-counter"
+          (click)="onBasketClick()"
+        >
+          {{ basketCount }}
+        </button>
+      </div>
+      <div class="sign-in-container" (click)="onProfileClick()">
+        <div *ngIf="!userProfile" (click)="onSignInClick()">Sign in</div>
+        <div class="profile-container" *ngIf="userProfile">
+          {{ userProfile.firstName.slice(0, 1) }} {{ userProfile.lastName }}
+          <img
+            *ngIf="userProfile.profilePic"
+            src="{{ userProfile.profilePic }}"
+          />
+          <mat-icon *ngIf="!userProfile.profilePic">perm_identity</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

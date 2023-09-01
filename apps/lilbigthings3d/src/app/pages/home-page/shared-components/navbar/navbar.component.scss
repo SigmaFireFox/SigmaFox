@@ -1,0 +1,148 @@
+.mobile-view {
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .navbar-bar-container {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      background-color: aqua;
+
+      .logo-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .basket-icon-container {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .menu-icon-container {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .basket-counter {
+        z-index: 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
+        color: white;
+        position: absolute;
+        top: 12px;
+        right: 17px;
+        border: none;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.desktop-view {
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .navbar-bar-container {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      background-color: aqua;
+
+      .logo-container {
+        display: flex;
+        width: fit-content;
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 25px;
+        cursor: pointer;
+        margin-right: auto;
+      }
+
+      .basket-container {
+        .basket-icon {
+          display: flex;
+          height: 50px;
+          align-items: center;
+          margin: 0 20px;
+          cursor: pointer;
+        }
+
+        .basket-counter {
+          position: relative;
+          left: 35px;
+          top: -40px;
+          z-index: 3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: red;
+          height: 15px;
+          width: 15px;
+          font-size: 10px;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      .sign-in-container {
+        display: flex;
+        white-space: nowrap;
+        width: fit-content;
+        margin-right: 15px;
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+
+        .profile-container {
+          display: flex;
+          white-space: nowrap;
+          align-items: center;
+
+          mat-icon,
+          img {
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

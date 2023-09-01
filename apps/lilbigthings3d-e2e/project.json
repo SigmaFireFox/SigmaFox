@@ -1,0 +1,33 @@
+{
+  "name": "lilbigthings3d-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/lilbigthings3d-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/lilbigthings3d-e2e/cypress.config.ts",
+        "devServerTarget": "lilbigthings3d:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "lilbigthings3d:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "lilbigthings3d:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/lilbigthings3d-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["lilbigthings3d"]
+}

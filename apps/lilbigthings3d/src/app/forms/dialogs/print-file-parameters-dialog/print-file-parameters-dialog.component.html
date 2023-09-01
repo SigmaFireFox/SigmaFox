@@ -1,0 +1,57 @@
+<div class="modal-container">
+  <mat-card class="card-container">
+    <div class="header">Print file parameters</div>
+    <form
+      class="form-container"
+      [formGroup]="printParametersForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <!-- Material length -->
+      <mat-form-field>
+        <mat-label>Material length (in meters)</mat-label>
+        <input matInput type="number" formControlName="materialLength" />
+        <mat-error
+          *ngIf="printParametersForm.controls['materialLength'].hasError('min')"
+        >
+          Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Print duration - Hours -->
+      <mat-form-field>
+        <mat-label>Print duration (Hours)</mat-label>
+        <input matInput type="number" formControlName="printDurationHours" />
+        <mat-error
+          *ngIf="
+            printParametersForm.controls['printDurationHours'].hasError('min')
+          "
+        >
+          Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Print duration - Minutes -->
+      <mat-form-field>
+        <mat-label>Print duration (Minutes)</mat-label>
+        <input matInput type="number" formControlName="printDurationMinutes" />
+        <mat-error
+          *ngIf="
+            printParametersForm.controls['printDurationMinutes'].hasError('min')
+          "
+        >
+          Zero not permitted
+        </mat-error>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button
+          [disabled]="!printParametersForm.valid"
+          class="primary-button"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>

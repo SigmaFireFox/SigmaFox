@@ -1,0 +1,78 @@
+<div class="main-container">
+  <div class="narrow-container" *ngIf="!showOrderDetail">
+    <div class="title">Your orders</div>
+    <div class="sub-title">Click on order to see full details</div>
+    <div class="checkbox-container">
+      <mat-checkbox
+        value="showArchivedOrders"
+        (click)="onShowArchivedOrdersClicked()"
+        >Show archived orders</mat-checkbox
+      >
+    </div>
+
+    <div
+      *ngFor="let order of userOrders; let i = index"
+      (click)="onOrderClick(order)"
+    >
+      <div
+        class="order-container"
+        [ngStyle]="
+          order.archived
+            ? { 'background-color': 'rgb(179, 185, 179)' }
+            : order.status === 'Pending'
+            ? { 'background-color': 'rgb(255, 165, 165)' }
+            : order.status === 'Complete'
+            ? { 'background-color': 'rgb(165, 255, 169)' }
+            : {}
+        "
+        *ngIf="!order.archived || showArchivedOrders"
+      >
+        <div class="order-line-item">
+          <div class="order-line-item-label">Order:</div>
+          {{ order.orderNr }}
+        </div>
+        <div class="order-line-item">
+          <div class="order-line-item-label">Date:</div>
+          {{ order.date | date : "dd/MM/yyyy" }}
+          {{ order.date | date : " H:mm" }}
+        </div>
+        <div class="order-line-item">
+          <div class="order-line-item-label">Status:</div>
+          {{ order.status }}
+        </div>
+        <div>
+          <div class="images-container">
+            <img
+              *ngFor="let item of order.items"
+              class="image-container"
+              src="{{ item.imageUrl }}"
+              alt=""
+            />
+            <mat-icon
+              class="order-options-icon"
+              (click)="onOrderOptionsClicked($event, i)"
+              >more_horiz</mat-icon
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-order-detail
+    class="narrow-container"
+    *ngIf="showOrderDetail"
+    [order]="currentOrder"
+    (back)="onDetailClose()"
+  ></app-order-detail>
+
+  <app-order-option-dialog
+    *ngIf="showOptions"
+    [isArchived]="this.userOrders[this.orderIndexInFocus].archived"
+    (archive)="onArchiveOrderClicked()"
+    (unarchive)="onUnArchiveOrderClicked()"
+    (repeat)="onOrderRepeatClicked()"
+    (view)="onViewOrderClicked()"
+    (closeDialog)="closeOptionDialog()"
+  ></app-order-option-dialog>
+</div>

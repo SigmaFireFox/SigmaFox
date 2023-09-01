@@ -1,0 +1,54 @@
+<div class="main-container">
+  <div class="title">Order confimation</div>
+  <div class="sub-title">
+    Please confirm the details of the order before proceeding to payment process
+  </div>
+  <div class="order-details-container" *ngIf="payFastParms && selectedAddress">
+    <div class="detail-label">Order number</div>
+    <div>{{ payFastParms.orderNr }}</div>
+    <div class="detail-label">Order content</div>
+    <app-order-content-table
+      [basketContent]="basketContent"
+      [orderTotal]="payFastParms.orderTotal"
+    ></app-order-content-table>
+    <div class="detail-label">Delivery details</div>
+    <div>
+      To {{ payFastParms.form.name_first }} {{ payFastParms.form.name_last }}
+    </div>
+    <div>
+      {{ selectedAddress.number }} {{ selectedAddress.streetAddress1 }} ({{
+        selectedAddress.addressType
+      }})
+    </div>
+    <div>{{ selectedAddress.streetAddress2 }}</div>
+    <div>{{ selectedAddress.city }}</div>
+  </div>
+  <div class="checkbox-container">
+    <mat-checkbox value="confirmed" (click)="onConfirmClick()"
+      >I confirm these details are correct</mat-checkbox
+    >
+  </div>
+</div>
+
+<form
+  *ngIf="payFastParms?.form && payFastParms?.url"
+  action="{{ payFastParms?.url }}"
+  method="post"
+>
+  <input
+    *ngFor="let item of payFastParms?.form | keyvalue"
+    type="hidden"
+    name="{{ item.key }}"
+    value="{{ item.value }}"
+  />
+  <input
+    type="submit"
+    class="{{
+      confirmed
+        ? 'confirmation-button'
+        : 'confirmation-button confirmation-button-disabled '
+    }}"
+    [disabled]="!confirmed"
+    value=" Proceed to payment"
+  />
+</form>

@@ -1,0 +1,26 @@
+<div class="modal-container" *ngIf="!showDeleteDialog">
+  <mat-card class="card-container">
+    <div class="header">Address options</div>
+    <div class="button-container">
+      <button
+        *ngIf="!isArchived"
+        class="button-primary"
+        (click)="onArchiveClicked()"
+      >
+        Archive
+      </button>
+      <button
+        *ngIf="isArchived"
+        class="button-primary"
+        (click)="onUnArchiveClicked()"
+      >
+        Un-Archive
+      </button>
+      <button class="button-primary" (click)="onRepeatClicked()">
+        Repeat order
+      </button>
+      <button class="button-primary" (click)="onViewClicked()">View</button>
+      <button class="button-seconday" (click)="onCloseDialog()">Cancel</button>
+    </div>
+  </mat-card>
+</div>

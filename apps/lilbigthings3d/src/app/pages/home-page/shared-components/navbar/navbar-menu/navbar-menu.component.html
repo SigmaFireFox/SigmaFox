@@ -1,0 +1,9 @@
+<div class="menu-container">
+  <div *ngIf="userProfile" class="menu-item" (click)="onSignOutClick()">
+    Sign out
+  </div>
+  <div *ngIf="!userProfile" class="menu-item" (click)="onSignInClick()">
+    Sign in
+  </div>
+  <div class="menu-item" (click)="onViewOrdersClick()">Orders</div>
+</div>

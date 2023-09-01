@@ -1,0 +1,13 @@
+<div *ngIf='isDisplaying && currentError' class="error-modal-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>{{currentError.title}}</mat-card-title>
+            <mat-card-subtitle>{{currentError.subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <p>{{currentError.message}}</p>
+        <div class="button-container">
+            <button mat-button *ngFor="let option of currentError.options"
+                (click)="onButtonClicked(option.action)">{{option.description}}</button>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,26 @@
+.card-container {
+  display: flex;
+  flex-grow: 1;
+  height: calc(100% - 55px);
+
+  mat-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    background-color: aqua;
+
+    h1,
+    h3,
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    h5 {
+      font-weight: normal;
+    }
+  }
+}
