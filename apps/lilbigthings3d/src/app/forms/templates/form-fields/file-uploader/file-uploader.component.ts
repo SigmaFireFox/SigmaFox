@@ -1,10 +1,9 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import {
-  AppField,
-  FileData,
-} from 'src/app/forms/models/form-template.interface';
-import { AppFieldType } from 'src/app/forms/models/form-templates.enum';
-import { AppFileData } from 'src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
+import { AppFileData } from 'apps/lilbigthings3d/src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
+import { AppField, FileData } from '../../../models/form-template.interface';
+import { AppFieldType } from '../../../models/form-templates.enum';
 
 @Component({
   selector: 'app-file-uploader',

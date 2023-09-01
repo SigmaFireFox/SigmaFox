@@ -1,5 +1,7 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-import { MaterialService } from 'src/app/services/materials/material.service';
+import { MaterialService } from 'apps/lilbigthings3d/src/app/services/materials/material.service';
 import {
   MaterialColour,
   MaterialColourMapping,

@@ -1,9 +1,10 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {
-  ErrorHandlingService,
   ErrorState,
-} from 'src/app/services/error-handling/error-handling.service';
+  ErrorHandlingService,
+} from '../../services/error-handling/error-handling.service';
 
 export interface ErrorModalContent {
   title: string;

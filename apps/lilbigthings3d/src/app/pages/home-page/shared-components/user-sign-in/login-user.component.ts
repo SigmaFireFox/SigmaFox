@@ -1,3 +1,5 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { User } from '@angular/fire/auth';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
@@ -5,7 +7,7 @@ import { Router } from '@angular/router';
 import {
   AuthenticationService,
   SignInContext,
-} from 'src/app/services/authentication/authentication.service';
+} from 'apps/lilbigthings3d/src/app/services/authentication/authentication.service';
 
 @Component({
   selector: 'app-login-user',

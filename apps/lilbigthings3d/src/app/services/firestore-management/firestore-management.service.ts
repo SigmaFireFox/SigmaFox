@@ -1,3 +1,4 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 /* eslint-disable no-async-promise-executor */
 import { Injectable } from '@angular/core';
 import { initializeApp } from '@angular/fire/app';
@@ -18,16 +19,17 @@ import {
   StorageReference,
   uploadBytes,
 } from '@angular/fire/storage';
+
+import { AppUserProfile } from '../user/user.interface';
+import { UserOrder } from '../orders/orders.service';
+import { environment } from 'apps/lilbigthings3d/src/environments/environment';
+import { MaterialInput } from '../../pages/admin-page/admin-dashboard/cost-pricing-management/costs-dashboard/material-schedule/material-schedule.component';
 import {
   Product,
   ProductForDisplay,
   ProductImageUrls,
-} from 'src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
-import { environment } from 'src/environments/environment';
-import { AppUserProfile } from '../user/user.interface';
-import { UserOrder } from '../orders/orders.service';
-import { MaterialInput } from 'src/app/pages/admin-page/admin-dashboard/cost-pricing-management/costs-dashboard/material-schedule/material-schedule.component';
-import { ProductFileType } from 'src/app/pages/admin-page/admin-dashboard/product-management/services/product-management.service';
+} from '../../pages/admin-page/admin-dashboard/product-management/models/product.interface';
+import { ProductFileType } from '../../pages/admin-page/admin-dashboard/product-management/services/product-management.service';
 
 @Injectable({
   providedIn: 'root',

@@ -1,13 +1,14 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Validators } from '@angular/forms';
-import { AppMultiColumnForm } from 'src/app/forms/models/form-template.interface';
-import { AppFieldType } from 'src/app/forms/models/form-templates.enum';
+import { AppMultiColumnForm } from 'apps/lilbigthings3d/src/app/forms/models/form-template.interface';
+import { AppFieldType } from 'apps/lilbigthings3d/src/app/forms/models/form-templates.enum';
+import { FileParamaterType } from 'apps/lilbigthings3d/src/app/forms/templates/form-fields/file-uploader-with-parameters/file-uploader-with-parameters.component';
 import {
   ProductFormFields,
   ProductFormLabels,
   ProductFormPlaceholders,
   ProductForm,
 } from './product.enum';
-import { FileParamaterType } from 'src/app/forms/templates/form-fields/file-uploader-with-parameters/file-uploader-with-parameters.component';
 
 export const PRODUCT_FORM_CONFIG: AppMultiColumnForm = {
   columns: [

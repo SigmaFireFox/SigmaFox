@@ -1,6 +1,8 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ProductForDisplay } from 'src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
-import { FirestoreManagementService } from 'src/app/services/firestore-management/firestore-management.service';
+import { FirestoreManagementService } from 'apps/lilbigthings3d/src/app/services/firestore-management/firestore-management.service';
+// import { ProductForDisplay } from '../../../admin-page/admin-dashboard/product-management/models/product.interface';
 
 @Component({
   selector: 'app-featured-products',
@@ -82,8 +84,7 @@ export class FeaturedProductsComponent implements OnInit {
   }
 
   private async setFeaturedProducts(): Promise<void> {
-    const products: ProductForDisplay[] = await this.fs.getAllProducts();
-
+    // const products: ProductForDisplay[] = await this.fs.getAllProducts();
     // for (let i = 0; i < products.length; i++) {
     //   this.productsForDisplay.push({
     //     id: products[i].id,

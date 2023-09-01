@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Injectable } from '@angular/core';
-import { BasketItem } from 'src/app/pages/home-page/basket-view/basket-view.component';
 import { UserAddress, AppUserProfile } from '../user/user.interface';
 import { Md5 } from 'ts-md5';
 import { LocalStorageService } from '../local-storage/local-storage.service';
@@ -11,6 +10,7 @@ import {
   EventTopic,
 } from '../event-management/event-management.enum';
 import { OrdersService } from '../orders/orders.service';
+import { BasketItem } from '../../pages/home-page/basket-view/basket-view.component';
 
 export interface PayFastFormParms {
   [key: string]: string;

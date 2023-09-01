@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/component-selector */
 import {
   ChangeDetectorRef,
   Component,
@@ -9,10 +10,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { FirestoreManagementService } from 'src/app/services/firestore-management/firestore-management.service';
-import { ProductService } from 'src/app/services/product/product.service';
+} from '../../../services/event-management/event-management.enum';
+import { EventManagementService } from '../../../services/event-management/event-management.service';
+import { FirestoreManagementService } from '../../../services/firestore-management/firestore-management.service';
+import { ProductService } from '../../../services/product/product.service';
+
 import {
   Product,
   ProductImageUrls,

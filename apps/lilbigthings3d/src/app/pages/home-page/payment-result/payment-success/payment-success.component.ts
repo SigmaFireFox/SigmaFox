@@ -1,10 +1,12 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
+} from 'apps/lilbigthings3d/src/app/services/event-management/event-management.enum';
+import { EventManagementService } from 'apps/lilbigthings3d/src/app/services/event-management/event-management.service';
 
 @Component({
   selector: 'app-payment-success',

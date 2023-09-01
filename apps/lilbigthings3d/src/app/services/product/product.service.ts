@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ProductImageUrls } from 'src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
-import { BasketItem } from 'src/app/pages/home-page/basket-view/basket-view.component';
+import { ProductImageUrls } from '../../pages/admin-page/admin-dashboard/product-management/models/product.interface';
+import { BasketItem } from '../../pages/home-page/basket-view/basket-view.component';
 import { FirestoreManagementService } from '../firestore-management/firestore-management.service';
 import { LocalStorageItem } from '../local-storage/local-storage.enum';
 import { LocalStorageService } from '../local-storage/local-storage.service';

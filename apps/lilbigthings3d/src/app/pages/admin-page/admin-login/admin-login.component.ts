@@ -1,9 +1,10 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import {
   AuthenticationService,
   SignInContext,
-} from 'src/app/services/authentication/authentication.service';
+} from '../../../services/authentication/authentication.service';
 
 @Component({
   selector: 'app-admin-login',

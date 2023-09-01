@@ -1,5 +1,6 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { BasketItem } from 'src/app/pages/home-page/basket-view/basket-view.component';
+import { BasketItem } from '../../../../basket-view/basket-view.component';
 
 @Component({
   selector: 'app-order-content-table',

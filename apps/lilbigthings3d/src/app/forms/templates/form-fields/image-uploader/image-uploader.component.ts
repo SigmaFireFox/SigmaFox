@@ -1,8 +1,6 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import {
-  AppField,
-  FileData,
-} from 'src/app/forms/models/form-template.interface';
+import { AppField, FileData } from '../../../models/form-template.interface';
 
 @Component({
   selector: 'app-image-uploader',

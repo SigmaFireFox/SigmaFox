@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { ErrorModalContent } from 'src/app/modals/error-modal/error-modal.component';
+import { ErrorModalContent } from '../../modals/error-modal/error-modal.component';
 import {
   RegistrationAsUserFirstError,
   UserNotFoundError,

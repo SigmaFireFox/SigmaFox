@@ -1,21 +1,23 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import {
-  ChangeDetectorRef,
   Component,
-  HostListener,
   OnInit,
+  HostListener,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { AuthenticationService } from 'apps/lilbigthings3d/src/app/services/authentication/authentication.service';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { LocalStorageItem } from 'src/app/services/local-storage/local-storage.enum';
-import { LocalStorageService } from 'src/app/services/local-storage/local-storage.service';
-import { AppUserProfile } from 'src/app/services/user/user.interface';
-import { UserService } from 'src/app/services/user/user.service';
+} from 'apps/lilbigthings3d/src/app/services/event-management/event-management.enum';
+import { EventManagementService } from 'apps/lilbigthings3d/src/app/services/event-management/event-management.service';
+import { LocalStorageItem } from 'apps/lilbigthings3d/src/app/services/local-storage/local-storage.enum';
+import { LocalStorageService } from 'apps/lilbigthings3d/src/app/services/local-storage/local-storage.service';
+import { AppUserProfile } from 'apps/lilbigthings3d/src/app/services/user/user.interface';
+import { UserService } from 'apps/lilbigthings3d/src/app/services/user/user.service';
 
+/* eslint-disable @angular-eslint/component-selector */
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

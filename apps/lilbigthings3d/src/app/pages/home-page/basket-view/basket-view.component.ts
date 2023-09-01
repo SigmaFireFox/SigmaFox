@@ -1,13 +1,14 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { LocalStorageItem } from 'src/app/services/local-storage/local-storage.enum';
-import { LocalStorageService } from 'src/app/services/local-storage/local-storage.service';
+} from '../../../services/event-management/event-management.enum';
+import { EventManagementService } from '../../../services/event-management/event-management.service';
+import { LocalStorageItem } from '../../../services/local-storage/local-storage.enum';
+import { LocalStorageService } from '../../../services/local-storage/local-storage.service';
 
 export interface BasketItem {
   id: string;

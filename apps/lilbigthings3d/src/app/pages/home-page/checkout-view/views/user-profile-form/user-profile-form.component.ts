@@ -1,6 +1,8 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { AppUserProfile } from 'src/app/services/user/user.interface';
+import { AppUserProfile } from 'apps/lilbigthings3d/src/app/services/user/user.interface';
 
 @Component({
   selector: 'app-user-profile-form',

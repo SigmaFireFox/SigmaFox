@@ -1,11 +1,13 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { AppUserProfile } from 'src/app/services/user/user.interface';
+} from 'apps/lilbigthings3d/src/app/services/event-management/event-management.enum';
+import { EventManagementService } from 'apps/lilbigthings3d/src/app/services/event-management/event-management.service';
+import { AppUserProfile } from 'apps/lilbigthings3d/src/app/services/user/user.interface';
 
 @Component({
   selector: 'app-navbar-menu',

@@ -1,6 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, Input, OnInit } from '@angular/core';
-import { MaterialService } from 'src/app/services/materials/material.service';
 import { Timestamp } from '@angular/fire/firestore';
+import { MaterialService } from 'apps/lilbigthings3d/src/app/services/materials/material.service';
 
 export enum MaterialType {
   PLA = 'PLA',

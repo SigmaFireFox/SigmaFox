@@ -1,11 +1,12 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Timestamp } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { AuthenticationService } from '../../../services/authentication/authentication.service';
 import {
   UserOrder,
   OrdersService,
-} from 'src/app/services/orders/orders.service';
+} from '../../../services/orders/orders.service';
 
 @Component({
   selector: 'app-orders-view',

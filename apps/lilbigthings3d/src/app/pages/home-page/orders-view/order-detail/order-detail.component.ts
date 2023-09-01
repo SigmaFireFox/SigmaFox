@@ -1,5 +1,7 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { UserOrder } from 'src/app/services/orders/orders.service';
+import { UserOrder } from 'apps/lilbigthings3d/src/app/services/orders/orders.service';
 
 @Component({
   selector: 'app-order-detail',

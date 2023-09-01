@@ -1,6 +1,8 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { AuthenticationService } from 'apps/lilbigthings3d/src/app/services/authentication/authentication.service';
 
 @Component({
   selector: 'app-register',

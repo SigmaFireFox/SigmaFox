@@ -1,6 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AppField } from 'src/app/forms/models/form-template.interface';
-import { AppFieldType } from 'src/app/forms/models/form-templates.enum';
+import { AppField } from '../../../models/form-template.interface';
+import { AppFieldType } from '../../../models/form-templates.enum';
 
 @Component({
   selector: 'app-text-area',

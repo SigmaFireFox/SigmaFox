@@ -1,17 +1,18 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 /* eslint-disable no-async-promise-executor */
 import { Injectable } from '@angular/core';
 import {
-  EventChannel,
-  EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { FirestoreManagementService } from 'src/app/services/firestore-management/firestore-management.service';
-import { ProductFormFields } from '../models/product.enum';
-import { Product, AppFileData } from '../models/product.interface';
-import {
   FileData,
   FileDataWithParameters,
-} from 'src/app/forms/models/form-template.interface';
+} from 'apps/lilbigthings3d/src/app/forms/models/form-template.interface';
+import {
+  EventChannel,
+  EventTopic,
+} from 'apps/lilbigthings3d/src/app/services/event-management/event-management.enum';
+import { EventManagementService } from 'apps/lilbigthings3d/src/app/services/event-management/event-management.service';
+import { FirestoreManagementService } from 'apps/lilbigthings3d/src/app/services/firestore-management/firestore-management.service';
+import { ProductFormFields } from '../models/product.enum';
+import { Product, AppFileData } from '../models/product.interface';
 
 export enum ProductFileType {
   Design = 'Design',

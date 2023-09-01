@@ -1,6 +1,8 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, Input } from '@angular/core';
-import { PayFastParms } from 'src/app/services/checkout/checkout.service';
-import { UserAddress } from 'src/app/services/user/user.interface';
+import { PayFastParms } from 'apps/lilbigthings3d/src/app/services/checkout/checkout.service';
+import { UserAddress } from 'apps/lilbigthings3d/src/app/services/user/user.interface';
 import { BasketItem } from '../../../basket-view/basket-view.component';
 
 @Component({

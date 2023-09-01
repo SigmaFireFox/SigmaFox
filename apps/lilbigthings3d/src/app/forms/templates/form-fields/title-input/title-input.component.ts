@@ -1,5 +1,6 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AppField } from 'src/app/forms/models/form-template.interface';
+import { AppField } from '../../../models/form-template.interface';
 
 @Component({
   selector: 'app-title-input',

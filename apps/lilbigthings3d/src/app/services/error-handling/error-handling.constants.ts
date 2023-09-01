@@ -1,4 +1,4 @@
-import { OptionActionType } from 'src/app/modals/error-modal/error-modal.component';
+import { OptionActionType } from '../../modals/error-modal/error-modal.component';
 
 export const UserNotFoundError = {
   title: 'Email not registed',

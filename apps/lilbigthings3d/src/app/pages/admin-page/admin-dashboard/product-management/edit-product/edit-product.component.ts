@@ -1,12 +1,14 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AppFieldType } from 'src/app/forms/models/form-templates.enum';
+import { AppFieldType } from 'apps/lilbigthings3d/src/app/forms/models/form-templates.enum';
 import {
   EventChannel,
   EventTopic,
-} from 'src/app/services/event-management/event-management.enum';
-import { EventManagementService } from 'src/app/services/event-management/event-management.service';
-import { FirestoreManagementService } from 'src/app/services/firestore-management/firestore-management.service';
+} from 'apps/lilbigthings3d/src/app/services/event-management/event-management.enum';
+import { EventManagementService } from 'apps/lilbigthings3d/src/app/services/event-management/event-management.service';
+import { FirestoreManagementService } from 'apps/lilbigthings3d/src/app/services/firestore-management/firestore-management.service';
 import { PRODUCT_FORM_CONFIG } from '../models/product.constant';
 import { Product } from '../models/product.interface';
 import { ProductManagementService } from '../services/product-management.service';

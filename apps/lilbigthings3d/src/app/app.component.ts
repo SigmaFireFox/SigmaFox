@@ -1,7 +1,8 @@
+/* eslint-disable @angular-eslint/component-selector */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { initializeApp } from '@angular/fire/app';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 import {
   EventChannel,
   EventTopic,

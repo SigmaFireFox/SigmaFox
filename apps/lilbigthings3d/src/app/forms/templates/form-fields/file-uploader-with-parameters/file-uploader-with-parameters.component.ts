@@ -1,14 +1,16 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AppFileData } from 'apps/lilbigthings3d/src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
 import {
-  PrintFileParameters,
   PrintFileParametersMapping,
-} from 'src/app/forms/dialogs/print-file-parameters-dialog/print-file-parameters-dialog.component';
+  PrintFileParameters,
+} from '../../../dialogs/print-file-parameters-dialog/print-file-parameters-dialog.component';
 import {
   AppField,
   FileDataWithParameters,
-} from 'src/app/forms/models/form-template.interface';
-import { AppFieldType } from 'src/app/forms/models/form-templates.enum';
-import { AppFileData } from 'src/app/pages/admin-page/admin-dashboard/product-management/models/product.interface';
+} from '../../../models/form-template.interface';
+import { AppFieldType } from '../../../models/form-templates.enum';
 
 export enum FileParamaterType {
   None,

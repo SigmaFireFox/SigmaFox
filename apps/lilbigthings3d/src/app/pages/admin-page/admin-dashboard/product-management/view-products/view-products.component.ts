@@ -1,5 +1,7 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-import { FirestoreManagementService } from 'src/app/services/firestore-management/firestore-management.service';
+import { FirestoreManagementService } from 'apps/lilbigthings3d/src/app/services/firestore-management/firestore-management.service';
 import { ProductForDisplay } from '../models/product.interface';
 
 @Component({

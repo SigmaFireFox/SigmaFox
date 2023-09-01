@@ -1,17 +1,19 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
 import { User } from '@angular/fire/auth';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { AuthenticationService } from '../../../services/authentication/authentication.service';
 import {
-  CheckoutService,
   PayFastParms,
-} from 'src/app/services/checkout/checkout.service';
-import { LocalStorageItem } from 'src/app/services/local-storage/local-storage.enum';
-import { LocalStorageService } from 'src/app/services/local-storage/local-storage.service';
+  CheckoutService,
+} from '../../../services/checkout/checkout.service';
+import { LocalStorageItem } from '../../../services/local-storage/local-storage.enum';
+import { LocalStorageService } from '../../../services/local-storage/local-storage.service';
 import {
-  UserAddress,
   AppUserProfile,
-} from 'src/app/services/user/user.interface';
-import { UserService } from 'src/app/services/user/user.service';
+  UserAddress,
+} from '../../../services/user/user.interface';
+import { UserService } from '../../../services/user/user.service';
+
 import { BasketItem } from '../basket-view/basket-view.component';
 import { CheckoutViewState } from './models/checkout.enum';
 

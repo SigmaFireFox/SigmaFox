@@ -1,3 +1,5 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import {
   ChangeDetectorRef,
   Component,
@@ -8,12 +10,12 @@ import {
   Output,
 } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
+import { AuthenticationService } from 'apps/lilbigthings3d/src/app/services/authentication/authentication.service';
 import {
-  UserAddress,
   AppUserProfile,
-} from 'src/app/services/user/user.interface';
-import { UserService } from 'src/app/services/user/user.service';
+  UserAddress,
+} from 'apps/lilbigthings3d/src/app/services/user/user.interface';
+import { UserService } from 'apps/lilbigthings3d/src/app/services/user/user.service';
 
 @Component({
   selector: 'app-delivery-address-selection',

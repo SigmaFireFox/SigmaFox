@@ -1,8 +1,10 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
-import { UserAddress } from 'src/app/services/user/user.interface';
-import { UserService } from 'src/app/services/user/user.service';
+import { AuthenticationService } from 'apps/lilbigthings3d/src/app/services/authentication/authentication.service';
+import { UserAddress } from 'apps/lilbigthings3d/src/app/services/user/user.interface';
+import { UserService } from 'apps/lilbigthings3d/src/app/services/user/user.service';
 
 export enum AddressType {
   House = 'House',
