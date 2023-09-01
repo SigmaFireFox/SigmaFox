@@ -1,0 +1,51 @@
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+>
+  <h2>Selector table</h2>
+  <table style="margin-left: auto; margin-right: auto; min-width: 50%">
+    <tr style="padding-left: 8px; text-align: left; font-weight: bolder">
+      <td style="min-width: 40%">File name</td>
+      <td>Source</td>
+      <td>Sport</td>
+    </tr>
+    <tr *ngFor="let file of fileNames">
+      <td style="text-align: left">{{ file }}</td>
+      <td style="text-align: left">
+        <div *ngIf="singleSource">
+          {{ selectedSource }}
+        </div>
+        <div *ngIf="!singleSource">
+          <select (change)="setUserWarning(false)" style="min-width: 10rem">
+            <option *ngFor="let source of availableSources">
+              {{ source }}
+            </option>
+          </select>
+        </div>
+      </td>
+      <td style="text-align: left">
+        <div *ngIf="singleSport">
+          {{ selectedSport }}
+        </div>
+        <div *ngIf="!singleSport">
+          <select (change)="setUserWarning(false)" style="min-width: 10rem">
+            <option *ngFor="let sport of availableSports">
+              {{ sport }}
+            </option>
+          </select>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <button style="margin: 20px 0" (click)="readyToProceed()">Proceed</button>
+  <p *ngIf="userWarning" style="font-weight: bolder">
+    All required info has not been select - please select all required fields
+    before attempting to process
+  </p>
+</div>

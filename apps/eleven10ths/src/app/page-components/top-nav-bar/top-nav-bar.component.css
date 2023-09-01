@@ -1,0 +1,43 @@
+.screen-wide-container {
+  background-color: lime;
+  width: auto;
+  height: 4rem;
+  display: flex;
+}
+
+.logo-space {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  margin-left: 2rem;
+  justify-items: center;
+  align-items: center;
+  background-color: lime;
+  border-width: 0;
+  font-size: medium;
+  font-weight: bold;
+  border-color: lime;
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+button.mat-menu-item {
+  margin-left: 0;
+}
+
+.mat-menu-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.mat-menu-panel {
+  background:lime;
+}

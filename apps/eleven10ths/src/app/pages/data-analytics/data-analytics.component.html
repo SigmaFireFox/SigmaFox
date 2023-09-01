@@ -1,0 +1,23 @@
+<div
+  style="
+    padding: 8px 5px;
+    text-align: center;
+  "
+>
+  <div style="margin: 1rem 1rem">
+    <button (click)="analyseDB()">Run analysis</button>
+    <ul *ngIf="analysisTriggered">
+        <h2>Files on Record</h2>
+      <li *ngFor="let result of results | async">
+        {{ result.id }}
+      </li>
+    </ul>
+  </div>
+  <div style="margin: 1rem 1rem">
+    <button (click)="burnDB()">Burn Results DB</button>
+  </div>
+  <div style="margin: 1rem 1rem">
+    <button (click)="displayMenuObject()">Display menu object</button>
+  </div>
+
+</div>

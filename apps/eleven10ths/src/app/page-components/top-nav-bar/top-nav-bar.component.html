@@ -1,0 +1,35 @@
+<nav class="screen-wide-container">
+  <!-- Logo section -->
+  <div class="logo-space">
+    <a routerLink="" style="max-width: 100%; max-height: 100%">
+      <img
+        src="../../assets/Logo.png"
+        alt="logo"
+        style="height: 4rem; width: 10rem"
+    /></a>
+  </div>
+
+  <!-- Avaliable sports -->
+  <button
+    *ngFor="let sport of avaliableSports"
+    [routerLink]="['/sports-data', sport]"
+  >
+    {{ sport | titlecase }}
+  </button>
+
+  <!-- Data Manager - with sub-options for data import and data pull -->
+  <button mat-button [matMenuTriggerFor]="belowMenu">Manage Data</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item routerLink="/data-manager/data-importer">
+      Import Data
+    </button>
+    <button mat-menu-item routerLink="/data-manager/data-puller">
+      Pull Data
+    </button>
+    <button mat-menu-item routerLink="/data-manager/data-analyser">
+      Analyse Data
+    </button>
+
+
+  </mat-menu>
+</nav>

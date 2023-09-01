@@ -1,0 +1,285 @@
+<!-- Step 1 - Upload file -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="!uploaded"
+>
+  <h2 style="margin-top: 0cm">
+    Please select the files you would like to import
+  </h2>
+  <input type="file" (change)="uploadEvent($event)" multiple="true" />
+  <p>
+    Please note - a large number of files will affect the performance speeds of
+    this process
+  </p>
+</div>
+
+<!-- Step 2 select source and sport -->
+<!-- Step 2A determine if multiple sources -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="uploaded && assessMultipleFileUniformity && !singleSourceDetermined"
+>
+  <div>
+    <h2>Are these files from a single data sources</h2>
+    <div style="display: flex; flex-direction: row; justify-content: center">
+      <button (click)="singleSourceDetermination(true)">Yes</button>
+      <div style="width: 4rem"></div>
+      <button (click)="singleSourceDetermination(false)">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Step 2B Select source - if singleSource-->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="uploaded && singleSource && !sourceSelected"
+>
+  <div>
+    <h2>Please select source of file</h2>
+    <div style="display: flex; flex-direction: row; justify-content: center">
+      <button
+        *ngFor="let source of sourcesList"
+        style="margin: 0 2rem"
+        (click)="selectSourceEvent(source)"
+      >
+        {{ source }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Step 2C determine if multiple sports -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="
+    uploaded &&
+    assessMultipleFileUniformity &&
+    ((singleSourceDetermined && singleSource && sourceSelected) ||
+      (singleSourceDetermined && !singleSource)) &&
+    !singleSportDetermined
+  "
+>
+  <div>
+    <h2>Are these files relate to a single sports</h2>
+    <div style="display: flex; flex-direction: row; justify-content: center">
+      <button (click)="singleSportDetermination(true)">Yes</button>
+      <div style="width: 4rem"></div>
+      <button (click)="singleSportDetermination(false)">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Step 2D Select sport - if singleSource-->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="
+    (((singleSourceDetermined && singleSource && sourceSelected) ||
+      (singleSourceDetermined && !singleSource)) &&
+      singleSport &&
+      !sportSelected) ||
+    (!assessMultipleFileUniformity && sourceSelected && !sportSelected)
+  "
+>
+  <div>
+    <h2>Please select sport to which file relates</h2>
+    <div style="display: flex; flex-direction: row; justify-content: center">
+      <button
+        *ngFor="let sport of sportsList"
+        style="margin: 0 2rem"
+        (click)="selectSportEvent(sport)"
+      >
+        {{ sport }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Step 2E - If multiple source OR multiple sports - selector table -->
+<div
+  *ngIf="
+    assessMultipleFileUniformity &&
+    selectorTableRequired &&
+    assessmentComplete &&
+    !proceed
+  "
+>
+  <app-selector-table
+    [singleSource]="singleSource"
+    [selectedSource]="selectedSource"
+    [singleSport]="singleSport"
+    [selectedSport]="selectedSport"
+    [fileNames]="fileNamesList"
+    [availableSources]="sourcesList"
+    [availableSports]="sportsList"
+    (process)="readyToProceed($event)"
+  >
+  </app-selector-table>
+</div>
+
+<!-- Step 3 - Offer options -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="((sourceSelected && sportSelected) || proceed) && !optionSelected"
+>
+  <h2 style="margin-top: 0cm">Please select an option below</h2>
+  <div style="display: flex; flex-direction: row; justify-content: center">
+    <button (click)="analyseFiles()">Run Analysis on files</button>
+    <div style="width: 4rem"></div>
+    <button (click)="importProcess()">Import without analysis</button>
+  </div>
+</div>
+
+<!-- Step 4 - Analysis -->
+<!-- Step 4A - Analysis In progress -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="analysisStarted && !analysisComplete"
+>
+  <div *ngIf="analysisStarted && !analysisComplete">
+    <h2>Analysis process in progress - please wait</h2>
+    <p>
+      Analysing file {{ fileNum + 1 }} of
+      {{ this.eventValue.target.files.length }}
+    </p>
+    <p style="font-weight: bolder">
+      If processing times are excessively long, please consider uploading
+      smaller batches of files in future
+    </p>
+  </div>
+</div>
+
+<!-- Step 4B - Analysis results -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="analysisComplete && !importStarted && !importComplete"
+>
+  <h2>Analysis Complete - below is a summary of files uploaded</h2>
+  <table style="margin-left: auto; margin-right: auto">
+    <tbody>
+      <tr style="padding-left: 1rem; text-align: left; font-weight: bolder">
+        <td style="padding-right: 1rem">File Name</td>
+        <td style="padding-right: 1rem">File size</td>
+        <td style="padding-right: 1rem">Number of Sheets</td>
+        <td style="padding-right: 1rem">Source</td>
+        <td style="padding-right: 1rem">Sport</td>
+      </tr>
+      <tr *ngFor="let workbook of listOfWorkbookInfo">
+        <td style="text-align: left; padding-right: 3em">
+          {{ workbook.name }}
+        </td>
+        <td style="text-align: right; padding-right: 3em">
+          {{ workbook.size | number: "1.2-2" }} Kb
+        </td>
+        <td style="text-align: left; padding-right: 3em">
+          {{ workbookData.file.SheetNames.length }}
+        </td>
+        <td style="text-align: right; padding-right: 3em">
+          {{ workbook.source }}
+        </td>
+        <td style="text-align: left; padding-right: 3em">
+          {{ workbook.sport }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button style="margin-top: 1rem" (click)="importProcess()">Import</button>
+</div>
+
+<!-- Step 5 - Import -->
+<!-- Step 5A - Import In progress -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="importStarted && !importComplete"
+>
+  <h2>Import process in progress - please wait</h2>
+  <p>
+    Importing file {{ fileNum + 1 }} of
+    {{ this.eventValue.target.files.length }}
+  </p>
+  <p style="font-weight: bolder">
+    If processing times are excessively long, please consider uploading smaller
+    batches of files in future
+  </p>
+</div>
+
+<!-- Step 5B - Import complete -->
+<div
+  style="
+    margin: 8px;
+    padding: 8px 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #333;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+  "
+  *ngIf="importComplete"
+>
+  <h2>Process Complete - please check Database</h2>
+</div>

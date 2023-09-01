@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidenav-content {
+    display: flex;
+    height: 100% ;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidenav {
+    padding: 20px;
+    min-width: 15%;
+  }
+
+  .mat-drawer {
+    background-color: rgb(230, 93, 235);
+    color: #fff;
+}
+
+.mat-drawer-container {
+  background-color: rgb(188, 236, 248);
+  color: #fff;
+}
+

@@ -1,0 +1,21 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let country of sportMenu | keyvalue">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ country.key }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let league of country.value | keyvalue">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ league.key }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngFor="let season of league.value | keyvalue">
+          <button>{{ season.key }}</button><br />
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-expansion-panel>
+</mat-accordion>

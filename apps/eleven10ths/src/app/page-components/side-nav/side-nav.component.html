@@ -1,0 +1,28 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer
+    #drawer
+    class="sidenav"
+    mode="side"
+    opened="true"
+    disableClose="true"
+  >
+    <div style="min-width: 8rem">
+      <p>Page options</p>
+    </div>
+    <div><app-side-panel-menu> </app-side-panel-menu></div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button
+      type="button"
+      mat-button
+      id="SideNavButton"
+      (click)="drawer.toggle()"
+    >
+      x
+    </button>
+    <div class="container">
+      <app-workspace></app-workspace>
+    </div>
+  </div>
+</mat-drawer-container>
