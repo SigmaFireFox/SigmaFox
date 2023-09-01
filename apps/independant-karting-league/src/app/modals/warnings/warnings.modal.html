@@ -1,0 +1,22 @@
+<div class="screen-container">
+    <div class="warning-container">
+      <p class="warning-header">{{ header }}</p>
+      <p class="warning-body">{{ body }}</p>
+      <div class="button-container">
+        <button
+          *ngIf="proceedButtonText"
+          class="primary-warning-button"
+          (click)="onConfirmClick()"
+        >
+          {{ proceedButtonText }}
+        </button>
+        <button
+          *ngIf="cancelButtonText"
+          class="secondary-warning-button"
+          (click)="onCancelClick()"
+        >
+          {{ cancelButtonText }}
+        </button>
+      </div>
+    </div>
+  </div>

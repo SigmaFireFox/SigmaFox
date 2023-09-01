@@ -1,0 +1,171 @@
+.form-title {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.standard-field-title {
+  margin: 10px 0;
+  width: 50%;
+}
+
+.large-field-title {
+  margin: 10px 0;
+  width: 85%;
+}
+
+.field-input {
+  margin: 5px 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.field-select,
+.large-field-input,
+.password-input {
+  display: flex;
+  margin: 5px 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 150px;
+  flex-direction: row;
+}
+
+.field-select {
+  background-color: white;
+}
+
+.field-radio-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.field-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.field-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-group-title {
+  display: flex;
+  width: 100%;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.field-opt-out,
+.field-opt-out-minor,
+.field-opt-out-major {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.field-opt-out-major {
+  margin: 3px 0;
+}
+
+.field-opt-out-minor mat-checkbox,
+.field-opt-out-major mat-checkbox {
+  margin: 0 5px;
+}
+
+.field-opt-out-minor p {
+  display: flex;
+  flex-grow: 1;
+  width: 45%;
+  font-size: small;
+  align-items: center;
+  height: 22px;
+}
+
+.field-opt-out-major p {
+  display: flex;
+  flex-grow: 1;
+  width: 45%;
+}
+
+.field-input input {
+  width: 80px;
+  height: 20px;
+  text-align: end;
+  align-items: center;
+  font-size: smaller;
+}
+
+.large-field-input input {
+  width: 95%;
+  height: 20px;
+  text-align: end;
+  align-items: center;
+  font-size: smaller;
+}
+
+.password-input input {
+  width: 95%;
+  height: 20px;
+  text-align: end;
+  align-items: center;
+  font-size: smaller;
+}
+
+select {
+  width: 150px;
+  height: 25px;
+  text-align: end;
+  align-items: center;
+  margin-top: 5px;
+  font-size: smaller;
+}
+
+mat-radio-button {
+  margin: 5px 0;
+}
+
+mat-icon {
+  margin: 0 5px;
+}
+
+::ng-deep .mat-select-value {
+  margin-left: 5px;
+}
+
+.right-spacer-gap {
+  display: flex;
+  flex-grow: 10;
+}
+
+.left-spacer-gap {
+  width: 50%;
+}
+
+.center-spacer-gap {
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}

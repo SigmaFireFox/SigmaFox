@@ -1,0 +1,9 @@
+<app-page-header-component [header]="'Sign in'"></app-page-header-component>
+<app-form-component
+  [formConfig]="signInFormConfig"
+  (formSubmitted)="onSignInFormSubmitted($event)"
+></app-form-component>
+<app-menu-component
+  [menuOptions]="menuOptions"
+  (viewStateSelected)="onViewStateSelected($event)"
+></app-menu-component>

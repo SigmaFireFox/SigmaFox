@@ -1,0 +1,10 @@
+<app-page-header-component [header]="'Register'"></app-page-header-component>
+<app-form-component
+  [formConfig]="registerFormConfig"
+  (formSubmitted)="onRegisterFormSubmitted($event)"
+></app-form-component>
+
+<app-menu-component
+  [menuOptions]="menuOptions"
+  (viewStateSelected)="onViewStateSelected($event)"
+></app-menu-component>

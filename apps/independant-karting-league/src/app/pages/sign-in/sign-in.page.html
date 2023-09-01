@@ -1,0 +1,32 @@
+<div [ngSwitch]="currentViewState">
+  <app-sign-in-screen
+    *ngSwitchCase="viewState.SIGN_IN"
+    (formSubmitted)="onSignIn($event)"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-sign-in-screen>
+
+  <app-register-screen
+    *ngSwitchCase="viewState.REGISTER"
+    (formSubmitted)="onRegistration($event)"
+    (isPasswordMismatched)="onRegisterPasswordMismatch()"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-register-screen>
+
+  <app-forgot-password-screen
+    *ngSwitchCase="viewState.FORGOT_PASSWORD"
+    (formSubmitted)="onForgotPasswordSubmit($event)"
+    (viewStateSelected)="onViewStateSelected($event)"
+  ></app-forgot-password-screen>
+</div>
+
+<app-warnings-modal
+  *ngIf="isWarning"
+  [warningConfig]="warnigConfig"
+  (proceed)="isWarning = false"
+></app-warnings-modal>
+
+<app-notifications-modal
+  *ngIf="isNotifying"
+  [notificationConfig]="notificationConfig"
+  (proceed)="onNotificationProceed()"
+></app-notifications-modal>

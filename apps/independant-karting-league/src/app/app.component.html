@@ -1,0 +1,10 @@
+<div class="page-container">
+  <div class="title-container" (click)="onTitleClick()">
+    Independent Karting League
+  </div>
+  <router-outlet></router-outlet>
+</div>
+<app-loading-spinner
+  *ngIf="isLoading"
+  [explainer]="loadingExplainer"
+></app-loading-spinner>
