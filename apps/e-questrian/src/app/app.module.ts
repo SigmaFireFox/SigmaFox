@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
-import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,6 +38,7 @@ import { GeneralItemsListScreen } from './screens/general-items-list/general-ite
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

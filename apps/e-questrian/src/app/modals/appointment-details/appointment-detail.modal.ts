@@ -1,25 +1,29 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Time } from '@angular/common';
 import {
-  ChangeDetectorRef,
   Component,
-  EventEmitter,
-  Input,
   OnInit,
+  Input,
   Output,
+  EventEmitter,
   ViewChild,
+  ChangeDetectorRef,
 } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import {
   AppointmentDetail,
   AppointmentType,
-} from 'src/app/interfaces/appointments.interface';
-import { ClientDetail, Clients } from 'src/app/interfaces/clients.interface';
-import { ClientsService } from 'src/app/services/clients/clients.service';
-import { DateAndTimeService } from 'src/app/services/date-time/date-time.service';
+} from '../../interfaces/appointments.interface';
+import { ClientDetail, Clients } from '../../interfaces/clients.interface';
+import { ClientsService } from '../../services/clients/clients.service';
+import { DateAndTimeService } from '../../services/date-time/date-time.service';
 import {
   WarningsModal,
-  WarningSubjectType,
   WarningType,
+  WarningSubjectType,
 } from '../warnings/warnings.component';
 
 export interface TimeOption {
@@ -163,7 +167,7 @@ export class AppointmentModal implements OnInit {
     // Address client
     switch (this.appointmentForm.controls['type'].value) {
       case AppointmentType.Lesson: {
-        let clientDetail = this.appointmentForm.controls['client']
+        const clientDetail = this.appointmentForm.controls['client']
           .value as ClientDetail;
         if (this.isClientChanged(clientDetail) && clientDetail.displayName) {
           this.selectedCient = clientDetail;
@@ -286,7 +290,8 @@ export class AppointmentModal implements OnInit {
 
   private prepAndSaveEditedAppointment() {
     this.appointmentForm.controls['client'].setValue(this.selectedCient);
-    let newAppointmentDetails = this.appointmentForm.value as AppointmentDetail;
+    const newAppointmentDetails = this.appointmentForm
+      .value as AppointmentDetail;
     newAppointmentDetails.invoice = this.currentAppointment.invoice;
     this.editedAppointment.emit(newAppointmentDetails);
     this.appointmentForm.controls['client'].setValue(
@@ -345,11 +350,11 @@ export class AppointmentModal implements OnInit {
   }
 
   private isClientChanged(clientDetail: ClientDetail) {
-    let previousValue = this.currentAppointment.client?.displayName
+    const previousValue = this.currentAppointment.client?.displayName
       ? this.currentAppointment.client.displayName
       : this.currentAppointment.client;
 
-    let currentValue = clientDetail.displayName
+    const currentValue = clientDetail.displayName
       ? clientDetail.displayName
       : clientDetail;
 
@@ -358,7 +363,7 @@ export class AppointmentModal implements OnInit {
 
   // Functions related to the auto completion of the appointment subject
   private setPreferredSubject() {
-    let isAutoUpdateSubject =
+    const isAutoUpdateSubject =
       this.appointmentForm.controls['subject'].value === this.preferredSubject;
 
     this.preferredSubject = this.getPreferredSubject();

@@ -1,10 +1,14 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   MenuPageConfig,
   PageConfig,
-} from 'src/app/interfaces/common-page-configs.interface';
-import { OptionAction, OptionStyling } from 'src/app/interfaces/menu-options.interface';
+} from '../../interfaces/common-page-configs.interface';
+import {
+  OptionAction,
+  OptionStyling,
+} from '../../interfaces/menu-options.interface';
 
 @Component({
   selector: 'app-menu-component',

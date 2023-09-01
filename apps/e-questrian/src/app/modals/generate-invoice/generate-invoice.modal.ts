@@ -1,7 +1,9 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { ClientDetail, Clients } from 'src/app/interfaces/clients.interface';
-import { ClientsService } from 'src/app/services/clients/clients.service';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Output, EventEmitter } from '@angular/core';
+import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import { ClientDetail, Clients } from '../../interfaces/clients.interface';
+import { ClientsService } from '../../services/clients/clients.service';
 
 export enum InvoiceRange {
   NONE,
@@ -65,7 +67,7 @@ export class GenerateInvoiceModal {
   // Button callbacks
   onSubmitClick() {
     if (this.isGenerate) {
-      let params = {} as GenerateInvoiceParameters;
+      const params = {} as GenerateInvoiceParameters;
       params.invoiceRange = this.invoiceRange;
       params.dateRange = this.dateRange;
       params.clientRange = this.clientRange;

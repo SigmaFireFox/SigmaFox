@@ -1,9 +1,9 @@
+import { ClientPageViewState as ViewState } from '../enums/viewstates.enum';
 import {
+  MenuPageConfig,
   GeneralItem,
   GeneralItemsListPageConfig,
-  MenuPageConfig,
 } from '../interfaces/common-page-configs.interface';
-import { ClientPageViewState as ViewState } from 'src/app/enums/viewstates.enum';
 
 export const ClientMenuPageConfig = {
   header: '',

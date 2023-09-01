@@ -1,7 +1,9 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { ClientDetail, Clients } from 'src/app/interfaces/clients.interface';
-import { ClientsService } from 'src/app/services/clients/clients.service';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import { ClientDetail } from '../../interfaces/clients.interface';
+import { ClientsService } from '../../services/clients/clients.service';
 
 @Component({
   selector: 'app-client-details-modal',

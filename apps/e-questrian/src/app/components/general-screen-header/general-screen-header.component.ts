@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { PageConfig } from 'src/app/interfaces/common-page-configs.interface';
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { PageConfig } from '../../interfaces/common-page-configs.interface';
 
 @Component({
   selector: 'app-general-screen-header-component',

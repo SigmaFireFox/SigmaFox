@@ -1,10 +1,10 @@
+import { FinancePageViewState as ViewState } from '../enums/viewstates.enum';
 import {
-  FinancialDocListPageConfig,
-  FinancialDocType,
   MenuPageConfig,
+  FinancialDocType,
+  FinancialDocListPageConfig,
   ProcessResultsPageConfig,
 } from '../interfaces/common-page-configs.interface';
-import { FinancePageViewState as ViewState } from 'src/app/enums/viewstates.enum';
 
 export const FinanceMenuPageConfig = {
   header: '',
