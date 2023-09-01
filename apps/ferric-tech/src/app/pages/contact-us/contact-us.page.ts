@@ -1,17 +1,15 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-import { ValidationErrors } from '@angular/forms';
-import { FormItemType } from 'src/app/components/form/form.component';
-import { ButtonAction, ButtonType } from 'src/app/interfaces/widgets.interface';
-import { FormScreenConfig } from 'src/app/screens/form/form.screen';
-import {
-  PlainTextScreen,
-  PlainTextScreenConfig,
-} from 'src/app/screens/plain-text/plain-text.screen';
+import { FormItemType } from '../../components/form/form.component';
+import { ButtonType, ButtonAction } from '../../interfaces/widgets.interface';
+import { FormScreenConfig } from '../../screens/form/form.screen';
+import { PlainTextScreenConfig } from '../../screens/plain-text/plain-text.screen';
 import {
   FormValidationError,
   FormValidationService,
-} from 'src/app/services/form-validation.service';
-import { WidgetCallBacksService } from 'src/app/services/widget-call-backs.service';
+} from '../../services/form-validation.service';
+import { WidgetCallBacksService } from '../../services/widget-call-backs.service';
 
 @Component({
   selector: 'app-contact-us',

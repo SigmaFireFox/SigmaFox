@@ -1,8 +1,12 @@
-import { Component, Input } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { FormValidationService } from 'src/app/services/form-validation.service';
-import { WidgetCallBacksService } from 'src/app/services/widget-call-backs.service';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-selector */
 
+import { Component, Input } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { FormValidationService } from '../../services/form-validation.service';
+import { WidgetCallBacksService } from '../../services/widget-call-backs.service';
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export enum FormItemType {
   FREE_TEXT_SHORT,
   FREE_TEXT_LONG,
@@ -40,7 +44,7 @@ export class FormComponent {
 
   ngOnInit() {
     this.config?.forEach((item) => {
-      let newControl = new FormControl('');
+      const newControl = new FormControl('');
       this.form.addControl(item.fieldName, newControl);
     });
     this.widgetCallBackService.formSubmitted.subscribe((submitted) =>

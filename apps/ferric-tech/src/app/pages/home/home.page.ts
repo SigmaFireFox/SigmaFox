@@ -1,7 +1,8 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-import { CarouselOption } from 'src/app/components/carousel/carousel.component';
-import { ButtonAction, ButtonType } from 'src/app/interfaces/widgets.interface';
-import { CarouselScreenConfig } from 'src/app/screens/carousel/carousel.screen';
+import { ButtonType, ButtonAction } from '../../interfaces/widgets.interface';
+import { CarouselScreenConfig } from '../../screens/carousel/carousel.screen';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,6 @@ import { CarouselScreenConfig } from 'src/app/screens/carousel/carousel.screen';
 })
 export class HomePage implements OnInit {
   screenConfig = {} as CarouselScreenConfig;
-
-  constructor() {}
 
   ngOnInit(): void {
     this.screenConfig = {} as CarouselScreenConfig;

@@ -1,8 +1,16 @@
-import { Component, HostListener, Input, OnInit, Output } from '@angular/core';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  HostListener,
+} from '@angular/core';
 import { Router } from '@angular/router';
-import { Button, ButtonType } from 'src/app/interfaces/widgets.interface';
-import { EventEmitter } from '@angular/core';
+import { Button, ButtonType } from '../../interfaces/widgets.interface';
 
+/* eslint-disable @angular-eslint/component-selector */
 export interface CarouselOption {
   title?: string;
   image: string;
@@ -62,7 +70,7 @@ export class CarouselComponent implements OnInit {
 
   private setCarouselOptionsArray() {
     this.tilesInFocus = [];
-    let lastDisplayTileNumber =
+    const lastDisplayTileNumber =
       this.firstDisplayTileNumber + this.numberOfDisplayTiles - 1;
     for (
       let i = this.firstDisplayTileNumber;

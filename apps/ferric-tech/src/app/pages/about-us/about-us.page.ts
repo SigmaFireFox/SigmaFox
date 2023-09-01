@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ButtonAction, ButtonType } from 'src/app/interfaces/widgets.interface';
-import {
-  PlainTextScreen,
-  PlainTextScreenConfig,
-} from 'src/app/screens/plain-text/plain-text.screen';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component } from '@angular/core';
+import { ButtonType, ButtonAction } from '../../interfaces/widgets.interface';
+import { PlainTextScreenConfig } from '../../screens/plain-text/plain-text.screen';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.page.html',
   styleUrls: ['./about-us.page.scss'],
 })
-export class AboutUsPage implements OnInit {
+export class AboutUsPage {
   screenConfig: PlainTextScreenConfig = {
     screenTitle: 'About us',
     paragraphs: [
@@ -42,8 +41,4 @@ export class AboutUsPage implements OnInit {
       },
     ],
   };
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

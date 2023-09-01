@@ -1,22 +1,17 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  ElementRef,
-  Input,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import { ValidationErrors } from '@angular/forms';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import {
   Button,
-  ButtonAction,
   ButtonType,
-} from 'src/app/interfaces/widgets.interface';
+  ButtonAction,
+} from '../../interfaces/widgets.interface';
 import {
   FormValidationError,
   FormValidationErrorType,
-} from 'src/app/services/form-validation.service';
-import { WidgetCallBacksService } from 'src/app/services/widget-call-backs.service';
+} from '../../services/form-validation.service';
+import { WidgetCallBacksService } from '../../services/widget-call-backs.service';
 
 export interface ErrorExplination {
   explination: string;
@@ -62,8 +57,9 @@ export class FormValidationWarningModal implements OnInit {
   }
 
   ngAfterViewInit() {
-    let cardH = document.getElementById('modal')!.offsetHeight;
-    let cardW = document.getElementById('modal')!.offsetWidth;
+    const cardH = document.getElementById('modal')?.offsetHeight;
+    const cardW = document.getElementById('modal')?.offsetWidth;
+    if (!cardH || !cardW) return;
     this.marginTop = '-' + cardH / 2 + 'px';
     this.marginLeft = '-' + cardW / 2 + 'px';
     this.cd.detectChanges();
