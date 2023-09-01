@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Injectable } from '@angular/core';
 import * as excelhandler from 'xlsx';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { BasicAppInfoHandlerService } from './basic-app-info-handler.service';
 
 @Injectable({
@@ -18,7 +19,7 @@ export class DataImporterService {
 
   /*****************     Functions needed to convert files to Workbooks and analyse imports    *********************/
   async analyseImports(file: File) {
-    let workbookData: workbookData = {
+    const workbookData: workbookData = {
       name: '',
       size: 0,
       file: { SheetNames: [], Sheets: {} },
@@ -36,7 +37,7 @@ export class DataImporterService {
 
   covertFileToWorkbook(file: File): Promise<void> {
     return new Promise<void>(
-      (resolve, reject) => {
+      (resolve) => {
         const fileReader: FileReader = new FileReader();
         fileReader.readAsBinaryString(file);
         fileReader.onload = (event: any) => {
@@ -100,7 +101,7 @@ export class DataImporterService {
   /*********************  getListOfResults  ******************************/
   getListOfResults(matrix: any[][]): result[] {
     const headerList = this.getHeaders(matrix[0]);
-    let listOfResults: result[] = [];
+    const listOfResults: result[] = [];
     for (let rowNum = 1; rowNum < matrix.length; rowNum++) {
       const result = this.getResultObject(headerList, matrix[rowNum]);
       if (result !== null) {
@@ -111,7 +112,7 @@ export class DataImporterService {
   }
 
   getHeaders(matrix: any[]) {
-    let headerList = [];
+    const headerList = [];
     for (let i = 0; i < matrix.length; i++) {
       headerList.push(matrix[i]);
     }
@@ -121,9 +122,9 @@ export class DataImporterService {
   getResultObject(headerList: string[], matrixRow: any[]): any {
     // Only proceed is row's first cell is not empty
     if (matrixRow[0] !== undefined) {
-      let result: result = { Div: '', Date: 0 };
+      const result: result = { Div: '', Date: 0 };
       for (let colNum = 0; colNum < matrixRow.length; colNum++) {
-        let currentKey: string = headerList[colNum];
+        const currentKey: string = headerList[colNum];
         // If the cell has content add to object or else add empty string ''
         if (matrixRow[colNum] !== undefined) {
           result[currentKey] = matrixRow[colNum];
@@ -150,8 +151,8 @@ export class DataImporterService {
     const season = this.getDateParameters(listOfResults);
     const importObject: seasonResultsObject = {
       sport: sport,
-      country: String(divCodeData.country),
-      league: String(divCodeData.league),
+      country: String(divCodeData['country']),
+      league: String(divCodeData['league']),
       season: season,
       results: listOfResults,
     };
@@ -190,11 +191,11 @@ export class DataImporterService {
 
   /*********************  postImportObject  ******************************/
   postImportObject(
-    importObject: Object,
+    importObject: object,
     collection: string,
     docName: string
   ): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
+    return new Promise<void>((resolve) => {
       this.firestore.collection(collection).doc(docName).set(importObject);
       resolve();
     });

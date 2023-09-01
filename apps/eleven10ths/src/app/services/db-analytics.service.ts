@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
-} from '@angular/fire/firestore';
+} from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 import { seasonResultsObject } from './data-importer.service';
 import { map } from 'rxjs/operators';

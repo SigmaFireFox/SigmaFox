@@ -10,9 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 // Required for Firebase
-import { environment } from 'src/environments/environment';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 // import { AngularFirestore } from '@angular/fire/firestore';
 // import { AngularFirestore } from '@angular/fire/firestore';
 
@@ -30,6 +28,8 @@ import { WorkspaceComponent } from './page-components/workspace/workspace.compon
 import { WorkspaceNavComponent } from './page-components/workspace-nav/workspace-nav.component';
 import { DataAnalyticsComponent } from './pages/data-analytics/data-analytics.component';
 import { SelectorTableComponent } from './pages/data-import/selector-table/selector-table.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

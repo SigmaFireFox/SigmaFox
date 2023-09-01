@@ -1,6 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-import { BasicAppInfoHandlerService } from 'src/app/services/basic-app-info-handler.service';
-import { resultIndex } from 'src/app/services/data-importer.service';
+import { BasicAppInfoHandlerService } from '../../services/basic-app-info-handler.service';
+import { resultIndex } from '../../services/data-importer.service';
 
 @Component({
   selector: 'app-top-nav-bar',
@@ -12,9 +13,7 @@ export class TopNavBarComponent implements OnInit {
   avaliableSports: string[] = [];
 
   // Constructor
-  constructor(
-    private basicInfo: BasicAppInfoHandlerService
-  ) {}
+  constructor(private basicInfo: BasicAppInfoHandlerService) {}
 
   async ngOnInit(): Promise<void> {
     const avaliableResults: resultIndex =

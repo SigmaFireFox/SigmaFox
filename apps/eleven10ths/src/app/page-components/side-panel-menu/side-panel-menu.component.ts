@@ -1,7 +1,10 @@
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
-import { PageMenuManagementService } from 'src/app/services/page-menu-management.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { resultIndex } from 'src/app/services/data-importer.service';
+import { resultIndex } from '../../services/data-importer.service';
+import { PageMenuManagementService } from '../../services/page-menu-management.service';
 
 @Component({
   selector: 'app-side-panel-menu',

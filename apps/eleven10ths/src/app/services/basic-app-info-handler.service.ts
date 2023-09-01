@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -34,7 +35,7 @@ export class BasicAppInfoHandlerService {
     docOb: Observable<firebase.default.firestore.DocumentSnapshot<unknown>>
   ): Promise<void> {
     return new Promise<void>(
-      (resolve, reject) => {
+      (resolve) => {
         docOb.subscribe((info) => {
           this.docResult = info.data();
           resolve();

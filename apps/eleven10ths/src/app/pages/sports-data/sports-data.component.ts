@@ -1,5 +1,5 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-sports-data',

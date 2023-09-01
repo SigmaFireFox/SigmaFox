@@ -1,15 +1,15 @@
-// Core imports
+/* eslint-disable no-async-promise-executor */
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
-// Service imports
+import { BasicAppInfoHandlerService } from '../../services/basic-app-info-handler.service';
 import {
   DataImporterService,
   importResult,
-} from 'src/app/services/data-importer.service';
-import { BasicAppInfoHandlerService } from 'src/app/services/basic-app-info-handler.service';
-// Interface imports
-import { workbookData } from 'src/app/services/data-importer.service';
+} from '../../services/data-importer.service';
 import { selection } from './selector-table/selector-table.component';
-import { WorkBook } from 'xlsx/types';
+import { workbookData } from '../../services/data-importer.service';
 
 @Component({
   selector: 'app-data-import',
@@ -73,7 +73,7 @@ export class DataImportComponent implements OnInit {
   getFileNamesList(files: File[]) {
     for (
       // Go through each workbook
-      var fileNum = 0;
+      let fileNum = 0;
       fileNum < files.length;
       fileNum++
     ) {
@@ -200,7 +200,7 @@ export class DataImportComponent implements OnInit {
 
   // Functions
   importProcess(): Promise<void> {
-    return new Promise<void>(async (resolve, reject) => {
+    return new Promise<void>(async (resolve) => {
       // Change states at start
       this.optionSelected = true;
       this.isImportingState(true);
@@ -232,7 +232,7 @@ export class DataImportComponent implements OnInit {
       }
 
       //Update avaliableResultsIndex
-      this.dataService.updateAvaliableResults(this.listOfImportResults)
+      this.dataService.updateAvaliableResults(this.listOfImportResults);
 
       // Change states at completion
       this.isImportingState(false);
@@ -250,10 +250,10 @@ export class DataImportComponent implements OnInit {
     }
   }
 
-  importFile(file: WorkBook, source: string, sport: string): Promise<void> {
-    return new Promise<void>(async (resolve, reject) => {
+  importFile(file: any, source: string, sport: string): Promise<void> {
+    return new Promise<void>(async (resolve) => {
       // Go through each sheet in workbook
-      for (var sheetNum = 0; sheetNum < file.SheetNames.length; sheetNum++) {
+      for (let sheetNum = 0; sheetNum < file.SheetNames.length; sheetNum++) {
         const sheetName = file.SheetNames[sheetNum];
         const sheet = file.Sheets[sheetName];
         const importResult: importResult =
