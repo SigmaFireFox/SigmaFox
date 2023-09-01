@@ -1,0 +1,34 @@
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: aqua;
+}
+
+.ferric-tech-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  margin: 7vh auto;
+  width: 80%;
+  max-width: 400px;
+  font-weight: bold;
+  font-size: xx-large;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 28vh;
+}
+/*# sourceMappingURL=app.component.css.map */

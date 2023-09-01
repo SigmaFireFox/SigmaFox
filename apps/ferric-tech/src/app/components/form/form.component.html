@@ -1,0 +1,33 @@
+<form class="form-container" [formGroup]="form">
+  <div *ngFor="let item of config">
+    <div
+      class="input-container"
+      *ngIf="item.type === formItemType.FREE_TEXT_SHORT"
+    >
+      <p>{{ item.title }}<span *ngIf="item.required">*</span></p>
+      <input [formControl]="getFormControl(item.fieldName)" type="text" />
+    </div>
+    <div
+      class="long-input-container"
+      *ngIf="item.type === formItemType.FREE_TEXT_LONG"
+    >
+      <p>{{ item.title }}<span *ngIf="item.required">*</span></p>
+      <textarea
+        [formControl]="getFormControl(item.fieldName)"
+        name=""
+        rows="4"
+        cols="35"
+      >
+      </textarea>
+    </div>
+    <div class="select-container" *ngIf="item.type === formItemType.SELECT">
+      <p>{{ item.title }}<span *ngIf="item.required">*</span></p>
+      <select [formControl]="getFormControl(item.fieldName)">
+        <option value="" disabled>Select an Option</option>
+        <option *ngFor="let option of item.options" [ngValue]="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>

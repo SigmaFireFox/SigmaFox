@@ -1,0 +1,18 @@
+<p class="screen-title-container">{{config.screenTitle}}</p>
+<p class="screen-paragraph-container">{{config.introParagraph}}</p>
+<div class="from-container">
+  <app-form-component [config]="config.form"></app-form-component>
+</div>
+<div class="button-container">
+  <button
+    *ngFor="let button of config.buttons"
+    (click)="onButtonClick(button)"
+    [ngClass]="
+  button.type === buttonType.PRIMARY
+    ? 'primary-button'
+    : 'secondary-button'
+"
+  >
+    {{ button.text }}
+  </button>
+</div>

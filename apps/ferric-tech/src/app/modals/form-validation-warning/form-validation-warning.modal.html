@@ -1,0 +1,36 @@
+<div class="modal-screen-container">
+  <mat-card
+    id="modal"
+    [ngStyle]="{'margin-top': marginTop,'margin-left': marginLeft}"
+    class="modal-card"
+  >
+    <div class="modal-title-container">
+      <p class="modal-title">Form Validation Errors</p>
+    </div>
+    <div class="modal-intro-container">
+      <p class="modal-intro">
+        The follow errors occurred when submitting your form and need to be
+        corrected before the form can be submitted
+      </p>
+    </div>
+    <div *ngFor="let error of listOfErrors" class="error-container">
+      <p class="error-explination">{{error.explination}}</p>
+      <p *ngFor="let errorField of error.errorFields" class="error-field">
+        - {{errorField}}
+      </p>
+    </div>
+    <div class="button-container">
+      <button
+        *ngFor="let button of buttons"
+        (click)="onButtonClick(button)"
+        [ngClass]="
+        button.type === buttonType.PRIMARY
+          ? 'primary-button'
+          : 'secondary-button'
+      "
+      >
+        {{ button.text }}
+      </button>
+    </div>
+  </mat-card>
+</div>

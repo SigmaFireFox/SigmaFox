@@ -1,0 +1,12 @@
+<app-form-screen
+  *ngIf="!validFormSubmitted"
+  [config]="formScreenConfig"
+></app-form-screen>
+<app-plain-text-screen
+  *ngIf="validFormSubmitted"
+  [config]="celebrationScreenConfig"
+></app-plain-text-screen>
+<app-form-validation-warning-modal
+  *ngIf="submittionError"
+  [validationErrors]="validationErrors"
+></app-form-validation-warning-modal>

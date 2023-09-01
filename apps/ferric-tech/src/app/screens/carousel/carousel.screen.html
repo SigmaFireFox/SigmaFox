@@ -1,0 +1,22 @@
+<p *ngIf="config.screenTitle" class="screen-title-container">
+  {{config.screenTitle}}
+</p>
+<app-carousel
+  class="menu-carousel-container"
+  [options]="config.carouselOptions"
+  (maxButtonWidth)="setButtonWidth($event)"
+></app-carousel>
+<div class="button-container">
+  <button
+    *ngFor="let button of config.buttons"
+    [ngStyle]="{width: buttonWidth}"
+    (click)="onButtonClick(button)"
+    [ngClass]="
+  button.type === buttonType.PRIMARY
+    ? 'primary-button'
+    : 'secondary-button'
+"
+  >
+    {{ button.text }}
+  </button>
+</div>

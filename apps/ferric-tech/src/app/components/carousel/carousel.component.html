@@ -1,0 +1,39 @@
+<div class="menu-carousel-container">
+  <div class="carousel-arrow-container">
+    <mat-icon class="carousel-arrow" (click)="onArrowClick(false)"
+      >keyboard_arrow_left</mat-icon
+    >
+  </div>
+
+  <div *ngFor="let index of tilesInFocus" class="carousel-content-container">
+    <img
+      (click)="onButtonClick(options[index].buttons[0])"
+      class="carousel-image-container"
+      [src]="options[index].image"
+      alt=""
+    />
+    <div
+      class="carousel-button-container"
+      *ngFor="let button of options[index].buttons"
+    >
+      <button
+        attr.id="{{ 'button-' + index }}"
+        *ngIf="button.url || button.internalUrl"
+        (click)="onButtonClick(button)"
+        [ngClass]="
+          button.type === buttonType.PRIMARY
+            ? 'primary-button'
+            : 'secondary-button'
+        "
+      >
+        {{ button.text }}
+      </button>
+    </div>
+  </div>
+
+  <div class="carousel-arrow-container">
+    <mat-icon class="carousel-arrow" (click)="onArrowClick(true)"
+      >keyboard_arrow_right</mat-icon
+    >
+  </div>
+</div>
