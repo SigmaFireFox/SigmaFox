@@ -1,0 +1,101 @@
+{
+  "name": "cryptic-internet-adventures",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "sigmafox",
+  "sourceRoot": "apps/cryptic-internet-adventures/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/cryptic-internet-adventures",
+        "index": "apps/cryptic-internet-adventures/src/index.html",
+        "main": "apps/cryptic-internet-adventures/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/cryptic-internet-adventures/tsconfig.app.json",
+        "assets": [
+          "apps/cryptic-internet-adventures/src/favicon.ico",
+          "apps/cryptic-internet-adventures/src/assets"
+        ],
+        "styles": ["apps/cryptic-internet-adventures/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "cryptic-internet-adventures:build:production"
+        },
+        "development": {
+          "browserTarget": "cryptic-internet-adventures:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "cryptic-internet-adventures:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/cryptic-internet-adventures/**/*.ts",
+          "apps/cryptic-internet-adventures/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/cryptic-internet-adventures/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "cryptic-internet-adventures:build"
+      }
+    }
+  }
+}

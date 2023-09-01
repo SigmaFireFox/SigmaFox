@@ -1,0 +1,38 @@
+.input-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px 0;
+
+  .text-input {
+    display: flex !important;
+    flex-grow: 1;
+    width: 100%;
+    background-color: black;
+    border: 1px solid #0fa;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .text-input:focus::placeholder {
+    color: transparent;
+  }
+
+  .text-input:focus {
+    text-shadow: none;
+  }
+
+  .input-error {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  ::placeholder {
+    color: honeydew;
+  }
+}

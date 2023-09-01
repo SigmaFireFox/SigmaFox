@@ -1,0 +1,16 @@
+<div class="button-container">
+  <button
+    *ngIf="config"
+    class="{{
+      config.style === buttonStyle.Primary
+        ? 'button primary'
+        : config.style === buttonStyle.Secondary
+        ? 'button secondary'
+        : 'button tertiary'
+    }}"
+    [disabled]="config.disabled && !formValid"
+    (click)="onButtonClicked()"
+  >
+    {{ config.text }}
+  </button>
+</div>

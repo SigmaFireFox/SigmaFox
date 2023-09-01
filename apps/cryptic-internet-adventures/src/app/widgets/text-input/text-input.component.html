@@ -1,0 +1,14 @@
+<div *ngIf="config" class="input-container">
+  <input
+    class="text-input neon-text"
+    type="text"
+    [formControl]="formControl"
+    placeholder="{{ config.placeholder }}"
+    (blur)="onInputBlur()"
+  />
+  <div *ngIf="listOfErrors" class="input-error neon-text">
+    <div *ngFor="let error of listOfErrors">
+      {{ error }}
+    </div>
+  </div>
+</div>

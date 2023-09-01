@@ -1,0 +1,15 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(0deg)
+      brightness(94%) contrast(115%);
+    height: 35%;
+    width: auto;
+    padding: 50px;
+  }
+}

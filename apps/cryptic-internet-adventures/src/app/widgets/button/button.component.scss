@@ -1,0 +1,48 @@
+.button-container {
+  display: flex;
+  width: 104%;
+  align-items: center;
+  justify-content: center;
+
+  .button {
+    height: 1.5rem;
+    width: 80%;
+    min-width: 150px;
+    margin: 10px;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+  }
+
+  .button:disabled,
+  .button:disabled:active {
+    background-color: lightgray;
+    color: darkgrey;
+    border: none;
+  }
+
+  .button:disabled:hover {
+    transform: none;
+  }
+
+  .primary,
+  .secondary:active,
+  .tertiary:active {
+    background-color: #0fa;
+    color: black;
+  }
+
+  .secondary,
+  .primary:active {
+    background-color: black;
+    color: #0fa;
+    border: 1px solid #0fa;
+  }
+
+  .tertiary {
+    background-color: red;
+    color: black;
+    border: 1px solid black;
+  }
+}

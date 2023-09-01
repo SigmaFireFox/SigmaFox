@@ -1,0 +1,21 @@
+<form *ngIf="formConfig" class="form-container" [formGroup]="form">
+  <!-- Header -->
+  <app-form-header [header]="formConfig.header"></app-form-header>
+
+  <!-- Form fields -->
+  <div *ngFor="let field of formConfig.fields" [ngSwitch]="field.type">
+    <app-text-input
+      *ngSwitchCase="appFieldType.TextInput"
+      [config]="field"
+      (returnedValue)="onInput(field.name, $event)"
+    ></app-text-input>
+  </div>
+
+  <!-- Form buttons     -->
+  <app-button
+    *ngFor="let button of formConfig.buttons"
+    [config]="button"
+    [formValid]="form.valid"
+    (buttonClicked)="onButtonClicked($event)"
+  ></app-button>
+</form>
