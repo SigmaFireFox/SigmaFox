@@ -1,0 +1,69 @@
+<div class="main-container">
+  <form
+    class="form-container"
+    [formGroup]="paymentForm"
+    (ngSubmit)="onSubmitClick()"
+  >
+    <div class="form-header">Payment received</div>
+
+    <div class="form-line">
+      <div class="form-line-title">Client:</div>
+      <mat-select
+        [compareWith]="compareClients"
+        class="client-selector"
+        formControlName="client"
+      >
+        <mat-option
+          [value]="option"
+          *ngFor="let option of clients | keyvalue"
+          >{{ option.value.displayName }}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Date:</div>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <input
+        class="date-input"
+        [matDatepicker]="picker"
+        formControlName="date"
+      />
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Amount:</div>
+      <input type="text" formControlName="amount" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <button
+        class="primary-button"
+        type="submit"
+        (click)="onSaveClick(true)"
+        [disabled]="!paymentForm.valid"
+      >
+        Save and New
+      </button>
+      <button
+        class="primary-button"
+        type="submit"
+        (click)="onSaveClick(false)"
+        [disabled]="!paymentForm.valid"
+      >
+        Save and Close
+      </button>
+
+      <button
+        class="secondary-button"
+        *ngIf="!isNewPayment"
+        (click)="onCancelAppointmentClick()"
+      >
+        Void Payment
+      </button>
+      <button class="secondary-button" (click)="onCloseClick()">Close</button>
+    </div>
+  </form>
+</div>

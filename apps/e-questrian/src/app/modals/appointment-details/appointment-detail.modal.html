@@ -1,0 +1,168 @@
+<div *ngIf="!isWarning" class="main-container">
+  <form
+    class="form-container"
+    [formGroup]="appointmentForm"
+    (ngSubmit)="onSubmitClick()"
+  >
+    <!-- ----------------------------- Form fields section --------------------------- -->
+    <!-- Title -->
+    <div *ngIf="!isHeaderEditable" class="form-header">
+      <div class="header-text">{{ modalHeader }}</div>
+      <mat-icon
+        *ngIf="isEditable"
+        class="edit-icon"
+        (click)="onHeaderEditClick()"
+        >edit</mat-icon
+      >
+    </div>
+    <div *ngIf="isHeaderEditable" class="form-header">
+      <input
+        class="header-input"
+        (change)="onChangesMade()"
+        type="text"
+        formControlName="subject"
+      />
+      <mat-icon (click)="onHeaderEditSubmitClick()">check</mat-icon>
+      <mat-icon (click)="onHeaderEditCancelClick()">cancel</mat-icon>
+    </div>
+
+    <!-- Appointment Type -->
+    <div class="form-line">
+      <div class="form-line-title">Appointment type:</div>
+      <mat-select
+        placeholder="Appointment Type"
+        [compareWith]="compareTypes"
+        [ngClass]="isEditable? 'editable-selector': 'uneditable-selector'"
+        (selectionChange)="onChangesMade()"
+        formControlName="type"
+      >
+        <mat-option
+          *ngFor="let key of appointmentTypeEnumKeysNumbers"
+          [value]="key"
+          >{{appointmentType[key]}}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <!-- Client -->
+    <div *ngIf="showClientField" class="form-line">
+      <div class="form-line-title">Client:</div>
+      <mat-select
+        [compareWith]="compareClients"
+        [ngClass]="isEditable? 'editable-selector': 'uneditable-selector'"
+        (selectionChange)="onChangesMade()"
+        formControlName="client"
+      >
+        <mat-option
+          [value]="option.value"
+          *ngFor="let option of clients | keyvalue"
+          >{{ option.value.displayName }}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <!-- Date -->
+    <div class="form-line">
+      <div class="form-line-title">Date:</div>
+      <mat-datepicker-toggle
+        *ngIf="isEditable"
+        matSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <input
+        [ngClass]="isEditable? 'editable-date-input': 'uneditable-date-input'"
+        [readonly]="!isEditable"
+        (dateChange)="onChangesMade()"
+        [matDatepicker]="picker"
+        formControlName="date"
+      />
+    </div>
+
+    <!-- Start Time  -->
+
+    <div class="form-line-time">
+      <div class="form-line-title">Start time:</div>
+      <mat-select
+        [compareWith]="compareTimes"
+        [ngClass]="isEditable? 'editable-time-selector': 'uneditable-time-selector'"
+        (selectionChange)="onChangesMade()"
+        formControlName="startTime"
+      >
+        <mat-option
+          *ngFor="let option of startTimeOptions"
+          [value]="option.value"
+          >{{ option.display}}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <!-- Duration  -->
+    <div class="form-line-time">
+      <div class="form-line-title">Duration:</div>
+      <mat-select
+        [compareWith]="compareTimes"
+        [ngClass]="isEditable? 'editable-time-selector': 'uneditable-time-selector'"
+        (selectionChange)="onChangesMade()"
+        formControlName="duration"
+      >
+        <mat-option
+          *ngFor="let option of durationTimeOptions"
+          [value]="option.value"
+          >{{ option.display}}</mat-option
+        >
+      </mat-select>
+    </div>
+
+    <!-- Invoice number -->
+    <div *ngIf="currentAppointment.invoice !== 0" class="form-line">
+      <div class="form-line-title">Invoice number:</div>
+      <div>{{currentAppointment.invoice}}</div>
+    </div>
+
+    <!-- ----------------------------- Buttons section --------------------------- -->
+    <!-- Buttons for present mode -->
+    <div *ngIf="!isEditable" class="button-container">
+      <button
+        class="primary-button"
+        *ngIf="!isEditable"
+        (click)="onCloseClick()"
+      >
+        Close
+      </button>
+      <button
+        class="secondary-button"
+        *ngIf="!isEditable"
+        (click)="onEditAppointmentClick()"
+      >
+        Edit / Cancel Appointment
+      </button>
+    </div>
+
+    <!-- Buttons for edit mode -->
+    <div *ngIf="isEditable" class="button-container">
+      <button class="primary-button" *ngIf="isSavable" type="submit">
+        {{isNewAppointment? 'Save': 'Save changes'}}
+      </button>
+      <button
+        class="secondary-button"
+        *ngIf="!isNewAppointment"
+        (click)="onCancelAppointmentClick()"
+      >
+        Cancel appointment
+      </button>
+      <button class="secondary-button" (click)="onCancelEditsClick()">
+        {{isNewAppointment? 'Cancel': 'Cancel changes'}}
+      </button>
+    </div>
+  </form>
+</div>
+
+<app-warnings-modal
+  #warningsComponent
+  *ngIf="isWarning"
+  [warning]="warningType"
+  [subject]="warningSubject"
+  (proceed)="warningProceed(true)"
+  (cancel)="warningProceed(false)"
+></app-warnings-modal>

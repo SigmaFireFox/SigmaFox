@@ -1,0 +1,18 @@
+<div class="navbar-container">
+  <div class="navbar-logo-and-menu-button-container">
+    <div class="navbar-logo-container" (click)="onLogoClick()">e-Questrian</div>
+    <div class="navbar-menu-icon-container" (click)="onMenuIconClick()">
+      <mat-icon>menu</mat-icon>
+    </div>
+  </div>
+  <div *ngIf="displayMenu" class="navbar-button-container">
+    <button
+      *ngFor="let option of menuOptions"
+      class="navbar-button"
+      (click)="onMenuOptionClicked(option.path)"
+      mat-button
+    >
+      {{ option.display }}
+    </button>
+  </div>
+</div>

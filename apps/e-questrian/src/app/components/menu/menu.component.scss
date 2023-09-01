@@ -1,0 +1,25 @@
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  height: 100%;
+}
+
+button {
+  min-height: 30px;
+  height: 10%;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.primary-menu-button {
+  background-color: aqua;
+}
+
+.secondary-menu-button {
+  background-color: blue;
+  color: white;
+}

@@ -1,0 +1,28 @@
+<app-general-screen-header-component
+  [generalConfig]="generalConfig"
+></app-general-screen-header-component>
+<div class="list-container">
+  <!-- Headers -->
+  <div class="header-line">
+    <div
+      *ngFor="let column of listConfig.columns"
+      [ngStyle]="{width: column.widthPerc}"
+    >
+      {{column.content}}
+    </div>
+  </div>
+
+  <!-- Details -->
+  <div
+    class="general-item-line"
+    *ngFor="let generalItem of listConfig.items | keyvalue"
+    (click)="onItemClicked(generalItem.key)"
+  >
+    <div
+      [ngStyle]="{width: field.widthPerc}"
+      *ngFor="let field of generalItem.value"
+    >
+      <div>{{field.content}}</div>
+    </div>
+  </div>
+</div>
