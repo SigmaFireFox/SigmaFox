@@ -1,0 +1,79 @@
+<div *ngIf="!initialistionComplete" class="main-container">
+  <h1>One momement please...</h1>
+</div>
+<div *ngIf="initialistionComplete" class="main-container">
+  <h1>Hi {{displayName}}!</h1>
+  <div class="warning-para" *ngIf="!userNameFound">
+    We don't love not knowing your name. Why not consider updating your profile?
+    <button
+      class="primary-button-wide"
+      (click)="onUpdateUserProfileClicked()"
+      mat-raised-button
+    >
+      Update my profile
+    </button>
+  </div>
+  <div class="intro-para">
+    <div class="profile-container">
+      <div class="profile-line">
+        <div class="profile-line-title">First name:</div>
+        {{userProfile.basicDetail.firstName}}
+      </div>
+      <div class="profile-line">
+        <div class="profile-line-title">Last name:</div>
+        {{userProfile.basicDetail.lastName}}
+      </div>
+      <div class="profile-line">
+        <div class="profile-line-title">Email:</div>
+        {{userProfile.basicDetail.email}}
+      </div>
+      <div class="profile-line">
+        <div class="profile-line-title">Current plan:</div>
+        <div>{{userPlanString}}</div>
+        <div class="spacer"></div>
+        <div>
+          <button
+            *ngIf="this.userProfile.accountDetails.planType !== 2"
+            class="primary-button-narrow"
+            (click)="onUpgradeAccountClicked()"
+            mat-raised-button
+          >
+            Upgrade plan
+          </button>
+        </div>
+      </div>
+      <div
+        class="profile-line"
+        *ngIf="this.userProfile.accountDetails.planType !== 0"
+      >
+        <div class="profile-line-title">Valid until:</div>
+        <div>
+          {{userProfile.accountDetails.paidUpUntil.toDate() | date:'dd-MMM-yyyy'
+          }}
+        </div>
+      </div>
+    </div>
+
+    <h3>What would you like to do?</h3>
+    <button
+      *ngIf="userNameFound"
+      class="primary-button-wide"
+      (click)="onUpdateUserProfileClicked()"
+      mat-raised-button
+    >
+      Update my profile
+    </button>
+  </div>
+</div>
+
+<app-user-profile-update
+  *ngIf="displayUpdateProfile"
+  (updateCanceled)="onUpdateCanceled()"
+  (updateComplete)="onUpdateComplete()"
+></app-user-profile-update>
+
+<app-upgrade-plan
+  *ngIf="displayUpgradePlan"
+  (upgradeCanceled)="onUpgradeCanceled()"
+  (upgradeComplete)="onUpgradeComplete()"
+></app-upgrade-plan>

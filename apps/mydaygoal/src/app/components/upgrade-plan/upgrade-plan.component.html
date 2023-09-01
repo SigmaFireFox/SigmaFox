@@ -1,0 +1,214 @@
+<div class="main-container">
+  <div [ngSwitch]="currentViewState">
+    <div *ngSwitchCase="viewState.START">
+      <h1>Upgrade plan</h1>
+      <div class="intro-para">
+        Awesome, Let's upgrade your plan - its only takes a few steps
+      </div>
+      <div class="buttons-container">
+        <button
+          class="primary-button"
+          (click)="onNextClick()"
+          mat-raised-button
+        >
+          Lets start
+        </button>
+        <button
+          class="tertiary-button"
+          (click)="onCancelClick()"
+          mat-raised-button
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div *ngSwitchCase="viewState.PLAN_OPTIONS">
+      <h1>Select plan</h1>
+      <div class="intro-para">Which plan would you like to upgrade to?</div>
+      <div>
+        <mat-checkbox
+          (change)="onPlanSelected(userPlan.BASIC)"
+          [checked]="planSelected === userPlan.BASIC"
+          >Basic</mat-checkbox
+        >
+      </div>
+      <div>
+        <mat-checkbox
+          (change)="onPlanSelected(userPlan.PREMIUM)"
+          [checked]="planSelected === userPlan.PREMIUM"
+          >Premium</mat-checkbox
+        >
+      </div>
+      <div class="buttons-container">
+        <button
+          class="primary-button"
+          (click)="onNextClick()"
+          mat-raised-button
+        >
+          Next
+        </button>
+        <button
+          class="tertiary-button"
+          (click)="onBackClick()"
+          mat-raised-button
+        >
+          Back
+        </button>
+        <button
+          class="tertiary-button"
+          (click)="onCancelClick()"
+          mat-raised-button
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div *ngSwitchCase="viewState.PLAN_TERM">
+      <h1>Select term</h1>
+      <div class="intro-para">
+        How long would you like to subscribe to this plan?
+      </div>
+      <div class="options-container">
+        <div class="option-container">
+          <mat-checkbox
+            (change)="onTermSelected(planTerm.MONTHLY)"
+            [checked]="termSelected === planTerm.MONTHLY"
+            >Month to Month - monthly payment</mat-checkbox
+          >
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{ pricing.monthly | currency: "USD":"symbol":"1.2-2" }}
+          </div>
+        </div>
+
+        <div class="option-container">
+          <mat-checkbox
+            (change)="onTermSelected(planTerm.SIX_MONTHS)"
+            [checked]="termSelected === planTerm.SIX_MONTHS"
+            >6 Months - once off payment</mat-checkbox
+          >
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{ pricing.sixMotnths | currency: "USD":"symbol":"1.2-2" }}
+          </div>
+        </div>
+
+        <div class="option-container">
+          <mat-checkbox
+            (change)="onTermSelected(planTerm.TWELVE_MONTHS)"
+            [checked]="termSelected === planTerm.TWELVE_MONTHS"
+            >12 Months - once off payment</mat-checkbox
+          >
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{ pricing.twelveMonths | currency: "USD":"symbol":"1.2-2" }}
+          </div>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button
+          class="primary-button"
+          (click)="onNextClick()"
+          mat-raised-button
+        >
+          Next
+        </button>
+
+        <button
+          class="tertiary-button"
+          (click)="onBackClick()"
+          mat-raised-button
+        >
+          Back
+        </button>
+
+        <button
+          class="tertiary-button"
+          (click)="onCancelClick()"
+          mat-raised-button
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div *ngSwitchCase="viewState.AMOUNT_DUE">
+      <h1>Amount due</h1>
+      <div class="intro-para">
+        Below is a summary of the amount due by you now
+      </div>
+      <div class="options-container">
+        <div class="option-container">
+          <div>Invoice Total</div>
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{ invoiceDetail.invoiceAmount | currency: "USD":"symbol":"1.2-2" }}
+          </div>
+        </div>
+        <div class="option-container">
+          <div>Rebate due</div>
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{ -rebateDetail.rebateAmount | currency: "USD":"symbol":"1.2-2" }}
+          </div>
+        </div>
+        <hr />
+        <div class="option-container">
+          <div class="emphasis">Due now</div>
+          <div class="spacer"></div>
+          <div class="emphasis">
+            {{
+              invoiceDetail.invoiceAmount - rebateDetail.rebateAmount
+                | currency: "USD":"symbol":"1.2-2"
+            }}
+          </div>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button
+          class="primary-button"
+          (click)="onNextClick()"
+          mat-raised-button
+        >
+          To Checkout
+        </button>
+
+        <button
+          class="tertiary-button"
+          (click)="onBackClick()"
+          mat-raised-button
+        >
+          Back
+        </button>
+
+        <button
+          class="tertiary-button"
+          (click)="onCancelClick()"
+          mat-raised-button
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div *ngSwitchCase="viewState.CHECKOUT">
+      <div class="payment-form-container">
+        <form
+          ngNoForm
+          [action]="paymentResultUrl"
+          class="paymentWidgets"
+          data-brands="VISA MASTER AMEX"
+        ></form>
+      </div>
+    </div>
+  </div>
+
+  <div [ngSwitch]="currentWarning">
+    <div *ngSwitchCase="warning.PLAN_NOT_SELECTED" class="intro-para">
+      Please select a plan before trying to proceed. If you would like to cancel
+      this plan upgrade process please click the cancel button below
+    </div>
+    <div *ngSwitchCase="warning.TERM_NOT_SELECTED" class="intro-para">
+      Please select a plan term before trying to proceed. If you would like to
+      cancel this plan upgrade process please click the cancel button below
+    </div>
+  </div>
+</div>

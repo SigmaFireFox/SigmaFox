@@ -1,0 +1,31 @@
+<div *ngIf="userSignedIn" class="menu-container" [ngStyle]="menuStyle">
+  <div class="menu-item" (click)="onMyGoalsClick()">My Goals</div>
+  <div class="menu-item" (click)="onMyProfileClick()">My Profile</div>
+  <div class="menu-item" (click)="onNewGoalSuggestionClick()">
+    Suggest a new goal
+  </div>
+  <div class="menu-item" (click)="onSignOutClick()">Sign Out</div>
+</div>
+
+<div *ngIf="!userSignedIn" class="menu-container" [ngStyle]="menuStyle">
+  <div class="menu-item" (click)="onNewGoalSuggestionClick()">
+    Suggest a new goal
+  </div>
+  <div class="menu-item" (click)="onSignInClick()">Sign in</div>
+</div>
+
+<app-user-notification
+  *ngIf="displayNotification"
+  [notificationType]="notificationType"
+  (buttonClicked)="onNotificationButtonClicked($event)"
+></app-user-notification>
+
+<app-new-goal-suggestion
+  *ngIf="displayNewGoalSuggestion"
+  (newGoalSuggestionClosed)="onNewGoalSuggestionClosed()"
+></app-new-goal-suggestion>
+
+<app-signin
+  *ngIf="displaySignIn"
+  (signInClosed)="onSignInClosed()"
+></app-signin>

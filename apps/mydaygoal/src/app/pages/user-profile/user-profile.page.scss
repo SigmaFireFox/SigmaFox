@@ -1,0 +1,68 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc (100vh - $navbar-height);
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-para,
+.warning-para {
+  max-width: 300px;
+  width: 95%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.warning-para {
+  background-color: $tertiary-colour;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 95%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  background-color: $secondary-colour;
+  padding: 5px;
+}
+
+.profile-line {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 5px;
+  font-weight: normal;
+  align-items: center;
+}
+
+.profile-line-title {
+  max-width: 100px;
+  width: 40%;
+  text-align: start;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}

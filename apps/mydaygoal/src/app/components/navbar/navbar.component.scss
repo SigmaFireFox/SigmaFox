@@ -1,0 +1,43 @@
+@import "../../../styles.scss";
+
+.mat-toolbar {
+  display: flex;
+  background-color: $secondary-colour;
+  height: $navbar-height;
+}
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  align-content: center;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.profile-section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-name-container {
+  display: flex;
+  height: $navbar-height;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  height: $navbar-height;
+  align-items: center;
+  cursor: pointer;
+}
+
+mat-icon {
+  transform: scale(1.5);
+}

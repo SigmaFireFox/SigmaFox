@@ -1,0 +1,45 @@
+<div class="main-container">
+  <h1>Want to suggest a new goal?</h1>
+  <div class="intro-para">
+    Just enter your goal idea in the form below and click submit and close to
+    submit and new if you would like to add another goal after this one
+  </div>
+  <form [formGroup]="suggestionForm" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Suggestion</mat-label>
+      <input
+        type="text"
+        matInput
+        formControlName="newGoal"
+        placeholder="Ex. Gor for a run"
+      />
+      <mat-error *ngIf="suggestionForm.get('newGoal')!.hasError('required')">
+        Suggestion is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+
+  <div class="standard-para" *ngIf="displayUserMessage">
+    {{ userMessage }}
+  </div>
+
+  <button
+    class="primary-button"
+    (click)="onSumitAndNewClick()"
+    mat-raised-button
+  >
+    Submit and New
+  </button>
+
+  <button
+    class="primary-button"
+    (click)="onSumitAndCloseClick()"
+    mat-raised-button
+  >
+    Submit and Close
+  </button>
+
+  <button class="tertiary-button" (click)="onCancelClicked()" mat-raised-button>
+    Cancel
+  </button>
+</div>

@@ -1,0 +1,22 @@
+<div class="main-container">
+  <h1>{{ notificationConfig.heading }}</h1>
+  <div class="standard-para">{{ notificationConfig.infoPara }}</div>
+  <div *ngFor="let buttonText of notificationConfig.buttons; let i = index">
+    <button
+      *ngIf="i === 0"
+      class="primary-button-wide"
+      (click)="onButtonClicked(i)"
+      mat-raised-button
+    >
+      {{ buttonText }}
+    </button>
+    <button
+      *ngIf="i !== 0"
+      class="tertiary-button-wide"
+      (click)="onButtonClicked(i)"
+      mat-raised-button
+    >
+      {{ buttonText }}
+    </button>
+  </div>
+</div>

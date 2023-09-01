@@ -1,0 +1,50 @@
+<div *ngIf="!initialistionComplete" class="main-container">
+  <h1>One moment please...</h1>
+</div>
+
+<div *ngIf="initialistionComplete" class="main-container">
+  <h1>Hi {{userProfile.basicDetail.firstName}}!</h1>
+  <div
+    class="warning-para"
+    *ngIf="this.userProfile.basicDetail.firstName === 'There'"
+  >
+    We don't love not knowing your name. Why not consider updating your profile?
+    <button
+      class="primary-button-wide"
+      (click)="updateUserProfile()"
+      mat-raised-button
+    >
+      Update my profile
+    </button>
+  </div>
+  <h3>Here are your goals for today</h3>
+  <h4>Repeat goals marked with and asterisk (*)</h4>
+  <ul class="goal-line-container">
+    <li *ngFor="let goal of currentUserGoals">
+      <div
+        [ngClass]="goal.complete ? 'goal-line-container-complete' : 'goal-line-container-todo'"
+      >
+        {{allDailyGoalObjects[goal.goalID].goalString}}{{goal.repeat? '*':''}}
+        <div class="spacer"></div>
+        <mat-checkbox
+          (change)="onGoalCheckboxChecked()"
+          [(ngModel)]="goal.complete"
+        ></mat-checkbox>
+      </div>
+    </li>
+  </ul>
+  <button
+    *ngIf="displaySaveButton"
+    class="primary-button-wide"
+    (click)="onSaveChangesClicked()"
+    mat-raised-button
+  >
+    Save Changes
+  </button>
+</div>
+
+<app-user-profile-update
+  *ngIf="displayUserProfileUpdate"
+  (updateCanceled)="onUpdateCanceled()"
+  (updateComplete)="onUpdateComplete()"
+></app-user-profile-update>

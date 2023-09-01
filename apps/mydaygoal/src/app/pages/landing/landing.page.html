@@ -1,0 +1,41 @@
+<div class="main-container">
+  <h3>Random suggested goal for today</h3>
+  <h1>{{randomGoal.string}}</h1>
+
+  <button
+    class="primary-button-wide"
+    (click)="onAddGoalClicked(false)"
+    mat-raised-button
+  >
+    Make this my goal for today
+  </button>
+
+  <button
+    class="primary-button-wide"
+    (click)="onAddGoalClicked(true)"
+    mat-raised-button
+  >
+    Make this a repeat goal of mine
+  </button>
+
+  <button
+    class="secondary-button-wide"
+    (click)="onSuggestNewGoalClicked()"
+    mat-raised-button
+  >
+    Suggest another goal
+  </button>
+</div>
+
+<app-signin *ngIf="displaySignIn" (signInClosed)="onSigninClose()"></app-signin>
+<app-user-notification
+  *ngIf="displayNotification"
+  [notificationType]="notificationType"
+  (buttonClicked)="onNotificationButtonClicked($event)"
+></app-user-notification>
+
+<app-upgrade-plan
+  *ngIf="displayUpgrade"
+  (upgradeCanceled)="onUpgradeClose()"
+  (upgradeComplete)="onUpgradeClose()"
+></app-upgrade-plan>

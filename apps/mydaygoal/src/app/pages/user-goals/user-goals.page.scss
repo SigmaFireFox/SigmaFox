@@ -1,0 +1,79 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc (100vh - $navbar-height);
+  align-items: center;
+  justify-content: center;
+}
+
+.warning-para {
+  max-width: 300px;
+  width: 95%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  background-color: $tertiary-colour;
+  margin-bottom: 15px;
+}
+
+.goal-line-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 95%;
+  text-align: start;
+}
+
+.goal-line-container-todo,
+.goal-line-container-complete {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.goal-line-container-complete {
+  text-decoration: line-through;
+}
+
+h1,
+h3 {
+  max-width: 300px;
+  width: 95%;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

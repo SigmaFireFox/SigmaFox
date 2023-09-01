@@ -1,0 +1,77 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-sheath;
+}
+
+.intro-para,
+.standard-para {
+  max-width: 300px;
+  width: 90%;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.standard-para {
+  font-weight: normal;
+}
+
+.example-form {
+  background-color: white;
+  margin: 20px 0;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+.paymentWidgets {
+  z-index: 999;
+}
+
+.payment-form-container {
+  margin: 5%;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

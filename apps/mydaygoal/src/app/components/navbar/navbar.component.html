@@ -1,0 +1,31 @@
+<mat-toolbar>
+  <div class="navbar-container">
+    <img
+      src="../../../assets/mydaygoal-logo.png"
+      alt="myDayGoal Logo"
+      (click)="onLogoClick()"
+    />
+    <div class="spacer"></div>
+    <div *ngIf="!mobileDisplay" class="profile-section-container">
+      <div class="user-name-container" (click)="onDisplayNameClick()">
+        {{ displayName }}
+      </div>
+      <div class="icon-container" (click)="onProfileIconClick()">
+        <mat-icon>perm_identity</mat-icon>
+      </div>
+    </div>
+    <div *ngIf="mobileDisplay" class="profile-section-container">
+      <div class="icon-container" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+<app-menu
+  *ngIf="isMenuDisplayed"
+  (closeMenu)="toggleMenu()"
+  (userSignedOut)="onUserSignedOut()"
+></app-menu>
+
+<app-signin *ngIf="displaySignIn" (signInClosed)="closeSignIn()"></app-signin>

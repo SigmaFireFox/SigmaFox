@@ -1,0 +1,79 @@
+<div class="main-container">
+  <h1>Sign in required</h1>
+  <div class="intro-para">
+    Before we can add this goal to your personal daily goals, you need to sign
+    in to your account.
+  </div>
+
+  <form [formGroup]="signin" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. name@domain.com"
+      />
+      <mat-error
+        *ngIf="
+          signin.get('email')!.hasError('email') &&
+          !signin.get('email')!.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="signin.get('email')!.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <input
+        matInput
+        placeholder="Password*"
+        [type]="hidePassword ? 'password' : 'text'"
+        formControlName="password"
+        required
+      />
+      <mat-error *ngIf="signin.get('password')!.hasError('required')">
+        Password is <strong>required</strong>
+      </mat-error>
+      <mat-error *ngIf="signin.get('password')!.hasError('minlength')">
+        Password seems too short
+      </mat-error>
+      <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{
+        hidePassword ? "visibility_off" : "visibility"
+      }}</mat-icon>
+      <mat-hint *ngIf="!passwordInput">Enter your password</mat-hint>
+    </mat-form-field>
+  </form>
+
+  <button class="primary-button" (click)="signIn()" mat-raised-button>
+    Sign in
+  </button>
+
+  <div class="intro-para" *ngIf="displayRegisterButton">
+    Not a registered user of myDayGoal?
+  </div>
+  <button
+    class="tertiary-button"
+    *ngIf="displayRegisterButton"
+    (click)="signUp()"
+    mat-raised-button
+  >
+    Register
+  </button>
+
+  <button
+    class="tertiary-button"
+    *ngIf="displayForgotPasswordButton"
+    (click)="forgotPassword()"
+    mat-raised-button
+  >
+    Reset Password
+  </button>
+
+  <div class="standard-para" *ngIf="displayErrorMessage">
+    {{ errorMessage }}
+  </div>
+</div>

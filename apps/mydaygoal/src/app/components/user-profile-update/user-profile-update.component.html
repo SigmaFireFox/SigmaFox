@@ -1,0 +1,67 @@
+<div class="main-container">
+  <h1>Update profile</h1>
+
+  <div class="intro-para">
+    All fields marked with a asterisk (*) are required
+  </div>
+
+  <form [formGroup]="updateProfile" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input
+        type="text"
+        matInput
+        formControlName="firstName"
+        placeholder="Ex. John"
+      />
+      <mat-error *ngIf="updateProfile.get('firstName')!.hasError('required')">
+        First name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input
+        type="text"
+        matInput
+        formControlName="lastName"
+        placeholder="Ex. Smith"
+      />
+      <mat-error *ngIf="updateProfile.get('lastName')!.hasError('required')">
+        Last name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. name@domain.com"
+      />
+      <mat-error
+        *ngIf="
+          updateProfile.get('email')!.hasError('email') &&
+          !updateProfile.get('email')!.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="updateProfile.get('email')!.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+
+  <button class="primary-button" (click)="onUpdateClick()" mat-raised-button>
+    Update profile
+  </button>
+  <button class="tertiary-button" (click)="onCancelClick()" mat-raised-button>
+    Cancel
+  </button>
+
+  <div class="standard-para" *ngIf="displayErrorMessage">
+    {{ errorMessage }}
+  </div>
+</div>
