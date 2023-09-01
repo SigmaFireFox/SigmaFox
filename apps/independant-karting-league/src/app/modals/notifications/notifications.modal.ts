@@ -1,3 +1,5 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 export enum NotificationType {

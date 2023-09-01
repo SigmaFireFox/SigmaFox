@@ -1,12 +1,14 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { MainMenuPageViewState as ViewState } from '../../enums/viewstates.enum';
 import {
   MenuOption,
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { MainMenuPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { AuthenticationService } from 'app/services/authentication.service';
-import { Router } from '@angular/router';
+} from '../../interfaces/menu-screen.interface';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-main-menu-page',

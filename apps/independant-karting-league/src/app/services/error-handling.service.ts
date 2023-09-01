@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
 import {
-  Warning,
   WarningConfig,
   WarningType,
-} from 'app/modals/warnings/warnings.modal';
+  Warning,
+} from '../modals/warnings/warnings.modal';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ErrorHandlingService {
-  constructor() {}
-
   getWarningConfig(error: string): WarningConfig {
-    let warningConfig = {} as WarningConfig;
     if (error.includes('auth/invalid-email')) {
       return {
         type: WarningType.SIGN_IN,

@@ -1,11 +1,14 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormFieldType } from 'app/enums/form.eum';
-import { SignInPageViewState as ViewState } from 'app/enums/viewstates.enum';
-import { FormConfig } from 'app/interfaces/form-screen.interface';
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @nx/enforce-module-boundaries */
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormFieldType } from 'apps/independant-karting-league/src/app/enums/form.eum';
+import { SignInPageViewState as ViewState } from 'apps/independant-karting-league/src/app/enums/viewstates.enum';
+import { FormConfig } from 'apps/independant-karting-league/src/app/interfaces/form-screen.interface';
 import {
   MenuOptionStyle,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
+} from 'apps/independant-karting-league/src/app/interfaces/menu-screen.interface';
 import { SignInPage } from '../../sign-in.page';
 
 @Component({

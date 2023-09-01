@@ -1,9 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   MenuOption,
   MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
+} from '../../interfaces/menu-screen.interface';
 
 @Component({
   selector: 'app-menu-component',

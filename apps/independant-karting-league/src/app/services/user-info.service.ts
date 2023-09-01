@@ -1,5 +1,6 @@
+/* eslint-disable no-async-promise-executor */
 import { Injectable } from '@angular/core';
-import { UserInfo } from 'app/interfaces/api.interface';
+import { UserInfo } from '../interfaces/api.interface';
 import {
   CollectionType,
   DataManagementService,
@@ -25,8 +26,8 @@ export class UserInfoService {
       await this.dataManagementService
         .postData(CollectionType.USER_INFO, url, body)
         .then(
-          async (success) => resolve(),
-          async (error) => reject()
+          async () => resolve(),
+          async () => reject()
         );
     });
   }

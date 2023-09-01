@@ -74,12 +74,12 @@
           formControlName="{{ field.fieldName }}"
           (selectionChange)="onFormChange()"
         >
-          <mat-option
+          <!-- <mat-option
             *ngFor="let option of field.options"
             value="{{ option.value }}"
           >
             {{ option.display }}
-          </mat-option>
+          </mat-option> -->
         </mat-select>
       </div>
 
@@ -90,11 +90,11 @@
           (selectionChange)="onFormChange()"
           multiple
         >
-          <mat-option
+          <!-- <mat-option
             *ngFor="let option of field.options"
             value="{{ option.value }}"
             >{{ option.display }}</mat-option
-          >
+          > -->
         </mat-select>
       </div>
 
@@ -104,12 +104,12 @@
           formControlName="{{ field.fieldName }}"
           (change)="onFormChange()"
         >
-          <mat-radio-button
+          <!-- <mat-radio-button
             *ngFor="let option of field.options"
             value="{{ option.value }}"
             [checked]="field.defaultValue === option.value"
             >{{ option.display }}</mat-radio-button
-          >
+          > -->
         </mat-radio-group>
         <div class="right-spacer-gap"></div>
       </div>

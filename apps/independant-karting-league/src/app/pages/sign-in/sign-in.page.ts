@@ -1,33 +1,27 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-import { SignInPageViewState as ViewState } from 'app/enums/viewstates.enum';
+import { SignInPageViewState as ViewState } from '../../enums/viewstates.enum';
+import { MenuOption } from '../../interfaces/menu-screen.interface';
 import {
-  MenuOption,
-  MenuOptionStyle,
-  MenuOptionType,
-} from 'app/interfaces/menu-screen.interface';
-import { ErrorHandlingService } from 'app/services/error-handling.service';
-
-import {
-  Notification,
   NotificationConfig,
   NotificationType,
-} from 'app/modals/notifications/notifications.modal';
-import { BehaviorSubject } from 'rxjs';
-import { LoadingService } from 'app/services/loading.service';
-import { AppInitialisationService } from 'app/services/app-initialisation.service';
-import { UserInfo } from 'app/interfaces/api.interface';
-import { UserInfoService } from 'app/services/user-info.service';
+  Notification,
+} from '../../modals/notifications/notifications.modal';
+import {
+  WarningConfig,
+  Warning,
+  WarningType,
+} from '../../modals/warnings/warnings.modal';
+import { AppInitialisationService } from '../../services/app-initialisation.service';
 import {
   AuthenticationService,
   SignInDetails,
-} from 'app/services/authentication.service';
-import {
-  Warning,
-  WarningConfig,
-  WarningType,
-} from 'app/modals/warnings/warnings.modal';
+} from '../../services/authentication.service';
+import { ErrorHandlingService } from '../../services/error-handling.service';
+import { LoadingService } from '../../services/loading.service';
+import { UserInfoService } from '../../services/user-info.service';
 
 @Component({
   selector: 'app-sign-in-page',
@@ -71,7 +65,7 @@ export class SignInPage implements OnInit {
     };
     this.loadingService.setLoading('Signing in');
     await this.authenticationService.userSignIn(signInDetails).then(
-      async (success) => {
+      async () => {
         this.appInitialisationService.intialise();
         this.router.navigate(['']);
         this.loadingService.cancelLoading();
@@ -91,7 +85,7 @@ export class SignInPage implements OnInit {
     };
     this.loadingService.setLoading('Registering');
     await this.authenticationService.userRegistration(signInDetails).then(
-      (success) => {
+      () => {
         this.loadingService.cancelLoading();
         this.notificationConfig = {
           type: NotificationType.REGISTER,
@@ -102,6 +96,7 @@ export class SignInPage implements OnInit {
       (error) => {
         this.loadingService.cancelLoading();
         this.warnigConfig = this.errorHandlingService.getWarningConfig(error);
+        if (!this.warnigConfig) return;
         if (this.warnigConfig.warning === Warning.INVALID_EMAIL) {
           this.warnigConfig.type = WarningType.REGISTER;
         }
@@ -119,9 +114,9 @@ export class SignInPage implements OnInit {
   }
 
   async onForgotPasswordSubmit(formValue: { [key: string]: string }) {
-    let email = formValue['email'];
+    const email = formValue['email'];
     await this.authenticationService.resetPassword(email).then(
-      (success) => {
+      () => {
         this.notificationConfig = {
           type: NotificationType.FORGOT_PASSWORD,
           notification: Notification.RESET_PASSWORD_EMAIL_SENT,
@@ -131,6 +126,7 @@ export class SignInPage implements OnInit {
       },
       (error) => {
         this.warnigConfig = this.errorHandlingService.getWarningConfig(error);
+        if (!this.warnigConfig) return;
         this.warnigConfig.type = WarningType.FORGOT_PASSWORD;
         this.isWarning = true;
       }

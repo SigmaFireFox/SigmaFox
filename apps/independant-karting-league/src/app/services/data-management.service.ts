@@ -1,10 +1,8 @@
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable no-async-promise-executor */
+import { HttpHeaders, HttpParams, HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {
-  ClientData,
-  ProfileData,
-  UserRecord,
-} from 'app/interfaces/api.interface';
+import { ProfileData, UserRecord } from '../interfaces/api.interface';
 import { AuthenticationService } from './authentication.service';
 
 export interface Options {
@@ -28,7 +26,7 @@ export class DataManagementService {
     private authenticationService: AuthenticationService
   ) {}
 
-  async getData(url: string): Promise<Object> {
+  async getData(url: string): Promise<object> {
     return new Promise(async (resolve, reject) => {
       try {
         this.http
@@ -45,7 +43,7 @@ export class DataManagementService {
   async postData(
     collectionType: CollectionType,
     url: string,
-    body: Object
+    body: object
   ): Promise<void> {
     return new Promise(async (resolve, reject) => {
       try {
@@ -63,8 +61,8 @@ export class DataManagementService {
     });
   }
 
-  private setDocument(collectionType: CollectionType, body: any): Object {
-    let doc = {};
+  private setDocument(collectionType: CollectionType, body: any): object {
+    const doc = {};
     switch (collectionType) {
       case CollectionType.USER_INFO: {
         const _body = body as ProfileData;
@@ -77,11 +75,11 @@ export class DataManagementService {
   private setDocRef(collectionType: CollectionType, response: any): string {
     switch (collectionType) {
       case CollectionType.AGENT: {
-        let userRecord = response as UserRecord;
+        const userRecord = response as UserRecord;
         return userRecord.uid;
       }
       case CollectionType.LEAD: {
-        let doc = response as { _path: { segments: string[] } };
+        const doc = response as { _path: { segments: string[] } };
         return doc._path.segments[3];
       }
     }

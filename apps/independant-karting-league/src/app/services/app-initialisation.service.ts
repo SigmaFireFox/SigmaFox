@@ -1,10 +1,11 @@
+/* eslint-disable no-async-promise-executor */
 import { Injectable } from '@angular/core';
 import {
   ClientData,
   FlagData,
   FlagDataClass,
   UserInfo,
-} from 'app/interfaces/api.interface';
+} from '../interfaces/api.interface';
 import { DataManagementService } from './data-management.service';
 import { FeatureFlagsService } from './feature-flag.service';
 import { UserInfoService } from './user-info.service';
@@ -43,7 +44,7 @@ export class AppInitialisationService {
     });
   }
 
-  private setLocal(dataDescription: string, data: Object) {
+  private setLocal(dataDescription: string, data: object) {
     sessionStorage.setItem(dataDescription, JSON.stringify(data));
   }
 
@@ -56,14 +57,16 @@ export class AppInitialisationService {
         return;
       }
       if (await this.isNewAlphaUser()) {
-        this.userInfoService.updateUserInfo({ isAlphaUser: true } as UserInfo);
+        this.userInfoService.updateUserInfo({
+          isAlphaUser: true,
+        } as UserInfo);
         this.featureFlagsService.updateFlags(flags);
       }
     }
   }
 
   private isAlphaUser(): boolean {
-    let profile = this.userInfoService.getUserInfo();
+    const profile = this.userInfoService.getUserInfo();
     return profile.isAlphaUser;
   }
 
@@ -73,7 +76,7 @@ export class AppInitialisationService {
     return new Promise(async (resolve, reject) => {
       await this.dataManagementService.getData(url).then(
         async (response) => {
-          let isAlphaUserResponse = response as { isAlphaUser: boolean };
+          const isAlphaUserResponse = response as { isAlphaUser: boolean };
           resolve(isAlphaUserResponse.isAlphaUser);
         },
         async (error) => reject(error)
@@ -82,7 +85,7 @@ export class AppInitialisationService {
   }
 
   setDefaultFlags(): FlagData {
-    let flags = {} as FlagData;
+    const flags = {} as FlagData;
     type FlagDataPropsArray = Array<keyof FlagData>;
     const listOfFlags = Object.keys(new FlagDataClass()) as FlagDataPropsArray;
 
