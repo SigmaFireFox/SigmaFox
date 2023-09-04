@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="signin-container" [ngSwitch]="currentViewState">
+    <app-sign-in
+      *ngSwitchCase="ViewState.SIGN_IN"
+      (resetPassword)="resetPassword($event)"
+      (signUp)="signUp($event)"
+    ></app-sign-in>
+    <app-reset-password
+      *ngSwitchCase="ViewState.RESET"
+      [receivedUserEmail]="userEmail"
+      (signIn)="signIn($event)"
+    ></app-reset-password>
+    <app-sign-up
+      *ngSwitchCase="ViewState.SIGN_UP"
+      (signIn)="signIn($event)"
+      (resetPassword)="resetPassword($event)"
+    >
+    </app-sign-up>
+  </div>
+</div>

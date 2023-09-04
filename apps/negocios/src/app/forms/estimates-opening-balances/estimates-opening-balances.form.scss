@@ -1,0 +1,147 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  margin: 0 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container {
+  margin: 30px 0;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intro-para-container {
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-align: start;
+  width: 100%;
+}
+
+.list-container {
+  display: flex;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  background: $primary-colour;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+mat-accordion,
+mat-expansion-panel {
+  width: 100%;
+}
+
+mat-accordion {
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.mat-expansion-panel {
+  background: $primary-colour;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.display-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+  min-width: 50px;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+mat-panel-title {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.plain-title {
+  align-self: center;
+}
+
+input {
+  margin-top: 3px;
+  padding: 0;
+}
+
+.form-row,
+.form-row-emphasis,
+.form-row-emphasis-with-space,
+.form-row-emphasis-no-space {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.form-row-emphasis-with-space,
+.form-row-emphasis,
+.form-row-emphasis-no-space {
+  background: $forth-color;
+}
+
+.form-row-emphasis-with-space {
+  margin-bottom: 20px;
+}
+
+.form-row-emphasis-no-space {
+  margin-bottom: 0;
+}
+
+.form-row-emphasis {
+  margin-bottom: 10px;
+}
+
+.section-row-container {
+  width: 100%;
+}
+
+.bold-title {
+  font-weight: bold;
+  align-self: center;
+}
+
+hr {
+  margin: 3px 0;
+  border-top: 1px solid black;
+}
+
+.double-line {
+  margin-bottom: 20px;
+}
+
+.form-row-emphasis-no-space {
+  margin-bottom: 0;
+}

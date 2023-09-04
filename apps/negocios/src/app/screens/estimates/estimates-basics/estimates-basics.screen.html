@@ -1,0 +1,192 @@
+<div class="main-container">
+  <div class="header-container">Let's get started...</div>
+  <div class="intro-para-container">
+    In order to provide as an estimate as relevant as possible, there is some
+    information that we require about the target business. Most of these are
+    important to the process, but where that information required is more
+    display then actually functionalty you will typical have the choice to opt
+    out of that question. But as a rule of thumb the more information you
+    provide, the better the result and the more we can improve our services
+  </div>
+
+  <form class="question-container" [formGroup]="basicDetails">
+    <div class="question-row">
+      <span>Name of business:</span>
+      <input
+        [attr.disabled]="nameInputRejected ? '' : null"
+        class="large-input"
+        type="text"
+        formControlName="targetEntityName"
+        value=""
+        required
+      />
+    </div>
+
+    <div class="checkbox-container">
+      <mat-checkbox
+        [ngModelOptions]="{standalone: true}"
+        [(ngModel)]="nameInputRejected"
+        (change)="onNameInputRejectedChecked()"
+      >
+        <span>I would prefer not to provide a name</span>
+      </mat-checkbox>
+    </div>
+
+    <div class="question-row">
+      <span>Financial year end:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntityFYE"
+        name="entityFYE"
+        id="entityFYE"
+        [(ngModel)]="entityFYE"
+      >
+        <option value="" disabled selected>Select Month</option>
+        <option
+          *ngFor="let month of monthsOfYear | keyvalue: originalOrder"
+          [ngValue]="month.value"
+        >
+          {{ month.value }}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row">
+      <span>Number of years of avaliable financial history:</span>
+      <input
+        formControlName="targetEntityFinancialHistoryYears"
+        class="mirco-input"
+        type="number"
+        name="numberOfYearsRequired"
+        id="numberOfYearsRequired"
+        min="1"
+        max="5"
+        [(ngModel)]="entityFinancialHistoryYears"
+      />
+    </div>
+
+    <div class="question-row">
+      <span>Last year for which financial information is avaliable:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntityLastFinancialYear"
+        name="entityLastFinancialYear"
+        id="entityLastFinancialYear"
+        [(ngModel)]="entityLastFinancialYear"
+      >
+        <option value="0" disabled selected>Select Year</option>
+        <option
+          *ngFor="let year of entityLastFinancialYearOptions"
+          [ngValue]="year"
+        >
+          {{ year }}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row">
+      <span>Country in which business is based:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntityCountry"
+        name="entityCountry"
+        id="entityCountry"
+        [(ngModel)]="entityCountry"
+      >
+        <option value="" disabled selected>Select Country</option>
+        <option *ngFor="let country of countries" [ngValue]="country.name">
+          {{country.name}}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row">
+      <span>Currency in which the business reports:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntityCurrency"
+        name="entityCurrency"
+        id="entityCurrency"
+        [(ngModel)]="entityCurrency"
+      >
+        <option value="" disabled selected>Select Currency</option>
+        <option *ngFor="let currency of currencies" [ngValue]="currency.code">
+          {{currency.text}}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row">
+      <span>Industry in which the business operates:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntityIndustry"
+        name="entityIndustry"
+        id="entityIndustry"
+        [(ngModel)]="entityIndustry"
+        (change)="onIndustrySelected()"
+      >
+        <option value="" disabled selected>Select Industry</option>
+        <option
+          *ngFor="let industry of industries"
+          [ngValue]="industry.description"
+        >
+          {{industry.description}}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row" *ngIf="showSuperSectors">
+      <span>Super sector in which the business operates:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntitySuperSector"
+        name="entitySuperSector"
+        id="entitySuperSector"
+        [(ngModel)]="entitySuperSector"
+        (change)="onSuperSectorSelected()"
+      >
+        <option value="" disabled selected>Select Super Sector</option>
+        <option
+          *ngFor="let superSector of superSectors"
+          [ngValue]="superSector.description"
+        >
+          {{superSector.description}}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row" *ngIf="showSectors">
+      <span>Sector in which the business operates:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntitySector"
+        name="entitySector"
+        id="entitySector"
+        [(ngModel)]="entitySector"
+        (change)="onSectorSelected()"
+      >
+        <option value="" disabled selected>Select Sector</option>
+        <option *ngFor="let sector of sectors" [ngValue]="sector.description">
+          {{sector.description}}
+        </option>
+      </select>
+    </div>
+
+    <div class="question-row" *ngIf="showSubSectors">
+      <span>Sub Sector in which the business operates:</span>
+      <select
+        class="small-input"
+        formControlName="targetEntitySubSector"
+        name="entitySubSector"
+        id="entitySubSector"
+        [(ngModel)]="entitySubSector"
+      >
+        <option value="" disabled selected>Select Sector</option>
+        <option *ngFor="let subSector of subSectors" [ngValue]="subSector">
+          {{subSector}}
+        </option>
+      </select>
+    </div>
+  </form>
+</div>

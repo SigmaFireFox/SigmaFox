@@ -1,0 +1,100 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Opening balances </mat-panel-title>
+  </mat-expansion-panel-header>
+  <form form class="form-container" [formGroup]="openingBalancesForm">
+    <div
+      class="form-row"
+      *ngFor="let section of openingBalancesFormStructure"
+      [ngSwitch]="section.sectionType"
+    >
+      <div class="display-row" *ngSwitchCase="sectionType.HEADER">
+        <h1>{{ section.title }}</h1>
+        <div class="spacer"></div>
+        <div
+          class="display-block"
+          *ngFor="let header of ['Opening Balance', 'Closing Balance']"
+        >
+          {{ header }}
+        </div>
+      </div>
+
+      <div class="section-row-container" *ngSwitchCase="sectionType.INPUT">
+        <div class="form-row" *ngFor="let control of section.listOfControls">
+          <div class="plain-title">{{ control.title }}</div>
+          <div class="spacer"></div>
+          <input
+            class="currency-input"
+            appTwoDigitDecimaNumber
+            [ngModel]="openingBalancesForm.controls[control.controlName].value | number: '1.2-2'"
+            [ngModelOptions]="{ standalone: true, updateOn: 'blur' }"
+            (ngModelChange)="updateFormControl(control.controlName, $event)"
+          />
+
+          <div class="disabled-currency-input">
+            {{ control.closingValue | number: "1.2-2" }}
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section-row-container"
+        *ngSwitchCase="sectionType.DISABLED_INPUT"
+      >
+        <div class="form-row" *ngFor="let control of section.listOfControls">
+          <div class="plain-title">{{ control.title }}</div>
+          <div class="spacer"></div>
+          <div class="disabled-currency-input">
+            {{ openingBalancesForm.controls[control.controlName].value | number:
+            "1.2-2" }}
+          </div>
+          <div class="disabled-currency-input">
+            {{ control.closingValue | number: "1.2-2" }}
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%" *ngSwitchCase="sectionType.SUBTOTAL">
+        <hr />
+        <div>
+          <div
+            class="form-row-emphasis-with-space"
+            *ngFor="let control of section.listOfControls"
+          >
+            <div class="bold-title">{{ control.title }}</div>
+            <div class="spacer"></div>
+            <div class="disabled-currency-input">
+              {{ openingBalancesForm.controls[control.controlName].value |
+              number: "1.2-2" }}
+            </div>
+            <div class="disabled-currency-input">
+              {{ control.closingValue | number: "1.2-2" }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%" *ngSwitchCase="sectionType.TOTAL">
+        <hr />
+        <div>
+          <div
+            class="form-row-emphasis-no-space"
+            *ngFor="let control of section.listOfControls"
+          >
+            <div class="bold-title">{{ control.title }}</div>
+            <div class="spacer"></div>
+            <div class="disabled-currency-input">
+              {{ openingBalancesForm.controls[control.controlName].value |
+              number: "1.2-2" }}
+            </div>
+            <div class="disabled-currency-input">
+              {{ control.closingValue | number: "1.2-2" }}
+            </div>
+          </div>
+        </div>
+        <hr />
+        <hr class="double-line" />
+      </div>
+    </div>
+  </form>
+</mat-expansion-panel>

@@ -1,0 +1,185 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Comparatives </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <!-- Orginal Comparatives -->
+    <div class="header-container">Orginal Comparatives Used</div>
+    <div class="description-container">
+      In calculating our estimate of the busienss in question, the follow
+      possible comparative (publically traded) busiensses (presented along with
+      their key performance numbers) were considered.
+    </div>
+
+    <!-- Headers -->
+    <div class="table-headers-container">
+      <div class="name-column">Comparative</div>
+      <div class="spacer"></div>
+      <div class="data-column" *ngFor="let header of tableHeaders">
+        {{header}}
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="comparaison-line-container"
+      *ngFor="let comparaison of combinedComparativeData"
+    >
+      <div
+        class="comparaison-line-container"
+        *ngIf="comparaison.description === 'Break'"
+      >
+        <hr />
+      </div>
+
+      <div
+        [ngClass]="(comparaison.description === 'Mean (Average)' || 
+        comparaison.description === 'Standard Deviation') 
+        ? 'comparaison-line-container-bold' 
+        : 'comparaison-line-container'"
+        *ngIf="comparaison.description !== 'Break'"
+      >
+        <div class="name-column">{{comparaison.description}}</div>
+        <div class="spacer"></div>
+        <div class="data-column">
+          {{comparaison.revenue / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.grossProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.operatingProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.netProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.marketCap / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+      </div>
+    </div>
+
+    <!-- Removal of Outliers -->
+    <div class="header-container">Removal of Outliers</div>
+    <div class="description-container">
+      We define outliers has comparatives in our orginal sample that cause the
+      Standard Deviation of the sample to be greater then the mean of the same
+      sample. To that point the following comparatives (presented with this
+      standard devisaions from the modified sample mean) were removed from our
+      orginal samples as they were defined as outliers (per our our previous
+      explination)
+    </div>
+
+    <!-- Headers -->
+    <div class="table-headers-container">
+      <div class="name-column">Outlier</div>
+      <div class="spacer"></div>
+      <div class="data-column" *ngFor="let header of tableHeaders">
+        {{header}}
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="comparaison-line-container"
+      *ngFor="let outlier of comparativeDataOutliers"
+    >
+      <div class="comparaison-line-container">
+        <div class="name-column">{{outlier.description}}</div>
+        <div class="spacer"></div>
+        <div class="data-column">
+          {{outlier.revenue /
+          comparativeDataStatsWithoutOutliers.standardDeviation.revenue |
+          number: '1.2-2'}}
+        </div>
+        <div class="data-column">
+          {{outlier.grossProfit /
+          comparativeDataStatsWithoutOutliers.standardDeviation.grossProfit|
+          number: '1.2-2'}}
+        </div>
+        <div class="data-column">
+          {{outlier.operatingProfit /
+          comparativeDataStatsWithoutOutliers.standardDeviation.operatingProfit|
+          number: '1.2-2'}}
+        </div>
+        <div class="data-column">
+          {{outlier.netProfit /
+          comparativeDataStatsWithoutOutliers.standardDeviation.netProfit|
+          number: '1.2-2'}}
+        </div>
+        <div class="data-column">
+          {{outlier.marketCap /
+          comparativeDataStatsWithoutOutliers.standardDeviation.marketCap|
+          number: '1.2-2'}}
+        </div>
+      </div>
+    </div>
+
+    <!-- Modified Comparatives -->
+    <div class="header-container">Modified Comparatives Used</div>
+    <div class="description-container">
+      Based on the removed outliers a list of suitable comparartives for the
+      business in question are presented below
+    </div>
+
+    <!-- Headers -->
+    <div class="table-headers-container">
+      <div class="name-column">Comparative</div>
+      <div class="spacer"></div>
+      <div class="data-column" *ngFor="let header of tableHeaders">
+        {{header}}
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="comparaison-line-container"
+      *ngFor="let comparaison of combinedComparativeDataWithoutOutliers"
+    >
+      <div
+        class="comparaison-line-container"
+        *ngIf="comparaison.description === 'Break'"
+      >
+        <hr />
+      </div>
+
+      <div
+        [ngClass]="(comparaison.description === 'Mean (Average)' || 
+        comparaison.description === 'Standard Deviation') 
+        ? 'comparaison-line-container-bold' 
+        : 'comparaison-line-container'"
+        *ngIf="comparaison.description !== 'Break'"
+      >
+        <div class="name-column">{{comparaison.description}}</div>
+        <div class="spacer"></div>
+        <div class="data-column">
+          {{comparaison.revenue / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.grossProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.operatingProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.netProfit / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+        <div class="data-column">
+          {{comparaison.marketCap / 1000000|
+          currency:'USD':'symbol-narrow':'0.2-2'}}
+        </div>
+      </div>
+    </div>
+
+  </mat-expansion-panel>
+</mat-accordion>

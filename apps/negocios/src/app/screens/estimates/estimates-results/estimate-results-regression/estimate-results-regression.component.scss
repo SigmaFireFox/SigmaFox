@@ -1,0 +1,99 @@
+@import "../../../../../styles.scss";
+
+// Styling for accordion
+mat-accordion,
+mat-expansion-panel {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mat-expansion-panel-header.mat-expanded,
+.mat-accordion > .mat-expansion-panel-spacing:last-child {
+  margin-top: 15px;
+}
+
+mat-accordion {
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.mat-expansion-panel {
+  background: $primary-colour;
+}
+
+mat-panel-title {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+// Styling for headings
+.header-container {
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+// Styling for table headers
+.table-headers-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+// Styling for table lines
+.comparaison-line-container,
+.comparaison-line-container-bold {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.comparaison-line-container-bold {
+  font-weight: 600;
+}
+
+.name-column,
+.name-column-bold {
+  width: 40%;
+}
+
+.name-column-bold {
+  font-weight: bolder;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+  min-width: 10px;
+}
+
+.data-column {
+  width: 130px;
+  text-align: end;
+}
+
+.chart-title {
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 7px 0;
+  margin-top: 20px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.description-container {
+  align-items: center;
+  margin: 10px 0;
+}
+
+hr {
+  margin: 3px 0;
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+<div class="main-container">
+  <div class="header-container">Here are your Estimates</div>
+  <div class="intro-para-container">
+    Congrats, you have sucessfully completed the estimates process (see we told
+    you it was easy). Below are three sections that we will quickly explain
+  </div>
+  <div class="intro-header-container">Forecasts</div>
+  <div>
+    In this section we give a quick overview of the forecasts generated in order
+    to provide your estimates. These are an essentual part of the process and
+    are worth having a look through
+  </div>
+  <div class="intro-header-container">Comparative Infomation</div>
+  <div>
+    In order to know what a business is worth one needs to look at other similar
+    buisness and what the market as a whole determines to be their value. In
+    this section we detail teh comparative businesses we used to arrive at our
+    estimates
+  </div>
+  <div class="intro-header-container">Summary Estimates</div>
+  <div>
+    The part you are looking for - We recommend looking at these in context of
+    the two sections previously mentioned
+  </div>
+
+  <div class="accordions-container">
+    <app-estimates-results-forecasts-screensection
+      [forecastDataForDisplay]="forecastDataForDisplay"
+    ></app-estimates-results-forecasts-screensection>
+    <app-estimate-results-comparatives-screensection
+      *ngIf="comparativeMarketData"
+      [orginalComparativeData]="comparativeMarketData"
+      (modifiedComparativeData)="setModifiedComparativeData($event)"
+    ></app-estimate-results-comparatives-screensection>
+    <app-estimate-results-regression-screensection
+      *ngIf="comparativeMarketDataWithoutOutliers"
+      [comparativeDataWithoutOutliers]="comparativeMarketDataWithoutOutliers"
+    >
+    </app-estimate-results-regression-screensection>
+    <app-estimate-results-summary-screensection
+      [estimateSummaryDataForDisplay]="estimateSummaryDataForDisplay"
+    ></app-estimate-results-summary-screensection>
+  </div>
+
+  <div class="intro-para-container">
+    Final note: If you would like to make modifications to this estimate - that
+    is not possible at this point BUT it is possible to convert this estimate
+    into a valuation - all you need to do is select an option at the bottom of
+    this page and we will convert this estimate into a valuation.
+  </div>
+</div>

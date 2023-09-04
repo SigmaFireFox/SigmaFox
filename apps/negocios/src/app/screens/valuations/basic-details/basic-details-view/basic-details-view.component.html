@@ -1,0 +1,22 @@
+<div class="view-container">
+  <div class="view-row">
+    <div class="view-line-title">Target entity name:</div>
+    <div *ngIf="valuationBasicDetails.targetEntityName">
+      {{ valuationBasicDetails.targetEntityName }}
+    </div>
+  </div>
+
+  <div class="view-row">
+    <div class="view-line-title">Target entity financial year end:</div>
+    <div *ngIf="valuationBasicDetails.targetEntityFYE">
+      {{ valuationBasicDetails.targetEntityFYE }}
+    </div>
+  </div>
+
+  <div class="view-row">
+    <div class="view-line-title">Valuation date:</div>
+    <div *ngIf="valuationBasicDetails.valuationDate">
+      {{ valuationBasicDetails.valuationDate | date: "d MMMM y" }}
+    </div>
+  </div>
+</div>

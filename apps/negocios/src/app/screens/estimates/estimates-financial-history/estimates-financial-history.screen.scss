@@ -1,0 +1,170 @@
+@import "../../../../styles.scss";
+
+.main-container {
+  display: flex;
+  margin: 0 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container {
+  margin: 30px 0;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intro-para-container {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  width: 115%;
+  // TODO: needs to be dynamic for 5 years (100% if less then 5 years)
+}
+
+.input-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-title {
+  width: 150px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+  min-width: 50px;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}
+
+form {
+  width: 100%;
+}
+
+p {
+  margin: 3px;
+  padding: 3px 0;
+  line-height: 18px;
+}
+
+input {
+  margin-top: 3px;
+  padding: 0;
+}
+
+.question-row,
+.question-row-emphasis,
+.question-row-emphasis-with-space,
+.question-row-emphasis-no-space {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.question-row-emphasis-with-space,
+.question-row-emphasis,
+.question-row-emphasis-no-space {
+  background: $forth-color;
+}
+
+.question-row-emphasis-with-space {
+  margin-bottom: 20px;
+}
+
+.question-row-emphasis-no-space {
+  margin-bottom: 0;
+}
+
+.question-row-emphasis {
+  margin-bottom: 10px;
+}
+
+.bold-title {
+  font-weight: bold;
+  align-self: center;
+}
+
+.plain-title {
+  align-self: center;
+}
+
+.question-row-inputs {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+}
+
+hr {
+  margin: 3px 0;
+  border-top: 1px solid black;
+}
+
+.double-line {
+  margin-bottom: 20px;
+}
+
+mat-accordion,
+mat-expansion-panel {
+  width: 100%;
+}
+
+mat-accordion {
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.mat-expansion-panel {
+  background: $primary-colour;
+}
+
+mat-panel-title {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0;
+}

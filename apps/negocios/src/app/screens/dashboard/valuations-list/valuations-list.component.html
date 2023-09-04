@@ -1,0 +1,36 @@
+<div class="main-container">
+  <div class="header-row">
+    <h1>List of valuations</h1>
+    <div class="spacer"></div>
+    <button mat-button class="primary-button" (click)="addNewValuation()">
+      New Valuation
+    </button>
+  </div>
+
+  <div>
+    <div *ngIf="valuations.length > 0">
+      <div class="valuation-row" *ngFor="let valuation of valuations">
+        <p>{{ valuation.title }}</p>
+        <div class="spacer"></div>
+        <button
+          mat-button
+          class="primary-button"
+          (click)="viewValuation(valuation.id)"
+        >
+          View
+        </button>
+        <button
+          mat-button
+          class="secondary-button"
+          (click)="deleteValuation(valuation.id)"
+        >
+          Delete
+        </button>
+
+        <div *ngIf="valuations.length === 0">
+          <p>No valuations for this client</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

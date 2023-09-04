@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+  background: rgba(149, 162, 241, 0.8); // $primary-color
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+  align-self: center;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}
+
+.float-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  background-color: $secondary-color;
+  padding: 10px;
+  border-radius: 20px;
+  width: 270px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.body-container {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,35 @@
+<div class="main-container" *ngIf="orginalValuationData">
+  <app-sidebar
+    class="sidebar"
+    [sidebarMenu]="sidebarMenu"
+    (optionClicked)="onMenuOptionClicked($event)"
+  >
+  </app-sidebar>
+
+  <div class="content-view">
+    <div class="header">
+      <h1>{{orginalValuationData.title}}</h1>
+      <div class="spacer"></div>
+      <div *ngIf="isSavable" class="button-container">
+        <button mat-button class="primary-button" (click)="saveValuation()">
+          <div>Save</div>
+        </button>
+        <button mat-button class="secondary-button" (click)="revertChanges()">
+          <div>Revert</div>
+        </button>
+      </div>
+    </div>
+
+    <div [ngSwitch]="currentViewState">
+      <app-basic-details
+        *ngSwitchCase="ViewState.BASIC_DETAIL"
+        [valuationBasicDetails]="updatedValuationData.basicDetails"
+        (updatedBasicDetails)="updateBasicDetails($event)"
+      ></app-basic-details>
+      <app-financial-history
+        *ngSwitchCase="ViewState.FINANCIAL_HISTORY"
+        [valuationFinancialHistory]="updatedValuationData.financialHistory"
+      ></app-financial-history>
+    </div>
+  </div>
+</div>

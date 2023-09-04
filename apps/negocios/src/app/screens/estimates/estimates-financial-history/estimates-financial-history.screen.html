@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="header-container">
+    Now the important stuff (Financial history)
+  </div>
+  <div class="intro-para-container">
+    This step in the estimate process if the most critical and in order to
+    provide you with the most acurate results possible we require the financial
+    history of the business in question. Although we try to build in as many
+    santity checks as possible - We encourage you to take extra care when
+    capturing this financial history as once the results are processed - you
+    will not be able to amend this financial history (if there is an error). On
+    the following screen there will be a oppertunity to review this information
+    one last before we cruch the numbers - but again we encourage you to ensure
+    caputured information is as accurate as possible
+  </div>
+
+  <app-estimates-financial-history-form
+    style="width: 100%"
+    [numberOfYearsRequired]="numberOfYearsRequired"
+    [updatedDataRequested]="$requestHistoryFormData.asObservable()"
+    (formData)="onReceiptOfFormData($event)"
+  ></app-estimates-financial-history-form>
+</div>

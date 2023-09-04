@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+
+.main-container {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.screen-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}

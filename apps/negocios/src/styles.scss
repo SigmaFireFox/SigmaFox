@@ -1,3 +1,49 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "~@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$negocio-primary: mat.define-palette(mat.$indigo-palette);
+$negocio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$negocio-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$negocio-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $negocio-primary,
+      accent: $negocio-accent,
+      warn: $negocio-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($negocio-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+// Global variables
+$toolbar-height: 50px;
+$primary-colour: rgb(149, 162, 241);
+$secondary-color: rgb(131, 221, 224);
+$third-color: rgb(7, 26, 78);
+$forth-color: rgb(110, 113, 255);
+
+// Generic modifications
 html,
 body {
   height: 100%;
@@ -5,4 +51,128 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+p {
+  margin: 0;
+}
+
+// Angular material modifications
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+// Inputs
+.standard-input,
+.small-input,
+.currency-input,
+.micro-input,
+.disabled-currency-input,
+.display-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 24px;
+  margin: 5px;
+  text-align: end;
+  padding-right: 5px;
+}
+
+.standard-input {
+  width: 250px;
+}
+
+.small-input,
+.currency-input,
+.disabled-currency-input,
+.display-block {
+  width: 120px;
+}
+
+.micro-input {
+  width: 20px;
+}
+
+.disabled-currency-input {
+  background-color: $forth-color;
+  border: none;
+  font-weight: bolder;
+  color: black;
+  padding-right: 3px;
+}
+
+.currency-input,
+.disabled-currency-input {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  justify-content: center;
+}
+
+.display-block {
+  background-color: $primary-colour;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+// Buttons
+.super-button,
+.super-button-small,
+.primary-button,
+.secondary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  margin-top: 5px;
+}
+
+.super-button-small,
+.primary-button,
+.secondary-button {
+  height: 30px;
+}
+
+.super-button,
+.super-button-small {
+  width: 300px;
+  border-radius: 45px;
+}
+
+.primary-button,
+.secondary-button {
+  width: 120px;
+}
+
+.super-button {
+  background-color: $secondary-color;
+  color: $third-color;
+  height: 45px;
+  font-size: x-large;
+}
+
+.super-button-small {
+  background-color: $primary-colour;
+  border: 1px solid $third-color;
+  color: $third-color;
+  font-size: medium;
+}
+
+.primary-button {
+  background-color: $third-color;
+  color: $secondary-color;
+}
+
+.secondary-button {
+  background-color: $secondary-color;
+  border: 1px solid $third-color;
+  color: $third-color;
+}
+
+// Other styling
+.view-line-title {
+  width: 250px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }

@@ -1,0 +1,10 @@
+export enum SignUpError {
+  NONE,
+  NO_FIRST_NAME,
+  NO_LAST_NAME,
+  NO_EMAIL,
+  INVALID_EMAIL,
+  NO_PASSWORD,
+  DUPLICATE_EMAIL,
+  WEAK_PASSWORD,
+}

@@ -1,0 +1,70 @@
+<div class="main-container">
+  <div class="primary-container">
+    <div class="content-container">
+      <h2>Your business is the result of your efforts</h2>
+      <h1>Know Your Worth</h1>
+      <button mat-button class="super-button" (click)="onEstimateClick()">
+        Get an Estimate Now
+      </button>
+      <p>100% free - No account needed - Takes 5 mins</p>
+    </div>
+    <div class="image-container">
+      <img src="../../../assets/landing-image-1.png" />
+    </div>
+  </div>
+  <div class="secondary-container">
+    <div class="secondary-header">
+      <h1>Looking for something more then an Estimate?</h1>
+    </div>
+    <div class="secondary-products-container">
+      <div class="product-container">
+        <div class="product-container-image">
+          <img
+            src="../../../assets/landing-product-desktop.png"
+            [height]="120"
+            [width]="100"
+          />
+        </div>
+        <div class="product-container-content">
+          <h1>Desktop Valuations</h1>
+          <ul>
+            <li>Free - only requires account sign up</li>
+            <li>Acurate valuation methods</li>
+            <li>Limited forecasting modifications</li>
+          </ul>
+          <button
+            mat-button
+            class="primary-button"
+            (click)="onNewDesktopClick()"
+          >
+            Start new Desktop Valuation
+          </button>
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product-container-image">
+          <img
+            src="../../../assets/landing-product-full.png"
+            [height]="100"
+            [width]="100"
+          />
+        </div>
+        <div class="product-container-content">
+          <h1>Full Valuations</h1>
+          <ul>
+            <li>Low once-off fee</li>
+            <li>Comprehensive valuation methods</li>
+            <li>Enhanced forecasting methods</li>
+          </ul>
+          <button
+            mat-button
+            class="primary-button"
+            (click)="onNewFullValuationClick()"
+          >
+            Start new Full Valuation
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

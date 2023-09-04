@@ -1,0 +1,62 @@
+.form-container,
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-title {
+  width: 150px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}
+
+form {
+  width: 100%;
+}
+
+p {
+  margin: 3px;
+  padding: 3px 0;
+  line-height: 18px;
+}
+
+input {
+  margin: 3px;
+  padding: 0;
+}

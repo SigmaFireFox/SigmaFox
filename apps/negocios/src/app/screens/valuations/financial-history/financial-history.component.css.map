@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,CAAC;CACf;;AAED,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACpB;;AAED,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,CAAC;CACb;;AAED,AAAA,WAAW,CAAC;EACV,WAAW,EAAE,CAAC;EACd,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,GAAG;CACZ",
+    "sources": [
+        "financial-history.component.scss"
+    ],
+    "names": [],
+    "file": "financial-history.component.css"
+}

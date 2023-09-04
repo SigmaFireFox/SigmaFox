@@ -1,0 +1,21 @@
+<mat-drawer-container class="sidenav-container" autosize>
+  <mat-drawer
+    #drawer
+    class="sidenav-content-container"
+    [(opened)]="opened"
+    mode="side"
+  >
+    <div class="menu-option" *ngFor="let option of sidebarMenu">
+      <a (click)="onMenuOptionClicked(option)">{{ option }}</a>
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-button-container" (click)="drawer.toggle()">
+    <div class="arrow-container" *ngIf="opened">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </div>
+    <div class="arrow-container" *ngIf="!opened">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </div>
+  </div>
+</mat-drawer-container>

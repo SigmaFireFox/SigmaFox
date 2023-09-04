@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0 10px;
+}

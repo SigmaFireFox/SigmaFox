@@ -1,0 +1,38 @@
+<form class="inputs-container" #basicDetailsForm [formGroup]="basicDetails">
+  <mat-form-field class="standard-input" appearance="fill">
+    <mat-label>Target entity name</mat-label>
+    <input
+      matInput
+      type="text"
+      formControlName="targetEntityName"
+      value="{{ valuationBasicDetails.targetEntityName }}"
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Target entity financial year end</mat-label>
+    <mat-select formControlName="targetEntityFYE">
+      <mat-option
+        *ngFor="let month of monthsOfYear | keyvalue: originalOrder"
+        [value]="month.value"
+      >
+        {{ month.value }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="standard-input" appearance="fill">
+    <mat-label>Valuation date</mat-label>
+    <input
+      matInput
+      [matDatepicker]="valuationDate"
+      formControlName="valuationDate"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="valuationDate"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #valuationDate></mat-datepicker>
+  </mat-form-field>
+</form>

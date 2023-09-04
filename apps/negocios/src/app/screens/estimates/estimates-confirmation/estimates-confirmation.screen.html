@@ -1,0 +1,125 @@
+<div class="main-container">
+  <div class="header-container">Last step, we promise. Please confirm...</div>
+  <div class="intro-para-container">
+    Before we proceed to the the results of our estimate we would like you to
+    review the financial data you inputed in the previous steps as well as the
+    cash flow statement we have generated on that data.
+  </div>
+  <div class="intro-para-container">
+    Note that it really important you make sure that this data is correct as
+    once the estimate is generated you will not be able to go back and correct
+    for any errors that may have occuered. You will need to start the process
+    from the very begining UNLESS you elect to convert this estimate to a
+    desktop valuation (free) or full valuation (paid for service)
+  </div>
+
+  <mat-accordion *ngFor="let statement of financialStatements">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{statement.title}} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="statement-container">
+        <div
+          *ngFor="let statementLine of statement.lines"
+          [ngSwitch]="statementLine.lineType"
+          class="statement-lines"
+        >
+          <div *ngSwitchCase="lineType.HEADER" class="header-line">
+            {{statementLine.title}}
+            <div class="spacer"></div>
+            <div
+              *ngFor="let amount of statementLine.amounts"
+              class="amount-container"
+            >
+              {{amount}}
+            </div>
+          </div>
+          <div *ngSwitchCase="lineType.SUBHEADER" class="sub-header-line">
+            <div class="empty-line"></div>
+            {{statementLine.title}}
+            <div class="spacer"></div>
+            <div
+              *ngFor="let amount of statementLine.amounts"
+              class="amount-container"
+            >
+              {{amount}}
+            </div>
+          </div>
+          <div
+            *ngSwitchCase="lineType.STATEMENT_LINE_NO_EMPHASIS"
+            class="standard-line"
+          >
+            {{statementLine.title}}
+            <div class="spacer"></div>
+            <div
+              *ngFor="let amount of statementLine.amounts"
+              class="amount-container"
+            >
+              {{amount| number: "1.2-2"}}
+            </div>
+          </div>
+          <div
+            *ngSwitchCase="lineType.STATEMENT_LINE_WITH_EMPHASIS"
+            class="bold-line"
+          >
+            {{statementLine.title}}
+            <div class="spacer"></div>
+            <div
+              *ngFor="let amount of statementLine.amounts"
+              class="amount-container"
+            >
+              {{amount| number: "1.2-2"}}
+            </div>
+          </div>
+          <div *ngSwitchCase="lineType.SUB_TOTAL" class="bold-complex-line">
+            <hr />
+            <div class="bold-line">
+              {{statementLine.title}}
+              <div class="spacer"></div>
+              <div
+                *ngFor="let amount of statementLine.amounts"
+                class="amount-container"
+              >
+                {{amount| number: "1.2-2"}}
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="lineType.SECTION_TOTAL" class="bold-complex-line">
+            <hr />
+            <div class="bold-line">
+              {{statementLine.title}}
+              <div class="spacer"></div>
+              <div
+                *ngFor="let amount of statementLine.amounts"
+                class="amount-container"
+              >
+                {{amount| number: "1.2-2"}}
+              </div>
+            </div>
+            <hr />
+            <hr />
+          </div>
+          <div
+            *ngSwitchCase="lineType.  SECTION_TOTAL_WITH_SPACE_BEFORE"
+            class="bold-complex-line"
+          >
+            <div class="empty-line"></div>
+            <hr />
+            <div class="bold-line">
+              {{statementLine.title}}
+              <div class="spacer"></div>
+              <div
+                *ngFor="let amount of statementLine.amounts"
+                class="amount-container"
+              >
+                {{amount| number: "1.2-2"}}
+              </div>
+            </div>
+            <hr />
+            <hr />
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

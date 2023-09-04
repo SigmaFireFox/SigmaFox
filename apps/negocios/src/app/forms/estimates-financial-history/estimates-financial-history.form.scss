@@ -1,0 +1,176 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.line-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header-line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.input-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.input-title {
+  width: 150px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+  min-width: 50px;
+}
+
+input {
+  margin-top: 3px;
+  padding: 0;
+}
+
+.question-row,
+.question-row-emphasis,
+.question-row-emphasis-with-space,
+.question-row-emphasis-no-space {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.question-row-emphasis-with-space,
+.question-row-emphasis,
+.question-row-emphasis-no-space {
+  background: $forth-color;
+}
+
+.question-row-emphasis-with-space {
+  margin-bottom: 20px;
+}
+
+.question-row-emphasis-no-space {
+  margin-bottom: 0;
+}
+
+.question-row-emphasis {
+  margin-bottom: 10px;
+}
+
+.bold-title {
+  font-weight: bold;
+  align-self: center;
+}
+
+.plain-title {
+  align-self: center;
+}
+
+.question-row-inputs {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+}
+
+hr {
+  margin: 1px 0;
+  border-top: 1px solid black;
+}
+
+.double-line {
+  margin-bottom: 20px;
+}
+
+mat-accordion,
+mat-expansion-panel {
+  width: 100%;
+}
+
+mat-accordion {
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.mat-expansion-panel {
+  background: $primary-colour;
+}
+
+mat-panel-title {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.sub-header-line {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  height: 48px;
+}
+
+.empty-line {
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+}
+
+.bold-complex-line {
+  width: 100%;
+}
+
+.section-total-line {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background: $forth-color;
+}
+
+.bold-display-row {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}

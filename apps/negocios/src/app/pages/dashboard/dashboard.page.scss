@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - #{$toolbar-height});
+  margin-top: $toolbar-height;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.content-view {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}

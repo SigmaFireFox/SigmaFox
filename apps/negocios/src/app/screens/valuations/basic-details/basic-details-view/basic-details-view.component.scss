@@ -1,0 +1,25 @@
+.view-container,
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}

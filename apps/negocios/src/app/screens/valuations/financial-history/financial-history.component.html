@@ -1,0 +1,36 @@
+<div class="main-container">
+  <div class="screen-header">
+    <h3>Valuation - Financial History</h3>
+    <div class="spacer"></div>
+    <div [ngSwitch]="currentScreenMode">
+      <button
+        *ngSwitchCase="ScreenMode.VIEW"
+        mat-button
+        class="secondary-button"
+        (click)="toggleScreenMode()"
+      >
+        <div>Edit</div>
+      </button>
+      <button
+        *ngSwitchCase="ScreenMode.FORM"
+        mat-button
+        class="primary-button"
+        (click)="toggleScreenMode()"
+      >
+        <div>Update</div>
+      </button>
+    </div>
+  </div>
+  <div [ngSwitch]="currentScreenMode">
+    <app-financial-history-view
+      *ngSwitchCase="ScreenMode.VIEW"
+      [valuationFinancialHistory]="valuationFinancialHistory"
+      (switchScreen)="toggleScreenMode()"
+    ></app-financial-history-view>
+    <app-financial-history-form
+      *ngSwitchCase="ScreenMode.FORM"
+      [valuationFinancialHistory]="valuationFinancialHistory"
+      [updatedDataRequested]="formDataRequired.asObservable()"
+    ></app-financial-history-form>
+  </div>
+</div>

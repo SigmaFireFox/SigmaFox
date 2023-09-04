@@ -1,0 +1,44 @@
+<div class="main-container">
+  <div class="screen-header">
+    <h3>Valuation - Basic Details</h3>
+    <div class="spacer"></div>
+    <div [ngSwitch]="currentScreenMode">
+      <button
+        *ngSwitchCase="ScreenMode.VIEW"
+        mat-button
+        class="secondary-button"
+        (click)="toggleScreenMode()"
+      >
+        <div>Edit</div>
+      </button>
+      <div *ngSwitchCase="ScreenMode.FORM">
+        <div *ngIf="changesMade">
+          <button mat-button class="primary-button" (click)="updateData()">
+            <div>Update</div>
+          </button>
+          <button
+            mat-button
+            class="secondary-button"
+            (click)="toggleScreenMode()"
+          >
+            <div>Revert</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [ngSwitch]="currentScreenMode">
+    <app-basic-details-view
+      *ngSwitchCase="ScreenMode.VIEW"
+      [valuationBasicDetails]="valuationBasicDetails"
+    ></app-basic-details-view>
+    <app-basic-details-form
+      *ngSwitchCase="ScreenMode.FORM"
+      [valuationBasicDetails]="valuationBasicDetails"
+      [updatedDataRequested]="formDataRequired.asObservable()"
+      (changesMade)="setChangesMade($event)"
+      (updateBasicDetails)="updateBasicDetails($event)"
+    ></app-basic-details-form>
+  </div>
+</div>

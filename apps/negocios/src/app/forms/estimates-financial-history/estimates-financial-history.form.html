@@ -1,0 +1,122 @@
+<div class="main-container">
+  <mat-accordion *ngFor="let statement of financialHistory">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{statement.title}} </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div
+        *ngFor="let line of statement.listOfControls"
+        [ngSwitch]="line.lineType"
+        class="line-container"
+      >
+        <div *ngSwitchCase="lineType.HEADER" class="header-line">
+          <div>{{line.title}}</div>
+          <div class="spacer"></div>
+          <div class="display-block" *ngFor="let year of listOfYears">
+            {{year}}
+          </div>
+        </div>
+
+        <div *ngSwitchCase="lineType.SUBHEADER" class="sub-header-line">
+          <div>{{line.title}}</div>
+        </div>
+
+        <div
+          *ngSwitchCase="lineType.STANDARD_LINE_WITH_EMPHASIS"
+          class="input-row"
+        >
+          <div>{{line.title}}</div>
+          <div class="spacer"></div>
+          <input
+            class="currency-input"
+            *ngFor="let control of line.inputArray.controls; index as i"
+            required
+            appTwoDigitDecimaNumber
+            [ngModel]="control.value  | number : '1.2-2'"
+            [ngModelOptions]="{standalone: true, updateOn: 'blur'}"
+            (ngModelChange)="onUpdateFormValue(line.inputArray, i,  $event)"
+          />
+        </div>
+
+        <div
+          *ngSwitchCase="lineType.STANDARD_LINE_NO_EMPHASIS"
+          class="input-row"
+        >
+          <div>{{line.title}}</div>
+          <div class="spacer"></div>
+          <input
+            class="currency-input"
+            *ngFor="let control of line.inputArray.controls; index as i"
+            required
+            appTwoDigitDecimaNumber
+            [ngModel]="control.value  | number : '1.2-2'"
+            [ngModelOptions]="{standalone: true, updateOn: 'blur'}"
+            (ngModelChange)="onUpdateFormValue(line.inputArray, i,  $event)"
+          />
+        </div>
+
+        <div *ngSwitchCase="lineType.SUB_TOTAL" class="bold-complex-line">
+          <hr />
+          <div class="bold-display-row">
+            <div>{{line.title}}</div>
+            <div class="spacer"></div>
+            <input
+              class="disabled-currency-input"
+              *ngFor="let control of line.inputArray.controls; index as i"
+              required
+              appTwoDigitDecimaNumber
+              disabled
+              [ngModel]="control.value  | number : '1.2-2'"
+              [ngModelOptions]="{standalone: true, updateOn: 'blur'}"
+              (ngModelChange)="onUpdateFormValue(line.inputArray, i,  $event)"
+            />
+          </div>
+        </div>
+
+        <div
+          *ngSwitchCase="lineType.SECTION_TOTAL_WITH_SPACE_BEFORE"
+          class="bold-complex-line"
+        >
+          <div class="empty-line"></div>
+          <hr />
+          <div class="section-total-line">
+            <div>{{line.title}}</div>
+            <div class="spacer"></div>
+            <input
+              class="disabled-currency-input"
+              *ngFor="let control of line.inputArray.controls; index as i"
+              required
+              appTwoDigitDecimaNumber
+              disabled
+              [ngModel]="control.value  | number : '1.2-2'"
+              [ngModelOptions]="{standalone: true, updateOn: 'blur'}"
+              (ngModelChange)="onUpdateFormValue(line.inputArray, i,  $event)"
+            />
+          </div>
+          <hr />
+          <hr />
+        </div>
+
+        <div *ngSwitchCase="lineType.SECTION_TOTAL" class="bold-complex-line">
+          <hr />
+          <div class="section-total-line">
+            <div>{{line.title}}</div>
+            <div class="spacer"></div>
+            <input
+              class="disabled-currency-input"
+              *ngFor="let control of line.inputArray.controls; index as i"
+              required
+              appTwoDigitDecimaNumber
+              disabled
+              [ngModel]="control.value  | number : '1.2-2'"
+              [ngModelOptions]="{standalone: true, updateOn: 'blur'}"
+              (ngModelChange)="onUpdateFormValue(line.inputArray, i,  $event)"
+            />
+          </div>
+          <hr />
+          <hr />
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

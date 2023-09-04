@@ -1,0 +1,42 @@
+@import "../../../../../styles.scss";
+
+mat-accordion,
+mat-expansion-panel {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mat-expansion-panel-header.mat-expanded,
+.mat-accordion > .mat-expansion-panel-spacing:last-child {
+  margin-top: 15px;
+}
+
+mat-accordion {
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.mat-expansion-panel {
+  background: $primary-colour;
+}
+
+mat-panel-title {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.forecast-section-title {
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 7px 0;
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.description-container {
+  align-items: center;
+  margin: 10px 0;
+}

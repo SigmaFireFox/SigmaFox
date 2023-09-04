@@ -1,0 +1,112 @@
+<div class="main-container">
+  <div class="header-container">
+    Almost there, now to address opening balances
+  </div>
+  <div class="intro-para-container">
+    We noticed that you entered a opening retained earnings balance for
+    {{firstFinancialYearData.year}}. Based on this we assume that
+    {{firstFinancialYearData.year}} was not the first trading year for the
+    business in question.
+  </div>
+  <div class="intro-para-container">
+    In order to address this we have three options avaliable to us:
+  </div>
+  <div class="list-container">
+    <ul>
+      <li>
+        <p>
+          <span
+            >Option 1: Enter the opening balances for
+            {{firstFinancialYearData.year}} (Prefered option)</span
+          >
+        </p>
+        <p>
+          This would be the ideal open for estimate acuracy. If does mean you
+          may need to spend 2 minutes entering in the opening balances for
+          {{firstFinancialYearData.year}} (or the closing balances for
+          {{firstFinancialYearData.year - 1}}). A little painful yes, but the
+          benefit or improved estiamte accuaracy may be worth it.
+        </p>
+        <div class="checkbox-container">
+          <mat-checkbox
+            [(ngModel)]="optionEnter"
+            (change)="amendOptionElected(1)"
+            ><span
+              >I would prefer to enter the opening balances</span
+            ></mat-checkbox
+          >
+        </div>
+        <div *ngIf="optionEnter">
+          <app-estimates-opening-balances-form
+            [firstFinancialYearData]="firstFinancialYearData"
+            [openingBalancesRequested]="$requestOpeningBalanceFormBalances.asObservable()"
+            (updatedOpeningBalances)="handleReceivedOpeningBalances($event)"
+          >
+          </app-estimates-opening-balances-form>
+        </div>
+      </li>
+      <li>
+        <p><span>Option 2: Assume a zero base (Middle ground)</span></p>
+        <p>
+          Now this option is not the ideal option but its a fine balance between
+          friction and accuaracy. It means we can skip the quick process of
+          entering the opening balances and we will perform some clever maths to
+          calculate balance movements for the year (assuming all opening
+          balances are zero). From that we will be able to provide a cash flow
+          statement for {{firstFinancialYearData.year}} - but on the flip side
+          {{firstFinancialYearData.year}}'s cash flow statement may have some
+          odd looking numbers in it - and those oddities may potentionally have
+          an impact on the accuarcy of our estimates.
+        </p>
+        <p>
+          Also something to consider is that if you elect at a later stage to
+          convert this estimate to a desktop valuation (which is our goal), you
+          will need to address the opening balances issues at that point
+        </p>
+        <div class="checkbox-container">
+          <mat-checkbox
+            [(ngModel)]="optionZero"
+            (change)="amendOptionElected(2)"
+            ><span
+              >I would like to use {{firstFinancialYearData.year}} financial
+              info but skip entering {{firstFinancialYearData.year}}'s opening
+              balances</span
+            ></mat-checkbox
+          >
+        </div>
+      </li>
+      <li>
+        <p>
+          <span
+            >Option 2: Ignore {{firstFinancialYearData.year}}'s cash flow all
+            together (Least preferred option)</span
+          >
+        </p>
+        <p>
+          This option is our least prefered option as it may have a sever impact
+          on our estimates - but even so we will do out best to provide you with
+          an as accuarate as possible estimate. The
+          {{firstFinancialYearData.year}}'s cash flow are ingnored - but the
+          down side is that we are unable to derive benefit from the data you
+          have already provided for {{firstFinancialYearData.year}} - which will
+          make us very sad.
+        </p>
+        <p>
+          Also something to consider is that if you elect at a later stage to
+          convert this estimate to a desktop valuation (which is our goal), you
+          will need to address the opening balances issues at that point
+        </p>
+        <div class="checkbox-container">
+          <mat-checkbox
+            [(ngModel)]="optionIgnore"
+            (change)="amendOptionElected(3)"
+            ><span
+              >I am happy to ignore {{firstFinancialYearData.year}}'s financial
+              histroy all together</span
+            ></mat-checkbox
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Regression Analysis of Comparative Data
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <!-- Charts -->
+    <div class="charts-container" *ngFor="let chart of charts">
+      <div class="header-container">{{ chart.title }}</div>
+      <div class="chart-and-description-container">
+        <app-scatter-chart
+          class="chart-container"
+          [chartConfig]="chart"
+        ></app-scatter-chart>
+
+        <div class="description-container">
+          Tell a story Tell a storyTell a storyTell a storyTell a storyTell a
+          storyTell a storyTell a storyTell a storyTell a storyTell a storyTell
+          a storyTell a storyTell a storyTell a storyTell a storyTell a story
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel></mat-accordion
+>

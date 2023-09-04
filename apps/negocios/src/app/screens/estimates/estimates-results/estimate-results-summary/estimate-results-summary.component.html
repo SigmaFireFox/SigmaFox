@@ -1,0 +1,60 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Estimates Summary </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div
+      class="charts-container"
+      *ngFor="let chartData of estimateSummaryDataForDisplay; let i = index"
+    >
+      <div class="forecast-section-title">{{ chartData.title }}</div>
+      <div class="chart-and-description-container">
+        <app-frequency-chart
+          class="chart-container"
+          [rawChartData]="chartData"
+          (chartDescription)="displayChartDescription($event)"
+        ></app-frequency-chart>
+        <div class="description-container">
+          Based on the financial information as previously provided and the
+          trend thereof it is forecast that {{ chartData.title.toLowerCase() }}
+          {{ chartData.dataType === variableType.NUMBER ? "is" : "are" }}
+          <span>{{ chartDescriptions[i].firstSD.probailty }}%</span> likely to
+          be between
+          <span *ngIf="chartData.dataType === variableType.NUMBER">{{
+            chartDescriptions[i].firstSD.lowerBound
+              | currency: "ZAR":"symbol-narrow":"4.2-2"
+          }}</span>
+          <span *ngIf="chartData.dataType === variableType.MARGIN"
+            >{{ chartDescriptions[i].firstSD.lowerBound }}%</span
+          >
+          and
+          <span *ngIf="chartData.dataType === variableType.NUMBER">{{
+            chartDescriptions[i].firstSD.upperBound
+              | currency: "ZAR":"symbol-narrow":"4.2-2"
+          }}</span>
+          <span *ngIf="chartData.dataType === variableType.MARGIN"
+            >{{ chartDescriptions[i].firstSD.upperBound }}%</span
+          >
+          Further it is forecast that {{ chartData.title.toLowerCase() }} is
+          <span>{{ chartDescriptions[i].secondSD.probailty }}%</span> likely to
+          be between
+          <span *ngIf="chartData.dataType === variableType.NUMBER">{{
+            chartDescriptions[i].secondSD.lowerBound
+              | currency: "ZAR":"symbol-narrow":"4.2-2"
+          }}</span>
+          <span *ngIf="chartData.dataType === variableType.MARGIN"
+            >{{ chartDescriptions[i].secondSD.lowerBound }}%</span
+          >
+          and
+          <span *ngIf="chartData.dataType === variableType.NUMBER">{{
+            chartDescriptions[i].secondSD.upperBound
+              | currency: "ZAR":"symbol-narrow":"4.2-2"
+          }}</span>
+          <span *ngIf="chartData.dataType === variableType.MARGIN"
+            >{{ chartDescriptions[i].secondSD.upperBound }}%</span
+          >
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

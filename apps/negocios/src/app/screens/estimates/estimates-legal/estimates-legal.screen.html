@@ -1,0 +1,92 @@
+<div class="main-container">
+  <div class="header-container">Now some legal stuff...</div>
+  <div class="intro-para-container">
+    Nobody likes legalese, terms, conditions etc, but they are important. They
+    protect all parties to a transaction by allowing each to know their rights
+    and obligations in relation to that transaction. Now even though we are
+    offering this estimate (as well as our desktop valuations) at no cost, some
+    serious looking guy in a very expensive suit (our legal council) told us
+    that this is a transaction nevertheless. We offer you a service (albeit at
+    no cost) and you by giving us your time "compensate us" for our services, so
+    it's very important for us to inform your of our terms and conditions
+    related to this service...
+  </div>
+  <div class="list-container">
+    <ul>
+      <li>
+        <p><span>Terms and conditions</span></p>
+        <p>
+          This estimates service provides you as the user an estimated range for
+          a particular business asset. The service requires a limited amount if
+          information input from you as the user and as such our results
+          presented as very limited in their actuary and as we as Negocios can
+          in no possible way understand a business full in a short online
+          process, the results presented are in now way a professional opinion
+          and any form or manner. The results are only for interest, informative
+          and educational purposes and in now way can ever be considered
+          financial or legal advice in any way. You as the user need to
+          understand and agree that you can not use the results of this
+          estimated process in any way other than for interest, informative and
+          educational purposes as for which they are intended.
+        </p>
+        <p>
+          Our full legal terms and conditions <span>MUST</span> be read before
+          agreeing to the above
+        </p>
+        <div class="checkbox-container">
+          <mat-checkbox [(ngModel)]="tAndCsChecked"
+            ><span
+              >I have read, understood and am happy to accept these terms and
+              conditions</span
+            ></mat-checkbox
+          >
+        </div>
+      </li>
+      <li>
+        <p><span>Your privicy</span></p>
+        <p>
+          We love data - in fact we can’t get enough of the stuff. Data allows
+          us to improve our services and ultimately ensure we are keeping up to
+          date with the market’s perception of value. But what is more important
+          to us is your privacy and your privacy concerns. So we will record
+          data that you have not explicitly given us concern to record.
+        </p>
+        <p>
+          In terms of security, we employ the highest standards of data
+          protection we possibly can and use the services of trusted entities to
+          help ensure we constantly improve our security protocols.
+        </p>
+        <p>
+          We promise that we will never ever share your data to any third party
+          (unless we are legally obliged to) and that any data we do record is
+          only used internally by our data scientist locked away in our basement
+          somewhere.
+        </p>
+        <p>
+          Please feel free to read about our data policy and security protocols
+        </p>
+        <p>
+          With that in mind, would it be okay if we record the inputs and
+          results of this estimate once complete?
+        </p>
+        <div class="checkbox-container">
+          <mat-checkbox
+            [(ngModel)]="dataRecordingAccepted"
+            (change)="dataRecordingChecked(true)"
+            ><span
+              >Yes - feel free to record this estimate and it's results</span
+            ></mat-checkbox
+          >
+          <mat-checkbox
+            [(ngModel)]="dataRecordingRejected"
+            (change)="dataRecordingChecked(false)"
+            ><span
+              >No - I would prefer the contents on my estimate to remain
+              private</span
+            ></mat-checkbox
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

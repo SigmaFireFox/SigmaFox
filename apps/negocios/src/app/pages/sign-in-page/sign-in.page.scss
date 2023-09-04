@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100% - #{$toolbar-height});
+}
+
+.signin-container {
+  margin: auto;
+  width: fit-content;
+  background-color: $primary-colour;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 270px;
+}

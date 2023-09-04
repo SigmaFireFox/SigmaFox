@@ -1,0 +1,38 @@
+<div class="input-container">
+  <div class="input-titles">
+    <div *ngFor="let title of formLineTitles">
+      <p class="input-title">
+        <strong>{{ title }}:</strong>
+      </p>
+    </div>
+  </div>
+
+  <form
+    style="display: flex; flex-direction: row; justify-content: flex-end"
+    [formGroup]="financialHistory"
+  >
+    <div
+      style="display: flex; flex-direction: column"
+      formArrayName="financialHistoryArray"
+      *ngFor="
+        let financialHistoryYear of getFinancialHistoryArray();
+        let i = index
+      "
+    >
+      <form
+        style="display: flex; flex-direction: column"
+        [formGroup]="financialHistoryYear"
+      >
+        <div *ngFor="let control of financialHistoryYear.controls | keys">
+          <input
+            class="small-input"
+            type="text"
+            formControlName="{{ control }}"
+            value=""
+            required
+          />
+        </div>
+      </form>
+    </div>
+  </form>
+</div>

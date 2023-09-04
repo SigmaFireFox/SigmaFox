@@ -1,0 +1,24 @@
+<div class="main-container">
+  <div class="float-container">
+    <div class="title-container">{{ notificationContent.header }}</div>
+    <div class="body-container">{{ notificationContent.bodyText }}</div>
+    <div class="buttons-container">
+      <button
+        *ngIf="notificationContent.primaryBtn.title"
+        mat-button
+        class="primary-button"
+        (click)="onPrimaryBtnClick()"
+      >
+        {{ notificationContent.primaryBtn.title }}
+      </button>
+      <button
+        *ngIf="notificationContent.secondaryBtn.title !== ''"
+        mat-button
+        class="secondary-button"
+        (click)="onSecondaryBtnClick()"
+      >
+        {{ notificationContent.secondaryBtn.title }}
+      </button>
+    </div>
+  </div>
+</div>

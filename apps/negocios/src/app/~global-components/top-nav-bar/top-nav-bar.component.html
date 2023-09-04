@@ -1,0 +1,14 @@
+<mat-toolbar class="toolbar">
+  <div class="logo-container" (click)="onLogoClick()">
+    <img src="../assets/Negocio-logos-slim.jpeg" [height]="42" />
+  </div>
+  <div class="spacer"></div>
+  <div class="user-greeting" (click)="onProfileClick()">
+    <p>{{ userName ? "Hello " + userName : "Log in" }}</p>
+  </div>
+  <button mat-mini-fab color="primary" (click)="onProfileClick()">
+    <mat-icon>
+      <span class="material-icons-outlined"> perm_identity </span>
+    </mat-icon>
+  </button>
+</mat-toolbar>

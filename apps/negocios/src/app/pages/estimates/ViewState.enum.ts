@@ -1,0 +1,9 @@
+export enum ViewState {
+  INTRO,
+  LEGAL,
+  BASICS,
+  FINANCIAL_HISTORY,
+  OPENING_BALANCES,
+  CONFIRMATION,
+  RESULTS,
+}

@@ -1,0 +1,25 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.header-row,
+.valuation-row {
+  display: flex;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}

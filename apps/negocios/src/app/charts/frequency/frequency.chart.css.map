@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,MAAM;CACxB",
+    "sources": [
+        "frequency.chart.scss"
+    ],
+    "names": [],
+    "file": "frequency.chart.css"
+}

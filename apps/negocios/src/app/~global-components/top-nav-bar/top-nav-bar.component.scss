@@ -1,0 +1,26 @@
+@import "../../../styles.scss";
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 2%;
+  height: $toolbar-height;
+  background-color: $primary-colour;
+  justify-content: center;
+  z-index: 2;
+}
+
+.logo-container {
+  cursor: pointer;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.user-greeting {
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}

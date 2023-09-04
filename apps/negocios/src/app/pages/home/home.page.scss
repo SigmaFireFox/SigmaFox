@@ -1,0 +1,138 @@
+@import "../../../styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - #{$toolbar-height});
+  margin: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100% - #{$toolbar-height} - 45%);
+  background-color: $primary-colour;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 5%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-weight: bold;
+  font-size: 45px;
+  color: $third-color;
+  text-decoration: double;
+}
+
+.content-container h2 {
+  font-size: 20px;
+}
+
+.content-container p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.super-button {
+  border: 1px solid $third-color;
+}
+
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  margin-top: 15px;
+  height: calc((100% - #{$toolbar-height}) - 60%);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.secondary-header h1 {
+  font-weight: bolder;
+  font-size: 20px;
+  color: $third-color;
+  margin: 0%;
+}
+
+.secondary-products-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+  margin-top: 10px;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+}
+
+.product-container h1 {
+  font-weight: bolder;
+  font-size: 17px;
+  color: $third-color;
+  margin: 0%;
+}
+
+.product-container-image {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.primary-button {
+  width: 200px;
+}

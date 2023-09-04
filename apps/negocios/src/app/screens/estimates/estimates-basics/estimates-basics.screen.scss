@@ -1,0 +1,65 @@
+@import "../../../../styles.scss";
+
+.main-container {
+  display: flex;
+  margin: 0 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container {
+  margin: 30px 0;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intro-para-container {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.question-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: bold;
+  width: 40%;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.large-input {
+  width: 60%;
+  height: 24px;
+}
+
+.small-input {
+  width: 30%;
+  height: 24px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  background: $primary-colour;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+input {
+  margin-right: 5px;
+}

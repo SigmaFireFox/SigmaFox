@@ -1,0 +1,98 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Forecasts </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="intro-para-container">
+      <div>
+        Forecast are the cornerstone to any valuation or estimate. A business'
+        value is determined by it potential and what it's financial capabilty
+        going forward.
+      </div>
+      <div>
+        When forecasting we use the Monte Carlo method which are a broad class
+        of computational algorithms that rely on repeated random sampling to
+        obtain numerical results. Explained more simply: when the probailty of
+        an event's outcome is uncertain, one way to get an estimate of that
+        event's outcome is to recreate that event again and again and count the
+        frequency of the various outcomes. The logic is the more times you
+        recreate that event the closer the actual frequency of the outcomes
+        become to the probailty of that outcome
+      </div>
+      <div>
+        Below are the outcomes of the various Monte Carlo simulations we
+        performed on key financial performance indicators based on the data you
+        have previously provided
+      </div>
+    </div>
+    <div
+      class="charts-container"
+      *ngFor="let chartData of forecastDataForDisplay; let i = index"
+    >
+      <div class="forecast-section-title">{{chartData.title}}</div>
+      <div class="chart-and-description-container">
+        <app-frequency-chart
+          class="chart-container"
+          [rawChartData]="chartData"
+          (chartDescription)="displayChartDescription($event)"
+        ></app-frequency-chart>
+        <div class="description-container">
+          Based on the financial information as previously provided and the
+          trend thereof it is forecast that {{chartData.title.toLowerCase()}}
+          {{chartData.dataType === variableType.NUMBER ? 'is' : 'are' }}
+          <span>{{chartDescriptions[i].firstSD.probailty}}%</span> likely to be
+          between
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.NUMBER"
+            >{{chartDescriptions[i].firstSD.lowerBound |
+            currency:'ZAR':'symbol-narrow':'4.2-2'}}</span
+          >
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.MARGIN"
+            >{{chartDescriptions[i].firstSD.lowerBound}}%</span
+          >
+          and
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.NUMBER"
+            >{{chartDescriptions[i].firstSD.upperBound |
+            currency:'ZAR':'symbol-narrow':'4.2-2'}}</span
+          >
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.MARGIN"
+            >{{chartDescriptions[i].firstSD.upperBound}}%</span
+          >
+          Further it is forecast that {{chartData.title.toLowerCase()}} is
+          <span>{{chartDescriptions[i].secondSD.probailty}}%</span> likely to be
+          between
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.NUMBER"
+            >{{chartDescriptions[i].secondSD.lowerBound |
+            currency:'ZAR':'symbol-narrow':'4.2-2'}}</span
+          >
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.MARGIN"
+            >{{chartDescriptions[i].secondSD.lowerBound}}%</span
+          >
+          and
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.NUMBER"
+            >{{chartDescriptions[i].secondSD.upperBound |
+            currency:'ZAR':'symbol-narrow':'4.2-2'}}</span
+          >
+          <span
+            *ngIf="chartData.dataType ===
+              variableType.MARGIN"
+            >{{chartDescriptions[i].secondSD.upperBound}}%</span
+          >
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

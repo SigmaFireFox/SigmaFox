@@ -1,0 +1,93 @@
+<div class="main-container">
+  <div class="content-container" [ngSwitch]="currentViewState">
+    <app-estimates-introduction-screen
+      *ngSwitchCase="ViewState.INTRO"
+    ></app-estimates-introduction-screen>
+    <app-estimates-legal-screen
+      *ngSwitchCase="ViewState.LEGAL"
+      [updatedDataRequested]="$requestLegalScreenData.asObservable()"
+      (legalStatus)="acceptLegalStatus($event)"
+      (incompeleteLegalStatus)="handleIncompleteLegalStatus($event)"
+    >
+    </app-estimates-legal-screen>
+    <app-estimates-basics-screen
+      *ngSwitchCase="ViewState.BASICS"
+      [updatedDataRequested]="$requestBasicScreenData.asObservable()"
+      (updateBasicDetails)="acceptBasicDetail($event)"
+      (incompleteBasicDetails)="handleIncompleteBasicDetail($event)"
+    ></app-estimates-basics-screen>
+    <app-estimates-financial-history-screen
+      *ngSwitchCase="ViewState.FINANCIAL_HISTORY"
+      [numberOfYearsRequired]="numberOfYearsRequired"
+      [lastFinancialYear]="lastFinancialYear"
+      [updatedDataRequested]="$requestHistoryScreenData.asObservable()"
+      (updateFinancialHistory)="acceptFinancialHistory($event)"
+      (formErrors)="handleFinancialHistoryErrors($event)"
+      (formWarnings)="handleFinancialHistoryWarnings($event)"
+    ></app-estimates-financial-history-screen>
+    <app-estimates-opening-balances-screen
+      *ngSwitchCase="ViewState.OPENING_BALANCES"
+      [firstFinancialYearData]="firstFinancialYearData"
+      [optionElectedRequested]="$requestOpeningBalanceScreenOptionElected.asObservable()"
+      [openingBalancesRequested]="$requestOpeningBalanceScreenBalances.asObservable()"
+      (OptionElected)="acceptOpeningBalancesOptionElected($event)"
+      (OpeningBalances)="acceptOpeningBalances($event)"
+      (OpeningBalanceImbalanced)="handleImbalancedOpeningBalances()"
+    ></app-estimates-opening-balances-screen>
+    <app-estimates-confirmation-screen
+      *ngSwitchCase="ViewState.CONFIRMATION"
+      [financialHistory]="financialHistory"
+    ></app-estimates-confirmation-screen>
+    <app-estimates-results-screen
+      style="width: 100%"
+      *ngSwitchCase="ViewState.RESULTS"
+      [financialHistory]="financialHistory"
+      [cashFlows]="cashFlows"
+    ></app-estimates-results-screen>
+  </div>
+
+  <div class="button-container">
+    <div *ngIf="!showBackBtn" class="button-replacer-spacer"></div>
+    <button
+      *ngIf="showBackBtn"
+      mat-button
+      class="secondary-button"
+      (click)="goBack()"
+    >
+      Back
+    </button>
+    <div class="spacer"></div>
+    <button
+      *ngIf="primarySpecialBtnText"
+      mat-button
+      class="super-button-small"
+      (click)="onPrimarySpecialBtnClick()"
+    >
+      {{primarySpecialBtnText}}
+    </button>
+    <button
+      *ngIf="secondarySpecialBtnText"
+      mat-button
+      class="super-button-small"
+      (click)="onSecondarySpecialBtnClick()"
+    >
+      {{secondarySpecialBtnText}}
+    </button>
+    <div class="spacer"></div>
+    <button
+      *ngIf="showForwardBtn"
+      mat-button
+      class="primary-button"
+      (click)="goForward()"
+    >
+      Next
+    </button>
+  </div>
+</div>
+
+<app-user-notifications
+  *ngIf="showNotification"
+  [notificationContent]="userNotification"
+  (primaryBtnClicked)="userNotificationPrimaryBtnClicked()"
+  (secondaryBtnClicked)="userNotificationSecondaryBtnClicked()"
+></app-user-notifications>

@@ -1,0 +1,35 @@
+<div class="main-container" *ngIf="user">
+  <div class="profile-header">
+    <div>
+      <img
+        *ngIf="user.photoURL"
+        src="{{ user.photoURL }}"
+        alt="{{ user.displayName }}"
+        [height]="50"
+        [width]="50"
+      />
+    </div>
+    <h1>{{ user.displayName ? user.displayName : "User" }}</h1>
+  </div>
+
+  <div class="profile-row">
+    <div class="view-line-title">User account ID:</div>
+    <div *ngIf="user.uid">
+      {{ user.uid }}
+    </div>
+  </div>
+
+  <div class="profile-row">
+    <div class="view-line-title">User email:</div>
+    <div *ngIf="user.email">
+      {{ user.email }}
+    </div>
+  </div>
+
+  <div class="profile-row">
+    <div class="view-line-title">User email verified:</div>
+    <div *ngIf="user.emailVerified">
+      {{ user.emailVerified ? "Yes" : "No" }}
+    </div>
+  </div>
+</div>

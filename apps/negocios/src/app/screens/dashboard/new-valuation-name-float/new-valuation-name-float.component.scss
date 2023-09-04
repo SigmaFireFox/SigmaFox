@@ -1,0 +1,48 @@
+@import "../../../../styles.scss";
+
+.main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+}
+
+.mat-button {
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+  align-self: center;
+}
+
+.secondary-button {
+  border: 1px solid rgb(83, 71, 245);
+}
+
+.float-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  background-color: $primary-colour;
+  padding: 10px;
+  border-radius: 20px;
+  width: 270px;
+}
+
+.title-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+}
