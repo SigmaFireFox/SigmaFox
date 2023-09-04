@@ -1,15 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { BehaviorSubject, Observable, Subscription } from 'rxjs';
-import { EstimatesFinancialHistory } from 'app/~global-interfaces/estimates-financial-history.interface';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Observable, Subscription, BehaviorSubject } from 'rxjs';
+import { EstimatesFinancialHistory } from '../../../~global-interfaces/estimates-financial-history.interface';
 
 @Component({
   selector: 'app-estimates-financial-history-screen',
   templateUrl: './estimates-financial-history.screen.html',
   styleUrls: ['./estimates-financial-history.screen.scss'],
 })
-export class EstimatesFinancialHistoryScreen implements OnInit {
-  @Input() numberOfYearsRequired: number = 0;
+// eslint-disable-next-line @angular-eslint/component-class-suffix
+export class EstimatesFinancialHistoryScreen {
+  @Input() numberOfYearsRequired = 0;
   @Input() lastFinancialYear: number = new Date().getFullYear();
   @Input() updatedDataRequested: Observable<boolean> | undefined;
 
@@ -30,7 +32,7 @@ export class EstimatesFinancialHistoryScreen implements OnInit {
   }
 
   ngOnDestroy() {
-    this.dataRequestSubscription!.unsubscribe();
+    this.dataRequestSubscription?.unsubscribe();
   }
 
   onReceiptOfFormData(formData: EstimatesFinancialHistory[]) {
@@ -39,7 +41,7 @@ export class EstimatesFinancialHistoryScreen implements OnInit {
   }
 
   private setSubscriptionsRequired() {
-    this.dataRequestSubscription = this.updatedDataRequested!.subscribe(
+    this.dataRequestSubscription = this.updatedDataRequested?.subscribe(
       (requestScreenData) => {
         requestScreenData ? this.$requestHistoryFormData.next(true) : null;
       }
@@ -87,7 +89,7 @@ export class EstimatesFinancialHistoryScreen implements OnInit {
   }
 
   private getListOfImbalancedYears(): string[] {
-    let listOfImabalancedYear: string[] = [];
+    const listOfImabalancedYear: string[] = [];
     for (let i = 0; i < this.numberOfYearsRequired; i++) {
       if (
         this.financialHistory[i].assetsTotal !==
@@ -123,7 +125,7 @@ export class EstimatesFinancialHistoryScreen implements OnInit {
   }
 
   private getListOfWarnings(): string[] {
-    let listOfWarnings: string[] = [];
+    const listOfWarnings: string[] = [];
     !this.isIncomeStatementReasonable()
       ? listOfWarnings.concat(this.getListOfISWarnings())
       : null;

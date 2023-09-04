@@ -1,7 +1,9 @@
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @angular-eslint/component-class-suffix */
 import { Component, Input, OnInit } from '@angular/core';
 import { EstimatesCashFlowYear } from '../../../~global-interfaces/estimates-cashflows.interface';
-import { EstimatesFinancialHistory } from 'app/~global-interfaces/estimates-financial-history.interface';
 import { EstimatesCashFlowService } from '../../../services/estimates/estimates-cashflows.service';
+import { EstimatesFinancialHistory } from '../../../~global-interfaces/estimates-financial-history.interface';
 
 export enum LineType {
   HEADER,
@@ -66,7 +68,7 @@ export class EstimatesConfirmationScreen implements OnInit {
 
   private mergeFinancialStatements(cashFlows: EstimatesCashFlowYear[]) {
     for (let year = 0; year < cashFlows.length; year++) {
-      let financialStatementForYear = {
+      const financialStatementForYear = {
         ...this.financialHistory[year],
         ...cashFlows[year],
       };
@@ -559,7 +561,7 @@ export class EstimatesConfirmationScreen implements OnInit {
             this.financialStatements[statementIndex].lines[
               lineIndex
             ].amounts?.push(
-              this.fullFinancialHistory[year][line.fsKey as keyof {}]
+              this.fullFinancialHistory[year][line.fsKey as keyof object]
             );
           }
         });

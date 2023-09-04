@@ -1,7 +1,8 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Subject } from 'rxjs';
-import { MonthsOfYear } from 'app/~global-enums/general.enum';
-import { ValuationsBasicDetails } from 'app/~global-interfaces/valuations.interface';
+import { MonthsOfYear } from '../../../~global-enums/general.enum';
+import { ValuationsBasicDetails } from '../../../~global-interfaces/valuations.interface';
 import { ScreenMode } from '../../screen-mode.enum';
 
 @Component({

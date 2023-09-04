@@ -1,11 +1,14 @@
-import { KeyValue } from '@angular/common';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { MonthsOfYear } from '../../../../~global-enums/general.enum';
-import { ValuationsBasicDetails } from 'app/~global-interfaces/valuations.interface';
-import { _isTestEnvironment } from '@angular/cdk/platform';
 import { isEqual } from 'lodash';
+import { ValuationsBasicDetails } from 'apps/negocios/src/app/~global-interfaces/valuations.interface';
 
 @Component({
   selector: 'app-basic-details-form',
@@ -30,10 +33,9 @@ export class BasicDetailsFormComponent {
   });
 
   monthsOfYear = MonthsOfYear;
-  originalOrder = (
-    a: KeyValue<string, MonthsOfYear>,
-    b: KeyValue<string, MonthsOfYear>
-  ): number => {
+  originalOrder = (): // a: KeyValue<string, MonthsOfYear>,
+  // b: KeyValue<string, MonthsOfYear>
+  number => {
     return 0;
   };
 
@@ -54,12 +56,12 @@ export class BasicDetailsFormComponent {
     this.basicDetails.patchValue({
       targetEntityName: this.valuationBasicDetails.targetEntityName,
       targetEntityFYE: this.valuationBasicDetails.targetEntityFYE,
-      valuationDate: this.valuationBasicDetails.valuationDate,
+      valuationDate: this.valuationBasicDetails.valuationDate.toDateString(),
     });
   }
 
   private setSubscriptionsRequired() {
-    this.dataRequestSubscription = this.updatedDataRequested!.subscribe(() =>
+    this.dataRequestSubscription = this.updatedDataRequested?.subscribe(() =>
       this.submittedUpdatedData()
     );
     this.basicDetails.valueChanges.subscribe((result: any) => {
@@ -72,7 +74,7 @@ export class BasicDetailsFormComponent {
   private isChangesMade() {
     if (
       isEqual(
-        this.basicDetails.value as ValuationsBasicDetails,
+        this.basicDetails.value as unknown as ValuationsBasicDetails,
         this.valuationBasicDetails
       )
     ) {
@@ -83,12 +85,12 @@ export class BasicDetailsFormComponent {
   }
 
   private unsubscribeToAll() {
-    this.dataRequestSubscription!.unsubscribe();
+    this.dataRequestSubscription?.unsubscribe();
   }
 
   private submittedUpdatedData() {
     this.updateBasicDetails.emit(
-      this.basicDetails.value as ValuationsBasicDetails
+      this.basicDetails.value as unknown as ValuationsBasicDetails
     );
   }
 }

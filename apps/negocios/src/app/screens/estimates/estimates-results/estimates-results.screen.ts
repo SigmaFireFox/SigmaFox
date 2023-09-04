@@ -1,14 +1,16 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import { EstimatesForecastsService } from '../../../services/estimates/estimates-forecasts.service';
 import { MarketDataService } from '../../../services//market-data/market-data.service';
-import { FrequencyChartData } from 'app/~global-interfaces/charts.interface';
-import { EstimatesCashFlowYear } from 'app/~global-interfaces/estimates-cashflows.interface';
-import { EstimatesFinancialHistory } from 'app/~global-interfaces/estimates-financial-history.interface';
-import { ForecastVariableData } from 'app/~global-interfaces/estimates-forecasts.interface';
+import { FrequencyChartData } from '../../../~global-interfaces/charts.interface';
+import { EstimatesCashFlowYear } from '../../../~global-interfaces/estimates-cashflows.interface';
+import { EstimatesFinancialHistory } from '../../../~global-interfaces/estimates-financial-history.interface';
+import { ForecastVariableData } from '../../../~global-interfaces/estimates-forecasts.interface';
 import {
   ComparativeData,
   MarketDataTicker,
-} from 'app/~global-interfaces/market-data.interface';
+} from '../../../~global-interfaces/market-data.interface';
 import { VariableType } from '../../../~global-interfaces/variables.enum';
 
 @Component({
@@ -121,7 +123,7 @@ export class EstimatesResultsScreen implements OnInit {
     });
 
     // Tax rates
-    this.receivedForecastedData.taxRate.forEach((item, index) => {
+    this.receivedForecastedData.taxRate.forEach((item) => {
       this.taxRates.push(Math.abs(item));
     });
 
@@ -175,7 +177,7 @@ export class EstimatesResultsScreen implements OnInit {
   }
 
   private async getComparativeData(): Promise<ComparativeData[]> {
-    let comparativeCompanies: MarketDataTicker[] = [
+    const comparativeCompanies: MarketDataTicker[] = [
       {
         exchange: 'Nasdaq',
         companyCode: 'AAPL',
@@ -226,9 +228,9 @@ export class EstimatesResultsScreen implements OnInit {
       },
     ];
 
-    let comparativeMarketData: ComparativeData[] = [];
+    const comparativeMarketData: ComparativeData[] = [];
     for (let i = 0; i < comparativeCompanies.length; i++) {
-      let comparativeData = await this.marketDataService.getComparativeData(
+      const comparativeData = await this.marketDataService.getComparativeData(
         comparativeCompanies[i]
       );
       comparativeMarketData.push(comparativeData);

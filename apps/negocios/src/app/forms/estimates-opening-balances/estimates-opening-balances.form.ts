@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @angular-eslint/component-class-suffix */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
-import { EstimatesFinancialHistory } from 'app/~global-interfaces/estimates-financial-history.interface';
+import { EstimatesFinancialHistory } from '../../~global-interfaces/estimates-financial-history.interface';
 import { SectionType } from '../form.enums';
 
 export enum OptionElected {
@@ -85,7 +88,7 @@ export class EstimatesOpeningBalancesForm implements OnInit {
   }
 
   private setSubscriptionsRequired() {
-    this.balanceRequestSubscription = this.openingBalancesRequested!.subscribe(
+    this.balanceRequestSubscription = this.openingBalancesRequested?.subscribe(
       (openingBalancesRequested) => {
         openingBalancesRequested ? this.submitOpeningBalances() : null;
       }

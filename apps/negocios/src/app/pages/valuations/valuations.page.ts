@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { isEqual } from 'lodash';
+import { FirebaseService } from '../../services/firebase/firebase.service';
 import {
   ValuationsData,
   ValuationsBasicDetails,
   ValuationsFinancialHistory,
-} from 'app/~global-interfaces/valuations.interface';
-import { FirebaseService } from '../../services/firebase/firebase.service';
+} from '../../~global-interfaces/valuations.interface';
 import { ViewState } from './ViewState.enum';
 
 @Component({
@@ -14,7 +18,7 @@ import { ViewState } from './ViewState.enum';
   templateUrl: './valuations.page.html',
   styleUrls: ['./valuations.page.scss'],
 })
-export class ValuationsPage implements OnInit {
+export class ValuationsPage {
   sidebarMenu = ['Basic Details', 'Financial History'];
   isSavable: boolean | undefined;
   ViewState = ViewState;
@@ -82,10 +86,10 @@ export class ValuationsPage implements OnInit {
   // Private functions ----------------------------
   private async getValuationDateFromFirebase() {
     this.valuationID = this.route.snapshot.paramMap.get('id') as string;
-    let firebaseValuationData = await this.fb.getValuationByID(
+    const firebaseValuationData = await this.fb.getValuationByID(
       this.valuationID
     );
-    for (let key in this.orginalValuationData) {
+    for (const key in this.orginalValuationData) {
       if (firebaseValuationData[key]) {
         this.orginalValuationData[key as keyof ValuationsData] =
           this.updatedValuationData[key as keyof ValuationsData] =
@@ -113,7 +117,7 @@ export class ValuationsPage implements OnInit {
     nanos: number;
     seconds: number;
   }): Date {
-    let requiredDate = new Date(Date.UTC(1970, 0, 1));
+    const requiredDate = new Date(Date.UTC(1970, 0, 1));
     requiredDate.setUTCSeconds(timeObject.seconds);
     return requiredDate;
   }

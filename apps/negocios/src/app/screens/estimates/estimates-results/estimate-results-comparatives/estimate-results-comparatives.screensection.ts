@@ -1,10 +1,12 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { MarketDataService } from '../../../../services/market-data/market-data.service';
 import {
   ComparativeData,
   ComparativeDataStats,
-} from 'app/~global-interfaces/market-data.interface';
-import { RegressionAnalysisService } from '../../../../services/regression-analysis/regression-analysis.service';
+} from 'apps/negocios/src/app/~global-interfaces/market-data.interface';
+import { MarketDataService } from '../../../../services/market-data/market-data.service';
 
 @Component({
   selector: 'app-estimate-results-comparatives-screensection',
@@ -63,7 +65,7 @@ export class EstimateResultsComparativesScreenSection implements OnInit {
   }
 
   private seperateComparativeDataOutliers() {
-    let splitComparativeData = this.marketDataService.getComparativeOutliers(
+    const splitComparativeData = this.marketDataService.getComparativeOutliers(
       this.orginalComparativeData,
       this.originalComparativeDataStats
     );

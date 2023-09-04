@@ -1,20 +1,14 @@
 import { Injectable } from '@angular/core';
 import { TrendlineType } from '../../~global-enums/chart.enum';
-import { TrendlineData } from '../../~global-interfaces/market-data.interface';
-import * as regression from 'regression';
 import {
   RegressionAnalysis,
   RegressionEquationConstants,
-} from 'app/~global-interfaces/regression-analysis.interface';
-import { eq } from 'lodash';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+} from '../../~global-interfaces/regression-analysis.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RegressionAnalysisService {
-  constructor() {}
-
   getRegressionAnalysis(data: number[][]): RegressionAnalysis {
     const regressionEquationConstants = {
       linear: this.getRegressionEquationConstantsLinear(data),
@@ -120,15 +114,12 @@ export class RegressionAnalysisService {
     };
   }
 
-  private getRegressionEquationConstantsPolynomial2ndOrder(
-    data: number[][],
-    precision?: number
-  ): {
+  private getRegressionEquationConstantsPolynomial2ndOrder(data: number[][]): {
     a2: number;
     a1: number;
     a0: number;
   } {
-    let ETi0 = data.length;
+    const ETi0 = data.length;
     let ETi1 = 0;
     let ETi2 = 0;
     let ETi3 = 0;
@@ -148,13 +139,13 @@ export class RegressionAnalysisService {
       sumXbyY2 += Math.pow(dataPoint[0], 2) * dataPoint[1];
     });
 
-    let matrix1 = [
+    const matrix1 = [
       [ETi0, ETi1, ETi2, sumX],
       [ETi1, ETi2, ETi3, sumXbyY],
       [ETi2, ETi3, ETi4, sumXbyY2],
     ];
 
-    let matrix2 = [[] as number[], [] as number[], [] as number[]];
+    const matrix2 = [[] as number[], [] as number[], [] as number[]];
 
     const A2EliminationFactor = -matrix1[1][0] / matrix1[0][0];
     const A3EliminationFactor = -matrix1[2][0] / matrix1[0][0];
@@ -173,7 +164,7 @@ export class RegressionAnalysisService {
       );
     });
 
-    let matrix3 = [[] as number[], [] as number[], [] as number[]];
+    const matrix3 = [[] as number[], [] as number[], [] as number[]];
 
     const B3EliminationFactor = -matrix2[2][1] / matrix2[1][1];
 
@@ -205,7 +196,7 @@ export class RegressionAnalysisService {
     data: number[][],
     equationContants: RegressionEquationConstants
   ): { linear: number; exponential: number; polynomial: number } {
-    let r2s = { linear: 0, exponential: 0, polynomial: 0 };
+    const r2s = { linear: 0, exponential: 0, polynomial: 0 };
     Object.keys(equationContants).forEach((equation) => {
       switch (equation) {
         case 'linear' as keyof RegressionEquationConstants: {
@@ -257,7 +248,7 @@ export class RegressionAnalysisService {
   }
 
   private getR2Exponential(data: number[][]): number {
-    let transformedData: number[][] = [];
+    const transformedData: number[][] = [];
     data.forEach((item) => {
       const logX = item[0];
       const logY = Math.log(item[1]);
@@ -314,24 +305,24 @@ export class RegressionAnalysisService {
   }
 
   private getSpearmanCorrelation(data: number[][]): number {
-    let dataXs: number[] = [];
-    let dataYs: number[] = [];
+    const dataXs: number[] = [];
+    const dataYs: number[] = [];
     data.forEach((dataPoint) => {
       dataXs.push(dataPoint[0]);
       dataYs.push(dataPoint[1]);
     });
 
-    var sortedXs = dataXs.slice().sort(function (a, b) {
+    const sortedXs = dataXs.slice().sort(function (a, b) {
       return b - a;
     });
-    var xRanks = dataXs.map(function (v) {
+    const xRanks = dataXs.map(function (v) {
       return sortedXs.indexOf(v) + 1;
     });
 
-    var sortedYs = dataYs.slice().sort(function (a, b) {
+    const sortedYs = dataYs.slice().sort(function (a, b) {
       return b - a;
     });
-    var yRanks = dataYs.map(function (v) {
+    const yRanks = dataYs.map(function (v) {
       return sortedYs.indexOf(v) + 1;
     });
 

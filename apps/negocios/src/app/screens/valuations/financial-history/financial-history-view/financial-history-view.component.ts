@@ -1,8 +1,7 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import {
-  ValuationsFinancialHistory,
-  ValuationsFinancialHistoryYear,
-} from 'app/~global-interfaces/valuations.interface';
+import { ValuationsFinancialHistory } from 'apps/negocios/src/app/~global-interfaces/valuations.interface';
 
 @Component({
   selector: 'app-financial-history-view',

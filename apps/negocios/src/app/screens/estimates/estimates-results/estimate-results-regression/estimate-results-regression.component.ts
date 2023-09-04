@@ -1,14 +1,10 @@
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, Input, OnInit } from '@angular/core';
-import { RegressionAnalysisService } from 'app/services/regression-analysis/regression-analysis.service';
-import {
-  FrequencyChartData,
-  ScatterChartData,
-} from 'app/~global-interfaces/charts.interface';
-import {
-  ComparativeData,
-  ComparativeDataStats,
-} from 'app/~global-interfaces/market-data.interface';
-import { RegressionAnalysis } from 'app/~global-interfaces/regression-analysis.interface';
+import { RegressionAnalysisService } from 'apps/negocios/src/app/services/regression-analysis/regression-analysis.service';
+import { ScatterChartData } from 'apps/negocios/src/app/~global-interfaces/charts.interface';
+import { ComparativeData } from 'apps/negocios/src/app/~global-interfaces/market-data.interface';
+import { RegressionAnalysis } from 'apps/negocios/src/app/~global-interfaces/regression-analysis.interface';
 
 @Component({
   selector: 'app-estimate-results-regression-screensection',
@@ -71,7 +67,7 @@ export class EstimateResultsRegressionComponent implements OnInit {
     data: number[][];
     regressionAnalysis: RegressionAnalysis;
   } {
-    let chartData = {} as {
+    const chartData = {} as {
       data: number[][];
       regressionAnalysis: RegressionAnalysis;
     };
@@ -93,7 +89,7 @@ export class EstimateResultsRegressionComponent implements OnInit {
     data: number[][];
     regressionAnalysis: RegressionAnalysis;
   } {
-    let chartData = {} as {
+    const chartData = {} as {
       data: number[][];
       regressionAnalysis: RegressionAnalysis;
     };
@@ -115,7 +111,7 @@ export class EstimateResultsRegressionComponent implements OnInit {
     data: number[][];
     regressionAnalysis: RegressionAnalysis;
   } {
-    let chartData = {} as {
+    const chartData = {} as {
       data: number[][];
       regressionAnalysis: RegressionAnalysis;
     };
@@ -137,7 +133,7 @@ export class EstimateResultsRegressionComponent implements OnInit {
     data: number[][];
     regressionAnalysis: RegressionAnalysis;
   } {
-    let chartData = {} as {
+    const chartData = {} as {
       data: number[][];
       regressionAnalysis: RegressionAnalysis;
     };

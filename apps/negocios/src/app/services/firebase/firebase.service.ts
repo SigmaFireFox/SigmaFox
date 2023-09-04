@@ -1,13 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Injectable } from '@angular/core';
-import {
-  AngularFirestore,
-  DocumentSnapshot,
-} from '@angular/fire/compat/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
-import {
-  ValuationsData,
-  ValuationsBasicDetails,
-} from '../../../app/~global-interfaces/valuations.interface';
+import { ValuationsData } from '../../~global-interfaces/valuations.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -17,9 +12,9 @@ export class FirebaseService {
 
   async getOrSetClientValuationList(userID: string): Promise<string[]> {
     let valuationList: string[] = [];
-    let doc: any = await this.getClientValuationList(userID);
+    const doc: any = await this.getClientValuationList(userID);
     if (doc.exists) {
-      for (let [key, value] of Object.entries(doc.data())) {
+      for (const [key, value] of Object.entries(doc.data())) {
         if (key === 'valuations') {
           valuationList = value as string[];
         } else {
@@ -37,7 +32,7 @@ export class FirebaseService {
 
   async getValuationByID(valuationID: string) {
     let valuation: any;
-    let doc: any = await this.afs
+    const doc: any = await this.afs
       .collection('valuations')
       .doc(valuationID)
       .get()
@@ -55,11 +50,11 @@ export class FirebaseService {
       title: valuationTitle,
     });
 
-    let doc: any = await this.getClientValuationList(userID);
+    const doc: any = await this.getClientValuationList(userID);
     if (doc.exists) {
-      for (let [key, value] of Object.entries(doc.data())) {
+      for (const [key, value] of Object.entries(doc.data())) {
         if (key === 'valuations') {
-          let valuationsList = value as any;
+          const valuationsList = value as any;
           valuationsList.push({
             id: newValuation.id,
             title: valuationTitle,
@@ -81,9 +76,9 @@ export class FirebaseService {
 
   async deleteValuation(userID: string, valuationID: string) {
     let valuationsList: any[] = [];
-    let doc: any = await this.getClientValuationList(userID);
+    const doc: any = await this.getClientValuationList(userID);
     if (doc.exists) {
-      for (let [key, value] of Object.entries(doc.data())) {
+      for (const [key, value] of Object.entries(doc.data())) {
         if (key === 'valuations') {
           valuationsList = value as any;
         }
@@ -108,7 +103,7 @@ export class FirebaseService {
 
   private async getClientValuationList(
     userID: string
-  ): Promise<firebase.default.firestore.DocumentSnapshot<unknown>> {
+  ): Promise<firebase.default.firestore.DocumentSnapshot<unknown> | undefined> {
     // let response: firebase.default.firestore.DocumentSnapshot<unknown> =
     return await this.afs
       .collection('client-valuations-lists')

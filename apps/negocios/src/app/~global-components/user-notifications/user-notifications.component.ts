@@ -1,5 +1,7 @@
+/* eslint-disable @angular-eslint/component-selector */
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { NotificationContent } from 'app/~global-interfaces/notification-content.interface';
+import { NotificationContent } from '../../~global-interfaces/notification-content.interface';
 
 @Component({
   selector: 'app-user-notifications',

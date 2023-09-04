@@ -1,11 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../../services/authentication/auth.service';
 import {
   Button,
   NotificationContent,
-} from 'app/~global-interfaces/notification-content.interface';
-import { AuthService } from '../../../services/authentication/auth.service';
+} from '../../../~global-interfaces/notification-content.interface';
 import { SignInError } from './SignInErrors.enum';
 
 @Component({

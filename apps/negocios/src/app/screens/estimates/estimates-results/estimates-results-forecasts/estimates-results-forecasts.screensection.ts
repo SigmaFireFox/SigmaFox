@@ -1,8 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input } from '@angular/core';
 import {
   FrequencyChartData,
   FrequencyChartDescription,
-} from 'app/~global-interfaces/charts.interface';
+} from 'apps/negocios/src/app/~global-interfaces/charts.interface';
+
 import { VariableType } from '../../../../~global-interfaces/variables.enum';
 
 @Component({
@@ -10,15 +14,11 @@ import { VariableType } from '../../../../~global-interfaces/variables.enum';
   templateUrl: './estimates-results-forecasts.screensection.html',
   styleUrls: ['./estimates-results-forecasts.screensection.scss'],
 })
-export class EstimatesResultsForecastsScreenSection implements OnInit {
+export class EstimatesResultsForecastsScreenSection {
   @Input() forecastDataForDisplay: FrequencyChartData[] = [];
 
   chartDescriptions: FrequencyChartDescription[] = [];
   variableType = VariableType;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 
   displayChartDescription(chartDescriptionData: FrequencyChartDescription) {
     this.chartDescriptions.push(chartDescriptionData);

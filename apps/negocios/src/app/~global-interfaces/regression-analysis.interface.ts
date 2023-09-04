@@ -1,4 +1,4 @@
-import { TrendlineType } from 'app/~global-enums/chart.enum';
+import { TrendlineType } from '../~global-enums/chart.enum';
 
 export interface RegressionAnalysis {
   dataReceived: number[][];

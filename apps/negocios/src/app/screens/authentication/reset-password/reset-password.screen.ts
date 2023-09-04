@@ -1,10 +1,12 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../../../services/authentication/auth.service';
 import {
   Button,
   NotificationContent,
-} from 'app/~global-interfaces/notification-content.interface';
-import { AuthService } from '../../../services/authentication/auth.service';
+} from '../../../~global-interfaces/notification-content.interface';
 import { ResetError } from './ResetErrors.enum';
 
 @Component({

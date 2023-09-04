@@ -1,6 +1,8 @@
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component } from '@angular/core';
 import { AuthService } from '../../../services/authentication/auth.service';
-import { AppUser } from 'app/services/authentication/user';
+import { AppUser } from '../../../services/authentication/user';
 
 @Component({
   selector: 'app-user-profile',

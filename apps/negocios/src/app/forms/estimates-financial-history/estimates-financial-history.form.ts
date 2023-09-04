@@ -1,7 +1,9 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
-import { EstimatesFinancialHistory } from 'app/~global-interfaces/estimates-financial-history.interface';
+import { EstimatesFinancialHistory } from '../../~global-interfaces/estimates-financial-history.interface';
 import { SectionType } from '../form.enums';
 
 export interface FinancialStatementSection {
@@ -31,7 +33,7 @@ export enum LineType {
   styleUrls: ['./estimates-financial-history.form.scss'],
 })
 export class EstimatesFinancialHistoryForm implements OnInit {
-  @Input() numberOfYearsRequired: number = 0;
+  @Input() numberOfYearsRequired = 0;
   @Input() lastFinancialYear: number = new Date().getFullYear();
   @Input() updatedDataRequested: Observable<boolean> | undefined;
 
@@ -105,7 +107,7 @@ export class EstimatesFinancialHistoryForm implements OnInit {
 
   // Functions required to handle return of data to screen
   private setSubscriptionsRequired() {
-    this.dataRequestSubscription = this.updatedDataRequested!.subscribe(
+    this.dataRequestSubscription = this.updatedDataRequested?.subscribe(
       (requestScreenData) => {
         requestScreenData ? this.submitUpdate() : null;
       }
@@ -113,13 +115,14 @@ export class EstimatesFinancialHistoryForm implements OnInit {
   }
 
   private submitUpdate() {
-    let dataToBeRetuned: EstimatesFinancialHistory[] = [];
+    const dataToBeRetuned: EstimatesFinancialHistory[] = [];
 
     for (let year = 0; year < this.numberOfYearsRequired; year++) {
       dataToBeRetuned.push({} as EstimatesFinancialHistory);
       dataToBeRetuned[year].year = this.listOfYears[year];
       Object.keys(this.financialHistoryArrays.controls).forEach((arrayName) => {
-        let value: number[] = this.financialHistoryArrays.get(arrayName)?.value;
+        const value: number[] =
+          this.financialHistoryArrays.get(arrayName)?.value;
         dataToBeRetuned[year][arrayName as keyof EstimatesFinancialHistory] =
           value[year];
       });
@@ -137,7 +140,7 @@ export class EstimatesFinancialHistoryForm implements OnInit {
       'taxExpense',
       'eqRetainedEarningsDistributions',
     ].forEach((arrayName) => {
-      let currentValues: number[] =
+      const currentValues: number[] =
         this.financialHistoryArrays.get(arrayName)?.value;
       currentValues.forEach((value, index, array) => {
         value = -Math.abs(value);
@@ -206,7 +209,7 @@ export class EstimatesFinancialHistoryForm implements OnInit {
   }
 
   private calcTotal(sumArray: string, addends: string[]) {
-    let grossProfitValues: number[] = [];
+    const grossProfitValues: number[] = [];
     for (let year = 0; year < this.numberOfYearsRequired; year++) {
       let sum = 0;
       addends.forEach((addend) => {

@@ -1,28 +1,15 @@
-import { KeyValue } from '@angular/common';
-import {
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-  Pipe,
-  PipeTransform,
-} from '@angular/core';
-import {
-  FormBuilder,
-  FormArray,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+/* eslint-disable @angular-eslint/use-lifecycle-interface */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @nx/enforce-module-boundaries */
+/* eslint-disable @angular-eslint/component-selector */
+import { Component, Input, Pipe, PipeTransform } from '@angular/core';
+import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
+import { ValuationsFinancialHistory } from 'apps/negocios/src/app/~global-interfaces/valuations.interface';
 import { Observable, Subscription } from 'rxjs';
-import {
-  ValuationsFinancialHistory,
-  ValuationsFinancialHistoryYear,
-} from 'app/~global-interfaces/valuations.interface';
 
 @Pipe({ name: 'keys' })
 export class KeysPipe implements PipeTransform {
-  transform(value: {}): any {
+  transform(value: object): any {
     return Object.keys(value);
   }
 }
@@ -54,10 +41,9 @@ export class FinancialHistoryFormComponent {
     'Taxation',
   ];
 
-  originalOrder = (
-    a: KeyValue<string, FormGroup>,
-    b: KeyValue<string, FormGroup>
-  ): number => {
+  originalOrder = (): // a: KeyValue<string, FormGroup>,
+  // b: KeyValue<string, FormGroup>
+  number => {
     return 0;
   };
 
@@ -72,7 +58,7 @@ export class FinancialHistoryFormComponent {
   }
 
   ngOnInit() {
-    this.dataRequestSubscription = this.updatedDataRequested!.subscribe(() =>
+    this.dataRequestSubscription = this.updatedDataRequested?.subscribe(() =>
       this.submittedUpdatedData()
     );
 
@@ -91,9 +77,11 @@ export class FinancialHistoryFormComponent {
     }
   }
 
-  private submittedUpdatedData() {}
+  private submittedUpdatedData() {
+    // TODO:
+  }
 
   ngOnDestroy() {
-    this.dataRequestSubscription!.unsubscribe();
+    this.dataRequestSubscription?.unsubscribe();
   }
 }

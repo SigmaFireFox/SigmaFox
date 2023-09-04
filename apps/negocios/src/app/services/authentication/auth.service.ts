@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Injectable, NgZone } from '@angular/core';
 import { AppUser, GoogleProfile } from './user';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
@@ -133,7 +135,7 @@ export class AuthService {
   }
 
   async updateUserDataFirebaseFromGoogle(googleProfile: GoogleProfile) {
-    let user: firebase.default.User | null =
+    const user: firebase.default.User | null =
       (await this.getUser()) as unknown as firebase.default.User;
     const userRef: AngularFirestoreDocument<any> = await this.afs.doc(
       `users/${user.uid}`
@@ -164,9 +166,8 @@ export class AuthService {
 
   // --------------- User Enquiries -----------------------
   async getUser() {
-    let user: firebase.default.User | null = await this.afAuth.authState
-      .pipe(first())
-      .toPromise();
+    const user: firebase.default.User | null | undefined =
+      await this.afAuth.authState.pipe(first()).toPromise();
     if (user) {
       this.userData = user as unknown as AppUser;
     }
@@ -174,10 +175,10 @@ export class AuthService {
   }
 
   async getUserProfile() {
-    let user: firebase.default.User | null =
+    const user: firebase.default.User | null =
       (await this.getUser()) as unknown as firebase.default.User;
     let userProfile = {} as AppUser;
-    let doc: any = await this.afs
+    const doc: any = await this.afs
       .collection('users')
       .doc(user.uid)
       .get()

@@ -1,9 +1,11 @@
+/* eslint-disable @angular-eslint/component-selector */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Subject } from 'rxjs';
 import {
   ValuationsFinancialHistory,
   ValuationsFinancialHistoryYear,
-} from 'app/~global-interfaces/valuations.interface';
+} from '../../../~global-interfaces/valuations.interface';
+
 import { ScreenMode } from '../../screen-mode.enum';
 
 @Component({
