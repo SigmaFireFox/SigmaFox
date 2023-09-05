@@ -2,7 +2,9 @@
   "name": "@sigmafox/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "count-lines": "npx cloc . --exclude-dir=_sample-content,_site,node_modules --not-match-f=package-lock.json"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
