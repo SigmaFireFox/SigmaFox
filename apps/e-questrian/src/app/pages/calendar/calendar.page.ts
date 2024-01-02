@@ -34,7 +34,7 @@ export class CalendarPage implements OnInit {
   calendarData = {} as CalendarData;
 
   get appointments(): Appointments {
-    return this.appointmentService.appointments;
+    return this.appointmentService.appointmentsOnFile;
   }
 
   constructor(

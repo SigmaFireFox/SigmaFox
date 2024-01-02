@@ -16,7 +16,7 @@ export class CalendarService {
   private calendarData = {} as CalendarData;
 
   get appointments(): Appointments {
-    return this.appointmentsService.appointments;
+    return this.appointmentsService.appointmentsOnFile;
   }
 
   constructor(

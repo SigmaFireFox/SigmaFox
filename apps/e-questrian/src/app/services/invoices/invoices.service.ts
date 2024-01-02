@@ -46,7 +46,7 @@ export class InvoicesService {
   }
 
   get appointments(): Appointments {
-    return this.appointmentsService.appointments;
+    return this.appointmentsService.appointmentsOnFile;
   }
 
   get clients(): Clients {
