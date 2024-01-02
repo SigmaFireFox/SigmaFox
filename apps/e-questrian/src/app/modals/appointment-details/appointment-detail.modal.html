@@ -29,10 +29,15 @@
     <!-- Appointment Type -->
     <div class="form-line">
       <div class="form-line-title">Appointment type:</div>
+      <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">
+        {{appointmentType[appointmentForm.controls['type'].value]}}
+      </div>
+
       <mat-select
+        *ngIf="isEditable"
         placeholder="Appointment Type"
         [compareWith]="compareTypes"
-        [ngClass]="isEditable? 'editable-selector': 'uneditable-selector'"
+        [ngClass]="'editable-selector'"
         (selectionChange)="onChangesMade()"
         formControlName="type"
       >
@@ -47,9 +52,14 @@
     <!-- Client -->
     <div *ngIf="showClientField" class="form-line">
       <div class="form-line-title">Client:</div>
+      <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">
+        {{appointmentForm.controls['client'].value}}
+      </div>
+
       <mat-select
+        *ngIf="isEditable"
         [compareWith]="compareClients"
-        [ngClass]="isEditable? 'editable-selector': 'uneditable-selector'"
+        [ngClass]="'editable-selector'"
         (selectionChange)="onChangesMade()"
         formControlName="client"
       >
@@ -64,28 +74,35 @@
     <!-- Date -->
     <div class="form-line">
       <div class="form-line-title">Date:</div>
-      <mat-datepicker-toggle
-        *ngIf="isEditable"
-        matSuffix
-        [for]="picker"
-      ></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-      <input
-        [ngClass]="isEditable? 'editable-date-input': 'uneditable-date-input'"
-        [readonly]="!isEditable"
-        (dateChange)="onChangesMade()"
-        [matDatepicker]="picker"
-        formControlName="date"
-      />
+      <div *ngIf="!isEditable" [ngClass]="'uneditable-date-input'">
+        {{appointmentForm.controls['date'].value | date: 'dd MMM yyyy'}}
+      </div>
+
+      <div *ngIf="isEditable">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <input
+          [ngClass]="'editable-date-input'"
+          (dateChange)="onChangesMade()"
+          [matDatepicker]="picker"
+          formControlName="date"
+        />
+      </div>
     </div>
 
     <!-- Start Time  -->
 
     <div class="form-line-time">
       <div class="form-line-title">Start time:</div>
+      <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">
+        {{appointmentForm.controls['startTime'].value.hours}}:{{appointmentForm.controls['startTime'].value.minutes
+        | number: '2.0-0'}}
+      </div>
+
       <mat-select
+        *ngIf="isEditable"
         [compareWith]="compareTimes"
-        [ngClass]="isEditable? 'editable-time-selector': 'uneditable-time-selector'"
+        [ngClass]="'editable-time-selector'"
         (selectionChange)="onChangesMade()"
         formControlName="startTime"
       >
@@ -100,9 +117,15 @@
     <!-- Duration  -->
     <div class="form-line-time">
       <div class="form-line-title">Duration:</div>
+      <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">
+        {{appointmentForm.controls['duration'].value.hours}}:{{appointmentForm.controls['duration'].value.minutes
+        | number: '2.0-0'}}
+      </div>
+
       <mat-select
+        *ngIf="isEditable"
         [compareWith]="compareTimes"
-        [ngClass]="isEditable? 'editable-time-selector': 'uneditable-time-selector'"
+        [ngClass]="'editable-time-selector'"
         (selectionChange)="onChangesMade()"
         formControlName="duration"
       >
