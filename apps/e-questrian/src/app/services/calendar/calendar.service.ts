@@ -30,7 +30,7 @@ export class CalendarService {
     const stringDate = new Date(date).toDateString();
 
     if (!this.calendarData[stringDate]) {
-      return [];
+      return this.calenderBlocks;
     }
 
     this.calendarData[stringDate].forEach((timeBlock) => {
