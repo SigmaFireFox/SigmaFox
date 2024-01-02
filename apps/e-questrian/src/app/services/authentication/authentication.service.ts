@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Observable, map } from 'rxjs';
-import { SignInDetails } from '../../modals/sign-in/sign-in.modal';
+import { SignInDetails } from '../../pages/sign-in/sign-in.component';
 
 @Injectable({
   providedIn: 'root',

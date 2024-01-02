@@ -33,7 +33,6 @@ import { GenerateInvoiceModal } from './modals/generate-invoice/generate-invoice
 import { GenerateStatementModal } from './modals/generate-statement/generate-statement.modal';
 import { ProcessResultsScreen } from './screens/process-results/process-results.screen';
 import { SignInPage } from './pages/sign-in/sign-in.component';
-import { SignInModal } from './modals/sign-in/sign-in.modal';
 import { GeneralItemsListScreen } from './screens/general-items-list/general-items-list.screen';
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -60,7 +59,6 @@ import { ModalsComponent } from '@sigmafox/modals';
     GenerateStatementModal,
     ProcessResultsScreen,
     SignInPage,
-    SignInModal,
     GeneralItemsListScreen,
     GeneralScreenHeaderComponent,
   ],

@@ -2,8 +2,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PageConfig } from '../../interfaces/common-page-configs.interface';
-import { SignInDetails } from '../../modals/sign-in/sign-in.modal';
 import { AuthenticationService } from '../../services/authentication/authentication.service';
+
+
+export interface SignInDetails {
+  email: string;
+  password: string;
+}
 
 /* eslint-disable @angular-eslint/component-selector */
 @Component({
@@ -24,7 +29,7 @@ export class SignInPage implements OnInit {
   }
 
   async signin(signInDetails: SignInDetails) {
-    this.authenticationService.UserSignIn(signInDetails).then((user) => {
+    this.authenticationService.UserSignIn(signInDetails).then(() => {
       this.verifyAuthentication();
     });
   }
