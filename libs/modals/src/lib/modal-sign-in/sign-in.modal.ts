@@ -10,13 +10,14 @@ export interface SignInDetails {
 }
 
 @Component({
-  selector: 'sigmafox-modals',
   standalone: true,
   imports: [CommonModule, MatIconModule, ReactiveFormsModule],
-  templateUrl: './modals.component.html',
-  styleUrls: ['./modals.component.scss'],
+  selector: 'sigmafox-modal-sign-in',
+  templateUrl: './sign-in.modal.html',
+  styleUrls: ['./sign-in.modal.scss'],
 })
-export class ModalsComponent {
+// eslint-disable-next-line @angular-eslint/component-class-suffix
+export class SignInModal {
   @Output() closed = new EventEmitter<void>();
   @Output() signin = new EventEmitter<SignInDetails>();
   @Output() register = new EventEmitter<SignInDetails>();

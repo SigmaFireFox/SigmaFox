@@ -1,3 +1,1 @@
-export * from './lib/lib.routes';
-
-export * from './lib/modals/modals.component';
+export { SignInModal } from './lib/modal-sign-in/sign-in.modal';

@@ -38,7 +38,7 @@ import { GeneralScreenHeaderComponent } from './components/general-screen-header
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-import { ModalsComponent } from '@sigmafox/modals';
+import { SignInModal } from '@sigmafox/modals';
 
 @NgModule({
   declarations: [
@@ -79,7 +79,7 @@ import { ModalsComponent } from '@sigmafox/modals';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    ModalsComponent,
+    SignInModal,
   ],
   providers: [],
   bootstrap: [AppComponent],
