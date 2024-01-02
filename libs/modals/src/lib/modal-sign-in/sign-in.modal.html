@@ -18,9 +18,12 @@
         formControlName="password"
         id="passwordInput"
       />
-      <mat-icon (click)="togglePassword()"
-        >{{showPassword? 'visibility_off': 'visibility'}}</mat-icon
-      >
+      <sigmafox-two-state-icon-button
+        [conditionState]="showPassword"
+        [activeIcon]="'visibility_off'"
+        [inactiveIcon]="'visibility'"
+        (click)="togglePassword()"
+      ></sigmafox-two-state-icon-button>
     </div>
 
     <!-- Buttons -->
