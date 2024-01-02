@@ -39,7 +39,7 @@ describe('AppComponent', () => {
 
     it('should navigate home', () => {
       // Assemble
-      let routerSpy: jasmine.Spy = spyOn(TestBed.inject(Router), 'navigate');
+      const routerSpy: jasmine.Spy = spyOn(TestBed.inject(Router), 'navigate');
 
       // Act
       component.ngOnInit();
@@ -50,7 +50,7 @@ describe('AppComponent', () => {
 
     it('should load test data', () => {
       // Assemble
-      let testDataSpy: jasmine.Spy = spyOn(
+      const testDataSpy: jasmine.Spy = spyOn(
         TestBed.inject(TestDataService),
         'loadTestDataToLocal'
       );

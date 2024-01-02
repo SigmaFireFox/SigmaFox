@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@sigmafox/modals": ["libs/modals/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
