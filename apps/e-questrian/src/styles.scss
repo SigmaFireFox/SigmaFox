@@ -34,58 +34,58 @@
 // // that you are using.
 // @include mat.all-component-themes($e-questrian-theme);
 
-// html,
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-// html,
-// body {
-//   height: 100%;
-// }
-// body {
-//   margin: 0;
-//   font-family: Roboto, "Helvetica Neue", sans-serif;
-// }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-// .page-container {
-//   width: 100%;
-//   height: calc(100vh - 150px);
-// }
+.page-container {
+  width: 100%;
+  height: calc(100vh - 150px);
+}
 
-// .primary-button {
-//   background-color: blue;
-//   color: white;
-//   border-color: white;
-//   border-width: 1px;
-//   width: 100%;
-//   max-width: 250px;
-// }
+.primary-button {
+  background-color: blue;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  width: 100%;
+  max-width: 250px;
+}
 
-// .secondary-button {
-//   background-color: white;
-//   color: blue;
-//   border-color: blue;
-//   border-width: 1px;
-//   width: 100%;
-//   max-width: 250px;
-// }
+.secondary-button {
+  background-color: white;
+  color: blue;
+  border-color: blue;
+  border-width: 1px;
+  width: 100%;
+  max-width: 250px;
+}
 
-// .primary-warning-button {
-//   background-color: red;
-//   color: white;
-//   border-color: white;
-//   border-width: 1px;
-//   width: 100%;
-//   max-width: 250px;
-// }
+.primary-warning-button {
+  background-color: red;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  width: 100%;
+  max-width: 250px;
+}
 
-// .secondary-warning-button {
-//   background-color: white;
-//   color: red;
-//   border-color: red;
-//   border-width: 1px;
-//   width: 100%;
-//   max-width: 250px;
-// }
+.secondary-warning-button {
+  background-color: white;
+  color: red;
+  border-color: red;
+  border-width: 1px;
+  width: 100%;
+  max-width: 250px;
+}

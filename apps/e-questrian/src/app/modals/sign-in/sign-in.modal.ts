@@ -1,4 +1,4 @@
-import { Component, ContentChild, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 export interface SignInDetails {
@@ -7,10 +7,11 @@ export interface SignInDetails {
 }
 
 @Component({
-  selector: 'app-sign-in-modal',
+  selector: 'e-questrian-sign-in-modal',
   templateUrl: './sign-in.modal.html',
   styleUrls: ['./sign-in.modal.scss'],
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class SignInModal {
   @Output() closed = new EventEmitter<void>();
   @Output() signin = new EventEmitter<SignInDetails>();
@@ -21,7 +22,7 @@ export class SignInModal {
     password: new UntypedFormControl(''),
   });
   showPassword = false;
-  isRegister: boolean = false;
+  isRegister = false;
 
   onSubmitClick() {
     return this.isRegister

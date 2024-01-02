@@ -2,7 +2,7 @@
   "name": "e-questrian",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "sigmafox",
+  "prefix": "e-questrian",
   "sourceRoot": "apps/e-questrian/src",
   "tags": [],
   "targets": {

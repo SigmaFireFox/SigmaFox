@@ -1,1 +1,39 @@
-<p>modals works!</p>
+<div class="main-container">
+  <form
+    class="form-container"
+    [formGroup]="signInForm"
+    (ngSubmit)="onSubmitClick()"
+  >
+    <div class="form-header">Sign in</div>
+
+    <div class="form-line">
+      <div class="form-line-title">Email:</div>
+      <input type="text" formControlName="email" />
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Password:</div>
+      <input [type]="showPassword ? 'text' : 'password'" formControlName="password" id="passwordInput"/>
+      <mat-icon (click)="togglePassword()">{{showPassword? 'visibility_off': 'visibility'}}</mat-icon>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <button
+        class="primary-button"
+        type="submit"
+        [disabled]="!signInForm.valid"
+      >
+        Sign in
+      </button>
+      <button
+        class="primary-button"
+        type="submit"
+        (click)="onRegisterClick()"
+        [disabled]="!signInForm.valid"
+      >
+        Register
+      </button>
+    </div>
+  </form>
+</div>
