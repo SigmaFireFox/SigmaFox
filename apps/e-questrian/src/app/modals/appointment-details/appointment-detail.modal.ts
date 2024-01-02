@@ -202,6 +202,7 @@ export class AppointmentModal implements OnInit {
     this.isEditable = false;
 
     if (!proceed) return;
+
     switch (this.warningType) {
       case WarningType.EDIT_SAVE: {
         this.prepAndSaveEditedAppointment();

@@ -23,7 +23,6 @@ export class AppointmentsService {
   newAppointment(newAppointment: AppointmentDetail) {
     newAppointment.invoice = 0;
     this.addAppointment(newAppointment);
-    console.log(this.appointmentsOnFile);
     this.setAppointmentData();
   }
 
@@ -36,7 +35,7 @@ export class AppointmentsService {
   }
 
   editAppointment(appointmentID: number, newDetails: AppointmentDetail) {
-    this.appointmentsOnFile[appointmentID] = newDetails;
+    this.currentAppointments[appointmentID] = newDetails;
     this.setAppointmentData();
   }
 
