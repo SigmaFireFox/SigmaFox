@@ -241,10 +241,10 @@ export class AppointmentModal implements OnInit {
   }
 
   private setForm() {
-    this.isNewAppointment ? this.setFormForNew() : this.setFormForEdit();
     this.preferredSubject = this.isNewAppointment
       ? 'New appointment'
       : this.getPreferredSubject();
+    this.isNewAppointment ? this.setFormForNew() : this.setFormForEdit();
     this.showClientField =
       this.appointmentForm.controls['type'].value === AppointmentType.Lesson;
   }
@@ -276,7 +276,9 @@ export class AppointmentModal implements OnInit {
     this.selectedCient = this.currentAppointment.client;
     this.appointmentForm = new UntypedFormGroup({
       type: new UntypedFormControl(this.currentAppointment.type || 0),
-      subject: new UntypedFormControl(this.currentAppointment.subject || ''),
+      subject: new UntypedFormControl(
+        this.currentAppointment.subject || this.preferredSubject || ''
+      ),
       date: new UntypedFormControl(new Date(this.date) || ''),
       startTime: new UntypedFormControl(this.currentAppointment.startTime),
       duration: new UntypedFormControl(this.currentAppointment.duration || ''),
