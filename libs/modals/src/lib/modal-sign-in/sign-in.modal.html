@@ -13,8 +13,14 @@
 
     <div class="form-line">
       <div class="form-line-title">Password:</div>
-      <input [type]="showPassword ? 'text' : 'password'" formControlName="password" id="passwordInput"/>
-      <mat-icon (click)="togglePassword()">{{showPassword? 'visibility_off': 'visibility'}}</mat-icon>
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        formControlName="password"
+        id="passwordInput"
+      />
+      <mat-icon (click)="togglePassword()"
+        >{{showPassword? 'visibility_off': 'visibility'}}</mat-icon
+      >
     </div>
 
     <!-- Buttons -->
@@ -27,7 +33,7 @@
         Sign in
       </button>
       <button
-        class="primary-button"
+        class="secondary-button"
         type="submit"
         (click)="onRegisterClick()"
         [disabled]="!signInForm.valid"

@@ -1,39 +1,3 @@
-// // Custom Theming for Angular Material
-// // For more information: https://material.angular.io/guide/theming
-// @use "@angular/material" as mat;
-// // Plus imports for other components in your app.
-
-// // Include the common styles for Angular Material. We include this here so that you only
-// // have to load a single css file for Angular Material in your app.
-// // Be sure that you only ever include this mixin once!
-// @include mat.core();
-
-// // Define the palettes for your theme using the Material Design palettes available in palette.scss
-// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// // hue. Available color palettes: https://material.io/design/color/
-// $e-questrian-primary: mat.define-palette(mat.$indigo-palette);
-// $e-questrian-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-
-// // The warn palette is optional (defaults to red).
-// $e-questrian-warn: mat.define-palette(mat.$red-palette);
-
-// // Create the theme object. A theme consists of configurations for individual
-// // theming systems such as "color" or "typography".
-// $e-questrian-theme: mat.define-light-theme(
-//   (
-//     color: (
-//       primary: $e-questrian-primary,
-//       accent: $e-questrian-accent,
-//       warn: $e-questrian-warn,
-//     ),
-//   )
-// );
-
-// // Include theme styles for core and each component used in your app.
-// // Alternatively, you can import and @include the theme mixins for each component
-// // that you are using.
-// @include mat.all-component-themes($e-questrian-theme);
-
 html,
 body {
   margin: 0;
@@ -44,6 +8,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -54,38 +19,74 @@ body {
   height: calc(100vh - 150px);
 }
 
+// Buttons 
+.primary-button,
+.secondary-button,
+.primary-warning-button,
+.secondary-warning-button {
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.primary-warning-button:hover,
+.secondary-warning-button:hover {
+  transform: scale(1.03);
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
+.primary-button:after,
+.secondary-button:after,
+.primary-warning-button:after,
+.secondary-warning-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.primary-button:active:after,
+.secondary-button:active:after,
+.primary-warning-button:active:after,
+.secondary-warning-button:active:after {
+  transform: scale(0, 0);
+  opacity: .2;
+  transition: 0s;
+}
+
 .primary-button {
   background-color: blue;
   color: white;
-  border-color: white;
-  border-width: 1px;
-  width: 100%;
-  max-width: 250px;
 }
 
 .secondary-button {
   background-color: white;
   color: blue;
-  border-color: blue;
-  border-width: 1px;
-  width: 100%;
-  max-width: 250px;
 }
 
 .primary-warning-button {
   background-color: red;
   color: white;
-  border-color: white;
-  border-width: 1px;
-  width: 100%;
-  max-width: 250px;
 }
 
 .secondary-warning-button {
   background-color: white;
   color: red;
-  border-color: red;
-  border-width: 1px;
-  width: 100%;
-  max-width: 250px;
 }
