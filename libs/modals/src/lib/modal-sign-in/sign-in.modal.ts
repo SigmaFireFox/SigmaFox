@@ -1,8 +1,13 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import {
+  ReactiveFormsModule,
+  UntypedFormControl,
+  UntypedFormGroup,
+  Validators,
+} from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-
+import { ButtonsModule } from '@sigmafox/buttons';
 
 export interface SignInDetails {
   email: string;
@@ -11,7 +16,7 @@ export interface SignInDetails {
 
 @Component({
   standalone: true,
-  imports: [CommonModule, MatIconModule, ReactiveFormsModule],
+  imports: [CommonModule, MatIconModule, ReactiveFormsModule, ButtonsModule],
   selector: 'sigmafox-modal-sign-in',
   templateUrl: './sign-in.modal.html',
   styleUrls: ['./sign-in.modal.scss'],
@@ -23,8 +28,8 @@ export class SignInModal {
   @Output() register = new EventEmitter<SignInDetails>();
 
   signInForm = new UntypedFormGroup({
-    email: new UntypedFormControl(''),
-    password: new UntypedFormControl(''),
+    email: new UntypedFormControl('', Validators.email),
+    password: new UntypedFormControl('', Validators.required),
   });
   showPassword = false;
   isRegister = false;
@@ -37,6 +42,7 @@ export class SignInModal {
 
   onRegisterClick() {
     this.isRegister = true;
+    this.onSubmitClick();
   }
 
   togglePassword() {

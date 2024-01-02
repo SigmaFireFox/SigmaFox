@@ -111,3 +111,12 @@ button {
 mat-icon {
     padding: 0 8px;
 }
+
+sigmafox-standard-button {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}

@@ -25,21 +25,18 @@
 
     <!-- Buttons -->
     <div class="button-container">
-      <button
-        class="primary-button"
-        type="submit"
-        [disabled]="!signInForm.valid"
-      >
-        Sign in
-      </button>
-      <button
-        class="secondary-button"
-        type="submit"
-        (click)="onRegisterClick()"
-        [disabled]="!signInForm.valid"
-      >
-        Register
-      </button>
+      <sigmafox-standard-button
+        [copy]="'Sign in'"
+        [class]="'primary-button'"
+        [isDisabled]="!signInForm.valid"
+        (clicked)="onSubmitClick()"
+      ></sigmafox-standard-button>
+      <sigmafox-standard-button
+        [copy]="'Register'"
+        [class]="'secondary-button'"
+        [isDisabled]="!signInForm.valid"
+        (clicked)="onRegisterClick()"
+      ></sigmafox-standard-button>
     </div>
   </form>
 </div>
