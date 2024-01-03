@@ -5,16 +5,28 @@ import {
   FinancialDocListPageConfig,
   ProcessResultsPageConfig,
 } from '../interfaces/common-page-configs.interface';
+import { OptionStyling } from '../interfaces/menu-options.interface';
 
 export const FinanceMenuPageConfig = {
   header: '',
   subHeader: 'Finance Menu',
   menu: [
-    { display: 'Invoices', viewState: ViewState.INVOICES },
-    { display: 'Payments', viewState: ViewState.PAYMENTS },
+    {
+      display: 'Invoices',
+      viewState: ViewState.INVOICES,
+    },
+    {
+      display: 'Payments',
+      viewState: ViewState.PAYMENTS,
+    },
     {
       display: 'Statements',
       viewState: ViewState.GENERATE_STATEMENTS_PARAMETERS,
+    },
+    {
+      display: 'Back to Main Menu',
+      path: '/home',
+      styling: OptionStyling.Secondary,
     },
   ],
 } as MenuPageConfig;
@@ -28,7 +40,11 @@ export const InvoicesMenuPageConfig = {
       display: 'Generate invoices',
       viewState: ViewState.GENERATE_INVOICES_PARAMETERS,
     },
-    { display: 'Back to Finance Menu', viewState: ViewState.MAIN },
+    {
+      display: 'Back to Finance Menu',
+      viewState: ViewState.MAIN,
+      styling: OptionStyling.Secondary,
+    },
   ],
 } as MenuPageConfig;
 
@@ -42,7 +58,13 @@ export const InvoiceListPageConfig = {
 export const InvoiceListMenuConfig = {
   header: '',
   subHeader: '',
-  menu: [{ display: 'Back to Finance Menu', viewState: ViewState.MAIN }],
+  menu: [
+    {
+      display: 'Back to Invoices Menu',
+      viewState: ViewState.INVOICES,
+      styling: OptionStyling.Secondary,
+    },
+  ],
 } as MenuPageConfig;
 
 export const GenerateInvoiceResultsPageConfig = {

@@ -7,13 +7,13 @@ export interface MenuOption {
 }
 
 @Component({
-  selector: 'app-navbar-component',
+  selector: 'e-questrian-navbar-component',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  isMobileView: boolean = false;
-  displayMenu: boolean = true;
+  isMobileView = false;
+  displayMenu = true;
 
   readonly menuOptions: MenuOption[] = [
     { display: 'Calendar', path: '/calendar' },
@@ -27,6 +27,7 @@ export class NavbarComponent implements OnInit {
   }
 
   @HostListener('document:click', ['$event'])
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   clickout(event: { target: any }) {
     if (!this.eRef.nativeElement.contains(event.target)) {
       if (this.isMobileView) {
@@ -42,7 +43,9 @@ export class NavbarComponent implements OnInit {
   constructor(public router: Router, private eRef: ElementRef) {}
 
   ngOnInit(): void {
-    this.determineView();
+    setTimeout(() => {
+      this.determineView();
+    }, 100);
   }
 
   onLogoClick() {

@@ -69,6 +69,7 @@ export enum ResultType {
 export interface ProcessResult {
   description: string;
   resultType: ResultType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   result: any;
 }
 

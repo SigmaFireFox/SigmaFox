@@ -1,9 +1,20 @@
 <div class="page-container">
-  <app-general-screen-header-component [generalConfig]="generalConfig"></app-general-screen-header-component>
+  <app-general-screen-header-component
+    [generalConfig]="generalConfig"
+  ></app-general-screen-header-component>
   <div class="button-container">
-    <button mat-button *ngFor="let option of config.menu"
-      [ngClass]="option.styling === optionStyling.Primary ? 'navbar-button primary-menu-button': 'navbar-button secondary-menu-button'"
-      (click)="onMenuOptionClicked(option.action, option.path, option.viewState)">
+    <button
+      mat-button
+      *ngFor="let option of config.menu"
+      [ngClass]="
+        option.styling === optionStyling.Secondary
+          ? 'navbar-button secondary-menu-button'
+          : 'navbar-button primary-menu-button'
+      "
+      (click)="
+        onMenuOptionClicked(option.action, option.path, option.viewState)
+      "
+    >
       {{ option.display }}
     </button>
   </div>

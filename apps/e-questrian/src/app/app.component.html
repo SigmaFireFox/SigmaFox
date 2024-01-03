@@ -1,2 +1,4 @@
-<app-navbar-component *ngIf="!(router.url.includes('signin') || router.url.includes('home'))"></app-navbar-component>
+<e-questrian-navbar-component
+  *ngIf="!router.url.includes('signin')"
+></e-questrian-navbar-component>
 <router-outlet></router-outlet>

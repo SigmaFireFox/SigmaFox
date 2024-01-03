@@ -51,7 +51,7 @@ export class MenuComponent implements OnInit {
       return;
     }
 
-    if (viewState) {
+    if (viewState !== undefined) {
       this.viewStateSelected.emit(viewState);
     }
   }

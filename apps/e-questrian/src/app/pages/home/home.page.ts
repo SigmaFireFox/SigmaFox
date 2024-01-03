@@ -36,7 +36,7 @@ export class HomePage implements OnInit {
 
   private setConfig() {
     this.config = {
-      header: 'e-Questrian',
+      header: '',
       subHeader: 'Main menu',
       menu: [
         {

@@ -1,9 +1,10 @@
 export interface MenuOption {
   display: string;
-  styling: OptionStyling
+  styling: OptionStyling;
   path?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   viewState?: any;
-  action?: OptionAction
+  action?: OptionAction;
 }
 
 export enum OptionStyling {
@@ -12,5 +13,5 @@ export enum OptionStyling {
 }
 
 export enum OptionAction {
-  Log_Out
+  Log_Out,
 }
