@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run e-questrian:build",
+    "startTime": "2024-01-03T11:04:10.834Z",
+    "endTime": "2024-01-03T11:04:47.667Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "e-questrian:build:production",
+      "target": "build",
+      "projectName": "e-questrian",
+      "hash": "9362584479055409783",
+      "startTime": "2024-01-03T11:04:10.838Z",
+      "endTime": "2024-01-03T11:04:47.664Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
