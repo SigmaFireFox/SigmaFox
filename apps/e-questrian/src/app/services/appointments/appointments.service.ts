@@ -27,9 +27,9 @@ export class AppointmentsService {
   }
 
   cancelAppointment(appointmentID: number) {
-    if (!this.appointmentsOnFile[appointmentID]) return;
-    this.appointmentsOnFile[appointmentID].cancelled = true;
-    this.appointmentsOnFile[appointmentID].invoice != 0
+    if (!this.currentAppointments[appointmentID]) return;
+    this.currentAppointments[appointmentID].cancelled = true;
+    this.currentAppointments[appointmentID].invoice != 0
       ? this.creditNoteService.generateCreditNote(appointmentID)
       : this.setAppointmentData();
   }
