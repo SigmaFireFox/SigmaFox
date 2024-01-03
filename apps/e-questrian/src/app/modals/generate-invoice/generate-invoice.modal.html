@@ -87,8 +87,8 @@
         >
           <mat-option
             *ngFor="let option of clients | keyvalue"
-            [value]="option.value"
-            >{{ option.value.displayName }}</mat-option
+            value="{{option.key}}"
+            >{{ option.value }}</mat-option
           >
         </mat-select>
       </div>
@@ -104,8 +104,8 @@
         >
           <mat-option
             *ngFor="let option of clients | keyvalue"
-            [value]="option.value"
-            >{{ option.value.displayName }}</mat-option
+            value="{{option.key}}"
+            >{{ option.value }}</mat-option
           >
           >
         </mat-select>

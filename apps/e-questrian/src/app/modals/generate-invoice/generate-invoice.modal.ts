@@ -58,8 +58,13 @@ export class GenerateInvoiceModal {
 
   isGenerate = false;
 
-  get clients(): Clients {
-    return this.clientService.clients;
+  get clients(): Record<string, string> {
+    const clientsOnFile: Clients = this.clientService.clients;
+    const _clients: Record<string, string> = {};
+    Object.keys(clientsOnFile).forEach((key) => {
+      _clients[key] = clientsOnFile[parseInt(key)].displayName;
+    });
+    return _clients;
   }
 
   constructor(private clientService: ClientsService) {}
