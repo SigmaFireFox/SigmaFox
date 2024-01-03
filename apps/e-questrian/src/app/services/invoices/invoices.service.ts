@@ -35,18 +35,21 @@ export interface GenerateInvoiceResult {
 export class InvoicesService {
   today: Date = new Date();
   calendarData: CalendarData = {};
+  currentInvoices: Invoices = {};
+  currentAppointments: Appointments = {};
   test1: any;
   test2: any;
   test3: any;
   test4: any;
   test5: any;
 
-  get invoices(): Invoices {
-    return JSON.parse(localStorage.getItem('invoices') as string);
+  get invoicesOnFile(): Invoices {
+    const appointmentString = localStorage.getItem('invoices');
+    return JSON.parse(appointmentString || '{}');
   }
 
-  get appointments(): Appointments {
-    return this.appointmentsService.appointmentsOnFile;
+  get appointmentsOnFile(): Appointments {
+    return this.appointmentsService.appointments;
   }
 
   get clients(): Clients {
@@ -56,20 +59,24 @@ export class InvoicesService {
   constructor(
     private appointmentsService: AppointmentsService,
     private clientsService: ClientsService
-  ) {}
+  ) {
+    this.currentInvoices = this.invoicesOnFile;
+    this.currentAppointments = this.appointmentsOnFile;
+  }
 
   setInvoiceDataForDisplay(): FinancialDocItem[] {
     const invoiceDocItems = [] as FinancialDocItem[];
 
-    Object.keys(this.invoices).forEach((key) => {
+    Object.keys(this.currentInvoices).forEach((key) => {
       const number = parseInt(key);
       invoiceDocItems.push({
         number: number,
-        date: new Date(this.invoices[number].date),
+        date: new Date(this.currentInvoices[number].date),
         detail:
-          (this.appointments[this.invoices[number].appointments[0]].client
-            ?.displayName as string) || '',
-        amount: this.invoices[number].appointments.length * 250,
+          (this.currentAppointments[
+            this.currentInvoices[number].appointments[0]
+          ].client?.displayName as string) || '',
+        amount: this.currentInvoices[number].appointments.length * 250,
         docType: FinancialDocType.INVOICE,
       });
     });
@@ -78,22 +85,25 @@ export class InvoicesService {
 
   setInvoiceDocForDisplay(selectedInvoiceID: number): DocView {
     const invoiceDocViewConfig: DocView = {} as DocView;
-    this.invoices[selectedInvoiceID];
+    this.currentInvoices[selectedInvoiceID];
     invoiceDocViewConfig.subHeader = 'Invoice #' + selectedInvoiceID;
     invoiceDocViewConfig.docNumber = selectedInvoiceID;
     const firstAppoinentNumber =
-      this.invoices[selectedInvoiceID]?.appointments[0];
+      this.currentInvoices[selectedInvoiceID]?.appointments[0];
     invoiceDocViewConfig.docClient =
-      (this.appointments[firstAppoinentNumber]?.client as ClientDetail) || {};
+      (this.currentAppointments[firstAppoinentNumber]
+        ?.client as ClientDetail) || {};
     invoiceDocViewConfig.lineItems = [{ Lessons: [] }];
-    this.invoices[selectedInvoiceID]?.appointments.forEach((appointmentID) => {
-      invoiceDocViewConfig.lineItems[0]['Lessons'].push({
-        number: appointmentID,
-        date: new Date(this.appointments[appointmentID].date),
-        detail: this.appointments[appointmentID].subject || '',
-        amount: 250,
-      });
-    });
+    this.currentInvoices[selectedInvoiceID]?.appointments.forEach(
+      (appointmentID) => {
+        invoiceDocViewConfig.lineItems[0]['Lessons'].push({
+          number: appointmentID,
+          date: new Date(this.currentAppointments[appointmentID].date),
+          detail: this.currentAppointments[appointmentID].subject || '',
+          amount: 250,
+        });
+      }
+    );
     return invoiceDocViewConfig;
   }
 
@@ -224,15 +234,15 @@ export class InvoicesService {
     results: GenerateInvoiceResult
   ): { [clientID: number]: number[] } {
     const appointmentsToInvoice = {} as { [clientID: number]: number[] };
-    Object.keys(this.appointments).forEach((appointmentIDStr) => {
+    Object.keys(this.currentAppointments).forEach((appointmentIDStr) => {
       const appointmentID = parseInt(appointmentIDStr);
       // Has the appointment been invoiced?
-      if (this.appointments[appointmentID].invoice != 0) {
+      if (this.currentAppointments[appointmentID].invoice != 0) {
         return;
       }
 
       // Get the clientID
-      const currentClient = this.appointments[appointmentID].client;
+      const currentClient = this.currentAppointments[appointmentID].client;
       if (!currentClient?.displayName) {
         return;
       }
@@ -244,7 +254,9 @@ export class InvoicesService {
       }
 
       // Is the appointment date before or on the cut off date
-      const appointmentDate = new Date(this.appointments[appointmentID].date);
+      const appointmentDate = new Date(
+        this.currentAppointments[appointmentID].date
+      );
       if (appointmentDate > cutOffDate) {
         return;
       }
@@ -271,19 +283,19 @@ export class InvoicesService {
     [clientID: number]: number[];
   }): number {
     // Add an invoice for each assigning the appointments to that invoice
-    let nextInvoiceNumber = Object.keys(this.invoices).length + 1;
+    let nextInvoiceNumber = Object.keys(this.currentInvoices).length + 1;
     let invoiceCount = 0;
     Object.keys(appointmentsToInvoice).forEach((clientIDStr) => {
       const clientID = parseInt(clientIDStr);
       // Generate invoice
-      this.invoices[nextInvoiceNumber] = {
+      this.currentInvoices[nextInvoiceNumber] = {
         clientID: clientID,
         date: new Date(),
         appointments: appointmentsToInvoice[clientID],
       };
 
       appointmentsToInvoice[clientID].forEach((appointmentID) => {
-        this.appointments[appointmentID].invoice = nextInvoiceNumber;
+        this.currentAppointments[appointmentID].invoice = nextInvoiceNumber;
       });
       nextInvoiceNumber++;
       invoiceCount++;
@@ -310,7 +322,10 @@ export class InvoicesService {
 
   private setDataToLocal() {
     // Write new invoices and appointements to stored data
-    localStorage.setItem('invoices', JSON.stringify(this.invoices));
-    localStorage.setItem('appointments', JSON.stringify(this.appointments));
+    localStorage.setItem('invoices', JSON.stringify(this.currentInvoices));
+    localStorage.setItem(
+      'appointments',
+      JSON.stringify(this.currentAppointments)
+    );
   }
 }

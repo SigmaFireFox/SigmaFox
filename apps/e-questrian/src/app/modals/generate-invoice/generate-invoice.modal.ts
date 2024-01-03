@@ -43,9 +43,9 @@ export class GenerateInvoiceModal {
   @Output() cancelled = new EventEmitter<void>();
 
   clientSelectorType = ClientRange;
-  invoiceRange = InvoiceRange.NONE;
-  dateRange = DateRange.NONE;
-  clientRange = ClientRange.NONE;
+  invoiceRange = InvoiceRange.ALL;
+  dateRange = DateRange.ALL;
+  clientRange = ClientRange.ALL;
   selectedDate = new Date();
   selectedClients = [] as ClientDetail[];
   generateInvoicesParametersForm = new UntypedFormGroup({

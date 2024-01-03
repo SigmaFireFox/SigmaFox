@@ -11,6 +11,10 @@ import { CreditNotesService } from '../credit-notes/credit-notes.service';
 export class AppointmentsService {
   currentAppointments: Appointments = {};
 
+  get appointments(): Appointments {
+    return this.currentAppointments;
+  }
+
   get appointmentsOnFile(): Appointments {
     const appointmentString = localStorage.getItem('appointments');
     return JSON.parse(appointmentString || '{}');

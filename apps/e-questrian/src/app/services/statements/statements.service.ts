@@ -24,7 +24,7 @@ export class StatementsService {
   }
 
   get invoices(): Invoices {
-    return this.invoicesService.invoices;
+    return this.invoicesService.invoicesOnFile;
   }
 
   constructor(
