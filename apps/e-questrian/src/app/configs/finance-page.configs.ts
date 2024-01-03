@@ -94,7 +94,11 @@ export const PaymentsMenuPageConfig = {
   menu: [
     { display: 'RecordPayment', viewState: ViewState.PAYMENT_DETAIL },
     { display: 'View Payments', viewState: ViewState.VIEW_PAYMENTS },
-    { display: 'Back to Finance Menu', viewState: ViewState.MAIN },
+    {
+      display: 'Back to Finance Menu',
+      viewState: ViewState.MAIN,
+      styling: OptionStyling.Secondary,
+    },
   ],
 } as MenuPageConfig;
 
@@ -108,7 +112,13 @@ export const PaymentListPageConfig = {
 export const PaymentListMenuConfig = {
   header: '',
   subHeader: '',
-  menu: [{ display: 'Back to Payments Menu', viewState: ViewState.PAYMENTS }],
+  menu: [
+    {
+      display: 'Back to Payments Menu',
+      viewState: ViewState.PAYMENTS,
+      styling: OptionStyling.Secondary,
+    },
+  ],
 } as MenuPageConfig;
 
 export const StatementPageConfig = {
@@ -121,5 +131,11 @@ export const StatementPageConfig = {
 export const StatementMenuConfig = {
   header: '',
   subHeader: '',
-  menu: [{ display: 'Back to Finance Menu', viewState: ViewState.MAIN }],
+  menu: [
+    {
+      display: 'Back to Finance Menu',
+      viewState: ViewState.MAIN,
+      styling: OptionStyling.Secondary,
+    },
+  ],
 } as MenuPageConfig;

@@ -20,7 +20,7 @@ export interface StatementBasics {
 })
 export class StatementsService {
   get payments() {
-    return this.paymentsService.payments;
+    return this.paymentsService.paymentsOnFile;
   }
 
   get invoices(): Invoices {

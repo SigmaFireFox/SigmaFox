@@ -30,8 +30,13 @@ export class PaymentsModal implements OnInit {
   isVoidPayment = false;
   isSaveAndNew = false;
 
-  get clients(): Clients {
-    return this.clientService.clients;
+  get clients(): Record<string, string> {
+    const clientsOnFile: Clients = this.clientService.clients;
+    const _clients: Record<string, string> = {};
+    Object.keys(clientsOnFile).forEach((key) => {
+      _clients[key] = clientsOnFile[parseInt(key)].displayName;
+    });
+    return _clients;
   }
 
   constructor(private clientService: ClientsService) {}
@@ -53,7 +58,15 @@ export class PaymentsModal implements OnInit {
       ? this.newPayment.emit(this.paymentForm.value as PaymentDetails)
       : this.editedPayment.emit(this.paymentForm.value as PaymentDetails);
 
-    this.isSaveAndNew ? this.ngOnInit() : this.closed.emit();
+    // If save and new we need to clear the form
+    if (this.isSaveAndNew) {
+      this.currentPayment = {} as PaymentDetails;
+      this.setIsNewPayment();
+      this.setForm();
+      return;
+    }
+
+    this.closed.emit();
   }
 
   onSaveClick(saveAndNew: boolean) {
@@ -77,12 +90,10 @@ export class PaymentsModal implements OnInit {
   }
 
   private setForm() {
-    if (this.isNewPayment) return;
+    // if (this.isNewPayment) return;
 
     this.paymentForm = new UntypedFormGroup({
-      client: new UntypedFormControl(
-        this.clients[this.currentPayment.client].displayName
-      ),
+      client: new UntypedFormControl(this.clients[this.currentPayment.client]),
       amount: new UntypedFormControl(this.currentPayment.amount),
       paymentType: new UntypedFormControl(this.currentPayment.paymentType),
       date: new UntypedFormControl(this.currentPayment.date),
@@ -91,7 +102,7 @@ export class PaymentsModal implements OnInit {
 
   private parseKeysToInt() {
     this.paymentForm.controls['client'].setValue(
-      parseInt(this.paymentForm.controls['client'].value.key)
+      parseInt(this.paymentForm.controls['client'].value)
     );
     this.paymentForm.controls['amount'].setValue(
       parseInt(this.paymentForm.controls['amount'].value)

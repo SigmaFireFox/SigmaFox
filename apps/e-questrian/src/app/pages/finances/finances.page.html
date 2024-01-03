@@ -30,7 +30,7 @@
   <div *ngSwitchCase="viewStateEnum.GENERATE_INVOICES_PARAMETERS">
     <app-generate-invoice-modal
       (generateInvoiceParameters)="generateInvoices($event)"
-      (cancelled)="switchViewState(viewStateEnum.MAIN)"
+      (cancelled)="switchViewState(viewStateEnum.INVOICES)"
     ></app-generate-invoice-modal>
   </div>
 

@@ -8,15 +8,11 @@
 
     <div class="form-line">
       <div class="form-line-title">Client:</div>
-      <mat-select
-        [compareWith]="compareClients"
-        class="client-selector"
-        formControlName="client"
-      >
+      <mat-select class="client-selector" formControlName="client">
         <mat-option
-          [value]="option"
           *ngFor="let option of clients | keyvalue"
-          >{{ option.value.displayName }}</mat-option
+          value="{{option.key}}"
+          >{{ option.value }}</mat-option
         >
       </mat-select>
     </div>

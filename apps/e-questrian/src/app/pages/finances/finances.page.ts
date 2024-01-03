@@ -79,7 +79,7 @@ export class FinancesPage {
   }
 
   onPaymentClicked(document: { docType: FinancialDocType; docNum: number }) {
-    const payments = this.paymentsService.payments;
+    const payments = this.paymentsService.paymentsOnFile;
     if (!payments) return;
     this.currentPayment = payments[document.docNum];
     this.switchViewState(ViewState.PAYMENT_DETAIL);
