@@ -40,12 +40,23 @@ export class GenerateStatementModal {
   });
   isGenerate = false;
 
-  get clients(): Clients {
-    return this.clientService.clients;
+  get clients(): Record<string, string> {
+    const clientsOnFile: Clients = this.clientService.clients;
+    const _clients: Record<string, string> = {};
+    Object.keys(clientsOnFile).forEach((key) => {
+      _clients[key] = clientsOnFile[parseInt(key)].displayName;
+    });
+    return _clients;
   }
 
-  get dateRangeOptions(): DateRangeOption[] {
-    return this.dateService.dateRangeOptions;
+  get dateRangeOptions(): Record<string, string> {
+    const dateRangeOptionsFromService: DateRangeOption[] =
+      this.dateService.dateRangeOptions;
+    const _dateOptions: Record<string, string> = {};
+    Object.keys(dateRangeOptionsFromService).forEach((key) => {
+      _dateOptions[key] = dateRangeOptionsFromService[parseInt(key)].display;
+    });
+    return _dateOptions;
   }
 
   constructor(

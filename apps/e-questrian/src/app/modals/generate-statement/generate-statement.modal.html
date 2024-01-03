@@ -20,8 +20,8 @@
       >
         <mat-option
           *ngFor="let option of clients | keyvalue"
-          [value]="option.value"
-          >{{ option.value.displayName }}</mat-option
+          value="{{option.key}}"
+          >{{ option.value }}</mat-option
         >
       </mat-select>
     </div>
@@ -35,9 +35,9 @@
         formControlName="dateRange"
       >
         <mat-option
-          *ngFor="let option of dateRangeOptions"
-          [value]="option.value"
-          >{{ option.display}}</mat-option
+          *ngFor="let option of dateRangeOptions | keyvalue"
+          [value]="option.key"
+          >{{ option.value}}</mat-option
         >
       </mat-select>
     </div>
