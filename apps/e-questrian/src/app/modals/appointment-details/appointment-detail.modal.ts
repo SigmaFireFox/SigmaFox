@@ -284,6 +284,7 @@ export class AppointmentModal implements OnInit {
       duration: new UntypedFormControl(this.currentAppointment.duration || ''),
       client: new UntypedFormControl(this.selectedCient?.displayName || ''),
     });
+    this.setPreferredSubject();
   }
 
   private prepAndSaveNewAppointment() {
