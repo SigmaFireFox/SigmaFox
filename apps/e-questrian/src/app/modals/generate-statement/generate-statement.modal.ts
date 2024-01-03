@@ -12,7 +12,7 @@ import {
 } from '../../services/date/date.service';
 
 export interface GenerateStatementParameters {
-  client: ClientDetail;
+  client: unknown;
   startDate: Date;
   endDate: Date;
 }
@@ -49,12 +49,15 @@ export class GenerateStatementModal {
     return _clients;
   }
 
+  get dateRangeOptionsFromService(): DateRangeOption[] {
+    return this.dateService.dateRangeOptions;
+  }
+
   get dateRangeOptions(): Record<string, string> {
-    const dateRangeOptionsFromService: DateRangeOption[] =
-      this.dateService.dateRangeOptions;
     const _dateOptions: Record<string, string> = {};
-    Object.keys(dateRangeOptionsFromService).forEach((key) => {
-      _dateOptions[key] = dateRangeOptionsFromService[parseInt(key)].display;
+    Object.keys(this.dateRangeOptionsFromService).forEach((key) => {
+      _dateOptions[key] =
+        this.dateRangeOptionsFromService[parseInt(key)].display;
     });
     return _dateOptions;
   }
@@ -89,7 +92,10 @@ export class GenerateStatementModal {
 
   onDateRangeSelected() {
     this.selectedDateRange =
-      this.generateStatementParametersForm.controls['dateRange'].value;
+      this.dateService.dateRangeOptions[
+        this.generateStatementParametersForm.controls['dateRange'].value
+      ].value;
+
     this.startDate = this.selectedDateRange.startDate;
     this.endDate = this.selectedDateRange.endDate;
     this.generateStatementParametersForm.controls['startDate'].setValue(

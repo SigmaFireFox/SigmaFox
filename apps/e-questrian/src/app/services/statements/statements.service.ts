@@ -40,8 +40,10 @@ export class StatementsService {
       closingBalance: 0,
     };
 
-    const clientID = this.clientsService.getClientID(params.client.displayName);
-    this.getAllFinancialDocsForClient(clientID, statementBasics);
+    this.getAllFinancialDocsForClient(
+      parseInt(params.client as string),
+      statementBasics
+    );
     this.dateScopeFinancialDocOfClient(
       statementBasics,
       params.startDate,

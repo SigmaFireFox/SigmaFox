@@ -22,7 +22,6 @@ export class PaymentsService {
     this.currentPayments = this.paymentsOnFile;
     const NewPaymentID = Object.keys(this.paymentsOnFile).length + 1;
     paymentDetails.voided = false;
-    console.log(paymentDetails);
     this.currentPayments[NewPaymentID] = paymentDetails;
     localStorage.setItem('payments', JSON.stringify(this.currentPayments));
     this.clientNotificationService.sendPaymentReceipt(paymentDetails);
