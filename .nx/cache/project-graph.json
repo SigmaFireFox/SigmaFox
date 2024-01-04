@@ -438,6 +438,60 @@
         ]
       }
     },
+    "e-questrian-e2e": {
+      "name": "e-questrian-e2e",
+      "type": "e2e",
+      "data": {
+        "name": "e-questrian-e2e",
+        "root": "apps/e-questrian-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/e-questrian-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
+              "devServerTarget": "e-questrian:serve:development",
+              "testingType": "e2e"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "e-questrian:serve:production"
+              },
+              "ci": {
+                "devServerTarget": "e-questrian:serve-static"
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/e-questrian-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "e-questrian"
+        ]
+      }
+    },
     "eleven10ths-e2e": {
       "name": "eleven10ths-e2e",
       "type": "e2e",
@@ -544,60 +598,6 @@
         "tags": [],
         "implicitDependencies": [
           "assemble-ez"
-        ]
-      }
-    },
-    "e-questrian-e2e": {
-      "name": "e-questrian-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "e-questrian-e2e",
-        "root": "apps/e-questrian-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/e-questrian-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
-              "devServerTarget": "e-questrian:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "e-questrian:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "e-questrian:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/e-questrian-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "e-questrian"
         ]
       }
     },
@@ -16634,6 +16634,23 @@
         "type": "static"
       }
     ],
+    "e-questrian-e2e": [
+      {
+        "source": "e-questrian-e2e",
+        "target": "e-questrian",
+        "type": "implicit"
+      },
+      {
+        "source": "e-questrian-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
     "eleven10ths-e2e": [
       {
         "source": "eleven10ths-e2e",
@@ -16659,23 +16676,6 @@
       },
       {
         "source": "assemble-ez-e2e",
-        "target": "npm:@nx/cypress",
-        "type": "static"
-      }
-    ],
-    "e-questrian-e2e": [
-      {
-        "source": "e-questrian-e2e",
-        "target": "e-questrian",
-        "type": "implicit"
-      },
-      {
-        "source": "e-questrian-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
