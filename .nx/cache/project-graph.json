@@ -438,60 +438,6 @@
         ]
       }
     },
-    "e-questrian-e2e": {
-      "name": "e-questrian-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "e-questrian-e2e",
-        "root": "apps/e-questrian-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/e-questrian-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
-              "devServerTarget": "e-questrian:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "e-questrian:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "e-questrian:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/e-questrian-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "e-questrian"
-        ]
-      }
-    },
     "eleven10ths-e2e": {
       "name": "eleven10ths-e2e",
       "type": "e2e",
@@ -598,6 +544,60 @@
         "tags": [],
         "implicitDependencies": [
           "assemble-ez"
+        ]
+      }
+    },
+    "e-questrian-e2e": {
+      "name": "e-questrian-e2e",
+      "type": "e2e",
+      "data": {
+        "name": "e-questrian-e2e",
+        "root": "apps/e-questrian-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/e-questrian-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
+              "devServerTarget": "e-questrian:serve:development",
+              "testingType": "e2e"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "e-questrian:serve:production"
+              },
+              "ci": {
+                "devServerTarget": "e-questrian:serve-static"
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/e-questrian-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "e-questrian"
         ]
       }
     },
@@ -793,60 +793,6 @@
         ]
       }
     },
-    "negocios-e2e": {
-      "name": "negocios-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "negocios-e2e",
-        "root": "apps/negocios-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/negocios-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/negocios-e2e/cypress.config.ts",
-              "devServerTarget": "negocios:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "negocios:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "negocios:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/negocios-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "negocios"
-        ]
-      }
-    },
     "sigmafox-e2e": {
       "name": "sigmafox-e2e",
       "type": "e2e",
@@ -901,93 +847,35 @@
         ]
       }
     },
-    "e-questrian": {
-      "name": "e-questrian",
-      "type": "app",
+    "negocios-e2e": {
+      "name": "negocios-e2e",
+      "type": "e2e",
       "data": {
-        "name": "e-questrian",
-        "root": "apps/e-questrian",
+        "name": "negocios-e2e",
+        "root": "apps/negocios-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/negocios-e2e/src",
         "projectType": "application",
-        "prefix": "e-questrian",
-        "sourceRoot": "apps/e-questrian/src",
-        "tags": [],
         "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
+          "e2e": {
             "inputs": [
-              "production",
+              "default",
               "^production"
             ],
-            "executor": "@angular-devkit/build-angular:browser",
-            "outputs": [
-              "{options.outputPath}"
-            ],
+            "executor": "@nx/cypress:cypress",
             "options": {
-              "outputPath": "dist/apps/e-questrian",
-              "index": "apps/e-questrian/src/index.html",
-              "main": "apps/e-questrian/src/main.ts",
-              "polyfills": [
-                "zone.js"
-              ],
-              "tsConfig": "apps/e-questrian/tsconfig.app.json",
-              "assets": [
-                "apps/e-questrian/src/favicon.ico",
-                "apps/e-questrian/src/assets"
-              ],
-              "styles": [
-                "apps/e-questrian/src/styles.scss"
-              ],
-              "scripts": []
+              "cypressConfig": "apps/negocios-e2e/cypress.config.ts",
+              "devServerTarget": "negocios:serve:development",
+              "testingType": "e2e"
             },
             "configurations": {
               "production": {
-                "budgets": [
-                  {
-                    "type": "initial",
-                    "maximumWarning": "2mb",
-                    "maximumError": "2mb"
-                  },
-                  {
-                    "type": "anyComponentStyle",
-                    "maximumWarning": "2kb",
-                    "maximumError": "4kb"
-                  }
-                ],
-                "outputHashing": "all"
+                "devServerTarget": "negocios:serve:production"
               },
-              "development": {
-                "buildOptimizer": false,
-                "optimization": false,
-                "vendorChunk": true,
-                "extractLicenses": false,
-                "sourceMap": true,
-                "namedChunks": true
+              "ci": {
+                "devServerTarget": "negocios:serve-static"
               }
-            },
-            "defaultConfiguration": "production"
-          },
-          "serve": {
-            "executor": "@angular-devkit/build-angular:dev-server",
-            "configurations": {
-              "production": {
-                "browserTarget": "e-questrian:build:production"
-              },
-              "development": {
-                "browserTarget": "e-questrian:build:development"
-              }
-            },
-            "defaultConfiguration": "development",
-            "options": {}
-          },
-          "extract-i18n": {
-            "executor": "@angular-devkit/build-angular:extract-i18n",
-            "options": {
-              "browserTarget": "e-questrian:build"
-            },
-            "configurations": {}
+            }
           },
           "lint": {
             "inputs": [
@@ -1001,42 +889,70 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/e-questrian/**/*.ts",
-                "apps/e-questrian/**/*.html"
+                "apps/negocios-e2e/**/*.{js,ts}"
               ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/e-questrian/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "e-questrian:build"
             },
             "configurations": {}
           }
         },
-        "implicitDependencies": []
+        "tags": [],
+        "implicitDependencies": [
+          "negocios"
+        ]
+      }
+    },
+    "lucky21-e2e": {
+      "name": "lucky21-e2e",
+      "type": "e2e",
+      "data": {
+        "name": "lucky21-e2e",
+        "root": "apps/lucky21-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/lucky21-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/lucky21-e2e/cypress.config.ts",
+              "devServerTarget": "lucky21:serve:development",
+              "testingType": "e2e"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "lucky21:serve:production"
+              },
+              "ci": {
+                "devServerTarget": "lucky21:serve-static"
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/lucky21-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "lucky21"
+        ]
       }
     },
     "eleven10ths": {
@@ -1177,60 +1093,6 @@
         "implicitDependencies": []
       }
     },
-    "lucky21-e2e": {
-      "name": "lucky21-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "lucky21-e2e",
-        "root": "apps/lucky21-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/lucky21-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/lucky21-e2e/cypress.config.ts",
-              "devServerTarget": "lucky21:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "lucky21:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "lucky21:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/lucky21-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "lucky21"
-        ]
-      }
-    },
     "assemble-ez": {
       "name": "assemble-ez",
       "type": "app",
@@ -1362,6 +1224,144 @@
             "executor": "@nx/web:file-server",
             "options": {
               "buildTarget": "assemble-ez:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "e-questrian": {
+      "name": "e-questrian",
+      "type": "app",
+      "data": {
+        "name": "e-questrian",
+        "root": "apps/e-questrian",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "e-questrian",
+        "sourceRoot": "apps/e-questrian/src",
+        "tags": [],
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/e-questrian",
+              "index": "apps/e-questrian/src/index.html",
+              "main": "apps/e-questrian/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "apps/e-questrian/tsconfig.app.json",
+              "assets": [
+                "apps/e-questrian/src/favicon.ico",
+                "apps/e-questrian/src/assets"
+              ],
+              "styles": [
+                "apps/e-questrian/src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "2mb",
+                    "maximumError": "2mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "e-questrian:build:production"
+              },
+              "development": {
+                "browserTarget": "e-questrian:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "e-questrian:build"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/e-questrian/**/*.ts",
+                "apps/e-questrian/**/*.html"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/e-questrian/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "e-questrian:build"
             },
             "configurations": {}
           }
@@ -1507,144 +1507,6 @@
         "implicitDependencies": []
       }
     },
-    "negocios": {
-      "name": "negocios",
-      "type": "app",
-      "data": {
-        "name": "negocios",
-        "root": "apps/negocios",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "projectType": "application",
-        "prefix": "sigmafox",
-        "sourceRoot": "apps/negocios/src",
-        "tags": [],
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@angular-devkit/build-angular:browser",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/apps/negocios",
-              "index": "apps/negocios/src/index.html",
-              "main": "apps/negocios/src/main.ts",
-              "polyfills": [
-                "zone.js"
-              ],
-              "tsConfig": "apps/negocios/tsconfig.app.json",
-              "assets": [
-                "apps/negocios/src/favicon.ico",
-                "apps/negocios/src/assets"
-              ],
-              "styles": [
-                "apps/negocios/src/styles.scss"
-              ],
-              "scripts": []
-            },
-            "configurations": {
-              "production": {
-                "budgets": [
-                  {
-                    "type": "initial",
-                    "maximumWarning": "500kb",
-                    "maximumError": "1mb"
-                  },
-                  {
-                    "type": "anyComponentStyle",
-                    "maximumWarning": "2kb",
-                    "maximumError": "4kb"
-                  }
-                ],
-                "outputHashing": "all"
-              },
-              "development": {
-                "buildOptimizer": false,
-                "optimization": false,
-                "vendorChunk": true,
-                "extractLicenses": false,
-                "sourceMap": true,
-                "namedChunks": true
-              }
-            },
-            "defaultConfiguration": "production"
-          },
-          "serve": {
-            "executor": "@angular-devkit/build-angular:dev-server",
-            "configurations": {
-              "production": {
-                "browserTarget": "negocios:build:production"
-              },
-              "development": {
-                "browserTarget": "negocios:build:development"
-              }
-            },
-            "defaultConfiguration": "development",
-            "options": {}
-          },
-          "extract-i18n": {
-            "executor": "@angular-devkit/build-angular:extract-i18n",
-            "options": {
-              "browserTarget": "negocios:build"
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/negocios/**/*.ts",
-                "apps/negocios/**/*.html"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/negocios/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "negocios:build"
-            },
-            "configurations": {}
-          }
-        },
-        "implicitDependencies": []
-      }
-    },
     "sigmafox": {
       "name": "sigmafox",
       "type": "app",
@@ -1776,6 +1638,144 @@
             "executor": "@nx/web:file-server",
             "options": {
               "buildTarget": "sigmafox:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "negocios": {
+      "name": "negocios",
+      "type": "app",
+      "data": {
+        "name": "negocios",
+        "root": "apps/negocios",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "sigmafox",
+        "sourceRoot": "apps/negocios/src",
+        "tags": [],
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/negocios",
+              "index": "apps/negocios/src/index.html",
+              "main": "apps/negocios/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "apps/negocios/tsconfig.app.json",
+              "assets": [
+                "apps/negocios/src/favicon.ico",
+                "apps/negocios/src/assets"
+              ],
+              "styles": [
+                "apps/negocios/src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "negocios:build:production"
+              },
+              "development": {
+                "browserTarget": "negocios:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "negocios:build"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/negocios/**/*.ts",
+                "apps/negocios/**/*.html"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/negocios/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "negocios:build"
             },
             "configurations": {}
           }
@@ -16634,23 +16634,6 @@
         "type": "static"
       }
     ],
-    "e-questrian-e2e": [
-      {
-        "source": "e-questrian-e2e",
-        "target": "e-questrian",
-        "type": "implicit"
-      },
-      {
-        "source": "e-questrian-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian-e2e",
-        "target": "npm:@nx/cypress",
-        "type": "static"
-      }
-    ],
     "eleven10ths-e2e": [
       {
         "source": "eleven10ths-e2e",
@@ -16676,6 +16659,23 @@
       },
       {
         "source": "assemble-ez-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
+    "e-questrian-e2e": [
+      {
+        "source": "e-questrian-e2e",
+        "target": "e-questrian",
+        "type": "implicit"
+      },
+      {
+        "source": "e-questrian-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
@@ -16754,23 +16754,6 @@
         "type": "static"
       }
     ],
-    "negocios-e2e": [
-      {
-        "source": "negocios-e2e",
-        "target": "negocios",
-        "type": "implicit"
-      },
-      {
-        "source": "negocios-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "negocios-e2e",
-        "target": "npm:@nx/cypress",
-        "type": "static"
-      }
-    ],
     "sigmafox-e2e": [
       {
         "source": "sigmafox-e2e",
@@ -16788,60 +16771,37 @@
         "type": "static"
       }
     ],
-    "e-questrian": [
+    "negocios-e2e": [
       {
-        "source": "e-questrian",
-        "target": "npm:@angular/core",
+        "source": "negocios-e2e",
+        "target": "negocios",
+        "type": "implicit"
+      },
+      {
+        "source": "negocios-e2e",
+        "target": "npm:cypress",
         "type": "static"
       },
       {
-        "source": "e-questrian",
-        "target": "npm:@angular/router",
+        "source": "negocios-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
+    "lucky21-e2e": [
+      {
+        "source": "lucky21-e2e",
+        "target": "lucky21",
+        "type": "implicit"
+      },
+      {
+        "source": "lucky21-e2e",
+        "target": "npm:cypress",
         "type": "static"
       },
       {
-        "source": "e-questrian",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/fire",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "modals",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:zone.js",
+        "source": "lucky21-e2e",
+        "target": "npm:@nx/cypress",
         "type": "static"
       }
     ],
@@ -16889,23 +16849,6 @@
       {
         "source": "eleven10ths",
         "target": "npm:zone.js",
-        "type": "static"
-      }
-    ],
-    "lucky21-e2e": [
-      {
-        "source": "lucky21-e2e",
-        "target": "lucky21",
-        "type": "implicit"
-      },
-      {
-        "source": "lucky21-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "lucky21-e2e",
-        "target": "npm:@nx/cypress",
         "type": "static"
       }
     ],
@@ -16962,6 +16905,63 @@
       },
       {
         "source": "assemble-ez",
+        "target": "npm:zone.js",
+        "type": "static"
+      }
+    ],
+    "e-questrian": [
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/fire",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "modals",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
         "target": "npm:zone.js",
         "type": "static"
       }
@@ -17033,6 +17033,48 @@
         "type": "static"
       }
     ],
+    "sigmafox": [
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:zone.js",
+        "type": "static"
+      }
+    ],
     "negocios": [
       {
         "source": "negocios",
@@ -17096,48 +17138,6 @@
       },
       {
         "source": "negocios",
-        "target": "npm:zone.js",
-        "type": "static"
-      }
-    ],
-    "sigmafox": [
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
         "target": "npm:zone.js",
         "type": "static"
       }
