@@ -252,7 +252,7 @@ export class AppointmentModal implements OnInit {
   private setOptions(): void {
     this.startTimeOptions = this.dateTimeService.appointmentStartTimeOptions;
     this.durationTimeOptions = this.dateTimeService.appointmentDurationOptions;
-    this.clients = this.clientService.clients;
+    this.clients = this.clientService.clientsOnFile;
   }
 
   private setFormForNew() {

@@ -32,7 +32,7 @@ export class ClientDetailsModal implements OnInit {
   displayTime = '';
 
   get clients() {
-    return this.clientService.clients;
+    return this.clientService.clientsOnFile;
   }
 
   constructor(private clientService: ClientsService) {}

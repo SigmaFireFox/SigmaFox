@@ -27,8 +27,9 @@ export class ClientsPage {
 
   viewStateEnum = ViewState;
   currentViewState = ViewState.MAIN;
-  clients = this.clientService.clients;
+  clients = this.clientService.clientsOnFile;
   currentClient: ClientDetail = {} as ClientDetail;
+  currentClientID = 0;
 
   constructor(private clientService: ClientsService) {}
 
@@ -42,18 +43,27 @@ export class ClientsPage {
   }
 
   viewClient(clientID: number) {
-    this.clients = this.clientService.clients;
+    this.currentClientID = clientID;
+    this.clients = this.clientService.clientsOnFile;
     this.currentClient = this.clients[clientID];
     this.currentViewState = ViewState.CLIENT_DETAIL;
   }
 
   addClient(client: ClientDetail) {
     this.clientService.addClient(client);
-    this.clients = this.clientService.clients;
+    this.clients = this.clientService.clientsOnFile;
   }
 
-  editClient(newClient: ClientDetail) {
-    this.clientService.editClient(this.currentClient, newClient);
-    this.clients = this.clientService.clients;
+  editClient(updatedClientDetails: ClientDetail) {
+    this.clientService.editClient(this.currentClientID, updatedClientDetails);
+    this.clients = this.clientService.clientsOnFile;
+  }
+
+  removeClient() {
+    const updatedClientDetails = this.currentClient;
+    updatedClientDetails.voided = true;
+    this.clientListPageConfig.items[this.currentClientID].voided = true;
+    this.editClient(updatedClientDetails);
+    this.currentViewState = ViewState.VIEW;
   }
 }

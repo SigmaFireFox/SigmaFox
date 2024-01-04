@@ -53,7 +53,7 @@ export class InvoicesService {
   }
 
   get clients(): Clients {
-    return this.clientsService.clients;
+    return this.clientsService.clientsOnFile;
   }
 
   constructor(

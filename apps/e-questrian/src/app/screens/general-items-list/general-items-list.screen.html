@@ -14,15 +14,16 @@
 
   <!-- Details -->
   <div
-    class="general-item-line"
     *ngFor="let generalItem of listConfig.items | keyvalue"
     (click)="onItemClicked(generalItem.key)"
   >
-    <div
-      [ngStyle]="{width: field.widthPerc}"
-      *ngFor="let field of generalItem.value"
-    >
-      <div>{{field.content}}</div>
+    <div class="general-item-line" *ngIf="!generalItem.value.voided">
+      <div
+        [ngStyle]="{width: field.widthPerc}"
+        *ngFor="let field of generalItem.value.listedDetails  "
+      >
+        <div>{{field.content}}</div>
+      </div>
     </div>
   </div>
 </div>

@@ -8,4 +8,5 @@ export interface ClientDetail {
   lastName: string;
   email: string;
   telephoneNumber: string;
+  voided: boolean;
 }

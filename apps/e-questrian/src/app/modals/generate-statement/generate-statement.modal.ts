@@ -41,7 +41,7 @@ export class GenerateStatementModal {
   isGenerate = false;
 
   get clients(): Record<string, string> {
-    const clientsOnFile: Clients = this.clientService.clients;
+    const clientsOnFile: Clients = this.clientService.clientsOnFile;
     const _clients: Record<string, string> = {};
     Object.keys(clientsOnFile).forEach((key) => {
       _clients[key] = clientsOnFile[parseInt(key)].displayName;

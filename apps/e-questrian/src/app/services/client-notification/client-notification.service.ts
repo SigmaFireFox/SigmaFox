@@ -16,7 +16,7 @@ export class ClientNotificationService {
   options: HttpHeaders | undefined;
 
   get clients(): Clients {
-    return this.clientsService.clients;
+    return this.clientsService.clientsOnFile;
   }
 
   constructor(

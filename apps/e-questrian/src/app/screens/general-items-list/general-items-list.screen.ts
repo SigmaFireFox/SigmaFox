@@ -5,6 +5,7 @@ import {
   GeneralItemsListPageConfig,
   PageConfig,
   PageColumns,
+  GeneralItemDetail,
 } from '../../interfaces/common-page-configs.interface';
 
 @Component({
@@ -25,6 +26,7 @@ export class GeneralItemsListScreen implements OnInit {
   ngOnInit() {
     this.setPageConfig();
     this.setListConfig();
+    console.log(this.config.items);
   }
 
   onItemClicked(itemKey: string) {
@@ -39,6 +41,7 @@ export class GeneralItemsListScreen implements OnInit {
   }
 
   private setListConfig() {
+    // Determine the column widths
     let totalFactor = 0;
     this.config.columns?.forEach((column) => {
       totalFactor = totalFactor + column.widthFactor;
@@ -54,15 +57,24 @@ export class GeneralItemsListScreen implements OnInit {
       });
     });
 
+    // Determine the list of items to be displayed
     if (this.config.items) {
       Object.keys(this.config.items).forEach((itemKey) => {
-        this.listConfig.items[parseInt(itemKey)] = [];
-        this.config.items[parseInt(itemKey)].forEach((field, fieldIndex) => {
-          this.listConfig.items[parseInt(itemKey)].push({
-            content: field.content,
-            widthPerc: this.listConfig.columns[fieldIndex].widthPerc,
-          });
-        });
+        this.listConfig.items[parseInt(itemKey)] = {
+          // Set empty listedDetails
+          listedDetails: [],
+          // Set void status
+          voided: this.config.items[parseInt(itemKey)].voided,
+        } as GeneralItemDetail;
+        // Add listedDetails
+        this.config.items[parseInt(itemKey)].listedDetails.forEach(
+          (field, fieldIndex) => {
+            this.listConfig.items[parseInt(itemKey)].listedDetails.push({
+              content: field.content,
+              widthPerc: this.listConfig.columns[fieldIndex].widthPerc,
+            });
+          }
+        );
       });
     }
   }

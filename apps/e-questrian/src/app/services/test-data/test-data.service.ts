@@ -54,6 +54,7 @@ export class TestDataService {
         lastName: 'Novello',
         email: 'cedric@telkomsa.co.za',
         telephoneNumber: '072 462 4685',
+        voided: false,
       },
       2: {
         displayName: 'Jill Henry',
@@ -61,6 +62,7 @@ export class TestDataService {
         lastName: 'Henry',
         email: 'jill@gmail.com',
         telephoneNumber: '072 879 5421',
+        voided: false,
       },
       3: {
         displayName: 'Kenny Timson',
@@ -68,6 +70,7 @@ export class TestDataService {
         lastName: 'Timson',
         email: 'kenny@yahoo.com',
         telephoneNumber: '083 357 2205',
+        voided: false,
       },
       4: {
         displayName: 'Nurse Ash',
@@ -75,6 +78,7 @@ export class TestDataService {
         lastName: 'van der Merwe',
         email: 'nurseash@life.co.za',
         telephoneNumber: '066 565 0000',
+        voided: false,
       },
       5: {
         displayName: 'Jess van Wyk',
@@ -82,6 +86,7 @@ export class TestDataService {
         lastName: 'van Wyk',
         email: 'vwykjess@gmail.com',
         telephoneNumber: '083 579 4251',
+        voided: false,
       },
       6: {
         displayName: 'Ruben Ferreira',
@@ -89,6 +94,7 @@ export class TestDataService {
         lastName: 'Ferreira',
         email: 'rubenf85@gmail.com',
         telephoneNumber: '072 761 0423',
+        voided: false,
       },
     };
   }

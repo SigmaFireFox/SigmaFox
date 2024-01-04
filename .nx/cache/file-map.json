@@ -5175,11 +5175,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/clients.interface.ts",
-        "hash": "16797685419872132346"
+        "hash": "13931177394271294147"
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/common-page-configs.interface.ts",
-        "hash": "13646829833925510685"
+        "hash": "3534983527919658245"
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/credit-notes.interface.ts",
@@ -5219,7 +5219,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts",
-        "hash": "9103453917537214515",
+        "hash": "1640819053922369966",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -5245,7 +5245,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/client-details/client-details.modal.ts",
-        "hash": "5712234355105968344",
+        "hash": "15831046200385904173",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/forms"
@@ -5271,7 +5271,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts",
-        "hash": "154283766153124322",
+        "hash": "16113332017969805665",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/forms"
@@ -5299,7 +5299,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts",
-        "hash": "1658523483785218201",
+        "hash": "8054592016979569825",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/forms"
@@ -5328,7 +5328,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/payments/payments.modal.ts",
-        "hash": "7790101085041231994",
+        "hash": "7924030990286303824",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/forms"
@@ -5390,7 +5390,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/clients/clients.page.html",
-        "hash": "17713240488849441223"
+        "hash": "249668837148118801"
       },
       {
         "file": "apps/e-questrian/src/app/pages/clients/clients.page.scss",
@@ -5412,7 +5412,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/clients/clients.page.ts",
-        "hash": "17037252810618563630",
+        "hash": "2470075671080009569",
         "deps": [
           "npm:@angular/core"
         ]
@@ -5570,7 +5570,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.html",
-        "hash": "13832031591649710094"
+        "hash": "14579596827510047228"
       },
       {
         "file": "apps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.scss",
@@ -5587,7 +5587,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.ts",
-        "hash": "13162357732692596906",
+        "hash": "308890172702521761",
         "deps": [
           "npm:@angular/core"
         ]
@@ -5750,7 +5750,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/client-notification/client-notification.service.ts",
-        "hash": "16600540725467845862",
+        "hash": "12898312281556487852",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -5767,7 +5767,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/clients/clients.service.ts",
-        "hash": "6285263035140261514",
+        "hash": "11331309466828472358",
         "deps": [
           "npm:@angular/core"
         ]
@@ -5859,7 +5859,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/invoices/invoices.service.ts",
-        "hash": "16601004066067442474",
+        "hash": "18242632347077505676",
         "deps": [
           "npm:@angular/core"
         ]
@@ -5911,7 +5911,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/test-data/test-data.service.ts",
-        "hash": "14374617029455370854",
+        "hash": "3878251618967839989",
         "deps": [
           "npm:@angular/core"
         ]

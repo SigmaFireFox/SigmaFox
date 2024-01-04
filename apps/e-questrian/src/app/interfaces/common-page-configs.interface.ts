@@ -86,7 +86,12 @@ export interface PageColumns {
 }
 
 export interface GeneralItem {
-  [refID: number]: GeneralItemField[];
+  [refID: number]: GeneralItemDetail;
+}
+
+export interface GeneralItemDetail {
+  listedDetails: GeneralItemField[];
+  voided: boolean;
 }
 
 export interface GeneralItemField {
