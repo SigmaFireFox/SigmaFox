@@ -35,6 +35,7 @@ export interface FinancialDocItem {
   detail: string;
   amount: number;
   docType: FinancialDocType;
+  voided: boolean;
 }
 
 export interface DocView extends PageConfig {

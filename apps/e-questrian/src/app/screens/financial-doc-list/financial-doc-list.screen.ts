@@ -21,6 +21,7 @@ export class FinancialDocListScreen implements OnInit {
 
   financialDocType = FinancialDocType;
   generalConfig = {} as PageConfig;
+  isViewingVoidedItems = false;
 
   constructor(public router: Router) {}
 

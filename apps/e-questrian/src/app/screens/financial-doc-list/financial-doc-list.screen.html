@@ -26,41 +26,43 @@
     *ngFor="let item of config.items; let i = index"
     (click)="onItemClicked(item)"
   >
-    <div
-      class="hr-container"
-      *ngIf="i === config.items.length - 1 && config.financialDocType === financialDocType.STATEMENT"
-    >
-      <hr />
-    </div>
-    <div
-      [ngClass]="
+    <div *ngIf="isViewingVoidedItems || !item.voided">
+      <div
+        class="hr-container"
+        *ngIf="i === config.items.length - 1 && config.financialDocType === financialDocType.STATEMENT"
+      >
+        <hr />
+      </div>
+      <div
+        [ngClass]="
         (i === 0 || i === config.items.length - 1) && config.financialDocType === financialDocType.STATEMENT
           ? 'emphasis-line'
           : 'general-line'
       "
-    >
-      <div
-        *ngIf="config.financialDocType === financialDocType.LIST"
-        class="number-column"
       >
-        {{ item.number }}
+        <div
+          *ngIf="config.financialDocType === financialDocType.LIST"
+          class="number-column"
+        >
+          {{ item.number }}
+        </div>
+        <div class="date-column">{{ item.date | date: "dd/MM/yyyy" }}</div>
+        <div class="detail-column">{{ item.detail }}</div>
+        <div
+          *ngIf="config.financialDocType === financialDocType.STATEMENT"
+          class="number-column"
+        >
+          {{ item.number !== 0 ? item.number : "" }}
+        </div>
+        <div class="amount-column">{{ item.amount }}</div>
       </div>
-      <div class="date-column">{{ item.date | date: "dd/MM/yyyy" }}</div>
-      <div class="detail-column">{{ item.detail }}</div>
       <div
-        *ngIf="config.financialDocType === financialDocType.STATEMENT"
-        class="number-column"
+        class="hr-container"
+        *ngIf="i === config.items.length - 1 && config.financialDocType === financialDocType.STATEMENT"
       >
-        {{ item.number !== 0 ? item.number : "" }}
+        <hr />
+        <hr />
       </div>
-      <div class="amount-column">{{ item.amount }}</div>
-    </div>
-    <div
-      class="hr-container"
-      *ngIf="i === config.items.length - 1 && config.financialDocType === financialDocType.STATEMENT"
-    >
-      <hr />
-      <hr />
     </div>
   </div>
 </div>

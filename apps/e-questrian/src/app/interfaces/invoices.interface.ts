@@ -6,4 +6,5 @@ export interface InvoiceDetails {
   clientID: number;
   date: Date;
   appointments: number[];
+  voided: boolean;
 }

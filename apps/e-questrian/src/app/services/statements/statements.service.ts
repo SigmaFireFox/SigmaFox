@@ -79,6 +79,7 @@ export class StatementsService {
           detail: 'Invoice',
           amount: invoice.appointments.length * 250,
           docType: FinancialDocType.INVOICE,
+          voided: invoice.voided,
         };
         statementBasics.transactions.push(docToAdd);
       }
@@ -98,6 +99,7 @@ export class StatementsService {
           detail: 'Payment',
           amount: -payment.amount as number,
           docType: FinancialDocType.PAYMENT,
+          voided: payment.voided,
         };
         statementBasics.transactions.push(docToAdd);
       }
@@ -149,6 +151,7 @@ export class StatementsService {
       detail: 'Opening balance',
       amount: statementBasics.openingBalance,
       docType: FinancialDocType.BALANCE,
+      voided: false,
     });
 
     // Add transaction for display to statement
@@ -163,6 +166,7 @@ export class StatementsService {
       detail: 'Closing balance',
       amount: statementBasics.closingBalance,
       docType: FinancialDocType.BALANCE,
+      voided: false,
     });
     return statement;
   }

@@ -59,9 +59,9 @@ export class FinancesPage {
 
   invoiceDocViewConfig = {} as DocView;
   currentPayment = {} as PaymentDetails;
+  currentPaymentID = 0;
 
   private currentInvoiceID = 0;
-  private currentPaymentID = 0;
 
   constructor(
     private invoiceService: InvoicesService,
@@ -79,6 +79,7 @@ export class FinancesPage {
   }
 
   onPaymentClicked(document: { docType: FinancialDocType; docNum: number }) {
+    this.currentPaymentID = document.docNum;
     const payments = this.paymentsService.paymentsOnFile;
     if (!payments) return;
     this.currentPayment = payments[document.docNum];
@@ -105,8 +106,9 @@ export class FinancesPage {
     this.paymentsService.editPayment(this.currentPaymentID, paymentDetails);
   }
 
-  paymentVoided() {
-    this.paymentsService.voidPayment(this.currentPaymentID);
+  paymentVoided(paymentID: number) {
+    this.paymentsService.voidPayment(paymentID);
+    this.getPaymentDocForDisplay();
     this.switchViewState(ViewState.VIEW_PAYMENTS);
   }
 

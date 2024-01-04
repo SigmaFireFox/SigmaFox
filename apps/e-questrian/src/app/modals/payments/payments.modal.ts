@@ -14,10 +14,11 @@ import { ClientsService } from '../../services/clients/clients.service';
 })
 export class PaymentsModal implements OnInit {
   @Input() currentPayment = {} as PaymentDetails;
+  @Input() paymentID = 0;
   @Output() closed = new EventEmitter<void>();
   @Output() newPayment = new EventEmitter<PaymentDetails>();
   @Output() editedPayment = new EventEmitter<PaymentDetails>();
-  @Output() voidPayment = new EventEmitter<void>();
+  @Output() voidPayment = new EventEmitter<number>();
 
   paymentForm = new UntypedFormGroup({
     date: new UntypedFormControl(new Date().setHours(0, 0, 0, 0)),
@@ -50,7 +51,7 @@ export class PaymentsModal implements OnInit {
     this.parseKeysToInt();
 
     if (this.isVoidPayment) {
-      this.voidPayment.emit();
+      this.voidPayment.emit(this.paymentID);
       return;
     }
 
@@ -77,7 +78,7 @@ export class PaymentsModal implements OnInit {
     this.closed.emit();
   }
 
-  onCancelAppointmentClick() {
+  onVoidPaymentClick() {
     this.isVoidPayment = true;
   }
 

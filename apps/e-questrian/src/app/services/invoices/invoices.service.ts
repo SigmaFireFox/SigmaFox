@@ -78,6 +78,7 @@ export class InvoicesService {
           ].client?.displayName as string) || '',
         amount: this.currentInvoices[number].appointments.length * 250,
         docType: FinancialDocType.INVOICE,
+        voided: this.currentInvoices[number].voided,
       });
     });
     return invoiceDocItems;
@@ -292,6 +293,7 @@ export class InvoicesService {
         clientID: clientID,
         date: new Date(),
         appointments: appointmentsToInvoice[clientID],
+        voided: false,
       };
 
       appointmentsToInvoice[clientID].forEach((appointmentID) => {

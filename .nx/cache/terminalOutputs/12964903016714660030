@@ -15,3 +15,1180 @@
 [37m[39m
 [37m[39m
 [37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.91 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:11:55.588Z[39m[37m[22m - Hash: [1m[37mcf2786a04b31a54b[39m[37m[22m - Time: [1m[37m2196[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/payments/payments.modal.html[0m:[93m58[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'onCancelAppointmentClick' does not exist on type 'PaymentsModal'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m58[0m         (click)="onCancelAppointmentClick()"[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/payments/payments.modal.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './payments.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component PaymentsModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:11:56.087Z[39m[37m[22m - Hash: [1m[37ma03074755a3ecd9a[39m[37m[22m - Time: [1m[37m317[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:12:48.335Z[39m[37m[22m - Hash: [1m[37ma03074755a3ecd9a[39m[37m[22m - Time: [1m[37m475[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:12:54.702Z[39m[37m[22m - Hash: [1m[37m30e0e35538a51059[39m[37m[22m - Time: [1m[37m367[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.93 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:13:33.285Z[39m[37m[22m - Hash: [1m[37m00520ead08cf662e[39m[37m[22m - Time: [1m[37m361[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.96 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:14:36.039Z[39m[37m[22m - Hash: [1m[37m90c599d4237b72c8[39m[37m[22m - Time: [1m[37m380[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m424.97 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:14:40.726Z[39m[37m[22m - Hash: [1m[37m99b6c1d456f14591[39m[37m[22m - Time: [1m[37m274[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.02 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:15:11.345Z[39m[37m[22m - Hash: [1m[37m3f92c25ea51be5ef[39m[37m[22m - Time: [1m[37m280[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:17:28.886Z[39m[37m[22m - Hash: [1m[37mf543153676b1c579[39m[37m[22m - Time: [1m[37m576[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m22[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided()"[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:17:36.551Z[39m[37m[22m - Hash: [1m[37m1a9f786ce9743e8a[39m[37m[22m - Time: [1m[37m257[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m36[0m - [91merror[0m[90m TS2345: [0mArgument of type 'void' is not assignable to parameter of type 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided($event)"[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:15.453Z[39m[37m[22m - Hash: [1m[37m718c0bbf8266b9b1[39m[37m[22m - Time: [1m[37m551[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m36[0m - [91merror[0m[90m TS2345: [0mArgument of type 'void' is not assignable to parameter of type 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided($event)"[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:16.090Z[39m[37m[22m - Hash: [1m[37m718c0bbf8266b9b1[39m[37m[22m - Time: [1m[37m283[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m36[0m - [91merror[0m[90m TS2345: [0mArgument of type 'void' is not assignable to parameter of type 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided($event)"[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.08 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:29.321Z[39m[37m[22m - Hash: [1m[37mfa5599d16f74f0dd[39m[37m[22m - Time: [1m[37m598[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m36[0m - [91merror[0m[90m TS2345: [0mArgument of type 'void' is not assignable to parameter of type 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided($event)"[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.08 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:37.227Z[39m[37m[22m - Hash: [1m[37m70dc76f3e77f2ee4[39m[37m[22m - Time: [1m[37m372[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m91[0m:[93m36[0m - [91merror[0m[90m TS2345: [0mArgument of type 'void' is not assignable to parameter of type 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m       (voidPayment)="paymentVoided($event)"[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:50.137Z[39m[37m[22m - Hash: [1m[37ma93dc36f5085c799[39m[37m[22m - Time: [1m[37m343[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/payments/payments.modal.ts[0m:[93m54[0m:[93m29[0m - [91merror[0m[90m TS2663: [0mCannot find name 'paymentID'. Did you mean the instance member 'this.paymentID'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m54[0m       this.voidPayment.emit(paymentID);[39m[22m
+[1m[31m[7m  [0m [91m                            ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:18:55.016Z[39m[37m[22m - Hash: [1m[37m2e8150a260dee1cb[39m[37m[22m - Time: [1m[37m310[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:19:11.895Z[39m[37m[22m - Hash: [1m[37mf33d34f909d086ab[39m[37m[22m - Time: [1m[37m362[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m88[0m:[93m20[0m - [91merror[0m[90m TS2339: [0mProperty 'curr' does not exist on type 'FinancesPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m88[0m       [paymentID]="curr"[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:19:31.537Z[39m[37m[22m - Hash: [1m[37m41c381f9ad4f73a3[39m[37m[22m - Time: [1m[37m316[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m88[0m:[93m20[0m - [91merror[0m[90m TS2341: [0mProperty 'currentPaymentID' is private and only accessible within class 'FinancesPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m88[0m       [paymentID]="currentPaymentID"[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.19 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:20:06.651Z[39m[37m[22m - Hash: [1m[37m96326a4219238edf[39m[37m[22m - Time: [1m[37m517[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:27:11.542Z[39m[37m[22m - Hash: [1m[37m0788d922d18b3bcc[39m[37m[22m - Time: [1m[37m514[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:27:40.844Z[39m[37m[22m - Hash: [1m[37m6b124ea56875aa22[39m[37m[22m - Time: [1m[37m312[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:27:58.830Z[39m[37m[22m - Hash: [1m[37m0ee8f1cb9fecf3ed[39m[37m[22m - Time: [1m[37m326[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:29:00.906Z[39m[37m[22m - Hash: [1m[37m1e038227ae2bb212[39m[37m[22m - Time: [1m[37m832[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m95[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType[39m[22m[1m[31m.PAYMENT; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m95[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m146[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m146[0m     statement.push({[39m[22m
+[1m[31m[7m   [0m [91m                   ~[0m[39m[22m
+[1m[31m[7m147[0m       number: 0,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m151[0m       docType: FinancialDocType.BALANCE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m152[0m     });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m160[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m160[0m     statement.push({[39m[22m
+[1m[31m[7m   [0m [91m                   ~[0m[39m[22m
+[1m[31m[7m161[39m[22m[1m[31m[0m       number: 0,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m165[0m       docType: FinancialDocType.BALANCE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m166[0m     });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:29:19.594Z[39m[37m[22m - Hash: [1m[37me32530aca480f551[39m[37m[22m - Time: [1m[37m340[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m95[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType[39m[22m[1m[31m.PAYMENT; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m95[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m146[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m146[0m     statement.push({[39m[22m
+[1m[31m[7m   [0m [91m                   ~[0m[39m[22m
+[1m[31m[7m147[0m       number: 0,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m151[0m       docType: FinancialDocType.BALANCE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m152[0m     });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m160[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.BALANCE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m160[0m     statement.push({[39m[22m
+[1m[31m[7m   [0m [91m                   ~[0m[39m[22m
+[1m[31m[7m161[39m[22m[1m[31m[0m       number: 0,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m165[0m       docType: FinancialDocType.BALANCE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m166[0m     });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:29:51.345Z[39m[37m[22m - Hash: [1m[37m48a0f49aa130d3e7[39m[37m[22m - Time: [1m[37m471[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m95[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType[39m[22m[1m[31m.PAYMENT; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m95[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:30:17.943Z[39m[37m[22m - Hash: [1m[37mdfa33fa6dbec7f8d[39m[37m[22m - Time: [1m[37m236[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:30:58.462Z[39m[37m[22m - Hash: [1m[37mc5c5659664776f28[39m[37m[22m - Time: [1m[37m534[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m291[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m291[0m       this.currentInvoices[nextInvoiceNumber] = {[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in ty[39m[22m[1m[31mpe 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m193[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m193[0m       1: { clientID: 3, date: this.yesterday, appointments: [1] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m194[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m194[0m       2: { clientID: 4, date: this.yesterday, appointments: [2, 3] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type[39m[22m[1m[31m comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:31:00.106Z[39m[37m[22m - Hash: [1m[37mc5c5659664776f28[39m[37m[22m - Time: [1m[37m201[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m291[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m291[0m       this.currentInvoices[nextInvoiceNumber] = {[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/statements/statements.service.ts[0m:[93m76[0m:[93m15[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in ty[39m[22m[1m[31mpe 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m76[0m         const docToAdd: FinancialDocItem = {[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m193[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m193[0m       1: { clientID: 3, date: this.yesterday, appointments: [1] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m194[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m194[0m       2: { clientID: 4, date: this.yesterday, appointments: [2, 3] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type[39m[22m[1m[31m comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:31:02.228Z[39m[37m[22m - Hash: [1m[37m7c9972ec07088b4e[39m[37m[22m - Time: [1m[37m249[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m291[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m291[0m       this.currentInvoices[nextInvoiceNumber] = {[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m193[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m193[0m       1: [39m[22m[1m[31m{ clientID: 3, date: this.yesterday, appointments: [1] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/test-data/test-data.service.ts[0m:[93m194[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m194[0m       2: { clientID: 4, date: this.yesterday, appointments: [2, 3] },[39m[22m
+[1m[31m[7m   [0m [91m      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   [invoiceID: number]: InvoiceDetails;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from this index signature.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.20 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:31:27.219Z[39m[37m[22m - Hash: [1m[37md10b31aad1f57f2e[39m[37m[22m - Time: [1m[37m254[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m291[0m:[93m7[0m - [91merror[0m[90m TS2741: [0mProperty 'voided' is missing in type '{ clientID: number; date: Date; appointments: number[]; }' but required in type 'InvoiceDetails'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m291[0m       this.currentInvoices[nextInvoiceNumber] = {[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/invoices.interface.ts[0m:[93m9[0m:[93m3[0m[39m[22m
+[1m[31m    [7m9[0m   voided: boolean;[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:31:42.564Z[39m[37m[22m - Hash: [1m[37m0db6430628e215bc[39m[37m[22m - Time: [1m[37m356[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/invoices/invoices.service.ts[0m:[93m72[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' is not assignable to parameter of type 'FinancialDocItem'.[39m[22m
+[1m[31m  Property 'voided' is missing in type '{ number: number; date: Date; detail: string; amount: number; docType: FinancialDocType.INVOICE; }' but required in type 'FinancialDocItem'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 72[0m       invoiceDocItems.push({[39m[22m
+[1m[31m[7m   [0m [91m                           ~[0m[39m[22m
+[1m[31m[7m 73[0m         number: number,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 80[0m         docType: FinancialDocType.INVOICE,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 81[0m       });[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/interfaces/common-page-configs.interface.ts[0m:[93m38[0m:[93m3[0m[39m[22m
+[1m[31m    [7m38[0m   voided: boolean;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'voided' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:32:12.618Z[39m[37m[22m - Hash: [1m[37m56420dcead270b35[39m[37m[22m - Time: [1m[37m340[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:33:38.363Z[39m[37m[22m - Hash: [1m[37md165baa0b908ac2b[39m[37m[22m - Time: [1m[37m428[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:43:56.246Z[39m[37m[22m - Hash: [1m[37m544a1607c8c9351f[39m[37m[22m - Time: [1m[37m478[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:44:10.764Z[39m[37m[22m - Hash: [1m[37m05e70ef742233216[39m[37m[22m - Time: [1m[37m351[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:44:20.078Z[39m[37m[22m - Hash: [1m[37mf7181c764984b950[39m[37m[22m - Time: [1m[37m469[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:45:08.535Z[39m[37m[22m - Hash: [1m[37m41dae9e46bc04ca7[39m[37m[22m - Time: [1m[37m372[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:45:21.436Z[39m[37m[22m - Hash: [1m[37mf7181c764984b950[39m[37m[22m - Time: [1m[37m363[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:46:09.115Z[39m[37m[22m - Hash: [1m[37mb269d4a456b163ce[39m[37m[22m - Time: [1m[37m501[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:46:47.569Z[39m[37m[22m - Hash: [1m[37m001a036f0165a6a7[39m[37m[22m - Time: [1m[37m401[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:46:51.081Z[39m[37m[22m - Hash: [1m[37m5d763cf5c7f5d0a4[39m[37m[22m - Time: [1m[37m329[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:47:20.717Z[39m[37m[22m - Hash: [1m[37maa76de21b5dc1055[39m[37m[22m - Time: [1m[37m403[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:47:21.996Z[39m[37m[22m - Hash: [1m[37mfcbfceee2de944d6[39m[37m[22m - Time: [1m[37m339[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:48:42.892Z[39m[37m[22m - Hash: [1m[37me7b4aec6cd5ee726[39m[37m[22m - Time: [1m[37m342[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m111[0m:[93m34[0m - [91merror[0m[90m TS2554: [0mExpected 0 arguments, but got 1.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m111[0m     this.getPaymentDocForDisplay(0);[39m[22m
+[1m[31m[7m   [0m [91m                                 ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:48:43.699Z[39m[37m[22m - Hash: [1m[37mbb5db1d0330d2057[39m[37m[22m - Time: [1m[37m326[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:49:17.287Z[39m[37m[22m - Hash: [1m[37mb39c40944537b946[39m[37m[22m - Time: [1m[37m455[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:50:02.741Z[39m[37m[22m - Hash: [1m[37m2b21d1db0df47ade[39m[37m[22m - Time: [1m[37m301[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/services/payments/payments.service.ts[0m:[93m57[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'PaymentDetails' is not assignable to type 'boolean'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m57[0m       finDoc.voided = this.currentPayments[parseInt(key)];[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:50:07.824Z[39m[37m[22m - Hash: [1m[37m55060405e42be682[39m[37m[22m - Time: [1m[37m273[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:50:48.261Z[39m[37m[22m - Hash: [1m[37m2738ea3d743133dc[39m[37m[22m - Time: [1m[37m304[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m426.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-04T13:51:06.000Z[39m[37m[22m - Hash: [1m[37m83758f2ee4703536[39m[37m[22m - Time: [1m[37m401[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

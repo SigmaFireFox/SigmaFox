@@ -16,7 +16,9 @@ export class PaymentsService {
     return JSON.parse(paymentString || '{}');
   }
 
-  constructor(private clientNotificationService: ClientNotificationService) {}
+  constructor(private clientNotificationService: ClientNotificationService) {
+    this.currentPayments = this.paymentsOnFile;
+  }
 
   addPayment(paymentDetails: PaymentDetails) {
     this.currentPayments = this.paymentsOnFile;
@@ -33,22 +35,23 @@ export class PaymentsService {
   }
 
   voidPayment(paymentID: number) {
-    if (this.paymentsOnFile[paymentID]) {
-      this.paymentsOnFile[paymentID].voided = true;
+    if (this.currentPayments[paymentID]) {
+      this.currentPayments[paymentID].voided = true;
     }
-    localStorage.setItem('payments', JSON.stringify(this.paymentsOnFile));
+    localStorage.setItem('payments', JSON.stringify(this.currentPayments));
   }
 
   setPaymentDocForDisplay(): FinancialDocItem[] {
     this.getClients();
     const payments: FinancialDocItem[] = [];
-    Object.keys(this.paymentsOnFile).forEach((key) => {
+    Object.keys(this.currentPayments).forEach((key) => {
       const finDoc = {} as FinancialDocItem;
       finDoc.number = parseInt(key);
-      finDoc.amount = this.paymentsOnFile[parseInt(key)].amount as number;
-      finDoc.date = this.paymentsOnFile[parseInt(key)].date as Date;
-      const clientNum = this.paymentsOnFile[parseInt(key)].client;
+      finDoc.amount = this.currentPayments[parseInt(key)].amount as number;
+      finDoc.date = this.currentPayments[parseInt(key)].date as Date;
+      const clientNum = this.currentPayments[parseInt(key)].client;
       finDoc.detail = this.clients[clientNum]?.displayName;
+      finDoc.voided = this.currentPayments[parseInt(key)].voided;
       payments.push(finDoc);
     });
     return payments;

@@ -190,8 +190,18 @@ export class TestDataService {
 
   private setInvoices() {
     this.invoices = {
-      1: { clientID: 3, date: this.yesterday, appointments: [1] },
-      2: { clientID: 4, date: this.yesterday, appointments: [2, 3] },
+      1: {
+        clientID: 3,
+        date: this.yesterday,
+        appointments: [1],
+        voided: false,
+      },
+      2: {
+        clientID: 4,
+        date: this.yesterday,
+        appointments: [2, 3],
+        voided: false,
+      },
     };
   }
 

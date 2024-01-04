@@ -8,6 +8,6 @@ export interface PaymentDetails {
   date: Date;
   client: number;
   paymentType: PaymentType;
-  amount: Number;
+  amount: number;
   voided: boolean;
 }
