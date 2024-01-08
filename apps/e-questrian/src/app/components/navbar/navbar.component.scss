@@ -26,6 +26,16 @@
   font-weight: bold;
 }
 
+mat-icon:hover,
+.navbar-logo-container:hover {
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .navbar-menu-icon-container {
   display: none;
 }
@@ -44,6 +54,7 @@
 }
 
 @media only screen and (max-width: 450px) {
+
   .navbar-container,
   .navbar-button-container {
     flex-direction: column;
