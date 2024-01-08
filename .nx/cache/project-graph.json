@@ -438,14 +438,14 @@
         ]
       }
     },
-    "assemble-ez-e2e": {
-      "name": "assemble-ez-e2e",
+    "e-questrian-e2e": {
+      "name": "e-questrian-e2e",
       "type": "e2e",
       "data": {
-        "name": "assemble-ez-e2e",
-        "root": "apps/assemble-ez-e2e",
+        "name": "e-questrian-e2e",
+        "root": "apps/e-questrian-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/assemble-ez-e2e/src",
+        "sourceRoot": "apps/e-questrian-e2e/src",
         "projectType": "application",
         "targets": {
           "e2e": {
@@ -455,17 +455,16 @@
             ],
             "executor": "@nx/cypress:cypress",
             "options": {
-              "cypressConfig": "apps/assemble-ez-e2e/cypress.json",
-              "devServerTarget": "assemble-ez:serve:development",
-              "testingType": "e2e",
-              "tsConfig": "apps/assemble-ez-e2e/tsconfig.json"
+              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
+              "devServerTarget": "e-questrian:serve:development",
+              "testingType": "e2e"
             },
             "configurations": {
               "production": {
-                "devServerTarget": "assemble-ez:serve:production"
+                "devServerTarget": "e-questrian:serve:production"
               },
               "ci": {
-                "devServerTarget": "assemble-ez:serve-static"
+                "devServerTarget": "e-questrian:serve-static"
               }
             }
           },
@@ -481,7 +480,7 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/assemble-ez-e2e/**/*.{js,ts}"
+                "apps/e-questrian-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
@@ -489,7 +488,7 @@
         },
         "tags": [],
         "implicitDependencies": [
-          "assemble-ez"
+          "e-questrian"
         ]
       }
     },
@@ -547,14 +546,14 @@
         ]
       }
     },
-    "e-questrian-e2e": {
-      "name": "e-questrian-e2e",
+    "assemble-ez-e2e": {
+      "name": "assemble-ez-e2e",
       "type": "e2e",
       "data": {
-        "name": "e-questrian-e2e",
-        "root": "apps/e-questrian-e2e",
+        "name": "assemble-ez-e2e",
+        "root": "apps/assemble-ez-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/e-questrian-e2e/src",
+        "sourceRoot": "apps/assemble-ez-e2e/src",
         "projectType": "application",
         "targets": {
           "e2e": {
@@ -564,16 +563,17 @@
             ],
             "executor": "@nx/cypress:cypress",
             "options": {
-              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
-              "devServerTarget": "e-questrian:serve:development",
-              "testingType": "e2e"
+              "cypressConfig": "apps/assemble-ez-e2e/cypress.json",
+              "devServerTarget": "assemble-ez:serve:development",
+              "testingType": "e2e",
+              "tsConfig": "apps/assemble-ez-e2e/tsconfig.json"
             },
             "configurations": {
               "production": {
-                "devServerTarget": "e-questrian:serve:production"
+                "devServerTarget": "assemble-ez:serve:production"
               },
               "ci": {
-                "devServerTarget": "e-questrian:serve-static"
+                "devServerTarget": "assemble-ez:serve-static"
               }
             }
           },
@@ -589,7 +589,7 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/e-questrian-e2e/**/*.{js,ts}"
+                "apps/assemble-ez-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
@@ -597,7 +597,7 @@
         },
         "tags": [],
         "implicitDependencies": [
-          "e-questrian"
+          "assemble-ez"
         ]
       }
     },
@@ -793,60 +793,6 @@
         ]
       }
     },
-    "sigmafox-e2e": {
-      "name": "sigmafox-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "sigmafox-e2e",
-        "root": "apps/sigmafox-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/sigmafox-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/sigmafox-e2e/cypress.config.ts",
-              "devServerTarget": "sigmafox:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "sigmafox:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "sigmafox:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/sigmafox-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "sigmafox"
-        ]
-      }
-    },
     "negocios-e2e": {
       "name": "negocios-e2e",
       "type": "e2e",
@@ -901,14 +847,14 @@
         ]
       }
     },
-    "lucky21-e2e": {
-      "name": "lucky21-e2e",
+    "sigmafox-e2e": {
+      "name": "sigmafox-e2e",
       "type": "e2e",
       "data": {
-        "name": "lucky21-e2e",
-        "root": "apps/lucky21-e2e",
+        "name": "sigmafox-e2e",
+        "root": "apps/sigmafox-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/lucky21-e2e/src",
+        "sourceRoot": "apps/sigmafox-e2e/src",
         "projectType": "application",
         "targets": {
           "e2e": {
@@ -918,16 +864,16 @@
             ],
             "executor": "@nx/cypress:cypress",
             "options": {
-              "cypressConfig": "apps/lucky21-e2e/cypress.config.ts",
-              "devServerTarget": "lucky21:serve:development",
+              "cypressConfig": "apps/sigmafox-e2e/cypress.config.ts",
+              "devServerTarget": "sigmafox:serve:development",
               "testingType": "e2e"
             },
             "configurations": {
               "production": {
-                "devServerTarget": "lucky21:serve:production"
+                "devServerTarget": "sigmafox:serve:production"
               },
               "ci": {
-                "devServerTarget": "lucky21:serve-static"
+                "devServerTarget": "sigmafox:serve-static"
               }
             }
           },
@@ -943,7 +889,7 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/lucky21-e2e/**/*.{js,ts}"
+                "apps/sigmafox-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
@@ -951,8 +897,146 @@
         },
         "tags": [],
         "implicitDependencies": [
-          "lucky21"
+          "sigmafox"
         ]
+      }
+    },
+    "eleven10ths": {
+      "name": "eleven10ths",
+      "type": "app",
+      "data": {
+        "name": "eleven10ths",
+        "root": "apps/eleven10ths",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "sigmafox",
+        "sourceRoot": "apps/eleven10ths/src",
+        "tags": [],
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/eleven10ths",
+              "index": "apps/eleven10ths/src/index.html",
+              "main": "apps/eleven10ths/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "apps/eleven10ths/tsconfig.app.json",
+              "assets": [
+                "apps/eleven10ths/src/favicon.ico",
+                "apps/eleven10ths/src/assets"
+              ],
+              "styles": [
+                "apps/eleven10ths/src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "eleven10ths:build:production"
+              },
+              "development": {
+                "browserTarget": "eleven10ths:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "eleven10ths:build"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/eleven10ths/**/*.ts",
+                "apps/eleven10ths/**/*.html"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/eleven10ths/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "eleven10ths:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
       }
     },
     "e-questrian": {
@@ -1093,93 +1177,35 @@
         "implicitDependencies": []
       }
     },
-    "eleven10ths": {
-      "name": "eleven10ths",
-      "type": "app",
+    "lucky21-e2e": {
+      "name": "lucky21-e2e",
+      "type": "e2e",
       "data": {
-        "name": "eleven10ths",
-        "root": "apps/eleven10ths",
+        "name": "lucky21-e2e",
+        "root": "apps/lucky21-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/lucky21-e2e/src",
         "projectType": "application",
-        "prefix": "sigmafox",
-        "sourceRoot": "apps/eleven10ths/src",
-        "tags": [],
         "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
+          "e2e": {
             "inputs": [
-              "production",
+              "default",
               "^production"
             ],
-            "executor": "@angular-devkit/build-angular:browser",
-            "outputs": [
-              "{options.outputPath}"
-            ],
+            "executor": "@nx/cypress:cypress",
             "options": {
-              "outputPath": "dist/apps/eleven10ths",
-              "index": "apps/eleven10ths/src/index.html",
-              "main": "apps/eleven10ths/src/main.ts",
-              "polyfills": [
-                "zone.js"
-              ],
-              "tsConfig": "apps/eleven10ths/tsconfig.app.json",
-              "assets": [
-                "apps/eleven10ths/src/favicon.ico",
-                "apps/eleven10ths/src/assets"
-              ],
-              "styles": [
-                "apps/eleven10ths/src/styles.scss"
-              ],
-              "scripts": []
+              "cypressConfig": "apps/lucky21-e2e/cypress.config.ts",
+              "devServerTarget": "lucky21:serve:development",
+              "testingType": "e2e"
             },
             "configurations": {
               "production": {
-                "budgets": [
-                  {
-                    "type": "initial",
-                    "maximumWarning": "500kb",
-                    "maximumError": "1mb"
-                  },
-                  {
-                    "type": "anyComponentStyle",
-                    "maximumWarning": "2kb",
-                    "maximumError": "4kb"
-                  }
-                ],
-                "outputHashing": "all"
+                "devServerTarget": "lucky21:serve:production"
               },
-              "development": {
-                "buildOptimizer": false,
-                "optimization": false,
-                "vendorChunk": true,
-                "extractLicenses": false,
-                "sourceMap": true,
-                "namedChunks": true
+              "ci": {
+                "devServerTarget": "lucky21:serve-static"
               }
-            },
-            "defaultConfiguration": "production"
-          },
-          "serve": {
-            "executor": "@angular-devkit/build-angular:dev-server",
-            "configurations": {
-              "production": {
-                "browserTarget": "eleven10ths:build:production"
-              },
-              "development": {
-                "browserTarget": "eleven10ths:build:development"
-              }
-            },
-            "defaultConfiguration": "development",
-            "options": {}
-          },
-          "extract-i18n": {
-            "executor": "@angular-devkit/build-angular:extract-i18n",
-            "options": {
-              "browserTarget": "eleven10ths:build"
-            },
-            "configurations": {}
+            }
           },
           "lint": {
             "inputs": [
@@ -1193,42 +1219,16 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/eleven10ths/**/*.ts",
-                "apps/eleven10ths/**/*.html"
+                "apps/lucky21-e2e/**/*.{js,ts}"
               ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/eleven10ths/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "eleven10ths:build"
             },
             "configurations": {}
           }
         },
-        "implicitDependencies": []
+        "tags": [],
+        "implicitDependencies": [
+          "lucky21"
+        ]
       }
     },
     "assemble-ez": {
@@ -1507,144 +1507,6 @@
         "implicitDependencies": []
       }
     },
-    "negocios": {
-      "name": "negocios",
-      "type": "app",
-      "data": {
-        "name": "negocios",
-        "root": "apps/negocios",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "projectType": "application",
-        "prefix": "sigmafox",
-        "sourceRoot": "apps/negocios/src",
-        "tags": [],
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@angular-devkit/build-angular:browser",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/apps/negocios",
-              "index": "apps/negocios/src/index.html",
-              "main": "apps/negocios/src/main.ts",
-              "polyfills": [
-                "zone.js"
-              ],
-              "tsConfig": "apps/negocios/tsconfig.app.json",
-              "assets": [
-                "apps/negocios/src/favicon.ico",
-                "apps/negocios/src/assets"
-              ],
-              "styles": [
-                "apps/negocios/src/styles.scss"
-              ],
-              "scripts": []
-            },
-            "configurations": {
-              "production": {
-                "budgets": [
-                  {
-                    "type": "initial",
-                    "maximumWarning": "500kb",
-                    "maximumError": "1mb"
-                  },
-                  {
-                    "type": "anyComponentStyle",
-                    "maximumWarning": "2kb",
-                    "maximumError": "4kb"
-                  }
-                ],
-                "outputHashing": "all"
-              },
-              "development": {
-                "buildOptimizer": false,
-                "optimization": false,
-                "vendorChunk": true,
-                "extractLicenses": false,
-                "sourceMap": true,
-                "namedChunks": true
-              }
-            },
-            "defaultConfiguration": "production"
-          },
-          "serve": {
-            "executor": "@angular-devkit/build-angular:dev-server",
-            "configurations": {
-              "production": {
-                "browserTarget": "negocios:build:production"
-              },
-              "development": {
-                "browserTarget": "negocios:build:development"
-              }
-            },
-            "defaultConfiguration": "development",
-            "options": {}
-          },
-          "extract-i18n": {
-            "executor": "@angular-devkit/build-angular:extract-i18n",
-            "options": {
-              "browserTarget": "negocios:build"
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/negocios/**/*.ts",
-                "apps/negocios/**/*.html"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/negocios/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "negocios:build"
-            },
-            "configurations": {}
-          }
-        },
-        "implicitDependencies": []
-      }
-    },
     "sigmafox": {
       "name": "sigmafox",
       "type": "app",
@@ -1776,6 +1638,144 @@
             "executor": "@nx/web:file-server",
             "options": {
               "buildTarget": "sigmafox:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "negocios": {
+      "name": "negocios",
+      "type": "app",
+      "data": {
+        "name": "negocios",
+        "root": "apps/negocios",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "sigmafox",
+        "sourceRoot": "apps/negocios/src",
+        "tags": [],
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/negocios",
+              "index": "apps/negocios/src/index.html",
+              "main": "apps/negocios/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "apps/negocios/tsconfig.app.json",
+              "assets": [
+                "apps/negocios/src/favicon.ico",
+                "apps/negocios/src/assets"
+              ],
+              "styles": [
+                "apps/negocios/src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "negocios:build:production"
+              },
+              "development": {
+                "browserTarget": "negocios:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "negocios:build"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/negocios/**/*.ts",
+                "apps/negocios/**/*.html"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/negocios/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "negocios:build"
             },
             "configurations": {}
           }
@@ -16634,14 +16634,19 @@
         "type": "static"
       }
     ],
-    "assemble-ez-e2e": [
+    "e-questrian-e2e": [
       {
-        "source": "assemble-ez-e2e",
-        "target": "assemble-ez",
+        "source": "e-questrian-e2e",
+        "target": "e-questrian",
         "type": "implicit"
       },
       {
-        "source": "assemble-ez-e2e",
+        "source": "e-questrian-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
@@ -16663,19 +16668,14 @@
         "type": "static"
       }
     ],
-    "e-questrian-e2e": [
+    "assemble-ez-e2e": [
       {
-        "source": "e-questrian-e2e",
-        "target": "e-questrian",
+        "source": "assemble-ez-e2e",
+        "target": "assemble-ez",
         "type": "implicit"
       },
       {
-        "source": "e-questrian-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian-e2e",
+        "source": "assemble-ez-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
@@ -16754,23 +16754,6 @@
         "type": "static"
       }
     ],
-    "sigmafox-e2e": [
-      {
-        "source": "sigmafox-e2e",
-        "target": "sigmafox",
-        "type": "implicit"
-      },
-      {
-        "source": "sigmafox-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox-e2e",
-        "target": "npm:@nx/cypress",
-        "type": "static"
-      }
-    ],
     "negocios-e2e": [
       {
         "source": "negocios-e2e",
@@ -16788,20 +16771,67 @@
         "type": "static"
       }
     ],
-    "lucky21-e2e": [
+    "sigmafox-e2e": [
       {
-        "source": "lucky21-e2e",
-        "target": "lucky21",
+        "source": "sigmafox-e2e",
+        "target": "sigmafox",
         "type": "implicit"
       },
       {
-        "source": "lucky21-e2e",
+        "source": "sigmafox-e2e",
         "target": "npm:cypress",
         "type": "static"
       },
       {
-        "source": "lucky21-e2e",
+        "source": "sigmafox-e2e",
         "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
+    "eleven10ths": [
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/fire",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:xlsx",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "eleven10ths",
+        "target": "npm:zone.js",
         "type": "static"
       }
     ],
@@ -16862,50 +16892,20 @@
         "type": "static"
       }
     ],
-    "eleven10ths": [
+    "lucky21-e2e": [
       {
-        "source": "eleven10ths",
-        "target": "npm:@angular/core",
+        "source": "lucky21-e2e",
+        "target": "lucky21",
+        "type": "implicit"
+      },
+      {
+        "source": "lucky21-e2e",
+        "target": "npm:cypress",
         "type": "static"
       },
       {
-        "source": "eleven10ths",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:@angular/fire",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:xlsx",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "eleven10ths",
-        "target": "npm:zone.js",
+        "source": "lucky21-e2e",
+        "target": "npm:@nx/cypress",
         "type": "static"
       }
     ],
@@ -17033,6 +17033,48 @@
         "type": "static"
       }
     ],
+    "sigmafox": [
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:zone.js",
+        "type": "static"
+      }
+    ],
     "negocios": [
       {
         "source": "negocios",
@@ -17096,48 +17138,6 @@
       },
       {
         "source": "negocios",
-        "target": "npm:zone.js",
-        "type": "static"
-      }
-    ],
-    "sigmafox": [
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
         "target": "npm:zone.js",
         "type": "static"
       }
