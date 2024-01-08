@@ -96,7 +96,7 @@ describe('CalendarPage', () => {
       ).and.returnValue(expectedDate);
 
       // Act
-      component.changeDate(0);
+      component.changeDay(0);
 
       // Assert
       expect(dateSpy).toHaveBeenCalled();
@@ -116,7 +116,7 @@ describe('CalendarPage', () => {
       ).and.returnValue(expectedAppointments);
 
       // Act
-      component.changeDate(0);
+      component.changeDay(0);
 
       // Assert
       expect(appointmentSpy).toHaveBeenCalled();
@@ -138,7 +138,7 @@ describe('CalendarPage', () => {
       ).and.returnValue(expectedBlocks);
 
       // Act
-      component.changeDate(0);
+      component.changeDay(0);
 
       // Assert
       expect(calendarBlockSpy).toHaveBeenCalled();

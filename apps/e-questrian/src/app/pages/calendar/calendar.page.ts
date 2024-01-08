@@ -48,8 +48,13 @@ export class CalendarPage implements OnInit {
     this.setCalendar();
   }
 
-  changeDate(movement: number) {
-    this.date = this.dateService.changeDate(this.date, movement);
+  changeDate(date: string) {
+    this.date = this.dateService.changeDate(date);
+    this.setCalendar();
+  }
+
+  changeDay(movement: number) {
+    this.date = this.dateService.changeDay(this.date, movement);
     this.setCalendar();
   }
 

@@ -18,7 +18,12 @@ export class DateAndTimeService {
     return this.setDurationTimeOptions();
   }
 
-  changeDate(currentDate: number, movement: number): number {
+  changeDate(date: string): number {
+    const newDate = new Date(date);
+    return newDate.setHours(0, 0, 0, 0);
+  }
+
+  changeDay(currentDate: number, movement: number): number {
     const date = new Date(currentDate);
     date.setDate(date.getDate() + movement);
     return date.setHours(0, 0, 0, 0);

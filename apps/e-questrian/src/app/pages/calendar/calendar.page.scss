@@ -18,6 +18,14 @@
   font-weight: normal;
 }
 
+.datepicker-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
 .calendar-container {
   display: flex;
   flex-direction: column;
@@ -48,6 +56,7 @@ hr {
 .appointment-button {
   background-color: hotpink;
 }
+
 .lesson-button,
 .appointment-button {
   padding: 2px 5px;
