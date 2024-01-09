@@ -35,14 +35,16 @@ export class SignInModal {
   isRegister = false;
 
   onSubmitClick() {
-    return this.isRegister
-      ? this.register.emit(this.signInForm.value as SignInDetails)
-      : this.signin.emit(this.signInForm.value as SignInDetails);
+    if (this.isRegister) {
+      this.isRegister = false;
+      return this.register.emit(this.signInForm.value as SignInDetails);
+    }
+
+    this.signin.emit(this.signInForm.value as SignInDetails);
   }
 
   onRegisterClick() {
     this.isRegister = true;
-    this.onSubmitClick();
   }
 
   togglePassword() {
