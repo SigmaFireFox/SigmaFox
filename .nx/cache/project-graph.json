@@ -438,14 +438,14 @@
         ]
       }
     },
-    "e-questrian-e2e": {
-      "name": "e-questrian-e2e",
+    "assemble-ez-e2e": {
+      "name": "assemble-ez-e2e",
       "type": "e2e",
       "data": {
-        "name": "e-questrian-e2e",
-        "root": "apps/e-questrian-e2e",
+        "name": "assemble-ez-e2e",
+        "root": "apps/assemble-ez-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/e-questrian-e2e/src",
+        "sourceRoot": "apps/assemble-ez-e2e/src",
         "projectType": "application",
         "targets": {
           "e2e": {
@@ -455,16 +455,17 @@
             ],
             "executor": "@nx/cypress:cypress",
             "options": {
-              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
-              "devServerTarget": "e-questrian:serve:development",
-              "testingType": "e2e"
+              "cypressConfig": "apps/assemble-ez-e2e/cypress.json",
+              "devServerTarget": "assemble-ez:serve:development",
+              "testingType": "e2e",
+              "tsConfig": "apps/assemble-ez-e2e/tsconfig.json"
             },
             "configurations": {
               "production": {
-                "devServerTarget": "e-questrian:serve:production"
+                "devServerTarget": "assemble-ez:serve:production"
               },
               "ci": {
-                "devServerTarget": "e-questrian:serve-static"
+                "devServerTarget": "assemble-ez:serve-static"
               }
             }
           },
@@ -480,7 +481,7 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/e-questrian-e2e/**/*.{js,ts}"
+                "apps/assemble-ez-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
@@ -488,7 +489,7 @@
         },
         "tags": [],
         "implicitDependencies": [
-          "e-questrian"
+          "assemble-ez"
         ]
       }
     },
@@ -546,14 +547,14 @@
         ]
       }
     },
-    "assemble-ez-e2e": {
-      "name": "assemble-ez-e2e",
+    "e-questrian-e2e": {
+      "name": "e-questrian-e2e",
       "type": "e2e",
       "data": {
-        "name": "assemble-ez-e2e",
-        "root": "apps/assemble-ez-e2e",
+        "name": "e-questrian-e2e",
+        "root": "apps/e-questrian-e2e",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/assemble-ez-e2e/src",
+        "sourceRoot": "apps/e-questrian-e2e/src",
         "projectType": "application",
         "targets": {
           "e2e": {
@@ -563,17 +564,16 @@
             ],
             "executor": "@nx/cypress:cypress",
             "options": {
-              "cypressConfig": "apps/assemble-ez-e2e/cypress.json",
-              "devServerTarget": "assemble-ez:serve:development",
-              "testingType": "e2e",
-              "tsConfig": "apps/assemble-ez-e2e/tsconfig.json"
+              "cypressConfig": "apps/e-questrian-e2e/cypress.config.ts",
+              "devServerTarget": "e-questrian:serve:development",
+              "testingType": "e2e"
             },
             "configurations": {
               "production": {
-                "devServerTarget": "assemble-ez:serve:production"
+                "devServerTarget": "e-questrian:serve:production"
               },
               "ci": {
-                "devServerTarget": "assemble-ez:serve-static"
+                "devServerTarget": "e-questrian:serve-static"
               }
             }
           },
@@ -589,7 +589,7 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/assemble-ez-e2e/**/*.{js,ts}"
+                "apps/e-questrian-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
@@ -597,7 +597,7 @@
         },
         "tags": [],
         "implicitDependencies": [
-          "assemble-ez"
+          "e-questrian"
         ]
       }
     },
@@ -901,16 +901,16 @@
         ]
       }
     },
-    "e-questrian": {
-      "name": "e-questrian",
+    "assemble-ez": {
+      "name": "assemble-ez",
       "type": "app",
       "data": {
-        "name": "e-questrian",
-        "root": "apps/e-questrian",
+        "name": "assemble-ez",
+        "root": "apps/assemble-ez",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "projectType": "application",
-        "prefix": "e-questrian",
-        "sourceRoot": "apps/e-questrian/src",
+        "prefix": "sigmafox",
+        "sourceRoot": "apps/assemble-ez/src",
         "tags": [],
         "targets": {
           "build": {
@@ -926,19 +926,19 @@
               "{options.outputPath}"
             ],
             "options": {
-              "outputPath": "dist/apps/e-questrian",
-              "index": "apps/e-questrian/src/index.html",
-              "main": "apps/e-questrian/src/main.ts",
+              "outputPath": "dist/apps/assemble-ez",
+              "index": "apps/assemble-ez/src/index.html",
+              "main": "apps/assemble-ez/src/main.ts",
               "polyfills": [
                 "zone.js"
               ],
-              "tsConfig": "apps/e-questrian/tsconfig.app.json",
+              "tsConfig": "apps/assemble-ez/tsconfig.app.json",
               "assets": [
-                "apps/e-questrian/src/favicon.ico",
-                "apps/e-questrian/src/assets"
+                "apps/assemble-ez/src/favicon.ico",
+                "apps/assemble-ez/src/assets"
               ],
               "styles": [
-                "apps/e-questrian/src/styles.scss"
+                "apps/assemble-ez/src/styles.scss"
               ],
               "scripts": []
             },
@@ -947,8 +947,8 @@
                 "budgets": [
                   {
                     "type": "initial",
-                    "maximumWarning": "2mb",
-                    "maximumError": "2mb"
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
                   },
                   {
                     "type": "anyComponentStyle",
@@ -973,10 +973,10 @@
             "executor": "@angular-devkit/build-angular:dev-server",
             "configurations": {
               "production": {
-                "browserTarget": "e-questrian:build:production"
+                "browserTarget": "assemble-ez:build:production"
               },
               "development": {
-                "browserTarget": "e-questrian:build:development"
+                "browserTarget": "assemble-ez:build:development"
               }
             },
             "defaultConfiguration": "development",
@@ -985,7 +985,7 @@
           "extract-i18n": {
             "executor": "@angular-devkit/build-angular:extract-i18n",
             "options": {
-              "browserTarget": "e-questrian:build"
+              "browserTarget": "assemble-ez:build"
             },
             "configurations": {}
           },
@@ -1001,8 +1001,8 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/e-questrian/**/*.ts",
-                "apps/e-questrian/**/*.html"
+                "apps/assemble-ez/**/*.ts",
+                "apps/assemble-ez/**/*.html"
               ]
             },
             "configurations": {}
@@ -1018,7 +1018,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "apps/e-questrian/jest.config.ts",
+              "jestConfig": "apps/assemble-ez/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1031,7 +1031,7 @@
           "serve-static": {
             "executor": "@nx/web:file-server",
             "options": {
-              "buildTarget": "e-questrian:build"
+              "buildTarget": "assemble-ez:build"
             },
             "configurations": {}
           }
@@ -1231,16 +1231,16 @@
         ]
       }
     },
-    "assemble-ez": {
-      "name": "assemble-ez",
+    "e-questrian": {
+      "name": "e-questrian",
       "type": "app",
       "data": {
-        "name": "assemble-ez",
-        "root": "apps/assemble-ez",
+        "name": "e-questrian",
+        "root": "apps/e-questrian",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "projectType": "application",
-        "prefix": "sigmafox",
-        "sourceRoot": "apps/assemble-ez/src",
+        "prefix": "e-questrian",
+        "sourceRoot": "apps/e-questrian/src",
         "tags": [],
         "targets": {
           "build": {
@@ -1256,19 +1256,19 @@
               "{options.outputPath}"
             ],
             "options": {
-              "outputPath": "dist/apps/assemble-ez",
-              "index": "apps/assemble-ez/src/index.html",
-              "main": "apps/assemble-ez/src/main.ts",
+              "outputPath": "dist/apps/e-questrian",
+              "index": "apps/e-questrian/src/index.html",
+              "main": "apps/e-questrian/src/main.ts",
               "polyfills": [
                 "zone.js"
               ],
-              "tsConfig": "apps/assemble-ez/tsconfig.app.json",
+              "tsConfig": "apps/e-questrian/tsconfig.app.json",
               "assets": [
-                "apps/assemble-ez/src/favicon.ico",
-                "apps/assemble-ez/src/assets"
+                "apps/e-questrian/src/favicon.ico",
+                "apps/e-questrian/src/assets"
               ],
               "styles": [
-                "apps/assemble-ez/src/styles.scss"
+                "apps/e-questrian/src/styles.scss"
               ],
               "scripts": []
             },
@@ -1277,8 +1277,8 @@
                 "budgets": [
                   {
                     "type": "initial",
-                    "maximumWarning": "500kb",
-                    "maximumError": "1mb"
+                    "maximumWarning": "2mb",
+                    "maximumError": "2mb"
                   },
                   {
                     "type": "anyComponentStyle",
@@ -1303,10 +1303,10 @@
             "executor": "@angular-devkit/build-angular:dev-server",
             "configurations": {
               "production": {
-                "browserTarget": "assemble-ez:build:production"
+                "browserTarget": "e-questrian:build:production"
               },
               "development": {
-                "browserTarget": "assemble-ez:build:development"
+                "browserTarget": "e-questrian:build:development"
               }
             },
             "defaultConfiguration": "development",
@@ -1315,7 +1315,7 @@
           "extract-i18n": {
             "executor": "@angular-devkit/build-angular:extract-i18n",
             "options": {
-              "browserTarget": "assemble-ez:build"
+              "browserTarget": "e-questrian:build"
             },
             "configurations": {}
           },
@@ -1331,8 +1331,8 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/assemble-ez/**/*.ts",
-                "apps/assemble-ez/**/*.html"
+                "apps/e-questrian/**/*.ts",
+                "apps/e-questrian/**/*.html"
               ]
             },
             "configurations": {}
@@ -1348,7 +1348,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "apps/assemble-ez/jest.config.ts",
+              "jestConfig": "apps/e-questrian/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1361,7 +1361,7 @@
           "serve-static": {
             "executor": "@nx/web:file-server",
             "options": {
-              "buildTarget": "assemble-ez:build"
+              "buildTarget": "e-questrian:build"
             },
             "configurations": {}
           }
@@ -1507,144 +1507,6 @@
         "implicitDependencies": []
       }
     },
-    "sigmafox": {
-      "name": "sigmafox",
-      "type": "app",
-      "data": {
-        "name": "sigmafox",
-        "root": "apps/sigmafox",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "projectType": "application",
-        "prefix": "sigmafox",
-        "sourceRoot": "apps/sigmafox/src",
-        "tags": [],
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@angular-devkit/build-angular:browser",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/apps/sigmafox",
-              "index": "apps/sigmafox/src/index.html",
-              "main": "apps/sigmafox/src/main.ts",
-              "polyfills": [
-                "zone.js"
-              ],
-              "tsConfig": "apps/sigmafox/tsconfig.app.json",
-              "assets": [
-                "apps/sigmafox/src/favicon.ico",
-                "apps/sigmafox/src/assets"
-              ],
-              "styles": [
-                "apps/sigmafox/src/styles.scss"
-              ],
-              "scripts": []
-            },
-            "configurations": {
-              "production": {
-                "budgets": [
-                  {
-                    "type": "initial",
-                    "maximumWarning": "500kb",
-                    "maximumError": "1mb"
-                  },
-                  {
-                    "type": "anyComponentStyle",
-                    "maximumWarning": "2kb",
-                    "maximumError": "4kb"
-                  }
-                ],
-                "outputHashing": "all"
-              },
-              "development": {
-                "buildOptimizer": false,
-                "optimization": false,
-                "vendorChunk": true,
-                "extractLicenses": false,
-                "sourceMap": true,
-                "namedChunks": true
-              }
-            },
-            "defaultConfiguration": "production"
-          },
-          "serve": {
-            "executor": "@angular-devkit/build-angular:dev-server",
-            "configurations": {
-              "production": {
-                "browserTarget": "sigmafox:build:production"
-              },
-              "development": {
-                "browserTarget": "sigmafox:build:development"
-              }
-            },
-            "defaultConfiguration": "development",
-            "options": {}
-          },
-          "extract-i18n": {
-            "executor": "@angular-devkit/build-angular:extract-i18n",
-            "options": {
-              "browserTarget": "sigmafox:build"
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/sigmafox/**/*.ts",
-                "apps/sigmafox/**/*.html"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "apps/sigmafox/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "serve-static": {
-            "executor": "@nx/web:file-server",
-            "options": {
-              "buildTarget": "sigmafox:build"
-            },
-            "configurations": {}
-          }
-        },
-        "implicitDependencies": []
-      }
-    },
     "negocios": {
       "name": "negocios",
       "type": "app",
@@ -1776,6 +1638,144 @@
             "executor": "@nx/web:file-server",
             "options": {
               "buildTarget": "negocios:build"
+            },
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "sigmafox": {
+      "name": "sigmafox",
+      "type": "app",
+      "data": {
+        "name": "sigmafox",
+        "root": "apps/sigmafox",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "sigmafox",
+        "sourceRoot": "apps/sigmafox/src",
+        "tags": [],
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/sigmafox",
+              "index": "apps/sigmafox/src/index.html",
+              "main": "apps/sigmafox/src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "apps/sigmafox/tsconfig.app.json",
+              "assets": [
+                "apps/sigmafox/src/favicon.ico",
+                "apps/sigmafox/src/assets"
+              ],
+              "styles": [
+                "apps/sigmafox/src/styles.scss"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "sigmafox:build:production"
+              },
+              "development": {
+                "browserTarget": "sigmafox:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {}
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "sigmafox:build"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/sigmafox/**/*.ts",
+                "apps/sigmafox/**/*.html"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "apps/sigmafox/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "sigmafox:build"
             },
             "configurations": {}
           }
@@ -16634,19 +16634,14 @@
         "type": "static"
       }
     ],
-    "e-questrian-e2e": [
+    "assemble-ez-e2e": [
       {
-        "source": "e-questrian-e2e",
-        "target": "e-questrian",
+        "source": "assemble-ez-e2e",
+        "target": "assemble-ez",
         "type": "implicit"
       },
       {
-        "source": "e-questrian-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian-e2e",
+        "source": "assemble-ez-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
@@ -16668,14 +16663,19 @@
         "type": "static"
       }
     ],
-    "assemble-ez-e2e": [
+    "e-questrian-e2e": [
       {
-        "source": "assemble-ez-e2e",
-        "target": "assemble-ez",
+        "source": "e-questrian-e2e",
+        "target": "e-questrian",
         "type": "implicit"
       },
       {
-        "source": "assemble-ez-e2e",
+        "source": "e-questrian-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian-e2e",
         "target": "npm:@nx/cypress",
         "type": "static"
       }
@@ -16788,59 +16788,59 @@
         "type": "static"
       }
     ],
-    "e-questrian": [
+    "assemble-ez": [
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:@angular/router",
         "type": "static"
       },
       {
-        "source": "e-questrian",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
-        "target": "npm:@angular/fire",
-        "type": "static"
-      },
-      {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:@angular/material",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:@angular/forms",
         "type": "static"
       },
       {
-        "source": "e-questrian",
-        "target": "modals",
+        "source": "assemble-ez",
+        "target": "npm:@angular/fire",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "assemble-ez",
         "target": "npm:rxjs",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
+        "target": "npm:firebase",
+        "type": "static"
+      },
+      {
+        "source": "assemble-ez",
         "target": "npm:@angular/platform-browser-dynamic",
         "type": "static"
       },
       {
-        "source": "e-questrian",
+        "source": "assemble-ez",
         "target": "npm:zone.js",
         "type": "static"
       }
@@ -16909,59 +16909,59 @@
         "type": "static"
       }
     ],
-    "assemble-ez": [
+    "e-questrian": [
       {
-        "source": "assemble-ez",
+        "source": "e-questrian",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "assemble-ez",
+        "source": "e-questrian",
         "target": "npm:@angular/router",
         "type": "static"
       },
       {
-        "source": "assemble-ez",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "assemble-ez",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "assemble-ez",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "assemble-ez",
-        "target": "npm:@angular/fire",
-        "type": "static"
-      },
-      {
-        "source": "assemble-ez",
+        "source": "e-questrian",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "assemble-ez",
+        "source": "e-questrian",
+        "target": "npm:@angular/fire",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
+        "target": "modals",
+        "type": "static"
+      },
+      {
+        "source": "e-questrian",
         "target": "npm:rxjs",
         "type": "static"
       },
       {
-        "source": "assemble-ez",
-        "target": "npm:firebase",
-        "type": "static"
-      },
-      {
-        "source": "assemble-ez",
+        "source": "e-questrian",
         "target": "npm:@angular/platform-browser-dynamic",
         "type": "static"
       },
       {
-        "source": "assemble-ez",
+        "source": "e-questrian",
         "target": "npm:zone.js",
         "type": "static"
       }
@@ -17033,48 +17033,6 @@
         "type": "static"
       }
     ],
-    "sigmafox": [
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "sigmafox",
-        "target": "npm:zone.js",
-        "type": "static"
-      }
-    ],
     "negocios": [
       {
         "source": "negocios",
@@ -17138,6 +17096,48 @@
       },
       {
         "source": "negocios",
+        "target": "npm:zone.js",
+        "type": "static"
+      }
+    ],
+    "sigmafox": [
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "sigmafox",
         "target": "npm:zone.js",
         "type": "static"
       }

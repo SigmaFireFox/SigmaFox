@@ -9,31 +9,34 @@ export class CreditNotesService {
   creditNotes: CreditNotes = {};
   appointments: Appointments = {};
 
-  generateCreditNote(appointmentID: number) {
-    this.getCreditNoteData();
-    this.getAppointmentData();
+  get creditNotesOnFile(): CreditNotes {
+    const creditNotesString = localStorage.getItem('credit-notes');
+    if (creditNotesString) {
+      return (this.creditNotes = JSON.parse(creditNotesString));
+    }
+    return {};
+  }
+
+  constructor() {
+    this.creditNotes = this.creditNotesOnFile;
+  }
+
+  generateCreditNote(appointmentID: number, appointments: Appointments) {
+    this.appointments = appointments;
     const cnNumber = Object.keys(this.creditNotes).length + 1;
     this.creditNotes[cnNumber] = {
       date: new Date(new Date().setHours(0, 0, 0, 0)),
       appointment: appointmentID,
     };
-    this.appointments[appointmentID].creditNote = cnNumber;
-    this.appointments[appointmentID].cancelled = true;
     localStorage.setItem('credit-notes', JSON.stringify(this.creditNotes));
+    this.updateAppointmentWithCreditNote(appointmentID, cnNumber);
+  }
+
+  private updateAppointmentWithCreditNote(
+    appointmentID: number,
+    cnNumber: number
+  ) {
+    this.appointments[appointmentID].creditNote = cnNumber;
     localStorage.setItem('appointments', JSON.stringify(this.appointments));
-  }
-
-  private getCreditNoteData() {
-    let creditNotesString = localStorage.getItem('credit-notes');
-    if (creditNotesString) {
-      this.creditNotes = JSON.parse(creditNotesString);
-    }
-  }
-
-  private getAppointmentData() {
-    let appointmentString = localStorage.getItem('appointments');
-    if (appointmentString) {
-      this.appointments = JSON.parse(appointmentString);
-    }
   }
 }
