@@ -4,12 +4,24 @@ import { CalendarPage } from './pages/calendar/calendar.page';
 import { ClientsPage } from './pages/clients/clients.page';
 import { FinancesPage } from './pages/finances/finances.page';
 import { HomePage } from './pages/home/home.page';
-import { SignInPage } from './pages/sign-in/sign-in.component';
+import { LandingPage } from './pages/landing/landing.page';
+import { SignInPage } from './pages/sign-in/sign-in.page';
 import { AuthGuardService } from './services/auth-gaurd/auth-guard.service';
 
 export const routes: Routes = [
-  { path: 'signin', component: SignInPage },
-  { path: 'home', canActivate: [AuthGuardService], component: HomePage },
+  {
+    path: '',
+    component: LandingPage,
+  },
+  {
+    path: 'signin',
+    component: SignInPage,
+  },
+  {
+    path: 'home',
+    canActivate: [AuthGuardService],
+    component: HomePage,
+  },
   {
     path: 'calendar',
     canActivate: [AuthGuardService],

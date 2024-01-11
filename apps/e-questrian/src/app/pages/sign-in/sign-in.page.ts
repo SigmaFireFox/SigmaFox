@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { PageConfig } from '../../interfaces/common-page-configs.interface';
 import { AuthenticationService } from '../../services/authentication/authentication.service';
 
-
 export interface SignInDetails {
   email: string;
   password: string;
@@ -13,8 +12,8 @@ export interface SignInDetails {
 /* eslint-disable @angular-eslint/component-selector */
 @Component({
   selector: 'app-sign-in',
-  templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.scss'],
+  templateUrl: './sign-in.page.html',
+  styleUrls: ['./sign-in.page.scss'],
 })
 export class SignInPage implements OnInit {
   generalConfig = { header: 'e-Questrian', subHeader: '' } as PageConfig;

@@ -5,15 +5,16 @@ import {
   tick,
 } from '@angular/core/testing';
 import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from 'src/environments/environment';
-import { SignInPage } from './sign-in.component';
+import { SignInPage } from './sign-in.page';
 import { RouterTestingModule } from '@angular/router/testing';
-import { SignInModal } from 'src/app/modals/sign-in/sign-in.modal';
 import { Router } from '@angular/router';
 import { HomePage } from '../home/home.page';
-import { GeneralScreenHeaderComponent } from 'src/app/components/general-screen-header/general-screen-header.component';
-import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignInModal } from '@sigmafox/modals';
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import { environment } from 'apps/e-questrian/src/environments/environment';
+import { GeneralScreenHeaderComponent } from '../../components/general-screen-header/general-screen-header.component';
+import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 describe('SignInPage', () => {
   let component: SignInPage;

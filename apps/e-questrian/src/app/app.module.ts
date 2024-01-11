@@ -32,7 +32,7 @@ import { WarningsModal } from './modals/warnings/warnings.component';
 import { GenerateInvoiceModal } from './modals/generate-invoice/generate-invoice.modal';
 import { GenerateStatementModal } from './modals/generate-statement/generate-statement.modal';
 import { ProcessResultsScreen } from './screens/process-results/process-results.screen';
-import { SignInPage } from './pages/sign-in/sign-in.component';
+import { SignInPage } from './pages/sign-in/sign-in.page';
 import { GeneralItemsListScreen } from './screens/general-items-list/general-items-list.screen';
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { BrowserModule } from '@angular/platform-browser';
