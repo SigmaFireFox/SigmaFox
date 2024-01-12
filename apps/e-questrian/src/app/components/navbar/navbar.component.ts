@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthGuardService } from '../../services/auth-gaurd/auth-guard.service';
+import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 export interface MenuOption {
   display: string;
@@ -14,6 +16,7 @@ export interface MenuOption {
 export class NavbarComponent implements OnInit {
   isMobileView = false;
   displayMenu = true;
+  isLoggedIn = true;
 
   readonly menuOptions: MenuOption[] = [
     { display: 'Calendar', path: '/calendar' },
@@ -40,20 +43,33 @@ export class NavbarComponent implements OnInit {
     return window.innerWidth;
   }
 
-  constructor(public router: Router, private eRef: ElementRef) {}
+  constructor(
+    public router: Router,
+    private eRef: ElementRef,
+    private auth: AuthenticationService
+  ) {}
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     setTimeout(() => {
       this.determineView();
     }, 100);
+    this.isLoggedIn = await this.auth.isAuthenticated();
   }
 
   onLogoClick() {
     this.router.navigate(['/home']);
   }
 
-  onMenuIconClick() {
-    this.displayMenu = !this.displayMenu;
+  onNavbarIconClick() {
+    if (this.router.url === '/') {
+      if (this.isLoggedIn) {
+        this.router.navigate(['/home']);
+      } else {
+        this.router.navigate(['/signin']);
+      }
+    } else {
+      this.displayMenu = !this.displayMenu;
+    }
   }
 
   onMenuOptionClicked(path: string) {

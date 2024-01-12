@@ -1,8 +1,9 @@
 <div class="navbar-container">
   <div class="navbar-logo-and-menu-button-container">
     <div class="navbar-logo-container" (click)="onLogoClick()">e-Questrian</div>
-    <div class="navbar-menu-icon-container" (click)="onMenuIconClick()">
-      <mat-icon>menu</mat-icon>
+    <div class="navbar-menu-icon-container" (click)="onNavbarIconClick()">
+      <mat-icon *ngIf="router.url !== '/'">menu</mat-icon>
+      <mat-icon *ngIf="router.url === '/'">login</mat-icon>
     </div>
   </div>
   <div *ngIf="displayMenu" class="navbar-button-container">
