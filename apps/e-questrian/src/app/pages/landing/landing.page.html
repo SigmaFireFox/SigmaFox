@@ -1,4 +1,19 @@
 <div class="screen-container">
-  <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>
-  <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>
+  <img src="../../../assets/landing-page-image.png" />
+  <div class="text-container">
+    <div>
+      <span>Manage </span>
+      <span @fade *ngIf="this.elementSwitch"
+        >{{alternatingText[textCounter]}}</span
+      >
+      <span @fade *ngIf="!this.elementSwitch"
+        >{{alternatingText[textCounter]}}</span
+      >
+    </div>
+    <span>within</span>
+    <br />
+    <span>the palm</span>
+    <br />
+    <span>of your hands</span>
+  </div>
 </div>

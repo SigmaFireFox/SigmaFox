@@ -2455,11 +2455,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.html",
-        "hash": "18033260463548701358"
+        "hash": "949881392991752962"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.scss",
-        "hash": "5595525981526762885"
+        "hash": "12184535690182825113"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.spec.ts",
@@ -2470,7 +2470,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.ts",
-        "hash": "11190640916535080860",
+        "hash": "7214979232496990396",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations"
@@ -2902,10 +2902,6 @@
         ]
       },
       {
-        "file": "apps/e-questrian/src/assets/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
         "file": "apps/e-questrian/src/assets/horse-head-icon.png",
         "hash": "2472009869538634183"
       },
@@ -2968,6 +2964,10 @@
       {
         "file": "apps/e-questrian/tsconfig.spec.json",
         "hash": "2486474936443458199"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/landing-page-image.png",
+        "hash": "7868053162535341874"
       }
     ],
     "e-questrian-e2e": [

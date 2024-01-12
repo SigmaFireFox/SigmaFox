@@ -1,6 +1,25 @@
 .screen-container {
     display: flex;
-    height: calc(100% - 50px);
-    align-items: center;
-    justify-content: center;
+    height: calc(100% - 50px - 8%);
+    align-items: start;
+    justify-content: start;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    object-fit: cover;
+    padding-bottom: 0;
+}
+
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
 }

@@ -2081,3 +2081,1644 @@
 [37m[0mBuild at: [1m[37m2024-01-12T06:05:15.919Z[39m[37m[22m - Hash: [1m[37m49cb4cd5569272b9[39m[37m[22m - Time: [1m[37m285[39m[37m[22mms[0m[39m
 [37m[39m
 [37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:05:49.050Z[39m[37m[22m - Hash: [1m[37m64ff1ee7582652d4[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:05:50.072Z[39m[37m[22m - Hash: [1m[37mc93006f2dc736b56[39m[37m[22m - Time: [1m[37m312[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:28:23.862Z[39m[37m[22m - Hash: [1m[37mfbf722433d70c4d4[39m[37m[22m - Time: [1m[37m427[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.26 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:29:44.394Z[39m[37m[22m - Hash: [1m[37m430f69fd240ddf20[39m[37m[22m - Time: [1m[37m349[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:30:07.047Z[39m[37m[22m - Hash: [1m[37mcc7c54453f93dedc[39m[37m[22m - Time: [1m[37m301[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:30:27.140Z[39m[37m[22m - Hash: [1m[37mc2b20443a19e6515[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:31:01.287Z[39m[37m[22m - Hash: [1m[37m87898e07b244086c[39m[37m[22m - Time: [1m[37m364[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.27 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:31:04.044Z[39m[37m[22m - Hash: [1m[37m9be59b973a304953[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.24 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:31:16.067Z[39m[37m[22m - Hash: [1m[37m3d27f719109b5cbd[39m[37m[22m - Time: [1m[37m243[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' doe[39m[22m[1m[31ms not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.27 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:31:28.410Z[39m[37m[22m - Hash: [1m[37mc8ca962f05e04de6[39m[37m[22m - Time: [1m[37m233[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' doe[39m[22m[1m[31ms not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:31:40.288Z[39m[37m[22m - Hash: [1m[37m6a3ad9c64dab43df[39m[37m[22m - Time: [1m[37m247[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m2[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' does not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.html[0m:[93m3[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'specialText' doe[39m[22m[1m[31ms not exist on type 'LandingPage'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>[39m[22m
+[1m[31m[7m [0m [91m                                              ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './landing.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:32:20.282Z[39m[37m[22m - Hash: [1m[37mdbc75f0743330e27[39m[37m[22m - Time: [1m[37m310[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:33:30.308Z[39m[37m[22m - Hash: [1m[37m30888a61a152ba24[39m[37m[22m - Time: [1m[37m347[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m442.91 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:34:05.321Z[39m[37m[22m - Hash: [1m[37m78b4f1d69cae4a22[39m[37m[22m - Time: [1m[37m298[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/apps/e-questrian/src/app/pages/landing/landing.page.ts: Unexpected token (47:25)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 45 |[39m[31m         }[0m[39m[22m
+[1m[31m[0m [90m 46 |[39m[31m         [36mthis[39m[31m[33m.[39m[31melementSwitch [33m!=[39m[31m [36mthis[39m[31m[33m.[39m[31melementSwitch[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 47 |[39m[31m         console[33m.[39m[31mlog([36mthis[39m[31m[33m.[39m[31m)[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m                          [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 48 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 49 |[39m[31m     [36mstatic[39m[31m { [36mthis[39m[31m[33m.[39m[31mɵfac [33m=[39m[31m [36mfunction[39m[31m [33mLandingPage_Factory[39m[31m(t) { [36mreturn[39m[31m [36mnew[39m[31m (t [33m||[39m[31m [33mLandingPage[39m[31m)()[33m;[39m[31m }[33m;[39m[31m }[0m[39m[22m
+[1m[31m[0m [90m 50 |[39m[31m     [36mstatic[39m[31m { [36mthis[39m[31m[33m.[39m[31mɵcmp [33m=[39m[31m [90m/*@__PURE__*/[39m[31m i0[33m.[39m[31mɵɵdefineComponent({ type[33m:[39m[31m [33mLandingPage[39m[31m[33m,[39m[31m selectors[33m:[39m[31m [[[32m"e-questrian-landing"[39m[31m]][33m,[39m[31m decls[33m:[39m[31m [35m3[39m[31m[33m,[39m[31m vars[33m:[39m[31m [35m2[39m[31m[33m,[39m[31m consts[33m:[39m[31m [[[35m1[39m[31m[33m,[39m[31m [32m"screen-container"[39m[31m][33m,[39m[31m [[35m4[39m[31m[33m,[39m[31m [32m"ngIf"[39m[31m]][33m,[39m[31m template[33m:[39m[31m [36mfunction[39m[31m [33mLandingPage_Template[39m[31m(rf[33m,[39m[31m ctx) { [36mif[39m[31m (rf [33m&[39m[31m [35m1[39m[31m) {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m46[0m:[93m22[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m     console.log(this.)[39m[22m
+[1m[31m[7m  [0m [91m                     ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:34:09.645Z[39m[37m[22m - Hash: [1m[37m1f20035c5740f59d[39m[37m[22m - Time: [1m[37m262[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:34:22.029Z[39m[37m[22m - Hash: [1m[37m9a867b87a06cdbab[39m[37m[22m - Time: [1m[37m309[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:34:33.653Z[39m[37m[22m - Hash: [1m[37mf8d060a320addd65[39m[37m[22m - Time: [1m[37m361[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:35:09.700Z[39m[37m[22m - Hash: [1m[37m367aed429e294255[39m[37m[22m - Time: [1m[37m328[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:35:34.891Z[39m[37m[22m - Hash: [1m[37m1111880610685d3c[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:35:52.566Z[39m[37m[22m - Hash: [1m[37m1aea4b37857513a3[39m[37m[22m - Time: [1m[37m290[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.85 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:36:16.652Z[39m[37m[22m - Hash: [1m[37mc42f2e56af49acfb[39m[37m[22m - Time: [1m[37m374[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:36:36.678Z[39m[37m[22m - Hash: [1m[37mc2aff61e0fb60b1b[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:36:42.342Z[39m[37m[22m - Hash: [1m[37mdeaca055a8d4078f[39m[37m[22m - Time: [1m[37m268[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.06 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:37:16.723Z[39m[37m[22m - Hash: [1m[37m3825175d8c907541[39m[37m[22m - Time: [1m[37m307[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:37:19.448Z[39m[37m[22m - Hash: [1m[37m31d3255a58d40cfe[39m[37m[22m - Time: [1m[37m245[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:37:40.862Z[39m[37m[22m - Hash: [1m[37m82a10b00da7c8d38[39m[37m[22m - Time: [1m[37m339[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:37:44.293Z[39m[37m[22m - Hash: [1m[37m5c8696473cd7174b[39m[37m[22m - Time: [1m[37m243[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:38:04.033Z[39m[37m[22m - Hash: [1m[37m282134dd644582a4[39m[37m[22m - Time: [1m[37m281[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:38:17.637Z[39m[37m[22m - Hash: [1m[37mdc6948503dbaffbc[39m[37m[22m - Time: [1m[37m294[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:38:25.429Z[39m[37m[22m - Hash: [1m[37m9045059e99ad5a32[39m[37m[22m - Time: [1m[37m252[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.04 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:38:37.423Z[39m[37m[22m - Hash: [1m[37me5ff467b9c8ee214[39m[37m[22m - Time: [1m[37m267[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.19 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:39:03.887Z[39m[37m[22m - Hash: [1m[37ma01d868ecbee8211[39m[37m[22m - Time: [1m[37m335[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:39:46.174Z[39m[37m[22m - Hash: [1m[37m4d27476320dd4a47[39m[37m[22m - Time: [1m[37m291[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:40:10.367Z[39m[37m[22m - Hash: [1m[37m6e5fe5989421c694[39m[37m[22m - Time: [1m[37m338[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:40:10.766Z[39m[37m[22m - Hash: [1m[37m6e5fe5989421c694[39m[37m[22m - Time: [1m[37m240[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:40:14.308Z[39m[37m[22m - Hash: [1m[37me657ebe66462f2f1[39m[37m[22m - Time: [1m[37m291[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:47:26.377Z[39m[37m[22m - Hash: [1m[37me657ebe66462f2f1[39m[37m[22m - Time: [1m[37m232[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:48:24.110Z[39m[37m[22m - Hash: [1m[37me657ebe66462f2f1[39m[37m[22m - Time: [1m[37m280[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:49:14.727Z[39m[37m[22m - Hash: [1m[37m77cb70404f9e8b79[39m[37m[22m - Time: [1m[37m411[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:49:48.327Z[39m[37m[22m - Hash: [1m[37m83e71d2daadf703a[39m[37m[22m - Time: [1m[37m317[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:50:33.623Z[39m[37m[22m - Hash: [1m[37m57338cd6f69fa923[39m[37m[22m - Time: [1m[37m370[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:51:27.449Z[39m[37m[22m - Hash: [1m[37ma3a36a2bb11bccce[39m[37m[22m - Time: [1m[37m320[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:52:07.019Z[39m[37m[22m - Hash: [1m[37mcb3c635fb7262408[39m[37m[22m - Time: [1m[37m312[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.96 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:52:43.663Z[39m[37m[22m - Hash: [1m[37m0b87d4ab37f99316[39m[37m[22m - Time: [1m[37m318[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:52:49.288Z[39m[37m[22m - Hash: [1m[37m553a55e0925c1bfb[39m[37m[22m - Time: [1m[37m346[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:52:53.468Z[39m[37m[22m - Hash: [1m[37m2b4ad26d88a29ae7[39m[37m[22m - Time: [1m[37m220[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:53:26.499Z[39m[37m[22m - Hash: [1m[37m6fd600fa53a43425[39m[37m[22m - Time: [1m[37m283[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:53:55.390Z[39m[37m[22m - Hash: [1m[37m1226f4e2d83d7b38[39m[37m[22m - Time: [1m[37m298[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:54:04.899Z[39m[37m[22m - Hash: [1m[37m39a199023eb840ee[39m[37m[22m - Time: [1m[37m365[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:54:42.596Z[39m[37m[22m - Hash: [1m[37mfce83c8d2cb6dfe0[39m[37m[22m - Time: [1m[37m321[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:55:02.639Z[39m[37m[22m - Hash: [1m[37m214e592153d27f75[39m[37m[22m - Time: [1m[37m298[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:55:15.372Z[39m[37m[22m - Hash: [1m[37m1129a055d504e3bb[39m[37m[22m - Time: [1m[37m283[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:55:37.119Z[39m[37m[22m - Hash: [1m[37mb90f87b2a9920da8[39m[37m[22m - Time: [1m[37m374[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.11 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:55:59.708Z[39m[37m[22m - Hash: [1m[37m57ac1d4baa2b642c[39m[37m[22m - Time: [1m[37m300[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:56:45.873Z[39m[37m[22m - Hash: [1m[37m136f33a5a56541a5[39m[37m[22m - Time: [1m[37m347[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:56:56.503Z[39m[37m[22m - Hash: [1m[37m35f83281e68250e3[39m[37m[22m - Time: [1m[37m272[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.27 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:05.420Z[39m[37m[22m - Hash: [1m[37m6a167d40e0ee701d[39m[37m[22m - Time: [1m[37m270[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:20.723Z[39m[37m[22m - Hash: [1m[37m6d6672e5853c0cba[39m[37m[22m - Time: [1m[37m270[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:38.412Z[39m[37m[22m - Hash: [1m[37mca8b8c2316ab4a70[39m[37m[22m - Time: [1m[37m296[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:41.039Z[39m[37m[22m - Hash: [1m[37me0fb14fe83d1169c[39m[37m[22m - Time: [1m[37m325[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:46.480Z[39m[37m[22m - Hash: [1m[37m1e5ecfc0c73889b2[39m[37m[22m - Time: [1m[37m264[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:49.952Z[39m[37m[22m - Hash: [1m[37m73c6b4dc23350bba[39m[37m[22m - Time: [1m[37m224[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:57:55.955Z[39m[37m[22m - Hash: [1m[37m73e361648b049c01[39m[37m[22m - Time: [1m[37m270[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:58:13.535Z[39m[37m[22m - Hash: [1m[37m4f89862a8a6c3306[39m[37m[22m - Time: [1m[37m293[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:58:17.763Z[39m[37m[22m - Hash: [1m[37m1694ce48b0854df6[39m[37m[22m - Time: [1m[37m276[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:58:34.774Z[39m[37m[22m - Hash: [1m[37m46459ff5e7b65399[39m[37m[22m - Time: [1m[37m314[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:58:49.246Z[39m[37m[22m - Hash: [1m[37mbbe946967ff3dd9c[39m[37m[22m - Time: [1m[37m375[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:59:00.783Z[39m[37m[22m - Hash: [1m[37ma479d34cb1a79c1e[39m[37m[22m - Time: [1m[37m323[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:59:07.749Z[39m[37m[22m - Hash: [1m[37m31e7febc1e4f2190[39m[37m[22m - Time: [1m[37m267[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T08:59:12.823Z[39m[37m[22m - Hash: [1m[37md01c03fdd98161ee[39m[37m[22m - Time: [1m[37m231[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:00:54.973Z[39m[37m[22m - Hash: [1m[37md7242969aa9f0f78[39m[37m[22m - Time: [1m[37m379[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:01:14.562Z[39m[37m[22m - Hash: [1m[37m25407fbe879b356b[39m[37m[22m - Time: [1m[37m270[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:02:05.764Z[39m[37m[22m - Hash: [1m[37m8ec36623197da23a[39m[37m[22m - Time: [1m[37m401[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:02:26.240Z[39m[37m[22m - Hash: [1m[37m387d22da6d032419[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:02:37.882Z[39m[37m[22m - Hash: [1m[37m71878cbbd73cbabd[39m[37m[22m - Time: [1m[37m271[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:03:04.965Z[39m[37m[22m - Hash: [1m[37m6d89b07d71cdc177[39m[37m[22m - Time: [1m[37m254[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/sass-loader@13.3.2_sass@1.64.1_webpack@5.88.2/node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected ";".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m21 │     height: calc(100% - 8%) width: 100%;[39m[22m
+[1m[31m   │                                  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  apps/e-questrian/src/app/pages/landing/landing.page.scss 21:34  root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:03:07.822Z[39m[37m[22m - Hash: [1m[37m0c0ecd8c3f691641[39m[37m[22m - Time: [1m[37m233[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/sass-loader@13.3.2_sass@1.64.1_webpack@5.88.2/node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected ";".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m21 │     height: calc(100% - 8%) width: 100%;[39m[22m
+[1m[31m   │                                  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  apps/e-questrian/src/app/pages/landing/landing.page.scss 21:34  root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.77 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:03:09.419Z[39m[37m[22m - Hash: [1m[37m0e70e32f5e51452e[39m[37m[22m - Time: [1m[37m264[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:03:31.841Z[39m[37m[22m - Hash: [1m[37m71878cbbd73cbabd[39m[37m[22m - Time: [1m[37m271[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:03:46.736Z[39m[37m[22m - Hash: [1m[37m6175c60f897acbb4[39m[37m[22m - Time: [1m[37m283[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:04:20.688Z[39m[37m[22m - Hash: [1m[37m48586dec9a5468b7[39m[37m[22m - Time: [1m[37m305[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:04:27.938Z[39m[37m[22m - Hash: [1m[37m35303fe055b4c566[39m[37m[22m - Time: [1m[37m273[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:04:29.333Z[39m[37m[22m - Hash: [1m[37m009f1f95a3efb9d0[39m[37m[22m - Time: [1m[37m273[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:04:58.476Z[39m[37m[22m - Hash: [1m[37m71878cbbd73cbabd[39m[37m[22m - Time: [1m[37m317[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.77 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:05:28.143Z[39m[37m[22m - Hash: [1m[37ma44352d97b939d4a[39m[37m[22m - Time: [1m[37m335[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m439.77 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T09:05:50.423Z[39m[37m[22m - Hash: [1m[37m279773011d1b1761[39m[37m[22m - Time: [1m[37m323[39m[37m[22mms[0m[39m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(4:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  align-items: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.scss?ngResource[39m[33m[0m - [0m[33mWarning: [39m[33m[0mModule Warning (from ./node_modules/.pnpm/postcss-loader@7.3.3_postcss@8.4.31_typescript@5.1.6_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[33m(5:3) from "autoprefixer" plugin: start value has mixed support, consider using flex-start instead[39m[22m
+[1m[33m[39m[22m
+[1m[33mCode:[39m[22m
+[1m[33m  justify-content: start[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

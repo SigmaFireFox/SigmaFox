@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   animate,
   state,
@@ -13,26 +13,36 @@ import {
   styleUrls: ['./landing.page.scss'],
   animations: [
     trigger('fade', [
-      state('void', style({ opacity: 0 })),
+      state('void', style({ color: 'aqua', opacity: 0 })),
+      state('*', style({ color: 'aqua', 'font-weight': 'bold' })),
       transition(':enter', [animate(2000)]),
     ]),
   ],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class LandingPage {
-  specialText = 'Test 1';
+  alternatingText = [
+    'Clients',
+    'Lessons',
+    'Accounts',
+    'Staff',
+    'Livestock',
+    'Liveries',
+  ];
+  textCounter = 0;
+  elementSwitch = true;
 
   constructor() {
     setInterval(() => {
       this.swithText();
-    }, 5000);
+    }, 3000);
   }
 
   private swithText() {
-    if (this.specialText === 'Test 1') {
-      this.specialText = 'Test 2';
-    } else {
-      this.specialText = 'Test 1';
+    this.textCounter += 1;
+    if (this.textCounter === this.alternatingText.length) {
+      this.textCounter = 0;
     }
+    this.elementSwitch = !this.elementSwitch;
   }
 }
