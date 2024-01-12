@@ -1,10 +1,18 @@
 <div class="navbar-container">
   <div class="navbar-logo-and-menu-button-container">
     <div class="navbar-logo-container" (click)="onLogoClick()">e-Questrian</div>
-    <div class="navbar-menu-icon-container" (click)="onNavbarIconClick()">
+    <div
+      *ngIf="router.url !== '/home'"
+      class="navbar-menu-icon-container"
+      (click)="onNavbarIconClick()"
+    >
       <mat-icon *ngIf="router.url !== '/'">menu</mat-icon>
       <mat-icon *ngIf="router.url === '/'">login</mat-icon>
     </div>
+    <div
+      *ngIf="router.url === '/home'"
+      class="empty-navbar-menu-icon-container"
+    ></div>
   </div>
   <div *ngIf="displayMenu" class="navbar-button-container">
     <button

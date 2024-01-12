@@ -1,6 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthGuardService } from '../../services/auth-gaurd/auth-guard.service';
 import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 export interface MenuOption {

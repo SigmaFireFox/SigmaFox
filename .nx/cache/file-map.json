@@ -7572,11 +7572,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.html",
-        "hash": "13143434533115456022"
+        "hash": "12534282901333824657"
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.scss",
-        "hash": "10793795604689117798"
+        "hash": "16943439414012869531"
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.spec.ts",
@@ -7589,7 +7589,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.ts",
-        "hash": "7866203061168557552",
+        "hash": "11908383635170921306",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router"
