@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
@@ -35,10 +34,12 @@ import { ProcessResultsScreen } from './screens/process-results/process-results.
 import { SignInPage } from './pages/sign-in/sign-in.page';
 import { GeneralItemsListScreen } from './screens/general-items-list/general-items-list.screen';
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { SignInModal } from '@sigmafox/modals';
+import { LandingPage } from './pages/landing/landing.page';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { SignInModal } from '@sigmafox/modals';
     CalendarPage,
     FinancesPage,
     ClientsPage,
+    LandingPage,
     AppointmentModal,
     ClientDetailsModal,
     PaymentsModal,
@@ -62,8 +64,9 @@ import { SignInModal } from '@sigmafox/modals';
     GeneralItemsListScreen,
     GeneralScreenHeaderComponent,
   ],
+  bootstrap: [AppComponent],
   imports: [
-    BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatMenuModule,
@@ -81,7 +84,5 @@ import { SignInModal } from '@sigmafox/modals';
     AngularFirestoreModule,
     SignInModal,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}

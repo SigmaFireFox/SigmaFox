@@ -1,3 +1,4 @@
 <div class="screen-container">
-  <p>landing works!</p>
+  <p @fade *ngIf="specialText === 'Test 1'">{{specialText}}</p>
+  <p @fade *ngIf="specialText === 'Test 2'">{{specialText}}</p>
 </div>

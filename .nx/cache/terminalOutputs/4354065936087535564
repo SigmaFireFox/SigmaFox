@@ -1,0 +1,2083 @@
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m            [2m | [22mvendor       [2m | [22m  [96m6.52 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m              [2m | [22mmain         [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m         [2m | [22mpolyfills    [2m | [22m[96m337.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.css, styles.js[39m[37m[2m | [22mstyles       [2m | [22m[96m311.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m           [2m | [22mruntime      [2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial Total[22m[2m | [22m  [1m7.59 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:37:39.022Z[39m[37m[22m - Hash: [1m[37m398f9d8729e181d4[39m[37m[22m - Time: [1m[37m6780[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:38:15.772Z[39m[37m[22m - Hash: [1m[37m99213acee26d466e[39m[37m[22m - Time: [1m[37m3121[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:38:21.874Z[39m[37m[22m - Hash: [1m[37m398f9d8729e181d4[39m[37m[22m - Time: [1m[37m350[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:38:33.626Z[39m[37m[22m - Hash: [1m[37m2846b8aae5d13ef8[39m[37m[22m - Time: [1m[37m354[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:38:35.931Z[39m[37m[22m - Hash: [1m[37m2846b8aae5d13ef8[39m[37m[22m - Time: [1m[37m272[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.46 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:39:03.848Z[39m[37m[22m - Hash: [1m[37m539c7dc2a5f7d3e7[39m[37m[22m - Time: [1m[37m3171[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.46 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:39:09.130Z[39m[37m[22m - Hash: [1m[37me699f9ea50031d49[39m[37m[22m - Time: [1m[37m275[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:39:26.192Z[39m[37m[22m - Hash: [1m[37m2846b8aae5d13ef8[39m[37m[22m - Time: [1m[37m336[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.41 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:39:52.855Z[39m[37m[22m - Hash: [1m[37m5ec30c55e8609334[39m[37m[22m - Time: [1m[37m376[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.component.html[0m:[93m5[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'e-questrian-landing' is not a known element:[39m[22m
+[1m[31m1. If 'e-questrian-landing' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'e-questrian-landing' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m <e-questrian-landing></e-questrian-landing>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/app.component.ts[0m:[93m7[0m:[93m16[0m[39m[22m
+[1m[31m    [7m7[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.41 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:40:03.012Z[39m[37m[22m - Hash: [1m[37mb0bfabf9ebb13a1a[39m[37m[22m - Time: [1m[37m206[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.component.html[0m:[93m5[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'e-questrian-landing' is not a known element:[39m[22m
+[1m[31m1. If 'e-questrian-landing' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'e-questrian-landing' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m <e-questrian-landing></e-questrian-landing>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/app.component.ts[0m:[93m7[0m:[93m16[0m[39m[22m
+[1m[31m    [7m7[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:40:13.398Z[39m[37m[22m - Hash: [1m[37mb0bfabf9ebb13a1a[39m[37m[22m - Time: [1m[37m285[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.component.html[0m:[93m5[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'e-questrian-landing' is not a known element:[39m[22m
+[1m[31m1. If 'e-questrian-landing' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'e-questrian-landing' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m <e-questrian-landing></e-questrian-landing>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/app.component.ts[0m:[93m7[0m:[93m16[0m[39m[22m
+[1m[31m    [7m7[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:40:16.339Z[39m[37m[22m - Hash: [1m[37m279ee2d7211b777d[39m[37m[22m - Time: [1m[37m624[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:41:15.240Z[39m[37m[22m - Hash: [1m[37m600504cc7b61df6b[39m[37m[22m - Time: [1m[37m342[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m436.02 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:41:27.035Z[39m[37m[22m - Hash: [1m[37m8f5b0fdaa06abd01[39m[37m[22m - Time: [1m[37m326[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:41:47.345Z[39m[37m[22m - Hash: [1m[37mee08ade244afd417[39m[37m[22m - Time: [1m[37m377[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m434.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:42:14.062Z[39m[37m[22m - Hash: [1m[37m82552ffaed63cdf3[39m[37m[22m - Time: [1m[37m467[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.module.ts[0m:[93m65[0m:[93m5[0m - [91merror[0m[90m NG6008: [0mComponent LandingPage is standalone, and cannot be declared in an NgModule. Did you mean to import it instead?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m65[0m     LandingPage,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:42:19.957Z[39m[37m[22m - Hash: [1m[37mee08ade244afd417[39m[37m[22m - Time: [1m[37m325[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:42:21.845Z[39m[37m[22m - Hash: [1m[37m8ca0e8b5f1048fe3[39m[37m[22m - Time: [1m[37m260[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:43:05.269Z[39m[37m[22m - Hash: [1m[37m8ca0e8b5f1048fe3[39m[37m[22m - Time: [1m[37m500[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.81 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:43:18.807Z[39m[37m[22m - Hash: [1m[37m11eb0b9dba902da2[39m[37m[22m - Time: [1m[37m442[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:43:37.666Z[39m[37m[22m - Hash: [1m[37m8ca0e8b5f1048fe3[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:11.132Z[39m[37m[22m - Hash: [1m[37mb70d50ecd8d10547[39m[37m[22m - Time: [1m[37m461[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:18.685Z[39m[37m[22m - Hash: [1m[37m2c2b8b0706cb04db[39m[37m[22m - Time: [1m[37m244[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:19.296Z[39m[37m[22m - Hash: [1m[37m2c2b8b0706cb04db[39m[37m[22m - Time: [1m[37m244[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:20.968Z[39m[37m[22m - Hash: [1m[37m90931024d303b344[39m[37m[22m - Time: [1m[37m296[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:27.815Z[39m[37m[22m - Hash: [1m[37m3168675c8bc9674c[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:47.232Z[39m[37m[22m - Hash: [1m[37m3cff388d7b97e0e5[39m[37m[22m - Time: [1m[37m989[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/components/menu/menu.component.html[0m:[93m9[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'button'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  9[0m       [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 10[0m         option.styling === optionStyling.Secondary[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 12[0m           : 'navbar-button primary-menu-button'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 13[0m       "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/components/menu/menu.component.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './menu.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MenuComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m40[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a[39m[22m[1m[31m Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m         [ngClass]="'editable-selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m55[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m55[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m62[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m62[0m         [ngClass]="'e[39m[22m[1m[31mditable-selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m77[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m77[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-date-input'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m78[0m:[93m52[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m78[0m         {{appointmentForm.controls['date'].value | date: 'dd MMM yyyy'}}[39m[22m
+[1m[31m[7m  [0m [91m                                                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m85[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to[39m[22m[1m[31m 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m           [ngClass]="'editable-date-input'"[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m96[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m96[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m98[0m:[93m11[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m         | number: '2.0-0'}}[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m104[0m:[93m9[0m - [91merror[0m[90m NG800[39m[22m[1m[31m2: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m104[0m         [ngClass]="'editable-time-selector'"[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m119[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m119[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">[39m[22m
+[1m[31m[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m121[0m:[93m11[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m121[0m         | number: '2.0-0'}}[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[39m[22m[1m[31m[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m127[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m127[0m         [ngClass]="'editable-time-selector'"[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/[39m[22m[1m[31mapp/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m34[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m34[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m52[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m52[0m         [ngClass]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-quest[39m[22m[1m[31mrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m63[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m63[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m79[0m:[93m36[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m79[0m     <div *ngIf="invoiceRange ===2" [ngSwitch]="clientRange">[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m84[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, th[39m[22m[1m[31men verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m84[0m           [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m100[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m100[0m           [ngClass]="'selector'"[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has[39m[22m[1m[31m 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m         [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m33[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m         [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m54[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m54[0m         [ngCla[39m[22m[1m[31mss]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m69[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m69[0m         [ngClass]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m16[0m:[93m18[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m   <div>{{ date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m28[0m:[93m56[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m28[0m         {{ block.time.hours }}:{{ block.time.minutes | number: "2.0" }}[39m[22m
+[1m[31m[7m  [0m [91m                                                       ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pag[39m[22m[1m[31mes/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m34[0m:[93m9[0m - [91merror[0m[90m NG8001: [0m'mat-button' is not a known element:[39m[22m
+[1m[31m1. If 'mat-button' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 34[0m         <mat-button[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 35[0m           [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 40[0m           (click)="appointmentClicked(appointmentID)"[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 41[0m         >[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m35[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-button'.[39m[22m
+[1m[31m1. If 'mat-button' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 35[0m           [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 36[0m             appointments[appointmentID].type === app[39m[22m[1m[31mointmentType.Lesson[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 38[0m               : 'appointment-button'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 39[0m           "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/clients/clients.page.html[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <div class="page-container" [ngSwitch]="currentViewState">[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/clients/clients.page.ts[0m:[93m20[0m:[93m16[0m[39m[22m
+[1m[31m    [7m20[0m   templateUrl: './clients.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ClientsPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <div class="page-container" [ngSwitch]="currentViewState">[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/home/home.page.html[0m:[93m3[0m:[93m4[0m - [91merror[0m[90m TS2322: [0mType 'MenuPageConfig | undefined' i[39m[22m[1m[31ms not assignable to type 'MenuPageConfig'.[39m[22m
+[1m[31m  Type 'undefined' is not assignable to type 'MenuPageConfig'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [config]="config"[39m[22m
+[1m[31m[7m [0m [91m   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/home/home.page.ts[0m:[93m14[0m:[93m16[0m[39m[22m
+[1m[31m    [7m14[0m   templateUrl: './home.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component HomePage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.html[0m:[93m37[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 37[0m         [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 38[0m         (i === 0 || i === config.items.length - 1) && config.financialDocType === financialDocType.STATEMENT[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 40[0m           : 'general-line'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 41[0m       "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './financial-doc-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.html[0m:[93m49[0m:[93m49[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m49[0m         <div class="date-column">{{ item.date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './financial-doc-list.scr[39m[22m[1m[31meen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-view/financial-doc-view.screen.html[0m:[93m23[0m:[93m49[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m23[0m         <div class="date-column">{{ Item.date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-view/financial-doc-view.screen.ts[0m:[93m11[0m:[93m16[0m[39m[22m
+[1m[31m    [7m11[0m   templateUrl: './financial-doc-view.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocViewScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.html[0m:[93m9[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngStyle' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m9[0m       [ngStyle]="{width: column.widthPerc}"[39m[22m
+[1m[31m[7m [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.ts[0m:[93m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './general-items-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GeneralItemsListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.html[0m:[93m22[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngStyle' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m22[0m         [ngStyle]="{width: field.widthPerc}"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.ts[0m:[93m[39m[22m[1m[31m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './general-items-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GeneralItemsListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/process-results/process-results.screen.html[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   <div [ngSwitch]="result.resultType">[39m[22m
+[1m[31m[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/process-results/process-results.screen.ts[0m:[93m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './process-results.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProcessResultsScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:44:54.776Z[39m[37m[22m - Hash: [1m[37m6f2d3b75728fb2bf[39m[37m[22m - Time: [1m[37m342[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/components/menu/menu.component.html[0m:[93m9[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'button'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  9[0m       [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m      ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 10[0m         option.styling === optionStyling.Secondary[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 12[0m           : 'navbar-button primary-menu-button'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 13[0m       "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/components/menu/menu.component.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './menu.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MenuComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m32[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m40[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a[39m[22m[1m[31m Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m         [ngClass]="'editable-selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m55[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m55[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m62[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m62[0m         [ngClass]="'e[39m[22m[1m[31mditable-selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m77[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m77[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-date-input'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m78[0m:[93m52[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m78[0m         {{appointmentForm.controls['date'].value | date: 'dd MMM yyyy'}}[39m[22m
+[1m[31m[7m  [0m [91m                                                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m85[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to[39m[22m[1m[31m 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m           [ngClass]="'editable-date-input'"[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m96[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m96[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m98[0m:[93m11[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m         | number: '2.0-0'}}[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m104[0m:[93m9[0m - [91merror[0m[90m NG800[39m[22m[1m[31m2: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m104[0m         [ngClass]="'editable-time-selector'"[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m119[0m:[93m32[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m119[0m       <div *ngIf="!isEditable" [ngClass]="'uneditable-time-selector'">[39m[22m
+[1m[31m[7m   [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m121[0m:[93m11[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m121[0m         | number: '2.0-0'}}[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[39m[22m[1m[31m[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html[0m:[93m127[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m127[0m         [ngClass]="'editable-time-selector'"[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.ts[0m:[93m36[0m:[93m16[0m[39m[22m
+[1m[31m    [7m36[0m   templateUrl: './appointment-detail.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppointmentModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/[39m[22m[1m[31mapp/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m34[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m34[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m52[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m52[0m         [ngClass]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-quest[39m[22m[1m[31mrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m63[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-radio-group'.[39m[22m
+[1m[31m1. If 'mat-radio-group' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-radio-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m63[0m         [ngClass]="'radio-group'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m79[0m:[93m36[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m79[0m     <div *ngIf="invoiceRange ===2" [ngSwitch]="clientRange">[39m[22m
+[1m[31m[7m  [0m [91m                                   ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m84[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, th[39m[22m[1m[31men verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m84[0m           [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.html[0m:[93m100[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m100[0m           [ngClass]="'selector'"[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-invoice/generate-invoice.modal.ts[0m:[93m37[0m:[93m16[0m[39m[22m
+[1m[31m    [7m37[0m   templateUrl: './generate-invoice.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateInvoiceModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has[39m[22m[1m[31m 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m         [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m33[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-select'.[39m[22m
+[1m[31m1. If 'mat-select' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m         [ngClass]="'selector'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m54[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m54[0m         [ngCla[39m[22m[1m[31mss]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.html[0m:[93m69[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'input'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m69[0m         [ngClass]="'date-input'"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/modals/generate-statement/generate-statement.modal.ts[0m:[93m22[0m:[93m16[0m[39m[22m
+[1m[31m    [7m22[0m   templateUrl: './generate-statement.modal.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GenerateStatementModal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m16[0m:[93m18[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m   <div>{{ date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m28[0m:[93m56[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'number'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m28[0m         {{ block.time.hours }}:{{ block.time.minutes | number: "2.0" }}[39m[22m
+[1m[31m[7m  [0m [91m                                                       ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pag[39m[22m[1m[31mes/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m34[0m:[93m9[0m - [91merror[0m[90m NG8001: [0m'mat-button' is not a known element:[39m[22m
+[1m[31m1. If 'mat-button' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 34[0m         <mat-button[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 35[0m           [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 40[0m           (click)="appointmentClicked(appointmentID)"[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 41[0m         >[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/calendar/calendar.page.html[0m:[93m35[0m:[93m11[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'mat-button'.[39m[22m
+[1m[31m1. If 'mat-button' is an Angular component and it has 'ngClass' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 35[0m           [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 36[0m             appointments[appointmentID].type === app[39m[22m[1m[31mointmentType.Lesson[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 38[0m               : 'appointment-button'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 39[0m           "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/calendar/calendar.page.ts[0m:[93m21[0m:[93m16[0m[39m[22m
+[1m[31m    [7m21[0m   templateUrl: './calendar.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CalendarPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/clients/clients.page.html[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <div class="page-container" [ngSwitch]="currentViewState">[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/clients/clients.page.ts[0m:[93m20[0m:[93m16[0m[39m[22m
+[1m[31m    [7m20[0m   templateUrl: './clients.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ClientsPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/finances/finances.page.html[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <div class="page-container" [ngSwitch]="currentViewState">[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/finances/finances.page.ts[0m:[93m39[0m:[93m16[0m[39m[22m
+[1m[31m    [7m39[0m   templateUrl: './finances.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancesPage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/home/home.page.html[0m:[93m3[0m:[93m4[0m - [91merror[0m[90m TS2322: [0mType 'MenuPageConfig | undefined' i[39m[22m[1m[31ms not assignable to type 'MenuPageConfig'.[39m[22m
+[1m[31m  Type 'undefined' is not assignable to type 'MenuPageConfig'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [config]="config"[39m[22m
+[1m[31m[7m [0m [91m   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/pages/home/home.page.ts[0m:[93m14[0m:[93m16[0m[39m[22m
+[1m[31m    [7m14[0m   templateUrl: './home.page.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component HomePage.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.html[0m:[93m37[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngClass' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 37[0m         [ngClass]="[39m[22m
+[1m[31m[7m   [0m [91m        ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 38[0m         (i === 0 || i === config.items.length - 1) && config.financialDocType === financialDocType.STATEMENT[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 40[0m           : 'general-line'[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 41[0m       "[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './financial-doc-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.html[0m:[93m49[0m:[93m49[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m49[0m         <div class="date-column">{{ item.date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-list/financial-doc-list.screen.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './financial-doc-list.scr[39m[22m[1m[31meen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/financial-doc-view/financial-doc-view.screen.html[0m:[93m23[0m:[93m49[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'date'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m23[0m         <div class="date-column">{{ Item.date | date: "dd/MM/yyyy" }}</div>[39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/financial-doc-view/financial-doc-view.screen.ts[0m:[93m11[0m:[93m16[0m[39m[22m
+[1m[31m    [7m11[0m   templateUrl: './financial-doc-view.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component FinancialDocViewScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.html[0m:[93m9[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngStyle' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m9[0m       [ngStyle]="{width: column.widthPerc}"[39m[22m
+[1m[31m[7m [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.ts[0m:[93m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './general-items-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GeneralItemsListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.html[0m:[93m22[0m:[93m9[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngStyle' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m22[0m         [ngStyle]="{width: field.widthPerc}"[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/general-items-list/general-items-list.screen.ts[0m:[93m[39m[22m[1m[31m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './general-items-list.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component GeneralItemsListScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/screens/process-results/process-results.screen.html[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'ngSwitch' since it isn't a known property of 'div'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   <div [ngSwitch]="result.resultType">[39m[22m
+[1m[31m[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mapps/e-questrian/src/app/screens/process-results/process-results.screen.ts[0m:[93m13[0m:[93m16[0m[39m[22m
+[1m[31m    [7m13[0m   templateUrl: './process-results.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProcessResultsScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:45:03.986Z[39m[37m[22m - Hash: [1m[37ma2284f76ab5c3ec3[39m[37m[22m - Time: [1m[37m828[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.module.ts[0m:[93m68[0m:[93m5[0m - [91merror[0m[90m TS1005: [0m',' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m68[0m     AppRoutingModule,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:45:04.449Z[39m[37m[22m - Hash: [1m[37mdec52e35a8e94c4a[39m[37m[22m - Time: [1m[37m368[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:02.534Z[39m[37m[22m - Hash: [1m[37m0ded763c6a7465b0[39m[37m[22m - Time: [1m[37m355[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:07.512Z[39m[37m[22m - Hash: [1m[37m5fd7051b3e6c71ea[39m[37m[22m - Time: [1m[37m223[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.module.ts[0m:[93m85[0m:[93m5[0m - [91merror[0m[90m NG2011: [0mThe component 'LandingPage' appears in 'imports', but is not standalone and cannot be imported directly. It must be imported via an NgModule.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m     LandingPage,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:11.634Z[39m[37m[22m - Hash: [1m[37m18f26ccd553048f6[39m[37m[22m - Time: [1m[37m359[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/app.module.ts[0m:[93m85[0m:[93m5[0m - [91merror[0m[90m NG2011: [0mThe component 'LandingPage' appears in 'imports', but is not standalone and cannot be imported directly. It must be imported via an NgModule.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m     LandingPage,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m434.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:23.457Z[39m[37m[22m - Hash: [1m[37m6564935c824914c9[39m[37m[22m - Time: [1m[37m444[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:29.673Z[39m[37m[22m - Hash: [1m[37m656ade2de63ec57c[39m[37m[22m - Time: [1m[37m248[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:46:32.437Z[39m[37m[22m - Hash: [1m[37m4ae88c2ee9777044[39m[37m[22m - Time: [1m[37m232[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.21 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:49:04.195Z[39m[37m[22m - Hash: [1m[37ma0d114fa2eb99ff7[39m[37m[22m - Time: [1m[37m327[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m TS2663: [0mCannot find name 'specialText'. Did you mean the instance member 'this.specialText'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     specialText = 'Test 1';[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.21 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:49:07.373Z[39m[37m[22m - Hash: [1m[37m240b7585ae7b172a[39m[37m[22m - Time: [1m[37m250[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.29 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:49:49.670Z[39m[37m[22m - Hash: [1m[37m180c7405dc944618[39m[37m[22m - Time: [1m[37m277[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m29[0m:[93m7[0m - [91merror[0m[90m TS2304: [0mCannot find name 'logger'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m29[0m       logger('bobbyhadz.com');[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m8[0m - [91merror[0m[90m TS2304: [0mCannot find name 'seconds'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m     }, seconds * 1000);[39m[22m
+[1m[31m[7m  [0m [91m       ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:49:57.608Z[39m[37m[22m - Hash: [1m[37mbbdaf2bc4b1e7e2a[39m[37m[22m - Time: [1m[37m267[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:50:22.314Z[39m[37m[22m - Hash: [1m[37mb4b169b9c45a438b[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2367: [0mThis comparison appears to be unintentional because the types '"Test 1"' and '"Test 2"' have no overlap.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m         this.specialText === 'Test 2';[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:50:28.457Z[39m[37m[22m - Hash: [1m[37mc0b1662452f906f7[39m[37m[22m - Time: [1m[37m278[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:50:44.077Z[39m[37m[22m - Hash: [1m[37m664b3ff15fce0e51[39m[37m[22m - Time: [1m[37m319[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:50:57.030Z[39m[37m[22m - Hash: [1m[37m15ea5d5139cda889[39m[37m[22m - Time: [1m[37m289[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:51:00.347Z[39m[37m[22m - Hash: [1m[37m1371e3a4fe6bac49[39m[37m[22m - Time: [1m[37m243[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:51:00.694Z[39m[37m[22m - Hash: [1m[37m1371e3a4fe6bac49[39m[37m[22m - Time: [1m[37m306[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:51:18.351Z[39m[37m[22m - Hash: [1m[37md7bd551130a50f94[39m[37m[22m - Time: [1m[37m375[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:51:52.108Z[39m[37m[22m - Hash: [1m[37m935cd306ae001c99[39m[37m[22m - Time: [1m[37m361[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:53:36.369Z[39m[37m[22m - Hash: [1m[37m6363a7ef27894058[39m[37m[22m - Time: [1m[37m343[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:53:56.666Z[39m[37m[22m - Hash: [1m[37m4702e9f7afa9ae8e[39m[37m[22m - Time: [1m[37m277[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:54:17.693Z[39m[37m[22m - Hash: [1m[37ma1f384084262dfc8[39m[37m[22m - Time: [1m[37m281[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:54:21.228Z[39m[37m[22m - Hash: [1m[37mda0ea9a9be58909b[39m[37m[22m - Time: [1m[37m279[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:54:25.757Z[39m[37m[22m - Hash: [1m[37m14972ab2167d153a[39m[37m[22m - Time: [1m[37m234[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:55:04.919Z[39m[37m[22m - Hash: [1m[37m6e6a86279e42fa63[39m[37m[22m - Time: [1m[37m329[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:55:12.460Z[39m[37m[22m - Hash: [1m[37m9efdec0840886baa[39m[37m[22m - Time: [1m[37m296[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:55:37.481Z[39m[37m[22m - Hash: [1m[37m1af7b4fb29941942[39m[37m[22m - Time: [1m[37m315[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:56:07.176Z[39m[37m[22m - Hash: [1m[37m47d9c0cd79dbddc5[39m[37m[22m - Time: [1m[37m347[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:56:16.419Z[39m[37m[22m - Hash: [1m[37m272527119e9d31b0[39m[37m[22m - Time: [1m[37m314[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:56:35.160Z[39m[37m[22m - Hash: [1m[37meb539209ca14cee9[39m[37m[22m - Time: [1m[37m277[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m7[0m - [91merror[0m[90m TS7010: [0m'setInterval', which lacks return-type annotation, implicitly has an 'any' return type.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m19[0m - [91merror[0m[90m TS1138: [0mParameter declaration expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m                  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m19[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m31[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m31[0m       this.swithText;[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m32[0m:[93m12[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m     }, 2000);[39m[22m
+[1m[31m[7m  [0m [91m           ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m35[0m:[93m3[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ngOnInit'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m35[0m   ngOnInit() {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m35[0m:[93m14[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m35[0m   ngOnInit() {[39m[22m
+[1m[31m[7m  [0m [91m             ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m39[0m:[93m3[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m   private sw[39m[22m[1m[31mithText() {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m39[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'swithText'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m   private swithText() {[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m39[0m:[93m23[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m   private swithText() {[39m[22m
+[1m[31m[7m  [0m [91m                      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m41[0m:[93m9[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m41[0m     if (this.specialText === 'Test 1') {[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m42[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m42[0m       this.specialText = 'Test 2';[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m44[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m44[0m       this.specialText = 'Test 1';[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m46[0m:[93m5[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m     this.cd.detectChanges();[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m48[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m48[0m }[39m[22m
+[1m[31m[7m  [0m [91m~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:56:37.962Z[39m[37m[22m - Hash: [1m[37me2da39636bc07397[39m[37m[22m - Time: [1m[37m236[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m7[0m - [91merror[0m[90m TS7010: [0m'setInterval', which lacks return-type annotation, implicitly has an 'any' return type.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m19[0m - [91merror[0m[90m TS1138: [0mParameter declaration expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m                  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m30[0m:[93m19[0m - [91merror[0m[90m TS2695: [0mLeft side of comma operator is unused and has no side effects.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m30[0m       setInterval(() => {[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m31[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m31[0m       this.swithText;[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m32[0m:[93m12[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m     }, 2000);[39m[22m
+[1m[31m[7m  [0m [91m           ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m36[0m:[93m3[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m36[0m   private swithText() {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m36[0m:[93m11[0m - [91merror[0m[90m TS2304: [0mCannot find name 'swithText'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m36[0m   private swithText() {[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m36[0m:[93m23[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m[7m36[0m   private swithText() {[39m[22m
+[1m[31m[7m  [0m [91m                      ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m38[0m:[93m9[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m     if (this.specialText === 'Test 1') {[39m[22m
+[1m[31m[7m  [0m [91m        ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m39[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m       this.specialText = 'Test 2';[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m41[0m:[93m7[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m41[0m       this.specialText = 'Test 1';[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m43[0m:[93m5[0m - [91merror[0m[90m TS2532: [0mObject is possibly 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m43[0m     this.cd.detectChanges();[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m45[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m45[0m }[39m[22m
+[1m[31m[7m  [0m [91m~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:56:51.087Z[39m[37m[22m - Hash: [1m[37m0f51487f99c06681[39m[37m[22m - Time: [1m[37m304[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:58:45.207Z[39m[37m[22m - Hash: [1m[37m1567aa59d657a4ff[39m[37m[22m - Time: [1m[37m300[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m31[0m:[93m7[0m - [91merror[0m[90m TS2663: [0mCannot find name 'swithText'. Did you mean the instance member 'this.swithText'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m31[0m       swithText();[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:58:46.638Z[39m[37m[22m - Hash: [1m[37ma1a4a49e903efe36[39m[37m[22m - Time: [1m[37m257[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:01:26.714Z[39m[37m[22m - Hash: [1m[37m3d677edf09469832[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:01:56.378Z[39m[37m[22m - Hash: [1m[37m351d1b600575d213[39m[37m[22m - Time: [1m[37m312[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:02:27.375Z[39m[37m[22m - Hash: [1m[37m3166a1e7eba7d930[39m[37m[22m - Time: [1m[37m292[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:02:38.077Z[39m[37m[22m - Hash: [1m[37m70d151653b68c3bd[39m[37m[22m - Time: [1m[37m324[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:02:39.629Z[39m[37m[22m - Hash: [1m[37m81fe4bfbd3ea7c91[39m[37m[22m - Time: [1m[37m250[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:02:57.484Z[39m[37m[22m - Hash: [1m[37mdb373ba5a2630321[39m[37m[22m - Time: [1m[37m279[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m436.06 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:03:33.879Z[39m[37m[22m - Hash: [1m[37mce57328c70405998[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m436.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:04:06.570Z[39m[37m[22m - Hash: [1m[37m753ae4f3ee8588bd[39m[37m[22m - Time: [1m[37m352[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:04:18.587Z[39m[37m[22m - Hash: [1m[37m77bed203479573ee[39m[37m[22m - Time: [1m[37m299[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.33 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:04:33.803Z[39m[37m[22m - Hash: [1m[37m9a2110826be17a9f[39m[37m[22m - Time: [1m[37m385[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.33 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:05:00.988Z[39m[37m[22m - Hash: [1m[37m8c8c58c2149adc51[39m[37m[22m - Time: [1m[37m303[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:05:03.866Z[39m[37m[22m - Hash: [1m[37m39ba2885fb59736b[39m[37m[22m - Time: [1m[37m262[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m437.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T06:05:15.919Z[39m[37m[22m - Hash: [1m[37m49cb4cd5569272b9[39m[37m[22m - Time: [1m[37m285[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

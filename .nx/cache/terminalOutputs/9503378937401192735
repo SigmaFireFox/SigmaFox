@@ -1,0 +1,310 @@
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m            [2m | [22mvendor       [2m | [22m  [96m6.52 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m              [2m | [22mmain         [2m | [22m[96m434.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m         [2m | [22mpolyfills    [2m | [22m[96m337.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.css, styles.js[39m[37m[2m | [22mstyles       [2m | [22m[96m311.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m           [2m | [22mruntime      [2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial Total[22m[2m | [22m  [1m7.58 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:16:52.550Z[39m[37m[22m - Hash: [1m[37m3ee83d34d16d2f3f[39m[37m[22m - Time: [1m[37m9292[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m434.84 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:16:57.923Z[39m[37m[22m - Hash: [1m[37m1a0c608b48ad66c6[39m[37m[22m - Time: [1m[37m5028[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:20:14.650Z[39m[37m[22m - Hash: [1m[37me96d502dde0a5af9[39m[37m[22m - Time: [1m[37m390[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.ts[39m[31m[0m:[0m[93m28:18-26[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'triggers' (imported as 'triggers') was not found in '@angular/animations' (possible exports: AUTO_STYLE, AnimationBuilder, AnimationFactory, NoopAnimationPlayer, animate, animateChild, animation, group, keyframes, query, sequence, stagger, state, style, transition, trigger, useAnimation, ɵAnimationGroupPlayer, ɵPRE_STYLE)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m11[0m - [91merror[0m[90m TS2724: [0m'"@angular/animations"' has no exported member named 'triggers'. Did you mean 'trigger'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  triggers} '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m          ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mnode_modules/.pnpm/@angular+animations@16.2.12_@angular+core@16.2.12/node_modules/@angular/animations/index.d.ts[0m:[93m1559[0m:[93m25[0m[39m[22m
+[1m[31m    [7m1559[0m export declare function trigger(name: string, definitions: AnimationMetadata[]): AnimationTriggerMetadata;[39m[22m
+[1m[31m    [7m    [0m [96m                        ~~~~~~~[0m[39m[22m
+[1m[31m    'trigger' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m21[0m - [91merror[0m[90m TS1005: [0m'from' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  triggers} '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m438.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:20:33.068Z[39m[37m[22m - Hash: [1m[37mdee642e37fdf47ca[39m[37m[22m - Time: [1m[37m305[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/apps/e-questrian/src/app/pages/landing/landing.page.ts: Unexpected token (3:24)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 1 |[39m[31m [36mimport[39m[31m { [33mCommonModule[39m[31m } [36mfrom[39m[31m [32m'@angular/common'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 2 |[39m[31m [36mimport[39m[31m { [33mBrowserAnimationsModule[39m[31m } [36mfrom[39m[31m [32m'@angular/platform-browser/animations'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 3 |[39m[31m [36mimport[39m[31m { trigger } [36mfrom[39m[31m fron[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m   |[39m[31m                         [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 4 |[39m[31m [36mimport[39m[31m [33m*[39m[31m [36mas[39m[31m i0 [36mfrom[39m[31m [32m"@angular/core"[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 5 |[39m[31m [32m'@angular/animations'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 6 |[39m[31m [90m// eslint-disable-next-line @angular-eslint/component-class-suffix[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m'from' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  trigger} fron '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m20[0m - [91merror[0m[90m TS1141: [0mString literal expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  trigger} fron '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m';' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  trigger} fron '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                      [39m[22m[1m[31m  ~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:20:34.596Z[39m[37m[22m - Hash: [1m[37m1fe511ebd63c5d01[39m[37m[22m - Time: [1m[37m206[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/e-questrian/src/app/pages/landing/landing.page.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/apps/e-questrian/src/app/pages/landing/landing.page.ts: Unexpected token (3:24)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 1 |[39m[31m [36mimport[39m[31m { [33mCommonModule[39m[31m } [36mfrom[39m[31m [32m'@angular/common'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 2 |[39m[31m [36mimport[39m[31m { [33mBrowserAnimationsModule[39m[31m } [36mfrom[39m[31m [32m'@angular/platform-browser/animations'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 3 |[39m[31m [36mimport[39m[31m { trigger } [36mfrom[39m[31m [33m,[39m[31m [32m'@angular/animations'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m   |[39m[31m                         [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 4 |[39m[31m [36mimport[39m[31m [33m*[39m[31m [36mas[39m[31m i0 [36mfrom[39m[31m [32m"@angular/core"[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 5 |[39m[31m [90m// eslint-disable-next-line @angular-eslint/component-class-suffix[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 6 |[39m[31m [36mexport[39m[31m [36mclass[39m[31m [33mLandingPage[39m[31m {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS1109: [0mExpression expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  trigger} from, '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                       ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS1141: [0mString literal expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {  trigger} from, '@angular/animations'[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:20:36.334Z[39m[37m[22m - Hash: [1m[37mdfe7748667b3907f[39m[37m[22m - Time: [1m[37m273[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 0.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger()],[39m[22m
+[1m[31m[7m  [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mnode_modules/.pnpm/@angular+animations@16.2.12_@angular+core@16.2.12/node_modules/@angular/animations/index.d.ts[0m:[93m1559[0m:[93m33[0m[39m[22m
+[1m[31m    [7m1559[0m export declare function trigger(name: string, definitions: AnimationMetadata[]): AnimationTriggerMetadata;[39m[22m
+[1m[31m    [7m    [0m [96m                                ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    An argument for 'name' was not provided.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:21:28.707Z[39m[37m[22m - Hash: [1m[37m69f5b1b38710bb1d[39m[37m[22m - Time: [1m[37m310[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m16[0m - [91merror[0m[90m TS2554: [0mExpected 2 arguments, but got 1.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger('fade'[state('void', style({ opacity: 0 }))])],[39m[22m
+[1m[31m[7m  [0m [91m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mnode_modules/.pnpm/@angular+animations@16.2.12_@angular+core@16.2.12/node_modules/@angular/animations/index.d.ts[0m:[93m1559[0m:[93m47[0m[39m[22m
+[1m[31m    [7m1559[0m export declare function trigger(name: string, definitions: AnimationMetadata[]): AnimationTriggerMetadata;[39m[22m
+[1m[31m    [7m    [0m [96m                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    An argument for 'definitions' was not provided.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m31[0m - [91merror[0m[90m TS2304: [0mCannot find name 'state'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger('fade'[state('void', style({ opacity: 0 }))])],[39m[22m
+[1m[31m[7m  [0m [91m                              ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m45[0m - [91merror[0m[90m TS2304: [0mCannot find name 'style'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger('fade'[state('void', style({ opacity: 0 }))])],[39m[22m
+[1m[31m[7m  [0m [91m                                            ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:21:33.462Z[39m[37m[22m - Hash: [1m[37m4e310f66f7864eb3[39m[37m[22m - Time: [1m[37m247[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m33[0m - [91merror[0m[90m TS2304: [0mCannot find name 'state'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger('fade', [state('void', style({ opacity: 0 }))])],[39m[22m
+[1m[31m[7m  [0m [91m                                ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/landing.page.ts[0m:[93m12[0m:[93m47[0m - [91merror[0m[90m TS2304: [0mCannot find name 'style'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   animations: [trigger('fade', [state('void', style({ opacity: 0 }))])],[39m[22m
+[1m[31m[7m  [0m [91m                                              ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.23 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:21:40.556Z[39m[37m[22m - Hash: [1m[37m32b6e48a472c2d2f[39m[37m[22m - Time: [1m[37m309[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-11T16:22:37.588Z[39m[37m[22m - Hash: [1m[37m64df6671004c690a[39m[37m[22m - Time: [1m[37m367[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:35:26.454Z[39m[37m[22m - Hash: [1m[37m2abe1ad434d798ff[39m[37m[22m - Time: [1m[37m350[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:35:40.160Z[39m[37m[22m - Hash: [1m[37m638edaeb37753738[39m[37m[22m - Time: [1m[37m310[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:36:05.492Z[39m[37m[22m - Hash: [1m[37m2846b8aae5d13ef8[39m[37m[22m - Time: [1m[37m316[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:36:13.538Z[39m[37m[22m - Hash: [1m[37m398f9d8729e181d4[39m[37m[22m - Time: [1m[37m215[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m434.96 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:36:39.704Z[39m[37m[22m - Hash: [1m[37me99290ae35c358d1[39m[37m[22m - Time: [1m[37m379[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m435.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-12T05:37:01.870Z[39m[37m[22m - Hash: [1m[37m398f9d8729e181d4[39m[37m[22m - Time: [1m[37m249[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

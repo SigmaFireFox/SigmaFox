@@ -2017,15 +2017,15 @@
       },
       {
         "file": "apps/e-questrian/src/app/app.module.ts",
-        "hash": "5254275167082656495",
+        "hash": "11148844184773484476",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
           "npm:@angular/fire",
-          "npm:@angular/platform-browser",
           "npm:@angular/material",
           "npm:@angular/forms",
-          "modals"
+          "modals",
+          "npm:@angular/platform-browser"
         ]
       },
       {
@@ -2455,7 +2455,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.html",
-        "hash": "10630572637878916743"
+        "hash": "18033260463548701358"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.scss",
@@ -2470,10 +2470,10 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.ts",
-        "hash": "6233166153898870709",
+        "hash": "11190640916535080860",
         "deps": [
           "npm:@angular/core",
-          "npm:@angular/common"
+          "npm:@angular/animations"
         ]
       },
       {
