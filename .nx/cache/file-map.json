@@ -129,7 +129,7 @@
       },
       {
         "file": "libs/buttons/src/index.ts",
-        "hash": "17511798414789140547"
+        "hash": "18273141775515372406"
       },
       {
         "file": "libs/buttons/src/lib/buttons.module.ts",
@@ -141,11 +141,11 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.html",
-        "hash": "16951690224373022359"
+        "hash": "8240439005181998726"
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.scss",
-        "hash": "4993641032055428142"
+        "hash": "14962024622376075320"
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.spec.ts",
@@ -156,7 +156,7 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.ts",
-        "hash": "17823355220377508981",
+        "hash": "12731407042806045538",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"
@@ -7475,7 +7475,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/app-routing.module.ts",
-        "hash": "6798464627887620638",
+        "hash": "3988430107575066855",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router"
@@ -7946,11 +7946,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.html",
-        "hash": "949881392991752962"
+        "hash": "16083301618778541783"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.scss",
-        "hash": "14320940405300404862"
+        "hash": "10912535755946938923"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.spec.ts",
@@ -7961,10 +7961,12 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.ts",
-        "hash": "3385883918089485923",
+        "hash": "10475796826307961028",
         "deps": [
           "npm:@angular/core",
-          "npm:@angular/animations"
+          "npm:@angular/animations",
+          "buttons",
+          "npm:@angular/router"
         ]
       },
       {
@@ -8433,7 +8435,7 @@
       },
       {
         "file": "apps/e-questrian/src/styles.scss",
-        "hash": "14210023024563419601"
+        "hash": "4041856374195062649"
       },
       {
         "file": "apps/e-questrian/src/test.ts",

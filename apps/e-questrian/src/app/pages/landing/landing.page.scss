@@ -1,14 +1,23 @@
 .screen-container {
     display: flex;
     height: calc(100% - 50px - 10%);
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-size: xx-large;
     display: flex;
     flex-direction: column;
     padding: 8%;
     object-fit: cover;
     padding-top: calc(50px + 8%);
+
+    .call-to-action-button-container {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 

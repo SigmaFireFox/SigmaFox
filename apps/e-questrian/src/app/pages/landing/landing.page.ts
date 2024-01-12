@@ -6,6 +6,9 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { ButtonSize } from '@sigmafox/buttons';
+import { AuthenticationService } from '../../services/authentication/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'e-questrian-landing',
@@ -31,15 +34,30 @@ export class LandingPage {
   ];
   textCounter = 0;
   elementSwitch = true;
+  buttonSize = ButtonSize;
+  callToActionText = '';
+  private isLoggedIn = true;
 
-  constructor() {
+  constructor(private auth: AuthenticationService, private router: Router) {
     setInterval(() => {
       this.swithText();
     }, 3000);
   }
 
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+  async ngOnInit() {
+    this.isLoggedIn = await this.auth.isAuthenticated();
+    this.callToActionText = this.isLoggedIn
+      ? 'To Dashboard'
+      : 'Register for Free Demo';
+  }
+
   onSignUpClick() {
-    // TODO
+    if (this.isLoggedIn) {
+      this.router.navigate(['/home']);
+    } else {
+      this.router.navigate(['/register']);
+    }
   }
 
   private swithText() {
