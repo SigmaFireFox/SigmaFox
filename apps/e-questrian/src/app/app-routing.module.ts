@@ -18,6 +18,10 @@ export const routes: Routes = [
     component: SignInPage,
   },
   {
+    path: 'register',
+    component: SignInPage,
+  },
+  {
     path: 'home',
     canActivate: [AuthGuardService],
     component: HomePage,
