@@ -17,5 +17,6 @@ export class StandardButton {
 
   onClick() {
     this.clicked.emit();
+    console.log('Click');
   }
 }

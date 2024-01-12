@@ -40,6 +40,7 @@ import { SignInModal } from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StandardButton } from '@sigmafox/buttons';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     SignInModal,
+    StandardButton,
   ],
 })
 export class AppModule {}

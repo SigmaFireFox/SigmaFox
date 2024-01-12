@@ -1,6 +1,6 @@
 .screen-container {
     display: flex;
-    height: calc(100% - 50px - 8%);
+    height: calc(100% - 50px - 10%);
     align-items: start;
     justify-content: start;
     font-size: xx-large;
@@ -8,7 +8,7 @@
     flex-direction: column;
     padding: 8%;
     object-fit: cover;
-    padding-bottom: 0;
+    padding-top: calc(50px + 8%);
 }
 
 
@@ -22,4 +22,14 @@ img {
     width: 100%;
     z-index: -1;
     opacity: .5;
+}
+
+.button-container {
+    position: absolute;
+    width: calc(100% - 16%);
+    top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
 }

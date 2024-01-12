@@ -13,8 +13,8 @@ import {
   styleUrls: ['./landing.page.scss'],
   animations: [
     trigger('fade', [
-      state('void', style({ color: 'aqua', opacity: 0 })),
-      state('*', style({ color: 'aqua', 'font-weight': 'bold' })),
+      state('void', style({ color: 'blue', opacity: 0 })),
+      state('*', style({ color: 'blue', 'font-weight': 'bold' })),
       transition(':enter', [animate(2000)]),
     ]),
   ],
@@ -36,6 +36,10 @@ export class LandingPage {
     setInterval(() => {
       this.swithText();
     }, 3000);
+  }
+
+  onSignUpClick() {
+    // TODO
   }
 
   private swithText() {
