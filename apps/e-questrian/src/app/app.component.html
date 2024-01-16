@@ -1,4 +1,4 @@
 <e-questrian-navbar-component
-  *ngIf="!router.url.includes('signin')"
+  *ngIf="!router.url.includes('signin') && !router.url.includes('register')"
 ></e-questrian-navbar-component>
 <router-outlet></router-outlet>
