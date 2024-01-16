@@ -21,6 +21,7 @@ export enum FinancialDocType {
   STATEMENT,
   INVOICE,
   PAYMENT,
+  CREDITNOTE,
   BALANCE,
 }
 

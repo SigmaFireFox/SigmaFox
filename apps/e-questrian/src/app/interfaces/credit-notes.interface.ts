@@ -4,6 +4,7 @@ export interface CreditNotes {
 
 export interface CreditNoteDetails {
   date: Date;
-  appointment: number;
   clientID: number;
+  invoices: number[];
+  amount: number;
 }

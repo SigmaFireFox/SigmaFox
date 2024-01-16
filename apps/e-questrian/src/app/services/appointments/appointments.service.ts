@@ -34,7 +34,7 @@ export class AppointmentsService {
     if (!this.currentAppointments[appointmentID]) return;
     this.currentAppointments[appointmentID].cancelled = true;
     this.currentAppointments[appointmentID].invoice != 0
-      ? this.creditNoteService.generateCreditNote(
+      ? this.creditNoteService.generateCreditNoteForCancelledAppointment(
           appointmentID,
           this.appointments
         )

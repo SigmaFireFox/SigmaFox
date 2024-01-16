@@ -75,7 +75,7 @@ describe('CreditNotesService', () => {
 
     it('should call credit-notes and than appointments from local storage', () => {
       // Act
-      service.generateCreditNote(2);
+      service.generateCreditNoteForCancelledAppointment(2);
 
       // Assert
       expect(storageSpy).toHaveBeenCalledTimes(2);
@@ -98,7 +98,7 @@ describe('CreditNotesService', () => {
       expectedAppointments['3'].cancelled = true;
 
       // Act
-      service.generateCreditNote(3);
+      service.generateCreditNoteForCancelledAppointment(3);
 
       // Assert
       expect(service.creditNotes).toEqual(expectedCreditNotes);

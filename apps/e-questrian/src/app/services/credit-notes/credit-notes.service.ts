@@ -25,7 +25,10 @@ export class CreditNotesService {
     this.creditNotes = this.creditNotesOnFile;
   }
 
-  generateCreditNote(appointmentID: number, appointments: Appointments) {
+  generateCreditNoteForCancelledAppointment(
+    appointmentID: number,
+    appointments: Appointments
+  ) {
     const cnNumber = Object.keys(this.creditNotes).length + 1;
     this.appointments = appointments;
     const clientDisplayName =
@@ -35,8 +38,9 @@ export class CreditNotesService {
 
     this.creditNotes[cnNumber] = {
       date: new Date(new Date().setHours(0, 0, 0, 0)),
-      appointment: appointmentID,
       clientID,
+      invoices: [appointments[appointmentID].invoice],
+      amount: 250,
     };
 
     this.clientsService.addFinancialRecordToClient(

@@ -245,8 +245,9 @@ export class TestDataService {
     this.creditNotes = {
       1: {
         date: new Date(),
-        appointment: 3,
         clientID: 4,
+        invoices: [3],
+        amount: 250,
       },
     };
   }

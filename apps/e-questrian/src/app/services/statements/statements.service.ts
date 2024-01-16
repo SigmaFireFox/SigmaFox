@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Clients } from '../../interfaces/clients.interface';
 import {
   FinancialDocItem,
   FinancialDocType,
 } from '../../interfaces/common-page-configs.interface';
+import { CreditNotes } from '../../interfaces/credit-notes.interface';
 import { Invoices } from '../../interfaces/invoices.interface';
 import { GenerateStatementParameters } from '../../modals/generate-statement/generate-statement.modal';
 import { ClientsService } from '../clients/clients.service';
+import { CreditNotesService } from '../credit-notes/credit-notes.service';
 import { InvoicesService } from '../invoices/invoices.service';
 import { PaymentsService } from '../payments/payments.service';
 
@@ -27,9 +30,18 @@ export class StatementsService {
     return this.invoicesService.invoicesOnFile;
   }
 
+  get creditNotes(): CreditNotes {
+    return this.creditNotesService.creditNotesOnFile;
+  }
+
+  get clients(): Clients {
+    return this.clientsService.clientsOnFile;
+  }
+
   constructor(
     private paymentsService: PaymentsService,
     private invoicesService: InvoicesService,
+    private creditNotesService: CreditNotesService,
     private clientsService: ClientsService
   ) {}
 
@@ -63,18 +75,22 @@ export class StatementsService {
   ) {
     this.getAllInvoicesForClient(clientID, statementBasics);
     this.getAllPaymentsForClient(clientID, statementBasics);
+    this.getAllCreditNotesForClient(clientID, statementBasics);
   }
 
   private getAllInvoicesForClient(
     clientID: number,
     statementBasics: StatementBasics
   ) {
-    if (!this.invoices) return;
-    Object.keys(this.invoices).forEach((key) => {
-      if (this.invoices[parseInt(key)].clientID === clientID) {
-        const invoice = this.invoices[parseInt(key)];
+    if (this.clients[clientID].finacialRecords.invoices.length === 0) return;
+    if (!this.clients[clientID].finacialRecords.invoices) return;
+    Object.keys(this.clients[clientID].finacialRecords.invoices).forEach(
+      (index) => {
+        const invoiceNumber =
+          this.clients[clientID].finacialRecords.invoices[parseInt(index)];
+        const invoice = this.invoices[invoiceNumber];
         const docToAdd: FinancialDocItem = {
-          number: parseInt(key),
+          number: invoiceNumber,
           date: new Date(invoice.date),
           detail: 'Invoice',
           amount: invoice.appointments.length * 250,
@@ -83,18 +99,20 @@ export class StatementsService {
         };
         statementBasics.transactions.push(docToAdd);
       }
-    });
+    );
   }
 
   private getAllPaymentsForClient(
     clientID: number,
     statementBasics: StatementBasics
   ) {
-    Object.keys(this.payments).forEach((key) => {
-      if (this.payments[parseInt(key)].clientID === clientID) {
-        const payment = this.payments[parseInt(key)];
+    Object.keys(this.clients[clientID].finacialRecords.payments).forEach(
+      (index) => {
+        const paymentNumber =
+          this.clients[clientID].finacialRecords.payments[parseInt(index)];
+        const payment = this.payments[paymentNumber];
         const docToAdd: FinancialDocItem = {
-          number: parseInt(key),
+          number: paymentNumber,
           date: new Date(payment.date),
           detail: 'Payment',
           amount: -payment.amount as number,
@@ -103,7 +121,31 @@ export class StatementsService {
         };
         statementBasics.transactions.push(docToAdd);
       }
-    });
+    );
+  }
+
+  private getAllCreditNotesForClient(
+    clientID: number,
+    statementBasics: StatementBasics
+  ) {
+    if (this.clients[clientID].finacialRecords.creditNotes.length === 0) return;
+    Object.keys(this.clients[clientID].finacialRecords.creditNotes).forEach(
+      (index) => {
+        const creditNoteNumber =
+          this.clients[clientID].finacialRecords.creditNotes[parseInt(index)];
+        const creditNote = this.creditNotes[creditNoteNumber];
+        console.log(creditNote);
+        const docToAdd: FinancialDocItem = {
+          number: creditNoteNumber,
+          date: new Date(creditNote.date),
+          detail: 'Credit note',
+          amount: -creditNote.amount as number,
+          docType: FinancialDocType.CREDITNOTE,
+          voided: false,
+        };
+        statementBasics.transactions.push(docToAdd);
+      }
+    );
   }
 
   private dateScopeFinancialDocOfClient(
