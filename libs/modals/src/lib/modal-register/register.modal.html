@@ -1,0 +1,64 @@
+<div class="main-container">
+  <form
+    class="form-container"
+    [formGroup]="registerForm"
+    (ngSubmit)="onSubmitClick()"
+  >
+    <div class="form-header">Sign in</div>
+
+    <div class="form-line">
+      <div class="form-line-title">First name:</div>
+      <input type="text" formControlName="firstName" />
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Last name:</div>
+      <input type="text" formControlName="lastName" />
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Email:</div>
+      <input type="text" formControlName="email" />
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Password:</div>
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        formControlName="password"
+        id="passwordInput"
+      />
+      <sigmafox-two-state-icon-button
+        [conditionState]="showPassword"
+        [activeIcon]="'visibility_off'"
+        [inactiveIcon]="'visibility'"
+        (click)="togglePassword()"
+      ></sigmafox-two-state-icon-button>
+    </div>
+
+    <div class="form-line">
+      <div class="form-line-title">Confirm password:</div>
+      <input
+        [type]="showConfirmPassword ? 'text' : 'password'"
+        formControlName="passwordConfirm"
+        id="comfirmPasswordInput"
+      />
+      <sigmafox-two-state-icon-button
+        [conditionState]="showConfirmPassword"
+        [activeIcon]="'visibility_off'"
+        [inactiveIcon]="'visibility'"
+        (click)="togglePassword()"
+      ></sigmafox-two-state-icon-button>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <sigmafox-standard-button
+        [copy]="'Register'"
+        [class]="'secondary-button'"
+        [isDisabled]="!registerForm.valid"
+        (clicked)="onSubmitClick()"
+      ></sigmafox-standard-button>
+    </div>
+  </form>
+</div>

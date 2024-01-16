@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { RegisterDetails } from '@sigmafox/modals';
 import { Observable, map } from 'rxjs';
 import { SignInDetails } from '../../pages/sign-in/sign-in.page';
 
@@ -20,29 +21,40 @@ export class AuthenticationService {
     });
   }
 
-  UserRegistration(signInDetails: SignInDetails) {
+  async UserRegistration(registerDetails: RegisterDetails) {
     this.afAuth
       .createUserWithEmailAndPassword(
-        signInDetails.email,
-        signInDetails.password
+        registerDetails.email,
+        registerDetails.password
       )
       .then((userCredential) => {
         return userCredential;
       });
+
+    const profile = {
+      displayName: registerDetails.firstName + ' ' + registerDetails.lastName,
+      photoURL: '',
+    };
+
+    const currentUser = await this.afAuth.currentUser;
+    if (currentUser) {
+      return currentUser.updateProfile(profile);
+    }
   }
 
-  UserSignIn(signInDetails: SignInDetails): Promise<any> {
+  UserSignIn(signInDetails: SignInDetails): Promise<unknown> {
     return this.afAuth.signInWithEmailAndPassword(
       signInDetails.email,
       signInDetails.password
     );
   }
 
-  UserSignOut(): Promise<any> {
+  UserSignOut(): Promise<unknown> {
     return this.afAuth.signOut();
   }
 
   async isAuthenticated(): Promise<boolean> {
+    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve) => {
       await this.afAuth.onAuthStateChanged((user) => {
         user ? resolve(true) : resolve(false);

@@ -5,6 +5,7 @@ import { ClientsPage } from './pages/clients/clients.page';
 import { FinancesPage } from './pages/finances/finances.page';
 import { HomePage } from './pages/home/home.page';
 import { LandingPage } from './pages/landing/landing.page';
+import { RegisterPage } from './pages/register/register.page';
 import { SignInPage } from './pages/sign-in/sign-in.page';
 import { AuthGuardService } from './services/auth-gaurd/auth-guard.service';
 
@@ -19,7 +20,7 @@ export const routes: Routes = [
   },
   {
     path: 'register',
-    component: SignInPage,
+    component: RegisterPage,
   },
   {
     path: 'home',

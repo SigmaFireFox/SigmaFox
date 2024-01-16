@@ -36,11 +36,12 @@ import { GeneralItemsListScreen } from './screens/general-items-list/general-ite
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-import { SignInModal } from '@sigmafox/modals';
+import { RegisterModal, SignInModal } from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StandardButton } from '@sigmafox/buttons';
+import { RegisterPage } from './pages/register/register.page';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { StandardButton } from '@sigmafox/buttons';
     SignInPage,
     GeneralItemsListScreen,
     GeneralScreenHeaderComponent,
+    RegisterPage,
   ],
   bootstrap: [AppComponent],
   imports: [
@@ -84,6 +86,7 @@ import { StandardButton } from '@sigmafox/buttons';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     SignInModal,
+    RegisterModal,
     StandardButton,
   ],
 })

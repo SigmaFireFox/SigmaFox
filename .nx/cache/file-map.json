@@ -1916,7 +1916,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/app-routing.module.ts",
-        "hash": "3988430107575066855",
+        "hash": "15636627788493737027",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router"
@@ -1948,7 +1948,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/app.module.ts",
-        "hash": "5782256752314302988",
+        "hash": "6404433051923942736",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -2412,7 +2412,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/sign-in/sign-in.page.html",
-        "hash": "6256756891227682569"
+        "hash": "6371103383826168761"
       },
       {
         "file": "apps/e-questrian/src/app/pages/sign-in/sign-in.page.scss",
@@ -2431,7 +2431,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/sign-in/sign-in.page.ts",
-        "hash": "5913898593189638207",
+        "hash": "11550116338372916620",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router"
@@ -2633,10 +2633,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/authentication/authentication.service.ts",
-        "hash": "9552347491440883230",
+        "hash": "16892263290949146588",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/fire",
+          "modals",
           "npm:rxjs"
         ]
       },
@@ -2902,6 +2903,60 @@
       {
         "file": "apps/e-questrian/tsconfig.spec.json",
         "hash": "2486474936443458199"
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/sign-in copy/sign-in.page.html",
+        "hash": "6256756891227682569"
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/sign-in copy/sign-in.page.ts",
+        "hash": "5913898593189638207",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/sign-in copy/sign-in.page.spec.ts",
+        "hash": "3025000705762961351",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/fire",
+          "npm:@angular/router",
+          "npm:@angular/forms",
+          "modals"
+        ]
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/sign-in copy/sign-in.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/register/register.page.html",
+        "hash": "17758766889968617740"
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/register/register.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/register/register.page.spec.ts",
+        "hash": "5487507790337094577",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/fire",
+          "npm:@angular/router",
+          "npm:@angular/forms",
+          "modals"
+        ]
+      },
+      {
+        "file": "apps/e-questrian/src/app/pages/register/register.page.ts",
+        "hash": "6935738652992529709",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
       }
     ],
     "e-questrian-e2e": [
@@ -4397,7 +4452,7 @@
       },
       {
         "file": "libs/modals/src/index.ts",
-        "hash": "11541858498787758069"
+        "hash": "14279470898185576199"
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.html",
@@ -4443,6 +4498,58 @@
       {
         "file": "libs/modals/tsconfig.spec.json",
         "hash": "2927375835638640771"
+      },
+      {
+        "file": "libs/modals/src/lib/modal-sign-in copy/sign-in.modal.ts",
+        "hash": "495936503400950466",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/forms",
+          "npm:@angular/material",
+          "buttons"
+        ]
+      },
+      {
+        "file": "libs/modals/src/lib/modal-sign-in copy/sign-in.modal.spec.ts",
+        "hash": "10902289667372209120",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/modals/src/lib/modal-sign-in copy/sign-in.modal.scss",
+        "hash": "2591572011743861877"
+      },
+      {
+        "file": "libs/modals/src/lib/modal-sign-in copy/sign-in.modal.html",
+        "hash": "13873114636096428853"
+      },
+      {
+        "file": "libs/modals/src/lib/modal-register/register.modal.html",
+        "hash": "17181844532087249819"
+      },
+      {
+        "file": "libs/modals/src/lib/modal-register/register.modal.scss",
+        "hash": "2591572011743861877"
+      },
+      {
+        "file": "libs/modals/src/lib/modal-register/register.modal.ts",
+        "hash": "12826575759725784442",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/forms",
+          "npm:@angular/material",
+          "buttons"
+        ]
+      },
+      {
+        "file": "libs/modals/src/lib/modal-register/register.modal.spec.ts",
+        "hash": "17673225275521975041",
+        "deps": [
+          "npm:@angular/core"
+        ]
       }
     ],
     "negocios-e2e": [

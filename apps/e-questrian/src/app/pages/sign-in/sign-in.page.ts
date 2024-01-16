@@ -33,10 +33,6 @@ export class SignInPage implements OnInit {
     });
   }
 
-  register(signInDetails: SignInDetails) {
-    this.authenticationService.UserRegistration(signInDetails);
-  }
-
   async verifyAuthentication(): Promise<void> {
     await this.authenticationService
       .isAuthenticated()
