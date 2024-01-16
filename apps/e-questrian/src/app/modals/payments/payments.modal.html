@@ -8,7 +8,7 @@
 
     <div class="form-line">
       <div class="form-line-title">Client:</div>
-      <mat-select class="client-selector" formControlName="client">
+      <mat-select class="client-selector" formControlName="clientID">
         <mat-option
           *ngFor="let option of clients | keyvalue"
           value="{{option.key}}"

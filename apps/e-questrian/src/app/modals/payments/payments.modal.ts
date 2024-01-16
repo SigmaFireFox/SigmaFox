@@ -22,7 +22,7 @@ export class PaymentsModal implements OnInit {
 
   paymentForm = new UntypedFormGroup({
     date: new UntypedFormControl(new Date().setHours(0, 0, 0, 0)),
-    client: new UntypedFormControl(''),
+    clientID: new UntypedFormControl(''),
     paymentType: new UntypedFormControl(''),
     amount: new UntypedFormControl(''),
   });
@@ -94,18 +94,18 @@ export class PaymentsModal implements OnInit {
     // if (this.isNewPayment) return;
 
     this.paymentForm = new UntypedFormGroup({
-      client: new UntypedFormControl(
+      date: new UntypedFormControl(this.currentPayment.date),
+      clientID: new UntypedFormControl(
         this.clients[this.currentPayment.clientID]
       ),
-      amount: new UntypedFormControl(this.currentPayment.amount),
       paymentType: new UntypedFormControl(this.currentPayment.paymentType),
-      date: new UntypedFormControl(this.currentPayment.date),
+      amount: new UntypedFormControl(this.currentPayment.amount),
     });
   }
 
   private parseKeysToInt() {
-    this.paymentForm.controls['client'].setValue(
-      parseInt(this.paymentForm.controls['client'].value)
+    this.paymentForm.controls['clientID'].setValue(
+      parseInt(this.paymentForm.controls['clientID'].value)
     );
     this.paymentForm.controls['amount'].setValue(
       parseInt(this.paymentForm.controls['amount'].value)
