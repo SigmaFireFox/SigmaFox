@@ -17,7 +17,10 @@ import {
   GenerateInvoiceParameters,
 } from '../../modals/generate-invoice/generate-invoice.modal';
 import { AppointmentsService } from '../appointments/appointments.service';
-import { ClientsService } from '../clients/clients.service';
+import {
+  ClientsService,
+  FinancialRecordType,
+} from '../clients/clients.service';
 
 export interface GenerateInvoiceResult {
   numberOfInvoices: number;
@@ -299,6 +302,13 @@ export class InvoicesService {
       appointmentsToInvoice[clientID].forEach((appointmentID) => {
         this.currentAppointments[appointmentID].invoice = nextInvoiceNumber;
       });
+
+      this.clientsService.addFinancialRecordToClient(
+        clientID,
+        FinancialRecordType.Invoice,
+        nextInvoiceNumber
+      );
+
       nextInvoiceNumber++;
       invoiceCount++;
     });

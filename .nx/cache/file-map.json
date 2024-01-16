@@ -1656,7 +1656,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/clients.interface.ts",
-        "hash": "13931177394271294147"
+        "hash": "4238373698697719547"
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/common-page-configs.interface.ts",
@@ -1664,7 +1664,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/credit-notes.interface.ts",
-        "hash": "3960110710830697958"
+        "hash": "12961838937638636623"
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/invoices.interface.ts",
@@ -1676,7 +1676,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/interfaces/payments.interface.ts",
-        "hash": "14439294768202134538"
+        "hash": "10303229281427428072"
       },
       {
         "file": "apps/e-questrian/src/app/modals/appointment-details/appointment-detail.modal.html",
@@ -1809,7 +1809,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/modals/payments/payments.modal.ts",
-        "hash": "7924030990286303824",
+        "hash": "1001957441110335632",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/forms"
@@ -2253,7 +2253,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/client-notification/client-notification.service.ts",
-        "hash": "12898312281556487852",
+        "hash": "3319286335774733720",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -2270,7 +2270,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/clients/clients.service.ts",
-        "hash": "11331309466828472358",
+        "hash": "2604327094662572129",
         "deps": [
           "npm:@angular/core"
         ]
@@ -2300,7 +2300,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/credit-notes/credit-notes.service.ts",
-        "hash": "8285985952347593331",
+        "hash": "15486530766830825914",
         "deps": [
           "npm:@angular/core"
         ]
@@ -2362,7 +2362,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/invoices/invoices.service.ts",
-        "hash": "18242632347077505676",
+        "hash": "3739791117503796537",
         "deps": [
           "npm:@angular/core"
         ]
@@ -2379,7 +2379,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/payments/payments.service.ts",
-        "hash": "3333834060642912349",
+        "hash": "18416993793232358729",
         "deps": [
           "npm:@angular/core"
         ]
@@ -2400,7 +2400,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/statements/statements.service.ts",
-        "hash": "14246476510797371396",
+        "hash": "13628520726523100190",
         "deps": [
           "npm:@angular/core"
         ]
@@ -2414,7 +2414,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/test-data/test-data.service.ts",
-        "hash": "3878251618967839989",
+        "hash": "2344578149415475821",
         "deps": [
           "npm:@angular/core"
         ]

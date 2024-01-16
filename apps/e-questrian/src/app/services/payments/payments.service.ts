@@ -3,6 +3,10 @@ import { Clients } from '../../interfaces/clients.interface';
 import { FinancialDocItem } from '../../interfaces/common-page-configs.interface';
 import { Payments, PaymentDetails } from '../../interfaces/payments.interface';
 import { ClientNotificationService } from '../client-notification/client-notification.service';
+import {
+  ClientsService,
+  FinancialRecordType,
+} from '../clients/clients.service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +20,10 @@ export class PaymentsService {
     return JSON.parse(paymentString || '{}');
   }
 
-  constructor(private clientNotificationService: ClientNotificationService) {
+  constructor(
+    private clientNotificationService: ClientNotificationService,
+    private clientsService: ClientsService
+  ) {
     this.currentPayments = this.paymentsOnFile;
   }
 
@@ -25,6 +32,13 @@ export class PaymentsService {
     const NewPaymentID = Object.keys(this.paymentsOnFile).length + 1;
     paymentDetails.voided = false;
     this.currentPayments[NewPaymentID] = paymentDetails;
+
+    this.clientsService.addFinancialRecordToClient(
+      paymentDetails.clientID,
+      FinancialRecordType.Payment,
+      NewPaymentID
+    );
+
     localStorage.setItem('payments', JSON.stringify(this.currentPayments));
     this.clientNotificationService.sendPaymentReceipt(paymentDetails);
   }
@@ -49,7 +63,7 @@ export class PaymentsService {
       finDoc.number = parseInt(key);
       finDoc.amount = this.currentPayments[parseInt(key)].amount as number;
       finDoc.date = this.currentPayments[parseInt(key)].date as Date;
-      const clientNum = this.currentPayments[parseInt(key)].client;
+      const clientNum = this.currentPayments[parseInt(key)].clientID;
       finDoc.detail = this.clients[clientNum]?.displayName;
       finDoc.voided = this.currentPayments[parseInt(key)].voided;
       payments.push(finDoc);

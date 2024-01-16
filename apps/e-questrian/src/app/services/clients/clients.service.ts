@@ -2,6 +2,12 @@ import { Injectable } from '@angular/core';
 import { Clients, ClientDetail } from '../../interfaces/clients.interface';
 import { GeneralItem } from '../../interfaces/common-page-configs.interface';
 
+export enum FinancialRecordType {
+  Invoice,
+  Payment,
+  CreditNote,
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -17,7 +23,7 @@ export class ClientsService {
     this.currentClientsData = this.clientsOnFile;
   }
 
-  getClientID(searchDisplayName: string): number {
+  getClientIDFromDisplayName(searchDisplayName: string): number {
     let clientID = 0;
     const numberOfClients = Object.keys(this.clientsOnFile).length;
     for (let counter = 1; counter < numberOfClients + 1; counter++) {
@@ -40,6 +46,34 @@ export class ClientsService {
     this.persistClientData();
   }
 
+  addFinancialRecordToClient(
+    clientID: number,
+    financialRecordType: FinancialRecordType,
+    docNumber: number
+  ) {
+    switch (financialRecordType) {
+      case FinancialRecordType.Invoice: {
+        this.currentClientsData[clientID].finacialRecords.invoices.push(
+          docNumber
+        );
+        break;
+      }
+      case FinancialRecordType.Payment: {
+        this.currentClientsData[clientID].finacialRecords.payments.push(
+          docNumber
+        );
+        break;
+      }
+      case FinancialRecordType.CreditNote: {
+        this.currentClientsData[clientID].finacialRecords.creditNotes.push(
+          docNumber
+        );
+        break;
+      }
+    }
+    this.persistClientData();
+  }
+
   setClientList(): GeneralItem {
     const clientListItem = {} as GeneralItem;
     Object.keys(this.currentClientsData).forEach((key) => {
@@ -52,7 +86,6 @@ export class ClientsService {
         voided: this.currentClientsData[parseInt(key)].voided,
       };
     });
-    console.log(clientListItem);
     return clientListItem;
   }
 

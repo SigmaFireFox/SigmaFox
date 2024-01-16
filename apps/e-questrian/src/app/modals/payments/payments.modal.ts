@@ -94,7 +94,9 @@ export class PaymentsModal implements OnInit {
     // if (this.isNewPayment) return;
 
     this.paymentForm = new UntypedFormGroup({
-      client: new UntypedFormControl(this.clients[this.currentPayment.client]),
+      client: new UntypedFormControl(
+        this.clients[this.currentPayment.clientID]
+      ),
       amount: new UntypedFormControl(this.currentPayment.amount),
       paymentType: new UntypedFormControl(this.currentPayment.paymentType),
       date: new UntypedFormControl(this.currentPayment.date),

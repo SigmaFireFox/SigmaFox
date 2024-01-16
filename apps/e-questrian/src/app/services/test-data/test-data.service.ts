@@ -55,6 +55,11 @@ export class TestDataService {
         email: 'cedric@telkomsa.co.za',
         telephoneNumber: '072 462 4685',
         voided: false,
+        finacialRecords: {
+          invoices: [],
+          payments: [1],
+          creditNotes: [],
+        },
       },
       2: {
         displayName: 'Jill Henry',
@@ -63,6 +68,11 @@ export class TestDataService {
         email: 'jill@gmail.com',
         telephoneNumber: '072 879 5421',
         voided: false,
+        finacialRecords: {
+          invoices: [],
+          payments: [2],
+          creditNotes: [],
+        },
       },
       3: {
         displayName: 'Kenny Timson',
@@ -71,6 +81,11 @@ export class TestDataService {
         email: 'kenny@yahoo.com',
         telephoneNumber: '083 357 2205',
         voided: false,
+        finacialRecords: {
+          invoices: [1],
+          payments: [],
+          creditNotes: [],
+        },
       },
       4: {
         displayName: 'Nurse Ash',
@@ -79,6 +94,11 @@ export class TestDataService {
         email: 'nurseash@life.co.za',
         telephoneNumber: '066 565 0000',
         voided: false,
+        finacialRecords: {
+          invoices: [2],
+          payments: [],
+          creditNotes: [1],
+        },
       },
       5: {
         displayName: 'Jess van Wyk',
@@ -87,6 +107,11 @@ export class TestDataService {
         email: 'vwykjess@gmail.com',
         telephoneNumber: '083 579 4251',
         voided: false,
+        finacialRecords: {
+          invoices: [],
+          payments: [],
+          creditNotes: [],
+        },
       },
       6: {
         displayName: 'Ruben Ferreira',
@@ -95,6 +120,11 @@ export class TestDataService {
         email: 'rubenf85@gmail.com',
         telephoneNumber: '072 761 0423',
         voided: false,
+        finacialRecords: {
+          invoices: [],
+          payments: [],
+          creditNotes: [],
+        },
       },
     };
   }
@@ -212,21 +242,27 @@ export class TestDataService {
   }
 
   private setCreditNotes() {
-    this.creditNotes = { 1: { date: new Date(), appointment: 3 } };
+    this.creditNotes = {
+      1: {
+        date: new Date(),
+        appointment: 3,
+        clientID: 4,
+      },
+    };
   }
 
   private setPayments() {
     this.payments = {
       1: {
         date: this.today,
-        client: 1,
+        clientID: 1,
         paymentType: PaymentType.EFT,
         amount: 175,
         voided: false,
       },
       2: {
         date: this.today,
-        client: 2,
+        clientID: 2,
         paymentType: PaymentType.CASH,
         amount: 100,
         voided: false,

@@ -91,7 +91,7 @@ export class StatementsService {
     statementBasics: StatementBasics
   ) {
     Object.keys(this.payments).forEach((key) => {
-      if (this.payments[parseInt(key)].client === clientID) {
+      if (this.payments[parseInt(key)].clientID === clientID) {
         const payment = this.payments[parseInt(key)];
         const docToAdd: FinancialDocItem = {
           number: parseInt(key),

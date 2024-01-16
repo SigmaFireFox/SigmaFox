@@ -9,4 +9,11 @@ export interface ClientDetail {
   email: string;
   telephoneNumber: string;
   voided: boolean;
+  finacialRecords: ClientFinancialRecords;
+}
+
+export interface ClientFinancialRecords {
+  invoices: number[];
+  payments: number[];
+  creditNotes: number[];
 }

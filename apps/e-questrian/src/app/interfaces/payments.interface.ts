@@ -6,7 +6,7 @@ export interface Payments {
 
 export interface PaymentDetails {
   date: Date;
-  client: number;
+  clientID: number;
   paymentType: PaymentType;
   amount: number;
   voided: boolean;
