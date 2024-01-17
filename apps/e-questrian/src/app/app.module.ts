@@ -42,30 +42,40 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StandardButton } from '@sigmafox/buttons';
 import { RegisterPage } from './pages/register/register.page';
+import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2a-section/entry-c2a.section';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
+    // Pages
     HomePage,
     CalendarPage,
     FinancesPage,
     ClientsPage,
     LandingPage,
+    SignInPage,
+    RegisterPage,
+
+    // Screens and Sections
+    FinancialDocListScreen,
+    FinancialDocViewScreen,
+    ProcessResultsScreen,
+    GeneralItemsListScreen,
+
+    EntryCallToActionSection,
+
+    // Modals
+    WarningsModal,
     AppointmentModal,
     ClientDetailsModal,
     PaymentsModal,
-    MenuComponent,
-    FinancialDocListScreen,
-    FinancialDocViewScreen,
-    WarningsModal,
-    GenerateInvoiceModal,
     GenerateStatementModal,
-    ProcessResultsScreen,
-    SignInPage,
-    GeneralItemsListScreen,
+    GenerateInvoiceModal,
+
+    // Components
+    AppComponent,
+    NavbarComponent,
+    MenuComponent,
     GeneralScreenHeaderComponent,
-    RegisterPage,
   ],
   bootstrap: [AppComponent],
   imports: [
