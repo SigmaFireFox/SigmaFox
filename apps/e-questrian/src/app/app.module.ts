@@ -43,6 +43,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StandardButton } from '@sigmafox/buttons';
 import { RegisterPage } from './pages/register/register.page';
 import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2a-section/entry-c2a.section';
+import { FeaturesSection } from './pages/landing/page-sections/features-section/features.section';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2
     GeneralItemsListScreen,
 
     EntryCallToActionSection,
+    FeaturesSection,
 
     // Modals
     WarningsModal,

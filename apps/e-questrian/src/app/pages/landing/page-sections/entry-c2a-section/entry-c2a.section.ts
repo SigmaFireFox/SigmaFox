@@ -13,8 +13,8 @@ import { AuthenticationService } from 'apps/e-questrian/src/app/services/authent
 
 @Component({
   selector: 'e-questrian-entry-c2a',
-  templateUrl: './entry-c2A.section.html',
-  styleUrls: ['./entry-c2A.section.scss'],
+  templateUrl: './entry-c2a.section.html',
+  styleUrls: ['./entry-c2a.section.scss'],
   animations: [
     trigger('fade', [
       state('void', style({ color: 'blue', opacity: 0 })),
@@ -41,7 +41,7 @@ export class EntryCallToActionSection {
 
   constructor(private auth: AuthenticationService, private router: Router) {
     setInterval(() => {
-      this.swithText();
+      this.switchText();
     }, 3000);
   }
 
@@ -61,7 +61,7 @@ export class EntryCallToActionSection {
     }
   }
 
-  private swithText() {
+  private switchText() {
     this.textCounter += 1;
     if (this.textCounter === this.alternatingText.length) {
       this.textCounter = 0;

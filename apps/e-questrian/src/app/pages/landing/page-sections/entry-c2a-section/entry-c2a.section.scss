@@ -1,44 +1,44 @@
 .screen-container {
-    display: flex;
     height: calc(100% - 50px - 10%);
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-size: xx-large;
-    display: flex;
-    flex-direction: column;
-    padding: 8%;
-    object-fit: cover;
-    padding-top: calc(50px + 8%);
-
-    .call-to-action-button-container {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-img {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    object-fit: cover;
-    display: flex;
     height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: .5;
-}
 
-.button-container {
-    position: absolute;
-    width: calc(100% - 16%);
-    top: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
+    .background-container {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../../../assets/landing-page-image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: 0;
+    }
+
+    .content-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8%;
+        padding-top: calc(50px + 8%);
+        display: flex;
+        align-items: flex-start;
+        z-index: 1;
+        justify-content: flex-start;
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+
+        .call-to-action-button-container {
+            width: 85vw;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
 }
