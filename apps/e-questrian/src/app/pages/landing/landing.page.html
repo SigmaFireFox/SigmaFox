@@ -1,6 +1,13 @@
 <e-questrian-entry-c2a
   (scrollToNextScreen)="scrollToNextScreen(featuresSection)"
 ></e-questrian-entry-c2a>
+
 <div #featuresSection>
-  <e-questrian-features-section></e-questrian-features-section>
+  <e-questrian-features-section
+    (scrollToNextScreen)="scrollToNextScreen(clientFeedbackSection)"
+  ></e-questrian-features-section>
+</div>
+
+<div #clientFeedbackSection>
+  <e-questrian-client-testimonials-section></e-questrian-client-testimonials-section>
 </div>

@@ -1,0 +1,31 @@
+<div *ngIf="this.elementSwitch" class="screen-container">
+  <div class="background-container"></div>
+  <div class="text-container">
+    <div class="header-text">{{currentHeader}}</div>
+    <div class="copy-text">{{currentCopy}}</div>
+  </div>
+  <div class="image-container">
+    <img src="{{currentImage}}" alt="" />
+  </div>
+  <div class="next-screen-scroll-button-container">
+    <button (click)="scrollToNext()">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="!this.elementSwitch" class="screen-container">
+  <div class="background-container"></div>
+  <div class="text-container">
+    <div class="header-text">{{currentHeader}}</div>
+    <div class="copy-text">{{currentCopy}}</div>
+  </div>
+  <div class="image-container">
+    <img src="{{currentImage}}" alt="" />
+  </div>
+  <div class="next-screen-scroll-button-container">
+    <button (click)="scrollToNext()">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+</div>

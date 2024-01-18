@@ -9,49 +9,53 @@ export const BackgroundColours = [
   'cyan',
 ];
 
-export interface FeatureScreenContent {
-  header: string;
-  copy: string;
+export interface TestimonialScreenContent {
   image: string;
+  content: string;
+  name: string;
 }
 
 @Component({
-  selector: 'e-questrian-features-section',
-  templateUrl: './features.section.html',
-  styleUrls: ['./features.section.scss'],
+  selector: 'e-questrian-client-testimonials-section',
+  templateUrl: './client-testimonials..section.html',
+  styleUrls: ['./client-testimonials..section.scss'],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
-export class FeaturesSection {
+export class ClientTestimonialsSection {
   @Output() scrollToNextScreen = new EventEmitter<void>();
 
-  screens: FeatureScreenContent[] = [
+  screens: TestimonialScreenContent[] = [
     {
-      header: 'Manage your day with EASE',
-      copy: 'With e-Questrian your are able to move lessions with the slide \
+      image: 'boschrivier-farm.jpg',
+      content:
+        'With e-Questrian your are able to move lessions with the slide \
       of a finger, set new lessions in seconds, cancel a lessons and we will \
       handle the paperwork',
-      image: 'mock-up-calendar.png',
+      name: 'Boschtivier Farm',
     },
     {
-      header: 'Invoice EVERYONE with a few clicks',
-      copy: 'Spending hours if not days invoicing your clients - not any more. \
+      image: 'cloonlara.png',
+      content:
+        'Spending hours if not days invoicing your clients - not any more. \
       With our invoice generator - you are able to generate all outstanding \
       invoices in seconds',
-      image: 'mock-up-invoice-generator.png',
+      name: 'Cloonlara',
     },
     {
-      header: 'Generate USEFUL reports in a flash',
-      copy: 'Need a report that you can actually understand? We do those as well. \
+      image: 'honingklip-equestrian.png',
+      content:
+        'Need a report that you can actually understand? We do those as well. \
       Not only are our reports easy to generate - they are simple enough to actually \
       be of use',
-      image: 'mock-up-reports.png',
+      name: 'Honingklip Equestrian',
     },
     {
-      header: 'Get a HOLISTIC client view',
-      copy: 'Want to see the big picture of your clients and at an individual level? \
+      image: 'horse-rides-at-petes.jpg',
+      content:
+        'Want to see the big picture of your clients and at an individual level? \
       We have that. See clients lessons, accounts, communications and more in one \
       simple view',
-      image: 'mock-up-reports.png',
+      name: 'Horse Rides at Petes',
     },
   ];
 
@@ -59,11 +63,10 @@ export class FeaturesSection {
 
   screenCounter = 0;
   elementSwitch = false;
-  currentHeader = '';
+  currentHeader = 'How do our Clients feel about us?';
   currentCopy = '';
   currentImage = '';
   currentColourIndex = 0;
-  backgroundColourStyle = {};
 
   constructor() {
     this.switchScreen();
@@ -82,10 +85,9 @@ export class FeaturesSection {
         ? 0
         : (this.screenCounter += 1);
 
-    this.currentHeader = this.screens[this.screenCounter].header;
-    this.currentCopy = this.screens[this.screenCounter].copy;
+    this.currentCopy = this.screens[this.screenCounter].content;
     this.currentImage =
-      './../../../../../assets/landing-page-content/mock-ups/' +
+      './../../../../../assets/landing-page-content/client-logos/' +
       this.screens[this.screenCounter].image;
     this.elementSwitch = !this.elementSwitch;
 
@@ -100,9 +102,5 @@ export class FeaturesSection {
       ); // The maximum is exclusive and the minimum is inclusive
     }
     this.currentColourIndex = colourIndex;
-    this.backgroundColourStyle = {
-      'background-color': BackgroundColours[this.currentColourIndex],
-      opacity: '0.8',
-    };
   }
 }

@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run e-questrian:serve --configuration=development",
-    "startTime": "2024-01-16T10:32:07.034Z",
-    "endTime": "2024-01-17T12:02:45.383Z",
+    "startTime": "2024-01-18T14:21:10.944Z",
+    "endTime": "2024-01-18T19:43:45.768Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "e-questrian:serve:development",
       "target": "serve",
       "projectName": "e-questrian",
-      "hash": "15197715987013328555",
-      "startTime": "2024-01-16T10:32:07.038Z",
-      "endTime": "2024-01-17T12:02:45.375Z",
+      "hash": "1795627878425478767",
+      "startTime": "2024-01-18T14:21:10.947Z",
+      "endTime": "2024-01-18T19:43:45.753Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
