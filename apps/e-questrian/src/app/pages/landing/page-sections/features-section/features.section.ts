@@ -76,6 +76,7 @@ export class FeaturesSection {
     this.currentColourIndex = colourIndex;
     this.backgroundColourStyle = {
       'background-color': BackgroundColours[this.currentColourIndex],
+      opacity: '0.8',
     };
   }
 }

@@ -2214,7 +2214,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.scss",
-        "hash": "16943439414012869531"
+        "hash": "18313758598805143782"
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.spec.ts",
@@ -2628,7 +2628,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.ts",
-        "hash": "3371304870928110707",
+        "hash": "4491009783161151520",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router"
@@ -3158,6 +3158,10 @@
       {
         "file": "apps/e-questrian/src/assets/mock-up-calendar.png",
         "hash": "191032266203720313"
+      },
+      {
+        "file": "apps/e-questrian/~$e-Questrian - To do list.xlsx",
+        "hash": "13875352788399202154"
       }
     ],
     "negocios": [
