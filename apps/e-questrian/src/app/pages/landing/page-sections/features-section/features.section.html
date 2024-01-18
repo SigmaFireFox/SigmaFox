@@ -1,5 +1,5 @@
 <div
-  *ngIf="elementSwitch === true"
+  *ngIf="this.elementSwitch"
   class="screen-container"
   [ngStyle]="backgroundColourStyle"
 >
@@ -9,10 +9,15 @@
     <div class="copy-text">{{currentCopy}}</div>
   </div>
   <img src="{{currentImage}}" alt="" />
+  <div class="next-screen-scroll-button-container">
+    <button (click)="scrollToNext()">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
 </div>
 
 <div
-  *ngIf="elementSwitch === false"
+  *ngIf="!this.elementSwitch"
   class="screen-container"
   [ngStyle]="backgroundColourStyle"
 >
@@ -22,4 +27,9 @@
     <div class="copy-text">{{currentCopy}}</div>
   </div>
   <img src="{{currentImage}}" alt="" />
+  <div class="next-screen-scroll-button-container">
+    <button (click)="scrollToNext()">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
 </div>

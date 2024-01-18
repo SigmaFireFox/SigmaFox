@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 export const BackgroundColours = [
   'lime',
@@ -23,19 +22,41 @@ export interface ScreenContent {
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class FeaturesSection {
+  @Output() scrollToNextScreen = new EventEmitter<void>();
+
   screens: ScreenContent[] = [
     {
-      header: 'Manage your day with ease',
-      copy: 'We give a bit of a longer story here to the user to know what the feature is',
+      header: 'Manage your day with EASE',
+      copy: 'With e-Questrian your are able to move lessions with the slide \
+      of a finger, set new lessions in seconds, cancel a lessons and we will \
+      handle the paperwork',
       image: 'mock-up-calendar.png',
     },
     {
-      header: 'Another story',
-      copy: 'Another spiel about how great our stuff is',
-      image: 'mock-up-calendar.png',
-      // Make more images here: https://placeit.net/editor/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923?customG_0=s7ehrkdd09&customG_1=s7eht924f4
+      header: 'Invoice EVERYONE with a few clicks',
+      copy: 'Spending hours if not days invoicing your clients - not any more. \
+      With our invoice generator - you are able to generate all outstanding \
+      invoices in seconds',
+      image: 'mock-up-invoice-generator.png',
+    },
+    {
+      header: 'Generate USEFUL reports in a flash',
+      copy: 'Need a report that you can actually understand? We do those as well. \
+      Not only are our reports easy to generate - they are simple enough to actually \
+      be of use',
+      image: 'mock-up-reports.png',
+    },
+    {
+      header: 'Get a HOLISTIC client view',
+      copy: 'Want to see the big picture of your clients and at an individual level? \
+      We have that. See clients lessons, accounts, communications and more in one \
+      simple view',
+      image: 'mock-up-reports.png',
     },
   ];
+
+  // Make more images here: https://placeit.net/editor/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923?customG_0=s7ehrkdd09&customG_1=s7eht924f4
+
   screenCounter = 0;
   elementSwitch = false;
   currentHeader = '';
@@ -44,11 +65,15 @@ export class FeaturesSection {
   currentColourIndex = 0;
   backgroundColourStyle = {};
 
-  constructor(private router: Router) {
+  constructor() {
     this.switchScreen();
     setInterval(() => {
       this.switchScreen();
-    }, 5000);
+    }, 8000);
+  }
+
+  scrollToNext() {
+    this.scrollToNextScreen.emit();
   }
 
   private switchScreen() {
@@ -60,13 +85,14 @@ export class FeaturesSection {
     this.currentHeader = this.screens[this.screenCounter].header;
     this.currentCopy = this.screens[this.screenCounter].copy;
     this.currentImage =
-      './../../../../../assets/' + this.screens[this.screenCounter].image;
+      './../../../../../assets/landing-page-content/mock-ups/' +
+      this.screens[this.screenCounter].image;
     this.elementSwitch = !this.elementSwitch;
 
     this.randomiseBackgroundColour();
   }
 
-  randomiseBackgroundColour() {
+  private randomiseBackgroundColour() {
     let colourIndex = 0;
     while (this.currentColourIndex === colourIndex) {
       colourIndex = Math.floor(

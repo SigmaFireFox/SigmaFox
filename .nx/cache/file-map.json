@@ -2071,7 +2071,7 @@
       },
       {
         "file": "apps/e-questrian/e-Questrian - To do list.xlsx",
-        "hash": "14219601704923239071"
+        "hash": "4831441154639705771"
       },
       {
         "file": "apps/e-questrian/firebase.json",
@@ -2584,15 +2584,15 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.html",
-        "hash": "1018123619431536924"
+        "hash": "4378293790326988074"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.scss",
-        "hash": "10912535755946938923"
+        "hash": "5550670754232976166"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.ts",
-        "hash": "10475796826307961028",
+        "hash": "5028115137993697264",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
@@ -2602,15 +2602,15 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.html",
-        "hash": "10845785191238386088"
+        "hash": "1032309268295714886"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.scss",
-        "hash": "6397597597036711474"
+        "hash": "12654288044977882682"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
-        "hash": "5021413658135736167",
+        "hash": "1185456764436667843",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
@@ -2620,18 +2620,17 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.html",
-        "hash": "11844312802661125533"
+        "hash": "4633521435540629108"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.scss",
-        "hash": "13511642632976007612"
+        "hash": "4428086472696053629"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.ts",
-        "hash": "4491009783161151520",
+        "hash": "18438936040466489571",
         "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router"
+          "npm:@angular/core"
         ]
       },
       {
@@ -3088,14 +3087,6 @@
         ]
       },
       {
-        "file": "apps/e-questrian/src/assets/horse-head-icon.png",
-        "hash": "2472009869538634183"
-      },
-      {
-        "file": "apps/e-questrian/src/assets/landing-page-image.png",
-        "hash": "7868053162535341874"
-      },
-      {
         "file": "apps/e-questrian/src/environments/environment.prod.ts",
         "hash": "490079791283567487"
       },
@@ -3156,12 +3147,56 @@
         "hash": "2486474936443458199"
       },
       {
-        "file": "apps/e-questrian/src/assets/mock-up-calendar.png",
+        "file": "apps/e-questrian/~$e-Questrian - To do list.xlsx",
+        "hash": "13875352788399202154"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/boschrivier-farm.jpg",
+        "hash": "13845900199853288852"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/horse-rides-at-petes.jpg",
+        "hash": "16391436184478699789"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/pearly-beach-horse-trails.png",
+        "hash": "13590105859634076414"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/cloonlara.png",
+        "hash": "3290546069947422617"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/honingklip-equestrian.png",
+        "hash": "9188638700842304372"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/client-logos/thandeka-stables.png",
+        "hash": "18292321762372423040"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/mock-ups/mock-up-calendar.png",
         "hash": "191032266203720313"
       },
       {
-        "file": "apps/e-questrian/~$e-Questrian - To do list.xlsx",
-        "hash": "13875352788399202154"
+        "file": "apps/e-questrian/src/assets/landing-page-content/background-images/holding-mobile-in-jeans.png",
+        "hash": "7868053162535341874"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/logos/horse-head-icon.png",
+        "hash": "2472009869538634183"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/landing-page-content/mock-ups/mock-up-invoice-generator.png",
+        "hash": "17151803762156650660"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/landing-page-content/mock-ups/mock-up-reports.png",
+        "hash": "4418198179784900080"
+      },
+      {
+        "file": "apps/e-questrian/src/assets/landing-page-content/mock-ups/mock-up-clients.png",
+        "hash": "3811607469268068679"
       }
     ],
     "negocios": [

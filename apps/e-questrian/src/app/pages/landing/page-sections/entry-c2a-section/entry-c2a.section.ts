@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {
   animate,
   state,
@@ -25,6 +25,7 @@ import { AuthenticationService } from 'apps/e-questrian/src/app/services/authent
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class EntryCallToActionSection {
+  @Output() scrollToNextScreen = new EventEmitter<void>();
   alternatingText = [
     'Clients',
     'Lessons',
@@ -59,6 +60,10 @@ export class EntryCallToActionSection {
     } else {
       this.router.navigate(['/register']);
     }
+  }
+
+  scrollToNext() {
+    this.scrollToNextScreen.emit();
   }
 
   private switchText() {

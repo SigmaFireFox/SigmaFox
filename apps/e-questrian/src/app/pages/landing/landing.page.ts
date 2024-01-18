@@ -60,6 +60,10 @@ export class LandingPage {
     }
   }
 
+  scrollToNextScreen(target: HTMLElement) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
   private swithText() {
     this.textCounter += 1;
     if (this.textCounter === this.alternatingText.length) {
