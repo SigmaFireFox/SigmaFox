@@ -36,14 +36,14 @@ export class ClientTestimonialsSection {
       name: 'Boschrivier Farm',
     },
     {
-      image: 'cloonLara.png',
+      image: 'cloonlara.png',
       content:
         'This app really does the basics well. Other fancy software is so \
         complicated to use and understand and at the end of the day you only \
         need a fraction of what they offer. e-Questrian does the basics really \
         well and when you are busy running a yard - that is really what you \
         want and need',
-      name: 'Cloonlara',
+      name: 'CloonLara',
     },
     {
       image: 'honingklip-equestrian.png',

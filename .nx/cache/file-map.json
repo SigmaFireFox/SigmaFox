@@ -7613,7 +7613,7 @@
       },
       {
         "file": "apps/e-questrian/e-Questrian - To do list.xlsx",
-        "hash": "7112455107067693706"
+        "hash": "192796578223088981"
       },
       {
         "file": "apps/e-questrian/firebase.json",
@@ -7756,7 +7756,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.scss",
-        "hash": "6295601091046784117"
+        "hash": "1633549918788660882"
       },
       {
         "file": "apps/e-questrian/src/app/components/navbar/navbar.component.spec.ts",
@@ -8148,11 +8148,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/client-testimonials-section/client-testimonials.section.scss",
-        "hash": "10136859363607298367"
+        "hash": "2422489633802376157"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/client-testimonials-section/client-testimonials.section.ts",
-        "hash": "13162647214411575525",
+        "hash": "5524391946031851837",
         "deps": [
           "npm:@angular/core"
         ]
@@ -8196,7 +8196,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/whats-new-section/whats-new.section.scss",
-        "hash": "8495791319882252030"
+        "hash": "5985946587670574912"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/whats-new-section/whats-new.section.ts",
@@ -8771,6 +8771,10 @@
       {
         "file": "apps/e-questrian/tsconfig.spec.json",
         "hash": "2486474936443458199"
+      },
+      {
+        "file": "apps/e-questrian/~$e-Questrian - To do list.xlsx",
+        "hash": "13875352788399202154"
       }
     ],
     "modals": [
