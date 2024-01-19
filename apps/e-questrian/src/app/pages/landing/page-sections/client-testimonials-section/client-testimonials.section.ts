@@ -28,44 +28,67 @@ export class ClientTestimonialsSection {
     {
       image: 'boschrivier-farm.jpg',
       content:
-        'With e-Questrian your are able to move lessions with the slide \
-      of a finger, set new lessions in seconds, cancel a lessons and we will \
-      handle the paperwork',
-      name: 'Boschtivier Farm',
+        'The app is really great - yeah sure there are features that you \
+        would prefer a certain way - but what I love about e-Questrian is \
+        that they really do try to go out their way to make the app better \
+        for you - so all you need to do is provide the feedback and before \
+        you know it - the app is updated as you asked',
+      name: 'Boschrivier Farm',
     },
     {
-      image: 'cloonlara.png',
+      image: 'cloonLara.png',
       content:
-        'Spending hours if not days invoicing your clients - not any more. \
-      With our invoice generator - you are able to generate all outstanding \
-      invoices in seconds',
+        'This app really does the basics well. Other fancy software is so \
+        complicated to use and understand and at the end of the day you only \
+        need a fraction of what they offer. e-Questrian does the basics really \
+        well and when you are busy running a yard - that is really what you \
+        want and need',
       name: 'Cloonlara',
     },
     {
       image: 'honingklip-equestrian.png',
       content:
-        'Need a report that you can actually understand? We do those as well. \
-      Not only are our reports easy to generate - they are simple enough to actually \
-      be of use',
+        'To be honest - I have run my business a certain way for many years and \
+        was skeptical to try new software, but I had a chat with **** and I \
+        have no regrets signing up. Yeah sure, perhaps the way I did things needed \
+        to be updated - but I am just so thankful for this app... its saves me hours \
+        if not days each month',
       name: 'Honingklip Equestrian',
     },
     {
       image: 'horse-rides-at-petes.jpg',
       content:
-        'Want to see the big picture of your clients and at an individual level? \
-      We have that. See clients lessons, accounts, communications and more in one \
-      simple view',
+        'To be honest I would rather be on an outride then at my desk doing accounts \
+        or what ever, and with e-Questrian I really am able to do that now - I mean \
+        that is the point to life! This app has been a life change for me',
       name: 'Horse Rides at Petes',
     },
+    {
+      image: 'pearly-beach-horse-trails.png',
+      content:
+        'The app is great. Its simple and its great and it does everything I really \
+        need. But I love how there are constant improvements made all the time, and \
+        not superficial improvements, imrprovements that really add value to my business',
+      name: 'Pearly Beach Horse Trails',
+    },
+    {
+      image: 'thandeka-stables.png',
+      content:
+        'We pride ourselves on being very well organised, but that takes a lot of effort, \
+        which means we often have to make the choice to do less for the sake of doing it \
+        well. e-Questrain has really had an impact for us in the sense that now we are \
+        able to do more in general without sacrificing our standard because this app allows \
+        us to be well organised with a lot less effort',
+      name: 'Thandeka Stables',
+    },
   ];
-
-  // Make more images here: https://placeit.net/editor/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923?customG_0=s7ehrkdd09&customG_1=s7eht924f4
 
   screenCounter = 0;
   elementSwitch = false;
   currentHeader = 'How do our Clients feel about us?';
   currentCopy = '';
   currentImage = '';
+  currentName = '';
   currentColourIndex = 0;
 
   constructor() {
@@ -89,6 +112,7 @@ export class ClientTestimonialsSection {
     this.currentImage =
       './../../../../../assets/landing-page-content/client-logos/' +
       this.screens[this.screenCounter].image;
+    this.currentName = this.screens[this.screenCounter].name;
     this.elementSwitch = !this.elementSwitch;
 
     this.randomiseBackgroundColour();
