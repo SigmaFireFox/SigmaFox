@@ -46,6 +46,7 @@ import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2
 import { FeaturesSection } from './pages/landing/page-sections/features-section/features.section';
 import { ClientTestimonialsSection } from './pages/landing/page-sections/client-testimonials-section/client-testimonials.section';
 import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section/whats-new.section';
+import { LandingScreen } from '@sigmafox/screens';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section
     SignInModal,
     RegisterModal,
     StandardButton,
+    LandingScreen,
   ],
 })
 export class AppModule {}

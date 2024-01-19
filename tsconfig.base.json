@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@sigmafox/buttons": ["libs/buttons/src/index.ts"],
-      "@sigmafox/modals": ["libs/modals/src/index.ts"]
+      "@sigmafox/modals": ["libs/modals/src/index.ts"],
+      "@sigmafox/screen": ["libs/screen/src/index.ts"],
+      "@sigmafox/screens": ["libs/screens/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
