@@ -45,6 +45,7 @@ import { RegisterPage } from './pages/register/register.page';
 import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2a-section/entry-c2a.section';
 import { FeaturesSection } from './pages/landing/page-sections/features-section/features.section';
 import { ClientTestimonialsSection } from './pages/landing/page-sections/client-testimonials-section/client-testimonials.section';
+import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section/whats-new.section';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { ClientTestimonialsSection } from './pages/landing/page-sections/client-
     EntryCallToActionSection,
     FeaturesSection,
     ClientTestimonialsSection,
+    WhatsNewSection,
 
     // Modals
     WarningsModal,

@@ -17,8 +17,8 @@ export interface TestimonialScreenContent {
 
 @Component({
   selector: 'e-questrian-client-testimonials-section',
-  templateUrl: './client-testimonials..section.html',
-  styleUrls: ['./client-testimonials..section.scss'],
+  templateUrl: './client-testimonials.section.html',
+  styleUrls: ['./client-testimonials.section.scss'],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class ClientTestimonialsSection {
@@ -89,7 +89,6 @@ export class ClientTestimonialsSection {
   currentCopy = '';
   currentImage = '';
   currentName = '';
-  currentColourIndex = 0;
 
   constructor() {
     this.switchScreen();
@@ -114,17 +113,5 @@ export class ClientTestimonialsSection {
       this.screens[this.screenCounter].image;
     this.currentName = this.screens[this.screenCounter].name;
     this.elementSwitch = !this.elementSwitch;
-
-    this.randomiseBackgroundColour();
-  }
-
-  private randomiseBackgroundColour() {
-    let colourIndex = 0;
-    while (this.currentColourIndex === colourIndex) {
-      colourIndex = Math.floor(
-        Math.random() * (BackgroundColours.length - 0) + 0
-      ); // The maximum is exclusive and the minimum is inclusive
-    }
-    this.currentColourIndex = colourIndex;
   }
 }

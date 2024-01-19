@@ -4,10 +4,16 @@
 
 <div #featuresSection>
   <e-questrian-features-section
-    (scrollToNextScreen)="scrollToNextScreen(clientFeedbackSection)"
+    (scrollToNextScreen)="scrollToNextScreen(clientTestimonialsSection)"
   ></e-questrian-features-section>
 </div>
 
-<div #clientFeedbackSection>
-  <e-questrian-client-testimonials-section></e-questrian-client-testimonials-section>
+<div #clientTestimonialsSection>
+  <e-questrian-client-testimonials-section
+    (scrollToNextScreen)="scrollToNextScreen(whatsNewSection)"
+  ></e-questrian-client-testimonials-section>
+</div>
+
+<div #whatsNewSection>
+  <e-questrian-whats-new-section></e-questrian-whats-new-section>
 </div>
