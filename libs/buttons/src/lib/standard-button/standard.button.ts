@@ -25,12 +25,16 @@ export class StandardButton implements OnInit {
 
   ngOnInit() {
     if (this.size === ButtonSize.Standard) {
-      this.style = { height: '4vh', width: '40vh', 'font-size': '1.5vh' };
+      this.style = {
+        height: '4vh',
+        width: '20vh',
+        'font-size': '1.5vh',
+      };
     }
     if (this.size === ButtonSize.Large) {
       this.style = {
         height: '7vh',
-        width: '70vh',
+        width: '30vh',
         'font-size': '2vh',
       };
     }

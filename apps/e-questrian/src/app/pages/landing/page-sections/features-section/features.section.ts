@@ -69,7 +69,7 @@ export class FeaturesSection {
     this.switchScreen();
     setInterval(() => {
       this.switchScreen();
-    }, 8000);
+    }, 80000);
   }
 
   scrollToNext() {
