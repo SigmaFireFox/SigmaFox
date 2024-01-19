@@ -1571,7 +1571,7 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.ts",
-        "hash": "3053143608572056748",
+        "hash": "14719642420064492089",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"
@@ -8163,7 +8163,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.scss",
-        "hash": "3458310945742991141"
+        "hash": "5953678230814352435"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
@@ -8745,7 +8745,7 @@
       },
       {
         "file": "apps/e-questrian/src/styles.scss",
-        "hash": "4041856374195062649"
+        "hash": "12374736657950380321"
       },
       {
         "file": "apps/e-questrian/src/test.ts",
