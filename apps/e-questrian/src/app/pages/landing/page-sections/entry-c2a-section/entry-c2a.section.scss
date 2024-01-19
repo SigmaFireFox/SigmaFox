@@ -1,5 +1,4 @@
 .screen-container {
-    height: calc(100% - 50px - 10%);
     position: relative;
     top: 0;
     left: 0;
@@ -20,32 +19,44 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 8%;
         padding-top: calc(50px + 8%);
         display: flex;
+        width: 100%;
         align-items: flex-start;
         z-index: 1;
         justify-content: flex-start;
-        font-size: xx-large;
-        display: flex;
         flex-direction: column;
-        object-fit: cover;
+        display: flex;
+        height: calc(100% - 50px - 8%);
+
+        .text-container {
+            .header-container {
+                padding-left: 10vw;
+                font-size: 6vh;
+                width: 100%;
+            }
+        }
 
         .call-to-action-button-container {
-            width: 85vw;
-            height: 40vh;
             display: flex;
+            width: 100%;
             align-items: center;
             justify-content: center;
-            margin-top: 10%;
+            margin: 0 auto;
+            position: absolute;
+            top: 60%
         }
 
         .next-screen-scroll-button-container {
-            width: 85vw;
             display: flex;
+            width: 100%;
             align-items: center;
             justify-content: center;
-            margin-top: 5%;
+            margin: 0 auto;
+            margin: 0 auto;
+            position: absolute;
+            top: 90%;
+            margin: 0 auto;
 
             button {
                 height: 60px;

@@ -2,7 +2,7 @@
   <div class="background-container"></div>
   <div class="content-container">
     <div class="text-container">
-      <div>
+      <div class="header-container">
         <span>Manage </span>
         <span @fade *ngIf="this.elementSwitch"
           >{{alternatingText[textCounter]}}</span
@@ -10,13 +10,15 @@
         <span @fade *ngIf="!this.elementSwitch"
           >{{alternatingText[textCounter]}}</span
         >
+        <br />
+        <span>within</span>
+        <br />
+        <span>the palm</span>
+        <br />
+        <span>of your hands</span>
       </div>
-      <span>within</span>
-      <br />
-      <span>the palm</span>
-      <br />
-      <span>of your hands</span>
     </div>
+
     <div class="call-to-action-button-container">
       <sigmafox-standard-button
         [size]="buttonSize.Large"
