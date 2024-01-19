@@ -1,6 +1,9 @@
 <div class="navbar-container">
   <div class="navbar-logo-and-menu-button-container">
-    <div class="navbar-logo-container" (click)="onLogoClick()">e-Questrian</div>
+    <div class="navbar-logo-container" (click)="onLogoClick()">
+      <img src="./../../../assets/logos/horse-head-icon.png" alt="" />
+      <p>e-Questrian</p>
+    </div>
     <div
       *ngIf="router.url !== '/home'"
       class="navbar-menu-icon-container"

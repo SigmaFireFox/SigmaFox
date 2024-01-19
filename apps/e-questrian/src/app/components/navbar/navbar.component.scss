@@ -1,10 +1,12 @@
 .navbar-container {
-  display: flex;
+  display: block;
   width: 100%;
   min-height: 50px;
   background-color: aqua;
   z-index: 2;
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
@@ -27,7 +29,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-weight: bold;
+
+  img {
+    height: 30px;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 10px;
+  }
+
+  p {
+    font-weight: bold;
+    margin: 0;
+  }
 }
 
 mat-icon:hover,
