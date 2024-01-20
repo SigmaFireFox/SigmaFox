@@ -3,14 +3,15 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnInit,
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ButtonSize, StandardButton } from '@sigmafox/buttons';
+import {
+  ButtonSize,
+  ButtonStyleClass,
+  StandardButton,
+} from '@sigmafox/buttons';
 import { Router } from '@angular/router';
-// eslint-disable-next-line @nx/enforce-module-boundaries
 import {
   animate,
   state,
@@ -19,6 +20,25 @@ import {
   trigger,
 } from '@angular/animations';
 import { MatIconModule } from '@angular/material/icon';
+
+export enum EffectType {
+  Fade,
+}
+
+export interface ImactHeaderBlock {
+  content: string[];
+  effect?: EffectType;
+}
+
+export interface ImactHeader {
+  lines: ImactHeaderBlock[][];
+  alternatingContentPhases: number;
+}
+export interface CallToActionButton {
+  buttonSize: ButtonSize;
+  text: string;
+  buttonStyleClass: ButtonStyleClass;
+}
 
 @Component({
   standalone: true,
@@ -35,18 +55,18 @@ import { MatIconModule } from '@angular/material/icon';
   ],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
-export class LandingScreen implements OnInit, AfterContentInit {
+export class LandingScreen implements AfterContentInit {
   @Input() isLoggedIn = false;
   @Input() backgroundPath = '';
+  @Input() impactHeader: ImactHeader = {
+    lines: [],
+    alternatingContentPhases: 0,
+  };
+  @Input() callToActionButton: CallToActionButton = {} as CallToActionButton;
+
   @Output() scrollToNextScreen = new EventEmitter<void>();
-  alternatingText = [
-    'Clients',
-    'Lessons',
-    'Accounts',
-    'Staff',
-    'Livestock',
-    'Liveries',
-  ];
+  @Output() callToActionButtonClicked = new EventEmitter<void>();
+
   textCounter = 0;
   elementSwitch = true;
   buttonSize = ButtonSize;
@@ -55,14 +75,8 @@ export class LandingScreen implements OnInit, AfterContentInit {
 
   constructor(private router: Router) {
     setInterval(() => {
-      this.switchText();
+      this.setNextPhaseContent();
     }, 3000);
-  }
-
-  async ngOnInit() {
-    this.callToActionText = this.isLoggedIn
-      ? 'To Dashboard'
-      : 'Register for Free Demo';
   }
 
   ngAfterContentInit() {
@@ -71,24 +85,21 @@ export class LandingScreen implements OnInit, AfterContentInit {
         'background-image': `url('${this.backgroundPath}')`,
       };
     }
-    console.log(this.backgroundPathStyle);
   }
 
-  onSignUpClick() {
-    if (this.isLoggedIn) {
-      this.router.navigate(['/home']);
-    } else {
-      this.router.navigate(['/register']);
-    }
+  onCallToActionButtonClick() {
+    this.callToActionButtonClicked.emit();
   }
 
   scrollToNext() {
     this.scrollToNextScreen.emit();
   }
 
-  private switchText() {
+  private setNextPhaseContent() {
+    if (!this.impactHeader.alternatingContentPhases) return;
+
     this.textCounter += 1;
-    if (this.textCounter === this.alternatingText.length) {
+    if (this.textCounter === this.impactHeader.alternatingContentPhases) {
       this.textCounter = 0;
     }
     this.elementSwitch = !this.elementSwitch;

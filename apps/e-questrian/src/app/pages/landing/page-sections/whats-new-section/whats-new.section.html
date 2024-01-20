@@ -8,9 +8,9 @@
     <div class="copy-text" *ngFor="let para of currentCopy">{{para}}</div>
     <div class="call-to-action-button-container">
       <sigmafox-standard-button
-        [size]="buttonSize.Large"
-        [copy]="callToActionText"
-        [class]="'primary-button'"
+        [buttonSize]="buttonSize.Large"
+        [text]="callToActionText"
+        [buttonStyleClass]="'primary-button'"
         (clicked)="callToActionClick()"
       ></sigmafox-standard-button>
     </div>

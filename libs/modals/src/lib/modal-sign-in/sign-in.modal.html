@@ -29,14 +29,14 @@
     <!-- Buttons -->
     <div class="button-container">
       <sigmafox-standard-button
-        [copy]="'Sign in'"
-        [class]="'primary-button'"
+        [text]="'Sign in'"
+        [buttonStyleClass]="'primary-button'"
         [isDisabled]="!signInForm.valid"
         (clicked)="onSubmitClick()"
       ></sigmafox-standard-button>
       <sigmafox-standard-button
-        [copy]="'Register'"
-        [class]="'secondary-button'"
+        [text]="'Register'"
+        [buttonStyleClass]="'secondary-button'"
         [isDisabled]="!signInForm.valid"
         (clicked)="onRegisterClick()"
       ></sigmafox-standard-button>

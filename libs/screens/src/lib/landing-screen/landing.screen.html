@@ -2,29 +2,29 @@
   <div class="background-container" [ngStyle]="backgroundPathStyle"></div>
   <div class="content-container">
     <div class="text-container">
-      <div class="header-container">
-        <span>Manage </span>
-        <span @fade *ngIf="this.elementSwitch"
-          >{{alternatingText[textCounter]}}</span
-        >
-        <span @fade *ngIf="!this.elementSwitch"
-          >{{alternatingText[textCounter]}}</span
-        >
-        <br />
-        <span>within</span>
-        <br />
-        <span>the palm</span>
-        <br />
-        <span>of your hands</span>
+      <div *ngIf="impactHeader" class="header-container">
+        <div *ngFor="let line of impactHeader.lines">
+          <span *ngFor="let block of line">
+            <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
+            <span *ngIf="block.content.length > 1">
+              <span @fade *ngIf="this.elementSwitch"
+                >{{block.content[textCounter]}}</span
+              >
+              <span @fade *ngIf="!this.elementSwitch"
+                >{{block.content[textCounter]}}</span
+              >
+            </span>
+          </span>
+        </div>
       </div>
     </div>
 
-    <div class="call-to-action-button-container">
+    <div *ngIf="callToActionButton" class="call-to-action-button-container">
       <sigmafox-standard-button
-        [size]="buttonSize.Large"
-        [copy]="callToActionText"
-        [class]="'primary-button'"
-        (clicked)="onSignUpClick()"
+        [buttonSize]="callToActionButton.buttonSize"
+        [text]="callToActionButton.text"
+        [buttonStyleClass]="callToActionButton.buttonStyleClass"
+        (clicked)="onCallToActionButtonClick()"
       ></sigmafox-standard-button>
     </div>
     <div class="next-screen-scroll-button-container">

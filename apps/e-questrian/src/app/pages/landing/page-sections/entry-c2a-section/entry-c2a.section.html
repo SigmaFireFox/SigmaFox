@@ -1,5 +1,8 @@
 <sigmafox-landing-screen
   [isLoggedIn]="isLoggedIn"
   [backgroundPath]="backgroundPath"
+  [impactHeader]="impactHeader"
+  [callToActionButton]="callToActionButton"
   (scrollToNextScreen)="scrollToNext()"
+  (callToActionButtonClicked)="onCallToActionButtonClicked()"
 ></sigmafox-landing-screen>
