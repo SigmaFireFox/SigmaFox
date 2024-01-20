@@ -2766,7 +2766,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "16675435827164880431",
+        "hash": "8476721447942186381",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",

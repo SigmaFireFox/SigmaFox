@@ -57,17 +57,14 @@ export class LandingScreen implements AfterContentInit {
     setInterval(() => {
       this.setNextImapctHeaderConentPhase();
     }, this.impactHeader.phaseTiming);
-    // setInterval(() => {
-    //   this.switchScreen();
-    // }, 80000);
-    // this.switchScreen();
-    this.setDynamicStyling();
 
-    if (this.structuredPages.screens) {
-      console.log(
-        this.structuredPages.screens[this.structuredPageSeriesPhaseCounter]
-      );
+    if (Object.keys(this.structuredPages).length) {
+      setInterval(() => {
+        this.switchStruturedPagesSeriesScreen();
+      }, this.structuredPages.phaseTiming);
     }
+
+    this.setDynamicStyling();
   }
 
   onCallToActionButtonClick() {
@@ -133,5 +130,17 @@ export class LandingScreen implements AfterContentInit {
       this.impactHeaderPhaseCounter = 0;
     }
     this.elementSwitch = !this.elementSwitch;
+  }
+
+  private switchStruturedPagesSeriesScreen() {
+    this.structuredPageSeriesPhaseCounter =
+      this.structuredPageSeriesPhaseCounter ===
+      this.structuredPages.screens.length - 1
+        ? 0
+        : (this.structuredPageSeriesPhaseCounter += 1);
+
+    this.elementSwitch = !this.elementSwitch;
+
+    // this.randomiseBackgroundColour();
   }
 }
