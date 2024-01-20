@@ -1556,7 +1556,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/client-testimonials-section/client-testimonials.section.ts",
-        "hash": "15449260920034064645",
+        "hash": "10002696069589906905",
         "deps": [
           "npm:@angular/core",
           "screens"
@@ -2751,7 +2751,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "14118071618058777085"
+        "hash": "8175818107158363029"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",

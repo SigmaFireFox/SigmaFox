@@ -14,8 +14,6 @@ import {
 export class ClientTestimonialsSection {
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
 
-  heading = 'How do our Clients feel about us?';
-
   structuredPages: StructuredPageSeries = {
     phaseTiming: 8000,
     backgroundColours: ['aqua', 'aqua'],
