@@ -6,39 +6,11 @@ import {
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  ButtonSize,
-  ButtonStyleClass,
-  StandardButton,
-} from '@sigmafox/buttons';
+import { ButtonSize, StandardButton } from '@sigmafox/buttons';
 import { Router } from '@angular/router';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
 import { MatIconModule } from '@angular/material/icon';
-
-export enum EffectType {
-  Fade,
-}
-
-export interface ImactHeaderBlock {
-  content: string[];
-  effect?: EffectType;
-}
-
-export interface ImactHeader {
-  lines: ImactHeaderBlock[][];
-  alternatingContentPhases: number;
-}
-export interface CallToActionButton {
-  buttonSize: ButtonSize;
-  text: string;
-  buttonStyleClass: ButtonStyleClass;
-}
+import { ImactHeader, CallToActionButton } from './models/interfaces';
+import { fadeIn } from './models/animations';
 
 @Component({
   standalone: true,
@@ -46,13 +18,7 @@ export interface CallToActionButton {
   selector: 'sigmafox-landing-screen',
   templateUrl: './landing.screen.html',
   styleUrls: ['./landing.screen.scss'],
-  animations: [
-    trigger('fade', [
-      state('void', style({ color: 'blue', opacity: 0 })),
-      state('*', style({ color: 'blue', 'font-weight': 'bold' })),
-      transition(':enter', [animate(2000)]),
-    ]),
-  ],
+  animations: [fadeIn],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class LandingScreen implements AfterContentInit {

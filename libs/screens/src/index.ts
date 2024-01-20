@@ -1,6 +1,5 @@
+export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';
 export {
-  LandingScreen,
-  EffectType,
   ImactHeader,
   CallToActionButton,
-} from './lib/landing-screen/landing.screen';
+} from './lib/landing-screen/models/interfaces';

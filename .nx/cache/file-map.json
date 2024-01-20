@@ -2753,11 +2753,11 @@
       },
       {
         "file": "libs/screens/src/index.ts",
-        "hash": "12261946400421031931"
+        "hash": "13867464212495406341"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.html",
-        "hash": "3112455268508660809"
+        "hash": "6870205273257646964"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
@@ -2765,13 +2765,12 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "1713008998552296632",
+        "hash": "6951603544820072527",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
           "buttons",
           "npm:@angular/router",
-          "npm:@angular/animations",
           "npm:@angular/material"
         ]
       },
@@ -2801,6 +2800,24 @@
       {
         "file": "libs/screens/tsconfig.spec.json",
         "hash": "2927375835638640771"
+      },
+      {
+        "file": "libs/screens/src/lib/landing-screen/models/interfaces.ts",
+        "hash": "13115515109403414318",
+        "deps": [
+          "buttons"
+        ]
+      },
+      {
+        "file": "libs/screens/src/lib/landing-screen/models/enums.ts",
+        "hash": "5063301849407921142"
+      },
+      {
+        "file": "libs/screens/src/lib/landing-screen/models/animations.ts",
+        "hash": "3952660968714135098",
+        "deps": [
+          "npm:@angular/animations"
+        ]
       }
     ],
     "negocios": [
