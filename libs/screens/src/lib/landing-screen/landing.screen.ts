@@ -2,6 +2,7 @@ import {
   AfterContentInit,
   Component,
   EventEmitter,
+  HostListener,
   Input,
   Output,
 } from '@angular/core';
@@ -34,6 +35,11 @@ export class LandingScreen implements AfterContentInit {
   @Output() scrollToNextScreenClickced = new EventEmitter<void>();
   @Output() callToActionButtonClicked = new EventEmitter<void>();
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.setDynamicStyling();
+  }
+
   impactHeaderPhaseCounter = 0;
   elementSwitch = true;
   buttonSize = ButtonSize;
@@ -47,14 +53,32 @@ export class LandingScreen implements AfterContentInit {
     setInterval(() => {
       this.setNextImapctHeaderConentPhase();
     }, this.impactHeader.phaseTiming);
+    this.setDynamicStyling();
+  }
+
+  onCallToActionButtonClick() {
+    this.callToActionButtonClicked.emit();
+  }
+
+  scrollToNextScreen() {
+    this.scrollToNextScreenClickced.emit();
+  }
+
+  private setDynamicStyling() {
     if (this.backgroundPath) {
       this.backgroundContainerDynamicStyling = {
         'background-image': `url('${this.backgroundPath}')`,
       };
     }
+
+    const requiredWidth =
+      window.innerWidth >= 900
+        ? `${900 * ((100 - this.impactHeader.sidePadding * 2) / 100)}px`
+        : `calc(100% - (${this.impactHeader.sidePadding}vw * 2))`;
+
     this.headerContainerDynamicStyling = {
       margin: `6% ${this.impactHeader.sidePadding}vw 0 ${this.impactHeader.sidePadding}vw`,
-      'min-width': `calc(100% - (${this.impactHeader.sidePadding}vw * 2))`,
+      width: requiredWidth,
       'align-items': this.impactHeader.alignment,
       top: `${this.impactHeader.yLocation}%`,
     };
@@ -67,24 +91,21 @@ export class LandingScreen implements AfterContentInit {
         }
       }
     );
+
     if (setNavigationPanel) {
+      const requiredWidthAndHeight =
+        window.innerWidth >= 900
+          ? `${this.navigationPanel.nextScreen * (900 / window.innerWidth)}vw`
+          : `${this.navigationPanel.nextScreen}vw`;
       this.navigationButtonsDynamicStyling = {
-        height: `${this.navigationPanel.nextScreen}vw`,
-        width: `${this.navigationPanel.nextScreen}vw`,
+        height: requiredWidthAndHeight,
+        width: requiredWidthAndHeight,
       };
     }
 
     this.calltoActionContainerDynamicStyling = {
       top: `${this.callToActionButton.yLocation}%`,
     };
-  }
-
-  onCallToActionButtonClick() {
-    this.callToActionButtonClicked.emit();
-  }
-
-  scrollToNextScreen() {
-    this.scrollToNextScreenClickced.emit();
   }
 
   private setNextImapctHeaderConentPhase() {

@@ -1,4 +1,4 @@
-<div
+<!-- <div
   *ngIf="this.elementSwitch"
   class="screen-container"
   [ngStyle]="backgroundColourStyle"
@@ -36,4 +36,9 @@
       </button>
     </div>
   </div>
-</div>
+</div> -->
+
+<sigmafox-landing-screen
+  [navigationPanel]="navigationPanel"
+  (scrollToNextScreenClickced)="scrollToNextScreen()"
+></sigmafox-landing-screen>

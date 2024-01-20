@@ -65,3 +65,31 @@
         }
     }
 }
+
+@media only screen and (min-width: 900px) {
+    .screen-container {
+        justify-content: center;
+
+        .background-container {
+            width: 900px;
+            margin: 0 calc((100% - 900px)/2);
+        }
+
+        .impact-header-container {
+            margin: 0 calc((100% - 900px)/2);
+            height: fit-content;
+        }
+
+        .call-to-action-button-container {
+            width: 900px;
+            margin: 0 calc((100% - 900px)/2);
+        }
+
+        .navigation-panel-container {
+            width: 900px;
+            margin: 0 calc((100% - 900px)/2);
+        }
+
+
+    }
+}

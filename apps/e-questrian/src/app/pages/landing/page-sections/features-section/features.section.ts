@@ -1,4 +1,7 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Component, EventEmitter, Output } from '@angular/core';
+import { NavigationPanel } from '@sigmafox/screens';
+import { NavigationButtonSize } from 'libs/screens/src/lib/landing-screen/models/enums';
 
 export const BackgroundColours = [
   'lime',
@@ -22,7 +25,11 @@ export interface FeatureScreenContent {
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class FeaturesSection {
-  @Output() scrollToNextScreen = new EventEmitter<void>();
+  @Output() scrollToNextScreenClicked = new EventEmitter<void>();
+
+  navigationPanel: NavigationPanel = {
+    nextScreen: NavigationButtonSize.Medium,
+  };
 
   screens: FeatureScreenContent[] = [
     {
@@ -72,8 +79,8 @@ export class FeaturesSection {
     }, 80000);
   }
 
-  scrollToNext() {
-    this.scrollToNextScreen.emit();
+  scrollToNextScreen() {
+    this.scrollToNextScreenClicked.emit();
   }
 
   private switchScreen() {
