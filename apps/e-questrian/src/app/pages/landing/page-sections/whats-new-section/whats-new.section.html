@@ -1,18 +1,5 @@
-<div class="screen-container">
-  <div class="background-container"></div>
-  <div class="text-container">
-    <div class="header-text">{{currentHeader}}</div>
-    <div class="image-container">
-      <img src="{{currentImage}}" alt="" />
-    </div>
-    <div class="copy-text" *ngFor="let para of currentCopy">{{para}}</div>
-    <div class="call-to-action-button-container">
-      <sigmafox-standard-button
-        [buttonSize]="buttonSize.Large"
-        [text]="callToActionText"
-        [buttonStyleClass]="'primary-button'"
-        (clicked)="callToActionClick()"
-      ></sigmafox-standard-button>
-    </div>
-  </div>
-</div>
+<sigmafox-landing-screen
+  [structuredPages]="structuredPages"
+  [callToActionButton]="callToActionButton"
+  (callToActionButtonClicked)="onCallToActionButtonClicked()"
+></sigmafox-landing-screen>

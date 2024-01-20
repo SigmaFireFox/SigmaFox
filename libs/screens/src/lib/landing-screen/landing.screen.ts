@@ -34,7 +34,7 @@ export class LandingScreen implements AfterContentInit {
   @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
   @Input() structuredPages: StructuredPageSeries = {} as StructuredPageSeries;
 
-  @Output() scrollToNextScreenClickced = new EventEmitter<void>();
+  @Output() scrollToNextScreenClicked = new EventEmitter<void>();
   @Output() callToActionButtonClicked = new EventEmitter<void>();
 
   @HostListener('window:resize', ['$event'])
@@ -68,6 +68,7 @@ export class LandingScreen implements AfterContentInit {
     }
 
     this.setDynamicStyling();
+    this.randomiseBackgroundColour();
   }
 
   onCallToActionButtonClick() {
@@ -75,13 +76,14 @@ export class LandingScreen implements AfterContentInit {
   }
 
   scrollToNextScreen() {
-    this.scrollToNextScreenClickced.emit();
+    this.scrollToNextScreenClicked.emit();
   }
 
   private setDynamicStyling() {
     if (this.backgroundPath) {
       this.backgroundContainerDynamicStyling = {
         'background-image': `url('${this.backgroundPath}')`,
+        opacity: '0.5',
       };
     }
 
@@ -122,8 +124,6 @@ export class LandingScreen implements AfterContentInit {
         top: `${this.callToActionButton.yLocation}%`,
       };
     }
-
-    this.randomiseBackgroundColour();
   }
 
   private setNextImapctHeaderConentPhase() {
@@ -161,9 +161,10 @@ export class LandingScreen implements AfterContentInit {
       ); // The maximum is exclusive and the minimum is inclusive
     }
     this.currentColourIndex = colourIndex;
-    this.screenContainerDynamicStyling = {
+    this.backgroundContainerDynamicStyling = {
       'background-color':
         this.structuredPages.backgroundColours[this.currentColourIndex],
+      opacity: `${this.structuredPages.opacity}`,
     };
   }
 }

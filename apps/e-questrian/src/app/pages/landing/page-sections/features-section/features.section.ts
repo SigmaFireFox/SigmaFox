@@ -4,12 +4,9 @@ import { NavigationPanel } from '@sigmafox/screens';
 import { NavigationButtonSize } from 'libs/screens/src/lib/landing-screen/models/enums';
 import { StructuredPageSeries } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
-export const BackgroundColours = [];
-
 @Component({
   selector: 'e-questrian-features-section',
   templateUrl: './features.section.html',
-  styleUrls: ['./features.section.scss'],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class FeaturesSection {
@@ -18,13 +15,15 @@ export class FeaturesSection {
   structuredPages: StructuredPageSeries = {
     phaseTiming: 8000,
     backgroundColours: [
-      'lime',
-      'crimson',
-      'coral',
-      'hotpink',
+      'red',
+      'orange',
       'yellow',
-      'cyan',
+      'lime',
+      'blue',
+      'indigo',
+      'violet',
     ],
+    opacity: 0.5,
     imagesLocationPath:
       './../../../../../assets/landing-page-content/mock-ups/',
     screens: [

@@ -66,20 +66,21 @@ export class EntryCallToActionSection {
     alignment: Alignment.Left,
     yLocation: 10,
   };
+
   callToActionButton: CallToActionButton = {
     buttonSize: ButtonSize.Large,
     text: '',
     buttonStyleClass: ButtonStyleClass.Primary,
     yLocation: 60,
   };
+
   navigationPanel: NavigationPanel = {
     nextScreen: NavigationButtonSize.Medium,
   };
 
   constructor(private auth: AuthenticationService, private router: Router) {
     this.auth.isAuthenticated().then((result) => {
-      this.isLoggedIn = result;
-      this.callToActionButton.text = this.isLoggedIn
+      this.callToActionButton.text = result
         ? 'To Dashboard'
         : 'Register for Free Demo';
     });

@@ -62,17 +62,54 @@
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].heading}}
       </div>
       <div
+        class="top-img"
+        *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageTop"
+      >
+        <img
+          src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageTop}}"
+          alt=""
+        />
+      </div>
+
+      <div
         *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading"
         class="subheader-container"
       >
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading}}
       </div>
+      <div
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextCondenced"
+        class="body-text-condenced-container"
+      >
+        <div
+          *ngFor="let para of structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextCondenced"
+          class="body-text-condenced-para"
+        >
+          {{para}}
+        </div>
+      </div>
+      <div
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextSpread"
+        class="body-text-spread-container"
+      >
+        {{structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextSpread}}
+      </div>
+      <div
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].authorNameText"
+        class="author-name-text-container"
+      >
+        -
+        {{structuredPages.screens[structuredPageSeriesPhaseCounter].authorNameText}}
+      </div>
     </div>
-    <img
+    <div
       class="bottom-img"
       *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom"
-      src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom}}"
-      alt=""
-    />
+    >
+      <img
+        src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom}}"
+        alt=""
+      />
+    </div>
   </div>
 </ng-template>

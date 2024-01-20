@@ -34,7 +34,9 @@ export interface NavigationPanel {
 export interface StructuredPage {
   heading: string;
   subHeading?: string;
-  bodyText?: string;
+  bodyTextSpread?: string;
+  bodyTextCondenced?: string[];
+  authorNameText?: string;
   imageTop?: string;
   imageBottom?: string;
 }
@@ -44,4 +46,5 @@ export interface StructuredPageSeries {
   phaseTiming: number;
   imagesLocationPath?: string;
   backgroundColours?: string[];
+  opacity?: number;
 }
