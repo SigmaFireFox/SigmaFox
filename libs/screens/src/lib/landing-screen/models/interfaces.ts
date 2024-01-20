@@ -30,3 +30,17 @@ export interface NavigationPanel {
   [key: string]: NavigationButtonSize;
   nextScreen: NavigationButtonSize;
 }
+
+export interface StructuredPage {
+  heading: string;
+  subHeading?: string;
+  bodyText?: string;
+  imageTop?: string;
+  imageBottom?: string;
+}
+
+export interface StructuredPageSeries {
+  screens: StructuredPage[];
+  phaseTiming: number;
+  imagesLocationPath?: string;
+}

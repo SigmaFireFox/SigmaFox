@@ -13,6 +13,7 @@ import {
   ImactHeader,
   CallToActionButton,
   NavigationPanel,
+  StructuredPageSeries,
 } from './models/interfaces';
 import { fadeIn } from './models/animations';
 import { NavigationButtonSize } from './models/enums';
@@ -31,6 +32,7 @@ export class LandingScreen implements AfterContentInit {
   @Input() impactHeader: ImactHeader = {} as ImactHeader;
   @Input() callToActionButton: CallToActionButton = {} as CallToActionButton;
   @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
+  @Input() structuredPages: StructuredPageSeries = {} as StructuredPageSeries;
 
   @Output() scrollToNextScreenClickced = new EventEmitter<void>();
   @Output() callToActionButtonClicked = new EventEmitter<void>();
@@ -41,6 +43,8 @@ export class LandingScreen implements AfterContentInit {
   }
 
   impactHeaderPhaseCounter = 0;
+  structuredPageSeriesPhaseCounter = 0;
+
   elementSwitch = true;
   buttonSize = ButtonSize;
   callToActionText = '';
@@ -53,7 +57,17 @@ export class LandingScreen implements AfterContentInit {
     setInterval(() => {
       this.setNextImapctHeaderConentPhase();
     }, this.impactHeader.phaseTiming);
+    // setInterval(() => {
+    //   this.switchScreen();
+    // }, 80000);
+    // this.switchScreen();
     this.setDynamicStyling();
+
+    if (this.structuredPages.screens) {
+      console.log(
+        this.structuredPages.screens[this.structuredPageSeriesPhaseCounter]
+      );
+    }
   }
 
   onCallToActionButtonClick() {

@@ -2,6 +2,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { NavigationPanel } from '@sigmafox/screens';
 import { NavigationButtonSize } from 'libs/screens/src/lib/landing-screen/models/enums';
+import { StructuredPageSeries } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
 export const BackgroundColours = [
   'lime',
@@ -31,36 +32,45 @@ export class FeaturesSection {
     nextScreen: NavigationButtonSize.Medium,
   };
 
-  screens: FeatureScreenContent[] = [
-    {
-      header: 'Manage your day with EASE',
-      copy: 'With e-Questrian your are able to move lessions with the slide \
+  structuredPages: StructuredPageSeries = {
+    phaseTiming: 8000,
+    imagesLocationPath:
+      './../../../../../assets/landing-page-content/mock-ups/',
+    screens: [
+      {
+        heading: 'Manage your day with EASE',
+        subHeading:
+          'With e-Questrian your are able to move lessions with the slide \
       of a finger, set new lessions in seconds, cancel a lessons and we will \
       handle the paperwork',
-      image: 'mock-up-calendar.png',
-    },
-    {
-      header: 'Invoice EVERYONE with a few clicks',
-      copy: 'Spending hours if not days invoicing your clients - not any more. \
+        imageBottom: 'mock-up-calendar.png',
+      },
+      {
+        heading: 'Invoice EVERYONE with a few clicks',
+        subHeading:
+          'Spending hours if not days invoicing your clients - not any more. \
       With our invoice generator - you are able to generate all outstanding \
       invoices in seconds',
-      image: 'mock-up-invoice-generator.png',
-    },
-    {
-      header: 'Generate USEFUL reports in a flash',
-      copy: 'Need a report that you can actually understand? We do those as well. \
+        imageBottom: 'mock-up-invoice-generator.png',
+      },
+      {
+        heading: 'Generate USEFUL reports in a flash',
+        subHeading:
+          'Need a report that you can actually understand? We do those as well. \
       Not only are our reports easy to generate - they are simple enough to actually \
       be of use',
-      image: 'mock-up-reports.png',
-    },
-    {
-      header: 'Get a HOLISTIC client view',
-      copy: 'Want to see the big picture of your clients and at an individual level? \
+        imageBottom: 'mock-up-reports.png',
+      },
+      {
+        heading: 'Get a HOLISTIC client view',
+        subHeading:
+          'Want to see the big picture of your clients and at an individual level? \
       We have that. See clients lessons, accounts, communications and more in one \
       simple view',
-      image: 'mock-up-reports.png',
-    },
-  ];
+        imageBottom: 'mock-up-reports.png',
+      },
+    ],
+  };
 
   // Make more images here: https://placeit.net/editor/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923?customG_0=s7ehrkdd09&customG_1=s7eht924f4
 
@@ -73,31 +83,31 @@ export class FeaturesSection {
   backgroundColourStyle = {};
 
   constructor() {
-    this.switchScreen();
-    setInterval(() => {
-      this.switchScreen();
-    }, 80000);
+    // this.switchScreen();
+    // setInterval(() => {
+    //   this.switchScreen();
+    // }, 80000);
   }
 
   scrollToNextScreen() {
     this.scrollToNextScreenClicked.emit();
   }
 
-  private switchScreen() {
-    this.screenCounter =
-      this.screenCounter === this.screens.length - 1
-        ? 0
-        : (this.screenCounter += 1);
+  // private switchScreen() {
+  //   this.screenCounter =
+  //     this.screenCounter === this.screens.length - 1
+  //       ? 0
+  //       : (this.screenCounter += 1);
 
-    this.currentHeader = this.screens[this.screenCounter].header;
-    this.currentCopy = this.screens[this.screenCounter].copy;
-    this.currentImage =
-      './../../../../../assets/landing-page-content/mock-ups/' +
-      this.screens[this.screenCounter].image;
-    this.elementSwitch = !this.elementSwitch;
+  //   this.currentHeader = this.screens[this.screenCounter].header;
+  //   this.currentCopy = this.screens[this.screenCounter].copy;
+  //   this.currentImage =
+  //     './../../../../../assets/landing-page-content/mock-ups/' +
+  //     this.screens[this.screenCounter].image;
+  //   this.elementSwitch = !this.elementSwitch;
 
-    this.randomiseBackgroundColour();
-  }
+  //   this.randomiseBackgroundColour();
+  // }
 
   private randomiseBackgroundColour() {
     let colourIndex = 0;

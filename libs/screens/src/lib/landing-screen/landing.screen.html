@@ -45,4 +45,33 @@
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>
+
+  <div *ngIf="this.elementSwitch">
+    <ng-container *ngTemplateOutlet="struturedPage"></ng-container>
+  </div>
+  <div *ngIf="!this.elementSwitch">
+    <ng-container *ngTemplateOutlet="struturedPage"></ng-container>
+  </div>
 </div>
+
+<ng-template #struturedPage>
+  <div *ngIf="structuredPages.screens" class="structured-page-container">
+    <div class="text-container">
+      <div class="header-container">
+        {{structuredPages.screens[structuredPageSeriesPhaseCounter].heading}}
+      </div>
+      <div
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading"
+        class="subheader-container"
+      >
+        {{structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading}}
+      </div>
+    </div>
+    <img
+      class="bottom-img"
+      *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom"
+      src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom}}"
+      alt=""
+    />
+  </div>
+</ng-template>

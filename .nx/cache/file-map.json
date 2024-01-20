@@ -1582,7 +1582,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.html",
-        "hash": "11921770043223774595"
+        "hash": "6038923934962050841"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.scss",
@@ -1590,7 +1590,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.ts",
-        "hash": "5228739602899098309",
+        "hash": "4617562513675617519",
         "deps": [
           "npm:@angular/core",
           "screens"
@@ -2754,19 +2754,19 @@
       },
       {
         "file": "libs/screens/src/index.ts",
-        "hash": "14627167201220625027"
+        "hash": "10515250837910435920"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.html",
-        "hash": "12574606834870058784"
+        "hash": "17339718510783536106"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "3561674468287088224"
+        "hash": "9979838040561239764"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "10778392182729470533",
+        "hash": "16675435827164880431",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -2803,7 +2803,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/interfaces.ts",
-        "hash": "16249528110665236735",
+        "hash": "5382325588777778723",
         "deps": [
           "buttons"
         ]
