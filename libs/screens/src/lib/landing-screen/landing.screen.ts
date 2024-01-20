@@ -30,7 +30,7 @@ import { NavigationButtonSize } from './models/enums';
 export class LandingScreen implements AfterContentInit {
   @Input() backgroundPath = '';
   @Input() impactHeader: ImactHeader = {} as ImactHeader;
-  @Input() callToActionButton: CallToActionButton = {} as CallToActionButton;
+  @Input() callToActionButton: CallToActionButton | undefined;
   @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
   @Input() structuredPages: StructuredPageSeries = {} as StructuredPageSeries;
 
@@ -52,6 +52,9 @@ export class LandingScreen implements AfterContentInit {
   headerContainerDynamicStyling = {};
   calltoActionContainerDynamicStyling = {};
   navigationButtonsDynamicStyling = {};
+  screenContainerDynamicStyling = {};
+
+  private currentColourIndex = 0;
 
   ngAfterContentInit() {
     setInterval(() => {
@@ -114,9 +117,13 @@ export class LandingScreen implements AfterContentInit {
       };
     }
 
-    this.calltoActionContainerDynamicStyling = {
-      top: `${this.callToActionButton.yLocation}%`,
-    };
+    if (this.callToActionButton) {
+      this.calltoActionContainerDynamicStyling = {
+        top: `${this.callToActionButton.yLocation}%`,
+      };
+    }
+
+    this.randomiseBackgroundColour();
   }
 
   private setNextImapctHeaderConentPhase() {
@@ -141,6 +148,22 @@ export class LandingScreen implements AfterContentInit {
 
     this.elementSwitch = !this.elementSwitch;
 
-    // this.randomiseBackgroundColour();
+    this.randomiseBackgroundColour();
+  }
+
+  private randomiseBackgroundColour() {
+    if (!this.structuredPages.backgroundColours) return;
+
+    let colourIndex = 0;
+    while (this.currentColourIndex === colourIndex) {
+      colourIndex = Math.floor(
+        Math.random() * (this.structuredPages.backgroundColours.length - 0) + 0
+      ); // The maximum is exclusive and the minimum is inclusive
+    }
+    this.currentColourIndex = colourIndex;
+    this.screenContainerDynamicStyling = {
+      'background-color':
+        this.structuredPages.backgroundColours[this.currentColourIndex],
+    };
   }
 }

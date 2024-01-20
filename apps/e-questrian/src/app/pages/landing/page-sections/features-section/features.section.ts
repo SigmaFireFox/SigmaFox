@@ -4,20 +4,7 @@ import { NavigationPanel } from '@sigmafox/screens';
 import { NavigationButtonSize } from 'libs/screens/src/lib/landing-screen/models/enums';
 import { StructuredPageSeries } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
-export const BackgroundColours = [
-  'lime',
-  'crimson',
-  'coral',
-  'hotpink',
-  'yellow',
-  'cyan',
-];
-
-export interface FeatureScreenContent {
-  header: string;
-  copy: string;
-  image: string;
-}
+export const BackgroundColours = [];
 
 @Component({
   selector: 'e-questrian-features-section',
@@ -28,12 +15,16 @@ export interface FeatureScreenContent {
 export class FeaturesSection {
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
 
-  navigationPanel: NavigationPanel = {
-    nextScreen: NavigationButtonSize.Medium,
-  };
-
   structuredPages: StructuredPageSeries = {
     phaseTiming: 8000,
+    backgroundColours: [
+      'lime',
+      'crimson',
+      'coral',
+      'hotpink',
+      'yellow',
+      'cyan',
+    ],
     imagesLocationPath:
       './../../../../../assets/landing-page-content/mock-ups/',
     screens: [
@@ -71,55 +62,13 @@ export class FeaturesSection {
       },
     ],
   };
-
   // Make more images here: https://placeit.net/editor/macbook-pro-mockup-with-a-white-iphone-6-in-front-view-a11923?customG_0=s7ehrkdd09&customG_1=s7eht924f4
 
-  screenCounter = 0;
-  elementSwitch = false;
-  currentHeader = '';
-  currentCopy = '';
-  currentImage = '';
-  currentColourIndex = 0;
-  backgroundColourStyle = {};
-
-  constructor() {
-    // this.switchScreen();
-    // setInterval(() => {
-    //   this.switchScreen();
-    // }, 80000);
-  }
+  navigationPanel: NavigationPanel = {
+    nextScreen: NavigationButtonSize.Medium,
+  };
 
   scrollToNextScreen() {
     this.scrollToNextScreenClicked.emit();
-  }
-
-  // private switchScreen() {
-  //   this.screenCounter =
-  //     this.screenCounter === this.screens.length - 1
-  //       ? 0
-  //       : (this.screenCounter += 1);
-
-  //   this.currentHeader = this.screens[this.screenCounter].header;
-  //   this.currentCopy = this.screens[this.screenCounter].copy;
-  //   this.currentImage =
-  //     './../../../../../assets/landing-page-content/mock-ups/' +
-  //     this.screens[this.screenCounter].image;
-  //   this.elementSwitch = !this.elementSwitch;
-
-  //   this.randomiseBackgroundColour();
-  // }
-
-  private randomiseBackgroundColour() {
-    let colourIndex = 0;
-    while (this.currentColourIndex === colourIndex) {
-      colourIndex = Math.floor(
-        Math.random() * (BackgroundColours.length - 0) + 0
-      ); // The maximum is exclusive and the minimum is inclusive
-    }
-    this.currentColourIndex = colourIndex;
-    this.backgroundColourStyle = {
-      'background-color': BackgroundColours[this.currentColourIndex],
-      opacity: '0.8',
-    };
   }
 }

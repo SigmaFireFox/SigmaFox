@@ -43,4 +43,5 @@ export interface StructuredPageSeries {
   screens: StructuredPage[];
   phaseTiming: number;
   imagesLocationPath?: string;
+  backgroundColours?: string[];
 }

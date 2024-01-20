@@ -1,4 +1,4 @@
-<div class="screen-container">
+<div class="screen-container" [ngStyle]="screenContainerDynamicStyling">
   <div
     class="background-container"
     [ngStyle]="backgroundContainerDynamicStyling"
@@ -29,6 +29,7 @@
     [ngStyle]="calltoActionContainerDynamicStyling"
   >
     <sigmafox-standard-button
+      *ngIf="callToActionButton"
       [buttonSize]="callToActionButton.buttonSize"
       [text]="callToActionButton.text"
       [buttonStyleClass]="callToActionButton.buttonStyleClass"
