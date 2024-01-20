@@ -1,5 +1,5 @@
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
-import { EffectType, SidePadding } from './enums';
+import { Alignment, EffectType, SidePadding } from './enums';
 
 export interface ImactHeaderBlock {
   content: string[];
@@ -11,6 +11,7 @@ export interface ImactHeader {
   alternatingContentPhases: number;
   sidePadding: SidePadding;
   phaseTiming: number;
+  alignment: Alignment;
 }
 export interface CallToActionButton {
   buttonSize: ButtonSize;

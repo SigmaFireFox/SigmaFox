@@ -7,3 +7,9 @@ export enum SidePadding {
   Medium = 10,
   Large = 15,
 }
+
+export enum Alignment {
+  Left = 'flex-start',
+  Center = 'center',
+  Right = 'flex-end',
+}

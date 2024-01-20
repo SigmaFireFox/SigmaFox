@@ -46,7 +46,9 @@ export class LandingScreen implements AfterContentInit {
       };
     }
     this.headerContainerDynamicStyling = {
-      padding: `6% ${this.impactHeader.sidePadding}vw 0 ${this.impactHeader.sidePadding}vw`,
+      margin: `6% ${this.impactHeader.sidePadding}vw 0 ${this.impactHeader.sidePadding}vw`,
+      'min-width': `calc(100% - (${this.impactHeader.sidePadding}vw * 2))`,
+      'align-items': this.impactHeader.alignment,
     };
   }
 

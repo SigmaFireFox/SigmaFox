@@ -1571,7 +1571,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
-        "hash": "13566379201453574446",
+        "hash": "8163468375384840166",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
@@ -2761,11 +2761,11 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "6262704853380434593"
+        "hash": "17321135198039018007"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "15913009733514838020",
+        "hash": "6635009486578378280",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -2802,14 +2802,14 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/interfaces.ts",
-        "hash": "2824588570781016667",
+        "hash": "6127160314261366029",
         "deps": [
           "buttons"
         ]
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/enums.ts",
-        "hash": "8250800929908489968"
+        "hash": "8859526736795920537"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/animations.ts",

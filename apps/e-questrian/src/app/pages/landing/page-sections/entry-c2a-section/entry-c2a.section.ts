@@ -1,3 +1,4 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Component, EventEmitter, Output } from '@angular/core';
 import {
   animate,
@@ -7,7 +8,6 @@ import {
   trigger,
 } from '@angular/animations';
 import { Router } from '@angular/router';
-// eslint-disable-next-line @nx/enforce-module-boundaries
 import { AuthenticationService } from 'apps/e-questrian/src/app/services/authentication/authentication.service';
 import {
   CallToActionButton,
@@ -16,6 +16,7 @@ import {
   SidePadding,
 } from '@sigmafox/screens';
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
+import { Alignment } from 'libs/screens/src/lib/landing-screen/models/enums';
 
 @Component({
   selector: 'e-questrian-entry-c2a',
@@ -58,6 +59,7 @@ export class EntryCallToActionSection {
     alternatingContentPhases: 6,
     phaseTiming: 3000,
     sidePadding: SidePadding.Medium,
+    alignment: Alignment.Left,
   };
   callToActionButton: CallToActionButton = {
     buttonSize: ButtonSize.Large,
