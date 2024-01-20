@@ -1,8 +1,8 @@
 <sigmafox-landing-screen
-  [isLoggedIn]="isLoggedIn"
   [backgroundPath]="backgroundPath"
   [impactHeader]="impactHeader"
+  [navigationPanel]="navigationPanel"
   [callToActionButton]="callToActionButton"
-  (scrollToNextScreen)="scrollToNext()"
+  (scrollToNextScreenClickced)="scrollToNextScreen()"
   (callToActionButtonClicked)="onCallToActionButtonClicked()"
 ></sigmafox-landing-screen>

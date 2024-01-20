@@ -8,8 +8,13 @@ import {
 import { CommonModule } from '@angular/common';
 import { ButtonSize, StandardButton } from '@sigmafox/buttons';
 import { MatIconModule } from '@angular/material/icon';
-import { ImactHeader, CallToActionButton } from './models/interfaces';
+import {
+  ImactHeader,
+  CallToActionButton,
+  NavigationPanel,
+} from './models/interfaces';
 import { fadeIn } from './models/animations';
+import { NavigationButtonSize } from './models/enums';
 
 @Component({
   standalone: true,
@@ -21,12 +26,12 @@ import { fadeIn } from './models/animations';
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class LandingScreen implements AfterContentInit {
-  @Input() isLoggedIn = false;
   @Input() backgroundPath = '';
   @Input() impactHeader: ImactHeader = {} as ImactHeader;
   @Input() callToActionButton: CallToActionButton = {} as CallToActionButton;
+  @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
 
-  @Output() scrollToNextScreen = new EventEmitter<void>();
+  @Output() scrollToNextScreenClickced = new EventEmitter<void>();
   @Output() callToActionButtonClicked = new EventEmitter<void>();
 
   impactHeaderPhaseCounter = 0;
@@ -35,6 +40,8 @@ export class LandingScreen implements AfterContentInit {
   callToActionText = '';
   backgroundContainerDynamicStyling = {};
   headerContainerDynamicStyling = {};
+  calltoActionContainerDynamicStyling = {};
+  navigationButtonsDynamicStyling = {};
 
   ngAfterContentInit() {
     setInterval(() => {
@@ -49,6 +56,26 @@ export class LandingScreen implements AfterContentInit {
       margin: `6% ${this.impactHeader.sidePadding}vw 0 ${this.impactHeader.sidePadding}vw`,
       'min-width': `calc(100% - (${this.impactHeader.sidePadding}vw * 2))`,
       'align-items': this.impactHeader.alignment,
+      top: `${this.impactHeader.yLocation}%`,
+    };
+
+    let setNavigationPanel = false;
+    Object.values(this.navigationPanel).forEach(
+      (value: NavigationButtonSize) => {
+        if (value !== NavigationButtonSize.None) {
+          setNavigationPanel = true;
+        }
+      }
+    );
+    if (setNavigationPanel) {
+      this.navigationButtonsDynamicStyling = {
+        height: `${this.navigationPanel.nextScreen}vw`,
+        width: `${this.navigationPanel.nextScreen}vw`,
+      };
+    }
+
+    this.calltoActionContainerDynamicStyling = {
+      top: `${this.callToActionButton.yLocation}%`,
     };
   }
 
@@ -56,8 +83,8 @@ export class LandingScreen implements AfterContentInit {
     this.callToActionButtonClicked.emit();
   }
 
-  scrollToNext() {
-    this.scrollToNextScreen.emit();
+  scrollToNextScreen() {
+    this.scrollToNextScreenClickced.emit();
   }
 
   private setNextImapctHeaderConentPhase() {

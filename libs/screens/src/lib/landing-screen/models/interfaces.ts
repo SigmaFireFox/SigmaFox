@@ -1,5 +1,10 @@
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
-import { Alignment, EffectType, SidePadding } from './enums';
+import {
+  Alignment,
+  EffectType,
+  NavigationButtonSize,
+  SidePadding,
+} from './enums';
 
 export interface ImactHeaderBlock {
   content: string[];
@@ -12,9 +17,16 @@ export interface ImactHeader {
   sidePadding: SidePadding;
   phaseTiming: number;
   alignment: Alignment;
+  yLocation: number;
 }
 export interface CallToActionButton {
   buttonSize: ButtonSize;
   text: string;
   buttonStyleClass: ButtonStyleClass;
+  yLocation: number;
+}
+
+export interface NavigationPanel {
+  [key: string]: NavigationButtonSize;
+  nextScreen: NavigationButtonSize;
 }

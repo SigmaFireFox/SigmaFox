@@ -1534,7 +1534,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.html",
-        "hash": "9999061596850171844"
+        "hash": "5906887327268426533"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.scss",
@@ -1567,11 +1567,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.html",
-        "hash": "5151630219215264517"
+        "hash": "17311584253685773137"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
-        "hash": "8163468375384840166",
+        "hash": "5601833310505582008",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
@@ -2753,19 +2753,19 @@
       },
       {
         "file": "libs/screens/src/index.ts",
-        "hash": "13812450585188826627"
+        "hash": "14627167201220625027"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.html",
-        "hash": "6475571429256271297"
+        "hash": "12574606834870058784"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "17321135198039018007"
+        "hash": "2339297218651295674"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "6635009486578378280",
+        "hash": "11792846027217005319",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -2802,14 +2802,14 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/interfaces.ts",
-        "hash": "6127160314261366029",
+        "hash": "16249528110665236735",
         "deps": [
           "buttons"
         ]
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/enums.ts",
-        "hash": "8859526736795920537"
+        "hash": "16585147634179590894"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/animations.ts",

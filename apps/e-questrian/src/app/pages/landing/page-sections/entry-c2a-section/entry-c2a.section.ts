@@ -13,10 +13,14 @@ import {
   CallToActionButton,
   EffectType,
   ImactHeader,
+  NavigationPanel,
   SidePadding,
 } from '@sigmafox/screens';
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
-import { Alignment } from 'libs/screens/src/lib/landing-screen/models/enums';
+import {
+  Alignment,
+  NavigationButtonSize,
+} from 'libs/screens/src/lib/landing-screen/models/enums';
 
 @Component({
   selector: 'e-questrian-entry-c2a',
@@ -31,7 +35,7 @@ import { Alignment } from 'libs/screens/src/lib/landing-screen/models/enums';
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class EntryCallToActionSection {
-  @Output() scrollToNextScreen = new EventEmitter<void>();
+  @Output() scrollToNextScreenClicked = new EventEmitter<void>();
 
   isLoggedIn = true;
   backgroundPath =
@@ -60,11 +64,16 @@ export class EntryCallToActionSection {
     phaseTiming: 3000,
     sidePadding: SidePadding.Medium,
     alignment: Alignment.Left,
+    yLocation: 10,
   };
   callToActionButton: CallToActionButton = {
     buttonSize: ButtonSize.Large,
     text: '',
     buttonStyleClass: ButtonStyleClass.Primary,
+    yLocation: 60,
+  };
+  navigationPanel: NavigationPanel = {
+    nextScreen: NavigationButtonSize.Medium,
   };
 
   constructor(private auth: AuthenticationService, private router: Router) {
@@ -84,7 +93,7 @@ export class EntryCallToActionSection {
     }
   }
 
-  scrollToNext() {
-    this.scrollToNextScreen.emit();
+  scrollToNextScreen() {
+    this.scrollToNextScreenClicked.emit();
   }
 }

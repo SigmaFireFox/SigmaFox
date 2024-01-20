@@ -3,41 +3,46 @@
     class="background-container"
     [ngStyle]="backgroundContainerDynamicStyling"
   ></div>
-  <div class="content-container">
-    <div class="text-container">
-      <div
-        *ngIf="impactHeader"
-        class="header-container"
-        [ngStyle]="headerContainerDynamicStyling"
-      >
-        <div *ngFor="let line of impactHeader.lines">
-          <span *ngFor="let block of line">
-            <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
-            <span *ngIf="block.content.length > 1">
-              <span @fadeIn *ngIf="this.elementSwitch"
-                >{{block.content[impactHeaderPhaseCounter]}}</span
-              >
-              <span @fadeIn *ngIf="!this.elementSwitch"
-                >{{block.content[impactHeaderPhaseCounter]}}</span
-              >
-            </span>
-          </span>
-        </div>
-      </div>
+  <div
+    *ngIf="impactHeader"
+    class="impact-header-container"
+    [ngStyle]="headerContainerDynamicStyling"
+  >
+    <div *ngFor="let line of impactHeader.lines">
+      <span *ngFor="let block of line">
+        <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
+        <span *ngIf="block.content.length > 1">
+          <span @fadeIn *ngIf="this.elementSwitch"
+            >{{block.content[impactHeaderPhaseCounter]}}</span
+          >
+          <span @fadeIn *ngIf="!this.elementSwitch"
+            >{{block.content[impactHeaderPhaseCounter]}}</span
+          >
+        </span>
+      </span>
     </div>
+  </div>
 
-    <div *ngIf="callToActionButton" class="call-to-action-button-container">
-      <sigmafox-standard-button
-        [buttonSize]="callToActionButton.buttonSize"
-        [text]="callToActionButton.text"
-        [buttonStyleClass]="callToActionButton.buttonStyleClass"
-        (clicked)="onCallToActionButtonClick()"
-      ></sigmafox-standard-button>
-    </div>
-    <div class="next-screen-scroll-button-container">
-      <button (click)="scrollToNext()">
-        <mat-icon>keyboard_arrow_down</mat-icon>
-      </button>
-    </div>
+  <div
+    *ngIf="callToActionButton"
+    class="call-to-action-button-container"
+    [ngStyle]="calltoActionContainerDynamicStyling"
+  >
+    <sigmafox-standard-button
+      [buttonSize]="callToActionButton.buttonSize"
+      [text]="callToActionButton.text"
+      [buttonStyleClass]="callToActionButton.buttonStyleClass"
+      (clicked)="onCallToActionButtonClick()"
+    ></sigmafox-standard-button>
+  </div>
+  <div *ngIf="navigationPanel" class="navigation-panel-container">
+    <button
+      *ngIf="navigationPanel.nextScreen"
+      class="navigation-button"
+      [ngStyle]="navigationButtonsDynamicStyling"
+      (click)="scrollToNextScreen()"
+    >
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
   </div>
 </div>

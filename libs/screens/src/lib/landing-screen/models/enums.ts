@@ -13,3 +13,10 @@ export enum Alignment {
   Center = 'center',
   Right = 'flex-end',
 }
+
+export enum NavigationButtonSize {
+  None = 0,
+  Small = 5,
+  Medium = 10,
+  Large = 15,
+}
