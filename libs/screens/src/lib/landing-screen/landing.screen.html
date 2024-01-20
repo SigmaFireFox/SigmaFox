@@ -1,17 +1,24 @@
 <div class="screen-container">
-  <div class="background-container" [ngStyle]="backgroundPathStyle"></div>
+  <div
+    class="background-container"
+    [ngStyle]="backgroundContainerDynamicStyling"
+  ></div>
   <div class="content-container">
     <div class="text-container">
-      <div *ngIf="impactHeader" class="header-container">
+      <div
+        *ngIf="impactHeader"
+        class="header-container"
+        [ngStyle]="headerContainerDynamicStyling"
+      >
         <div *ngFor="let line of impactHeader.lines">
           <span *ngFor="let block of line">
             <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
             <span *ngIf="block.content.length > 1">
-              <span @fade *ngIf="this.elementSwitch"
-                >{{block.content[textCounter]}}</span
+              <span @fadeIn *ngIf="this.elementSwitch"
+                >{{block.content[impactHeaderPhaseCounter]}}</span
               >
-              <span @fade *ngIf="!this.elementSwitch"
-                >{{block.content[textCounter]}}</span
+              <span @fadeIn *ngIf="!this.elementSwitch"
+                >{{block.content[impactHeaderPhaseCounter]}}</span
               >
             </span>
           </span>

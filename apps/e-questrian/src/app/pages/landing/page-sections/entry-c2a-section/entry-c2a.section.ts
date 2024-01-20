@@ -9,7 +9,12 @@ import {
 import { Router } from '@angular/router';
 // eslint-disable-next-line @nx/enforce-module-boundaries
 import { AuthenticationService } from 'apps/e-questrian/src/app/services/authentication/authentication.service';
-import { CallToActionButton, EffectType, ImactHeader } from '@sigmafox/screens';
+import {
+  CallToActionButton,
+  EffectType,
+  ImactHeader,
+  SidePadding,
+} from '@sigmafox/screens';
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
 
 @Component({
@@ -43,7 +48,7 @@ export class EntryCallToActionSection {
             'Livestock',
             'Liveries',
           ],
-          effect: EffectType.Fade,
+          effect: EffectType.FadeIn,
         },
       ],
       [{ content: ['within'] }],
@@ -51,6 +56,8 @@ export class EntryCallToActionSection {
       [{ content: ['of your hands'] }],
     ],
     alternatingContentPhases: 6,
+    phaseTiming: 3000,
+    sidePadding: SidePadding.Medium,
   };
   callToActionButton: CallToActionButton = {
     buttonSize: ButtonSize.Large,

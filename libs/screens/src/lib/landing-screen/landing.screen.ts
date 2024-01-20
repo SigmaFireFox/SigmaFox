@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonSize, StandardButton } from '@sigmafox/buttons';
-import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ImactHeader, CallToActionButton } from './models/interfaces';
 import { fadeIn } from './models/animations';
@@ -24,33 +23,31 @@ import { fadeIn } from './models/animations';
 export class LandingScreen implements AfterContentInit {
   @Input() isLoggedIn = false;
   @Input() backgroundPath = '';
-  @Input() impactHeader: ImactHeader = {
-    lines: [],
-    alternatingContentPhases: 0,
-  };
+  @Input() impactHeader: ImactHeader = {} as ImactHeader;
   @Input() callToActionButton: CallToActionButton = {} as CallToActionButton;
 
   @Output() scrollToNextScreen = new EventEmitter<void>();
   @Output() callToActionButtonClicked = new EventEmitter<void>();
 
-  textCounter = 0;
+  impactHeaderPhaseCounter = 0;
   elementSwitch = true;
   buttonSize = ButtonSize;
   callToActionText = '';
-  backgroundPathStyle = {};
-
-  constructor(private router: Router) {
-    setInterval(() => {
-      this.setNextPhaseContent();
-    }, 3000);
-  }
+  backgroundContainerDynamicStyling = {};
+  headerContainerDynamicStyling = {};
 
   ngAfterContentInit() {
+    setInterval(() => {
+      this.setNextImapctHeaderConentPhase();
+    }, this.impactHeader.phaseTiming);
     if (this.backgroundPath) {
-      this.backgroundPathStyle = {
+      this.backgroundContainerDynamicStyling = {
         'background-image': `url('${this.backgroundPath}')`,
       };
     }
+    this.headerContainerDynamicStyling = {
+      padding: `6% ${this.impactHeader.sidePadding}vw 0 ${this.impactHeader.sidePadding}vw`,
+    };
   }
 
   onCallToActionButtonClick() {
@@ -61,12 +58,15 @@ export class LandingScreen implements AfterContentInit {
     this.scrollToNextScreen.emit();
   }
 
-  private setNextPhaseContent() {
+  private setNextImapctHeaderConentPhase() {
     if (!this.impactHeader.alternatingContentPhases) return;
 
-    this.textCounter += 1;
-    if (this.textCounter === this.impactHeader.alternatingContentPhases) {
-      this.textCounter = 0;
+    this.impactHeaderPhaseCounter += 1;
+    if (
+      this.impactHeaderPhaseCounter ===
+      this.impactHeader.alternatingContentPhases
+    ) {
+      this.impactHeaderPhaseCounter = 0;
     }
     this.elementSwitch = !this.elementSwitch;
   }

@@ -625,3 +625,1178 @@
 [1m[31m[39m[22m
 [37m[39m
 [37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m558.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:44:13.668Z[39m[37m[22m - Hash: [1m[37m4f4f0668d3238d1e[39m[37m[22m - Time: [1m[37m387[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/screens/src/index.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/libs/screens/src/index.ts: `LandingScreen` has already been exported. Exported identifiers must be unique. (2:9)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 1 |[39m[31m [36mexport[39m[31m { [33mLandingScreen[39m[31m[33m,[39m[31m [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/landing.screen'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 2 |[39m[31m [36mexport[39m[31m { [33mLandingScreen[39m[31m[33m,[39m[31m [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/landing.screen'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m   |[39m[31m          [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 3 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m10[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"./lib/landing-screen/landing.screen"' has no exported member 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier [39m[22m[1m[31m'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m25[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"./lib/landing-screen/landing.screen"' has no exported member 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:44:34.635Z[39m[37m[22m - Hash: [1m[37mfde669d3d4e9e468[39m[37m[22m - Time: [1m[37m276[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/screens/src/index.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/libs/screens/src/index.ts: `EffectType` has already been exported. Exported identifiers must be unique. (2:9)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 1 |[39m[31m [36mexport[39m[31m { [33mLandingScreen[39m[31m[33m,[39m[31m [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/landing.screen'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 2 |[39m[31m [36mexport[39m[31m { [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/models/enums'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m   |[39m[31m          [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 3 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"./lib/landing-screen/landing.screen"' has no exported member 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { , EffectType } from './lib/landing-screen/models/enums';[39m[22m
+[1m[31m[7m [0m [91m         ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { , EffectType } from './lib/landing-screen/models/e[39m[22m[1m[31mnums';[39m[22m
+[1m[31m[7m [0m [91m           ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:44:36.966Z[39m[37m[22m - Hash: [1m[37m132bb607a2329285[39m[37m[22m - Time: [1m[37m249[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/screens/src/index.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/libs/screens/src/index.ts: `EffectType` has already been exported. Exported identifiers must be unique. (2:9)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 1 |[39m[31m [36mexport[39m[31m { [33mLandingScreen[39m[31m[33m,[39m[31m [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/landing.screen'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 2 |[39m[31m [36mexport[39m[31m { [33mEffectType[39m[31m } [36mfrom[39m[31m [32m'./lib/landing-screen/models/enums'[39m[31m[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m   |[39m[31m          [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 3 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m1[0m:[93m25[0m - [91merror[0m[90m TS2305: [0mModule '"./lib/landing-screen/landing.screen"' has no exported member 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export { LandingScreen, EffectType } from './lib/landing-screen/landing.screen';[39m[22m
+[1m[31m[7m [0m [91m                        ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/index.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m export { EffectType } from './lib/landing-screen/models/enums';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:44:41.857Z[39m[37m[22m - Hash: [1m[37m8ffdc9f1f91db033[39m[37m[22m - Time: [1m[37m247[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m46[0m:[93m30[0m - [91merror[0m[90m TS2339: [0mProperty 'Fade' does not exist on type 'typeof EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m           effect: EffectType.Fade,[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:44:50.321Z[39m[37m[22m - Hash: [1m[37ma2ee98ab63a7861b[39m[37m[22m - Time: [1m[37m271[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m46[0m:[93m30[0m - [91merror[0m[90m TS2339: [0mProperty 'Fade' does not exist on type 'typeof EffectType'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m           effect: EffectType.Fade,[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:46:03.823Z[39m[37m[22m - Hash: [1m[37m1e0eba4adb1bb30f[39m[37m[22m - Time: [1m[37m363[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m46[0m:[93m30[0m - [91merror[0m[90m TS2551: [0mProperty 'FadeIN' does not exist on type 'typeof EffectType'. Did you mean 'FadeIn'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m           effect: EffectType.FadeIN,[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m2[0m:[93m3[0m[39m[22m
+[1m[31m    [7m2[0m   FadeIn,[39m[22m
+[1m[31m    [7m [0m [96m  ~~~~~~[0m[39m[22m
+[1m[31m    'FadeIn' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:46:05.272Z[39m[37m[22m - Hash: [1m[37mc2362d1b23b268e2[39m[37m[22m - Time: [1m[37m312[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:47:13.708Z[39m[37m[22m - Hash: [1m[37mb253ea96fa8a3779[39m[37m[22m - Time: [1m[37m366[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'Small'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m   Small = '2'[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m6[0m:[93m3[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'Small'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m   Small = '2'[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m7[0m:[93m5[0m - [91merror[0m[90m TS1357: [0mAn enum member name must be followed by a ',', '=', or '}'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m     Small = '2'[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m7[0m:[93m5[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'Small'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m     Small = '2'[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m8[0m:[93m3[0m - [91merror[0m[90m TS1357: [0mAn enum member name must be followed by a ',', '=', or '}'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m   Small = '2'[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/enums.ts[0m:[93m8[0m:[93m3[0m - [91merror[0m[90m TS2300: [0mDuplicate identifier 'Small'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m   Small = '2'[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:47:25.522Z[39m[37m[22m - Hash: [1m[37m9ba0d481862bd2e4[39m[37m[22m - Time: [1m[37m332[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:47:40.358Z[39m[37m[22m - Hash: [1m[37m5e72609d025713ff[39m[37m[22m - Time: [1m[37m289[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:47:59.458Z[39m[37m[22m - Hash: [1m[37m9b5bb18c14319b69[39m[37m[22m - Time: [1m[37m306[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:03.513Z[39m[37m[22m - Hash: [1m[37mcaf2719fa4c63938[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m33[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'sidePadding' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m3[0m[39m[22m
+[1m[31m    [7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'sidePadding' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m27[0m:[93m12[0m - [91merror[0m[90m TS2741: [0mProperty 'sidePadding' is missing in type '{ lines: never[]; alternatingContentPhases: number; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m27[0m   @Input() impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m3[0m[39m[22m
+[1m[31m    [7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'sidePadding' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'SidePadding'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m[7m  [0m [91m               ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:06.154Z[39m[37m[22m - Hash: [1m[37m194db69bb55e7841[39m[37m[22m - Time: [1m[37m300[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m33[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'sidePadding' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m3[0m[39m[22m
+[1m[31m    [7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'sidePadding' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m27[0m:[93m12[0m - [91merror[0m[90m TS2741: [0mProperty 'sidePadding' is missing in type '{ lines: never[]; alternatingContentPhases: number; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m27[0m   @Input() impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m3[0m[39m[22m
+[1m[31m    [7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'sidePadding' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.08 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:21.139Z[39m[37m[22m - Hash: [1m[37m654d494a4113a0c3[39m[37m[22m - Time: [1m[37m407[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m33[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'sidePadding' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m12[0m:[93m3[0m[39m[22m
+[1m[31m    [7m12[0m   sidePadding: SidePadding;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'sidePadding' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:37.753Z[39m[37m[22m - Hash: [1m[37m0561a2fed1b9de5b[39m[37m[22m - Time: [1m[37m328[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.51 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:51.981Z[39m[37m[22m - Hash: [1m[37maf983866e6039519[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:48:56.702Z[39m[37m[22m - Hash: [1m[37mb9b8bc81ac21e524[39m[37m[22m - Time: [1m[37m305[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m54[0m:[93m18[0m - [91merror[0m[90m TS2304: [0mCannot find name 'SidePadding'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m54[0m     sidePadding: SidePadding.Medium,[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:49:01.242Z[39m[37m[22m - Hash: [1m[37m024c769128c9282a[39m[37m[22m - Time: [1m[37m266[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:55:30.715Z[39m[37m[22m - Hash: [1m[37md11fa78986f24a5e[39m[37m[22m - Time: [1m[37m429[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:55:58.126Z[39m[37m[22m - Hash: [1m[37me439e4313343bec4[39m[37m[22m - Time: [1m[37m404[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m11[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty 'textCounter' does not exist on type 'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m                 >{{block.content[textCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m20[0m:[93m16[0m[39m[22m
+[1m[31m    [7m20[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2339: [0mProperty 'textCounter' does not exist on type 'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[textCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m20[0m:[93m16[0m[39m[22m
+[1m[31m    [7m20[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:56:05.764Z[39m[37m[22m - Hash: [1m[37m1d666ab2ef061c2a[39m[37m[22m - Time: [1m[37m338[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:56:31.514Z[39m[37m[22m - Hash: [1m[37m6ebd4257dccf856a[39m[37m[22m - Time: [1m[37m386[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m38[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'phaseTiming' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; sidePadding: SidePadding.Medium; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m28[0m:[93m12[0m - [91merror[0m[90m TS2741: [0mProperty 'phaseTiming' is missing in type '{ lines: never[]; alternatingContentPhases: number; sidePadding: SidePadding.Small; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m28[0m   @Input() impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:56:47.850Z[39m[37m[22m - Hash: [1m[37m014081d841e56f67[39m[37m[22m - Time: [1m[37m349[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m38[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'phaseTiming' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; sidePadding: SidePadding.Medium; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m28[0m:[93m40[0m - [91merror[0m[90m TS2352: [0mConversion of type '{ lines: never[]; alternatingContentPhases: number; sidePadding: SidePadding.Small; }' to type 'ImactHeader' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.[39m[22m
+[1m[31m  Property 'phaseTiming' is missing in type '{ lines: never[]; alternatingContentPhases: number; sidePadding: SidePadding.Small; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m 28[0m   @Input() impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m   [0m [91m                                       ~[0m[39m[22m
+[1m[31m[7m 29[0m     lines: [],[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 31[0m     sidePadding: SidePadding.Small,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 32[0m   } as ImactHeader;[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.15 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:56:50.962Z[39m[37m[22m - Hash: [1m[37m6ad8dbb687cc5596[39m[37m[22m - Time: [1m[37m261[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m38[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'phaseTiming' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; sidePadding: SidePadding.Medium; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.15 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:56:55.386Z[39m[37m[22m - Hash: [1m[37m4b7f9dfeff4f734b[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m38[0m:[93m3[0m - [91merror[0m[90m TS2741: [0mProperty 'phaseTiming' is missing in type '{ lines: ({ content: string[]; } | { content: string[]; effect: EffectType; })[][]; alternatingContentPhases: number; sidePadding: SidePadding.Medium; }' but required in type 'ImactHeader'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m   impactHeader: ImactHeader = {[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/models/interfaces.ts[0m:[93m13[0m:[93m3[0m[39m[22m
+[1m[31m    [7m13[0m   phaseTiming: number;[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'phaseTiming' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:57:08.036Z[39m[37m[22m - Hash: [1m[37mb15b1e31d4268ba8[39m[37m[22m - Time: [1m[37m338[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts[0m:[93m60[0m:[93m5[0m - [91merror[0m[90m TS1005: [0m',' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m60[0m     sidePadding: SidePadding.Medium,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:57:08.794Z[39m[37m[22m - Hash: [1m[37m99bcdd37b6aa5d40[39m[37m[22m - Time: [1m[37m332[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:57:30.777Z[39m[37m[22m - Hash: [1m[37med047356963f9952[39m[37m[22m - Time: [1m[37m379[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.20 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:57:38.457Z[39m[37m[22m - Hash: [1m[37m83e8731eaf424334[39m[37m[22m - Time: [1m[37m332[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:58:00.966Z[39m[37m[22m - Hash: [1m[37m7a4fa2a8c4e27999[39m[37m[22m - Time: [1m[37m445[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.88 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:58:43.462Z[39m[37m[22m - Hash: [1m[37m4b9d3950bce92b1d[39m[37m[22m - Time: [1m[37m421[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T10:58:48.320Z[39m[37m[22m - Hash: [1m[37m440c75e586eb941b[39m[37m[22m - Time: [1m[37m316[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:13:06.959Z[39m[37m[22m - Hash: [1m[37m362cdf7ce7d2de0b[39m[37m[22m - Time: [1m[37m453[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:13:39.382Z[39m[37m[22m - Hash: [1m[37m852a794a0575217c[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m4[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'backgroundContainerDynamicStyling' does not exist on type 'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m     [ngStyle]="backgroundContainerDynamicStyling"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:13:58.607Z[39m[37m[22m - Hash: [1m[37m0aed360f31736558[39m[37m[22m - Time: [1m[37m277[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m4[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'backgroundContainerDynamicStyling' does not exist on type 'LandingScreen'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m     [ngStyle]="backgroundContainerDynamicStyling"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:00.171Z[39m[37m[22m - Hash: [1m[37m4bf38e213f0d53ea[39m[37m[22m - Time: [1m[37m346[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:02.957Z[39m[37m[22m - Hash: [1m[37m6cdd194e5dc67312[39m[37m[22m - Time: [1m[37m262[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:16.229Z[39m[37m[22m - Hash: [1m[37m6cdd194e5dc67312[39m[37m[22m - Time: [1m[37m359[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:37.288Z[39m[37m[22m - Hash: [1m[37m99af1e230892f7ac[39m[37m[22m - Time: [1m[37m436[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:39.232Z[39m[37m[22m - Hash: [1m[37mafd9b78e68c65255[39m[37m[22m - Time: [1m[37m302[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m554.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:14:55.966Z[39m[37m[22m - Hash: [1m[37m92160548f90f616d[39m[37m[22m - Time: [1m[37m337[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:15:55.958Z[39m[37m[22m - Hash: [1m[37m0217067ab5b12657[39m[37m[22m - Time: [1m[37m513[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:16:12.879Z[39m[37m[22m - Hash: [1m[37m94a88b8be9a3b1cb[39m[37m[22m - Time: [1m[37m407[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:16:25.541Z[39m[37m[22m - Hash: [1m[37m21db87be9fdddcfe[39m[37m[22m - Time: [1m[37m330[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m17[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:17:25.677Z[39m[37m[22m - Hash: [1m[37m4e63d66c48fcb5c2[39m[37m[22m - Time: [1m[37m409[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m17[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m550.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:18:01.178Z[39m[37m[22m - Hash: [1m[37m1734fec762621977[39m[37m[22m - Time: [1m[37m338[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/screens/src/lib/landing-screen/landing.screen.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/sass-loader@13.3.2_sass@1.64.1_webpack@5.88.2/node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected ";".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m33 │                 padding: 6% 10vw 0 10vw font-size: 5vh;[39m[22m
+[1m[31m   │                                                  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  libs/screens/src/lib/landing-screen/landing.screen.scss 33:50  root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m17[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:18:06.489Z[39m[37m[22m - Hash: [1m[37mc712054aa228fd20[39m[37m[22m - Time: [1m[37m298[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m17[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:18:08.871Z[39m[37m[22m - Hash: [1m[37m270de277c0665015[39m[37m[22m - Time: [1m[37m224[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m14[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.html[0m:[93m17[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'impactHeaderPhaseCounter' does not exist on type 'LandingScreen'. Did you mean 'imapactHeaderPhaseCounter'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m                 >{{block.content[impactHeaderPhaseCounter]}}</span[39m[22m
+[1m[31m[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './landing.screen.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component LandingScreen.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:18:22.254Z[39m[37m[22m - Hash: [1m[37mefc576d07949a84b[39m[37m[22m - Time: [1m[37m439[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:11.554Z[39m[37m[22m - Hash: [1m[37m1baa311b2bd01684[39m[37m[22m - Time: [1m[37m304[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m545.51 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:23.561Z[39m[37m[22m - Hash: [1m[37md6d1924061ec7244[39m[37m[22m - Time: [1m[37m403[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/screens/src/lib/landing-screen/landing.screen.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.2.11_@angular+compiler-cli@16.2.12_@types+node@16.11.7_jest-_ezws3eociu6xky35m6np2ps6gy/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: /Users/rferreira/sigmafox/libs/screens/src/lib/landing-screen/landing.screen.ts: Unexpected token (118:64)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 116 |[39m[31m         }[0m[39m[22m
+[1m[31m[0m [90m 117 |[39m[31m         [36mthis[39m[31m[33m.[39m[31mheaderContainerDynamicStyling [33m=[39m[31m {[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 118 |[39m[31m             padding[33m:[39m[31m [32m`6% ${this.impactHeader.sidePadding}vw 0 ${}vw`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                                                                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 119 |[39m[31m         }[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 120 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 121 |[39m[31m     onCallToActionButtonClick() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/screens/src/lib/landing-screen/landing.screen.ts[0m:[93m49[0m:[93m59[0m - [91merror[0m[90m TS1109: [0mExpression expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m49[0m       padding: `6% ${this.impactHeader.sidePadding}vw 0 ${}vw`,[39m[22m
+[1m[31m[7m  [0m [91m                                                          ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:30.128Z[39m[37m[22m - Hash: [1m[37me027f49fd237c8c8[39m[37m[22m - Time: [1m[37m487[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.11 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:35.713Z[39m[37m[22m - Hash: [1m[37mf1dfcc1b6becf3cf[39m[37m[22m - Time: [1m[37m350[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:49.591Z[39m[37m[22m - Hash: [1m[37m9a601725197b86a9[39m[37m[22m - Time: [1m[37m342[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:19:56.361Z[39m[37m[22m - Hash: [1m[37m1b483a86d3969923[39m[37m[22m - Time: [1m[37m330[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:20:18.734Z[39m[37m[22m - Hash: [1m[37m59d1a746e5820387[39m[37m[22m - Time: [1m[37m450[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:20:25.882Z[39m[37m[22m - Hash: [1m[37me6f5e7048dc631ae[39m[37m[22m - Time: [1m[37m364[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m555.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m7.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:20:46.190Z[39m[37m[22m - Hash: [1m[37m1b483a86d3969923[39m[37m[22m - Time: [1m[37m341[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-01-20T11:20:47.159Z[39m[37m[22m - Hash: [1m[37m1b483a86d3969923[39m[37m[22m - Time: [1m[37m306[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
