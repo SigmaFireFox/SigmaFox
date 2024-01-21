@@ -1,27 +1,45 @@
 <div class="navbar-container">
-  <div class="navbar-logo-and-menu-button-container">
-    <div class="navbar-logo-container" (click)="onLogoClick()">
-      <img src="./../../../assets/logos/horse-head-icon.png" alt="" />
-      <p>e-Questrian</p>
+  <div class="top-container">
+    <div class="logo-and-menu-container">
+      <div class="logo-container" (click)="onLogoClick()">
+        <img
+          class="logo-image"
+          src="./../../../assets/logos/horse-head-icon.png"
+          alt=""
+        />
+        <div class="logo-text">e-Questrian</div>
+      </div>
+      <div *ngIf="!isMobileView" class="menu-container">
+        <div *ngFor="let option of menuOptions">
+          <button
+            *ngIf="option.isOpenDisplay"
+            class="menu-button"
+            (click)="onMenuOptionClicked(option)"
+            mat-button
+          >
+            {{ option.display }}
+          </button>
+        </div>
+      </div>
     </div>
-    <div
-      *ngIf="router.url !== '/home'"
-      class="navbar-menu-icon-container"
-      (click)="onNavbarIconClick()"
-    >
-      <mat-icon *ngIf="router.url !== '/'">menu</mat-icon>
-      <mat-icon *ngIf="router.url === '/'">login</mat-icon>
+
+    <div class="icon-menu-container">
+      <div
+        *ngFor="let option of iconMenu"
+        class="icon-container"
+        (click)="onMenuIconClicked(option.menuIcon)"
+      >
+        <mat-icon class="icon">{{ option.icon }}</mat-icon>
+        <div class="lable">{{ option.lable }}</div>
+      </div>
     </div>
-    <div
-      *ngIf="router.url === '/home'"
-      class="empty-navbar-menu-icon-container"
-    ></div>
   </div>
-  <div *ngIf="displayMenu" class="navbar-button-container">
+
+  <div *ngIf="isMobileView && showDropDown" class="drop-down-container">
     <button
       *ngFor="let option of menuOptions"
-      class="navbar-button"
-      (click)="onMenuOptionClicked(option.path)"
+      class="menu-button"
+      (click)="onMenuOptionClicked(option)"
       mat-button
     >
       {{ option.display }}

@@ -43,7 +43,7 @@ export class WhatsNewSection {
     buttonSize: ButtonSize.Large,
     text: 'View Change Logs',
     buttonStyleClass: ButtonStyleClass.Primary,
-    yLocation: 70,
+    yLocation: 80,
   };
 
   scrollToNext() {
