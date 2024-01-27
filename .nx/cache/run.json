@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx run e-questrian:serve --configuration=development",
-    "startTime": "2024-01-27T14:15:47.270Z",
-    "endTime": "2024-01-27T18:41:15.885Z",
+    "command": "nx run e-questrian:build",
+    "startTime": "2024-01-27T19:44:26.647Z",
+    "endTime": "2024-01-27T19:45:06.371Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "e-questrian:serve:development",
-      "target": "serve",
+      "taskId": "e-questrian:build:production",
+      "target": "build",
       "projectName": "e-questrian",
-      "hash": "5427072053980770196",
-      "startTime": "2024-01-27T14:15:47.273Z",
-      "endTime": "2024-01-27T18:41:15.883Z",
+      "hash": "18022278395981259588",
+      "startTime": "2024-01-27T19:44:26.650Z",
+      "endTime": "2024-01-27T19:45:06.367Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }
