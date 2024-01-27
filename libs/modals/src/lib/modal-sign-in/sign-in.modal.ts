@@ -7,11 +7,17 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule } from '@sigmafox/buttons';
+import { ButtonsModule, ButtonStyleClass } from '@sigmafox/buttons';
+import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
 
 export interface SignInDetails {
   email: string;
   password: string;
+}
+
+export enum ButtonID {
+  SignIn = 'sign-in',
+  Register = 'register',
 }
 
 @Component({
@@ -33,21 +39,39 @@ export class SignInModal {
   });
   showPassword = false;
   isRegister = false;
+  button: StandardButtonConfig[] = [];
 
-  onSubmitClick() {
-    if (this.isRegister) {
-      this.isRegister = false;
-      return this.register.emit(this.signInForm.value as SignInDetails);
+  buttons: StandardButtonConfig[] = [
+    {
+      buttonID: ButtonID.SignIn,
+      buttonTextContent: 'Sign in',
+      buttonStyleClass: ButtonStyleClass.Primary,
+      isDisabled: !this.signInForm.valid,
+    },
+    {
+      buttonID: ButtonID.SignIn,
+      buttonTextContent: 'Register',
+      buttonStyleClass: ButtonStyleClass.Secondary,
+      isDisabled: !this.signInForm.valid,
+    },
+  ];
+
+  onButtonClicked(buttonID: string) {
+    // Keep as switch to allow for possible updates for more buttons to be added in future
+    switch (buttonID) {
+      case ButtonID.SignIn: {
+        this.signin.emit(this.signInForm.value as SignInDetails);
+        break;
+      }
+      case ButtonID.Register: {
+        return this.register.emit(this.signInForm.value as SignInDetails);
+      }
     }
-
-    this.signin.emit(this.signInForm.value as SignInDetails);
-  }
-
-  onRegisterClick() {
-    this.isRegister = true;
   }
 
   togglePassword() {
     this.showPassword = !this.showPassword;
   }
+
+  setButtons() {}
 }

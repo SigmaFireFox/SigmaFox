@@ -1,9 +1,5 @@
 <div class="main-container">
-  <form
-    class="form-container"
-    [formGroup]="signInForm"
-    (ngSubmit)="onSubmitClick()"
-  >
+  <form class="form-container" [formGroup]="signInForm">
     <div class="form-header">Sign in</div>
 
     <div class="form-line">
@@ -28,17 +24,11 @@
 
     <!-- Buttons -->
     <div class="button-container">
+      <div></div>
       <sigmafox-standard-button
-        [text]="'Sign in'"
-        [buttonStyleClass]="'primary-button'"
-        [isDisabled]="!signInForm.valid"
-        (clicked)="onSubmitClick()"
-      ></sigmafox-standard-button>
-      <sigmafox-standard-button
-        [text]="'Register'"
-        [buttonStyleClass]="'secondary-button'"
-        [isDisabled]="!signInForm.valid"
-        (clicked)="onRegisterClick()"
+        *ngFor="let button of buttons"
+        [config]="button"
+        (clicked)="onButtonClicked(button.buttonID)"
       ></sigmafox-standard-button>
     </div>
   </form>

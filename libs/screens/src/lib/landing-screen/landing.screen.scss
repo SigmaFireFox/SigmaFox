@@ -108,7 +108,7 @@
                 line-height: 2;
             }
 
-            .body-text-condenced-container {
+            .body-text-condensed-container {
                 margin-top: 3%;
                 display: flex;
                 width: 100%;
@@ -129,6 +129,14 @@
                 margin: 0 5%;
                 margin-top: 10px;
                 font-weight: bold;
+            }
+
+            .action-button-container {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
             }
         }
 
@@ -196,7 +204,7 @@
                 .header-container,
                 .subheader-container,
                 .body-text-spread-container,
-                .body-text-condenced-container {
+                .body-text-condensed-container {
                     width: 90%;
                     padding-left: 5%;
                     padding-right: 5%;

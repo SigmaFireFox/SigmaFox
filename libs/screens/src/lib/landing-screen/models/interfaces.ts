@@ -1,4 +1,9 @@
-import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
+import {
+  ButtonSize,
+  ButtonStyleClass,
+  StandardButton,
+} from '@sigmafox/buttons';
+import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
 import {
   Alignment,
   EffectType,
@@ -19,10 +24,8 @@ export interface ImactHeader {
   alignment: Alignment;
   yLocation: number;
 }
-export interface CallToActionButton {
-  buttonSize: ButtonSize;
-  text: string;
-  buttonStyleClass: ButtonStyleClass;
+export interface FloatingCallToActionButton {
+  buttonConfig: StandardButtonConfig;
   yLocation: number;
 }
 
@@ -33,12 +36,13 @@ export interface NavigationPanel {
 
 export interface StructuredPage {
   heading: string;
+  imageTop?: string;
   subHeading?: string;
   bodyTextSpread?: string;
   bodyTextCondenced?: string[];
   authorNameText?: string;
-  imageTop?: string;
   imageBottom?: string;
+  actionButton?: StandardButtonConfig;
 }
 
 export interface StructuredPageSeries {

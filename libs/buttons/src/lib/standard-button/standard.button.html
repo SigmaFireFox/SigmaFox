@@ -1,8 +1,9 @@
 <button
+  *ngIf="config"
   [ngStyle]="style"
-  class="{{buttonStyleClass}}"
-  [disabled]="isDisabled"
+  class="{{config.buttonStyleClass}}"
+  [disabled]="config.isDisabled"
   (click)="onClick()"
 >
-  {{text}}
+  {{config.buttonTextContent}}
 </button>

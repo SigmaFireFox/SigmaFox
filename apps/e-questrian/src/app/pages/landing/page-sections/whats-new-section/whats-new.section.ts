@@ -2,7 +2,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
 import {
-  CallToActionButton,
+  FloatingCallToActionButton,
   StructuredPageSeries,
 } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
@@ -35,22 +35,22 @@ export class WhatsNewSection {
           'If you are curious to what are the latest changes we have made - \
       please feel free to view our change logs ',
         ],
+        actionButton: {
+          buttonID: 'view-logs',
+          buttonSize: ButtonSize.Large,
+          buttonTextContent: 'View Change Logs',
+          buttonStyleClass: ButtonStyleClass.Primary,
+          isDisabled: false,
+        },
       },
     ],
-  };
-
-  callToActionButton: CallToActionButton = {
-    buttonSize: ButtonSize.Large,
-    text: 'View Change Logs',
-    buttonStyleClass: ButtonStyleClass.Primary,
-    yLocation: 80,
   };
 
   scrollToNext() {
     this.scrollToNextScreen.emit();
   }
 
-  onCallToActionButtonClicked() {
-    // TODO
+  onStructuredPageActionButtonClicked() {
+    //TODO
   }
 }

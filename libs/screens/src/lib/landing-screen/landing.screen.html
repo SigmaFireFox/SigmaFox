@@ -24,15 +24,13 @@
   </div>
 
   <div
-    *ngIf="callToActionButton"
+    *ngIf="floatingCallToActionButton"
     class="call-to-action-button-container"
     [ngStyle]="calltoActionContainerDynamicStyling"
   >
     <sigmafox-standard-button
-      *ngIf="callToActionButton"
-      [buttonSize]="callToActionButton.buttonSize"
-      [text]="callToActionButton.text"
-      [buttonStyleClass]="callToActionButton.buttonStyleClass"
+      *ngIf="floatingCallToActionButton"
+      [config]="floatingCallToActionButton.buttonConfig"
       (clicked)="onCallToActionButtonClick()"
     ></sigmafox-standard-button>
   </div>
@@ -58,9 +56,12 @@
 <ng-template #struturedPage>
   <div *ngIf="structuredPages.screens" class="structured-page-container">
     <div class="text-container">
+      <!-- Header  -->
       <div class="header-container">
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].heading}}
       </div>
+
+      <!-- Top Image -->
       <div
         class="top-img"
         *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageTop"
@@ -71,15 +72,18 @@
         />
       </div>
 
+      <!-- Sub-header  -->
       <div
         *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading"
         class="subheader-container"
       >
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].subHeading}}
       </div>
+
+      <!-- Condensed Text  -->
       <div
         *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextCondenced"
-        class="body-text-condenced-container"
+        class="body-text-condensed-container"
       >
         <div
           *ngFor="let para of structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextCondenced"
@@ -88,12 +92,16 @@
           {{para}}
         </div>
       </div>
+
+      <!-- Spread text  -->
       <div
         *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextSpread"
         class="body-text-spread-container"
       >
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].bodyTextSpread}}
       </div>
+
+      <!-- Author name text  -->
       <div
         *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].authorNameText"
         class="author-name-text-container"
@@ -101,15 +109,28 @@
         -
         {{structuredPages.screens[structuredPageSeriesPhaseCounter].authorNameText}}
       </div>
-    </div>
-    <div
-      class="bottom-img"
-      *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom"
-    >
-      <img
-        src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom}}"
-        alt=""
-      />
+
+      <!-- Bottom image -->
+      <div
+        class="bottom-img"
+        *ngIf="structuredPages.imagesLocationPath && structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom"
+      >
+        <img
+          src="{{structuredPages.imagesLocationPath}}{{structuredPages.screens[structuredPageSeriesPhaseCounter].imageBottom}}"
+          alt=""
+        />
+      </div>
+
+      <!-- Action button  -->
+      <div
+        class="action-button-container"
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].actionButton"
+      >
+        <sigmafox-standard-button
+          [config]="structuredPages.screens[structuredPageSeriesPhaseCounter].actionButton"
+          (clicked)="onStructuredPageActionClick()"
+        ></sigmafox-standard-button>
+      </div>
     </div>
   </div>
 </ng-template>

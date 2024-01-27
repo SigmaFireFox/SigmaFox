@@ -4,4 +4,4 @@ export { TwoStateIconButton } from './lib/two-state-icon-button/two-state-icon.b
 export {
   ButtonSize,
   ButtonStyleClass,
-} from './lib/standard-button/standard.button';
+} from './lib/standard-button/models/enums';

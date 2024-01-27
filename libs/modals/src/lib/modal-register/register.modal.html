@@ -1,9 +1,5 @@
 <div class="main-container">
-  <form
-    class="form-container"
-    [formGroup]="registerForm"
-    (ngSubmit)="onSubmitClick()"
-  >
+  <form class="form-container" [formGroup]="registerForm">
     <div class="form-header">Sign in</div>
 
     <div class="form-line">
@@ -54,10 +50,9 @@
     <!-- Buttons -->
     <div class="button-container">
       <sigmafox-standard-button
-        [text]="'Register'"
-        [buttonStyleClass]="'secondary-button'"
-        [isDisabled]="!registerForm.valid"
-        (clicked)="onSubmitClick()"
+        *ngFor="let button of buttons"
+        [config]="button"
+        (clicked)="onButtonClicked(button.buttonID)"
       ></sigmafox-standard-button>
     </div>
   </form>

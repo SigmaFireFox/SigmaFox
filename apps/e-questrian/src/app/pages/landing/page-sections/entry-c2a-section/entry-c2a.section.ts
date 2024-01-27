@@ -21,6 +21,7 @@ import {
   Alignment,
   NavigationButtonSize,
 } from 'libs/screens/src/lib/landing-screen/models/enums';
+import { FloatingCallToActionButton } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
 @Component({
   selector: 'e-questrian-entry-c2a',
@@ -67,10 +68,14 @@ export class EntryCallToActionSection {
     yLocation: 10,
   };
 
-  callToActionButton: CallToActionButton = {
-    buttonSize: ButtonSize.Large,
-    text: '',
-    buttonStyleClass: ButtonStyleClass.Primary,
+  floatingCallToActionButton: FloatingCallToActionButton = {
+    buttonConfig: {
+      buttonID: 'c2a-button',
+      buttonSize: ButtonSize.Large,
+      buttonTextContent: '',
+      buttonStyleClass: ButtonStyleClass.Primary,
+      isDisabled: false,
+    },
     yLocation: 60,
   };
 
@@ -80,7 +85,7 @@ export class EntryCallToActionSection {
 
   constructor(private auth: AuthenticationService, private router: Router) {
     this.auth.isAuthenticated().then((result) => {
-      this.callToActionButton.text = result
+      this.floatingCallToActionButton.buttonConfig.buttonTextContent = result
         ? 'To Dashboard'
         : 'Register for Free Demo';
     });

@@ -11,7 +11,7 @@ import { ButtonSize, StandardButton } from '@sigmafox/buttons';
 import { MatIconModule } from '@angular/material/icon';
 import {
   ImactHeader,
-  CallToActionButton,
+  FloatingCallToActionButton,
   NavigationPanel,
   StructuredPageSeries,
 } from './models/interfaces';
@@ -30,12 +30,13 @@ import { NavigationButtonSize } from './models/enums';
 export class LandingScreen implements AfterContentInit {
   @Input() backgroundPath = '';
   @Input() impactHeader: ImactHeader = {} as ImactHeader;
-  @Input() callToActionButton: CallToActionButton | undefined;
+  @Input() floatingCallToActionButton: FloatingCallToActionButton | undefined;
   @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
   @Input() structuredPages: StructuredPageSeries = {} as StructuredPageSeries;
 
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
-  @Output() callToActionButtonClicked = new EventEmitter<void>();
+  @Output() floatingCallToActionButtonClicked = new EventEmitter<void>();
+  @Output() structuredPageActionButtonClicked = new EventEmitter<void>();
 
   @HostListener('window:resize', ['$event'])
   onResize() {
@@ -72,7 +73,11 @@ export class LandingScreen implements AfterContentInit {
   }
 
   onCallToActionButtonClick() {
-    this.callToActionButtonClicked.emit();
+    this.floatingCallToActionButtonClicked.emit();
+  }
+
+  onStructuredPageActionClick() {
+    this.structuredPageActionButtonClicked.emit();
   }
 
   scrollToNextScreen() {
@@ -119,9 +124,9 @@ export class LandingScreen implements AfterContentInit {
       };
     }
 
-    if (this.callToActionButton) {
+    if (this.floatingCallToActionButton) {
       this.calltoActionContainerDynamicStyling = {
-        top: `${this.callToActionButton.yLocation}%`,
+        top: `${this.floatingCallToActionButton.yLocation}%`,
       };
     }
   }

@@ -7,7 +7,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule } from '@sigmafox/buttons';
+import { ButtonsModule, ButtonStyleClass } from '@sigmafox/buttons';
+import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
 
 export interface RegisterDetails {
   firstName: string;
@@ -15,6 +16,12 @@ export interface RegisterDetails {
   email: string;
   password: string;
 }
+
+export enum ButtonID {
+  SignIn = 'sign-in',
+  Register = 'register',
+}
+
 @Component({
   standalone: true,
   imports: [CommonModule, MatIconModule, ReactiveFormsModule, ButtonsModule],
@@ -36,19 +43,36 @@ export class RegisterModal {
   });
   showPassword = false;
   showConfirmPassword = false;
+  isPasswordMatch = false;
 
-  onSubmitClick() {
-    if (
-      this.registerForm.get('password')?.value ===
-      this.registerForm.get('passwordConfirm')?.value
-    ) {
-      this.register.emit(this.registerForm.value as RegisterDetails);
-    } else {
-      console.log('Passwords dont match');
+  buttons: StandardButtonConfig[] = [
+    {
+      buttonID: ButtonID.SignIn,
+      buttonTextContent: 'Register',
+      buttonStyleClass: ButtonStyleClass.Secondary,
+      isDisabled: !this.registerForm.valid,
+    },
+  ];
+
+  onButtonClicked(buttonID: string) {
+    switch (buttonID) {
+      case ButtonID.Register: {
+        this.setPasswordMatch();
+        if (!this.isPasswordMatch) return;
+        this.register.emit(this.registerForm.value as RegisterDetails);
+      }
     }
   }
 
   togglePassword() {
     this.showPassword = !this.showPassword;
+  }
+
+  setPasswordMatch() {
+    this.isPasswordMatch =
+      this.registerForm.get('password')?.value ===
+      this.registerForm.get('passwordConfirm')?.value;
+    if (this.isPasswordMatch) return;
+    console.log('Passwords dont match');
   }
 }

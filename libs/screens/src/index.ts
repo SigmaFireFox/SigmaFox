@@ -1,7 +1,7 @@
 export { LandingScreen } from './lib/landing-screen/landing.screen';
 export {
   ImactHeader,
-  CallToActionButton,
+  FloatingCallToActionButton as CallToActionButton,
   NavigationPanel,
   StructuredPage,
 } from './lib/landing-screen/models/interfaces';

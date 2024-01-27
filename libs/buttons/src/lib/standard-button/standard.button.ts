@@ -1,14 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-export enum ButtonSize {
-  Standard,
-  Large,
-}
-
-export enum ButtonStyleClass {
-  Primary = 'primary-button',
-}
+import { ButtonSize } from './models/enums';
+import { StandardButtonConfig } from './models/interfaces';
 
 @Component({
   standalone: true,
@@ -19,23 +12,25 @@ export enum ButtonStyleClass {
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class StandardButton implements OnInit {
-  @Input() buttonSize = ButtonSize.Standard;
-  @Input() text = '';
-  @Input() buttonStyleClass = '';
-  @Input() isDisabled = false;
+  @Input() config: StandardButtonConfig | undefined;
   @Output() clicked = new EventEmitter<void>();
 
   style = {};
 
   ngOnInit() {
-    if (this.buttonSize === ButtonSize.Standard) {
+    if (!this.config) {
+      console.log('StandardButton', 'Requires config to be provided');
+      return;
+    }
+
+    if (this.config.buttonSize === ButtonSize.Standard) {
       this.style = {
         height: '4vh',
         width: '20vh',
         'font-size': '1.5vh',
       };
     }
-    if (this.buttonSize === ButtonSize.Large) {
+    if (this.config.buttonSize === ButtonSize.Large) {
       this.style = {
         height: '7vh',
         width: '30vh',
