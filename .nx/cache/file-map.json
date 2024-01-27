@@ -6540,7 +6540,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "3271865018997091737"
+        "hash": "7723339858192664459"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
@@ -8275,7 +8275,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.ts",
-        "hash": "3842152499715558277",
+        "hash": "12516876168079379370",
         "deps": [
           "npm:@angular/core",
           "screens"

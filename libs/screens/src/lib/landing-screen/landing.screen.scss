@@ -89,6 +89,21 @@
                 font-weight: bold;
             }
 
+            .top-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15vh;
+                width: 100%;
+
+                img {
+                    height: 15vh;
+                    max-width: 90%;
+                    display: flex;
+                    width: auto;
+                }
+            }
+
             .subheader-container {
                 margin-top: 3%;
                 display: flex;
@@ -97,6 +112,8 @@
                 font-size: 3vh;
                 text-align: center;
             }
+
+
 
             .body-text-spread-container {
                 margin-top: 3%;
@@ -131,42 +148,29 @@
                 font-weight: bold;
             }
 
+            .bottom-img {
+                display: flex;
+                width: 100%;
+                height: 35vh;
+                justify-content: center;
+                max-height: fit-content;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
             .action-button-container {
+                margin-top: 3%;
                 display: flex;
                 width: 100%;
                 justify-content: center;
                 align-items: center;
-                padding: 10px 0;
             }
         }
 
-        .top-img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 15vh;
-            width: 100%;
 
-            img {
-                height: 15vh;
-                max-width: 90%;
-                display: flex;
-                width: auto;
-            }
-        }
-
-        .bottom-img {
-            display: flex;
-            width: 100vw;
-            height: 50vh;
-            position: absolute;
-            top: 35%;
-            justify-content: center;
-
-            img {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -204,7 +208,8 @@
                 .header-container,
                 .subheader-container,
                 .body-text-spread-container,
-                .body-text-condensed-container {
+                .body-text-condensed-container,
+                .action-button-container {
                     width: 90%;
                     padding-left: 5%;
                     padding-right: 5%;
