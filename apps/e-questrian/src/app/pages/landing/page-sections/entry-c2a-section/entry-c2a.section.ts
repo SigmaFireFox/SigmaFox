@@ -91,7 +91,7 @@ export class EntryCallToActionSection {
     });
   }
 
-  onCallToActionButtonClicked() {
+  floatingCallToActionButtonClicked() {
     if (this.isLoggedIn) {
       this.router.navigate(['/home']);
     } else {

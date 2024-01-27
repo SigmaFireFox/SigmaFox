@@ -4294,12 +4294,9 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/landing.page.ts",
-        "hash": "5028115137993697264",
+        "hash": "7435430079567437639",
         "deps": [
-          "npm:@angular/core",
-          "npm:@angular/animations",
-          "buttons",
-          "npm:@angular/router"
+          "npm:@angular/core"
         ]
       },
       {
@@ -4316,11 +4313,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.html",
-        "hash": "1741873236035746433"
+        "hash": "1733454914087041710"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
-        "hash": "5745184760940147576",
+        "hash": "5809730379068784948",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
