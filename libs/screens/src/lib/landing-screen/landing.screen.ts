@@ -5,9 +5,14 @@ import {
   HostListener,
   Input,
   Output,
+  SimpleChange,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonSize, StandardButton } from '@sigmafox/buttons';
+import {
+  ButtonSize,
+  ButtonStyleClass,
+  StandardButton,
+} from '@sigmafox/buttons';
 import { MatIconModule } from '@angular/material/icon';
 import {
   FloatingCallToActionButtons,
@@ -46,8 +51,10 @@ export class LandingScreen implements AfterContentInit {
   impactHeaderPhaseCounter = 0;
   structuredPageSeriesPhaseCounter = 0;
 
-  elementSwitch = true;
+  headerSwitch = true;
+  structuedPageSwitch = true;
   buttonSize = ButtonSize;
+  buttonStyleClass = ButtonStyleClass;
   callToActionText = '';
   backgroundContainerDynamicStyling = {};
   headerContainerDynamicStyling = {};
@@ -59,11 +66,13 @@ export class LandingScreen implements AfterContentInit {
   private currentColourIndex = 0;
 
   ngAfterContentInit() {
-    setInterval(() => {
-      this.setNextImapctHeaderConentPhase();
-    }, this.impactHeader.phaseTiming);
+    if (this.impactHeader.phaseTiming) {
+      setInterval(() => {
+        this.setNextImapctHeaderContentPhase();
+      }, this.impactHeader.phaseTiming);
+    }
 
-    if (Object.keys(this.structuredPages).length) {
+    if (this.structuredPages.phaseTiming) {
       setInterval(() => {
         this.switchStruturedPagesSeriesScreen();
       }, this.structuredPages.phaseTiming);
@@ -132,7 +141,7 @@ export class LandingScreen implements AfterContentInit {
     }
   }
 
-  private setNextImapctHeaderConentPhase() {
+  private setNextImapctHeaderContentPhase() {
     if (!this.impactHeader.alternatingContentPhases) return;
 
     this.impactHeaderPhaseCounter += 1;
@@ -142,7 +151,7 @@ export class LandingScreen implements AfterContentInit {
     ) {
       this.impactHeaderPhaseCounter = 0;
     }
-    this.elementSwitch = !this.elementSwitch;
+    this.headerSwitch = !this.headerSwitch;
   }
 
   private switchStruturedPagesSeriesScreen() {
@@ -152,7 +161,7 @@ export class LandingScreen implements AfterContentInit {
         ? 0
         : (this.structuredPageSeriesPhaseCounter += 1);
 
-    this.elementSwitch = !this.elementSwitch;
+    this.structuedPageSwitch = !this.structuedPageSwitch;
 
     this.randomiseBackgroundColour();
   }

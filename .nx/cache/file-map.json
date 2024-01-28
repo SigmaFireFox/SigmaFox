@@ -1612,7 +1612,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.html",
-        "hash": "12431447353230632272"
+        "hash": "16560340534265605084"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
@@ -1620,7 +1620,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "3642529281374478190",
+        "hash": "12596972818441585169",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -4629,7 +4629,7 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.ts",
-        "hash": "17031837569795885935",
+        "hash": "2725012177989496639",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"

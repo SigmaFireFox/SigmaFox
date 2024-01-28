@@ -13,10 +13,10 @@
       <span *ngFor="let block of line">
         <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
         <span *ngIf="block.content.length > 1">
-          <span @fadeIn *ngIf="this.elementSwitch"
+          <span @fadeIn *ngIf="this.headerSwitch"
             >{{block.content[impactHeaderPhaseCounter]}}</span
           >
-          <span @fadeIn *ngIf="!this.elementSwitch"
+          <span @fadeIn *ngIf="!this.headerSwitch"
             >{{block.content[impactHeaderPhaseCounter]}}</span
           >
         </span>
@@ -54,10 +54,10 @@
     </button>
   </div>
 
-  <div *ngIf="this.elementSwitch">
+  <div *ngIf="this.structuedPageSwitch">
     <ng-container *ngTemplateOutlet="struturedPage"></ng-container>
   </div>
-  <div *ngIf="!this.elementSwitch">
+  <div *ngIf="!this.structuedPageSwitch">
     <ng-container *ngTemplateOutlet="struturedPage"></ng-container>
   </div>
 </div>
