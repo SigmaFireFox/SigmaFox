@@ -8,32 +8,44 @@
       <div class="form-line">
         <div class="form-line-label">Email:</div>
         <div class="form-line-input-container">
-          <input
-            class="form-line-input"
-            type="text"
-            formControlName="email"
-            (keyup)="onInputKeyUp()"
-          />
+          <div class="form-line-input-and-icon-container">
+            <input
+              class="form-line-input"
+              type="text"
+              formControlName="email"
+              (keyup)="onInputKeyUp()"
+              (focusout)="validateEmailControl()"
+            />
+          </div>
+          <div class="form-line-error" *ngIf="emailErrorMessage">
+            {{emailErrorMessage}}
+          </div>
         </div>
       </div>
 
       <div class="form-line">
         <div class="form-line-label">Password:</div>
         <div class="form-line-input-container">
-          <input
-            class="form-line-input"
-            [type]="showPassword ? 'text' : 'password'"
-            formControlName="password"
-            id="passwordInput"
-            (keyup)="onInputKeyUp()"
-          />
-          <sigmafox-two-state-icon-button
-            class="form-line-icon"
-            [conditionState]="showPassword"
-            [activeIcon]="'visibility_off'"
-            [inactiveIcon]="'visibility'"
-            (click)="togglePassword()"
-          ></sigmafox-two-state-icon-button>
+          <div class="form-line-input-and-icon-container">
+            <input
+              class="form-line-input"
+              [type]="showPassword ? 'text' : 'password'"
+              formControlName="password"
+              id="passwordInput"
+              (keyup)="onInputKeyUp()"
+              (focusout)="validatePasswordControl()"
+            />
+            <sigmafox-two-state-icon-button
+              class="form-line-icon"
+              [conditionState]="showPassword"
+              [activeIcon]="'visibility_off'"
+              [inactiveIcon]="'visibility'"
+              (click)="togglePassword()"
+            ></sigmafox-two-state-icon-button>
+          </div>
+          <div class="form-line-error" *ngIf="passwordErrorMessage">
+            {{passwordErrorMessage}}
+          </div>
         </div>
       </div>
     </form>

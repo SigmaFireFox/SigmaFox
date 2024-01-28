@@ -17,6 +17,7 @@ export enum ButtonID {
 export enum FirebaseAuthError {
   None = `none`,
   UserNotFound = `auth/user-not-found`,
+  WrongPassword = 'auth/wrong-password',
 }
 
 @Component({
@@ -66,13 +67,25 @@ export class ErrorModal {
         break;
       }
       case FirebaseAuthError.UserNotFound: {
-        this.header = 'User not found';
+        this.header = 'User Not Found';
         this.errorDescription = [
           'The email provided does not seem to appear on our user database. \
           Please review and correct if needed',
           'If the the email provide is in fact correct, then it is likely \
           your email has not been registered correctly. In this case, please \
           click on the "Register" button to naviagate to registration form',
+        ];
+        break;
+      }
+      case FirebaseAuthError.WrongPassword: {
+        this.header = 'Wrong Password';
+        this.errorDescription = [
+          'The password provided does not match the password associated to \
+          this email on our user database. Please review and correct.',
+          'If you are unable to remember your password, please click on the \
+          "Register" button to have a reset link sent to your email address',
+          ' ',
+          'Hint: You can view your password by clicking the toggle password "eye" icon',
         ];
       }
     }

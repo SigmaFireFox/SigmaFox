@@ -51,13 +51,15 @@ export class SignInModal {
   ];
 
   showPassword = false;
+  emailErrorMessage = '';
+  passwordErrorMessage = '';
 
   ngOnInit() {
     this.signInForm = new UntypedFormGroup({
-      email: new UntypedFormControl(
-        this.signInDetails?.email || '',
-        Validators.email
-      ),
+      email: new UntypedFormControl(this.signInDetails?.email || '', [
+        Validators.required,
+        Validators.email,
+      ]),
       password: new UntypedFormControl(this.signInDetails?.password || '', [
         Validators.required,
         Validators.minLength(6),
@@ -85,5 +87,31 @@ export class SignInModal {
   onInputKeyUp() {
     this.buttons[0].isDisabled = !this.signInForm.valid;
     this.buttons[1].isDisabled = !this.signInForm.valid;
+  }
+
+  validateEmailControl() {
+    this.emailErrorMessage = '';
+
+    if (this.signInForm.get('email')?.errors?.hasOwnProperty('required')) {
+      this.emailErrorMessage = 'Email required';
+    }
+
+    if (this.signInForm.get('email')?.errors?.hasOwnProperty('email')) {
+      this.emailErrorMessage = 'Email format incorrect';
+    }
+  }
+
+  validatePasswordControl() {
+    this.passwordErrorMessage = '';
+
+    console.log(this.signInForm.get('password')?.errors);
+
+    if (this.signInForm.get('password')?.errors?.hasOwnProperty('required')) {
+      this.passwordErrorMessage = 'Password required';
+    }
+
+    if (this.signInForm.get('password')?.errors?.hasOwnProperty('minlength')) {
+      this.passwordErrorMessage = 'Password requires minumum of 6 characters';
+    }
   }
 }
