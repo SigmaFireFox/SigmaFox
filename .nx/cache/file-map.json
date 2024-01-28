@@ -1328,11 +1328,11 @@
       },
       {
         "file": "libs/modals/src/lib/modal-error/error.modal.scss",
-        "hash": "11292997969913780014"
+        "hash": "12063948842673447662"
       },
       {
         "file": "libs/modals/src/lib/modal-error/error.modal.ts",
-        "hash": "13897739444876557104",
+        "hash": "16609536174024296451",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -1370,7 +1370,7 @@
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.ts",
-        "hash": "15844162758119738524",
+        "hash": "8886262138832754712",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",

@@ -62,7 +62,8 @@ export class ErrorModal {
       case FirebaseAuthError.None: {
         console.log(
           'ErrorModal',
-          'FirebaseAuthErrors.None passed as error - this should error modal should not render for this error'
+          'FirebaseAuthErrors.None passed as error - this should error modal \
+          should not render for this error'
         );
         break;
       }
@@ -85,7 +86,19 @@ export class ErrorModal {
           'If you are unable to remember your password, please click on the \
           "Register" button to have a reset link sent to your email address',
           ' ',
-          'Hint: You can view your password by clicking the toggle password "eye" icon',
+          'Hint: You can view your password by clicking the toggle password \
+          "eye" icon',
+        ];
+        break;
+      }
+      default: {
+        this.header = 'Undefined Error';
+        this.errorDescription = [
+          'The attempt to submit this form has returned an error. Unfortunately \
+          we are unable to provide more details for this error. We advice that \
+          you please retry.',
+          'If there error continues to persist, please attempt this action in a \
+          few minutes',
         ];
       }
     }

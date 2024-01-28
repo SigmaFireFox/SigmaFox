@@ -65,6 +65,7 @@ export class SignInModal {
         Validators.minLength(6),
       ]),
     });
+    this.setButtonDisableState();
   }
 
   onButtonClicked(buttonID: string) {
@@ -85,6 +86,10 @@ export class SignInModal {
   }
 
   onInputKeyUp() {
+    this.setButtonDisableState();
+  }
+
+  setButtonDisableState() {
     this.buttons[0].isDisabled = !this.signInForm.valid;
     this.buttons[1].isDisabled = !this.signInForm.valid;
   }
@@ -103,8 +108,6 @@ export class SignInModal {
 
   validatePasswordControl() {
     this.passwordErrorMessage = '';
-
-    console.log(this.signInForm.get('password')?.errors);
 
     if (this.signInForm.get('password')?.errors?.hasOwnProperty('required')) {
       this.passwordErrorMessage = 'Password required';
