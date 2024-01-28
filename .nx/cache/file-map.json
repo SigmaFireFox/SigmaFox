@@ -1332,7 +1332,7 @@
       },
       {
         "file": "libs/modals/src/lib/modal-error/error.modal.ts",
-        "hash": "16609536174024296451",
+        "hash": "9882618261428037181",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",

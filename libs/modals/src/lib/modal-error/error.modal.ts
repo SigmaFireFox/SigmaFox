@@ -92,7 +92,7 @@ export class ErrorModal {
         break;
       }
       default: {
-        this.header = 'Undefined Error';
+        this.header = 'Unspecified Error';
         this.errorDescription = [
           'The attempt to submit this form has returned an error. Unfortunately \
           we are unable to provide more details for this error. We advice that \
