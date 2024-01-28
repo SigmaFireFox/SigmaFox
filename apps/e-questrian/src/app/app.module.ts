@@ -36,7 +36,7 @@ import { GeneralItemsListScreen } from './screens/general-items-list/general-ite
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-import { RegisterModal, SignInModal } from '@sigmafox/modals';
+import { ErrorModal, RegisterModal, SignInModal } from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -106,6 +106,7 @@ import { LandingScreen } from '@sigmafox/screens';
     RegisterModal,
     StandardButton,
     LandingScreen,
+    ErrorModal,
   ],
 })
 export class AppModule {}

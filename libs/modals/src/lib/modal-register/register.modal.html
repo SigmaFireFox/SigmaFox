@@ -1,72 +1,80 @@
-<div class="main-container">
-  <form class="form-container" [formGroup]="registerForm">
-    <div class="form-header">New registration</div>
+<div class="screen-container">
+  <div class="modal-container">
+    <!-- Header -->
+    <div class="modal-header">New registration</div>
 
-    <div class="form-line">
-      <div class="form-line-title">First name:</div>
-      <div class="form-line-input-container">
-        <input
-          class="form-line-input"
-          type="text"
-          formControlName="firstName"
-        />
+    <!-- Form -->
+    <form class="form-container" [formGroup]="registerForm">
+      <div class="form-line">
+        <div class="form-line-label">First name:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            type="text"
+            formControlName="firstName"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-line-title">Last name:</div>
-      <div class="form-line-input-container">
-        <input class="form-line-input" type="text" formControlName="lastName" />
+      <div class="form-line">
+        <div class="form-line-label">Last name:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            type="text"
+            formControlName="lastName"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-line-title">Email:</div>
-      <div class="form-line-input-container">
-        <input class="form-line-input" type="text" formControlName="email" />
+      <div class="form-line">
+        <div class="form-line-label">Email:</div>
+        <div class="form-line-input-container">
+          <input class="form-line-input" type="text" formControlName="email" />
+        </div>
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-line-title">Password:</div>
-      <div class="form-line-input-container">
-        <input
-          class="form-line-input"
-          [type]="showPassword ? 'text' : 'password'"
-          formControlName="password"
-          id="passwordInput"
-        />
-        <sigmafox-two-state-icon-button
-          class="form-line-icon"
-          [conditionState]="showPassword"
-          [activeIcon]="'visibility_off'"
-          [inactiveIcon]="'visibility'"
-          (click)="togglePassword()"
-        ></sigmafox-two-state-icon-button>
+      <div class="form-line">
+        <div class="form-line-label">Password:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            [type]="showPassword ? 'text' : 'password'"
+            formControlName="password"
+            id="passwordInput"
+          />
+          <sigmafox-two-state-icon-button
+            class="form-line-icon"
+            [conditionState]="showPassword"
+            [activeIcon]="'visibility_off'"
+            [inactiveIcon]="'visibility'"
+            (click)="togglePassword()"
+          ></sigmafox-two-state-icon-button>
+        </div>
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-line-title">Confirm password:</div>
-      <div class="form-line-input-container">
-        <input
-          class="form-line-input"
-          [type]="showConfirmPassword ? 'text' : 'password'"
-          formControlName="passwordConfirm"
-          id="comfirmPasswordInput"
-        />
-        <sigmafox-two-state-icon-button
-          class="form-line-icon"
-          [conditionState]="showConfirmPassword"
-          [activeIcon]="'visibility_off'"
-          [inactiveIcon]="'visibility'"
-          (click)="togglePassword()"
-        ></sigmafox-two-state-icon-button>
+      <div class="form-line">
+        <div class="form-line-label">Confirm password:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            [type]="showPassword ? 'text' : 'password'"
+            formControlName="passwordConfirm"
+            id="comfirmPasswordInput"
+          />
+          <sigmafox-two-state-icon-button
+            class="form-line-icon"
+            [conditionState]="showPassword"
+            [activeIcon]="'visibility_off'"
+            [inactiveIcon]="'visibility'"
+            (click)="togglePassword()"
+          ></sigmafox-two-state-icon-button>
+        </div>
       </div>
-    </div>
+    </form>
 
     <!-- Buttons -->
-    <div class="button-container">
+    <div class="buttons-container">
       <sigmafox-standard-button
         class="button"
         *ngFor="let button of buttons"
@@ -74,5 +82,5 @@
         (clicked)="onButtonClicked(button.buttonID)"
       ></sigmafox-standard-button>
     </div>
-  </form>
+  </div>
 </div>

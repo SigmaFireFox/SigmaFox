@@ -18,7 +18,6 @@ export interface RegisterDetails {
 }
 
 export enum ButtonID {
-  SignIn = 'sign-in',
   Register = 'register',
 }
 
@@ -31,7 +30,6 @@ export enum ButtonID {
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class RegisterModal {
-  @Output() closed = new EventEmitter<void>();
   @Output() register = new EventEmitter<RegisterDetails>();
 
   registerForm = new UntypedFormGroup({
@@ -47,9 +45,9 @@ export class RegisterModal {
 
   buttons: StandardButtonConfig[] = [
     {
-      buttonID: ButtonID.SignIn,
+      buttonID: ButtonID.Register,
       buttonTextContent: 'Register',
-      buttonStyleClass: ButtonStyleClass.Secondary,
+      buttonStyleClass: ButtonStyleClass.Primary,
       isDisabled: !this.registerForm.valid,
     },
   ];

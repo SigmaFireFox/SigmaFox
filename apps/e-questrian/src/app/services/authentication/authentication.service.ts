@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { User } from '@angular/fire/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { RegisterDetails } from '@sigmafox/modals';
+import {
+  FirebaseAuthErrors,
+  RegisterDetails,
+  SignInDetails,
+} from '@sigmafox/modals';
 import { Observable, map } from 'rxjs';
-import { SignInDetails } from '../../pages/sign-in/sign-in.page';
 
 @Injectable({
   providedIn: 'root',
@@ -43,10 +46,16 @@ export class AuthenticationService {
   }
 
   UserSignIn(signInDetails: SignInDetails): Promise<unknown> {
-    return this.afAuth.signInWithEmailAndPassword(
-      signInDetails.email,
-      signInDetails.password
-    );
+    return new Promise(async (resolve, reject) => {
+      this.afAuth
+        .signInWithEmailAndPassword(signInDetails.email, signInDetails.password)
+        .then((user) => {
+          resolve(true);
+        })
+        .catch((error) => {
+          reject(this.setErrorFromErrorMessage(error.message));
+        });
+    });
   }
 
   UserSignOut(): Promise<unknown> {
@@ -59,5 +68,15 @@ export class AuthenticationService {
         user ? resolve(true) : resolve(false);
       });
     });
+  }
+
+  setErrorFromErrorMessage(errorMessage: string): FirebaseAuthErrors {
+    let setError = FirebaseAuthErrors.None;
+    Object.values(FirebaseAuthErrors).forEach((errorValue) => {
+      if (errorMessage.includes(errorValue)) {
+        setError = errorValue;
+      }
+    });
+    return setError;
   }
 }

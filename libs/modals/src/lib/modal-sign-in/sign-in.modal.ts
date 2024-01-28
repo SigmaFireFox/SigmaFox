@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   ReactiveFormsModule,
@@ -29,21 +29,12 @@ export enum ButtonID {
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class SignInModal {
-  @Output() closed = new EventEmitter<void>();
+  @Input() signInDetails: SignInDetails | undefined;
+
   @Output() signin = new EventEmitter<SignInDetails>();
-  @Output() register = new EventEmitter<SignInDetails>();
+  @Output() register = new EventEmitter<void>();
 
-  signInForm = new UntypedFormGroup({
-    email: new UntypedFormControl('', Validators.email),
-    password: new UntypedFormControl('', [
-      Validators.required,
-      Validators.minLength(6),
-    ]),
-  });
-  showPassword = false;
-  isRegister = false;
-  button: StandardButtonConfig[] = [];
-
+  signInForm = new UntypedFormGroup({});
   buttons: StandardButtonConfig[] = [
     {
       buttonID: ButtonID.SignIn,
@@ -59,6 +50,21 @@ export class SignInModal {
     },
   ];
 
+  showPassword = false;
+
+  ngOnInit() {
+    this.signInForm = new UntypedFormGroup({
+      email: new UntypedFormControl(
+        this.signInDetails?.email || '',
+        Validators.email
+      ),
+      password: new UntypedFormControl(this.signInDetails?.password || '', [
+        Validators.required,
+        Validators.minLength(6),
+      ]),
+    });
+  }
+
   onButtonClicked(buttonID: string) {
     // Keep as switch to allow for possible updates for more buttons to be added in future
     switch (buttonID) {
@@ -67,7 +73,7 @@ export class SignInModal {
         break;
       }
       case ButtonID.Register: {
-        return this.register.emit(this.signInForm.value as SignInDetails);
+        return this.register.emit();
       }
     }
   }

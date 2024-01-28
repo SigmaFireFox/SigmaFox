@@ -4,7 +4,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 5;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -13,7 +13,8 @@
         width: 90%;
         display: flex;
         flex-direction: column;
-        background-color: aqua;
+        background-color: white;
+        border: 3px solid red;
         z-index: 3;
         padding: 5px;
         margin-top: -50px;
@@ -26,6 +27,15 @@
             font-weight: bold;
             margin: 10px;
             font-size: 3vh;
+            color: red;
+        }
+
+        .modal-sub-header {
+            width: calc(100% - 20px);
+            text-align: center;
+            font-weight: normal;
+            margin: 10px;
+            font-size: 2vh;
         }
 
         .form-container {
@@ -58,7 +68,6 @@
                         padding-left: 5px;
                         display: flex;
                         flex-grow: 1;
-                        font-size: 2vh;
                     }
 
                     .form-line-icon {
@@ -107,7 +116,7 @@
             width: 90%;
             display: flex;
             flex-direction: column;
-            background-color: aqua;
+            background-color: red;
             z-index: 3;
             padding: 5px;
             margin-top: -50px;
@@ -120,6 +129,14 @@
                 font-weight: bold;
                 margin: 10px;
                 font-size: large;
+            }
+
+            .modal-sub-header {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: normal;
+                margin: 10px;
+                font-size: medium;
             }
 
             .form-container {
@@ -185,4 +202,16 @@
             }
         }
     }
+}
+
+.sheth {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    opacity: 0.3;
+    z-index: 4;
 }

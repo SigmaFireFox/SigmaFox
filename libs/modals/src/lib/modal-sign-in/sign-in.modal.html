@@ -1,41 +1,45 @@
-<div class="main-container">
-  <form class="form-container" [formGroup]="signInForm">
-    <div class="form-header">Sign in</div>
+<div class="screen-container">
+  <div class="modal-container">
+    <!-- Header -->
+    <div class="modal-header">Sign in</div>
 
-    <div class="form-line">
-      <div class="form-line-title">Email:</div>
-      <div class="form-line-input-container">
-        <input
-          class="form-line-input"
-          type="text"
-          formControlName="email"
-          (keyup)="onInputKeyUp()"
-        />
+    <!-- Form -->
+    <form class="form-container" [formGroup]="signInForm">
+      <div class="form-line">
+        <div class="form-line-label">Email:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            type="text"
+            formControlName="email"
+            (keyup)="onInputKeyUp()"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="form-line">
-      <div class="form-line-title">Password:</div>
-      <div class="form-line-input-container">
-        <input
-          class="form-line-input"
-          [type]="showPassword ? 'text' : 'password'"
-          formControlName="password"
-          id="passwordInput"
-          (keyup)="onInputKeyUp()"
-        />
-        <sigmafox-two-state-icon-button
-          class="form-line-icon"
-          [conditionState]="showPassword"
-          [activeIcon]="'visibility_off'"
-          [inactiveIcon]="'visibility'"
-          (click)="togglePassword()"
-        ></sigmafox-two-state-icon-button>
+      <div class="form-line">
+        <div class="form-line-label">Password:</div>
+        <div class="form-line-input-container">
+          <input
+            class="form-line-input"
+            [type]="showPassword ? 'text' : 'password'"
+            formControlName="password"
+            id="passwordInput"
+            (keyup)="onInputKeyUp()"
+          />
+          <sigmafox-two-state-icon-button
+            class="form-line-icon"
+            [conditionState]="showPassword"
+            [activeIcon]="'visibility_off'"
+            [inactiveIcon]="'visibility'"
+            (click)="togglePassword()"
+          ></sigmafox-two-state-icon-button>
+        </div>
       </div>
-    </div>
+    </form>
 
     <!-- Buttons -->
-    <div class="button-container">
+    <div class="buttons-container">
       <sigmafox-standard-button
         class="button"
         *ngFor="let button of buttons"
@@ -43,5 +47,5 @@
         (clicked)="onButtonClicked(button.buttonID)"
       ></sigmafox-standard-button>
     </div>
-  </form>
+  </div>
 </div>

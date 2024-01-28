@@ -1,0 +1,23 @@
+<div class="screen-container">
+  <div class="modal-container">
+    <!-- Header -->
+    <div class="modal-header">{{header}}</div>
+
+    <!-- Error description -->
+    <div class="modal-sub-header" *ngFor="let para of errorDescription">
+      {{para}}
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons-container">
+      <sigmafox-standard-button
+        class="button"
+        *ngFor="let button of buttons"
+        [config]="button"
+        (clicked)="onButtonClicked(button.buttonID)"
+      ></sigmafox-standard-button>
+    </div>
+  </div>
+</div>
+
+<div class="sheth"></div>

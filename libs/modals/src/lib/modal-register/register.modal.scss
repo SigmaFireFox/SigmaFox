@@ -1,4 +1,4 @@
-.main-container {
+.screen-container {
     display: flex;
     position: absolute;
     top: 0px;
@@ -9,7 +9,7 @@
     justify-content: center;
     overflow: hidden;
 
-    .form-container {
+    .modal-container {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -20,7 +20,7 @@
         border-radius: 10px;
         max-width: 900px;
 
-        .form-header {
+        .modal-header {
             width: calc(100% - 20px);
             text-align: center;
             font-weight: bold;
@@ -28,50 +28,54 @@
             font-size: 3vh;
         }
 
-        .form-line {
+        .form-container {
             display: flex;
-            width: calc(100% - 30px);
-            flex-direction: row;
-            padding: 5px 15px;
-            align-items: center;
-            height: 3vh;
+            flex-direction: column;
 
-            .form-line-title {
-                width: 40%;
-                font-size: 2vh;
-            }
-
-            .form-line-input-container {
-                flex-direction: row;
-                height: 30px;
-                padding-left: 5px;
+            .form-line {
                 display: flex;
-                flex-grow: 1;
+                width: calc(100% - 30px);
+                flex-direction: row;
+                padding: 5px 15px;
+                align-items: center;
+                height: 3vh;
 
-                .form-line-input {
-                    border: none;
-                    height: 3vh;
+                .form-line-label {
+                    width: 40%;
+                    font-size: 2vh;
+                }
+
+                .form-line-input-container {
+                    flex-direction: row;
+                    height: 30px;
                     padding-left: 5px;
                     display: flex;
                     flex-grow: 1;
-                }
 
-                .form-line-icon {
-                    max-width: fit-content;
-                    display: flex;
-                    flex-grow: 1;
-                    padding: 0 5px;
-                    height: calc(3vh + 2px);
-                    justify-content: center;
-                    align-items: center;
-                    background-color: white;
+                    .form-line-input {
+                        border: none;
+                        height: 3vh;
+                        padding-left: 5px;
+                        display: flex;
+                        flex-grow: 1;
+                    }
+
+                    .form-line-icon {
+                        max-width: fit-content;
+                        display: flex;
+                        flex-grow: 1;
+                        padding: 0 5px;
+                        height: calc(3vh + 2px);
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                    }
                 }
             }
-
-
         }
 
-        .button-container {
+
+        .buttons-container {
             display: flex;
             width: calc(100% - 20px);
             flex-wrap: nowrap;
@@ -87,7 +91,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .main-container {
+    .screen-container {
         display: flex;
         position: absolute;
         top: 50px;
@@ -98,7 +102,7 @@
         justify-content: center;
         overflow: hidden;
 
-        .form-container {
+        .modal-container {
             width: 90%;
             display: flex;
             flex-direction: column;
@@ -109,7 +113,7 @@
             border-radius: 10px;
             max-width: 450px;
 
-            .form-header {
+            .modal-header {
                 width: calc(100% - 20px);
                 text-align: center;
                 font-weight: bold;
@@ -117,46 +121,51 @@
                 font-size: large;
             }
 
-            .form-line {
+            .form-container {
                 display: flex;
-                width: calc(100% - 30px);
-                flex-direction: row;
-                padding: 5px 15px;
-                align-items: center;
                 flex-direction: column;
-                flex: 1;
 
-                .form-line-title {
-                    width: 100%;
-                    margin-bottom: 5px;
-                    justify-content: flex-start;
-                }
-
-                .form-line-input-container {
-                    flex-direction: row;
-                    height: 30px;
-                    width: 100%;
-                    padding-left: 5px;
+                .form-line {
                     display: flex;
-                    flex-grow: 1;
+                    width: calc(100% - 30px);
+                    flex-direction: row;
+                    padding: 5px 15px;
+                    align-items: center;
+                    flex-direction: column;
+                    flex: 1;
 
-                    .form-line-input {
-                        border: none;
+                    .form-line-label {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        justify-content: flex-start;
+                    }
+
+                    .form-line-input-container {
+                        flex-direction: row;
                         height: 30px;
+                        width: 100%;
                         padding-left: 5px;
                         display: flex;
                         flex-grow: 1;
-                    }
 
-                    .form-line-icon {
-                        max-width: fit-content;
-                        display: flex;
-                        flex-grow: 1;
-                        padding: 0 5px;
-                        height: 32px;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: white;
+                        .form-line-input {
+                            border: none;
+                            height: 30px;
+                            padding-left: 5px;
+                            display: flex;
+                            flex-grow: 1;
+                        }
+
+                        .form-line-icon {
+                            max-width: fit-content;
+                            display: flex;
+                            flex-grow: 1;
+                            padding: 0 5px;
+                            height: 32px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: white;
+                        }
                     }
                 }
             }

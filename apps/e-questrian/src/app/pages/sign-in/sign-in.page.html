@@ -1,4 +1,13 @@
 <app-general-screen-header-component
   [generalConfig]="generalConfig"
 ></app-general-screen-header-component>
-<sigmafox-modal-sign-in (signin)="signin($event)"></sigmafox-modal-sign-in>
+<sigmafox-modal-sign-in
+  *ngIf="error === firebaseAuthErrors.None"
+  [signInDetails]="signInDetails"
+  (signin)="signin($event)"
+></sigmafox-modal-sign-in>
+<sigmafox-modal-error
+  *ngIf="error !== firebaseAuthErrors.None"
+  [error]="error"
+  (closed)="onErrorModalClose()"
+></sigmafox-modal-error>
