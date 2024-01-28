@@ -986,11 +986,11 @@
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.html",
-        "hash": "13514455105311276030"
+        "hash": "4908204660649534076"
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.scss",
-        "hash": "9116343335711676684"
+        "hash": "9429376370113648775"
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.spec.ts",
@@ -1012,11 +1012,11 @@
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.html",
-        "hash": "8665128004694029422"
+        "hash": "13518737821194556478"
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.scss",
-        "hash": "2591572011743861877"
+        "hash": "9429376370113648775"
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.spec.ts",
@@ -4645,7 +4645,7 @@
       },
       {
         "file": "libs/buttons/src/lib/two-state-icon-button/two-state-icon.button.scss",
-        "hash": "5887463820052044979"
+        "hash": "5798985788969710151"
       },
       {
         "file": "libs/buttons/src/lib/two-state-icon-button/two-state-icon.button.spec.ts",

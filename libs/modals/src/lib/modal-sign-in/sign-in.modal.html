@@ -4,29 +4,40 @@
 
     <div class="form-line">
       <div class="form-line-title">Email:</div>
-      <input type="text" formControlName="email" (keyup)="onInputKeyUp()" />
+      <div class="form-line-input-container">
+        <input
+          class="form-line-input"
+          type="text"
+          formControlName="email"
+          (keyup)="onInputKeyUp()"
+        />
+      </div>
     </div>
 
     <div class="form-line">
       <div class="form-line-title">Password:</div>
-      <input
-        [type]="showPassword ? 'text' : 'password'"
-        formControlName="password"
-        id="passwordInput"
-        (keyup)="onInputKeyUp()"
-      />
-      <sigmafox-two-state-icon-button
-        [conditionState]="showPassword"
-        [activeIcon]="'visibility_off'"
-        [inactiveIcon]="'visibility'"
-        (click)="togglePassword()"
-      ></sigmafox-two-state-icon-button>
+      <div class="form-line-input-container">
+        <input
+          class="form-line-input"
+          [type]="showPassword ? 'text' : 'password'"
+          formControlName="password"
+          id="passwordInput"
+          (keyup)="onInputKeyUp()"
+        />
+        <sigmafox-two-state-icon-button
+          class="form-line-icon"
+          [conditionState]="showPassword"
+          [activeIcon]="'visibility_off'"
+          [inactiveIcon]="'visibility'"
+          (click)="togglePassword()"
+        ></sigmafox-two-state-icon-button>
+      </div>
     </div>
 
     <!-- Buttons -->
     <div class="button-container">
-      <div></div>
       <sigmafox-standard-button
+        class="button"
         *ngFor="let button of buttons"
         [config]="button"
         (clicked)="onButtonClicked(button.buttonID)"
