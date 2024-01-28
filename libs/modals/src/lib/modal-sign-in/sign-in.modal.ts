@@ -43,10 +43,11 @@ export class SignInModal {
       isDisabled: !this.signInForm.valid,
     },
     {
-      buttonID: ButtonID.SignIn,
+      buttonID: ButtonID.Register,
+      buttonLabel: 'Not yet a user?',
       buttonTextContent: 'Register',
       buttonStyleClass: ButtonStyleClass.Secondary,
-      isDisabled: !this.signInForm.valid,
+      isDisabled: false,
     },
   ];
 
@@ -65,10 +66,12 @@ export class SignInModal {
         Validators.minLength(6),
       ]),
     });
-    this.setButtonDisableState();
+    this.buttons[0].isDisabled = !this.signInForm.valid;
   }
 
   onButtonClicked(buttonID: string) {
+    console.log(buttonID);
+
     // Keep as switch to allow for possible updates for more buttons to be added in future
     switch (buttonID) {
       case ButtonID.SignIn: {
@@ -86,12 +89,7 @@ export class SignInModal {
   }
 
   onInputKeyUp() {
-    this.setButtonDisableState();
-  }
-
-  setButtonDisableState() {
     this.buttons[0].isDisabled = !this.signInForm.valid;
-    this.buttons[1].isDisabled = !this.signInForm.valid;
   }
 
   validateEmailControl() {

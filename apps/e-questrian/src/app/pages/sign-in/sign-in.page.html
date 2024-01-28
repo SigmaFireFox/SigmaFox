@@ -4,7 +4,8 @@
 <sigmafox-modal-sign-in
   *ngIf="error === firebaseAuthErrors.None"
   [signInDetails]="signInDetails"
-  (signin)="signin($event)"
+  (signin)="onSignInClicked($event)"
+  (register)="onRegisterClicked()"
 ></sigmafox-modal-sign-in>
 <sigmafox-modal-error
   *ngIf="error !== firebaseAuthErrors.None"

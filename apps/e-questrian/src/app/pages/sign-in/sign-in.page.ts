@@ -26,7 +26,7 @@ export class SignInPage implements OnInit {
     await this.verifyAuthentication();
   }
 
-  async signin(signInDetails: SignInDetails) {
+  async onSignInClicked(signInDetails: SignInDetails) {
     this.signInDetails = signInDetails;
     this.authenticationService
       .UserSignIn(signInDetails)
@@ -36,6 +36,10 @@ export class SignInPage implements OnInit {
       .catch((error: FirebaseAuthErrors) => {
         this.error = error;
       });
+  }
+
+  onRegisterClicked() {
+    this.router.navigateByUrl('/register');
   }
 
   onErrorModalClose() {
