@@ -1,5 +1,5 @@
 /* eslint-disable @nx/enforce-module-boundaries */
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {
   animate,
   state,
@@ -10,8 +10,8 @@ import {
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'apps/e-questrian/src/app/services/authentication/authentication.service';
 import {
-  CallToActionButton,
   EffectType,
+  FloatingCallToActionButtons,
   ImactHeader,
   NavigationPanel,
   SidePadding,
@@ -21,7 +21,11 @@ import {
   Alignment,
   NavigationButtonSize,
 } from 'libs/screens/src/lib/landing-screen/models/enums';
-import { FloatingCallToActionButton } from 'libs/screens/src/lib/landing-screen/models/interfaces';
+
+export enum Buttons {
+  Register = 'register',
+  SignIn = 'sign-in',
+}
 
 @Component({
   selector: 'e-questrian-entry-c2a',
@@ -34,11 +38,10 @@ import { FloatingCallToActionButton } from 'libs/screens/src/lib/landing-screen/
     ]),
   ],
 })
-// eslint-disable-next-line @angular-eslint/component-class-suffix
-export class EntryCallToActionSection {
+export class EntryCallToActionSection implements OnInit {
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
 
-  isLoggedIn = true;
+  isLoggedIn = false;
   backgroundPath =
     '../../../../../assets/landing-page-content/background-images/holding-mobile-in-jeans.png';
   impactHeader: ImactHeader = {
@@ -68,34 +71,56 @@ export class EntryCallToActionSection {
     yLocation: 10,
   };
 
-  floatingCallToActionButton: FloatingCallToActionButton = {
-    buttonConfig: {
-      buttonID: 'c2a-button',
-      buttonSize: ButtonSize.Large,
-      buttonTextContent: '',
-      buttonStyleClass: ButtonStyleClass.Primary,
-      isDisabled: false,
-    },
-    yLocation: 60,
+  floatingCallToActionButtons: FloatingCallToActionButtons = {
+    yLocation: 50,
+    buttons: [
+      {
+        buttonID: Buttons.Register,
+        buttonSize: ButtonSize.Large,
+        buttonTextContent: '',
+        buttonStyleClass: ButtonStyleClass.Primary,
+        isDisabled: false,
+      },
+    ],
   };
 
   navigationPanel: NavigationPanel = {
     nextScreen: NavigationButtonSize.Medium,
   };
 
-  constructor(private auth: AuthenticationService, private router: Router) {
-    this.auth.isAuthenticated().then((result) => {
-      this.floatingCallToActionButton.buttonConfig.buttonTextContent = result
+  constructor(private auth: AuthenticationService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.auth.isAuthenticated().then((isAuthenticated) => {
+      this.isLoggedIn = isAuthenticated;
+      this.floatingCallToActionButtons.buttons[0].buttonTextContent = this
+        .isLoggedIn
         ? 'To Dashboard'
         : 'Register for Free Demo';
+      if (!this.isLoggedIn) {
+        this.floatingCallToActionButtons.buttons.push({
+          buttonID: Buttons.SignIn,
+          buttonLabel: 'Already registered?',
+          buttonSize: ButtonSize.Large,
+          buttonTextContent: 'Sign in',
+          buttonStyleClass: ButtonStyleClass.Secondary,
+          isDisabled: false,
+        });
+      }
     });
   }
 
-  floatingCallToActionButtonClicked() {
-    if (this.isLoggedIn) {
-      this.router.navigate(['/home']);
-    } else {
-      this.router.navigate(['/register']);
+  floatingCallToActionButtonClicked(buttonID: string) {
+    switch (buttonID) {
+      case Buttons.Register: {
+        this.isLoggedIn
+          ? this.router.navigate(['/home'])
+          : this.router.navigate(['/register']);
+        break;
+      }
+      case Buttons.SignIn: {
+        this.router.navigate(['/signin']);
+      }
     }
   }
 

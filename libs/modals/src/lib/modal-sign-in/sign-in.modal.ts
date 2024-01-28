@@ -35,7 +35,10 @@ export class SignInModal {
 
   signInForm = new UntypedFormGroup({
     email: new UntypedFormControl('', Validators.email),
-    password: new UntypedFormControl('', Validators.required),
+    password: new UntypedFormControl('', [
+      Validators.required,
+      Validators.minLength(6),
+    ]),
   });
   showPassword = false;
   isRegister = false;
@@ -73,5 +76,8 @@ export class SignInModal {
     this.showPassword = !this.showPassword;
   }
 
-  setButtons() {}
+  onInputKeyUp() {
+    this.buttons[0].isDisabled = !this.signInForm.valid;
+    this.buttons[1].isDisabled = !this.signInForm.valid;
+  }
 }

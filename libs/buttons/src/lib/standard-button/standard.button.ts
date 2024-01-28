@@ -34,7 +34,7 @@ export class StandardButton implements OnInit {
       this.style = {
         height: '7vh',
         width: '30vh',
-        'font-size': '2vh',
+        'font-size': '2.2vh',
       };
     }
   }

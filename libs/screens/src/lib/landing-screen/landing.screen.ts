@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
 import { ButtonSize, StandardButton } from '@sigmafox/buttons';
 import { MatIconModule } from '@angular/material/icon';
 import {
+  FloatingCallToActionButtons,
   ImactHeader,
-  FloatingCallToActionButton,
   NavigationPanel,
   StructuredPageSeries,
 } from './models/interfaces';
@@ -30,13 +30,13 @@ import { NavigationButtonSize } from './models/enums';
 export class LandingScreen implements AfterContentInit {
   @Input() backgroundPath = '';
   @Input() impactHeader: ImactHeader = {} as ImactHeader;
-  @Input() floatingCallToActionButton: FloatingCallToActionButton | undefined;
+  @Input() floatingCallToActionButtons: FloatingCallToActionButtons | undefined;
   @Input() navigationPanel: NavigationPanel = {} as NavigationPanel;
   @Input() structuredPages: StructuredPageSeries = {} as StructuredPageSeries;
 
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
-  @Output() floatingCallToActionButtonClicked = new EventEmitter<void>();
-  @Output() structuredPageActionButtonClicked = new EventEmitter<void>();
+  @Output() floatingCallToActionButtonClicked = new EventEmitter<string>();
+  @Output() structuredPageActionButtonClicked = new EventEmitter<string>();
 
   @HostListener('window:resize', ['$event'])
   onResize() {
@@ -51,6 +51,7 @@ export class LandingScreen implements AfterContentInit {
   callToActionText = '';
   backgroundContainerDynamicStyling = {};
   headerContainerDynamicStyling = {};
+  calltoActionContainerContainerDynamicStyling = {};
   calltoActionContainerDynamicStyling = {};
   navigationButtonsDynamicStyling = {};
   screenContainerDynamicStyling = {};
@@ -72,12 +73,12 @@ export class LandingScreen implements AfterContentInit {
     this.randomiseBackgroundColour();
   }
 
-  onCallToActionButtonClick() {
-    this.floatingCallToActionButtonClicked.emit();
+  onCallToActionButtonClick(buttonID: string) {
+    this.floatingCallToActionButtonClicked.emit(buttonID);
   }
 
-  onStructuredPageActionClick() {
-    this.structuredPageActionButtonClicked.emit();
+  onStructuredPageActionClick(buttonID: string) {
+    this.structuredPageActionButtonClicked.emit(buttonID);
   }
 
   scrollToNextScreen() {
@@ -124,9 +125,9 @@ export class LandingScreen implements AfterContentInit {
       };
     }
 
-    if (this.floatingCallToActionButton) {
-      this.calltoActionContainerDynamicStyling = {
-        top: `${this.floatingCallToActionButton.yLocation}%`,
+    if (this.floatingCallToActionButtons) {
+      this.calltoActionContainerContainerDynamicStyling = {
+        top: `${this.floatingCallToActionButtons.yLocation}%`,
       };
     }
   }

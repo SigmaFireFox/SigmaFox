@@ -30,11 +30,22 @@
 
     .call-to-action-button-container {
         display: flex;
+        flex-direction: column;
         position: absolute;
         width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+
+        .call-to-action-button-label {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            padding-top: 10px;
+            font-size: 1.8vh;
+        }
     }
 
     .navigation-panel-container {

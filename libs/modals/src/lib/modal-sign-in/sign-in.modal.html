@@ -4,7 +4,7 @@
 
     <div class="form-line">
       <div class="form-line-title">Email:</div>
-      <input type="text" formControlName="email" />
+      <input type="text" formControlName="email" (keyup)="onInputKeyUp()" />
     </div>
 
     <div class="form-line">
@@ -13,6 +13,7 @@
         [type]="showPassword ? 'text' : 'password'"
         formControlName="password"
         id="passwordInput"
+        (keyup)="onInputKeyUp()"
       />
       <sigmafox-two-state-icon-button
         [conditionState]="showPassword"

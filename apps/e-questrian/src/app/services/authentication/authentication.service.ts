@@ -54,7 +54,6 @@ export class AuthenticationService {
   }
 
   async isAuthenticated(): Promise<boolean> {
-    // eslint-disable-next-line no-async-promise-executor
     return new Promise(async (resolve) => {
       await this.afAuth.onAuthStateChanged((user) => {
         user ? resolve(true) : resolve(false);

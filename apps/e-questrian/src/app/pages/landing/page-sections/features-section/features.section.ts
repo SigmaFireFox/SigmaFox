@@ -13,7 +13,7 @@ export class FeaturesSection {
   @Output() scrollToNextScreenClicked = new EventEmitter<void>();
 
   structuredPages: StructuredPageSeries = {
-    phaseTiming: 80000,
+    phaseTiming: 8000,
     backgroundColours: [
       'red',
       'orange',

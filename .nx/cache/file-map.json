@@ -986,11 +986,11 @@
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.html",
-        "hash": "7331474828362493823"
+        "hash": "13514455105311276030"
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.scss",
-        "hash": "2591572011743861877"
+        "hash": "9116343335711676684"
       },
       {
         "file": "libs/modals/src/lib/modal-register/register.modal.spec.ts",
@@ -1012,7 +1012,7 @@
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.html",
-        "hash": "12908928196909791014"
+        "hash": "8665128004694029422"
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.scss",
@@ -1027,7 +1027,7 @@
       },
       {
         "file": "libs/modals/src/lib/modal-sign-in/sign-in.modal.ts",
-        "hash": "7051224917050186664",
+        "hash": "11673922947465414693",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -1608,19 +1608,19 @@
       },
       {
         "file": "libs/screens/src/index.ts",
-        "hash": "8571131129617742349"
+        "hash": "12126448993718540277"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.html",
-        "hash": "17169842283125457621"
+        "hash": "12431447353230632272"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.scss",
-        "hash": "7723339858192664459"
+        "hash": "16733224495350468226"
       },
       {
         "file": "libs/screens/src/lib/landing-screen/landing.screen.ts",
-        "hash": "9665829827206084173",
+        "hash": "3642529281374478190",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -1641,7 +1641,7 @@
       },
       {
         "file": "libs/screens/src/lib/landing-screen/models/interfaces.ts",
-        "hash": "16999509341261360938",
+        "hash": "16051026562984731016",
         "deps": [
           "buttons"
         ]
@@ -3971,11 +3971,11 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.html",
-        "hash": "1733454914087041710"
+        "hash": "7034464822542960625"
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/entry-c2a-section/entry-c2a.section.ts",
-        "hash": "5809730379068784948",
+        "hash": "7419497178132597587",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/animations",
@@ -3990,7 +3990,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/features-section/features.section.ts",
-        "hash": "12516876168079379370",
+        "hash": "3842152499715558277",
         "deps": [
           "npm:@angular/core",
           "screens"
@@ -4002,7 +4002,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/pages/landing/page-sections/whats-new-section/whats-new.section.ts",
-        "hash": "15815778735468326212",
+        "hash": "11464715122679881028",
         "deps": [
           "npm:@angular/core",
           "buttons",
@@ -4237,7 +4237,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/auth-gaurd/auth-guard.service.ts",
-        "hash": "8436878035344169177",
+        "hash": "8322778869611017086",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/router",
@@ -4259,7 +4259,7 @@
       },
       {
         "file": "apps/e-questrian/src/app/services/authentication/authentication.service.ts",
-        "hash": "16892263290949146588",
+        "hash": "12495800296603465611",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/fire",
@@ -4610,7 +4610,7 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/models/interfaces.ts",
-        "hash": "1199056586554919084"
+        "hash": "184756420448205127"
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.html",
@@ -4629,7 +4629,7 @@
       },
       {
         "file": "libs/buttons/src/lib/standard-button/standard.button.ts",
-        "hash": "11557631479553062326",
+        "hash": "17031837569795885935",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"

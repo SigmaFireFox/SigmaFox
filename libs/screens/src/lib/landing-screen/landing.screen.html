@@ -8,6 +8,7 @@
     class="impact-header-container"
     [ngStyle]="headerContainerDynamicStyling"
   >
+    <!-- Header  -->
     <div *ngFor="let line of impactHeader.lines">
       <span *ngFor="let block of line">
         <span *ngIf="block.content.length === 1">{{block.content[0]}}</span>
@@ -23,17 +24,25 @@
     </div>
   </div>
 
+  <!-- Call to action buttons -->
   <div
-    *ngIf="floatingCallToActionButton"
+    *ngIf="floatingCallToActionButtons"
     class="call-to-action-button-container"
-    [ngStyle]="calltoActionContainerDynamicStyling"
+    [ngStyle]="calltoActionContainerContainerDynamicStyling"
   >
-    <sigmafox-standard-button
-      *ngIf="floatingCallToActionButton"
-      [config]="floatingCallToActionButton.buttonConfig"
-      (clicked)="onCallToActionButtonClick()"
-    ></sigmafox-standard-button>
+    <div *ngFor="let button of floatingCallToActionButtons.buttons">
+      <div class="call-to-action-button-label" *ngIf="button.buttonLabel">
+        {{button.buttonLabel}}
+      </div>
+      <sigmafox-standard-button
+        [ngStyle]="calltoActionContainerDynamicStyling"
+        [config]="button"
+        (clicked)="onCallToActionButtonClick(button.buttonID)"
+      ></sigmafox-standard-button>
+    </div>
   </div>
+
+  <!-- Navigation panel  -->
   <div *ngIf="navigationPanel" class="navigation-panel-container">
     <button
       *ngIf="navigationPanel.nextScreen"
@@ -124,11 +133,12 @@
       <!-- Action button  -->
       <div
         class="action-button-container"
-        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].actionButton"
+        *ngIf="structuredPages.screens[structuredPageSeriesPhaseCounter].actionButtons"
       >
         <sigmafox-standard-button
-          [config]="structuredPages.screens[structuredPageSeriesPhaseCounter].actionButton"
-          (clicked)="onStructuredPageActionClick()"
+          *ngFor="let button of structuredPages.screens[structuredPageSeriesPhaseCounter].actionButtons"
+          [config]="button"
+          (clicked)="onStructuredPageActionClick(button.buttonID)"
         ></sigmafox-standard-button>
       </div>
     </div>

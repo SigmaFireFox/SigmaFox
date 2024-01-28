@@ -15,10 +15,6 @@ export class AuthGuardService {
   async canActivate(): Promise<
     Observable<boolean> | Promise<boolean> | boolean
   > {
-    if (await this.authService.isAuthenticated()) {
-      return true;
-    }
-    this.router.navigateByUrl('signin');
-    return false;
+    return await this.authService.isAuthenticated();
   }
 }

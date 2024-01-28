@@ -24,9 +24,9 @@ export interface ImactHeader {
   alignment: Alignment;
   yLocation: number;
 }
-export interface FloatingCallToActionButton {
-  buttonConfig: StandardButtonConfig;
+export interface FloatingCallToActionButtons {
   yLocation: number;
+  buttons: StandardButtonConfig[];
 }
 
 export interface NavigationPanel {
@@ -42,7 +42,7 @@ export interface StructuredPage {
   bodyTextCondenced?: string[];
   authorNameText?: string;
   imageBottom?: string;
-  actionButton?: StandardButtonConfig;
+  actionButtons?: StandardButtonConfig[];
 }
 
 export interface StructuredPageSeries {

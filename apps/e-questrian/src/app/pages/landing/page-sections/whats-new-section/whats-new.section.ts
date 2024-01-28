@@ -1,10 +1,7 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
-import {
-  FloatingCallToActionButton,
-  StructuredPageSeries,
-} from 'libs/screens/src/lib/landing-screen/models/interfaces';
+import { StructuredPageSeries } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
 @Component({
   selector: 'e-questrian-whats-new-section',
@@ -35,13 +32,15 @@ export class WhatsNewSection {
           'If you are curious to what are the latest changes we have made - \
       please feel free to view our change logs ',
         ],
-        actionButton: {
-          buttonID: 'view-logs',
-          buttonSize: ButtonSize.Large,
-          buttonTextContent: 'View Change Logs',
-          buttonStyleClass: ButtonStyleClass.Primary,
-          isDisabled: false,
-        },
+        actionButtons: [
+          {
+            buttonID: 'view-logs',
+            buttonSize: ButtonSize.Large,
+            buttonTextContent: 'View Change Logs',
+            buttonStyleClass: ButtonStyleClass.Primary,
+            isDisabled: false,
+          },
+        ],
       },
     ],
   };
