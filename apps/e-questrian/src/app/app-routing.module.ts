@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppRoutePaths } from './models/routing.enum';
 import { CalendarPage } from './pages/calendar/calendar.page';
 import { ClientsPage } from './pages/clients/clients.page';
 import { FinancesPage } from './pages/finances/finances.page';
-import { HomePage } from './pages/home/home.page';
+import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { LandingPage } from './pages/landing/landing.page';
 import { RegisterPage } from './pages/register/register.page';
 import { SignInPage } from './pages/sign-in/sign-in.page';
@@ -11,34 +12,34 @@ import { AuthGuardService } from './services/auth-gaurd/auth-guard.service';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: AppRoutePaths.LandingPage,
     component: LandingPage,
   },
   {
-    path: 'signin',
+    path: AppRoutePaths.SignIn,
     component: SignInPage,
   },
   {
-    path: 'register',
+    path: AppRoutePaths.Register,
     component: RegisterPage,
   },
   {
-    path: 'home',
+    path: AppRoutePaths.Dashboard,
     canActivate: [AuthGuardService],
-    component: HomePage,
+    component: DashboardPage,
   },
   {
-    path: 'calendar',
+    path: AppRoutePaths.Calendar,
     canActivate: [AuthGuardService],
     component: CalendarPage,
   },
   {
-    path: 'finances',
+    path: AppRoutePaths.Finances,
     canActivate: [AuthGuardService],
     component: FinancesPage,
   },
   {
-    path: 'clients',
+    path: AppRoutePaths.Clients,
     canActivate: [AuthGuardService],
     component: ClientsPage,
   },

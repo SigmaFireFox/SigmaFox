@@ -10,11 +10,11 @@ import {
 import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'e-questrian-dashboard-page',
+  templateUrl: './dashboard.page.html',
+  styleUrls: ['./dashboard.page.scss'],
 })
-export class HomePage implements OnInit {
+export class DashboardPage implements OnInit {
   config: MenuPageConfig | undefined;
 
   constructor(

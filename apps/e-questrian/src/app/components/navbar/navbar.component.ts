@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppRoutePaths } from '../../models/routing.enum';
 import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 export enum MenuItemType {
@@ -42,7 +43,7 @@ export interface IconMenuOption {
 export class NavbarComponent implements OnInit {
   menuIcon = MenuIcon;
   isMobileView = false;
-  isLoggedIn = true;
+  isLoggedIn = false;
   showDropDown = false;
   iconMenu: IconMenuOption[] = [];
   menuOptions: MenuOption[] = [];
@@ -66,14 +67,14 @@ export class NavbarComponent implements OnInit {
   ) {}
 
   async ngOnInit() {
-    this.setIsLoggedIn();
+    await this.setIsLoggedIn();
     this.determineView();
   }
 
   onLogoClick() {
     this.isLoggedIn
-      ? this.router.navigate(['/home'])
-      : this.router.navigate(['/']);
+      ? this.router.navigate([AppRoutePaths.Dashboard])
+      : this.router.navigate([AppRoutePaths.LandingPage]);
   }
 
   onMenuOptionClicked(option: MenuOption) {

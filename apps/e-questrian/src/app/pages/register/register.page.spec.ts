@@ -8,7 +8,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { RegisterPage } from './register.page';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
-import { HomePage } from '../home/home.page';
+import { DashboardPage } from '../dashboard/dashboard.page';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignInModal } from '@sigmafox/modals';
 // eslint-disable-next-line @nx/enforce-module-boundaries
@@ -35,7 +35,7 @@ describe('SignInPage', () => {
         RouterTestingModule.withRoutes([
           {
             path: 'home',
-            component: HomePage,
+            component: DashboardPage,
           },
         ]),
         ReactiveFormsModule,

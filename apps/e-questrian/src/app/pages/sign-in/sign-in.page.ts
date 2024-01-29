@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FirebaseAuthErrors, SignInDetails } from '@sigmafox/modals';
 import { PageConfig } from '../../interfaces/common-page-configs.interface';
+import { AppRoutePaths } from '../../models/routing.enum';
 import { AuthenticationService } from '../../services/authentication/authentication.service';
 
 /* eslint-disable @angular-eslint/component-selector */
@@ -31,7 +32,7 @@ export class SignInPage implements OnInit {
     this.authenticationService
       .UserSignIn(signInDetails)
       .then(() => {
-        return this.router.navigateByUrl('/home');
+        return this.router.navigate([AppRoutePaths.Dashboard]);
       })
       .catch((error: FirebaseAuthErrors) => {
         this.error = error;

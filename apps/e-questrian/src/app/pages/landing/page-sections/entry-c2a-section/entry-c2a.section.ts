@@ -21,6 +21,7 @@ import {
   Alignment,
   NavigationButtonSize,
 } from 'libs/screens/src/lib/landing-screen/models/enums';
+import { AppRoutePaths } from 'apps/e-questrian/src/app/models/routing.enum';
 
 export enum Buttons {
   Register = 'register',
@@ -114,12 +115,12 @@ export class EntryCallToActionSection implements OnInit {
     switch (buttonID) {
       case Buttons.Register: {
         this.isLoggedIn
-          ? this.router.navigate(['/home'])
-          : this.router.navigate(['/register']);
+          ? this.router.navigate([AppRoutePaths.Dashboard])
+          : this.router.navigate([AppRoutePaths.Register]);
         break;
       }
       case Buttons.SignIn: {
-        this.router.navigate(['/signin']);
+        this.router.navigate([AppRoutePaths.SignIn]);
       }
     }
   }

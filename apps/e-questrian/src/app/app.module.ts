@@ -17,7 +17,7 @@ import { MatRadioModule } from '@angular/material/radio';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppComponent } from './app.component';
-import { HomePage } from './pages/home/home.page';
+import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { CalendarPage } from './pages/calendar/calendar.page';
 import { FinancesPage } from './pages/finances/finances.page';
 import { ClientsPage } from './pages/clients/clients.page';
@@ -51,7 +51,7 @@ import { LandingScreen } from '@sigmafox/screens';
 @NgModule({
   declarations: [
     // Pages
-    HomePage,
+    DashboardPage,
     CalendarPage,
     FinancesPage,
     ClientsPage,
