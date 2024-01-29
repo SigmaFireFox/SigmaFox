@@ -8,21 +8,34 @@ import {
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonsModule, ButtonStyleClass } from '@sigmafox/buttons';
-import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
+import { DynamicModalConfig } from '../dynamic-modal/models/interfaces';
+import { DynamicModal } from '../dynamic-modal/dynamic.modal';
+import { DynamicModalFormFieldType } from '../dynamic-modal/models/enum';
 
 export interface SignInDetails {
   email: string;
   password: string;
 }
 
-export enum ButtonID {
-  SignIn = 'sign-in',
+export enum ButtonNames {
+  SignIn = 'signIn',
   Register = 'register',
+}
+
+export enum FormFieldNames {
+  Email = 'email',
+  Password = 'password',
 }
 
 @Component({
   standalone: true,
-  imports: [CommonModule, MatIconModule, ReactiveFormsModule, ButtonsModule],
+  imports: [
+    CommonModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    ButtonsModule,
+    DynamicModal,
+  ],
   selector: 'sigmafox-modal-sign-in',
   templateUrl: './sign-in.modal.html',
   styleUrls: ['./sign-in.modal.scss'],
@@ -34,85 +47,75 @@ export class SignInModal {
   @Output() signin = new EventEmitter<SignInDetails>();
   @Output() register = new EventEmitter<void>();
 
-  signInForm = new UntypedFormGroup({});
-  buttons: StandardButtonConfig[] = [
-    {
-      buttonID: ButtonID.SignIn,
-      buttonTextContent: 'Sign in',
-      buttonStyleClass: ButtonStyleClass.Primary,
-      isDisabled: !this.signInForm.valid,
-    },
-    {
-      buttonID: ButtonID.Register,
-      buttonLabel: 'Not yet a user?',
-      buttonTextContent: 'Register',
-      buttonStyleClass: ButtonStyleClass.Secondary,
-      isDisabled: false,
-    },
-  ];
-
-  showPassword = false;
-  emailErrorMessage = '';
-  passwordErrorMessage = '';
+  dynamicModalConfig: DynamicModalConfig | undefined;
 
   ngOnInit() {
-    this.signInForm = new UntypedFormGroup({
-      email: new UntypedFormControl(this.signInDetails?.email || '', [
-        Validators.required,
-        Validators.email,
-      ]),
-      password: new UntypedFormControl(this.signInDetails?.password || '', [
-        Validators.required,
-        Validators.minLength(6),
-      ]),
-    });
-    this.buttons[0].isDisabled = !this.signInForm.valid;
+    this.dynamicModalConfig = {
+      header: 'Sign in',
+      form: {
+        fields: {
+          [FormFieldNames.Email]: {
+            fieldType: DynamicModalFormFieldType.StandardInput,
+            label: 'Email',
+            value: this.signInDetails?.email || '',
+            validations: [Validators.required, Validators.email],
+            errorMessage: '',
+          },
+          [FormFieldNames.Password]: {
+            fieldType: DynamicModalFormFieldType.PasswordInput,
+            label: 'Password',
+            value: this.signInDetails?.password || '',
+            showPassword: false,
+            validations: [Validators.required, Validators.minLength(6)],
+            minChar: 6,
+            errorMessage: '',
+          },
+        },
+        fieldsOrder: [FormFieldNames.Email, FormFieldNames.Password],
+      },
+      actionPanel: {
+        buttons: {
+          [ButtonNames.SignIn]: {
+            requiresValidation: true,
+            isSubmit: true,
+            buttonConfig: {
+              buttonID: ButtonNames.SignIn,
+              buttonTextContent: 'Sign in',
+              buttonStyleClass: ButtonStyleClass.Primary,
+              isDisabled: true,
+            },
+          },
+          [ButtonNames.Register]: {
+            requiresValidation: false,
+            isSubmit: false,
+            buttonConfig: {
+              buttonID: ButtonNames.Register,
+              buttonLabel: 'Not yet a user?',
+              buttonTextContent: 'Register',
+              buttonStyleClass: ButtonStyleClass.Secondary,
+              isDisabled: false,
+            },
+          },
+        },
+        buttonsOrder: [ButtonNames.SignIn, ButtonNames.Register],
+      },
+    };
+  }
+
+  onFormSubmitted(signInDetails: Object) {
+    this.signInDetails = signInDetails as SignInDetails;
   }
 
   onButtonClicked(buttonID: string) {
-    console.log(buttonID);
-
     // Keep as switch to allow for possible updates for more buttons to be added in future
     switch (buttonID) {
-      case ButtonID.SignIn: {
-        this.signin.emit(this.signInForm.value as SignInDetails);
+      case ButtonNames.SignIn: {
+        this.signin.emit(this.signInDetails);
         break;
       }
-      case ButtonID.Register: {
+      case ButtonNames.Register: {
         return this.register.emit();
       }
-    }
-  }
-
-  togglePassword() {
-    this.showPassword = !this.showPassword;
-  }
-
-  onInputKeyUp() {
-    this.buttons[0].isDisabled = !this.signInForm.valid;
-  }
-
-  validateEmailControl() {
-    this.emailErrorMessage = '';
-
-    if (this.signInForm.get('email')?.errors?.hasOwnProperty('required')) {
-      this.emailErrorMessage = 'Email required';
-    }
-
-    if (this.signInForm.get('email')?.errors?.hasOwnProperty('email')) {
-      this.emailErrorMessage = 'Email format incorrect';
-    }
-  }
-
-  validatePasswordControl() {
-    this.passwordErrorMessage = '';
-
-    if (this.signInForm.get('password')?.errors?.hasOwnProperty('required')) {
-      this.passwordErrorMessage = 'Password required';
-    }
-
-    if (this.signInForm.get('password')?.errors?.hasOwnProperty('minlength')) {
-      this.passwordErrorMessage = 'Password requires minumum of 6 characters';
     }
   }
 }

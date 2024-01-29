@@ -5,3 +5,4 @@ export {
   ButtonSize,
   ButtonStyleClass,
 } from './lib/standard-button/models/enums';
+export { StandardButtonConfig } from './lib/standard-button/models/interfaces';

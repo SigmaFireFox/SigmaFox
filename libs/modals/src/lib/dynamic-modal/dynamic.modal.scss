@@ -1,0 +1,235 @@
+.screen-container {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .modal-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        z-index: 3;
+        padding: 5px;
+        margin-top: -50px;
+        border-radius: 10px;
+        max-width: 900px;
+
+        .modal-header {
+            width: calc(100% - 20px);
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 3vh;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+
+            .form-line-1 {
+                display: flex;
+                width: calc(100% - 30px);
+                flex-direction: row;
+                padding: 15px 15px 0 15px;
+
+                .form-line-2 {
+                    display: flex;
+                    width: 100%;
+
+                    .form-line-3 {
+                        display: flex;
+                        width: 100%;
+
+                        .form-line-label {
+                            width: 40%;
+                            font-size: 2vh;
+                            font-weight: bold;
+                        }
+
+                        .form-line-input-container {
+                            flex-direction: column;
+                            padding-left: 5px;
+                            display: flex;
+                            flex-grow: 1;
+
+                            .form-line-input-and-icon-container {
+                                flex-direction: row;
+                                width: 100%;
+                                padding-left: 5px;
+                                display: flex;
+                                flex-grow: 1;
+
+                                .form-line-input {
+                                    border: none;
+                                    height: 3vh;
+                                    padding-left: 5px;
+                                    display: flex;
+                                    flex-grow: 1;
+                                    font-size: 2vh;
+                                }
+
+                                .form-line-icon {
+                                    max-width: fit-content;
+                                    display: flex;
+                                    flex-grow: 1;
+                                    padding: 0 5px;
+                                    height: calc(3vh + 2px);
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: white;
+                                }
+                            }
+
+                            .form-line-error {
+                                padding: 10px 0 0 10px;
+                                color: red;
+                                font-size: 2vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .buttons-container {
+            display: flex;
+            width: calc(100% - 20px);
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin: 20px;
+            align-items: center;
+
+            .button-container {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                .button-label {
+                    display: flex;
+                    font-size: 1.5vh;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 0;
+                }
+
+                .button {
+                    padding: 5px 0;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .screen-container {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: calc(100% - 50px);
+        z-index: 3;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .modal-container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            z-index: 3;
+            padding: 5px;
+            margin-top: -50px;
+            border-radius: 10px;
+            max-width: 450px;
+
+            .modal-header {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: bold;
+                margin: 10px;
+                font-size: large;
+            }
+
+            .form-container {
+                display: flex;
+                flex-direction: column;
+
+                .form-line {
+                    display: flex;
+                    width: calc(100% - 30px);
+                    flex-direction: row;
+                    padding: 5px 15px;
+                    align-items: center;
+                    flex-direction: column;
+                    flex: 1;
+
+                    .form-line-label {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        justify-content: flex-start;
+                    }
+
+                    .form-line-input-container {
+                        flex-direction: column;
+                        width: 100%;
+                        padding-left: 5px;
+                        display: flex;
+                        flex-grow: 1;
+
+                        .form-line-input-and-icon-container {
+                            flex-direction: row;
+                            height: 30px;
+                            width: 100%;
+                            padding-left: 5px;
+                            display: flex;
+                            flex-grow: 1;
+
+                            .form-line-input {
+                                border: none;
+                                height: 30px;
+                                padding-left: 5px;
+                                display: flex;
+                                flex-grow: 1;
+                            }
+
+                            .form-line-icon {
+                                max-width: fit-content;
+                                display: flex;
+                                flex-grow: 1;
+                                padding: 0 5px;
+                                height: 32px;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .button-container {
+                display: flex;
+                width: calc(100% - 20px);
+                flex-wrap: nowrap;
+                flex-direction: column;
+                margin: 10px;
+                align-items: center;
+
+                .button {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+<div *ngIf="config" class="screen-container">
+  <div class="modal-container">
+    <!-- Header -->
+    <div class="modal-header">{{config.header}}</div>
+
+    <!-- Form -->
+    <form class="form-container" [formGroup]="dynamicForm">
+      <div
+        class="form-line-1"
+        *ngFor="let fieldName of config.form?.fieldsOrder"
+      >
+        <div class="form-line-2" *ngIf="config.form">
+          <div
+            class="form-line-3"
+            *ngVar="config.form.fields[fieldName] as formField"
+          >
+            <div class="form-line-label">{{formField.label}}:</div>
+            <div
+              class="form-line-input-container"
+              [ngSwitch]="formField.fieldType"
+            >
+              <!-- Standard input  -->
+              <div
+                class="form-line-input-and-icon-container"
+                *ngSwitchCase="dynamicModalFormFieldType.StandardInput"
+              >
+                <ng-container
+                  *ngTemplateOutlet="standardInput context: { $implicit: {fieldName, showPassword: formField.showPassword }}"
+                ></ng-container>
+              </div>
+
+              <!-- Password input  -->
+              <div
+                class="form-line-input-and-icon-container"
+                *ngSwitchCase="dynamicModalFormFieldType.PasswordInput"
+              >
+                <ng-container
+                  *ngTemplateOutlet="passwordInput context: { $implicit: {fieldName, showPassword: formField.showPassword }}"
+                ></ng-container>
+              </div>
+
+              <!-- Error message  -->
+              <div class="form-line-error" *ngIf="formField.errorMessage">
+                {{formField.errorMessage}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Buttons -->
+    <div class="buttons-container">
+      <div
+        class="button-container"
+        *ngFor="let buttonName of config.actionPanel.buttonsOrder"
+      >
+        <div *ngIf="config.form">
+          <div
+            *ngVar="config.actionPanel.buttons[buttonName].buttonConfig  as actionPanelButton"
+          >
+            <div class="button-label" *ngIf="actionPanelButton.buttonLabel">
+              {{actionPanelButton.buttonLabel}}
+            </div>
+            <sigmafox-standard-button
+              class="button"
+              [config]="actionPanelButton"
+              (clicked)="onButtonClicked(buttonName)"
+            ></sigmafox-standard-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #standardInput let-params [formGroup]="dynamicForm">
+    <input
+      class="form-line-input"
+      type="text"
+      formControlName="{{params.fieldName}}"
+      (focusout)="validateControl(params.fieldName); validateForm()"
+      (keyup)="validateForm()"
+    />
+  </ng-template>
+
+  <ng-template #passwordInput let-params [formGroup]="dynamicForm">
+    <input
+      class="form-line-input"
+      [type]="params.showPassword ? 'text' : 'password'"
+      formControlName="{{params.fieldName}}"
+      id="{{params.fieldName}}"
+      (focusout)="validateControl(params.fieldName) ; validateForm()"
+      (keyup)="validateForm()"
+    />
+    <sigmafox-two-state-icon-button
+      class="form-line-icon"
+      [conditionState]="params.showPassword"
+      [activeIcon]="'visibility_off'"
+      [inactiveIcon]="'visibility'"
+      (click)="togglePassword(params.fieldName)"
+    ></sigmafox-two-state-icon-button>
+  </ng-template>
+</div>
