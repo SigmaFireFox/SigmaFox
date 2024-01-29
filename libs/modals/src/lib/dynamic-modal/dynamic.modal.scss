@@ -98,34 +98,48 @@
         }
 
 
-        .buttons-container {
+        .action-pancel-container {
             display: flex;
-            width: calc(100% - 20px);
+            width: 100%;
             flex-wrap: nowrap;
             flex-direction: column;
-            margin: 20px;
             align-items: center;
+            margin: 10px 0;
 
-            .button-container {
+            .button-container-1 {
                 display: flex;
                 width: 100%;
-                justify-content: center;
 
-                .button-label {
+
+                .button-container-2 {
                     display: flex;
-                    font-size: 1.5vh;
                     width: 100%;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 10px 0;
-                }
 
-                .button {
-                    padding: 5px 0;
+
+                    .button-container-3 {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .button-label {
+                            display: flex;
+                            font-size: 1.5vh;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 5px 0;
+                        }
+
+                        .button {
+                            padding: 5px 0;
+                        }
+                    }
+
+
                 }
             }
-
-
         }
     }
 }
@@ -229,16 +243,36 @@
                 }
             }
 
-            .button-container {
+            .action-pancel-container {
                 display: flex;
-                width: calc(100% - 20px);
                 flex-wrap: nowrap;
                 flex-direction: column;
-                margin: 10px;
                 align-items: center;
+                margin: 10px 0;
 
-                .button {
-                    padding: 5px 0;
+                .button-container-1 {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    .button-container-2 {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+
+                        .button-container-3 {
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+
+                            .button {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
                 }
             }
         }

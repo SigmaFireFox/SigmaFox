@@ -71,7 +71,7 @@ export class RegisterModal implements OnInit {
 
   ngOnInit() {
     this.dynamicModalConfig = {
-      header: '',
+      header: 'Register',
       form: {
         fields: {
           [FormFieldNames.FirstName]: {

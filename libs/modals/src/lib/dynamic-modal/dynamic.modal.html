@@ -60,13 +60,14 @@
     </form>
 
     <!-- Buttons -->
-    <div class="buttons-container">
+    <div class="action-pancel-container">
       <div
-        class="button-container"
+        class="button-container-1"
         *ngFor="let buttonName of config.actionPanel.buttonsOrder"
       >
-        <div *ngIf="config.form">
+        <div class="button-container-2" *ngIf="config.form">
           <div
+            class="button-container-3"
             *ngVar="config.actionPanel.buttons[buttonName].buttonConfig  as actionPanelButton"
           >
             <div class="button-label" *ngIf="actionPanelButton.buttonLabel">
@@ -82,34 +83,34 @@
       </div>
     </div>
   </div>
-
-  <ng-template #standardInput let-fieldName [formGroup]="dynamicForm">
-    <input
-      class="form-line-input"
-      type="text"
-      formControlName="{{fieldName}}"
-      (change)="validateControl(fieldName)"
-      (focusout)="validateControl(fieldName); validateForm()"
-      (keyup)="validateForm()"
-    />
-  </ng-template>
-
-  <ng-template #passwordInput let-params [formGroup]="dynamicForm">
-    <input
-      class="form-line-input"
-      [type]="params.formField.showPassword ? 'text' : 'password'"
-      formControlName="{{params.fieldName}}"
-      id="{{params.fieldName}}"
-      (change)="validateControl(params.fieldName)"
-      (focusout)="validateControl(params.fieldName)"
-      (keyup)="validateForm()"
-    />
-    <sigmafox-two-state-icon-button
-      class="form-line-icon"
-      [conditionState]="params.formField.showPassword"
-      [activeIcon]="'visibility_off'"
-      [inactiveIcon]="'visibility'"
-      (click)="params.formField.showPassword = !params.formField.showPassword"
-    ></sigmafox-two-state-icon-button>
-  </ng-template>
 </div>
+
+<ng-template #standardInput let-fieldName [formGroup]="dynamicForm">
+  <input
+    class="form-line-input"
+    type="text"
+    formControlName="{{fieldName}}"
+    (change)="validateControl(fieldName)"
+    (focusout)="validateControl(fieldName); validateForm()"
+    (keyup)="validateForm()"
+  />
+</ng-template>
+
+<ng-template #passwordInput let-params [formGroup]="dynamicForm">
+  <input
+    class="form-line-input"
+    [type]="params.formField.showPassword ? 'text' : 'password'"
+    formControlName="{{params.fieldName}}"
+    id="{{params.fieldName}}"
+    (change)="validateControl(params.fieldName)"
+    (focusout)="validateControl(params.fieldName)"
+    (keyup)="validateForm()"
+  />
+  <sigmafox-two-state-icon-button
+    class="form-line-icon"
+    [conditionState]="params.formField.showPassword"
+    [activeIcon]="'visibility_off'"
+    [inactiveIcon]="'visibility'"
+    (click)="params.formField.showPassword = !params.formField.showPassword"
+  ></sigmafox-two-state-icon-button>
+</ng-template>
