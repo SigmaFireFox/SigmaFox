@@ -1,6 +1,6 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 import { Component, EventEmitter, Output } from '@angular/core';
-import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
+import { ButtonSize, ButtonStyleClass } from 'libs/components/buttons/src';
 import { StructuredPageSeries } from 'libs/screens/src/lib/landing-screen/models/interfaces';
 
 @Component({

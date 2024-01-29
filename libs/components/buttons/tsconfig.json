@@ -7,7 +7,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node"
   },
   "files": [],
   "include": [],
@@ -19,7 +20,7 @@
       "path": "./tsconfig.spec.json"
     }
   ],
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../../tsconfig.base.json",
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

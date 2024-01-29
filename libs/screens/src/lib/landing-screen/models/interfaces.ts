@@ -2,8 +2,8 @@ import {
   ButtonSize,
   ButtonStyleClass,
   StandardButton,
-} from '@sigmafox/buttons';
-import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
+} from 'libs/components/buttons/src';
+import { StandardButtonConfig } from 'libs/components/buttons/src/lib/standard-button/models/interfaces';
 import {
   Alignment,
   EffectType,

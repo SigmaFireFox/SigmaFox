@@ -7,8 +7,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule, ButtonStyleClass } from '@sigmafox/buttons';
-import { StandardButtonConfig } from 'libs/buttons/src/lib/standard-button/models/interfaces';
+import { ButtonsModule, ButtonStyleClass } from 'libs/components/buttons/src';
+import { StandardButtonConfig } from 'libs/components/buttons/src/lib/standard-button/models/interfaces';
 
 export enum ButtonID {
   Close = 'close',

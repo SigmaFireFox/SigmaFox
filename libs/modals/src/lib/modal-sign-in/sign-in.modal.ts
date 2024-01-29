@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Validators } from '@angular/forms';
-import { ButtonStyleClass } from '@sigmafox/buttons';
+import { ButtonStyleClass } from 'libs/components/buttons/src';
 import { DynamicModalConfig } from '../dynamic-modal/models/interfaces';
 import { DynamicModal } from '../dynamic-modal/dynamic.modal';
 import { DynamicModalFormFieldType } from '../dynamic-modal/models/enum';

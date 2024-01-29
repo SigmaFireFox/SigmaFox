@@ -12,7 +12,7 @@ import {
   ButtonSize,
   ButtonStyleClass,
   StandardButton,
-} from '@sigmafox/buttons';
+} from 'libs/components/buttons/src';
 import { MatIconModule } from '@angular/material/icon';
 import {
   FloatingCallToActionButtons,

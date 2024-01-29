@@ -7,7 +7,7 @@ import {
   ValidationErrors,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule } from '@sigmafox/buttons';
+import { ButtonsModule } from 'libs/components/buttons/src';
 import { DynamicModalConfig } from './models/interfaces';
 import { DynamicModalFormFieldType } from './models/enum';
 import { VarDirective } from '@sigmafox/directives';

@@ -2,3 +2,31 @@
 <app-general-screen-header-component
   [header]="'Dashboard'"
 ></app-general-screen-header-component>
+
+<div class="dashboard-widget-container padless-accordion">
+  <mat-accordion class="padless-accordion">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Upcoming appointments</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngTemplateOutlet="test"></ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div class="dashboard-widget-container padded-accordion">
+  <mat-accordion class="padded-accordion">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Upcoming appointments</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngTemplateOutlet="test"></ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<ng-template #test>
+  <div class="template-container"></div>
+</ng-template>
+
+<!-- https://stackoverflow.com/questions/51171350/angular-pass-a-component-as-ng-template-of-another-component -->

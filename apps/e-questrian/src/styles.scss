@@ -113,3 +113,8 @@ body {
   background-color: white;
   color: red;
 }
+
+
+.padless-accordion div.mat-expansion-panel-body {
+  padding: 0 !important;
+}

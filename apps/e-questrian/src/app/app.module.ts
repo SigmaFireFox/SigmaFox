@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppComponent } from './app.component';
@@ -40,7 +41,7 @@ import { ErrorModal, RegisterModal, SignInModal } from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { StandardButton } from '@sigmafox/buttons';
+import { StandardButton } from 'libs/components/buttons/src';
 import { RegisterPage } from './pages/register/register.page';
 import { EntryCallToActionSection } from './pages/landing/page-sections/entry-c2a-section/entry-c2a.section';
 import { FeaturesSection } from './pages/landing/page-sections/features-section/features.section';
@@ -96,6 +97,7 @@ import { LandingScreen } from '@sigmafox/screens';
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
+    MatExpansionModule,
     MatInputModule,
     MatCheckboxModule,
     MatRadioModule,

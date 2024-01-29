@@ -1,5 +1,5 @@
 import { ValidatorFn } from '@angular/forms';
-import { StandardButtonConfig } from '@sigmafox/buttons';
+import { StandardButtonConfig } from 'libs/components/buttons/src';
 import { DynamicModalFormFieldType as DynamicModalFieldType } from './enum';
 
 export interface DynamicModalConfig {

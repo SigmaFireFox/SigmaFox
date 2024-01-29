@@ -16,7 +16,7 @@ import {
   NavigationPanel,
   SidePadding,
 } from '@sigmafox/screens';
-import { ButtonSize, ButtonStyleClass } from '@sigmafox/buttons';
+import { ButtonSize, ButtonStyleClass } from 'libs/components/buttons/src';
 import {
   Alignment,
   NavigationButtonSize,

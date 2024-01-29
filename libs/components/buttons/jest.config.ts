@@ -3,7 +3,7 @@ export default {
   displayName: 'buttons',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/buttons',
+  coverageDirectory: '../../coverage/libs/components/buttons',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

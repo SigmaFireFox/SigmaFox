@@ -20,6 +20,7 @@ import { AuthenticationService } from '../../services/authentication/authenticat
 export class DashboardPage implements OnInit {
   config: MenuPageConfig | undefined;
   generalConfig = { header: 'e-Questrian', subHeader: '' } as PageConfig;
+  panelOpenState = false;
 
   constructor(
     public router: Router,
