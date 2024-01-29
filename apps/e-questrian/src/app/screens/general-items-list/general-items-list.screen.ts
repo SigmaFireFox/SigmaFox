@@ -17,7 +17,7 @@ export class GeneralItemsListScreen implements OnInit {
   @Input() config = {} as GeneralItemsListPageConfig;
   @Output() itemClicked = new EventEmitter<number>();
 
-  generalConfig = {} as PageConfig;
+  header = '';
   listConfig = {
     columns: [] as PageColumns[],
     items: {},
@@ -34,10 +34,7 @@ export class GeneralItemsListScreen implements OnInit {
   }
 
   private setPageConfig() {
-    this.generalConfig = {
-      header: this.config.header,
-      subHeader: this.config.subHeader,
-    };
+    this.header = this.config.header;
   }
 
   private setListConfig() {

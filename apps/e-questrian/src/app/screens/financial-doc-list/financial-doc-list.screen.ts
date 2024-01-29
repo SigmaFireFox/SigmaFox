@@ -20,23 +20,20 @@ export class FinancialDocListScreen implements OnInit {
   @Output() itemClicked = new EventEmitter<DocID>();
 
   financialDocType = FinancialDocType;
-  generalConfig = {} as PageConfig;
+  header = '';
   isViewingVoidedItems = false;
 
   constructor(public router: Router) {}
 
   ngOnInit() {
-    this.setPageConfig();
+    this.setPageHeader();
   }
 
   onItemClicked(item: FinancialDocItem) {
     this.itemClicked.emit({ docType: item.docType, docNum: item.number });
   }
 
-  private setPageConfig() {
-    this.generalConfig = {
-      header: this.config.header,
-      subHeader: this.config.subHeader,
-    };
+  private setPageHeader() {
+    this.header = this.config.header;
   }
 }

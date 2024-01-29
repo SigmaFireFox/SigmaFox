@@ -22,19 +22,16 @@ export class MenuComponent implements OnInit {
 
   optionStyling = OptionStyling;
 
-  generalConfig = {} as PageConfig;
+  header = '';
 
   constructor(public router: Router) {}
 
   ngOnInit() {
-    this.setPageConfig();
+    this.setPageHeader();
   }
 
-  setPageConfig() {
-    this.generalConfig = {
-      header: this.config.header,
-      subHeader: this.config.subHeader,
-    };
+  setPageHeader() {
+    this.header = this.config.header;
   }
 
   onMenuOptionClicked(

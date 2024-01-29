@@ -13,7 +13,6 @@ import { AuthenticationService } from '../../services/authentication/authenticat
   styleUrls: ['./sign-in.page.scss'],
 })
 export class SignInPage implements OnInit {
-  generalConfig = { header: 'e-Questrian', subHeader: '' } as PageConfig;
   firebaseAuthErrors = FirebaseAuthErrors;
   error: FirebaseAuthErrors = FirebaseAuthErrors.None;
   signInDetails: SignInDetails | undefined;

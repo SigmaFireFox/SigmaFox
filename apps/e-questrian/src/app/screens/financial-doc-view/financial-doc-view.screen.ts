@@ -14,16 +14,13 @@ import {
 export class FinancialDocViewScreen implements OnInit {
   @Input() config = {} as DocView;
 
-  generalConfig = {} as PageConfig;
+  header = '';
 
   ngOnInit() {
-    this.setPageConfig();
+    this.setPageHeader();
   }
 
-  private setPageConfig() {
-    this.generalConfig = {
-      header: this.config.header,
-      subHeader: this.config.subHeader,
-    };
+  private setPageHeader() {
+    this.header = this.config.header;
   }
 }

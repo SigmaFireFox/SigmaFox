@@ -8,6 +8,6 @@ import { PageConfig } from '../../interfaces/common-page-configs.interface';
   styleUrls: ['./general-screen-header.component.scss'],
 })
 export class GeneralScreenHeaderComponent {
-  @Input() generalConfig = {} as PageConfig;
+  @Input() header = '';
   @Output() viewStateSelected = new EventEmitter<any>();
 }

@@ -2,7 +2,10 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuPageConfig } from '../../interfaces/common-page-configs.interface';
+import {
+  MenuPageConfig,
+  PageConfig,
+} from '../../interfaces/common-page-configs.interface';
 import {
   OptionAction,
   OptionStyling,
@@ -16,6 +19,7 @@ import { AuthenticationService } from '../../services/authentication/authenticat
 })
 export class DashboardPage implements OnInit {
   config: MenuPageConfig | undefined;
+  generalConfig = { header: 'e-Questrian', subHeader: '' } as PageConfig;
 
   constructor(
     public router: Router,
