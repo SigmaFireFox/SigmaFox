@@ -1,28 +1,16 @@
-import {
-  Component,
-  createNgModule,
-  EventEmitter,
-  Input,
-  Output,
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormControl,
   ReactiveFormsModule,
   UntypedFormGroup,
   ValidationErrors,
-  Validators,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonsModule } from '@sigmafox/buttons';
-import { SignInDetails } from '../modal-sign-in/sign-in.modal';
-import {
-  DynamicModalConfig,
-  DynamicModalFieldConfig,
-} from './models/interfaces';
+import { DynamicModalConfig } from './models/interfaces';
 import { DynamicModalFormFieldType } from './models/enum';
 import { VarDirective } from '@sigmafox/directives';
-import { flatMap } from 'rxjs';
 
 export enum ButtonID {
   SignIn = 'sign-in',
@@ -70,10 +58,14 @@ export class DynamicModal {
       return;
     }
 
-    if (this.config?.form?.passwordFieldsToMatch) {
-      if (this.checkPasswordMatching()) {
-        this.formSubmitted.emit(this.dynamicForm.value);
-      }
+    if (!this.config?.form?.passwordFieldsToMatch) {
+      this.formSubmitted.emit(this.dynamicForm.value);
+      return;
+    }
+
+    if (this.checkPasswordMatching()) {
+      this.formSubmitted.emit(this.dynamicForm.value);
+      return;
     }
   }
 

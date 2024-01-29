@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   constructor(public router: Router, private td: TestDataService) {}
 
   ngOnInit() {
-    this.router.navigate(['']);
     this.td.loadTestDataToLocal();
   }
 }

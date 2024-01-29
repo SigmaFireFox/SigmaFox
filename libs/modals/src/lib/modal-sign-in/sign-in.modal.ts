@@ -104,5 +104,6 @@ export class SignInModal implements OnInit {
 
   onFormSubmitted(signInDetails: Object) {
     this.signInDetails = signInDetails as SignInDetails;
+    this.signin.emit(this.signInDetails);
   }
 }
