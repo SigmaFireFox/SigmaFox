@@ -1,1 +1,31 @@
-<p>accordion-widget works!</p>
+<div *ngIf="!hasPadding" class="dashboard-widget-container">
+  <mat-accordion class="padless-accordion">
+    <mat-expansion-panel class="bgcolor">
+      <mat-expansion-panel-header
+        [collapsedHeight]="'5vh'"
+        [expandedHeight]="'6vh'"
+      >
+        <mat-panel-title>Upcoming appointments</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngTemplateOutlet="test"></ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div *ngIf="hasPadding" class="dashboard-widget-container">
+  <mat-accordion class="padded-accordion">
+    <mat-expansion-panel class="bgcolor">
+      <mat-expansion-panel-header
+        [collapsedHeight]="'5vh'"
+        [expandedHeight]="'6vh'"
+      >
+        <mat-panel-title>Upcoming appointments</mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngTemplateOutlet="test"></ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<ng-template #test>
+  <div class="template-container"></div>
+</ng-template>

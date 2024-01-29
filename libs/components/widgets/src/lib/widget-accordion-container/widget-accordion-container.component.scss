@@ -1,13 +1,15 @@
 .dashboard-widget-container {
     display: flex;
     padding: 2% 5%;
-    background-color: aqua;
     max-width: 100%;
 
-    mat-accordion {
+    .mat-accordion {
         display: flex;
         width: 100%;
 
+        .mat-expansion-panel {
+            background-color: aqua;
+        }
     }
 
     .padless-accordion {
@@ -15,7 +17,6 @@
             display: flex;
             width: calc(90vw);
             height: 100px;
-            background-color: aqua;
         }
     }
 
@@ -24,11 +25,17 @@
             display: flex;
             width: calc(90vw - 48px);
             height: 100px;
-            background-color: aqua;
         }
     }
 }
 
 mat-expansion-panel-header {
     height: 5vh;
+    background-color: aqua;
+}
+
+@media (hover: none) {
+    .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+        background: transparent;
+    }
 }

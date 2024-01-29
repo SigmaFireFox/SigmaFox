@@ -48,6 +48,7 @@ import { FeaturesSection } from './pages/landing/page-sections/features-section/
 import { ClientTestimonialsSection } from './pages/landing/page-sections/client-testimonials-section/client-testimonials.section';
 import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section/whats-new.section';
 import { LandingScreen } from '@sigmafox/screens';
+import { WidgetAccordionContainer } from '@sigmafox/widgets';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { LandingScreen } from '@sigmafox/screens';
     StandardButton,
     LandingScreen,
     ErrorModal,
+    WidgetAccordionContainer,
   ],
 })
 export class AppModule {}

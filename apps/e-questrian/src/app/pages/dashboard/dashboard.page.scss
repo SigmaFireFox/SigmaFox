@@ -2,38 +2,3 @@
   height: 7.5vh;
   min-height: 50px;
 }
-
-.dashboard-widget-container {
-  display: flex;
-  padding: 2% 5%;
-  background-color: aqua;
-  max-width: 100%;
-
-  mat-accordion {
-    display: flex;
-    width: 100%;
-
-  }
-
-  .padless-accordion {
-    .template-container {
-      display: flex;
-      width: calc(90vw);
-      height: 100px;
-      background-color: aqua;
-    }
-  }
-
-  .padded-accordion {
-    .template-container {
-      display: flex;
-      width: calc(90vw - 48px);
-      height: 100px;
-      background-color: aqua;
-    }
-  }
-}
-
-mat-expansion-panel-header {
-  height: 5vh;
-}
