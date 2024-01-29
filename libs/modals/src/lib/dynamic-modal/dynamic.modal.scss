@@ -107,11 +107,9 @@
                 display: flex;
                 width: 100%;
 
-
                 .button-container-2 {
                     display: flex;
                     width: 100%;
-
 
                     .button-container-3 {
                         display: flex;
@@ -143,43 +141,15 @@
 
 @media only screen and (max-width: 450px) {
     .screen-container {
-        display: flex;
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        height: calc(100% - 50px);
-        z-index: 3;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
 
         .modal-container {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            background-color: aqua;
-            z-index: 3;
-            padding: 5px;
-            margin-top: -50px;
-            border-radius: 10px;
             max-width: 450px;
 
-            .modal-header {
-                width: calc(100% - 20px);
-                text-align: center;
-                font-weight: bold;
-                margin: 10px;
-                font-size: large;
-            }
+            // .modal-header {} No changes
 
             .form-container {
-                display: flex;
-                flex-direction: column;
 
                 .form-line-1 {
-                    display: flex;
-                    width: calc(100% - 30px);
-                    flex-direction: row;
                     padding: 0px 15px;
                     align-items: center;
                     flex-direction: column;
@@ -210,26 +180,14 @@
                                     flex-direction: row;
                                     height: 30px;
                                     width: 100%;
-                                    display: flex;
-                                    flex-grow: 1;
 
                                     .form-line-input {
-                                        border: none;
                                         height: 30px;
                                         padding-left: 5px;
-                                        display: flex;
-                                        flex-grow: 1;
                                     }
 
                                     .form-line-icon {
-                                        max-width: fit-content;
-                                        display: flex;
-                                        flex-grow: 1;
-                                        padding: 0 5px;
                                         height: 32px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        background-color: white;
                                     }
                                 }
                             }
@@ -238,38 +196,19 @@
                 }
             }
 
-            .action-pancel-container {
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                align-items: center;
-                margin: 10px 0;
+            // .action-pancel-container {
 
-                .button-container-1 {
-                    display: flex;
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
+            //     .button-container-1 {
 
-                    .button-container-2 {
-                        display: flex;
-                        width: 100%;
-                        justify-content: center;
-                        align-items: center;
+            //         .button-container-2 {
 
-                        .button-container-3 {
-                            display: flex;
-                            width: 100%;
-                            justify-content: center;
-                            align-items: center;
+            //             .button-container-3 {
 
-                            .button {
-                                padding: 5px 0;
-                            }
-                        }
-                    }
-                }
-            }
+            //                 .button {}
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 }
