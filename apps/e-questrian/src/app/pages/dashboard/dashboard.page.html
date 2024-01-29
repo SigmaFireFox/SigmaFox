@@ -3,6 +3,13 @@
   [header]="'Dashboard'"
 ></app-general-screen-header-component>
 
-<sigmafox-accordion-widget [hasPadding]="false"></sigmafox-accordion-widget>
+<sigmafox-accordion-widget
+  [hasPadding]="false"
+  [template]="lion"
+></sigmafox-accordion-widget>
 
-<!-- https://stackoverflow.com/questions/51171350/angular-pass-a-component-as-ng-template-of-another-component -->
+<ng-template #lion>
+  <div>This is a test</div>
+</ng-template>
+
+<!-- https://medium.com/@matsal.dev/angular-how-to-pass-template-with-component-as-input-using-ngtemplateoutlet-1d7ba9eeadd6 -->

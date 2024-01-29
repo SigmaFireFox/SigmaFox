@@ -7,7 +7,12 @@
       >
         <mat-panel-title>Upcoming appointments</mat-panel-title>
       </mat-expansion-panel-header>
-      <ng-container *ngTemplateOutlet="test"></ng-container>
+      <div class="template-container">
+        <ng-container
+          *ngIf="template"
+          [ngTemplateOutlet]="template"
+        ></ng-container>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
@@ -21,11 +26,14 @@
       >
         <mat-panel-title>Upcoming appointments</mat-panel-title>
       </mat-expansion-panel-header>
-      <ng-container *ngTemplateOutlet="test"></ng-container>
+      <div class="template-container">
+        <ng-container
+          *ngIf="template"
+          [ngTemplateOutlet]="template"
+        ></ng-container>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
 
-<ng-template #test>
-  <div class="template-container"></div>
-</ng-template>
+<ng-template #test> </ng-template>

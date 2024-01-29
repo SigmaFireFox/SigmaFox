@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatExpansionModule } from '@angular/material/expansion';
 
@@ -11,4 +11,5 @@ import { MatExpansionModule } from '@angular/material/expansion';
 })
 export class WidgetAccordionContainer {
   @Input() hasPadding = true;
+  @Input() template: TemplateRef<any> | undefined;
 }
