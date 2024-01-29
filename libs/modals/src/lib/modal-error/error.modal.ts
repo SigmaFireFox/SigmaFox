@@ -18,6 +18,7 @@ export enum FirebaseAuthError {
   None = `none`,
   UserNotFound = `auth/user-not-found`,
   WrongPassword = 'auth/wrong-password',
+  EmailInUse = 'auth/email-already-in-use',
 }
 
 @Component({
@@ -88,6 +89,17 @@ export class ErrorModal {
           ' ',
           'Hint: You can view your password by clicking the toggle password \
           "eye" icon',
+        ];
+        break;
+      }
+      case FirebaseAuthError.EmailInUse: {
+        this.header = 'Email already registered';
+        this.errorDescription = [
+          'It seems the email provide has already been registered with us. If \
+          the email provided is correct, please click on the "Sign In" button \
+          to naviagte to our sign in form',
+          'If you have forgotten your password, the sign in for itself with have \
+          options to have your email reset',
         ];
         break;
       }

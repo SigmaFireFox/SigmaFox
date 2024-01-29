@@ -12,6 +12,7 @@ export interface DynamicModalConfig {
 export interface DynamicModalForm {
   fields: DynamicModalFields;
   fieldsOrder: string[];
+  passwordFieldsToMatch?: DynamicModalFieldsToMatch;
 }
 
 export interface DynamicModalFields {
@@ -26,6 +27,11 @@ export interface DynamicModalFieldConfig {
   validations?: ValidatorFn[];
   minChar?: number;
   errorMessage?: string;
+}
+
+export interface DynamicModalFieldsToMatch {
+  password: string;
+  confirmation: string;
 }
 
 export interface DynamicModalActionPanel {

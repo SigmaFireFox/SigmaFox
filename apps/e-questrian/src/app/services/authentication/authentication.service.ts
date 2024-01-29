@@ -25,24 +25,29 @@ export class AuthenticationService {
   }
 
   async UserRegistration(registerDetails: RegisterDetails) {
-    this.afAuth
-      .createUserWithEmailAndPassword(
-        registerDetails.email,
-        registerDetails.password
-      )
-      .then((userCredential) => {
-        return userCredential;
-      });
+    return new Promise(async (resolve, reject) => {
+      this.afAuth
+        .createUserWithEmailAndPassword(
+          registerDetails.email,
+          registerDetails.password
+        )
+        .then(async (userCredential) => {
+          const profile = {
+            displayName:
+              registerDetails.firstName + ' ' + registerDetails.lastName,
+            photoURL: '',
+          };
 
-    const profile = {
-      displayName: registerDetails.firstName + ' ' + registerDetails.lastName,
-      photoURL: '',
-    };
-
-    const currentUser = await this.afAuth.currentUser;
-    if (currentUser) {
-      return currentUser.updateProfile(profile);
-    }
+          const currentUser = await this.afAuth.currentUser;
+          if (currentUser) {
+            return currentUser.updateProfile(profile);
+          }
+          resolve(userCredential);
+        })
+        .catch((error) => {
+          reject(this.setErrorFromErrorMessage(error.message));
+        });
+    });
   }
 
   UserSignIn(signInDetails: SignInDetails): Promise<unknown> {

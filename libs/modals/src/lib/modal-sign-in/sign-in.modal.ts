@@ -1,13 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  ReactiveFormsModule,
-  UntypedFormControl,
-  UntypedFormGroup,
-  Validators,
-} from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule, ButtonStyleClass } from '@sigmafox/buttons';
+import { Validators } from '@angular/forms';
+import { ButtonStyleClass } from '@sigmafox/buttons';
 import { DynamicModalConfig } from '../dynamic-modal/models/interfaces';
 import { DynamicModal } from '../dynamic-modal/dynamic.modal';
 import { DynamicModalFormFieldType } from '../dynamic-modal/models/enum';
@@ -29,19 +23,12 @@ export enum FormFieldNames {
 
 @Component({
   standalone: true,
-  imports: [
-    CommonModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    ButtonsModule,
-    DynamicModal,
-  ],
+  imports: [CommonModule, DynamicModal],
   selector: 'sigmafox-modal-sign-in',
   templateUrl: './sign-in.modal.html',
-  styleUrls: ['./sign-in.modal.scss'],
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
-export class SignInModal {
+export class SignInModal implements OnInit {
   @Input() signInDetails: SignInDetails | undefined;
 
   @Output() signin = new EventEmitter<SignInDetails>();
@@ -102,20 +89,20 @@ export class SignInModal {
     };
   }
 
-  onFormSubmitted(signInDetails: Object) {
-    this.signInDetails = signInDetails as SignInDetails;
-  }
-
   onButtonClicked(buttonID: string) {
     // Keep as switch to allow for possible updates for more buttons to be added in future
     switch (buttonID) {
       case ButtonNames.SignIn: {
-        this.signin.emit(this.signInDetails);
+        // Button is a submit button - will emit onFormSubmitted - nothing further required
         break;
       }
       case ButtonNames.Register: {
         return this.register.emit();
       }
     }
+  }
+
+  onFormSubmitted(signInDetails: Object) {
+    this.signInDetails = signInDetails as SignInDetails;
   }
 }

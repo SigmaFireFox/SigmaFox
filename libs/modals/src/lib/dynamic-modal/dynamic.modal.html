@@ -25,7 +25,7 @@
                 *ngSwitchCase="dynamicModalFormFieldType.StandardInput"
               >
                 <ng-container
-                  *ngTemplateOutlet="standardInput context: { $implicit: {fieldName, showPassword: formField.showPassword }}"
+                  *ngTemplateOutlet="standardInput context: { $implicit: fieldName}"
                 ></ng-container>
               </div>
 
@@ -35,7 +35,17 @@
                 *ngSwitchCase="dynamicModalFormFieldType.PasswordInput"
               >
                 <ng-container
-                  *ngTemplateOutlet="passwordInput context: { $implicit: {fieldName, showPassword: formField.showPassword }}"
+                  *ngTemplateOutlet="passwordInput context: { $implicit: {fieldName,  formField }}"
+                ></ng-container>
+              </div>
+
+              <!-- Password Confirmation input  -->
+              <div
+                class="form-line-input-and-icon-container"
+                *ngSwitchCase="dynamicModalFormFieldType.PasswordConfirmationInput"
+              >
+                <ng-container
+                  *ngTemplateOutlet="passwordInput context: { $implicit: {fieldName,  formField }}"
                 ></ng-container>
               </div>
 
@@ -73,12 +83,13 @@
     </div>
   </div>
 
-  <ng-template #standardInput let-params [formGroup]="dynamicForm">
+  <ng-template #standardInput let-fieldName [formGroup]="dynamicForm">
     <input
       class="form-line-input"
       type="text"
-      formControlName="{{params.fieldName}}"
-      (focusout)="validateControl(params.fieldName); validateForm()"
+      formControlName="{{fieldName}}"
+      (change)="validateControl(fieldName)"
+      (focusout)="validateControl(fieldName); validateForm()"
       (keyup)="validateForm()"
     />
   </ng-template>
@@ -86,18 +97,19 @@
   <ng-template #passwordInput let-params [formGroup]="dynamicForm">
     <input
       class="form-line-input"
-      [type]="params.showPassword ? 'text' : 'password'"
+      [type]="params.formField.showPassword ? 'text' : 'password'"
       formControlName="{{params.fieldName}}"
       id="{{params.fieldName}}"
-      (focusout)="validateControl(params.fieldName) ; validateForm()"
+      (change)="validateControl(params.fieldName)"
+      (focusout)="validateControl(params.fieldName)"
       (keyup)="validateForm()"
     />
     <sigmafox-two-state-icon-button
       class="form-line-icon"
-      [conditionState]="params.showPassword"
+      [conditionState]="params.formField.showPassword"
       [activeIcon]="'visibility_off'"
       [inactiveIcon]="'visibility'"
-      (click)="togglePassword(params.fieldName)"
+      (click)="params.formField.showPassword = !params.formField.showPassword"
     ></sigmafox-two-state-icon-button>
   </ng-template>
 </div>

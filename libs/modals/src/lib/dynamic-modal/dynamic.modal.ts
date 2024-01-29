@@ -11,13 +11,18 @@ import {
   ReactiveFormsModule,
   UntypedFormGroup,
   ValidationErrors,
+  Validators,
 } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonsModule } from '@sigmafox/buttons';
 import { SignInDetails } from '../modal-sign-in/sign-in.modal';
-import { DynamicModalConfig } from './models/interfaces';
+import {
+  DynamicModalConfig,
+  DynamicModalFieldConfig,
+} from './models/interfaces';
 import { DynamicModalFormFieldType } from './models/enum';
 import { VarDirective } from '@sigmafox/directives';
+import { flatMap } from 'rxjs';
 
 export enum ButtonID {
   SignIn = 'sign-in',
@@ -47,44 +52,48 @@ export class DynamicModal {
   dynamicModalFormFieldType = DynamicModalFormFieldType;
   dynamicForm = new UntypedFormGroup({});
 
-  showPassword = false;
-  emailErrorMessage = '';
-  passwordErrorMessage = '';
-
   ngOnInit() {
     if (!this.config)
       return console.log('DynamicModal', 'No DynamicModalConfig provided');
 
     if (this.config.form) {
       this.setForm();
+      this.validateForm();
     }
   }
 
   onButtonClicked(buttonID: string) {
     const currentButton = this.config?.actionPanel.buttons[buttonID];
 
-    if (currentButton?.isSubmit) {
-      this.formSubmitted.emit(this.dynamicForm.value);
+    if (!currentButton?.isSubmit) {
+      this.buttonClicked.emit(buttonID);
+      return;
     }
 
-    this.buttonClicked.emit(buttonID);
-  }
-
-  togglePassword(controlName: string) {
-    if (!this.config || !this.config.form) return;
-
-    let currentFormField = this.config.form.fields[controlName];
-    currentFormField.showPassword = !currentFormField.showPassword;
+    if (this.config?.form?.passwordFieldsToMatch) {
+      if (this.checkPasswordMatching()) {
+        this.formSubmitted.emit(this.dynamicForm.value);
+      }
+    }
   }
 
   validateForm() {
     if (!this.config?.actionPanel) return;
 
+    // Update all buttons requiring validation to the valid status of the form
     Object.keys(this.config?.actionPanel.buttons).forEach((buttonKey) => {
       let currentButton = this.config?.actionPanel.buttons[buttonKey];
       if (currentButton?.requiresValidation) {
         currentButton.buttonConfig.isDisabled = !this.dynamicForm.valid;
       }
+    });
+
+    // If the form is vaaid - need to remove all error states
+    if (!this.dynamicForm.valid || !this.config.form) return;
+
+    Object.keys(this.config.form.fields).forEach((fieldName) => {
+      if (!this.config?.form) return;
+      this.config.form.fields[fieldName].errorMessage = '';
     });
   }
 
@@ -133,5 +142,32 @@ export class DynamicModal {
         )
       );
     });
+  }
+
+  private checkPasswordMatching(): boolean {
+    if (
+      !this.config ||
+      !this.config.form ||
+      !this.config.form.passwordFieldsToMatch
+    )
+      return false;
+
+    const form = this.config.form;
+    if (!form.passwordFieldsToMatch) return false;
+
+    const passwordFieldName = form.passwordFieldsToMatch.password;
+    const confirmationFieldName = form.passwordFieldsToMatch.confirmation;
+
+    const passwordField = this.dynamicForm.get(passwordFieldName);
+    const confirmationField = this.dynamicForm.get(confirmationFieldName);
+
+    if (passwordField?.value !== confirmationField?.value) {
+      const errorMessage = 'Passwords do not match';
+      form.fields[passwordFieldName].errorMessage = errorMessage;
+      form.fields[confirmationFieldName].errorMessage = errorMessage;
+      return false;
+    }
+
+    return true;
   }
 }

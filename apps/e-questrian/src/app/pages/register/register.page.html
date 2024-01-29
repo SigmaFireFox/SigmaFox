@@ -2,5 +2,13 @@
   [generalConfig]="generalConfig"
 ></app-general-screen-header-component>
 <sigmafox-modal-register
+  *ngIf="error === firebaseAuthErrors.None"
+  [registerDetails]="registerDetails"
   (register)="register($event)"
+  (signin)="onSignInClicked()"
 ></sigmafox-modal-register>
+<sigmafox-modal-error
+  *ngIf="error !== firebaseAuthErrors.None"
+  [error]="error"
+  (closed)="onErrorModalClose()"
+></sigmafox-modal-error>
