@@ -42,6 +42,11 @@
           "
           (click)="appointmentClicked(appointmentID)"
         >
+          <span
+            *ngIf="appointments[appointmentID].invoice"
+            class="appointment-button-asterisk"
+            >*</span
+          >
           {{ appointments[appointmentID].subject }}
         </mat-button>
       </div>
