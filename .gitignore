@@ -7,7 +7,7 @@ tmp
 
 # dependencies
 node_modules
-.nx
+.nx/cache
 
 # IDEs and editors
 /.idea
