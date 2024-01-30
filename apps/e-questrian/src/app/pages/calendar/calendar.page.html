@@ -1,29 +1,32 @@
-<div class="page-header-container">Your Calendar</div>
-
-<div class="date-container">
-  <button class="datepicker-button" mat-button (click)="picker.open()">
-    <mat-form-field style="width: 0px; height: 0px; visibility: hidden">
-      <input
-        matInput
-        [matDatepicker]="picker"
-        (dateInput)="changeDate($event.value)"
-      />
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-    <mat-icon>insert_invitation</mat-icon>
-  </button>
-  <mat-icon (click)="changeDay(-1)">keyboard_arrow_left</mat-icon>
-  <div>{{ date | date: "dd/MM/yyyy" }}</div>
-  <mat-icon (click)="changeDay(1)">keyboard_arrow_right</mat-icon>
+<div class="page-header-container">
+  <div class="page-header-buffer"></div>
+  <div class="page-header-title">Your Calendar</div>
+  <div class="date-picker-container">
+    <button class="datepicker-button" mat-button (click)="picker.open()">
+      <mat-form-field style="width: 0px; height: 0px; visibility: hidden">
+        <input
+          matInput
+          [matDatepicker]="picker"
+          (dateInput)="changeDate($event.value)"
+        />
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-icon>insert_invitation</mat-icon>
+    </button>
+    <mat-icon (click)="changeDay(-1)">keyboard_arrow_left</mat-icon>
+    <div>{{ date | date: "dd/MM/yyyy" }}</div>
+    <mat-icon (click)="changeDay(1)">keyboard_arrow_right</mat-icon>
+  </div>
 </div>
 
 <div class="calendar-container">
-  <div
-    *ngFor="let block of calenderBlocks"
-    (click)="calendarBlockClicked(block.time)"
-  >
-    <hr />
-    <div class="block-container">
+  <div class="calendar-buffer"></div>
+  <div class="calendar-blocks-container">
+    <div
+      *ngFor="let block of calenderBlocks"
+      class="block-container"
+      (click)="calendarBlockClicked(block.time)"
+    >
       <div class="block-time-container">
         {{ block.time.hours }}:{{ block.time.minutes | number: "2.0" }}
       </div>
@@ -45,6 +48,7 @@
     </div>
   </div>
 </div>
+
 <app-new-appointment-modal
   *ngIf="displayAppointmentForm"
   [date]="date"

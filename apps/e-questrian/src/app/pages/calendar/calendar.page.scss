@@ -1,64 +1,94 @@
 .page-header-container {
+  z-index: 2;
   display: flex;
+  flex-direction: column;
+  height: calc(7.5vh + 12vh);
+  position: fixed;
   width: 100%;
-  height: 50px;
-  font-size: large;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
+  padding-bottom: 10px;
+  top: 0;
+
+  .page-header-buffer {
+    height: 7.5vh;
+    min-height: 50px;
+  }
+
+  .page-header-title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .date-picker-container {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    background-color: white;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+
+    .datepicker-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+    }
+  }
 }
 
-.date-container {
-  display: flex;
-  width: 100%;
-  height: 30px;
-  font-size: larger;
-  justify-content: center;
-  align-items: center;
-  font-weight: normal;
-}
-
-.datepicker-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-}
 
 .calendar-container {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 20px);
-  height: 100%;
-  margin: 10px;
-}
 
-.block-container {
-  height: 25px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+  .calendar-buffer {
+    height: calc(7.5vh + 12vh + 3px);
+  }
 
-.block-time-container {
-  width: 10%;
-}
+  .calendar-blocks-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    height: calc(100% - 7.5vh - 12vh);
+    margin: 0 10px;
 
-hr {
-  margin: 0;
-}
+    .block-container {
+      height: 25px;
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      border: 1px black;
+      border-style: none none solid none;
 
-.lesson-button {
-  background-color: aqua;
-}
+      .block-time-container {
+        width: 10%;
+      }
 
-.appointment-button {
-  background-color: hotpink;
-}
+      .block-appointment-container {
+        .lesson-button {
+          background-color: aqua;
+        }
 
-.lesson-button,
-.appointment-button {
-  padding: 2px 5px;
-  margin: 0 3px;
+        .appointment-button {
+          background-color: hotpink;
+        }
+
+        .lesson-button,
+        .appointment-button {
+          padding: 2px 5px;
+          margin: 0 3px;
+        }
+      }
+    }
+  }
 }
