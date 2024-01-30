@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import {
   MenuPageConfig,
   PageConfig,
-} from 'src/app/interfaces/common-page-configs.interface';
+} from '../../interfaces/common-page-configs.interface';
 
 @Component({
   selector: 'app-menu-screen',

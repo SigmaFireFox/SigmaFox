@@ -49,21 +49,20 @@ import { ClientTestimonialsSection } from './pages/landing/page-sections/client-
 import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section/whats-new.section';
 import { LandingScreen } from '@sigmafox/screens';
 import { WidgetAccordionContainer } from '@sigmafox/widgets';
+import { FinanceMainMenuPage } from './pages/finances/sub-pages/finance-main-menu/finance-main-menu.page';
+import { FinancePageModule } from './pages/finances/finances.module';
 
 @NgModule({
   declarations: [
     // Pages
     DashboardPage,
     CalendarPage,
-    FinancesPage,
     ClientsPage,
     LandingPage,
     SignInPage,
     RegisterPage,
 
     // Screens and Sections
-    FinancialDocListScreen,
-    FinancialDocViewScreen,
     ProcessResultsScreen,
     GeneralItemsListScreen,
 
@@ -83,8 +82,6 @@ import { WidgetAccordionContainer } from '@sigmafox/widgets';
     // Components
     AppComponent,
     NavbarComponent,
-    MenuComponent,
-    GeneralScreenHeaderComponent,
   ],
   bootstrap: [AppComponent],
   imports: [
@@ -111,6 +108,13 @@ import { WidgetAccordionContainer } from '@sigmafox/widgets';
     LandingScreen,
     ErrorModal,
     WidgetAccordionContainer,
+    FinancePageModule,
+
+    // Standalone components
+    MenuComponent,
+    GeneralScreenHeaderComponent,
+    FinancialDocListScreen,
+    FinancialDocViewScreen,
   ],
 })
 export class AppModule {}

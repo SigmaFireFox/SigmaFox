@@ -87,10 +87,10 @@ export class InvoicesService {
     return invoiceDocItems;
   }
 
-  setInvoiceDocForDisplay(selectedInvoiceID: number): DocView {
+  setInvoiceDocForDisplay(selectedInvoiceID: number): Promise<DocView> {
     const invoiceDocViewConfig: DocView = {} as DocView;
     this.currentInvoices[selectedInvoiceID];
-    invoiceDocViewConfig.subHeader = 'Invoice #' + selectedInvoiceID;
+    invoiceDocViewConfig.header = 'Invoice #' + selectedInvoiceID;
     invoiceDocViewConfig.docNumber = selectedInvoiceID;
     const firstAppoinentNumber =
       this.currentInvoices[selectedInvoiceID]?.appointments[0];
@@ -98,6 +98,7 @@ export class InvoicesService {
       (this.currentAppointments[firstAppoinentNumber]
         ?.client as ClientDetail) || {};
     invoiceDocViewConfig.lineItems = [{ Lessons: [] }];
+    let subTotal = 0;
     this.currentInvoices[selectedInvoiceID]?.appointments.forEach(
       (appointmentID) => {
         invoiceDocViewConfig.lineItems[0]['Lessons'].push({
@@ -106,9 +107,31 @@ export class InvoicesService {
           detail: this.currentAppointments[appointmentID].subject || '',
           amount: 250,
         });
+        subTotal += 250;
       }
     );
-    return invoiceDocViewConfig;
+
+    invoiceDocViewConfig.summaryItems = [
+      {
+        detail: 'Sub-Total',
+        amount: subTotal,
+        bold: true,
+        isTally: true,
+      },
+      {
+        detail: 'VAT (15%)',
+        amount: subTotal * 0.15,
+      },
+      {
+        detail: 'Total',
+        amount: subTotal * 1.15,
+        bold: true,
+        isTally: true,
+      },
+    ];
+    return new Promise(async (resolve) => {
+      resolve(invoiceDocViewConfig);
+    });
   }
 
   setInvoiceGenerationResultsForDisplay(results: GenerateInvoiceResult) {

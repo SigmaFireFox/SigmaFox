@@ -1,27 +1,7 @@
-<div class="page-container" [ngSwitch]="currentViewState">
-  <app-menu-component
-    *ngSwitchCase="viewStateEnum.MAIN"
-    [config]="financeMenuPageConfig"
-    (viewStateSelected)="onMenuOptionClicked($event)"
-  ></app-menu-component>
+<div class="page-header-buffer"></div>
+<router-outlet></router-outlet>
 
-  <app-menu-component
-    *ngSwitchCase="viewStateEnum.INVOICES"
-    [config]="invoicesMenuPageConfig"
-    (viewStateSelected)="onMenuOptionClicked($event)"
-  ></app-menu-component>
-
-  <div *ngSwitchCase="viewStateEnum.VIEW_INVOICES">
-    <app-financial-doc-list-screen
-      [config]="this.invoiceListPageConfig"
-      (itemClicked)="onInvoiceClicked($event)"
-    ></app-financial-doc-list-screen>
-    <app-menu-component
-      [config]="invoiceListMenuConfig"
-      (viewStateSelected)="onMenuOptionClicked($event)"
-    ></app-menu-component>
-  </div>
-
+<!-- <div class="page-container" [ngSwitch]="currentViewState">
   <app-financial-doc-view-screen
     *ngSwitchCase="viewStateEnum.INVOICE_DETAIL"
     [config]="invoiceDocViewConfig"
@@ -92,4 +72,4 @@
       (voidPayment)="paymentVoided($event)"
     ></app-payments-modal>
   </div>
-</div>
+</div> -->

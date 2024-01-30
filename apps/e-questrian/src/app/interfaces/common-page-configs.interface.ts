@@ -4,7 +4,7 @@ import { MenuOption } from './menu-options.interface';
 
 export interface PageConfig {
   header: string;
-  subHeader: string;
+  subHeader?: string;
 }
 
 export interface MenuPageConfig extends PageConfig {
@@ -44,6 +44,7 @@ export interface DocView extends PageConfig {
   docNumber: number;
   docClient: ClientDetail;
   lineItems: LineItemGroup[];
+  summaryItems: SummaryItem[];
 }
 
 export interface LineItemGroup {
@@ -57,6 +58,12 @@ export interface LineItem {
   amount: number;
 }
 
+export interface SummaryItem {
+  detail: string;
+  amount: number;
+  bold?: boolean;
+  isTally?: boolean;
+}
 export interface ProcessResultsPageConfig extends PageConfig {
   explainer: string;
   results: ProcessResult[];

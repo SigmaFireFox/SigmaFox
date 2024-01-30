@@ -1,7 +1,9 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 /* eslint-disable @angular-eslint/component-selector */
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { GeneralScreenHeaderComponent } from '../../components/general-screen-header/general-screen-header.component';
 import {
   FinancialDocListPageConfig,
   DocID,
@@ -14,6 +16,8 @@ import {
   selector: 'app-financial-doc-list-screen',
   templateUrl: './financial-doc-list.screen.html',
   styleUrls: ['./financial-doc-list.screen.scss'],
+  standalone: true,
+  imports: [CommonModule, GeneralScreenHeaderComponent],
 })
 export class FinancialDocListScreen implements OnInit {
   @Input() config = {} as FinancialDocListPageConfig;

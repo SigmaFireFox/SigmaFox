@@ -1,29 +1,49 @@
-<app-general-screen-header-component
-  [header]="header"
-></app-general-screen-header-component>
-<div class="basic-detail-container">
-  <div class="general-line">
-    <div>Client:</div>
-    <div>{{ config.docClient.displayName }}</div>
-  </div>
-</div>
+<div class="screen-container">
+  <app-general-screen-header-component
+    [header]="header"
+  ></app-general-screen-header-component>
 
-<div class="list-container">
-  <div class="header-line">
-    <div class="number-column">#</div>
-    <div class="date-column">Date</div>
-    <div class="detail-column">Detail</div>
-    <div class="amount-column">Amount</div>
+  <div class="basic-detail-container">
+    <div class="general-line">
+      <div>Client:&nbsp;</div>
+      <strong>{{ config.docClient.displayName }}</strong>
+    </div>
   </div>
-  <div *ngFor="let LineItemGroup of config.lineItems">
-    <div *ngFor="let LineItem of LineItemGroup | keyvalue">
-      {{ LineItem.key }}
-      <div *ngFor="let Item of LineItem.value" class="general-line">
-        <div class="number-column">{{ Item.number }}</div>
-        <div class="date-column">{{ Item.date | date: "dd/MM/yyyy" }}</div>
-        <div class="detail-column">{{ Item.detail }}</div>
-        <div class="amount-column">{{ Item.amount }}</div>
+
+  <div class="list-container">
+    <div class="header-line">
+      <div class="number-column">#</div>
+      <div class="date-column">Date</div>
+      <div class="detail-column">Detail</div>
+      <div class="amount-column">Amount</div>
+    </div>
+    <div *ngFor="let LineItemGroup of config.lineItems">
+      <div *ngFor="let LineItem of LineItemGroup | keyvalue">
+        <div class="subheader-line">{{ LineItem.key }}</div>
+        <div *ngFor="let Item of LineItem.value" class="general-line">
+          <div class="number-column">{{ Item.number }}</div>
+          <div class="date-column">{{ Item.date | date: "dd/MM/yyyy" }}</div>
+          <div class="detail-column">{{ Item.detail }}</div>
+          <div class="amount-column">{{ Item.amount }}</div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div *ngIf="config.summaryItems" class="summary-container">
+    <div
+      *ngFor="let item of config.summaryItems"
+      class="general-line"
+      [ngStyle]="{
+        'font-weight': item.bold ? 'bold' : 'normal',
+        'padding': item.isTally ? '5px 0' : '2px 0',
+        'border-style': item.isTally ? 'solid none none none' : 'none'
+
+        }"
+    >
+      <div class="detail-column">{{item.detail}}</div>
+      <div class="amount-column">{{item.amount}}</div>
+    </div>
+    <div class="double-line"></div>
   </div>
 </div>

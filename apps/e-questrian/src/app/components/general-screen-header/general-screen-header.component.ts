@@ -6,6 +6,7 @@ import { PageConfig } from '../../interfaces/common-page-configs.interface';
   selector: 'app-general-screen-header-component',
   templateUrl: './general-screen-header.component.html',
   styleUrls: ['./general-screen-header.component.scss'],
+  standalone: true,
 })
 export class GeneralScreenHeaderComponent {
   @Input() header = '';

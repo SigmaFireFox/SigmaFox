@@ -1,8 +1,9 @@
 /* eslint-disable @angular-eslint/component-selector */
 /* eslint-disable @angular-eslint/component-class-suffix */
 import { Component } from '@angular/core';
+import { Route } from '@angular/router';
 import {
-  FinanceMenuPageConfig,
+  // FinanceMenuPageConfig,
   InvoicesMenuPageConfig,
   InvoiceListPageConfig,
   InvoiceListMenuConfig,
@@ -41,7 +42,7 @@ export interface MenuOption {
 })
 export class FinancesPage {
   // Configs
-  financeMenuPageConfig = FinanceMenuPageConfig;
+  // financeMenuPageConfig = FinanceMenuPageConfig;
   invoicesMenuPageConfig = InvoicesMenuPageConfig;
   invoiceListPageConfig = InvoiceListPageConfig;
   invoiceListMenuConfig = InvoiceListMenuConfig;
@@ -131,9 +132,9 @@ export class FinancesPage {
       case ViewState.VIEW_INVOICES:
         this.getInvoiceDataForDisplay();
         break;
-      case ViewState.INVOICE_DETAIL:
-        this.getInvoiceDocForDisplay();
-        break;
+      // case ViewState.INVOICE_DETAIL:
+      //   this.getInvoiceDocForDisplay();
+      //   break;
       case ViewState.VIEW_PAYMENTS:
         this.getPaymentDocForDisplay();
         break;
@@ -149,11 +150,11 @@ export class FinancesPage {
       this.invoiceService.setInvoiceDataForDisplay();
   }
 
-  private getInvoiceDocForDisplay() {
-    this.invoiceDocViewConfig = this.invoiceService.setInvoiceDocForDisplay(
-      this.currentInvoiceID
-    );
-  }
+  // private getInvoiceDocForDisplay() {
+  //   this.invoiceDocViewConfig = this.invoiceService.setInvoiceDocForDisplay(
+  //     this.currentInvoiceID
+  //   );
+  // }
 
   private getPaymentDocForDisplay() {
     this.currentPaymentID = 0;

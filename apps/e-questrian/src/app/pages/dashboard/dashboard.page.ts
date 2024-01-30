@@ -17,7 +17,7 @@ import { AuthenticationService } from '../../services/authentication/authenticat
   templateUrl: './dashboard.page.html',
   styleUrls: ['./dashboard.page.scss'],
 })
-export class DashboardPage implements OnInit {
+export class DashboardPage {
   config: MenuPageConfig | undefined;
   generalConfig = { header: 'e-Questrian', subHeader: '' } as PageConfig;
   panelOpenState = false;
@@ -27,9 +27,9 @@ export class DashboardPage implements OnInit {
     public authService: AuthenticationService
   ) {}
 
-  ngOnInit() {
-    this.setConfig();
-  }
+  // ngOnInit() {
+  //   this.setConfig();
+  // }
 
   onActionSelected(action: OptionAction): void {
     switch (action) {
@@ -39,33 +39,33 @@ export class DashboardPage implements OnInit {
     }
   }
 
-  private setConfig() {
-    this.config = {
-      header: '',
-      subHeader: 'Main menu',
-      menu: [
-        {
-          display: 'Calendar',
-          styling: OptionStyling.Primary,
-          path: '/calendar',
-        },
-        {
-          display: 'Finances',
-          styling: OptionStyling.Primary,
-          path: '/finances',
-        },
-        {
-          display: 'Clients',
-          styling: OptionStyling.Primary,
-          path: '/clients',
-        },
-        {
-          display: 'Log out',
-          styling: OptionStyling.Secondary,
-          path: '/signin',
-          action: OptionAction.Log_Out,
-        },
-      ],
-    };
-  }
+  // private setConfig() {
+  //   this.config = {
+  //     header: '',
+  //     subHeader: 'Main menu',
+  //     menu: [
+  //       {
+  //         display: 'Calendar',
+  //         styling: OptionStyling.Primary,
+  //         path: '/calendar',
+  //       },
+  //       {
+  //         display: 'Finances',
+  //         styling: OptionStyling.Primary,
+  //         path: '/finances',
+  //       },
+  //       {
+  //         display: 'Clients',
+  //         styling: OptionStyling.Primary,
+  //         path: '/clients',
+  //       },
+  //       {
+  //         display: 'Log out',
+  //         styling: OptionStyling.Secondary,
+  //         path: '/signin',
+  //         action: OptionAction.Log_Out,
+  //       },
+  //     ],
+  //   };
+  // }
 }

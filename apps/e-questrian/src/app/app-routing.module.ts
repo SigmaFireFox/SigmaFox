@@ -36,7 +36,10 @@ export const routes: Routes = [
   {
     path: AppRoutePaths.Finances,
     canActivate: [AuthGuardService],
-    component: FinancesPage,
+    loadChildren: () =>
+      import('./pages/finances/finances.module').then(
+        (m) => m.FinancePageModule
+      ),
   },
   {
     path: AppRoutePaths.Clients,
