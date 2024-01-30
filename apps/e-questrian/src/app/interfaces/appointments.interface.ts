@@ -1,5 +1,5 @@
 import { Time } from '@angular/common';
-import { ClientDetail } from './clients.interface';
+import { AppClientDetail } from './clients.interface';
 
 export enum AppointmentType {
   Lesson = 1,
@@ -16,7 +16,7 @@ export interface AppointmentDetail {
   date: Date;
   startTime: Time;
   duration: Time;
-  client?: ClientDetail;
+  client?: AppClientDetail;
   invoice: number;
   cancelled: boolean;
   creditNote?: number;

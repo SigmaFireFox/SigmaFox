@@ -24,7 +24,7 @@
           <div class="number-column">{{ Item.number }}</div>
           <div class="date-column">{{ Item.date | date: "dd/MM/yyyy" }}</div>
           <div class="detail-column">{{ Item.detail }}</div>
-          <div class="amount-column">{{ Item.amount }}</div>
+          <div class="amount-column">{{ Item.amount | number : '1.2-2'}}</div>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         }"
     >
       <div class="detail-column">{{item.detail}}</div>
-      <div class="amount-column">{{item.amount}}</div>
+      <div class="amount-column">{{item.amount| number : '1.2-2'}}</div>
     </div>
     <div class="double-line"></div>
   </div>

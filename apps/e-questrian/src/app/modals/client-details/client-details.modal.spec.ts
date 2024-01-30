@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ClientDetail } from 'src/app/interfaces/clients.interface';
 
-import { ClientDetailsModal } from './client-details.modal';
+import { AppClientDetailsModal } from './client-details.modal';
 
 describe('ClientDetailsModal', () => {
-  let component: ClientDetailsModal;
-  let fixture: ComponentFixture<ClientDetailsModal>;
+  let component: AppClientDetailsModal;
+  let fixture: ComponentFixture<AppClientDetailsModal>;
   let removeClientSpy: jasmine.Spy;
   let newClientSpy: jasmine.Spy;
   let editedClientSpy: jasmine.Spy;
@@ -15,12 +15,12 @@ describe('ClientDetailsModal', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ReactiveFormsModule],
-      declarations: [ClientDetailsModal],
+      declarations: [AppClientDetailsModal],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClientDetailsModal);
+    fixture = TestBed.createComponent(AppClientDetailsModal);
     component = fixture.componentInstance;
     fixture.detectChanges();
     removeClientSpy = spyOn(component.removeClient, 'emit');

@@ -38,7 +38,8 @@ export class SignInModal implements OnInit {
 
   ngOnInit() {
     this.dynamicModalConfig = {
-      header: 'Sign in',
+      header: { value: 'Sign in', editable: false },
+      editMode: true,
       form: {
         fields: {
           [FormFieldNames.Email]: {

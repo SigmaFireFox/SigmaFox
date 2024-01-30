@@ -17,12 +17,8 @@
     ></app-menu-component>
   </div>
 
-  <app-client-details-modal
+  <sigmafox-modal-client-details
     *ngSwitchCase="viewStateEnum.CLIENT_DETAIL"
-    [currentClient]="currentClient"
-    (closed)="switchViewState(viewStateEnum.VIEW)"
-    (newClient)="addClient($event)"
-    (editedClient)="editClient($event)"
-    (removeClient)="removeClient()"
-  ></app-client-details-modal>
+    [clientDetails]="currentClient"
+  ></sigmafox-modal-client-details>
 </div>

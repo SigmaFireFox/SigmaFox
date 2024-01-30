@@ -20,10 +20,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppComponent } from './app.component';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { CalendarPage } from './pages/calendar/calendar.page';
-import { FinancesPage } from './pages/finances/finances.page';
 import { ClientsPage } from './pages/clients/clients.page';
 import { AppointmentModal } from './modals/appointment-details/appointment-detail.modal';
-import { ClientDetailsModal } from './modals/client-details/client-details.modal';
 import { PaymentsModal } from './modals/payments/payments.modal';
 import { MenuComponent } from './components/menu/menu.component';
 import { FinancialDocListScreen } from './screens/financial-doc-list/financial-doc-list.screen';
@@ -37,7 +35,12 @@ import { GeneralItemsListScreen } from './screens/general-items-list/general-ite
 import { GeneralScreenHeaderComponent } from './components/general-screen-header/general-screen-header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-import { ErrorModal, RegisterModal, SignInModal } from '@sigmafox/modals';
+import {
+  ClientDetailsModal,
+  ErrorModal,
+  RegisterModal,
+  SignInModal,
+} from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -49,7 +52,6 @@ import { ClientTestimonialsSection } from './pages/landing/page-sections/client-
 import { WhatsNewSection } from './pages/landing/page-sections/whats-new-section/whats-new.section';
 import { LandingScreen } from '@sigmafox/screens';
 import { WidgetAccordionContainer } from '@sigmafox/widgets';
-import { FinanceMainMenuPage } from './pages/finances/sub-pages/finance-main-menu/finance-main-menu.page';
 import { FinancePageModule } from './pages/finances/finances.module';
 
 @NgModule({
@@ -74,7 +76,6 @@ import { FinancePageModule } from './pages/finances/finances.module';
     // Modals
     WarningsModal,
     AppointmentModal,
-    ClientDetailsModal,
     PaymentsModal,
     GenerateStatementModal,
     GenerateInvoiceModal,
@@ -102,15 +103,19 @@ import { FinancePageModule } from './pages/finances/finances.module';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    SignInModal,
-    RegisterModal,
+
     StandardButton,
     LandingScreen,
-    ErrorModal,
     WidgetAccordionContainer,
     FinancePageModule,
 
-    // Standalone components
+    // Lib modals
+    SignInModal,
+    RegisterModal,
+    ErrorModal,
+    ClientDetailsModal,
+
+    // App interal standalone components
     MenuComponent,
     GeneralScreenHeaderComponent,
     FinancialDocListScreen,

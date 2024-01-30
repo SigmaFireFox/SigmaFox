@@ -1,10 +1,10 @@
 <div *ngIf="config" class="screen-container">
   <div class="modal-container">
     <!-- Header -->
-    <div class="modal-header">{{config.header}}</div>
+    <div class="modal-header">{{config.header.value}}</div>
 
     <!-- Form -->
-    <form class="form-container" [formGroup]="dynamicForm">
+    <form *ngIf="config.form" class="form-container" [formGroup]="dynamicForm">
       <div
         class="form-line-1"
         *ngFor="let fieldName of config.form?.fieldsOrder"
@@ -12,10 +12,23 @@
         <div class="form-line-2" *ngIf="config.form">
           <div
             class="form-line-3"
+            [ngStyle]="{'flex-direction': config.form.preventFieldLineWrap? 'row':'column'}"
             *ngVar="config.form.fields[fieldName] as formField"
           >
-            <div class="form-line-label">{{formField.label}}:</div>
             <div
+              class="form-line-label"
+              [ngStyle]="{'padding': config.editMode? '5px 0':'0'}"
+            >
+              {{formField.label}}:
+            </div>
+            <div
+              *ngIf="!config.editMode"
+              class="form-line-input-container non-editable-field"
+            >
+              {{formField.value}}
+            </div>
+            <div
+              *ngIf="config.editMode"
               class="form-line-input-container"
               [ngSwitch]="formField.fieldType"
             >

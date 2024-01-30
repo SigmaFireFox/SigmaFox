@@ -1,8 +1,8 @@
 export interface Clients {
-  [cientID: number]: ClientDetail;
+  [cientID: number]: AppClientDetail;
 }
 
-export interface ClientDetail {
+export interface AppClientDetail {
   displayName: string;
   firstName: string;
   lastName: string;

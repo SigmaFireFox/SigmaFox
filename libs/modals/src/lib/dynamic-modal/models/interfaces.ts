@@ -3,16 +3,23 @@ import { StandardButtonConfig } from 'libs/components/buttons/src';
 import { DynamicModalFormFieldType as DynamicModalFieldType } from './enum';
 
 export interface DynamicModalConfig {
-  header: string;
+  header: DynamicModalString;
   subHeader?: string[];
+  editMode: boolean;
   form?: DynamicModalForm;
   actionPanel: DynamicModalActionPanel;
+}
+
+export interface DynamicModalString {
+  value: string;
+  editable: boolean;
 }
 
 export interface DynamicModalForm {
   fields: DynamicModalFields;
   fieldsOrder: string[];
   passwordFieldsToMatch?: DynamicModalFieldsToMatch;
+  preventFieldLineWrap?: boolean;
 }
 
 export interface DynamicModalFields {

@@ -2,7 +2,7 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { ClientDetail, Clients } from '../../interfaces/clients.interface';
+import { AppClientDetail, Clients } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 import {
   DateRangeSelector,
@@ -28,7 +28,7 @@ export class GenerateStatementModal {
   @Output() cancelled = new EventEmitter<void>();
 
   dateRangeSelector = DateRangeSelector;
-  selectedClient = {} as ClientDetail;
+  selectedClient = {} as AppClientDetail;
   selectedDateRange = {} as DateRange;
   startDate = new Date();
   endDate = new Date();
@@ -117,7 +117,7 @@ export class GenerateStatementModal {
   }
 
   // Call backs to set options
-  compareClients(client: ClientDetail, displayName: string) {
+  compareClients(client: AppClientDetail, displayName: string) {
     return client.displayName == displayName;
   }
 }

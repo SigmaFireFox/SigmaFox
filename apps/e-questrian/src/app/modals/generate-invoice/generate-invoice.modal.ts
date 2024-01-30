@@ -2,7 +2,7 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { ClientDetail, Clients } from '../../interfaces/clients.interface';
+import { AppClientDetail, Clients } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 
 export enum InvoiceRange {
@@ -29,7 +29,7 @@ export interface GenerateInvoiceParameters {
   dateRange: DateRange;
   clientRange: ClientRange;
   date: Date;
-  clients: ClientDetail[];
+  clients: AppClientDetail[];
 }
 
 @Component({
@@ -47,7 +47,7 @@ export class GenerateInvoiceModal {
   dateRange = DateRange.ALL;
   clientRange = ClientRange.ALL;
   selectedDate = new Date();
-  selectedClients = [] as ClientDetail[];
+  selectedClients = [] as AppClientDetail[];
   generateInvoicesParametersForm = new UntypedFormGroup({
     invoiceRange: new UntypedFormControl(1),
     dateRange: new UntypedFormControl(1),
@@ -128,7 +128,7 @@ export class GenerateInvoiceModal {
   }
 
   // Call backs to set options
-  compareClients(client: ClientDetail, displayName: string) {
+  compareClients(client: AppClientDetail, displayName: string) {
     return client.displayName == displayName;
   }
 }

@@ -49,29 +49,10 @@ export class RegisterModal implements OnInit {
 
   dynamicModalConfig: DynamicModalConfig | undefined;
 
-  registerForm = new UntypedFormGroup({
-    firstName: new UntypedFormControl('', Validators.required),
-    lastName: new UntypedFormControl('', Validators.required),
-    email: new UntypedFormControl('', Validators.email),
-    password: new UntypedFormControl('', Validators.required),
-    passwordConfirm: new UntypedFormControl('', Validators.required),
-  });
-  showPassword = false;
-  showConfirmPassword = false;
-  isPasswordMatch = false;
-
-  buttons: StandardButtonConfig[] = [
-    {
-      buttonID: ButtonID.Register,
-      buttonTextContent: 'Register',
-      buttonStyleClass: ButtonStyleClass.Primary,
-      isDisabled: !this.registerForm.valid,
-    },
-  ];
-
   ngOnInit() {
     this.dynamicModalConfig = {
-      header: 'Register',
+      header: { value: 'Register', editable: false },
+      editMode: true,
       form: {
         fields: {
           [FormFieldNames.FirstName]: {

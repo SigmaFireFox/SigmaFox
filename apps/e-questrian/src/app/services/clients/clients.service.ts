@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Clients, ClientDetail } from '../../interfaces/clients.interface';
+import { Clients, AppClientDetail } from '../../interfaces/clients.interface';
 import { GeneralItem } from '../../interfaces/common-page-configs.interface';
 
 export enum FinancialRecordType {
@@ -35,12 +35,12 @@ export class ClientsService {
     return clientID;
   }
 
-  editClient(clientID: number, updatedClientDetail: ClientDetail) {
+  editClient(clientID: number, updatedClientDetail: AppClientDetail) {
     this.currentClientsData[clientID] = updatedClientDetail;
     this.persistClientData();
   }
 
-  addClient(clientDetail: ClientDetail) {
+  addClient(clientDetail: AppClientDetail) {
     const clientID = Object.keys(this.currentClientsData).length + 1;
     this.currentClientsData[clientID] = clientDetail;
     this.persistClientData();

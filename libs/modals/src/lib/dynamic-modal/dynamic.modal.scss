@@ -51,13 +51,13 @@
                             width: 40%;
                             font-size: 2vh;
                             font-weight: bold;
-                            padding: 5px 0;
                         }
 
                         .form-line-input-container {
                             flex-direction: column;
                             display: flex;
                             flex-grow: 1;
+                            justify-content: center;
 
                             .form-line-input-and-icon-container {
                                 flex-direction: row;
@@ -67,7 +67,7 @@
 
                                 .form-line-input {
                                     border: none;
-                                    height: 3vh;
+                                    height: 2.5vh;
                                     display: flex;
                                     flex-grow: 1;
                                     font-size: 2vh;
@@ -90,6 +90,11 @@
                                 color: red;
                                 font-size: 2vh;
                             }
+                        }
+
+                        .non-editable-field {
+                            align-items: end;
+                            font-size: 2vh;
                         }
                     }
                 }
@@ -153,7 +158,6 @@
                 .form-line-1 {
                     padding: 0px 15px;
                     align-items: center;
-                    flex-direction: column;
                     flex: 1;
 
                     .form-line-2 {
@@ -163,10 +167,9 @@
                         .form-line-3 {
                             display: flex;
                             width: 100%;
-                            flex-direction: column;
 
                             .form-line-label {
-                                width: 100%;
+                                width: 60%;
                                 margin: 5px 0;
                                 justify-content: flex-start;
                             }

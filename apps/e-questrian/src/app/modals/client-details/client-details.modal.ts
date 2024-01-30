@@ -2,7 +2,7 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { ClientDetail } from '../../interfaces/clients.interface';
+import { AppClientDetail } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 
 @Component({
@@ -10,11 +10,11 @@ import { ClientsService } from '../../services/clients/clients.service';
   templateUrl: './client-details.modal.html',
   styleUrls: ['./client-details.modal.scss'],
 })
-export class ClientDetailsModal implements OnInit {
-  @Input() currentClient = {} as ClientDetail;
+export class AppClientDetailsModal implements OnInit {
+  @Input() currentClient = {} as AppClientDetail;
   @Output() closed = new EventEmitter<void>();
-  @Output() newClient = new EventEmitter<ClientDetail>();
-  @Output() editedClient = new EventEmitter<ClientDetail>();
+  @Output() newClient = new EventEmitter<AppClientDetail>();
+  @Output() editedClient = new EventEmitter<AppClientDetail>();
   @Output() removeClient = new EventEmitter<void>();
 
   isNewClient: boolean | undefined;
@@ -50,8 +50,8 @@ export class ClientDetailsModal implements OnInit {
     }
 
     this.isNewClient
-      ? this.newClient.emit(this.clientForm.value as ClientDetail)
-      : this.editedClient.emit(this.clientForm.value as ClientDetail);
+      ? this.newClient.emit(this.clientForm.value as AppClientDetail)
+      : this.editedClient.emit(this.clientForm.value as AppClientDetail);
 
     this.isSaveAndNew ? this.ngOnInit() : this.closed.emit();
   }

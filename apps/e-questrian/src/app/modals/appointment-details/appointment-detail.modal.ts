@@ -17,7 +17,7 @@ import {
   AppointmentDetail,
   AppointmentType,
 } from '../../interfaces/appointments.interface';
-import { ClientDetail, Clients } from '../../interfaces/clients.interface';
+import { AppClientDetail, Clients } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 import { DateAndTimeService } from '../../services/date-time/date-time.service';
 import {
@@ -69,7 +69,7 @@ export class AppointmentModal implements OnInit {
     client: new UntypedFormControl(''),
   });
   displayTime = '';
-  selectedCient: ClientDetail | undefined;
+  selectedCient: AppClientDetail | undefined;
   appointmentTypeEnumKeys: string[] | undefined;
   appointmentTypeEnumKeysNumbers: number[] = [];
   preferredSubject = '';
@@ -155,7 +155,7 @@ export class AppointmentModal implements OnInit {
     return o1?.hours == o2?.hours && o1.minutes == o2.minutes;
   }
 
-  compareClients(client: ClientDetail, displayName: string) {
+  compareClients(client: AppClientDetail, displayName: string) {
     return client.displayName == displayName;
   }
 
@@ -168,7 +168,7 @@ export class AppointmentModal implements OnInit {
     switch (this.appointmentForm.controls['type'].value) {
       case AppointmentType.Lesson: {
         const clientDetail = this.appointmentForm.controls['client']
-          .value as ClientDetail;
+          .value as AppClientDetail;
         if (this.isClientChanged(clientDetail) && clientDetail.displayName) {
           this.selectedCient = clientDetail;
           this.appointmentForm.controls['client'].setValue(
@@ -179,7 +179,7 @@ export class AppointmentModal implements OnInit {
       }
       case AppointmentType.Other: {
         this.appointmentForm.controls['client'].setValue('');
-        this.selectedCient = {} as ClientDetail;
+        this.selectedCient = {} as AppClientDetail;
       }
     }
     this.showClientField =
@@ -353,7 +353,7 @@ export class AppointmentModal implements OnInit {
     return true;
   }
 
-  private isClientChanged(clientDetail: ClientDetail) {
+  private isClientChanged(clientDetail: AppClientDetail) {
     const previousValue = this.currentAppointment.client?.displayName
       ? this.currentAppointment.client.displayName
       : this.currentAppointment.client;

@@ -60,11 +60,13 @@ export class DynamicModal {
 
     if (!this.config?.form?.passwordFieldsToMatch) {
       this.formSubmitted.emit(this.dynamicForm.value);
+      this.buttonClicked.emit(buttonID);
       return;
     }
 
     if (this.checkPasswordMatching()) {
       this.formSubmitted.emit(this.dynamicForm.value);
+      this.buttonClicked.emit(buttonID);
       return;
     }
   }

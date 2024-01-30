@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { Appointments } from '../../interfaces/appointments.interface';
 import { CalendarData } from '../../interfaces/calander.interface';
-import { Clients, ClientDetail } from '../../interfaces/clients.interface';
+import { Clients, AppClientDetail } from '../../interfaces/clients.interface';
 import {
   FinancialDocItem,
   FinancialDocType,
@@ -96,7 +96,7 @@ export class InvoicesService {
       this.currentInvoices[selectedInvoiceID]?.appointments[0];
     invoiceDocViewConfig.docClient =
       (this.currentAppointments[firstAppoinentNumber]
-        ?.client as ClientDetail) || {};
+        ?.client as AppClientDetail) || {};
     invoiceDocViewConfig.lineItems = [{ Lessons: [] }];
     let subTotal = 0;
     this.currentInvoices[selectedInvoiceID]?.appointments.forEach(

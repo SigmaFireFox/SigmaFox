@@ -1,13 +1,14 @@
 /* eslint-disable @angular-eslint/component-selector */
 /* eslint-disable @angular-eslint/component-class-suffix */
 import { Component } from '@angular/core';
+import { ClientDetails } from '@sigmafox/modals';
 import {
   ClientMenuPageConfig,
   ClientListPageConfig,
   ViewClientsMenuConfig,
 } from '../../configs/client-page.configs';
 import { ClientPageViewState as ViewState } from '../../enums/viewstates.enum';
-import { ClientDetail } from '../../interfaces/clients.interface';
+import { AppClientDetail } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 
 export interface MenuOption {
@@ -28,7 +29,9 @@ export class ClientsPage {
   viewStateEnum = ViewState;
   currentViewState = ViewState.MAIN;
   clients = this.clientService.clientsOnFile;
-  currentClient: ClientDetail = {} as ClientDetail;
+  currentClientApp: AppClientDetail = {} as AppClientDetail;
+  currentClient: ClientDetails = {} as ClientDetails;
+
   currentClientID = 0;
 
   constructor(private clientService: ClientsService) {}
@@ -45,25 +48,36 @@ export class ClientsPage {
   viewClient(clientID: number) {
     this.currentClientID = clientID;
     this.clients = this.clientService.clientsOnFile;
-    this.currentClient = this.clients[clientID];
+    this.updateClientDetails(clientID);
     this.currentViewState = ViewState.CLIENT_DETAIL;
   }
 
-  addClient(client: ClientDetail) {
+  addClient(client: AppClientDetail) {
     this.clientService.addClient(client);
     this.clients = this.clientService.clientsOnFile;
   }
 
-  editClient(updatedClientDetails: ClientDetail) {
+  editClient(updatedClientDetails: AppClientDetail) {
     this.clientService.editClient(this.currentClientID, updatedClientDetails);
     this.clients = this.clientService.clientsOnFile;
   }
 
   removeClient() {
-    const updatedClientDetails = this.currentClient;
+    const updatedClientDetails = this.currentClientApp;
     updatedClientDetails.voided = true;
     this.clientListPageConfig.items[this.currentClientID].voided = true;
     this.editClient(updatedClientDetails);
     this.currentViewState = ViewState.VIEW;
+  }
+
+  private updateClientDetails(clientID: number) {
+    this.currentClientApp = this.clients[clientID];
+    this.currentClient = {
+      firstName: this.currentClientApp.firstName,
+      lastName: this.currentClientApp.lastName,
+      displayName: this.currentClientApp.displayName,
+      email: this.currentClientApp.email,
+      contactNumber: this.currentClientApp.telephoneNumber,
+    };
   }
 }
