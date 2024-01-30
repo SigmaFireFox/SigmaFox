@@ -1,5 +1,7 @@
-<div *ngIf="!hasPadding" class="dashboard-widget-container">
-  <mat-accordion class="padless-accordion">
+<div class="dashboard-widget-container">
+  <mat-accordion
+    class="{{ hasPadding ? 'padded-accordion' : 'padless-accordion' }}"
+  >
     <mat-expansion-panel class="bgcolor">
       <mat-expansion-panel-header
         [collapsedHeight]="'5vh'"
@@ -16,24 +18,3 @@
     </mat-expansion-panel>
   </mat-accordion>
 </div>
-
-<div *ngIf="hasPadding" class="dashboard-widget-container">
-  <mat-accordion class="padded-accordion">
-    <mat-expansion-panel class="bgcolor">
-      <mat-expansion-panel-header
-        [collapsedHeight]="'5vh'"
-        [expandedHeight]="'6vh'"
-      >
-        <mat-panel-title>Upcoming appointments</mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="template-container">
-        <ng-container
-          *ngIf="template"
-          [ngTemplateOutlet]="template"
-        ></ng-container>
-      </div>
-    </mat-expansion-panel>
-  </mat-accordion>
-</div>
-
-<ng-template #test> </ng-template>
