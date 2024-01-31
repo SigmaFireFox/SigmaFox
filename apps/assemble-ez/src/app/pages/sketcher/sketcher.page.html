@@ -9,13 +9,20 @@
   >
   </canvas>
   <div class="control-panel-container">
-    <div class="check-box-container">
-      <div>Allow only right angle (90deg) corners:</div>
-      <input type="checkbox" (change)="onBoxChecked()" checked />
+    <div class="message-box-container">
+      <div class="section-header">Messages</div>
+      <div class="message-box"></div>
+    </div>
+    <div class="settings-container">
+      <div class="section-header">Settings</div>
+      <div class="check-box-container">
+        <div>Allow only right angle (90deg) corners:</div>
+        <input type="checkbox" (change)="onBoxChecked()" checked />
+      </div>
     </div>
 
     <div *ngIf="lines.length" class="lines-list-container">
-      <div class="lines-list-header">Lines drawn</div>
+      <div class="section-header">Lines drawn</div>
 
       <div class="line-list-column-headers">
         <div class="line-name-column">Description</div>
@@ -36,16 +43,26 @@
       </div>
     </div>
 
-    <button
-      *ngIf="isFirstLineDrawn === true"
-      class="menu-button-warning-small"
-      (click)="onResetClicked()"
-    >
-      Reset
-    </button>
+    <div class="button-container">
+      <button
+        *ngIf="isFirstLineDrawn === true"
+        class="menu-button-warning-small"
+        (click)="onResetClicked()"
+      >
+        Reset
+      </button>
+      <button
+        *ngIf="isComplete"
+        class="menu-button-primary-small"
+        (click)="onScaleImageClicked()"
+      >
+        Scale Image
+      </button>
+    </div>
   </div>
 </div>
 
+<!-- Loose canvas Item  -->
 <button
   *ngIf="isFirstClick===false && !isComplete"
   class="capture-circle-button"

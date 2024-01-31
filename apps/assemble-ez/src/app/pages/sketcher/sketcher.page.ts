@@ -10,12 +10,22 @@ export enum LineDirection {
   Horizontal_SideToSide_X,
 }
 
+export interface FourCorners {
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
+}
+
 export interface Line {
   startCanvas: Coordinates;
   endCanvas: Coordinates;
   startScreen?: Coordinates;
   endScreen?: Coordinates;
 }
+
+const canvasMarginAfterRedraw = 0.05;
+const canvasToolMarginAfterRedraw = 0.1;
 
 @Component({
   selector: 'assemble-ez-sketcher',
@@ -120,6 +130,10 @@ export class SketcherPage {
     this.reDrawLinesOnCompletion();
   }
 
+  onBoxChecked() {
+    this.allowOnlyRightAngles = !this.allowOnlyRightAngles;
+  }
+
   onResetClicked() {
     this.clearCanvas();
 
@@ -129,8 +143,9 @@ export class SketcherPage {
     this.lines = [];
   }
 
-  onBoxChecked() {
-    this.allowOnlyRightAngles = !this.allowOnlyRightAngles;
+  onScaleImageClicked() {
+    const imageResizeFactor = this.determineSizeChangeFactor();
+    this.redrawImageToScale(imageResizeFactor);
   }
 
   onFloatingCornerClicked(line: Line) {
@@ -324,8 +339,6 @@ export class SketcherPage {
 
   private determineBreakLineEnd(actualClickXYCanvasXY: Coordinates) {
     const breakLineEnd = { x: 0, y: 0 };
-    console.log(this.clickedCornerXY);
-
     // Up/Down case
     if (!this.lineDirection) {
       breakLineEnd.x = this.clickedCornerXY.startCanvas.x;
@@ -369,16 +382,14 @@ export class SketcherPage {
     } else {
       // Left/Right case
       breakLineEnd.y = this.clickedCornerXY.startCanvas.y;
-      console.log(this.clickedCornerXY);
       if (actualClickXYCanvasXY.x > this.clickedCornerXY.startCanvas.x) {
         // Going right
-        console.log('Right');
         breakLineEnd.x = 0;
         this.lines.forEach((line) => {
           // If the line starts and ends above and below cornner
           if (
-            line.startCanvas.y < breakLineEnd.y &&
-            line.endCanvas.y > breakLineEnd.y
+            Math.min(line.startCanvas.y, line.endCanvas.y) < breakLineEnd.y &&
+            Math.max(line.startCanvas.y, line.endCanvas.y) > breakLineEnd.y
           ) {
             // If line is to the left clicked point
             if (line.startCanvas.x < actualClickXYCanvasXY.x) {
@@ -391,15 +402,9 @@ export class SketcherPage {
         });
       } else {
         // Going left
-        console.log('Left');
         breakLineEnd.x = this.canvasUnitsWide;
         this.lines.forEach((line) => {
           // If the line starts and ends above and below cornner
-          console.log(
-            Math.min(line.startCanvas.y, line.endCanvas.y),
-            breakLineEnd.y,
-            Math.max(line.startCanvas.y, line.endCanvas.y)
-          );
           if (
             Math.min(line.startCanvas.y, line.endCanvas.y) < breakLineEnd.y &&
             Math.max(line.startCanvas.y, line.endCanvas.y) > breakLineEnd.y
@@ -423,7 +428,7 @@ export class SketcherPage {
     this.clickedCornerXY.endCanvas = breakLineEnd;
   }
 
-  drawBreakLine() {
+  private drawBreakLine() {
     const canvas = <HTMLCanvasElement>document.getElementById('canvas');
 
     if (!canvas || !canvas.getContext) return;
@@ -445,5 +450,118 @@ export class SketcherPage {
     ctx.moveTo(startX, startY);
     ctx.lineTo(endX, endY);
     ctx.stroke();
+  }
+
+  private determineSizeChangeFactor(): number {
+    const currentImageFourCorners = this.determineCurrentImageFourCorners();
+
+    const canvasAvailabiltyFactor =
+      1 - (canvasMarginAfterRedraw * 2 + canvasToolMarginAfterRedraw);
+
+    const possibleHeightChange =
+      (this.canvasUnitsHigh * canvasAvailabiltyFactor) /
+      (currentImageFourCorners.bottom - currentImageFourCorners.top);
+    const possibleWidthChange =
+      (this.canvasUnitsWide * canvasAvailabiltyFactor) /
+      (currentImageFourCorners.right - currentImageFourCorners.left);
+
+    return Math.min(possibleHeightChange, possibleWidthChange);
+  }
+
+  private redrawImageToScale(scale: number) {
+    const currentImageFourCorners = this.determineCurrentImageFourCorners();
+    let lineStartPointsXY: Coordinates[] = [];
+    const alphaX =
+      (canvasMarginAfterRedraw + canvasToolMarginAfterRedraw) *
+      this.canvasUnitsWide;
+    const alphaY =
+      (canvasMarginAfterRedraw + canvasToolMarginAfterRedraw) *
+      this.canvasUnitsHigh;
+
+    // Add all line startCanvasXY as corners
+    this.lines.forEach((line) => {
+      lineStartPointsXY.push({
+        x: Math.round(
+          (line.startCanvas.x - currentImageFourCorners.left) * scale + alphaX
+        ),
+        y: Math.round(
+          (line.startCanvas.y - currentImageFourCorners.top) * scale + alphaY
+        ),
+      });
+    });
+    this.redrawImagesFromStartPointsList(lineStartPointsXY);
+  }
+
+  private determineCurrentImageFourCorners(): FourCorners {
+    let currentImageCornersCanvasXY = {
+      top: this.canvasUnitsHigh,
+      bottom: 0,
+      left: this.canvasUnitsWide,
+      right: 0,
+    };
+    this.lines.forEach((line) => {
+      currentImageCornersCanvasXY.top =
+        line.endCanvas.y < currentImageCornersCanvasXY.top
+          ? line.endCanvas.y
+          : currentImageCornersCanvasXY.top;
+      currentImageCornersCanvasXY.bottom =
+        line.endCanvas.y > currentImageCornersCanvasXY.bottom
+          ? line.endCanvas.y
+          : currentImageCornersCanvasXY.bottom;
+      currentImageCornersCanvasXY.left =
+        line.endCanvas.x < currentImageCornersCanvasXY.left
+          ? line.endCanvas.x
+          : currentImageCornersCanvasXY.left;
+      currentImageCornersCanvasXY.right =
+        line.endCanvas.x > currentImageCornersCanvasXY.right
+          ? line.endCanvas.x
+          : currentImageCornersCanvasXY.right;
+    });
+    return currentImageCornersCanvasXY;
+  }
+
+  private redrawImagesFromStartPointsList(startPoints: Coordinates[]) {
+    const canvas = <HTMLCanvasElement>document.getElementById('canvas');
+    if (!canvas || !canvas.getContext) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 1;
+
+    // Set up the lines
+    const linesToBeDrawn: Line[] = [];
+    this.lines = [];
+
+    startPoints.forEach((startPoint, index) => {
+      linesToBeDrawn.push({
+        startCanvas: startPoint,
+        endCanvas: startPoints[index - 1],
+      });
+    });
+    linesToBeDrawn[0].endCanvas = startPoints[startPoints.length - 1];
+
+    this.clearCanvas();
+
+    linesToBeDrawn.forEach((line) => {
+      const startX = Math.round(line.startCanvas.x);
+      const startY = Math.round(line.startCanvas.y);
+      const endX = Math.round(line.endCanvas.x);
+      const endY = Math.round(line.endCanvas.y);
+      const startCanvas = { x: startX, y: startY };
+      const endCanvas = { x: endX, y: endY };
+
+      ctx.beginPath();
+      ctx.setLineDash([]);
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(endX, endY);
+      ctx.stroke();
+
+      this.lines.push({
+        startCanvas: startCanvas,
+        endCanvas: endCanvas,
+        startScreen: this.convertCanvasUnitsToScreenUnits(startCanvas),
+        endScreen: this.convertCanvasUnitsToScreenUnits(endCanvas),
+      });
+    });
   }
 }
