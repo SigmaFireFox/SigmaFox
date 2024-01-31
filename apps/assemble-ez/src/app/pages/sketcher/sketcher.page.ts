@@ -132,6 +132,7 @@ export class SketcherPage {
   onBoxChecked() {
     this.allowOnlyRightAngles = !this.allowOnlyRightAngles;
   }
+
   onFloatingCornerClicked(line: Line) {
     (this.clickedCornerXY.startCanvas = {
       x: line.endCanvas.x,
@@ -323,22 +324,23 @@ export class SketcherPage {
 
   private determineBreakLineEnd(actualClickXYCanvasXY: Coordinates) {
     const breakLineEnd = { x: 0, y: 0 };
+    console.log(this.clickedCornerXY);
 
     // Up/Down case
     if (!this.lineDirection) {
-      breakLineEnd.x = actualClickXYCanvasXY.x;
+      breakLineEnd.x = this.clickedCornerXY.startCanvas.x;
       if (actualClickXYCanvasXY.y > this.clickedCornerXY.startCanvas.y) {
         // Going down
         breakLineEnd.y = 0;
         this.lines.forEach((line) => {
-          // If the line starts and ends to left and right of cornner
+          // If the line starts and ends to left and right of corner
           if (
-            line.startCanvas.x < breakLineEnd.x &&
-            line.endCanvas.x > breakLineEnd.x
+            Math.min(line.startCanvas.x, line.endCanvas.x) < breakLineEnd.x &&
+            Math.max(line.startCanvas.x, line.endCanvas.x) > breakLineEnd.x
           ) {
-            // If line is above the the clicked point
+            // If line is below the the clicked point
             if (line.startCanvas.y < actualClickXYCanvasXY.y) {
-              // If the line is below the best option so far
+              // If the line is above the best option so far
               if (line.startCanvas.y > breakLineEnd.y) {
                 breakLineEnd.y = line.startCanvas.y;
               }
@@ -351,8 +353,8 @@ export class SketcherPage {
         this.lines.forEach((line) => {
           // If the line starts and ends to left and right of cornner
           if (
-            line.startCanvas.x < breakLineEnd.x &&
-            line.endCanvas.x > breakLineEnd.x
+            Math.min(line.startCanvas.x, line.endCanvas.x) < breakLineEnd.x &&
+            Math.max(line.startCanvas.x, line.endCanvas.x) > breakLineEnd.x
           ) {
             // If line is below the the clicked point
             if (line.startCanvas.y > actualClickXYCanvasXY.y) {
@@ -366,9 +368,11 @@ export class SketcherPage {
       }
     } else {
       // Left/Right case
-      breakLineEnd.y = actualClickXYCanvasXY.y;
+      breakLineEnd.y = this.clickedCornerXY.startCanvas.y;
+      console.log(this.clickedCornerXY);
       if (actualClickXYCanvasXY.x > this.clickedCornerXY.startCanvas.x) {
         // Going right
+        console.log('Right');
         breakLineEnd.x = 0;
         this.lines.forEach((line) => {
           // If the line starts and ends above and below cornner
@@ -380,24 +384,34 @@ export class SketcherPage {
             if (line.startCanvas.x < actualClickXYCanvasXY.x) {
               // If the line is to the right the best option so far
               if (line.startCanvas.x > breakLineEnd.x) {
-                breakLineEnd.y = line.startCanvas.y;
+                breakLineEnd.x = line.startCanvas.x;
               }
             }
           }
         });
       } else {
         // Going left
-        breakLineEnd.y = this.canvasUnitsWide;
+        console.log('Left');
+        breakLineEnd.x = this.canvasUnitsWide;
         this.lines.forEach((line) => {
           // If the line starts and ends above and below cornner
+          console.log(
+            Math.min(line.startCanvas.y, line.endCanvas.y),
+            breakLineEnd.y,
+            Math.max(line.startCanvas.y, line.endCanvas.y)
+          );
           if (
-            line.startCanvas.y < breakLineEnd.y &&
-            line.endCanvas.y > breakLineEnd.y
+            Math.min(line.startCanvas.y, line.endCanvas.y) < breakLineEnd.y &&
+            Math.max(line.startCanvas.y, line.endCanvas.y) > breakLineEnd.y
           ) {
+            console.log(1);
             // If line is to the right clicked point
-            if (line.startCanvas.x < actualClickXYCanvasXY.x) {
+            if (line.startCanvas.x > actualClickXYCanvasXY.x) {
+              console.log(2);
+
               // If the line is to the left the best option so far
-              if (line.startCanvas.x > breakLineEnd.x) {
+              if (line.startCanvas.x < breakLineEnd.x) {
+                console.log(3);
                 breakLineEnd.x = line.startCanvas.x;
               }
             }

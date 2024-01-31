@@ -26,18 +26,18 @@
       <div *ngFor="let line of lines;  index as i " class="line-list-item">
         <div class="line-name-column">Line-{{i+1}}</div>
         <div class="line-start-column">
-          [{{line.startCanvas.x | number : '1.0-0'}},{{line.startCanvas.y|
-          number : '1.0-0'}}]
+          [ {{line.startCanvas.x | number : '1.0-0'}} , {{line.startCanvas.y|
+          number : '1.0-0'}} ]
         </div>
         <div class="line-end-column">
-          [{{line.endCanvas.x | number : '1.0-0'}},{{line.endCanvas.y| number :
-          '1.0-0'}}]
+          [ {{line.endCanvas.x | number : '1.0-0'}} , {{line.endCanvas.y| number
+          : '1.0-0'}} ]
         </div>
       </div>
     </div>
 
     <button
-      *ngIf="isComplete"
+      *ngIf="isFirstLineDrawn === true"
       class="menu-button-warning-small"
       (click)="onResetClicked()"
     >
