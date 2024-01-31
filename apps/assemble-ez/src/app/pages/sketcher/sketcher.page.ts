@@ -427,7 +427,7 @@ export class SketcherPage {
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.setLineDash([5, 15]);
+    ctx.setLineDash([2, 2]);
     ctx.moveTo(startX, startY);
     ctx.lineTo(endX, endY);
     ctx.stroke();
