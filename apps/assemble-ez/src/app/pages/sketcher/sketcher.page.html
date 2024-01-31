@@ -26,12 +26,12 @@
       <div *ngFor="let line of lines;  index as i " class="line-list-item">
         <div class="line-name-column">Line-{{i+1}}</div>
         <div class="line-start-column">
-          [{{line.startCanvas.x | number : '1.2-2'}},{{line.startCanvas.y|
-          number : '1.2-2'}}]
+          [{{line.startCanvas.x | number : '1.0-0'}},{{line.startCanvas.y|
+          number : '1.0-0'}}]
         </div>
         <div class="line-end-column">
-          [{{line.endCanvas.x | number : '1.2-2'}},{{line.endCanvas.y| number :
-          '1.2-2'}}]
+          [{{line.endCanvas.x | number : '1.0-0'}},{{line.endCanvas.y| number :
+          '1.0-0'}}]
         </div>
       </div>
     </div>
@@ -58,5 +58,6 @@
     *ngIf="line.endScreen"
     class="floating-corners"
     [ngStyle]="{'top':(line.endScreen.y)+'px', 'left': (line.endScreen.x)+'px'}"
+    (click)="onFloatingCornerClicked(line)"
   ></div>
 </div>

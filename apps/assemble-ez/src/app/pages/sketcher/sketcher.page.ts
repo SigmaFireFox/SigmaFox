@@ -42,14 +42,28 @@ export class SketcherPage {
   firstPlacedClickCanvasX = 0; // Need for screen resize
   firstPlacedClickCanvasY = 0; // Need for screen resize
 
-  lines: Line[] = [];
-
   // Parameters for calculation
   allowOnlyRightAngles = true;
   lineDirection: LineDirection | undefined;
 
+  lines: Line[] = [];
+  clickedCornerXY: Line = {
+    startCanvas: { x: 0, y: 0 },
+    endCanvas: { x: 0, y: 0 },
+  };
+  breakLineRequestClickXY: Coordinates = { x: 0, y: 0 };
+  isBreakLineRequest = false;
+
   onMouseDown(clickEvent: any) {
-    if (this.isComplete) return;
+    if (this.isComplete) {
+      if ((this, this.isBreakLineRequest)) {
+        const actualClickXYCanvasXY = this.getActualClickCanvasXY(clickEvent);
+        this.setLineDirection(actualClickXYCanvasXY);
+        this.determineBreakLineEnd(actualClickXYCanvasXY);
+        this.drawBreakLine();
+      }
+      return;
+    }
 
     if (this.isFirstClick === undefined) {
       this.isFirstClick = true;
@@ -75,7 +89,7 @@ export class SketcherPage {
     }
 
     // Now we draw the line - once everything is done to we set the isFirstClick to False
-    this.drawLine();
+    this.drawMainLine();
     this.isFirstClick = false;
   }
 
@@ -101,7 +115,7 @@ export class SketcherPage {
       this.currentPlacedY = this.firstPlacedClickCanvasY;
     }
 
-    this.drawLine();
+    this.drawMainLine();
     this.isComplete = true;
     this.reDrawLinesOnCompletion();
   }
@@ -118,12 +132,34 @@ export class SketcherPage {
   onBoxChecked() {
     this.allowOnlyRightAngles = !this.allowOnlyRightAngles;
   }
+  onFloatingCornerClicked(line: Line) {
+    (this.clickedCornerXY.startCanvas = {
+      x: line.endCanvas.x,
+      y: line.endCanvas.y,
+    }),
+      (this.isBreakLineRequest = true);
+  }
 
   private setLineDirection(actualClickCanvasXY: Coordinates) {
     // If first click no line is drawn so we set the line direction to undefined and return
     // Also if we allow non right angle - the line direction is also undefined as we don'r use ir
     if (this.isFirstClick || !this.allowOnlyRightAngles) {
       this.lineDirection = undefined;
+      return;
+    }
+
+    if (this.isBreakLineRequest) {
+      const xDelta = Math.abs(
+        this.clickedCornerXY.startCanvas.x - actualClickCanvasXY.x
+      );
+      const yDelta = Math.abs(
+        this.clickedCornerXY.startCanvas.y - actualClickCanvasXY.y
+      );
+
+      this.lineDirection =
+        yDelta > xDelta
+          ? LineDirection.Vertical_UpDown_Y
+          : LineDirection.Horizontal_SideToSide_X;
       return;
     }
 
@@ -204,27 +240,33 @@ export class SketcherPage {
     this.previousPlacedY = this.currentPlacedY;
   }
 
-  private drawLine() {
+  private drawMainLine() {
     const canvas = <HTMLCanvasElement>document.getElementById('canvas');
 
     if (!canvas || !canvas.getContext) return;
     const ctx = canvas.getContext('2d');
+
+    const startX = Math.round(this.previousPlacedX);
+    const startY = Math.round(this.previousPlacedY);
+    const endX = Math.round(this.currentPlacedX);
+    const endY = Math.round(this.currentPlacedY);
+    const startCanvas = { x: startX, y: startY };
+    const endCanvas = { x: endX, y: endY };
 
     if (!ctx) return;
     // set line stroke and line width
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(this.previousPlacedX, this.previousPlacedY);
-    ctx.lineTo(this.currentPlacedX, this.currentPlacedY);
+    ctx.setLineDash([]);
+    ctx.moveTo(startX, startY);
+    ctx.lineTo(endX, endY);
     ctx.stroke();
 
     if (this.isComplete) return;
 
     if (!this.isFirstClick) {
       this.isFirstLineDrawn = true;
-      const startCanvas = { x: this.previousPlacedX, y: this.previousPlacedY };
-      const endCanvas = { x: this.currentPlacedX, y: this.currentPlacedY };
 
       this.lines.push({
         startCanvas: startCanvas,
@@ -252,7 +294,7 @@ export class SketcherPage {
       this.previousPlacedY = line.startCanvas.y;
       this.currentPlacedX = line.endCanvas.x;
       this.currentPlacedY = line.endCanvas.y;
-      this.drawLine();
+      this.drawMainLine();
       line.startScreen = this.convertCanvasUnitsToScreenUnits(line.startCanvas);
       line.endScreen = this.convertCanvasUnitsToScreenUnits(line.endCanvas);
     });
@@ -277,5 +319,117 @@ export class SketcherPage {
 
     if (!ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  private determineBreakLineEnd(actualClickXYCanvasXY: Coordinates) {
+    const breakLineEnd = { x: 0, y: 0 };
+
+    // Up/Down case
+    if (!this.lineDirection) {
+      breakLineEnd.x = actualClickXYCanvasXY.x;
+      if (actualClickXYCanvasXY.y > this.clickedCornerXY.startCanvas.y) {
+        // Going down
+        breakLineEnd.y = 0;
+        this.lines.forEach((line) => {
+          // If the line starts and ends to left and right of cornner
+          if (
+            line.startCanvas.x < breakLineEnd.x &&
+            line.endCanvas.x > breakLineEnd.x
+          ) {
+            // If line is above the the clicked point
+            if (line.startCanvas.y < actualClickXYCanvasXY.y) {
+              // If the line is below the best option so far
+              if (line.startCanvas.y > breakLineEnd.y) {
+                breakLineEnd.y = line.startCanvas.y;
+              }
+            }
+          }
+        });
+      } else {
+        // Going up
+        breakLineEnd.y = this.canvasUnitsHigh;
+        this.lines.forEach((line) => {
+          // If the line starts and ends to left and right of cornner
+          if (
+            line.startCanvas.x < breakLineEnd.x &&
+            line.endCanvas.x > breakLineEnd.x
+          ) {
+            // If line is below the the clicked point
+            if (line.startCanvas.y > actualClickXYCanvasXY.y) {
+              // If the line is above the best option so far
+              if (line.startCanvas.y < breakLineEnd.y) {
+                breakLineEnd.y = line.startCanvas.y;
+              }
+            }
+          }
+        });
+      }
+    } else {
+      // Left/Right case
+      breakLineEnd.y = actualClickXYCanvasXY.y;
+      if (actualClickXYCanvasXY.x > this.clickedCornerXY.startCanvas.x) {
+        // Going right
+        breakLineEnd.x = 0;
+        this.lines.forEach((line) => {
+          // If the line starts and ends above and below cornner
+          if (
+            line.startCanvas.y < breakLineEnd.y &&
+            line.endCanvas.y > breakLineEnd.y
+          ) {
+            // If line is to the left clicked point
+            if (line.startCanvas.x < actualClickXYCanvasXY.x) {
+              // If the line is to the right the best option so far
+              if (line.startCanvas.x > breakLineEnd.x) {
+                breakLineEnd.y = line.startCanvas.y;
+              }
+            }
+          }
+        });
+      } else {
+        // Going left
+        breakLineEnd.y = this.canvasUnitsWide;
+        this.lines.forEach((line) => {
+          // If the line starts and ends above and below cornner
+          if (
+            line.startCanvas.y < breakLineEnd.y &&
+            line.endCanvas.y > breakLineEnd.y
+          ) {
+            // If line is to the right clicked point
+            if (line.startCanvas.x < actualClickXYCanvasXY.x) {
+              // If the line is to the left the best option so far
+              if (line.startCanvas.x > breakLineEnd.x) {
+                breakLineEnd.x = line.startCanvas.x;
+              }
+            }
+          }
+        });
+      }
+    }
+
+    this.clickedCornerXY.endCanvas = breakLineEnd;
+  }
+
+  drawBreakLine() {
+    const canvas = <HTMLCanvasElement>document.getElementById('canvas');
+
+    if (!canvas || !canvas.getContext) return;
+    const ctx = canvas.getContext('2d');
+
+    const startX = Math.round(this.clickedCornerXY.startCanvas.x);
+    const startY = Math.round(this.clickedCornerXY.startCanvas.y);
+    const endX = Math.round(this.clickedCornerXY.endCanvas.x);
+    const endY = Math.round(this.clickedCornerXY.endCanvas.y);
+    // const startCanvas = { x: startX, y: startY };
+    // const endCanvas = { x: endX, y: endY };
+
+    if (!ctx) return;
+    // set line stroke and line width
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.setLineDash([5, 15]);
+    ctx.moveTo(startX, startY);
+    ctx.lineTo(endX, endY);
+    ctx.stroke();
   }
 }
