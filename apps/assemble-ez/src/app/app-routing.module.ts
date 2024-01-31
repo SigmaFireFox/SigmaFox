@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AgentsPage } from './pages/agents/agents.page';
 import { LeadsPage } from './pages/leads/leads.page';
 import { MainPage } from './pages/main/main.page';
-import { ComponentsPage } from './pages/products/presentationals/components/components.screen';
 import { ProductsPage } from './pages/products/products.page';
 import { QuotesPage } from './pages/quotes/quotes.page';
 import { SettingsPage } from './pages/settings/settings.page';
 import { SignInPage } from './pages/sign-in/sign-in.page';
+import { SketcherPage } from './pages/sketcher/sketcher.page';
 import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
@@ -29,6 +29,11 @@ const routes: Routes = [
     path: 'settings',
     canActivate: [AuthGuardService],
     component: SettingsPage,
+  },
+  {
+    path: 'sketcher',
+    canActivate: [AuthGuardService],
+    component: SketcherPage,
   },
 ];
 

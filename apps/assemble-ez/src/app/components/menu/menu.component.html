@@ -3,7 +3,9 @@
     [ngClass]="
       option.style === 0
         ? 'menu-button-primary-large'
-        : 'menu-button-secondary-large'
+        : option.style === 1
+        ? 'menu-button-secondary-large'
+        : 'menu-button-warning-large'
     "
     (click)="onOptionClicked(option)"
   >

@@ -8,6 +8,7 @@ export enum MenuOptionType {
 export enum MenuOptionStyle {
   PRIMARY,
   SECONDARY,
+  WARNING,
 }
 
 export enum MenuAction {

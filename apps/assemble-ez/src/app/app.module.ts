@@ -59,6 +59,7 @@ import { AgentPasswordScreen } from './pages/settings/presentationals/passwords-
 import { FeatureFlagsScreen } from './pages/settings/presentationals/feature-flags/feature-flags.screen';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SketcherPage } from './pages/sketcher/sketcher.page';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyBFMwDB68eP6eixiHx5k6HxbnCnWf1HVQg',
@@ -115,6 +116,7 @@ export const firebaseConfig = {
     PersonalPasswordScreen,
     FeatureFlagsScreen,
     NavbarComponent,
+    SketcherPage,
   ],
   imports: [
     BrowserModule,

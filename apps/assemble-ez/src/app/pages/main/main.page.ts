@@ -44,6 +44,12 @@ export class MainPage {
       link: 'settings',
     },
     {
+      style: MenuOptionStyle.WARNING,
+      display: 'Sketcher',
+      optionType: MenuOptionType.URL,
+      link: 'sketcher',
+    },
+    {
       style: MenuOptionStyle.SECONDARY,
       display: 'Sign out',
       optionType: MenuOptionType.VIEWSTATE,

@@ -1,0 +1,31 @@
+<div class="navbar-buffer"></div>
+<div class="screen-container">
+  <canvas
+    class="canvas"
+    id="canvas"
+    height="{{canvasUnitsHigh}}"
+    width="{{canvasUnitsWide}}"
+    (mousedown)="onMouseDown($event)"
+  >
+  </canvas>
+  <div class="control-panel-container">
+    <div class="check-box-container">
+      <div>Allow only right angle (90deg) corners:</div>
+      <input type="checkbox" (change)="onBoxChecked()" checked />
+    </div>
+    <button
+      *ngIf="isComplete"
+      class="menu-button-warning-small"
+      (click)="onResetClicked()"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+
+<button
+  *ngIf="isFirstClick===false"
+  class="capture-circle-button"
+  [ngStyle]="{'top':(firstActualY-20)+'px', 'left': (firstActualX-20)+'px'}"
+  (click)="onLastClick()"
+></button>
