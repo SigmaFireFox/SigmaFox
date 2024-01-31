@@ -10,6 +10,13 @@ export enum LineDirection {
   Horizontal_SideToSide_X,
 }
 
+export interface Line {
+  startCanvas: Coordinates;
+  endCanvas: Coordinates;
+  startScreen?: Coordinates;
+  endScreen?: Coordinates;
+}
+
 @Component({
   selector: 'assemble-ez-sketcher',
   templateUrl: './sketcher.page.html',
@@ -34,6 +41,8 @@ export class SketcherPage {
   currentPlacedY = 0; // To where line is drawn
   firstPlacedClickCanvasX = 0; // Need for screen resize
   firstPlacedClickCanvasY = 0; // Need for screen resize
+
+  lines: Line[] = [];
 
   // Parameters for calculation
   allowOnlyRightAngles = true;
@@ -94,18 +103,16 @@ export class SketcherPage {
 
     this.drawLine();
     this.isComplete = true;
+    this.reDrawLinesOnCompletion();
   }
 
   onResetClicked() {
-    const canvas = <HTMLCanvasElement>document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-
-    if (!ctx) return;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    this.clearCanvas();
 
     this.isFirstLineDrawn = undefined;
     this.isFirstClick = undefined;
     this.isComplete = false;
+    this.lines = [];
   }
 
   onBoxChecked() {
@@ -155,30 +162,12 @@ export class SketcherPage {
     const actualClickXInCanvasUnits =
       actualClickPercOfCanvasHeightFromCanvasLeft * this.canvasUnitsWide;
 
-    // console.log(clickedXY.x);
-    // console.log(actualClickPxFromCanvasLeft);
-
-    // console.log(canvas.offsetWidth);
-    // console.log(actualClickPercOfCanvasHeightFromCanvasLeft);
-
-    // console.log(this.canvasUnitsWide);
-    // console.log(actualClickXInCanvasUnits);
-
     // Calculate the Y needed --> Focus on height and Y
     const actualClickPxFromCanvasTop = clickedXY.y - 40; // Adjust for Navbar
     const actualClickPercOfCanvasHeightFromCanvasTop =
       actualClickPxFromCanvasTop / canvas.offsetHeight;
     const actualClickYInCanvasUnits =
       actualClickPercOfCanvasHeightFromCanvasTop * this.canvasUnitsHigh;
-
-    // console.log(clickedXY.y - 40);
-    // console.log(actualClickPxFromCanvasTop);
-
-    // console.log(canvas.offsetHeight);
-    // console.log(actualClickPercOfCanvasHeightFromCanvasTop);
-
-    // console.log(this.canvasUnitsHigh);
-    // console.log(actualClickYInCanvasUnits);
 
     const actualClickCanvasXY = {
       x: actualClickXInCanvasUnits,
@@ -230,8 +219,19 @@ export class SketcherPage {
     ctx.lineTo(this.currentPlacedX, this.currentPlacedY);
     ctx.stroke();
 
+    if (this.isComplete) return;
+
     if (!this.isFirstClick) {
       this.isFirstLineDrawn = true;
+      const startCanvas = { x: this.previousPlacedX, y: this.previousPlacedY };
+      const endCanvas = { x: this.currentPlacedX, y: this.currentPlacedY };
+
+      this.lines.push({
+        startCanvas: startCanvas,
+        endCanvas: endCanvas,
+        startScreen: this.convertCanvasUnitsToScreenUnits(startCanvas),
+        endScreen: this.convertCanvasUnitsToScreenUnits(endCanvas),
+      });
     }
   }
 
@@ -240,5 +240,42 @@ export class SketcherPage {
     this.firstPlacedClickCanvasY = this.currentPlacedY;
     this.firstActualX = clickedXY.x;
     this.firstActualY = clickedXY.y;
+  }
+
+  private reDrawLinesOnCompletion() {
+    if (!this.isComplete) return;
+
+    this.clearCanvas();
+    this.lines[0].startCanvas = this.lines[this.lines.length - 1].endCanvas;
+    this.lines.forEach((line) => {
+      this.previousPlacedX = line.startCanvas.x;
+      this.previousPlacedY = line.startCanvas.y;
+      this.currentPlacedX = line.endCanvas.x;
+      this.currentPlacedY = line.endCanvas.y;
+      this.drawLine();
+      line.startScreen = this.convertCanvasUnitsToScreenUnits(line.startCanvas);
+      line.endScreen = this.convertCanvasUnitsToScreenUnits(line.endCanvas);
+    });
+  }
+
+  private convertCanvasUnitsToScreenUnits(
+    canvasUnits: Coordinates
+  ): Coordinates {
+    const screenUnits = {
+      x: (canvasUnits.x / this.canvasUnitsWide) * (window.innerWidth - 500) - 5,
+      y:
+        (canvasUnits.y / this.canvasUnitsHigh) * (window.innerHeight - 40) +
+        40 -
+        5,
+    };
+    return screenUnits;
+  }
+
+  private clearCanvas() {
+    const canvas = <HTMLCanvasElement>document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    if (!ctx) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
 }
