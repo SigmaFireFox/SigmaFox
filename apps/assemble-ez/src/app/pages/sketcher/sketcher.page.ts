@@ -409,14 +409,10 @@ export class SketcherPage {
             Math.min(line.startCanvas.y, line.endCanvas.y) < breakLineEnd.y &&
             Math.max(line.startCanvas.y, line.endCanvas.y) > breakLineEnd.y
           ) {
-            console.log(1);
             // If line is to the right clicked point
             if (line.startCanvas.x > actualClickXYCanvasXY.x) {
-              console.log(2);
-
               // If the line is to the left the best option so far
               if (line.startCanvas.x < breakLineEnd.x) {
-                console.log(3);
                 breakLineEnd.x = line.startCanvas.x;
               }
             }
