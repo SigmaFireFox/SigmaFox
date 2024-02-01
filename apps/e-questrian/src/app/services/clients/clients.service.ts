@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Clients, AppClientDetail } from '../../interfaces/clients.interface';
+import { ClientDetails } from '@sigmafox/modals';
+import {
+  Clients,
+  ClientDetailWithFinancialRecords,
+} from '../../interfaces/clients.interface';
 import { GeneralItem } from '../../interfaces/common-page-configs.interface';
 
 export enum FinancialRecordType {
@@ -27,7 +31,10 @@ export class ClientsService {
     let clientID = 0;
     const numberOfClients = Object.keys(this.clientsOnFile).length;
     for (let counter = 1; counter < numberOfClients + 1; counter++) {
-      if (this.clientsOnFile[counter].displayName === searchDisplayName) {
+      if (
+        this.clientsOnFile[counter].clientDetails.displayName ===
+        searchDisplayName
+      ) {
         clientID = counter;
         break;
       }
@@ -35,14 +42,14 @@ export class ClientsService {
     return clientID;
   }
 
-  editClient(clientID: number, updatedClientDetail: AppClientDetail) {
-    this.currentClientsData[clientID] = updatedClientDetail;
+  editClient(clientID: number, updatedClientDetail: ClientDetails) {
+    this.currentClientsData[clientID].clientDetails = updatedClientDetail;
     this.persistClientData();
   }
 
-  addClient(clientDetail: AppClientDetail) {
+  addClient(clientDetail: ClientDetails) {
     const clientID = Object.keys(this.currentClientsData).length + 1;
-    this.currentClientsData[clientID] = clientDetail;
+    this.currentClientsData[clientID].clientDetails = clientDetail;
     this.persistClientData();
   }
 
@@ -53,19 +60,19 @@ export class ClientsService {
   ) {
     switch (financialRecordType) {
       case FinancialRecordType.Invoice: {
-        this.currentClientsData[clientID].finacialRecords.invoices.push(
+        this.currentClientsData[clientID].financialRecords.invoices.push(
           docNumber
         );
         break;
       }
       case FinancialRecordType.Payment: {
-        this.currentClientsData[clientID].finacialRecords.payments.push(
+        this.currentClientsData[clientID].financialRecords.payments.push(
           docNumber
         );
         break;
       }
       case FinancialRecordType.CreditNote: {
-        this.currentClientsData[clientID].finacialRecords.creditNotes.push(
+        this.currentClientsData[clientID].financialRecords.creditNotes.push(
           docNumber
         );
         break;
@@ -79,11 +86,20 @@ export class ClientsService {
     Object.keys(this.currentClientsData).forEach((key) => {
       clientListItem[parseInt(key)] = {
         listedDetails: [
-          { content: this.currentClientsData[parseInt(key)].displayName },
-          { content: this.currentClientsData[parseInt(key)].email },
-          { content: this.currentClientsData[parseInt(key)].telephoneNumber },
+          {
+            content:
+              this.currentClientsData[parseInt(key)].clientDetails.displayName,
+          },
+          {
+            content: this.currentClientsData[parseInt(key)].clientDetails.email,
+          },
+          {
+            content:
+              this.currentClientsData[parseInt(key)].clientDetails
+                .contactNumber,
+          },
         ],
-        voided: this.currentClientsData[parseInt(key)].voided,
+        voided: this.currentClientsData[parseInt(key)].clientDetails.voided,
       };
     });
     return clientListItem;

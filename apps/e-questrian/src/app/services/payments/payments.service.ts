@@ -64,7 +64,7 @@ export class PaymentsService {
       finDoc.amount = this.currentPayments[parseInt(key)].amount as number;
       finDoc.date = this.currentPayments[parseInt(key)].date as Date;
       const clientNum = this.currentPayments[parseInt(key)].clientID;
-      finDoc.detail = this.clients[clientNum]?.displayName;
+      finDoc.detail = this.clients[clientNum].clientDetails.displayName;
       finDoc.voided = this.currentPayments[parseInt(key)].voided;
       payments.push(finDoc);
     });

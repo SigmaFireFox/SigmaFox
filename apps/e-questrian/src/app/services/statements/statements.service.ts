@@ -82,12 +82,12 @@ export class StatementsService {
     clientID: number,
     statementBasics: StatementBasics
   ) {
-    if (this.clients[clientID].finacialRecords.invoices.length === 0) return;
-    if (!this.clients[clientID].finacialRecords.invoices) return;
-    Object.keys(this.clients[clientID].finacialRecords.invoices).forEach(
+    if (this.clients[clientID].financialRecords.invoices.length === 0) return;
+    if (!this.clients[clientID].financialRecords.invoices) return;
+    Object.keys(this.clients[clientID].financialRecords.invoices).forEach(
       (index) => {
         const invoiceNumber =
-          this.clients[clientID].finacialRecords.invoices[parseInt(index)];
+          this.clients[clientID].financialRecords.invoices[parseInt(index)];
         const invoice = this.invoices[invoiceNumber];
         const docToAdd: FinancialDocItem = {
           number: invoiceNumber,
@@ -106,10 +106,10 @@ export class StatementsService {
     clientID: number,
     statementBasics: StatementBasics
   ) {
-    Object.keys(this.clients[clientID].finacialRecords.payments).forEach(
+    Object.keys(this.clients[clientID].financialRecords.payments).forEach(
       (index) => {
         const paymentNumber =
-          this.clients[clientID].finacialRecords.payments[parseInt(index)];
+          this.clients[clientID].financialRecords.payments[parseInt(index)];
         const payment = this.payments[paymentNumber];
         const docToAdd: FinancialDocItem = {
           number: paymentNumber,
@@ -128,11 +128,12 @@ export class StatementsService {
     clientID: number,
     statementBasics: StatementBasics
   ) {
-    if (this.clients[clientID].finacialRecords.creditNotes.length === 0) return;
-    Object.keys(this.clients[clientID].finacialRecords.creditNotes).forEach(
+    if (this.clients[clientID].financialRecords.creditNotes.length === 0)
+      return;
+    Object.keys(this.clients[clientID].financialRecords.creditNotes).forEach(
       (index) => {
         const creditNoteNumber =
-          this.clients[clientID].finacialRecords.creditNotes[parseInt(index)];
+          this.clients[clientID].financialRecords.creditNotes[parseInt(index)];
         const creditNote = this.creditNotes[creditNoteNumber];
         console.log(creditNote);
         const docToAdd: FinancialDocItem = {

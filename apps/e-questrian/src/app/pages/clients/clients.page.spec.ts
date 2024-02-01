@@ -94,7 +94,7 @@ describe('ClientsPage', () => {
       component.viewClient(mockClientID);
 
       // Assert
-      expect(component.currentClientApp).toEqual(mockClient);
+      expect(component.currentClient).toEqual(mockClient);
     });
 
     it('should set currentViewState to ViewState.CLIENT_DETAIL', () => {
@@ -144,7 +144,7 @@ describe('ClientsPage', () => {
 
       // Assert
       expect(clientSpy).toHaveBeenCalledOnceWith(
-        component.currentClientApp,
+        component.currentClient,
         mockClient
       );
     });

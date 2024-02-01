@@ -8,7 +8,7 @@ import {
   ViewClientsMenuConfig,
 } from '../../configs/client-page.configs';
 import { ClientPageViewState as ViewState } from '../../enums/viewstates.enum';
-import { AppClientDetail } from '../../interfaces/clients.interface';
+import { ClientDetailWithFinancialRecords } from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 
 export interface MenuOption {
@@ -28,11 +28,14 @@ export class ClientsPage {
 
   viewStateEnum = ViewState;
   currentViewState = ViewState.MAIN;
-  clients = this.clientService.clientsOnFile;
-  currentClientApp: AppClientDetail = {} as AppClientDetail;
-  currentClient: ClientDetails = {} as ClientDetails;
+  currentClient: ClientDetailWithFinancialRecords =
+    {} as ClientDetailWithFinancialRecords;
 
   currentClientID = 0;
+
+  get clients() {
+    return this.clientService.clientsOnFile;
+  }
 
   constructor(private clientService: ClientsService) {}
 
@@ -47,37 +50,24 @@ export class ClientsPage {
 
   viewClient(clientID: number) {
     this.currentClientID = clientID;
-    this.clients = this.clientService.clientsOnFile;
     this.updateClientDetails(clientID);
-    this.currentViewState = ViewState.CLIENT_DETAIL;
+    this.switchViewState(ViewState.CLIENT_DETAIL);
   }
 
-  addClient(client: AppClientDetail) {
-    this.clientService.addClient(client);
-    this.clients = this.clientService.clientsOnFile;
-  }
-
-  editClient(updatedClientDetails: AppClientDetail) {
+  onClientUpdate(updatedClientDetails: ClientDetails) {
     this.clientService.editClient(this.currentClientID, updatedClientDetails);
-    this.clients = this.clientService.clientsOnFile;
   }
 
-  removeClient() {
-    const updatedClientDetails = this.currentClientApp;
+  onClientVoid(updatedClientDetails: ClientDetails) {
     updatedClientDetails.voided = true;
-    this.clientListPageConfig.items[this.currentClientID].voided = true;
-    this.editClient(updatedClientDetails);
-    this.currentViewState = ViewState.VIEW;
+    this.clientService.editClient(this.currentClientID, updatedClientDetails);
+  }
+
+  onModalClosed() {
+    this.switchViewState(ViewState.VIEW);
   }
 
   private updateClientDetails(clientID: number) {
-    this.currentClientApp = this.clients[clientID];
-    this.currentClient = {
-      firstName: this.currentClientApp.firstName,
-      lastName: this.currentClientApp.lastName,
-      displayName: this.currentClientApp.displayName,
-      email: this.currentClientApp.email,
-      contactNumber: this.currentClientApp.telephoneNumber,
-    };
+    this.currentClient = this.clients[clientID];
   }
 }

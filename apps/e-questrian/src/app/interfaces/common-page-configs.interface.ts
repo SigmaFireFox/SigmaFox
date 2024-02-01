@@ -1,5 +1,5 @@
 import { DocType } from '../enums/doc-types.enum';
-import { AppClientDetail } from './clients.interface';
+import { ClientDetailWithFinancialRecords } from './clients.interface';
 import { MenuOption } from './menu-options.interface';
 
 export interface PageConfig {
@@ -42,7 +42,7 @@ export interface FinancialDocItem {
 export interface DocView extends PageConfig {
   docType: DocType;
   docNumber: number;
-  docClient: AppClientDetail;
+  docClient: ClientDetailWithFinancialRecords;
   lineItems: LineItemGroup[];
   summaryItems: SummaryItem[];
 }

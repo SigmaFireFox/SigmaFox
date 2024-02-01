@@ -32,7 +32,7 @@ export class ClientNotificationService {
     const url = 'https://us-central1-e-questrian.cloudfunctions.net/email';
     const body = {
       from: 'e-Questrian Notifications <e-questrianonline@outlook.com>',
-      to: this.clients[payment.clientID]?.email,
+      to: this.clients[payment.clientID]?.clientDetails.email,
       subject: 'Payment receipt',
       html:
         template[0] +

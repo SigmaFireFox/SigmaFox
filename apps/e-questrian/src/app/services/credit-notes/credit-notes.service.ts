@@ -32,7 +32,7 @@ export class CreditNotesService {
     const cnNumber = Object.keys(this.creditNotes).length + 1;
     this.appointments = appointments;
     const clientDisplayName =
-      this.appointments[appointmentID].client?.displayName || '';
+      this.appointments[appointmentID].client?.clientDetails.displayName || '';
     const clientID =
       this.clientsService.getClientIDFromDisplayName(clientDisplayName);
 

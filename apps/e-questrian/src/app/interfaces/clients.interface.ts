@@ -1,15 +1,12 @@
+import { ClientDetails } from '@sigmafox/modals';
+
 export interface Clients {
-  [cientID: number]: AppClientDetail;
+  [cientID: number]: ClientDetailWithFinancialRecords;
 }
 
-export interface AppClientDetail {
-  displayName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  telephoneNumber: string;
-  voided: boolean;
-  finacialRecords: ClientFinancialRecords;
+export interface ClientDetailWithFinancialRecords {
+  clientDetails: ClientDetails;
+  financialRecords: ClientFinancialRecords;
 }
 
 export interface ClientFinancialRecords {

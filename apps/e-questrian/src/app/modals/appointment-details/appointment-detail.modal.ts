@@ -17,7 +17,10 @@ import {
   AppointmentDetail,
   AppointmentType,
 } from '../../interfaces/appointments.interface';
-import { AppClientDetail, Clients } from '../../interfaces/clients.interface';
+import {
+  ClientDetailWithFinancialRecords,
+  Clients,
+} from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 import { DateAndTimeService } from '../../services/date-time/date-time.service';
 import {
@@ -69,7 +72,7 @@ export class AppointmentModal implements OnInit {
     client: new UntypedFormControl(''),
   });
   displayTime = '';
-  selectedCient: AppClientDetail | undefined;
+  selectedCient: ClientDetailWithFinancialRecords | undefined;
   appointmentTypeEnumKeys: string[] | undefined;
   appointmentTypeEnumKeysNumbers: number[] = [];
   preferredSubject = '';
@@ -155,8 +158,11 @@ export class AppointmentModal implements OnInit {
     return o1?.hours == o2?.hours && o1.minutes == o2.minutes;
   }
 
-  compareClients(client: AppClientDetail, displayName: string) {
-    return client.displayName == displayName;
+  compareClients(
+    client: ClientDetailWithFinancialRecords,
+    displayName: string
+  ) {
+    return client.clientDetails.displayName == displayName;
   }
 
   compareTypes(first: any, second: any) {
@@ -168,18 +174,21 @@ export class AppointmentModal implements OnInit {
     switch (this.appointmentForm.controls['type'].value) {
       case AppointmentType.Lesson: {
         const clientDetail = this.appointmentForm.controls['client']
-          .value as AppClientDetail;
-        if (this.isClientChanged(clientDetail) && clientDetail.displayName) {
+          .value as ClientDetailWithFinancialRecords;
+        if (
+          this.isClientChanged(clientDetail) &&
+          clientDetail.clientDetails.displayName
+        ) {
           this.selectedCient = clientDetail;
           this.appointmentForm.controls['client'].setValue(
-            clientDetail.displayName
+            clientDetail.clientDetails.displayName
           );
         }
         break;
       }
       case AppointmentType.Other: {
         this.appointmentForm.controls['client'].setValue('');
-        this.selectedCient = {} as AppClientDetail;
+        this.selectedCient = {} as ClientDetailWithFinancialRecords;
       }
     }
     this.showClientField =
@@ -282,7 +291,9 @@ export class AppointmentModal implements OnInit {
       date: new UntypedFormControl(new Date(this.date) || ''),
       startTime: new UntypedFormControl(this.currentAppointment.startTime),
       duration: new UntypedFormControl(this.currentAppointment.duration || ''),
-      client: new UntypedFormControl(this.selectedCient?.displayName || ''),
+      client: new UntypedFormControl(
+        this.selectedCient?.clientDetails.displayName || ''
+      ),
     });
     this.setPreferredSubject();
   }
@@ -299,7 +310,7 @@ export class AppointmentModal implements OnInit {
     newAppointmentDetails.invoice = this.currentAppointment.invoice;
     this.editedAppointment.emit(newAppointmentDetails);
     this.appointmentForm.controls['client'].setValue(
-      this.selectedCient?.displayName
+      this.selectedCient?.clientDetails.displayName
     );
   }
 
@@ -353,13 +364,14 @@ export class AppointmentModal implements OnInit {
     return true;
   }
 
-  private isClientChanged(clientDetail: AppClientDetail) {
-    const previousValue = this.currentAppointment.client?.displayName
-      ? this.currentAppointment.client.displayName
+  private isClientChanged(clientDetail: ClientDetailWithFinancialRecords) {
+    const previousValue = this.currentAppointment.client?.clientDetails
+      .displayName
+      ? this.currentAppointment.client.clientDetails.displayName
       : this.currentAppointment.client;
 
-    const currentValue = clientDetail.displayName
-      ? clientDetail.displayName
+    const currentValue = clientDetail.clientDetails.displayName
+      ? clientDetail.clientDetails.displayName
       : clientDetail;
 
     return currentValue != previousValue;
@@ -383,9 +395,11 @@ export class AppointmentModal implements OnInit {
     switch (this.appointmentForm.controls['type'].value) {
       case AppointmentType.Lesson: {
         preferredSubject = 'Lesson';
-        if (this.selectedCient?.firstName) {
+        if (this.selectedCient?.clientDetails.firstName) {
           preferredSubject =
-            preferredSubject + ' with ' + this.selectedCient.firstName;
+            preferredSubject +
+            ' with ' +
+            this.selectedCient.clientDetails.firstName;
         }
         break;
       }

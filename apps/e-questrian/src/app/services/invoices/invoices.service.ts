@@ -2,7 +2,10 @@
 import { Injectable } from '@angular/core';
 import { Appointments } from '../../interfaces/appointments.interface';
 import { CalendarData } from '../../interfaces/calander.interface';
-import { Clients, AppClientDetail } from '../../interfaces/clients.interface';
+import {
+  Clients,
+  ClientDetailWithFinancialRecords,
+} from '../../interfaces/clients.interface';
 import {
   FinancialDocItem,
   FinancialDocType,
@@ -78,7 +81,7 @@ export class InvoicesService {
         detail:
           (this.currentAppointments[
             this.currentInvoices[number].appointments[0]
-          ].client?.displayName as string) || '',
+          ].client?.clientDetails.displayName as string) || '',
         amount: this.currentInvoices[number].appointments.length * 250,
         docType: FinancialDocType.INVOICE,
         voided: this.currentInvoices[number].voided,
@@ -96,7 +99,7 @@ export class InvoicesService {
       this.currentInvoices[selectedInvoiceID]?.appointments[0];
     invoiceDocViewConfig.docClient =
       (this.currentAppointments[firstAppoinentNumber]
-        ?.client as AppClientDetail) || {};
+        ?.client as ClientDetailWithFinancialRecords) || {};
     invoiceDocViewConfig.lineItems = [{ Lessons: [] }];
     let subTotal = 0;
     this.currentInvoices[selectedInvoiceID]?.appointments.forEach(
@@ -218,7 +221,7 @@ export class InvoicesService {
   private getClientIDRefs(): { [clientDisplayName: string]: number } {
     const clientRefs: { [clientDisplayName: string]: number } = {};
     Object.keys(this.clients).forEach((clientID) => {
-      clientRefs[this.clients[parseInt(clientID)].displayName] =
+      clientRefs[this.clients[parseInt(clientID)].clientDetails.displayName] =
         parseInt(clientID);
     });
     return clientRefs;
@@ -238,7 +241,7 @@ export class InvoicesService {
     }
 
     params.clients.forEach((client) => {
-      clientsToBeInvoiced.push(clientRefs[client.displayName]);
+      clientsToBeInvoiced.push(clientRefs[client.clientDetails.displayName]);
     });
     return clientsToBeInvoiced;
   }
@@ -270,10 +273,11 @@ export class InvoicesService {
 
       // Get the clientID
       const currentClient = this.currentAppointments[appointmentID].client;
-      if (!currentClient?.displayName) {
+      if (!currentClient?.clientDetails.displayName) {
         return;
       }
-      const currentClientID = clientRefs[currentClient?.displayName];
+      const currentClientID =
+        clientRefs[currentClient?.clientDetails.displayName];
 
       // Is the current client in list of clients to be invoiced
       if (!clientsToBeInvoiced.includes(currentClientID)) {

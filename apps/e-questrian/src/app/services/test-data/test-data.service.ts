@@ -49,78 +49,90 @@ export class TestDataService {
   private setClientsList() {
     this.clients = {
       1: {
-        displayName: 'Little Ash',
-        firstName: 'Ashley',
-        lastName: 'Novello',
-        email: 'cedric@telkomsa.co.za',
-        telephoneNumber: '072 462 4685',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Little Ash',
+          firstName: 'Ashley',
+          lastName: 'Novello',
+          email: 'cedric@telkomsa.co.za',
+          contactNumber: '072 462 4685',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [],
           payments: [1],
           creditNotes: [],
         },
       },
       2: {
-        displayName: 'Jill Henry',
-        firstName: 'Jill',
-        lastName: 'Henry',
-        email: 'jill@gmail.com',
-        telephoneNumber: '072 879 5421',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Jill Henry',
+          firstName: 'Jill',
+          lastName: 'Henry',
+          email: 'jill@gmail.com',
+          contactNumber: '072 879 5421',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [],
           payments: [2],
           creditNotes: [],
         },
       },
       3: {
-        displayName: 'Kenny Timson',
-        firstName: 'Kenny',
-        lastName: 'Timson',
-        email: 'kenny@yahoo.com',
-        telephoneNumber: '083 357 2205',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Kenny Timson',
+          firstName: 'Kenny',
+          lastName: 'Timson',
+          email: 'kenny@yahoo.com',
+          contactNumber: '083 357 2205',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [1],
           payments: [],
           creditNotes: [],
         },
       },
       4: {
-        displayName: 'Nurse Ash',
-        firstName: 'Ashley',
-        lastName: 'van der Merwe',
-        email: 'nurseash@life.co.za',
-        telephoneNumber: '066 565 0000',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Nurse Ash',
+          firstName: 'Ashley',
+          lastName: 'van der Merwe',
+          email: 'nurseash@life.co.za',
+          contactNumber: '066 565 0000',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [2],
           payments: [],
           creditNotes: [1],
         },
       },
       5: {
-        displayName: 'Jess van Wyk',
-        firstName: 'Jess',
-        lastName: 'van Wyk',
-        email: 'vwykjess@gmail.com',
-        telephoneNumber: '083 579 4251',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Jess van Wyk',
+          firstName: 'Jess',
+          lastName: 'van Wyk',
+          email: 'vwykjess@gmail.com',
+          contactNumber: '083 579 4251',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [],
           payments: [],
           creditNotes: [],
         },
       },
       6: {
-        displayName: 'Ruben Ferreira',
-        firstName: 'Ruben',
-        lastName: 'Ferreira',
-        email: 'rubenf85@gmail.com',
-        telephoneNumber: '072 761 0423',
-        voided: false,
-        finacialRecords: {
+        clientDetails: {
+          displayName: 'Ruben Ferreira',
+          firstName: 'Ruben',
+          lastName: 'Ferreira',
+          email: 'rubenf85@gmail.com',
+          contactNumber: '072 761 0423',
+          voided: false,
+        },
+        financialRecords: {
           invoices: [],
           payments: [],
           creditNotes: [],
@@ -133,7 +145,7 @@ export class TestDataService {
     this.appointments = {
       1: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[3].firstName,
+        subject: 'Lesson with ' + this.clients[3].clientDetails.firstName,
         date: this.yesterday,
         startTime: { hours: 8, minutes: 0 },
         duration: { hours: 0, minutes: 30 },
@@ -143,7 +155,7 @@ export class TestDataService {
       },
       2: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[4].firstName,
+        subject: 'Lesson with ' + this.clients[4].clientDetails.firstName,
         date: this.yesterday,
         startTime: { hours: 10, minutes: 0 },
         duration: { hours: 0, minutes: 30 },
@@ -153,7 +165,7 @@ export class TestDataService {
       },
       3: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[4].firstName,
+        subject: 'Lesson with ' + this.clients[4].clientDetails.firstName,
         date: this.yesterday,
         startTime: { hours: 14, minutes: 0 },
         duration: { hours: 0, minutes: 30 },
@@ -173,7 +185,7 @@ export class TestDataService {
       },
       5: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[2].firstName,
+        subject: 'Lesson with ' + this.clients[2].clientDetails.firstName,
         date: this.today,
         startTime: { hours: 8, minutes: 0 },
         duration: { hours: 0, minutes: 30 },
@@ -183,7 +195,7 @@ export class TestDataService {
       },
       6: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[3].firstName,
+        subject: 'Lesson with ' + this.clients[3].clientDetails.firstName,
         date: this.today,
         startTime: { hours: 8, minutes: 30 },
         duration: { hours: 0, minutes: 0 },
@@ -193,7 +205,7 @@ export class TestDataService {
       },
       7: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[4].firstName,
+        subject: 'Lesson with ' + this.clients[4].clientDetails.firstName,
         date: this.tomorrow,
         startTime: { hours: 7, minutes: 30 },
         duration: { hours: 0, minutes: 0 },
@@ -203,7 +215,7 @@ export class TestDataService {
       },
       8: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[1].firstName,
+        subject: 'Lesson with ' + this.clients[1].clientDetails.firstName,
         date: this.tomorrow,
         startTime: { hours: 8, minutes: 0 },
         duration: { hours: 0, minutes: 30 },
@@ -213,7 +225,7 @@ export class TestDataService {
       },
       9: {
         type: AppointmentType.Lesson,
-        subject: 'Lesson with ' + this.clients[2].firstName,
+        subject: 'Lesson with ' + this.clients[2].clientDetails.firstName,
         date: this.tomorrow,
         startTime: { hours: 8, minutes: 0 },
         duration: { hours: 0, minutes: 30 },

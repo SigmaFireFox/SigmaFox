@@ -2,7 +2,10 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { Component, Output, EventEmitter } from '@angular/core';
 import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
-import { AppClientDetail, Clients } from '../../interfaces/clients.interface';
+import {
+  ClientDetailWithFinancialRecords,
+  Clients,
+} from '../../interfaces/clients.interface';
 import { ClientsService } from '../../services/clients/clients.service';
 import {
   DateRangeSelector,
@@ -28,7 +31,7 @@ export class GenerateStatementModal {
   @Output() cancelled = new EventEmitter<void>();
 
   dateRangeSelector = DateRangeSelector;
-  selectedClient = {} as AppClientDetail;
+  selectedClient = {} as ClientDetailWithFinancialRecords;
   selectedDateRange = {} as DateRange;
   startDate = new Date();
   endDate = new Date();
@@ -44,7 +47,7 @@ export class GenerateStatementModal {
     const clientsOnFile: Clients = this.clientService.clientsOnFile;
     const _clients: Record<string, string> = {};
     Object.keys(clientsOnFile).forEach((key) => {
-      _clients[key] = clientsOnFile[parseInt(key)].displayName;
+      _clients[key] = clientsOnFile[parseInt(key)].clientDetails.displayName;
     });
     return _clients;
   }
@@ -117,7 +120,10 @@ export class GenerateStatementModal {
   }
 
   // Call backs to set options
-  compareClients(client: AppClientDetail, displayName: string) {
-    return client.displayName == displayName;
+  compareClients(
+    client: ClientDetailWithFinancialRecords,
+    displayName: string
+  ) {
+    return client.clientDetails.displayName == displayName;
   }
 }

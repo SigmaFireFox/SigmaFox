@@ -35,7 +35,7 @@ export class PaymentsModal implements OnInit {
     const clientsOnFile: Clients = this.clientService.clientsOnFile;
     const _clients: Record<string, string> = {};
     Object.keys(clientsOnFile).forEach((key) => {
-      _clients[key] = clientsOnFile[parseInt(key)].displayName;
+      _clients[key] = clientsOnFile[parseInt(key)].clientDetails.displayName;
     });
     return _clients;
   }

@@ -15,6 +15,7 @@ export interface ClientDetails {
   displayName: string;
   email: string;
   contactNumber: string;
+  voided: boolean;
 }
 
 export enum ButtonNames {
@@ -190,8 +191,9 @@ export class ClientDetailsModal implements OnInit {
         break;
       }
       case ButtonNames.Void: {
-        // This is a non-submit button - so we don't get an updated form
-        // But we can void the client based on the received cleintDetails
+        // This is a submit button as we need to amend void status before emiting
+        if (!this.clientDetails) return;
+        this.clientDetails.voided = true;
         this.void.emit(this.clientDetails);
         break;
       }
@@ -208,8 +210,8 @@ export class ClientDetailsModal implements OnInit {
     }
   }
 
-  onFormSubmitted(registerDetails: Object) {
-    this.update.emit(registerDetails as ClientDetails);
+  onFormSubmitted(clientDetails: Object) {
+    this.update.emit(clientDetails as ClientDetails);
   }
 
   private setButtonsOrder() {
