@@ -39,6 +39,21 @@ export class DynamicModal {
 
   dynamicModalFormFieldType = DynamicModalFormFieldType;
   dynamicForm = new UntypedFormGroup({});
+  userHeaderOverride = true;
+  headerInEdit = false;
+  headerDefaultValue = '';
+
+  get proposedHeader(): string {
+    if (!this.config || !this.config.header.feederFields) return '';
+
+    let proposedHeader = '';
+    this.config.header.feederFields.forEach((field) => {
+      if (!this.config) return;
+      proposedHeader += this.dynamicForm.controls[field].value + ' ';
+    });
+
+    return proposedHeader;
+  }
 
   ngOnInit() {
     if (!this.config)
@@ -48,6 +63,9 @@ export class DynamicModal {
       this.setForm();
       this.validateForm();
     }
+
+    this.headerDefaultValue = this.config.header.value;
+    this.userHeaderOverride = false;
   }
 
   onButtonClicked(buttonID: string) {
@@ -75,6 +93,8 @@ export class DynamicModal {
 
   validateForm() {
     if (!this.config?.actionPanel || !this.config?.editMode) return;
+
+    this.autoUpdateHeader();
 
     // Update all submit buttons base on the valid status of the form
     const formIsSubmittable =
@@ -131,13 +151,47 @@ export class DynamicModal {
         break;
       }
     }
-
     this.validateForm();
+  }
+
+  onHeaderIconClick() {
+    this.headerInEdit = !this.headerInEdit;
+
+    if (!this.config || !this.config.header.fieldName) return;
+    let headerFormFieldValue =
+      this.dynamicForm.controls[this.config.header.fieldName].value;
+    if (!headerFormFieldValue) {
+      this.userHeaderOverride = false;
+      this.autoUpdateHeader();
+      return;
+    }
+    if (
+      headerFormFieldValue != this.proposedHeader ||
+      headerFormFieldValue != this.headerDefaultValue
+    ) {
+      this.userHeaderOverride = true;
+    }
+  }
+
+  private autoUpdateHeader() {
+    if (this.userHeaderOverride) return;
+
+    if (!this.config || !this.config.header.fieldName) return;
+    this.dynamicForm.controls[this.config.header.fieldName].setValue(
+      this.proposedHeader.trim() ? this.proposedHeader : this.headerDefaultValue
+    );
   }
 
   private setForm() {
     if (!this.config?.form) return;
     let form = this.config.form;
+
+    if (this.config.header.fieldName) {
+      this.dynamicForm.addControl(
+        this.config.header.fieldName,
+        new FormControl(this.config.header.value)
+      );
+    }
 
     Object.keys(form.fields).forEach((fieldKey) => {
       this.dynamicForm.addControl(

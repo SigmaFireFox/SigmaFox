@@ -15,7 +15,9 @@ export interface DynamicModalConfig {
 
 export interface DynamicModalString {
   value: string;
-  editable: boolean;
+  editable?: boolean;
+  fieldName?: string;
+  feederFields?: string[]; // If the header auto populates as other fields are entered
 }
 
 export interface DynamicModalForm {

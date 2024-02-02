@@ -28,6 +28,7 @@ export enum ButtonNames {
 }
 
 export enum FormFieldNames {
+  DisplayName = 'displayName',
   FirstName = 'firstName',
   LastName = 'lastName',
   Email = 'email',
@@ -56,6 +57,8 @@ export class ClientDetailsModal implements OnInit {
       header: {
         value: this.clientDetails?.displayName || 'New client',
         editable: true,
+        fieldName: FormFieldNames.DisplayName,
+        feederFields: [FormFieldNames.FirstName, FormFieldNames.LastName],
       },
       editMode: this.editMode,
       form: {

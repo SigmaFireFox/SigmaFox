@@ -1,17 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  ReactiveFormsModule,
-  UntypedFormControl,
-  UntypedFormGroup,
-  Validators,
-} from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
-import { ButtonsModule, ButtonStyleClass } from 'libs/components/buttons/src';
-import { StandardButtonConfig } from 'libs/components/buttons/src/lib/standard-button/models/interfaces';
+import { Validators } from '@angular/forms';
 import { DynamicModalConfig } from '../dynamic-modal/models/interfaces';
-import { ButtonID, DynamicModal } from '../dynamic-modal/dynamic.modal';
+import { DynamicModal } from '../dynamic-modal/dynamic.modal';
 import { DynamicModalFormFieldType } from '../dynamic-modal/models/enum';
+import { ButtonStyleClass } from '@sigmafox/buttons';
 
 export interface RegisterDetails {
   firstName: string;
@@ -51,7 +44,7 @@ export class RegisterModal implements OnInit {
 
   ngOnInit() {
     this.dynamicModalConfig = {
-      header: { value: 'Register', editable: false },
+      header: { value: 'Register' },
       editMode: true,
       form: {
         fields: {

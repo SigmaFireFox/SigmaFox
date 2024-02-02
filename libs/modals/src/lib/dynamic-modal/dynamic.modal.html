@@ -1,10 +1,30 @@
 <div *ngIf="config" class="screen-container">
   <div class="modal-container">
-    <!-- Header -->
-    <div class="modal-header">{{config.header.value}}</div>
-
     <!-- Form -->
     <form *ngIf="config.form" class="form-container" [formGroup]="dynamicForm">
+      <!-- Header -->
+      <div class="header-container">
+        <div class="modal-header" *ngIf="!headerInEdit">
+          {{config.header.fieldName?
+          dynamicForm.controls[config.header.fieldName].value :
+          config.header.value}}
+        </div>
+        <input
+          *ngIf="headerInEdit"
+          class="modal-header-edit"
+          type="text"
+          formControlName="{{config.header.fieldName}}"
+          (keyup.enter)="onHeaderIconClick()"
+        />
+        <div class="header-edit-icon">
+          <mat-icon
+            *ngIf="config.header.editable && config.editMode"
+            (click)="onHeaderIconClick()"
+            >{{headerInEdit? 'check':'edit'}}</mat-icon
+          >
+        </div>
+      </div>
+
       <div
         class="form-line-1"
         *ngFor="let fieldName of config.form?.fieldsOrder"

@@ -21,13 +21,35 @@
         border-radius: 10px;
         max-width: 900px;
 
-        .modal-header {
-            width: calc(100% - 20px);
-            text-align: center;
-            font-weight: bold;
-            margin: 10px;
-            font-size: 3vh;
+        .header-container {
+            display: flex;
+            flex-direction: row;
+
+            .modal-header {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: bold;
+                margin: 10px;
+                font-size: 3vh;
+                color: black;
+            }
+
+            .modal-header-edit {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: bold;
+                margin: 10px;
+                font-size: 3vh;
+            }
+
+            .header-edit-icon {
+                height: 7vh;
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+            }
         }
+
 
         .form-container {
             display: flex;
