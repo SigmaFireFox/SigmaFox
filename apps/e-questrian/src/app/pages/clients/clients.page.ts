@@ -44,6 +44,7 @@ export class ClientsPage {
     switch (this.currentViewState) {
       case ViewState.VIEW: {
         this.clientListPageConfig.items = this.clientService.setClientList();
+        break;
       }
     }
   }
@@ -56,6 +57,11 @@ export class ClientsPage {
 
   onClientUpdate(updatedClientDetails: ClientDetails) {
     this.clientService.editClient(this.currentClientID, updatedClientDetails);
+  }
+
+  onClientAdd(updatedClientDetails: ClientDetails) {
+    console.log(updatedClientDetails);
+    this.clientService.addClient(updatedClientDetails);
   }
 
   onModalClosed() {

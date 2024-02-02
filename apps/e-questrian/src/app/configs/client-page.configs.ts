@@ -15,7 +15,7 @@ export const ClientMenuPageConfig = {
     },
     {
       display: 'Add new client',
-      viewState: ViewState.CLIENT_DETAIL,
+      viewState: ViewState.NEW_CLIENT,
     },
   ],
 } as MenuPageConfig;

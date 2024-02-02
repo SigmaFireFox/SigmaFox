@@ -43,14 +43,15 @@ export enum FormFieldNames {
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class ClientDetailsModal implements OnInit {
   @Input() clientDetails: ClientDetails | undefined;
-  @Input() editMode: boolean = false;
 
   @Output() update = new EventEmitter<ClientDetails>();
   @Output() close = new EventEmitter<void>();
 
   dynamicModalConfig: DynamicModalConfig | undefined;
+  editMode = false;
 
   ngOnInit() {
+    this.editMode = !this.clientDetails;
     this.dynamicModalConfig = {
       header: {
         value: this.clientDetails?.displayName || 'New client',
@@ -101,6 +102,7 @@ export class ClientDetailsModal implements OnInit {
         buttons: {
           [ButtonNames.SaveNew]: {
             isSubmit: true,
+            requiresFormReset: true,
             buttonConfig: {
               buttonID: ButtonNames.SaveNew,
               buttonTextContent: 'Save and New',
@@ -126,14 +128,14 @@ export class ClientDetailsModal implements OnInit {
             },
           },
           [ButtonNames.Cancel]: {
-            isCancel: true,
+            requiresFormReset: true,
             specialSubmitState: {
               onSubmit: ButtonStyleClass.Secondary,
               onUnSubmit: ButtonStyleClass.Primary,
             },
             buttonConfig: {
               buttonID: ButtonNames.Cancel,
-              buttonTextContent: 'Cancel Edit',
+              buttonTextContent: this.clientDetails ? 'Cancel Edit' : 'Cancel',
               buttonStyleClass: ButtonStyleClass.Primary,
               isDisabled: false,
             },
@@ -166,14 +168,7 @@ export class ClientDetailsModal implements OnInit {
     switch (buttonID) {
       case ButtonNames.SaveNew: {
         // Button is a submit button - will emit onFormSubmitted
-        // this is post form submittion requirements
-        if (!this.dynamicModalConfig || !this.dynamicModalConfig.form) return;
-        // Resets the form
-        Object.values(this.dynamicModalConfig.form.fields).forEach(
-          (field: DynamicModalFieldConfig) => {
-            field.value = '';
-          }
-        );
+        // Dynamic form will reset itself - nothing more to do here
         break;
       }
       case ButtonNames.SaveClose:
@@ -197,6 +192,7 @@ export class ClientDetailsModal implements OnInit {
       case ButtonNames.Cancel: {
         // These are non-submit buttons - so we don't get an updated form
         // Both perform the inverse function of each - so we can handle in one call
+        if (!this.clientDetails) return this.close.emit();
         if (!this.dynamicModalConfig) return;
         this.editMode = !this.editMode;
         this.dynamicModalConfig.editMode = this.editMode;
@@ -224,6 +220,8 @@ export class ClientDetailsModal implements OnInit {
       if (this.clientDetails) {
         // Remove save and new if its an exsisting client
         this.dynamicModalConfig.actionPanel.buttonsOrder.splice(0, 1);
+      } else {
+        this.dynamicModalConfig.actionPanel.buttonsOrder.splice(2, 1);
       }
       return;
     }

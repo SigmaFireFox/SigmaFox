@@ -23,4 +23,10 @@
     (update)="onClientUpdate($event)"
     (close)="onModalClosed()"
   ></sigmafox-modal-client-details>
+
+  <sigmafox-modal-client-details
+    *ngSwitchCase="viewStateEnum.NEW_CLIENT"
+    (update)="onClientAdd($event)"
+    (close)="onModalClosed()"
+  ></sigmafox-modal-client-details>
 </div>

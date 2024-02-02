@@ -55,7 +55,7 @@ export interface DynamicModalButtons {
 
 export interface DynamicModalButtonConfig {
   isSubmit?: boolean;
-  isCancel?: boolean;
+  requiresFormReset?: boolean;
   specialSubmitState?: {
     onSubmit: ButtonStyleClass;
     onUnSubmit: ButtonStyleClass;

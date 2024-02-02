@@ -15,5 +15,6 @@ export enum FinancePageViewState {
 export enum ClientPageViewState {
   MAIN,
   VIEW,
+  NEW_CLIENT,
   CLIENT_DETAIL,
 }

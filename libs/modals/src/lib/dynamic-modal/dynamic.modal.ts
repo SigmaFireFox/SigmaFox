@@ -53,28 +53,24 @@ export class DynamicModal {
   onButtonClicked(buttonID: string) {
     const currentButton = this.config?.actionPanel.buttons[buttonID];
 
-    if (currentButton?.isCancel) {
+    // If the button is a submit AND
+    // The form does not need to match passwords OR it does require matching and they do match
+    // Submit the form
+    if (currentButton?.isSubmit) {
+      if (
+        !this.config?.form?.passwordFieldsToMatch ||
+        this.checkPasswordMatching()
+      ) {
+        this.formSubmitted.emit(this.dynamicForm.value);
+      }
+    }
+
+    // If the form forms needs to be reset
+    if (currentButton?.requiresFormReset) {
       this.resetform();
-      this.buttonClicked.emit(buttonID);
-      return;
     }
 
-    if (!currentButton?.isSubmit) {
-      this.buttonClicked.emit(buttonID);
-      return;
-    }
-
-    if (!this.config?.form?.passwordFieldsToMatch) {
-      this.formSubmitted.emit(this.dynamicForm.value);
-      this.buttonClicked.emit(buttonID);
-      return;
-    }
-
-    if (this.checkPasswordMatching()) {
-      this.formSubmitted.emit(this.dynamicForm.value);
-      this.buttonClicked.emit(buttonID);
-      return;
-    }
+    this.buttonClicked.emit(buttonID);
   }
 
   validateForm() {
@@ -203,5 +199,6 @@ export class DynamicModal {
         this.config.form.fields[key].value
       );
     });
+    this.validateForm();
   }
 }

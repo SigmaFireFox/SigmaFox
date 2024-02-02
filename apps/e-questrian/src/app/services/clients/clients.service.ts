@@ -52,7 +52,10 @@ export class ClientsService {
 
   addClient(clientDetail: ClientDetails) {
     const clientID = Object.keys(this.currentClientsData).length + 1;
-    this.currentClientsData[clientID].clientDetails = clientDetail;
+    this.currentClientsData[clientID] = {
+      clientDetails: clientDetail,
+      financialRecords: { invoices: [], creditNotes: [], payments: [] },
+    };
     this.persistClientData();
   }
 
