@@ -160,16 +160,19 @@ export class DynamicModal {
     if (!this.config || !this.config.header.fieldName) return;
     let headerFormFieldValue =
       this.dynamicForm.controls[this.config.header.fieldName].value;
+
     if (!headerFormFieldValue) {
       this.userHeaderOverride = false;
-      this.autoUpdateHeader();
+      this.validateForm();
       return;
     }
+
     if (
       headerFormFieldValue != this.proposedHeader ||
       headerFormFieldValue != this.headerDefaultValue
     ) {
       this.userHeaderOverride = true;
+      this.validateForm();
     }
   }
 
@@ -233,12 +236,17 @@ export class DynamicModal {
 
   private changesMadeToOrginalData(): boolean {
     let changesMade = false;
+    if (!this.config || !this.config.form) {
+      return changesMade;
+    }
 
-    Object.keys(this.dynamicForm.value).forEach((key) => {
+    Object.keys(this.dynamicForm.controls).forEach((key) => {
       if (changesMade) return;
-      if (
-        this.dynamicForm.get(key)?.value != this.config?.form?.fields[key].value
-      ) {
+      const valueToTest = this.config?.form?.fields[key]
+        ? this.config?.form?.fields[key].value
+        : this.config?.header.value;
+
+      if (this.dynamicForm.get(key)?.value != valueToTest) {
         changesMade = true;
         return;
       }
@@ -250,9 +258,10 @@ export class DynamicModal {
     Object.keys(this.dynamicForm.value).forEach((key) => {
       if (!this.config || !this.config.form) return;
       this.dynamicForm.controls[key].setValue(
-        this.config.form.fields[key].value
+        this.config.form.fields[key]
+          ? this.config.form.fields[key].value
+          : this.config.header.value
       );
     });
-    this.validateForm();
   }
 }
