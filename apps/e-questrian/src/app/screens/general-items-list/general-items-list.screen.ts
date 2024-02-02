@@ -26,7 +26,6 @@ export class GeneralItemsListScreen implements OnInit {
   ngOnInit() {
     this.setPageConfig();
     this.setListConfig();
-    console.log(this.config.items);
   }
 
   onItemClicked(itemKey: string) {

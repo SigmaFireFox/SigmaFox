@@ -53,6 +53,12 @@ export class DynamicModal {
   onButtonClicked(buttonID: string) {
     const currentButton = this.config?.actionPanel.buttons[buttonID];
 
+    if (currentButton?.isCancel) {
+      this.resetform();
+      this.buttonClicked.emit(buttonID);
+      return;
+    }
+
     if (!currentButton?.isSubmit) {
       this.buttonClicked.emit(buttonID);
       return;
@@ -72,17 +78,25 @@ export class DynamicModal {
   }
 
   validateForm() {
-    if (!this.config?.actionPanel) return;
+    if (!this.config?.actionPanel || !this.config?.editMode) return;
 
-    // Update all buttons requiring validation to the valid status of the form
+    // Update all submit buttons base on the valid status of the form
+    const formIsSubmittable =
+      this.dynamicForm.valid && this.changesMadeToOrginalData();
+
     Object.keys(this.config?.actionPanel.buttons).forEach((buttonKey) => {
       let currentButton = this.config?.actionPanel.buttons[buttonKey];
-      if (currentButton?.requiresValidation) {
-        currentButton.buttonConfig.isDisabled = !this.dynamicForm.valid;
+      if (currentButton?.specialSubmitState) {
+        currentButton.buttonConfig.buttonStyleClass = formIsSubmittable
+          ? currentButton?.specialSubmitState.onSubmit
+          : currentButton.specialSubmitState.onUnSubmit;
+      }
+      if (currentButton?.isSubmit) {
+        currentButton.buttonConfig.isDisabled = !formIsSubmittable;
       }
     });
 
-    // If the form is vaaid - need to remove all error states
+    // If the form is valid - need to remove all error states
     if (!this.dynamicForm.valid || !this.config.form) return;
 
     Object.keys(this.config.form.fields).forEach((fieldName) => {
@@ -121,6 +135,8 @@ export class DynamicModal {
         break;
       }
     }
+
+    this.validateForm();
   }
 
   private setForm() {
@@ -163,5 +179,29 @@ export class DynamicModal {
     }
 
     return true;
+  }
+
+  private changesMadeToOrginalData(): boolean {
+    let changesMade = false;
+
+    Object.keys(this.dynamicForm.value).forEach((key) => {
+      if (changesMade) return;
+      if (
+        this.dynamicForm.get(key)?.value != this.config?.form?.fields[key].value
+      ) {
+        changesMade = true;
+        return;
+      }
+    });
+    return changesMade;
+  }
+
+  private resetform() {
+    Object.keys(this.dynamicForm.value).forEach((key) => {
+      if (!this.config || !this.config.form) return;
+      this.dynamicForm.controls[key].setValue(
+        this.config.form.fields[key].value
+      );
+    });
   }
 }

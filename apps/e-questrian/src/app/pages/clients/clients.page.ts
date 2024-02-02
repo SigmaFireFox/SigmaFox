@@ -58,11 +58,6 @@ export class ClientsPage {
     this.clientService.editClient(this.currentClientID, updatedClientDetails);
   }
 
-  onClientVoid(updatedClientDetails: ClientDetails) {
-    updatedClientDetails.voided = true;
-    this.clientService.editClient(this.currentClientID, updatedClientDetails);
-  }
-
   onModalClosed() {
     this.switchViewState(ViewState.VIEW);
   }

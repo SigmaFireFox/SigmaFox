@@ -64,7 +64,6 @@ export class SignInModal implements OnInit {
       actionPanel: {
         buttons: {
           [ButtonNames.SignIn]: {
-            requiresValidation: true,
             isSubmit: true,
             buttonConfig: {
               buttonID: ButtonNames.SignIn,
@@ -74,8 +73,6 @@ export class SignInModal implements OnInit {
             },
           },
           [ButtonNames.Register]: {
-            requiresValidation: false,
-            isSubmit: false,
             buttonConfig: {
               buttonID: ButtonNames.Register,
               buttonLabel: 'Not yet a user?',

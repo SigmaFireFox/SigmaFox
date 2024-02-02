@@ -46,7 +46,6 @@ export class ClientDetailsModal implements OnInit {
   @Input() editMode: boolean = false;
 
   @Output() update = new EventEmitter<ClientDetails>();
-  @Output() void = new EventEmitter<ClientDetails>();
   @Output() close = new EventEmitter<void>();
 
   dynamicModalConfig: DynamicModalConfig | undefined;
@@ -101,7 +100,6 @@ export class ClientDetailsModal implements OnInit {
       actionPanel: {
         buttons: {
           [ButtonNames.SaveNew]: {
-            requiresValidation: true,
             isSubmit: true,
             buttonConfig: {
               buttonID: ButtonNames.SaveNew,
@@ -111,7 +109,6 @@ export class ClientDetailsModal implements OnInit {
             },
           },
           [ButtonNames.SaveClose]: {
-            requiresValidation: true,
             isSubmit: true,
             buttonConfig: {
               buttonID: ButtonNames.SaveClose,
@@ -121,8 +118,6 @@ export class ClientDetailsModal implements OnInit {
             },
           },
           [ButtonNames.Void]: {
-            requiresValidation: false,
-            isSubmit: false,
             buttonConfig: {
               buttonID: ButtonNames.Void,
               buttonTextContent: 'Void Client',
@@ -131,18 +126,19 @@ export class ClientDetailsModal implements OnInit {
             },
           },
           [ButtonNames.Cancel]: {
-            requiresValidation: false,
-            isSubmit: false,
+            isCancel: true,
+            specialSubmitState: {
+              onSubmit: ButtonStyleClass.Secondary,
+              onUnSubmit: ButtonStyleClass.Primary,
+            },
             buttonConfig: {
               buttonID: ButtonNames.Cancel,
               buttonTextContent: 'Cancel Edit',
-              buttonStyleClass: ButtonStyleClass.Secondary,
+              buttonStyleClass: ButtonStyleClass.Primary,
               isDisabled: false,
             },
           },
           [ButtonNames.Edit]: {
-            requiresValidation: false,
-            isSubmit: false,
             buttonConfig: {
               buttonID: ButtonNames.Edit,
               buttonTextContent: 'Edit Client',
@@ -151,8 +147,6 @@ export class ClientDetailsModal implements OnInit {
             },
           },
           [ButtonNames.Close]: {
-            requiresValidation: false,
-            isSubmit: false,
             buttonConfig: {
               buttonID: ButtonNames.Close,
               buttonTextContent: 'Close',
@@ -194,7 +188,9 @@ export class ClientDetailsModal implements OnInit {
         // This is a submit button as we need to amend void status before emiting
         if (!this.clientDetails) return;
         this.clientDetails.voided = true;
-        this.void.emit(this.clientDetails);
+        // TODO: requires warning before doing this!
+        this.update.emit(this.clientDetails);
+        this.close.emit();
         break;
       }
       case ButtonNames.Edit:
@@ -216,13 +212,26 @@ export class ClientDetailsModal implements OnInit {
 
   private setButtonsOrder() {
     if (!this.dynamicModalConfig) return;
-    this.dynamicModalConfig.actionPanel.buttonsOrder = this.editMode
-      ? [
-          ButtonNames.SaveNew,
-          ButtonNames.SaveClose,
-          ButtonNames.Void,
-          ButtonNames.Cancel,
-        ]
-      : [ButtonNames.Edit, ButtonNames.Close];
+
+    // Edit mode buttons
+    if (this.editMode) {
+      this.dynamicModalConfig.actionPanel.buttonsOrder = [
+        ButtonNames.SaveNew,
+        ButtonNames.SaveClose,
+        ButtonNames.Void,
+        ButtonNames.Cancel,
+      ];
+      if (this.clientDetails) {
+        // Remove save and new if its an exsisting client
+        this.dynamicModalConfig.actionPanel.buttonsOrder.splice(0, 1);
+      }
+      return;
+    }
+
+    // View mode buttons
+    this.dynamicModalConfig.actionPanel.buttonsOrder = [
+      ButtonNames.Edit,
+      ButtonNames.Close,
+    ];
   }
 }

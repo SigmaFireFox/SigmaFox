@@ -43,7 +43,10 @@ export class ClientsService {
   }
 
   editClient(clientID: number, updatedClientDetail: ClientDetails) {
-    this.currentClientsData[clientID].clientDetails = updatedClientDetail;
+    this.currentClientsData[clientID].clientDetails = {
+      ...this.currentClientsData[clientID].clientDetails,
+      ...updatedClientDetail,
+    };
     this.persistClientData();
   }
 

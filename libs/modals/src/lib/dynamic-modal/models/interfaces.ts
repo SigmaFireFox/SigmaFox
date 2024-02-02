@@ -1,5 +1,8 @@
 import { ValidatorFn } from '@angular/forms';
-import { StandardButtonConfig } from 'libs/components/buttons/src';
+import {
+  ButtonStyleClass,
+  StandardButtonConfig,
+} from 'libs/components/buttons/src';
 import { DynamicModalFormFieldType as DynamicModalFieldType } from './enum';
 
 export interface DynamicModalConfig {
@@ -51,7 +54,11 @@ export interface DynamicModalButtons {
 }
 
 export interface DynamicModalButtonConfig {
-  requiresValidation: boolean;
-  isSubmit: boolean;
+  isSubmit?: boolean;
+  isCancel?: boolean;
+  specialSubmitState?: {
+    onSubmit: ButtonStyleClass;
+    onUnSubmit: ButtonStyleClass;
+  };
   buttonConfig: StandardButtonConfig;
 }

@@ -21,7 +21,6 @@
     *ngSwitchCase="viewStateEnum.CLIENT_DETAIL"
     [clientDetails]="currentClient.clientDetails"
     (update)="onClientUpdate($event)"
-    (void)="onClientVoid($event)"
     (close)="onModalClosed()"
   ></sigmafox-modal-client-details>
 </div>
