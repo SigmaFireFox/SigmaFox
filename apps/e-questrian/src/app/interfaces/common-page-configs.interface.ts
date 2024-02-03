@@ -27,6 +27,7 @@ export enum FinancialDocType {
 
 export interface FinancialDocListPageConfig extends PageConfig {
   financialDocType: FinancialDocType;
+  isVoidToggable: boolean;
   items: FinancialDocItem[];
 }
 

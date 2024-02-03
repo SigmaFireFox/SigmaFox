@@ -233,6 +233,16 @@ export class TestDataService {
         invoice: 0,
         cancelled: false,
       },
+      10: {
+        type: AppointmentType.Lesson,
+        subject: 'Lesson with ' + this.clients[5].clientDetails.firstName,
+        date: this.tomorrow,
+        startTime: { hours: 13, minutes: 0 },
+        duration: { hours: 0, minutes: 30 },
+        client: this.clients[5],
+        invoice: 0,
+        cancelled: false,
+      },
     };
   }
 
@@ -249,6 +259,12 @@ export class TestDataService {
         date: this.yesterday,
         appointments: [2, 3],
         voided: false,
+      },
+      3: {
+        clientID: 5,
+        date: this.today,
+        appointments: [10],
+        voided: true,
       },
     };
   }

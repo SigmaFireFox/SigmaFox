@@ -24,7 +24,7 @@ export class InvoiceDetailPage {
       {
         display: 'Back to Invoices List',
         pathConfig: {
-          path: FinanceRoutePaths.InvoicesView,
+          path: FinanceRoutePaths.InvoicesList,
           type: PathType.Sibling,
         },
         styling: OptionStyling.Secondary,

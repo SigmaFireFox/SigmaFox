@@ -8,16 +8,22 @@ import {
   FinancialDocListPageConfig,
   DocID,
   FinancialDocType,
-  PageConfig,
   FinancialDocItem,
 } from '../../interfaces/common-page-configs.interface';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-financial-doc-list-screen',
   templateUrl: './financial-doc-list.screen.html',
   styleUrls: ['./financial-doc-list.screen.scss'],
   standalone: true,
-  imports: [CommonModule, GeneralScreenHeaderComponent],
+  imports: [
+    CommonModule,
+    GeneralScreenHeaderComponent,
+    MatCheckboxModule,
+    FormsModule,
+  ],
 })
 export class FinancialDocListScreen implements OnInit {
   @Input() config = {} as FinancialDocListPageConfig;

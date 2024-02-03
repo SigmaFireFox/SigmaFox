@@ -2,6 +2,13 @@
   [header]="header"
 ></app-general-screen-header-component>
 <div class="list-container">
+  <!-- Void toggle -->
+  <div *ngIf="config.isVoidToggable">
+    <mat-checkbox [(ngModel)]="isViewingVoidedItems"
+      >View voided items</mat-checkbox
+    >
+  </div>
+
   <!-- Headers -->
   <div class="header-line">
     <div

@@ -52,6 +52,7 @@ export const InvoiceListPageConfig = {
   header: '',
   subHeader: 'Invoices',
   financialDocType: FinancialDocType.LIST,
+  isVoidToggable: true,
   items: [],
 } as FinancialDocListPageConfig;
 
@@ -106,6 +107,7 @@ export const PaymentListPageConfig = {
   header: '',
   subHeader: 'Payments',
   financialDocType: FinancialDocType.LIST,
+  isVoidToggable: true,
   items: [],
 } as FinancialDocListPageConfig;
 
@@ -125,6 +127,7 @@ export const StatementPageConfig = {
   header: '',
   subHeader: 'Statement',
   financialDocType: FinancialDocType.STATEMENT,
+  isVoidToggable: true,
   items: [],
 } as FinancialDocListPageConfig;
 

@@ -18,7 +18,7 @@ export class InvoicesMenuPage {
       {
         display: 'View Invoices',
         pathConfig: {
-          path: FinanceRoutePaths.InvoicesView,
+          path: FinanceRoutePaths.InvoicesList,
           type: PathType.Child,
         },
       },

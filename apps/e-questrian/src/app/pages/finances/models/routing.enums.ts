@@ -2,6 +2,6 @@ export enum FinanceRoutePaths {
   FinancePage = '',
   FinanceMenu = '',
   InvoiceMenu = 'invoices',
-  InvoicesView = 'view-all',
+  InvoicesList = 'view-all',
   InvoiceDetail = 'view-invoice',
 }
