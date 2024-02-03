@@ -1,17 +1,27 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 /* eslint-disable @angular-eslint/component-selector */
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { GeneralScreenHeaderComponent } from '../../components/general-screen-header/general-screen-header.component';
 import {
   GeneralItemsListPageConfig,
-  PageConfig,
   PageColumns,
   GeneralItemDetail,
 } from '../../interfaces/common-page-configs.interface';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-general-items-list-screen',
   templateUrl: './general-items-list.screen.html',
   styleUrls: ['./general-items-list.screen.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    GeneralScreenHeaderComponent,
+    FormsModule,
+    MatCheckboxModule,
+  ],
 })
 export class GeneralItemsListScreen implements OnInit {
   @Input() config = {} as GeneralItemsListPageConfig;
@@ -20,8 +30,10 @@ export class GeneralItemsListScreen implements OnInit {
   header = '';
   listConfig = {
     columns: [] as PageColumns[],
+    isVoidToggable: this.config.isVoidToggable,
     items: {},
   } as GeneralItemsListPageConfig;
+  isViewingVoidedItems = false;
 
   ngOnInit() {
     this.setPageConfig();

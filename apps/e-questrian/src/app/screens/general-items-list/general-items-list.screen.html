@@ -1,6 +1,14 @@
 <app-general-screen-header-component
   [header]="header"
 ></app-general-screen-header-component>
+<!-- Void toggle -->
+<div *ngIf="config.isVoidToggable">
+  <mat-checkbox [(ngModel)]="isViewingVoidedItems"
+    >View voided items</mat-checkbox
+  >
+</div>
+<!-- [(ngModel)]="isViewingVoidedItems" -->
+
 <div class="list-container">
   <!-- Headers -->
   <div class="header-line">
@@ -17,7 +25,10 @@
     *ngFor="let generalItem of listConfig.items | keyvalue"
     (click)="onItemClicked(generalItem.key)"
   >
-    <div class="general-item-line" *ngIf="!generalItem.value.voided">
+    <div
+      class="general-item-line"
+      *ngIf="!generalItem.value.voided || isViewingVoidedItems"
+    >
       <div
         [ngStyle]="{width: field.widthPerc}"
         *ngFor="let field of generalItem.value.listedDetails  "

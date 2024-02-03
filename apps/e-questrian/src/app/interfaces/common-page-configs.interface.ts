@@ -85,6 +85,7 @@ export interface ProcessResult {
 
 export interface GeneralItemsListPageConfig extends PageConfig {
   columns: PageColumns[];
+  isVoidToggable: boolean;
   items: GeneralItem;
 }
 

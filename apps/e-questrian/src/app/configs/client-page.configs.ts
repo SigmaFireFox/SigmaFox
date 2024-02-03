@@ -21,13 +21,13 @@ export const ClientMenuPageConfig = {
 } as MenuPageConfig;
 
 export const ClientListPageConfig = {
-  header: '',
-  subHeader: 'Clients',
+  header: 'Clients',
   columns: [
     { content: 'Client', widthFactor: 3 },
     { content: 'Email', widthFactor: 5 },
     { content: 'Contact', widthFactor: 3 },
   ],
+  isVoidToggable: true,
   items: {} as GeneralItem,
 } as GeneralItemsListPageConfig;
 

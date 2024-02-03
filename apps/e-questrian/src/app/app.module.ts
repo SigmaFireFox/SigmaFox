@@ -66,7 +66,6 @@ import { FinancePageModule } from './pages/finances/finances.module';
 
     // Screens and Sections
     ProcessResultsScreen,
-    GeneralItemsListScreen,
 
     EntryCallToActionSection,
     FeaturesSection,
@@ -120,6 +119,7 @@ import { FinancePageModule } from './pages/finances/finances.module';
     GeneralScreenHeaderComponent,
     FinancialDocListScreen,
     FinancialDocViewScreen,
+    GeneralItemsListScreen,
   ],
 })
 export class AppModule {}
