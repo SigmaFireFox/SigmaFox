@@ -11,7 +11,7 @@ export const ClientMenuPageConfig = {
   menu: [
     {
       display: 'View clients',
-      viewState: ViewState.VIEW,
+      viewState: ViewState.CLIENT_LIST,
     },
     {
       display: 'Add new client',
@@ -34,5 +34,11 @@ export const ClientListPageConfig = {
 export const ViewClientsMenuConfig = {
   header: '',
   subHeader: '',
-  menu: [{ display: 'Back to Client Menu', viewState: ViewState.MAIN }],
+  menu: [
+    {
+      display: 'Add new client',
+      viewState: ViewState.NEW_CLIENT,
+    },
+    { display: 'Back to Client Menu', viewState: ViewState.MAIN },
+  ],
 } as MenuPageConfig;

@@ -42,7 +42,7 @@ export class ClientsPage {
   switchViewState(viewStateSelected: ViewState) {
     this.currentViewState = viewStateSelected;
     switch (this.currentViewState) {
-      case ViewState.VIEW: {
+      case ViewState.CLIENT_LIST: {
         this.clientListPageConfig.items = this.clientService.setClientList();
         break;
       }
@@ -65,7 +65,7 @@ export class ClientsPage {
   }
 
   onModalClosed() {
-    this.switchViewState(ViewState.VIEW);
+    this.switchViewState(ViewState.CLIENT_LIST);
   }
 
   private updateClientDetails(clientID: number) {

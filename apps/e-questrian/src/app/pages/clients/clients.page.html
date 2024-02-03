@@ -6,7 +6,7 @@
     ></app-menu-component>
   </div>
 
-  <div *ngSwitchCase="viewStateEnum.VIEW">
+  <div *ngSwitchCase="viewStateEnum.CLIENT_LIST">
     <app-general-items-list-screen
       [config]="clientListPageConfig"
       (itemClicked)="viewClient($event)"
