@@ -24,7 +24,7 @@ export interface DynamicModalForm {
   fields: DynamicModalFields;
   fieldsOrder: string[];
   passwordFieldsToMatch?: DynamicModalFieldsToMatch;
-  preventFieldLineWrap?: boolean;
+  allowFieldLineWrap?: boolean;
 }
 
 export interface DynamicModalFields {

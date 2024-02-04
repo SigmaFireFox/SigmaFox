@@ -32,7 +32,7 @@
         <div class="form-line-2" *ngIf="config.form">
           <div
             class="form-line-3"
-            [ngStyle]="{'flex-direction': config.form.preventFieldLineWrap? 'row':'column'}"
+            [ngStyle]="{'flex-direction': config.form.allowFieldLineWrap? 'column':'row'}"
             *ngVar="config.form.fields[fieldName] as formField"
           >
             <div

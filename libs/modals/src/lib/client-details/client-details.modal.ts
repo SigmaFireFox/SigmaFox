@@ -62,7 +62,7 @@ export class ClientDetailsModal implements OnInit {
       },
       editMode: this.editMode,
       form: {
-        preventFieldLineWrap: true,
+        allowFieldLineWrap: false,
         fields: {
           [FormFieldNames.FirstName]: {
             fieldType: DynamicModalFormFieldType.StandardInput,
