@@ -1,11 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  ReactiveFormsModule,
-  UntypedFormControl,
-  UntypedFormGroup,
-  Validators,
-} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonsModule, ButtonStyleClass } from 'libs/components/buttons/src';
 import { StandardButtonConfig } from 'libs/components/buttons/src/lib/standard-button/models/interfaces';
@@ -19,6 +14,7 @@ export enum FirebaseAuthError {
   UserNotFound = `auth/user-not-found`,
   WrongPassword = 'auth/wrong-password',
   EmailInUse = 'auth/email-already-in-use',
+  NetworkRequestFailed = 'auth/network-request-failed',
 }
 
 @Component({
@@ -100,6 +96,18 @@ export class ErrorModal {
           to naviagte to our sign in form',
           'If you have forgotten your password, the sign in for itself with have \
           options to have your email reset',
+        ];
+        break;
+      }
+      case FirebaseAuthError.NetworkRequestFailed: {
+        this.header = 'Network request failed';
+        this.errorDescription = [
+          'It seems that the network request has failed, The fail could be on our \
+          network or yours.',
+          'Please check your internet and perhaps try again. If this problem \
+          continues to persist - then it is likely the issue is on our network, in \
+          which case we ask you try this again a bit later while we sort out this \
+          issue in the interim',
         ];
         break;
       }
