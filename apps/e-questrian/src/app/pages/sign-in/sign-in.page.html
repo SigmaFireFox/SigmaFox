@@ -1,11 +1,19 @@
 <sigmafox-modal-sign-in
-  *ngIf="error === firebaseAuthErrors.None"
+  *ngIf="error === firebaseAuthErrors.None && message === successMessage.None"
   [signInDetails]="signInDetails"
   (signin)="onSignInClicked($event)"
   (register)="onRegisterClicked()"
+  (resetPassword)="onResetPasswordClicked($event)"
 ></sigmafox-modal-sign-in>
+
 <sigmafox-modal-error
   *ngIf="error !== firebaseAuthErrors.None"
   [error]="error"
   (closed)="onErrorModalClose()"
 ></sigmafox-modal-error>
+
+<sigmafox-modal-success
+  *ngIf="message !== successMessage.None"
+  [message]="message"
+  (closed)="onSuccessModalClose()"
+></sigmafox-modal-success>

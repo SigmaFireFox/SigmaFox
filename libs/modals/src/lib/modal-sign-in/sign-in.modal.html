@@ -1,5 +1,13 @@
 <sigmafox-dynamic-modal
-  [config]="dynamicModalConfig"
+  *ngIf="currentViewState === viewState.SIGN_IN"
+  [config]="signInModalConfig"
+  (buttonClicked)="onButtonClicked($event)"
+  (formSubmitted)="onFormSubmitted($event)"
+></sigmafox-dynamic-modal>
+
+<sigmafox-dynamic-modal
+  *ngIf="currentViewState === viewState.FORGOT_PASSWORD"
+  [config]="forgotPasswordModalConfig"
   (buttonClicked)="onButtonClicked($event)"
   (formSubmitted)="onFormSubmitted($event)"
 ></sigmafox-dynamic-modal>

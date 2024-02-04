@@ -52,7 +52,9 @@ body {
 .primary-button,
 .secondary-button,
 .primary-warning-button,
-.secondary-warning-button {
+.secondary-warning-button,
+.primary-success-button,
+.secondary-success-button {
   border: none;
   width: 100%;
   border-radius: 5px;
@@ -63,14 +65,18 @@ body {
 .primary-button:hover,
 .secondary-button:hover,
 .primary-warning-button:hover,
-.secondary-warning-button:hover {
+.secondary-warning-button:hover,
+.primary-success-button:hover,
+.secondary-success-button:hover {
   background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
 }
 
 .primary-button:after,
 .secondary-button:after,
 .primary-warning-button:after,
-.secondary-warning-button:after {
+.secondary-warning-button:after,
+.primary-success-button:after,
+.secondary-success-button:after {
   content: "";
   display: block;
   position: absolute;
@@ -89,7 +95,9 @@ body {
 .primary-button:active:after,
 .secondary-button:active:after,
 .primary-warning-button:active:after,
-.secondary-warning-button:active:after {
+.secondary-warning-button:active:after,
+.primary-success-button:active:after,
+.secondary-success-button:active:after {
   opacity: .2;
   transition: 0s;
 }
@@ -112,6 +120,16 @@ body {
 .secondary-warning-button {
   background-color: white;
   color: red;
+}
+
+.primary-success-button {
+  background-color: lime;
+  color: white;
+}
+
+.secondary-success-button {
+  background-color: white;
+  color: lime;
 }
 
 

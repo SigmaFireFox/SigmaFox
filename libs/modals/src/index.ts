@@ -7,6 +7,10 @@ export {
   ErrorModal,
   FirebaseAuthError as FirebaseAuthErrors,
 } from './lib/modal-error/error.modal';
+export {
+  SuccessModal,
+  SuccessMessage,
+} from './lib/modal-success/success.modal';
 export { DynamicModal } from './lib/dynamic-modal/dynamic.modal';
 export {
   ClientDetailsModal,

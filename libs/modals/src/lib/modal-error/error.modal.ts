@@ -59,7 +59,7 @@ export class ErrorModal {
       case FirebaseAuthError.None: {
         console.log(
           'ErrorModal',
-          'FirebaseAuthErrors.None passed as error - this should error modal \
+          'FirebaseAuthErrors.None passed as error - this error modal \
           should not render for this error'
         );
         break;

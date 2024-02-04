@@ -67,6 +67,19 @@ export class AuthenticationService {
     return this.afAuth.signOut();
   }
 
+  resetPassword(signInDetails: SignInDetails): Promise<unknown> {
+    return new Promise(async (resolve, reject) => {
+      return this.afAuth
+        .sendPasswordResetEmail(signInDetails.email)
+        .then((result) => {
+          resolve(result);
+        })
+        .catch((error) => {
+          reject(this.setErrorFromErrorMessage(error.message));
+        });
+    });
+  }
+
   async isAuthenticated(): Promise<boolean> {
     return new Promise(async (resolve) => {
       await this.afAuth.onAuthStateChanged((user) => {

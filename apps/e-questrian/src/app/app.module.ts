@@ -40,6 +40,7 @@ import {
   ErrorModal,
   RegisterModal,
   SignInModal,
+  SuccessModal,
 } from '@sigmafox/modals';
 import { LandingPage } from './pages/landing/landing.page';
 import { CommonModule } from '@angular/common';
@@ -112,6 +113,7 @@ import { FinancePageModule } from './pages/finances/finances.module';
     SignInModal,
     RegisterModal,
     ErrorModal,
+    SuccessModal,
     ClientDetailsModal,
 
     // App interal standalone components
