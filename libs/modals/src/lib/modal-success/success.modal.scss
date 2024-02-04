@@ -1,0 +1,218 @@
+.screen-container {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .modal-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 3px solid lime;
+        z-index: 3;
+        padding: 5px;
+        margin-top: -50px;
+        border-radius: 10px;
+        max-width: 900px;
+
+        .modal-header {
+            width: calc(100% - 20px);
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 3vh;
+            color: lime;
+        }
+
+        .modal-sub-header {
+            width: calc(100% - 20px);
+            text-align: center;
+            font-weight: normal;
+            margin: 10px;
+            font-size: 2vh;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+
+            .form-line {
+                display: flex;
+                width: calc(100% - 30px);
+                flex-direction: row;
+                padding: 5px 15px;
+                align-items: center;
+                height: 3vh;
+
+                .form-line-label {
+                    width: 40%;
+                    font-size: 2vh;
+                }
+
+                .form-line-input-container {
+                    flex-direction: row;
+                    height: 30px;
+                    padding-left: 5px;
+                    display: flex;
+                    flex-grow: 1;
+
+                    .form-line-input {
+                        border: none;
+                        height: 3vh;
+                        padding-left: 5px;
+                        display: flex;
+                        flex-grow: 1;
+                    }
+
+                    .form-line-icon {
+                        max-width: fit-content;
+                        display: flex;
+                        flex-grow: 1;
+                        padding: 0 5px;
+                        height: calc(3vh + 2px);
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+
+        .buttons-container {
+            display: flex;
+            width: calc(100% - 20px);
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin: 10px;
+            align-items: center;
+
+            .button {
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .screen-container {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: calc(100% - 50px);
+        z-index: 5;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .modal-container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 3px solid lime;
+            z-index: 3;
+            padding: 5px;
+            margin-top: -50px;
+            border-radius: 10px;
+            max-width: 450px;
+
+            .modal-header {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: bold;
+                margin: 10px;
+                font-size: large;
+            }
+
+            .modal-sub-header {
+                width: calc(100% - 20px);
+                text-align: center;
+                font-weight: normal;
+                margin: 10px;
+                font-size: medium;
+            }
+
+            .form-container {
+                display: flex;
+                flex-direction: column;
+
+                .form-line {
+                    display: flex;
+                    width: calc(100% - 30px);
+                    flex-direction: row;
+                    padding: 5px 15px;
+                    align-items: center;
+                    flex-direction: column;
+                    flex: 1;
+
+                    .form-line-label {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        justify-content: flex-start;
+                    }
+
+                    .form-line-input-container {
+                        flex-direction: row;
+                        height: 30px;
+                        width: 100%;
+                        padding-left: 5px;
+                        display: flex;
+                        flex-grow: 1;
+
+                        .form-line-input {
+                            border: none;
+                            height: 30px;
+                            padding-left: 5px;
+                            display: flex;
+                            flex-grow: 1;
+                        }
+
+                        .form-line-icon {
+                            max-width: fit-content;
+                            display: flex;
+                            flex-grow: 1;
+                            padding: 0 5px;
+                            height: 32px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+
+            .button-container {
+                display: flex;
+                width: calc(100% - 20px);
+                flex-wrap: nowrap;
+                flex-direction: column;
+                margin: 10px;
+                align-items: center;
+
+                .button {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+.sheth {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    opacity: 0.3;
+    z-index: 4;
+}
