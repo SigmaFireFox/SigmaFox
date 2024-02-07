@@ -1,0 +1,12 @@
+<app-generate-invoice-modal
+  *ngIf="currentViewState === viewState.PARAMS"
+  (generateInvoiceParameters)="onGenerateInvoicesClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-generate-invoice-modal>
+
+<div *ngIf="currentViewState === viewState.RESULTS">
+  <app-process-results-screen
+    [config]="generateInvoiceResultsPageConfig"
+  ></app-process-results-screen>
+  <app-menu-component [config]="menuConfig"></app-menu-component>
+</div>
