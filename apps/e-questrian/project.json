@@ -10,7 +10,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/e-questrian",
+        "outputPath": "apps/e-questrian/dist",
         "index": "apps/e-questrian/src/index.html",
         "main": "apps/e-questrian/src/main.ts",
         "polyfills": ["zone.js"],
