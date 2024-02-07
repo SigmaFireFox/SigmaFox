@@ -4,4 +4,5 @@ export enum FinanceRoutePaths {
   InvoiceMenu = 'invoices',
   InvoicesList = 'view-all',
   InvoiceDetail = 'view-invoice',
+  InvoiceGenerate = 'generate',
 }

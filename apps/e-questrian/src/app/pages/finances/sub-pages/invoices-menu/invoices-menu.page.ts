@@ -22,7 +22,13 @@ export class InvoicesMenuPage {
           type: PathType.Child,
         },
       },
-      { display: 'Generate invoices' },
+      {
+        display: 'Generate invoices',
+        pathConfig: {
+          path: FinanceRoutePaths.InvoiceGenerate,
+          type: PathType.Child,
+        },
+      },
       {
         display: 'Back to Finance Menu',
         pathConfig: {

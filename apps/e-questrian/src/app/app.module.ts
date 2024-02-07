@@ -65,9 +65,6 @@ import { FinancePageModule } from './pages/finances/finances.module';
     SignInPage,
     RegisterPage,
 
-    // Screens and Sections
-    ProcessResultsScreen,
-
     EntryCallToActionSection,
     FeaturesSection,
     ClientTestimonialsSection,
@@ -78,7 +75,6 @@ import { FinancePageModule } from './pages/finances/finances.module';
     AppointmentModal,
     PaymentsModal,
     GenerateStatementModal,
-    GenerateInvoiceModal,
 
     // Components
     AppComponent,
@@ -115,6 +111,7 @@ import { FinancePageModule } from './pages/finances/finances.module';
     ErrorModal,
     SuccessModal,
     ClientDetailsModal,
+    GenerateInvoiceModal,
 
     // App interal standalone components
     MenuComponent,
@@ -122,6 +119,7 @@ import { FinancePageModule } from './pages/finances/finances.module';
     FinancialDocListScreen,
     FinancialDocViewScreen,
     GeneralItemsListScreen,
+    ProcessResultsScreen,
   ],
 })
 export class AppModule {}

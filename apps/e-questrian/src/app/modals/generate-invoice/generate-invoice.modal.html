@@ -1,9 +1,5 @@
 <div class="main-container">
-  <form
-    class="form-container"
-    [formGroup]="generateInvoicesParametersForm"
-    (ngSubmit)="onSubmitClick()"
-  >
+  <form class="form-container" [formGroup]="generateInvoicesParametersForm">
     <!-- Header -->
     <div class="form-header">
       <div class="header-text">Generate invoices parameters</div>
@@ -113,11 +109,14 @@
     </div>
 
     <!-- Buttons  -->
-    <div class="button-container">
-      <button class="primary-button" (click)="onGenerateInvoicesClick()">
-        Generate invoices
-      </button>
-      <button class="secondary-button">Cancel</button>
+    <div class="buttons-container">
+      <div class="button-container" *ngFor="let button of actionButtons">
+        <sigmafox-standard-button
+          [config]="button"
+          (clicked)="onButtonClicked(button.buttonID)"
+        >
+        </sigmafox-standard-button>
+      </div>
     </div>
   </form>
 </div>

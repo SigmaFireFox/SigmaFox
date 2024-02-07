@@ -101,6 +101,14 @@
   flex-direction: column;
   margin: 10px;
   align-items: center;
+
+  .button-container {
+    display: flex;
+    flex-grow: 1;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 button {

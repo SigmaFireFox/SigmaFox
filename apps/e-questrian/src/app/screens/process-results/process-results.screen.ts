@@ -1,5 +1,6 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 /* eslint-disable @angular-eslint/component-selector */
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import {
@@ -12,6 +13,8 @@ import {
   selector: 'app-process-results-screen',
   templateUrl: './process-results.screen.html',
   styleUrls: ['./process-results.screen.scss'],
+  standalone: true,
+  imports: [CommonModule],
 })
 export class ProcessResultsScreen implements OnInit {
   @Input() config = {} as ProcessResultsPageConfig;

@@ -5,6 +5,7 @@ import { FinanceRoutePaths } from './models/routing.enums';
 import { FinanceMainMenuPage } from './sub-pages/finance-main-menu/finance-main-menu.page';
 import { InvoicesMenuPage } from './sub-pages/invoices-menu/invoices-menu.page';
 import { InvoiceDetailPage } from './sub-pages/invoices-menu/sub-pages/invoice-detail/invoice-detail.page';
+import { InvoicesGenerateParamsPage } from './sub-pages/invoices-menu/sub-pages/invoices-generate/invoices-generate.page';
 import { InvoicesListPage } from './sub-pages/invoices-menu/sub-pages/invoices-list/invoices-list.page';
 
 export const routes: Routes = [
@@ -27,6 +28,10 @@ export const routes: Routes = [
       {
         path: `${FinanceRoutePaths.InvoiceMenu}/${FinanceRoutePaths.InvoiceDetail}`,
         component: InvoiceDetailPage,
+      },
+      {
+        path: `${FinanceRoutePaths.InvoiceMenu}/${FinanceRoutePaths.InvoiceGenerate}`,
+        component: InvoicesGenerateParamsPage,
       },
     ],
   },
