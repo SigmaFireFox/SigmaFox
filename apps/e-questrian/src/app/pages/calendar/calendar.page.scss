@@ -49,6 +49,7 @@
 .calendar-container {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 
   .calendar-buffer {
     height: calc(7.5vh + 12vh + 3px);
@@ -58,11 +59,12 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 20px);
-    height: calc(100% - 7.5vh - 12vh);
     margin: 0 10px;
+    flex-grow: 1;
 
     .block-container {
-      height: 25px;
+      min-height: 25px;
+      flex-grow: 1;
       align-items: center;
       justify-content: flex-start;
       display: flex;
@@ -75,17 +77,23 @@
       }
 
       .block-appointment-container {
+        display: flex;
+        flex-grow: 1;
+
         .lesson-button {
           background-color: aqua;
         }
 
         .appointment-button {
+
           background-color: hotpink;
         }
 
         .lesson-button,
         .appointment-button {
-          padding: 2px 5px;
+          display: flex;
+          flex-grow: 1;
+          padding: 0 5px;
           margin: 0 3px;
 
           .appointment-button-asterisk {
