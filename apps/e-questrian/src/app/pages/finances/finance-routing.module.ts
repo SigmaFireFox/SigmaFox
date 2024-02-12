@@ -11,6 +11,8 @@ import { PaymentsMenuPage } from './sub-pages/payments-menu/payments-menu.page';
 import { PaymentDetailPage } from './sub-pages/payments-menu/sub-pages/payment-detail/payment-detail.page';
 import { PaymentRecordPage } from './sub-pages/payments-menu/sub-pages/payment-record/payment-record.page';
 import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-list/payments-list.page';
+import { StatementsDetailPage } from './sub-pages/statements/sub-pages/statement-detail/statements-detail.page';
+import { StatementsGeneratePage } from './sub-pages/statements/sub-pages/statements-generate/statements-generate.page';
 
 export const routes: Routes = [
   {
@@ -52,6 +54,14 @@ export const routes: Routes = [
       {
         path: `${FinanceRoutePaths.PaymentsMenu}/${FinanceRoutePaths.PaymentsRecord}`,
         component: PaymentRecordPage,
+      },
+      {
+        path: `${FinanceRoutePaths.Statements}/${FinanceRoutePaths.StatementsGenerate}`,
+        component: StatementsGeneratePage,
+      },
+      {
+        path: `${FinanceRoutePaths.Statements}/${FinanceRoutePaths.StatementsDetail}`,
+        component: StatementsDetailPage,
       },
     ],
   },

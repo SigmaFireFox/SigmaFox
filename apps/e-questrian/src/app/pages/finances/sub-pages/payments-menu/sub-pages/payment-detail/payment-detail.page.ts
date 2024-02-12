@@ -28,7 +28,7 @@ export class PaymentDetailPage {
   showDocument = false;
 
   constructor(
-    private route: ActivatedRoute,
+    private activatedRoute: ActivatedRoute,
     private paymentsService: PaymentsService
   ) {}
 
@@ -44,7 +44,9 @@ export class PaymentDetailPage {
   }
 
   private async setUpDocForDisplay() {
-    this.paymentID = parseInt(this.route.snapshot.queryParams['paymentID']);
+    this.paymentID = parseInt(
+      this.activatedRoute.snapshot.queryParams['paymentID']
+    );
     if (this.paymentID === null || Number.isNaN(this.paymentID)) return;
     this.paymentDocViewConfig =
       await this.paymentsService.setPaymentDocForDisplay(this.paymentID);

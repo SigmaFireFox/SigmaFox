@@ -36,17 +36,26 @@ export class InvoiceDetailPage {
   showDocument = false;
 
   constructor(
-    private route: ActivatedRoute,
+    private activatedRoute: ActivatedRoute,
     private invoiceService: InvoicesService
   ) {}
 
   async ngOnInit() {
-    const invoiceID = this.route.snapshot.queryParams['invoiceID'];
+    const invoiceID = this.activatedRoute.snapshot.queryParams['invoiceID'];
+    const returnTo = this.activatedRoute.snapshot.queryParams['returnTo'];
 
     if (invoiceID === null || Number.isNaN(parseInt(invoiceID))) return;
 
     this.invoiceDocViewConfig =
       await this.invoiceService.setInvoiceDocForDisplay(parseInt(invoiceID));
     this.showDocument = true;
+
+    if (returnTo != null) {
+      this.menuConfig.menu[0] = {
+        display: `Back to ${returnTo}`,
+        backToReferrer: true,
+        styling: OptionStyling.Secondary,
+      };
+    }
   }
 }

@@ -110,11 +110,11 @@ export class TestDataService {
       },
       5: {
         clientDetails: {
-          displayName: 'Jess van Wyk',
-          firstName: 'Jess',
-          lastName: 'van Wyk',
-          email: 'vwykjess@gmail.com',
-          contactNumber: '083 579 4251',
+          displayName: 'Bob Hole',
+          firstName: 'Bob',
+          lastName: 'Hope',
+          email: 'bobhope@gmail.com',
+          contactNumber: '083 579 1234',
           voided: false,
         },
         financialRecords: {

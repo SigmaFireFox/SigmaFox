@@ -33,6 +33,10 @@ export class FinanceMainMenuPage {
       },
       {
         display: 'Statements',
+        pathConfig: {
+          path: `${FinanceRoutePaths.Statements}/${FinanceRoutePaths.StatementsGenerate}`,
+          type: PathType.Child,
+        },
       },
       {
         display: 'Dashboard',

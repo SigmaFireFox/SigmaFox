@@ -5,6 +5,7 @@ export interface MenuOption {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   viewState?: any;
   action?: OptionAction;
+  backToReferrer?: boolean;
 }
 
 export enum OptionStyling {

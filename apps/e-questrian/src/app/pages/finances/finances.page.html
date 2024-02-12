@@ -2,17 +2,6 @@
 <router-outlet></router-outlet>
 
 <!-- <div class="page-container" [ngSwitch]="currentViewState">
-  <div *ngSwitchCase="viewStateEnum.VIEW_PAYMENTS">
-    <app-financial-doc-list-screen
-      [config]="paymentListPageConfig"
-      (itemClicked)="onPaymentClicked($event)"
-    ></app-financial-doc-list-screen>
-    <app-menu-component
-      [config]="paymentListMenuConfig"
-      (viewStateSelected)="onMenuOptionClicked($event)"
-    ></app-menu-component>
-  </div>
-
   <div *ngSwitchCase="viewStateEnum.GENERATE_STATEMENTS_PARAMETERS">
     <app-generate-statement-modal
       (generateStatementParameters)="generateStatement($event)"
@@ -31,14 +20,5 @@
     ></app-menu-component>
   </div>
 
-  <div *ngSwitchCase="viewStateEnum.PAYMENT_DETAIL">
-    <app-payments-modal
-      [currentPayment]="currentPayment"
-      [paymentID]="currentPaymentID"
-      (closed)="switchViewState(viewStateEnum.PAYMENTS)"
-      (newPayment)="paymentCreated($event)"
-      (editedPayment)="paymentEdited($event)"
-      (voidPayment)="paymentVoided($event)"
-    ></app-payments-modal>
-  </div>
+
 </div> -->

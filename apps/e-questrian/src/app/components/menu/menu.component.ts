@@ -43,8 +43,14 @@ export class MenuComponent implements OnInit {
   onMenuOptionClicked(
     action: OptionAction | undefined,
     pathConfig: PathConfig | undefined,
-    viewState: number | undefined
+    viewState: number | undefined,
+    backToReferrer: boolean | undefined
   ) {
+    if (backToReferrer) {
+      window.history.back();
+      return;
+    }
+
     if (action !== undefined) {
       this.actionSelected.emit(action);
     }

@@ -1,7 +1,15 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 /* eslint-disable @angular-eslint/component-selector */
+import { CommonModule } from '@angular/common';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import {
+  UntypedFormGroup,
+  UntypedFormControl,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import { MatOptionModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
 import {
   ClientDetailWithFinancialRecords,
   Clients,
@@ -24,6 +32,14 @@ export interface GenerateStatementParameters {
   selector: 'app-generate-statement-modal',
   templateUrl: './generate-statement.modal.html',
   styleUrls: ['./generate-statement.modal.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatDatepickerModule,
+  ],
 })
 export class GenerateStatementModal {
   @Output() generateStatementParameters =

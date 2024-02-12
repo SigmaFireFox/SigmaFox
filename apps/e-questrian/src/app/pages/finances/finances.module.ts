@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { GeneralScreenHeaderComponent } from '../../components/general-screen-header/general-screen-header.component';
 import { MenuComponent } from '../../components/menu/menu.component';
 import { GenerateInvoiceModal } from '../../modals/generate-invoice/generate-invoice.modal';
+import { GenerateStatementModal } from '../../modals/generate-statement/generate-statement.modal';
 import { PaymentsModal } from '../../modals/payments/payments.modal';
 import { FinancialDocListScreen } from '../../screens/financial-doc-list/financial-doc-list.screen';
 import { FinancialDocViewScreen } from '../../screens/financial-doc-view/financial-doc-view.screen';
@@ -19,6 +20,8 @@ import { PaymentsMenuPage } from './sub-pages/payments-menu/payments-menu.page';
 import { PaymentDetailPage } from './sub-pages/payments-menu/sub-pages/payment-detail/payment-detail.page';
 import { PaymentRecordPage } from './sub-pages/payments-menu/sub-pages/payment-record/payment-record.page';
 import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-list/payments-list.page';
+import { StatementsDetailPage } from './sub-pages/statements/sub-pages/statement-detail/statements-detail.page';
+import { StatementsGeneratePage } from './sub-pages/statements/sub-pages/statements-generate/statements-generate.page';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-l
     PaymentsListPage,
     PaymentDetailPage,
     PaymentRecordPage,
+    StatementsGeneratePage,
+    StatementsDetailPage,
   ],
   imports: [
     CommonModule,
@@ -44,6 +49,7 @@ import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-l
     GeneralScreenHeaderComponent,
     ProcessResultsScreen,
     PaymentsModal,
+    GenerateStatementModal,
   ],
   exports: [RouterModule],
 })

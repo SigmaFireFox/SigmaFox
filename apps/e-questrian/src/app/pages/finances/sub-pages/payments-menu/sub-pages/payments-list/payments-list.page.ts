@@ -30,7 +30,7 @@ export class PaymentsListPage {
     subHeader: '',
     menu: [
       {
-        display: 'Record new payment',
+        display: 'Record New Payment',
         pathConfig: {
           path: FinanceRoutePaths.PaymentsRecord,
           type: PathType.Sibling,

@@ -9,4 +9,7 @@ export enum FinanceRoutePaths {
   PaymentsList = 'view-all',
   PaymentDetail = 'view-payment',
   PaymentsRecord = 'record',
+  Statements = 'statements',
+  StatementsGenerate = 'generate',
+  StatementsDetail = 'view-statement',
 }
