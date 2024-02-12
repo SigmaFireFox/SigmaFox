@@ -1,5 +1,6 @@
 .screen-container {
   padding: 3%;
+  position: relative;
 
   .basic-detail-container {
     margin: 2vh 0;
@@ -21,7 +22,7 @@
       font-weight: bold;
       width: calc(100% - 2vw);
       background-color: aquamarine;
-      padding: 0 1vw;
+      padding: 1vw;
     }
 
     .subheader-line {
@@ -70,24 +71,49 @@
     }
   }
 
-  // These repeat and need to be consistance (therefore not nested)
-  .number-column {
-    width: 7%;
-  }
-
-  .date-column {
-    width: 27%;
-  }
-
-  .detail-column {
-    width: 48%;
-  }
-
-  .amount-column {
+  .text-overlay-container {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 18%;
-    text-align: end;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+
+
+    .text-overlay {
+      transform: rotate(-45deg);
+      width: 50%;
+      font-size: 50px;
+      font-weight: bold;
+      color: red;
+      border-color: red;
+      border-style: solid none solid none;
+      border-width: 2px;
+      text-align: center;
+    }
   }
+
+}
+
+// These repeat and need to be consistance (therefore not nested)
+.number-column {
+  width: 7%;
+}
+
+.date-column {
+  width: 27%;
+}
+
+.detail-column {
+  width: 48%;
+}
+
+.amount-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 18%;
+  text-align: end;
 }

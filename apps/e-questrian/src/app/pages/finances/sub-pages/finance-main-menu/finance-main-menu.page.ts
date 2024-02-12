@@ -26,6 +26,10 @@ export class FinanceMainMenuPage {
       },
       {
         display: 'Payments',
+        pathConfig: {
+          path: FinanceRoutePaths.PaymentsMenu,
+          type: PathType.Child,
+        },
       },
       {
         display: 'Statements',

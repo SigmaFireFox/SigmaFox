@@ -5,4 +5,8 @@ export enum FinanceRoutePaths {
   InvoicesList = 'view-all',
   InvoiceDetail = 'view-invoice',
   InvoiceGenerate = 'generate',
+  PaymentsMenu = 'payments',
+  PaymentsList = 'view-all',
+  PaymentDetail = 'view-payment',
+  PaymentsRecord = 'record',
 }

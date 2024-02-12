@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
+import { DocType } from '../../enums/doc-types.enum';
 import { Clients } from '../../interfaces/clients.interface';
-import { FinancialDocItem } from '../../interfaces/common-page-configs.interface';
+import {
+  DocView,
+  FinancialDocItem,
+} from '../../interfaces/common-page-configs.interface';
 import { Payments, PaymentDetails } from '../../interfaces/payments.interface';
 import { ClientNotificationService } from '../client-notification/client-notification.service';
 import {
@@ -12,12 +16,15 @@ import {
   providedIn: 'root',
 })
 export class PaymentsService {
-  clients = {} as Clients;
   currentPayments: Payments = {};
 
   get paymentsOnFile(): Payments {
     const paymentString = localStorage.getItem('payments');
     return JSON.parse(paymentString || '{}');
+  }
+
+  get clients(): Clients {
+    return this.clientsService.clientsOnFile;
   }
 
   constructor(
@@ -55,8 +62,7 @@ export class PaymentsService {
     localStorage.setItem('payments', JSON.stringify(this.currentPayments));
   }
 
-  setPaymentDocForDisplay(): FinancialDocItem[] {
-    this.getClients();
+  setPaymentsDataForDisplay(): FinancialDocItem[] {
     const payments: FinancialDocItem[] = [];
     Object.keys(this.currentPayments).forEach((key) => {
       const finDoc = {} as FinancialDocItem;
@@ -71,8 +77,40 @@ export class PaymentsService {
     return payments;
   }
 
-  private getClients() {
-    const clientList = localStorage.getItem('clients');
-    this.clients = JSON.parse(clientList || '[]');
+  setPaymentDocForDisplay(selectedPaymentID: number): Promise<DocView> {
+    const currentPayment: PaymentDetails =
+      this.currentPayments[selectedPaymentID];
+
+    const paymentDocViewConfig: DocView = {
+      header: 'Receipt #' + selectedPaymentID,
+      docType: DocType.PAYMENT,
+      docNumber: selectedPaymentID,
+      docClient: this.clients[currentPayment.clientID],
+      lineItems: [
+        {
+          [currentPayment.paymentType + ' payments']: [
+            {
+              number: 0,
+              date: currentPayment.date,
+              detail: 'Payment received',
+              amount: currentPayment.amount,
+            },
+          ],
+        },
+      ],
+      summaryItems: [
+        {
+          detail: 'Total',
+          amount: currentPayment.amount,
+          bold: true,
+          isTally: true,
+        },
+      ],
+      overlayText: currentPayment.voided ? 'Voided' : '',
+    } as DocView;
+
+    return new Promise(async (resolve) => {
+      resolve(paymentDocViewConfig);
+    });
   }
 }

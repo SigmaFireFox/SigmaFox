@@ -92,27 +92,24 @@ export class InvoicesService {
 
   setInvoiceDocForDisplay(selectedInvoiceID: number): Promise<DocView> {
     const invoiceDocViewConfig: DocView = {} as DocView;
-    this.currentInvoices[selectedInvoiceID];
+    const currentInvoice = this.currentInvoices[selectedInvoiceID];
     invoiceDocViewConfig.header = 'Invoice #' + selectedInvoiceID;
     invoiceDocViewConfig.docNumber = selectedInvoiceID;
-    const firstAppoinentNumber =
-      this.currentInvoices[selectedInvoiceID]?.appointments[0];
+    const firstAppoinentNumber = currentInvoice?.appointments[0];
     invoiceDocViewConfig.docClient =
       (this.currentAppointments[firstAppoinentNumber]
         ?.client as ClientDetailWithFinancialRecords) || {};
     invoiceDocViewConfig.lineItems = [{ Lessons: [] }];
     let subTotal = 0;
-    this.currentInvoices[selectedInvoiceID]?.appointments.forEach(
-      (appointmentID) => {
-        invoiceDocViewConfig.lineItems[0]['Lessons'].push({
-          number: appointmentID,
-          date: new Date(this.currentAppointments[appointmentID].date),
-          detail: this.currentAppointments[appointmentID].subject || '',
-          amount: 250,
-        });
-        subTotal += 250;
-      }
-    );
+    currentInvoice?.appointments.forEach((appointmentID) => {
+      invoiceDocViewConfig.lineItems[0]['Lessons'].push({
+        number: appointmentID,
+        date: new Date(this.currentAppointments[appointmentID].date),
+        detail: this.currentAppointments[appointmentID].subject || '',
+        amount: 250,
+      });
+      subTotal += 250;
+    });
 
     invoiceDocViewConfig.summaryItems = [
       {

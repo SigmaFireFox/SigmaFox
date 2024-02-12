@@ -33,7 +33,7 @@ export class DashboardPage {
 
   onActionSelected(action: OptionAction): void {
     switch (action) {
-      case OptionAction.Log_Out: {
+      case OptionAction.LogOut: {
         this.authService.UserSignOut();
       }
     }

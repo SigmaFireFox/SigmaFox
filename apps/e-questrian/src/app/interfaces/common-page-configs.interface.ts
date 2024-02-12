@@ -46,6 +46,7 @@ export interface DocView extends PageConfig {
   docClient: ClientDetailWithFinancialRecords;
   lineItems: LineItemGroup[];
   summaryItems: SummaryItem[];
+  overlayText?: string;
 }
 
 export interface LineItemGroup {

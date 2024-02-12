@@ -2,34 +2,6 @@
 <router-outlet></router-outlet>
 
 <!-- <div class="page-container" [ngSwitch]="currentViewState">
-
-
-  <div *ngSwitchCase="viewStateEnum.GENERATE_INVOICES_PARAMETERS">
-    <app-generate-invoice-modal
-      (generateInvoiceParameters)="generateInvoices($event)"
-      (cancelled)="switchViewState(viewStateEnum.INVOICES)"
-    ></app-generate-invoice-modal>
-  </div>
-
-  <div *ngSwitchCase="viewStateEnum.GENERATE_INVOICES_RESULTS">
-    <app-process-results-screen
-      [config]="generateInvoiceResultsPageConfig"
-    ></app-process-results-screen>
-
-    <div *ngIf="isInvoiceGenerationComplete">
-      <app-menu-component
-        [config]="generateInvoiceResultsMenuConfig"
-        (viewStateSelected)="onMenuOptionClicked($event)"
-      ></app-menu-component>
-    </div>
-  </div>
-
-  <app-menu-component
-    *ngSwitchCase="viewStateEnum.PAYMENTS"
-    [config]="paymentsMenuPageConfig"
-    (viewStateSelected)="onMenuOptionClicked($event)"
-  ></app-menu-component>
-
   <div *ngSwitchCase="viewStateEnum.VIEW_PAYMENTS">
     <app-financial-doc-list-screen
       [config]="paymentListPageConfig"

@@ -14,6 +14,9 @@ import { InvoicesMenuPage } from './sub-pages/invoices-menu/invoices-menu.page';
 import { InvoiceDetailPage } from './sub-pages/invoices-menu/sub-pages/invoice-detail/invoice-detail.page';
 import { InvoicesGenerateParamsPage } from './sub-pages/invoices-menu/sub-pages/invoices-generate/invoices-generate.page';
 import { InvoicesListPage } from './sub-pages/invoices-menu/sub-pages/invoices-list/invoices-list.page';
+import { PaymentsMenuPage } from './sub-pages/payments-menu/payments-menu.page';
+import { PaymentDetailPage } from './sub-pages/payments-menu/sub-pages/payment-detail/payment-detail.page';
+import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-list/payments-list.page';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { InvoicesListPage } from './sub-pages/invoices-menu/sub-pages/invoices-l
     InvoicesListPage,
     InvoiceDetailPage,
     InvoicesGenerateParamsPage,
+    PaymentsMenuPage,
+    PaymentsListPage,
+    PaymentDetailPage,
   ],
   imports: [
     CommonModule,

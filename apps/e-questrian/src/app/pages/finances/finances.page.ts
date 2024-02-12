@@ -129,12 +129,6 @@ export class FinancesPage {
 
   switchViewState(viewStateSelected: ViewState) {
     switch (viewStateSelected) {
-      case ViewState.VIEW_INVOICES:
-        this.getInvoiceDataForDisplay();
-        break;
-      // case ViewState.INVOICE_DETAIL:
-      //   this.getInvoiceDocForDisplay();
-      //   break;
       case ViewState.VIEW_PAYMENTS:
         this.getPaymentDocForDisplay();
         break;
@@ -145,21 +139,10 @@ export class FinancesPage {
     this.currentViewState = viewStateSelected;
   }
 
-  private getInvoiceDataForDisplay() {
-    this.invoiceListPageConfig.items =
-      this.invoiceService.setInvoiceDataForDisplay();
-  }
-
-  // private getInvoiceDocForDisplay() {
-  //   this.invoiceDocViewConfig = this.invoiceService.setInvoiceDocForDisplay(
-  //     this.currentInvoiceID
-  //   );
-  // }
-
   private getPaymentDocForDisplay() {
     this.currentPaymentID = 0;
     this.paymentListPageConfig.items =
-      this.paymentsService.setPaymentDocForDisplay();
+      this.paymentsService.setPaymentsDataForDisplay();
   }
 
   private setInvoiceGenerationResultsForDisplay(

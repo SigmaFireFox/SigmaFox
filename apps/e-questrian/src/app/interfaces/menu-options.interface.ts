@@ -13,7 +13,8 @@ export enum OptionStyling {
 }
 
 export enum OptionAction {
-  Log_Out,
+  LogOut = 'log-out',
+  Void = 'void',
 }
 
 export interface PathConfig {

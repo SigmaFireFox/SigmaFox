@@ -44,7 +44,6 @@ export class FinancialDocListScreen implements OnInit {
   }
 
   private setPageHeader() {
-    console.log(this.config);
     this.header = this.config.header;
   }
 }
