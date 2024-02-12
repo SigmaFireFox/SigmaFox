@@ -9,7 +9,6 @@ import {
   OptionStyling,
   PathType,
 } from 'apps/e-questrian/src/app/interfaces/menu-options.interface';
-import { InvoicesService } from 'apps/e-questrian/src/app/services/invoices/invoices.service';
 import { PaymentsService } from 'apps/e-questrian/src/app/services/payments/payments.service';
 import { FinanceRoutePaths } from '../../../../models/routing.enums';
 
@@ -30,6 +29,13 @@ export class PaymentsListPage {
     header: '',
     subHeader: '',
     menu: [
+      {
+        display: 'Record new payment',
+        pathConfig: {
+          path: FinanceRoutePaths.PaymentsRecord,
+          type: PathType.Sibling,
+        },
+      },
       {
         display: 'Back to Payments Menu',
         pathConfig: {

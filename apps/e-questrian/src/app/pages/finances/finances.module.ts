@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { GeneralScreenHeaderComponent } from '../../components/general-screen-header/general-screen-header.component';
 import { MenuComponent } from '../../components/menu/menu.component';
 import { GenerateInvoiceModal } from '../../modals/generate-invoice/generate-invoice.modal';
+import { PaymentsModal } from '../../modals/payments/payments.modal';
 import { FinancialDocListScreen } from '../../screens/financial-doc-list/financial-doc-list.screen';
 import { FinancialDocViewScreen } from '../../screens/financial-doc-view/financial-doc-view.screen';
 import { ProcessResultsScreen } from '../../screens/process-results/process-results.screen';
@@ -16,6 +17,7 @@ import { InvoicesGenerateParamsPage } from './sub-pages/invoices-menu/sub-pages/
 import { InvoicesListPage } from './sub-pages/invoices-menu/sub-pages/invoices-list/invoices-list.page';
 import { PaymentsMenuPage } from './sub-pages/payments-menu/payments-menu.page';
 import { PaymentDetailPage } from './sub-pages/payments-menu/sub-pages/payment-detail/payment-detail.page';
+import { PaymentRecordPage } from './sub-pages/payments-menu/sub-pages/payment-record/payment-record.page';
 import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-list/payments-list.page';
 
 @NgModule({
@@ -29,6 +31,7 @@ import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-l
     PaymentsMenuPage,
     PaymentsListPage,
     PaymentDetailPage,
+    PaymentRecordPage,
   ],
   imports: [
     CommonModule,
@@ -40,6 +43,7 @@ import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-l
     GenerateInvoiceModal,
     GeneralScreenHeaderComponent,
     ProcessResultsScreen,
+    PaymentsModal,
   ],
   exports: [RouterModule],
 })

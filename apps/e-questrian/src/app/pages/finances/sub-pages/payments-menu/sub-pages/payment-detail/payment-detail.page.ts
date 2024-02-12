@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
   DocView,
-  FinancialDocType,
   MenuPageConfig,
 } from 'apps/e-questrian/src/app/interfaces/common-page-configs.interface';
 import {

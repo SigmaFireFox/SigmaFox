@@ -9,6 +9,7 @@ import { InvoicesGenerateParamsPage } from './sub-pages/invoices-menu/sub-pages/
 import { InvoicesListPage } from './sub-pages/invoices-menu/sub-pages/invoices-list/invoices-list.page';
 import { PaymentsMenuPage } from './sub-pages/payments-menu/payments-menu.page';
 import { PaymentDetailPage } from './sub-pages/payments-menu/sub-pages/payment-detail/payment-detail.page';
+import { PaymentRecordPage } from './sub-pages/payments-menu/sub-pages/payment-record/payment-record.page';
 import { PaymentsListPage } from './sub-pages/payments-menu/sub-pages/payments-list/payments-list.page';
 
 export const routes: Routes = [
@@ -47,6 +48,10 @@ export const routes: Routes = [
       {
         path: `${FinanceRoutePaths.PaymentsMenu}/${FinanceRoutePaths.PaymentDetail}`,
         component: PaymentDetailPage,
+      },
+      {
+        path: `${FinanceRoutePaths.PaymentsMenu}/${FinanceRoutePaths.PaymentsRecord}`,
+        component: PaymentRecordPage,
       },
     ],
   },

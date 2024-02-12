@@ -73,7 +73,6 @@ import { FinancePageModule } from './pages/finances/finances.module';
     // Modals
     WarningsModal,
     AppointmentModal,
-    PaymentsModal,
     GenerateStatementModal,
 
     // Components
@@ -112,6 +111,7 @@ import { FinancePageModule } from './pages/finances/finances.module';
     SuccessModal,
     ClientDetailsModal,
     GenerateInvoiceModal,
+    PaymentsModal,
 
     // App interal standalone components
     MenuComponent,

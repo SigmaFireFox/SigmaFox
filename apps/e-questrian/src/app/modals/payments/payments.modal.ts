@@ -1,7 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @angular-eslint/component-class-suffix */
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
+import {
+  UntypedFormGroup,
+  UntypedFormControl,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import { MatOptionModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
 import { Clients } from '../../interfaces/clients.interface';
 import { PaymentDetails } from '../../interfaces/payments.interface';
 import { ClientsService } from '../../services/clients/clients.service';
@@ -11,6 +19,14 @@ import { ClientsService } from '../../services/clients/clients.service';
   selector: 'app-payments-modal',
   templateUrl: './payments.modal.html',
   styleUrls: ['./payments.modal.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatOptionModule,
+    MatSelectModule,
+  ],
 })
 export class PaymentsModal implements OnInit {
   @Input() currentPayment = {} as PaymentDetails;
