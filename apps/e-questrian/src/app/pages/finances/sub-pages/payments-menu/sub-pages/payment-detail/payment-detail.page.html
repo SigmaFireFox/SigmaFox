@@ -1,0 +1,8 @@
+<app-financial-doc-view-screen
+  *ngIf="showDocument"
+  [config]="paymentDocViewConfig"
+></app-financial-doc-view-screen>
+<app-menu-component
+  [config]="menuConfig"
+  (actionSelected)="paymentVoided()"
+></app-menu-component>
