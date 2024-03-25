@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutePaths } from './models/routing.enum';
 import { CalendarPage } from './pages/calendar/calendar.page';
 import { ClientsPage } from './pages/clients/clients.page';
-import { FinancesPage } from './pages/finances/finances.page';
 import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { LandingPage } from './pages/landing/landing.page';
 import { RegisterPage } from './pages/register/register.page';
