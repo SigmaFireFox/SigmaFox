@@ -1,0 +1,101 @@
+{
+  "name": "sigma-fire-fox-managment-console",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "sigmafox",
+  "sourceRoot": "apps/sigma-fire-fox-managment-console/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/sigma-fire-fox-managment-console",
+        "index": "apps/sigma-fire-fox-managment-console/src/index.html",
+        "main": "apps/sigma-fire-fox-managment-console/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/sigma-fire-fox-managment-console/tsconfig.app.json",
+        "assets": [
+          "apps/sigma-fire-fox-managment-console/src/favicon.ico",
+          "apps/sigma-fire-fox-managment-console/src/assets"
+        ],
+        "styles": ["apps/sigma-fire-fox-managment-console/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "sigma-fire-fox-managment-console:build:production"
+        },
+        "development": {
+          "browserTarget": "sigma-fire-fox-managment-console:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "sigma-fire-fox-managment-console:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/sigma-fire-fox-managment-console/**/*.ts",
+          "apps/sigma-fire-fox-managment-console/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/sigma-fire-fox-managment-console/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "sigma-fire-fox-managment-console:build"
+      }
+    }
+  }
+}
