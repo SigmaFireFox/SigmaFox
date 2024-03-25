@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { AppRoutePaths } from './models/routing.enum';
-import { LandingPage } from './pages/landing/landing-page.component';
+import { LandingPage } from './landing/landing-page.component';
+import { ToDosPage } from './ToDosPage/to-dos-page.component';
 
 export const appRoutes: Route[] = [
   {
@@ -9,6 +10,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: AppRoutePaths.Todos,
-    component: LandingPage,
+    component: ToDosPage,
   },
 ];
