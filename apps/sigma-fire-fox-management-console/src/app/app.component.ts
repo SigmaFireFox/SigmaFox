@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonStyleClass, StandardButtonConfig } from '@sigmafox/buttons';
+import { AppRoutePaths } from './models/routing.enum';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sigmafox-root',
@@ -11,10 +13,22 @@ export class AppComponent {
 
   navigationButtons: StandardButtonConfig[] = [
     {
-      buttonID: 'home',
+      buttonID: AppRoutePaths.LandingPage,
       buttonTextContent: 'Home',
       buttonStyleClass: ButtonStyleClass.Primary,
       isDisabled: false,
     },
+    {
+      buttonID: AppRoutePaths.Todos,
+      buttonTextContent: 'To Dos',
+      buttonStyleClass: ButtonStyleClass.Primary,
+      isDisabled: false,
+    },
   ];
+
+  constructor(private router: Router) {}
+
+  onNavButtonClicked(buttonID: string) {
+    this.router.navigate([buttonID]);
+  }
 }

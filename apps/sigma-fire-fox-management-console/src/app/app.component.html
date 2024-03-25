@@ -1,6 +1,7 @@
 <sigmafox-standard-button
   *ngFor="let buttonConfig of navigationButtons"
   [config]="buttonConfig"
+  (clicked)="onNavButtonClicked(buttonConfig.buttonID)"
 ></sigmafox-standard-button>
 
 <router-outlet></router-outlet>

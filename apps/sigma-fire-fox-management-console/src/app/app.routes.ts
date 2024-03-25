@@ -7,4 +7,8 @@ export const appRoutes: Route[] = [
     path: AppRoutePaths.LandingPage,
     component: LandingPage,
   },
+  {
+    path: AppRoutePaths.Todos,
+    component: LandingPage,
+  },
 ];

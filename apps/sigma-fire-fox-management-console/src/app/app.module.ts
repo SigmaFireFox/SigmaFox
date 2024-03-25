@@ -6,9 +6,10 @@ import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { LandingPage } from './pages/landing/landing-page.component';
 import { StandardButton } from '@sigmafox/buttons';
+import { ToDosPage } from './pages/todos/to-dos-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, LandingPage],
+  declarations: [AppComponent, NxWelcomeComponent, LandingPage, ToDosPage],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
